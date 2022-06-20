@@ -1,0 +1,10739 @@
+## Fontbakery report
+
+Fontbakery version: 0.8.9
+
+<details><summary><b>[16] NotoSansSyriac-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
+
+
+* 🔥 **FAIL** Missing required codepoints:
+
+	- 0x00AF (MACRON)
+ [code: missing-codepoints]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
+
+
+* 🔥 **FAIL** License file OFL.txt exists but NameID 13 (LICENSE DESCRIPTION) value on platform 3 (WINDOWS) is not specified for that. Value was: "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an "AS IS" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software." Must be changed to "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL" [code: wrong]
+</div></details><details><summary>🔥 <b>FAIL:</b> Copyright notices match canonical pattern in fonts (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_copyright">com.google.fonts/check/font_copyright</a>)</summary><div>
+
+
+* 🔥 **FAIL** Name Table entry: Copyright notices should match a pattern similar to: "Copyright 2019 The Familyname Project Authors (git url)"
+But instead we have got:
+"Copyright 2018-2022 Google Inc. All Rights Reserved." [code: bad-notice-format]
+</div></details><details><summary>🔥 <b>FAIL:</b> OS/2.fsSelection bit 7 (USE_TYPO_METRICS) is set in all fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/os2/use_typo_metrics">com.google.fonts/check/os2/use_typo_metrics</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.fsSelection bit 7 (USE_TYPO_METRICS) wasNOT set in the following fonts: ['fonts/NotoSansSyriac-Regular/googlefonts/ttf/NotoSansSyriac-Regular.ttf']. [code: missing-os2-fsselection-bit7]
+</div></details><details><summary>🔥 <b>FAIL:</b> Checking OS/2 usWinAscent & usWinDescent. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/win_ascent_and_descent">com.google.fonts/check/family/win_ascent_and_descent</a>)</summary><div>
+
+
+* 🔥 **FAIL** OS/2.usWinAscent value should be equal or greater than 995, but got 926 instead [code: ascent]
+</div></details><details><summary>🔥 <b>FAIL:</b> Ensure dotted circle glyph is present and can attach marks. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/dotted_circle">com.google.fonts/check/dotted_circle</a>)</summary><div>
+
+
+* 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
+
+	- uni073A
+
+	- uni0670
+
+	- uni073D
+
+	- uni0307
+
+	- uni0740
+
+	- uni064F
+
+	- uni0743
+
+	- uni0711
+
+	- uni073C
+
+	- uni074A 
+
+	- And 42 more.
+
+Use -F or --full-lists to disable shortening of long lists. [code: unattached-dotted-circle-marks]
+</div></details><details><summary>🔥 <b>FAIL:</b> Check that texts shape as per expectation (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Shaping Checks>.html#com.google.fonts/check/shaping/regression">com.google.fonts/check/shaping/regression</a>)</summary><div>
+
+
+* 🔥 **FAIL** qa/shaping_tests/syriac3.json: Expected and actual shaping not matching
+<div class="shaping">
+
+
+<style type="text/css">
+    @font-face {font-family: "TestFont"; src: url(../../fonts/NotoSansSyriac-Regular/googlefonts/ttf/NotoSansSyriac-Regular.ttf);}
+    .tf { font-family: "TestFont"; }
+    .shaping pre { font-size: 1.2rem; }
+    .shaping li {
+        font-size: 1.2rem;
+        border-top: 1px solid #ddd;
+        padding: 12px;
+        margin-top: 12px;
+    }
+    .shaping-svg {
+        height: 100px;
+        margin: 10px;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+</style>
+
+<h4>qa/shaping_tests/syriac3.json: Expected and actual shaping not matching</h4>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̤ܻܠܻܨِܹܩܻ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni073B.SYRN=8@483,-99+0|uni0729.SYRN=8+884|uni0739.SYRN=5@262,-456+0|uni0650.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni073B.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni073B.SYRN=0@333,-595+0|uni0324.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662</pre>
+
+
+
+<pre>Got     : uni073B.SYRN=8@483,-99+0|uni0729.SYRN=8+884|uni0739.SYRN=5@262,-456+0|uni0650.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni073B.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni073B.SYRN=0@258,-595+0|uni0324.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2445 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d="M-33.0,-208.0L-57.0,-183.0L5.0,-129.0L-26.0,-93.0L-87.0,-146.0L-110.0,-122.0L40.0,9.0L62.0,-17.0L0.0,-70.0L32.0,-105.0L93.0,-52.0L117.0,-78.0L-33.0,-208.0Z"  transform="translate(483, 887)"/>
+<path d="M508.0,0.0Q472.0,0.0 448.5,12.0Q425.0,24.0 411.0,46.0L409.0,46.0L392.0,0.0L240.0,0.0Q162.0,0.0 113.0,21.0Q64.0,42.0 49.0,78.0L94.0,138.0Q120.0,101.0 158.0,88.5Q196.0,76.0 262.0,76.0L398.0,76.0Q392.0,99.0 392.0,128.0L392.0,438.0Q411.0,434.0 455.5,430.0Q500.0,426.0 545.0,426.0L663.0,426.0Q708.0,426.0 752.5,430.0Q797.0,434.0 816.0,438.0L816.0,54.0L777.0,0.0L508.0,0.0ZM743.0,357.0Q721.0,354.0 698.5,353.5Q676.0,353.0 658.0,353.0L550.0,353.0Q532.0,353.0 509.5,354.0Q487.0,355.0 465.0,357.0L465.0,135.0Q465.0,101.0 475.0,88.5Q485.0,76.0 520.0,76.0L743.0,76.0L743.0,357.0Z"  transform="translate(0, 986)"/>
+<path d="M61.0,19.0L96.0,5.0L52.0,-99.0L17.0,-86.0L61.0,19.0ZM-45.0,-27.0L-10.0,-41.0L-54.0,-145.0L-89.0,-132.0L-45.0,-27.0Z"  transform="translate(1146, 530)"/>
+<path d="M86.0,5.0L88.0,-30.0L-96.0,-99.0L-98.0,-64.0L86.0,5.0Z"  transform="translate(1146, 530)"/>
+<path d="M69.0,-381.0L69.0,-313.0L183.0,-313.0Q215.0,-313.0 254.5,-315.5Q294.0,-318.0 337.0,-323.0L338.0,-319.0Q228.0,-276.0 155.0,-168.0Q83.0,-61.0 83.0,62.0Q83.0,96.0 86.5,127.5Q90.0,159.0 101.0,192.0L165.0,194.0Q171.0,164.0 189.0,137.0Q207.0,110.0 234.5,93.0Q262.0,76.0 295.0,76.0Q340.0,76.0 369.0,103.5Q398.0,131.0 414.0,193.0L473.0,193.0L496.0,136.0Q521.0,76.0 556.0,76.0L556.0,0.0Q516.0,0.0 491.0,19.5Q466.0,39.0 446.0,80.0Q444.0,85.0 441.0,90.5Q438.0,96.0 436.0,101.0L432.0,101.0Q412.0,46.0 378.5,23.0Q345.0,0.0 290.0,0.0Q239.0,0.0 200.5,30.5Q162.0,61.0 146.0,112.0L143.0,111.0Q144.0,107.0 144.5,102.0Q145.0,97.0 146.0,92.0Q146.0,-31.0 226.5,-138.5Q307.0,-246.0 459.0,-322.0L445.0,-381.0L69.0,-381.0Z"  transform="translate(884, 986)"/>
+<path d="M-33.0,-208.0L-57.0,-183.0L5.0,-129.0L-26.0,-93.0L-87.0,-146.0L-110.0,-122.0L40.0,9.0L62.0,-17.0L0.0,-70.0L32.0,-105.0L93.0,-52.0L117.0,-78.0L-33.0,-208.0Z"  transform="translate(1609, 888)"/>
+<path d="M0.0,0.0Q-16.0,0.0 -27.5,10.0Q-39.0,20.0 -39.0,38.0Q-39.0,55.0 -27.5,65.5Q-16.0,76.0 0.0,76.0L277.0,76.0L-23.0,659.0L47.0,693.0L369.0,69.0L323.0,0.0L0.0,0.0Z"  transform="translate(1440, 986)"/>
+<path d="M-33.0,-208.0L-57.0,-183.0L5.0,-129.0L-26.0,-93.0L-87.0,-146.0L-110.0,-122.0L40.0,9.0L62.0,-17.0L0.0,-70.0L32.0,-105.0L93.0,-52.0L117.0,-78.0L-33.0,-208.0Z"  transform="translate(2116, 391)"/>
+<path d="M-123.0,-101.0L-123.0,-16.0L-41.0,-16.0L-41.0,-101.0L-123.0,-101.0ZM39.0,-101.0L39.0,-16.0L121.0,-16.0L121.0,-101.0L39.0,-101.0Z"  transform="translate(2120, 530)"/>
+<path d="M69.0,-381.0L69.0,-313.0L183.0,-313.0Q215.0,-313.0 254.5,-315.5Q294.0,-318.0 337.0,-323.0L338.0,-319.0Q228.0,-276.0 155.0,-168.0Q83.0,-61.0 83.0,62.0Q83.0,96.0 86.5,127.5Q90.0,159.0 101.0,192.0L165.0,194.0Q171.0,164.0 189.0,137.0Q207.0,110.0 234.5,93.0Q262.0,76.0 295.0,76.0Q340.0,76.0 371.5,103.5Q403.0,131.0 419.0,193.0L480.0,193.0L540.0,21.0L476.0,0.0L443.0,107.0L440.0,107.0Q401.0,0.0 290.0,0.0Q239.0,0.0 200.5,30.5Q162.0,61.0 146.0,112.0L143.0,111.0Q144.0,107.0 144.5,102.0Q145.0,97.0 146.0,92.0Q146.0,-31.0 226.5,-138.5Q307.0,-246.0 459.0,-322.0L445.0,-381.0L69.0,-381.0Z"  transform="translate(1858, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2520 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d="M-33.0,-208.0L-57.0,-183.0L5.0,-129.0L-26.0,-93.0L-87.0,-146.0L-110.0,-122.0L40.0,9.0L62.0,-17.0L0.0,-70.0L32.0,-105.0L93.0,-52.0L117.0,-78.0L-33.0,-208.0Z"  transform="translate(483, 887)"/>
+<path d="M508.0,0.0Q472.0,0.0 448.5,12.0Q425.0,24.0 411.0,46.0L409.0,46.0L392.0,0.0L240.0,0.0Q162.0,0.0 113.0,21.0Q64.0,42.0 49.0,78.0L94.0,138.0Q120.0,101.0 158.0,88.5Q196.0,76.0 262.0,76.0L398.0,76.0Q392.0,99.0 392.0,128.0L392.0,438.0Q411.0,434.0 455.5,430.0Q500.0,426.0 545.0,426.0L663.0,426.0Q708.0,426.0 752.5,430.0Q797.0,434.0 816.0,438.0L816.0,54.0L777.0,0.0L508.0,0.0ZM743.0,357.0Q721.0,354.0 698.5,353.5Q676.0,353.0 658.0,353.0L550.0,353.0Q532.0,353.0 509.5,354.0Q487.0,355.0 465.0,357.0L465.0,135.0Q465.0,101.0 475.0,88.5Q485.0,76.0 520.0,76.0L743.0,76.0L743.0,357.0Z"  transform="translate(0, 986)"/>
+<path d="M61.0,19.0L96.0,5.0L52.0,-99.0L17.0,-86.0L61.0,19.0ZM-45.0,-27.0L-10.0,-41.0L-54.0,-145.0L-89.0,-132.0L-45.0,-27.0Z"  transform="translate(1146, 530)"/>
+<path d="M86.0,5.0L88.0,-30.0L-96.0,-99.0L-98.0,-64.0L86.0,5.0Z"  transform="translate(1146, 530)"/>
+<path d="M69.0,-381.0L69.0,-313.0L183.0,-313.0Q215.0,-313.0 254.5,-315.5Q294.0,-318.0 337.0,-323.0L338.0,-319.0Q228.0,-276.0 155.0,-168.0Q83.0,-61.0 83.0,62.0Q83.0,96.0 86.5,127.5Q90.0,159.0 101.0,192.0L165.0,194.0Q171.0,164.0 189.0,137.0Q207.0,110.0 234.5,93.0Q262.0,76.0 295.0,76.0Q340.0,76.0 369.0,103.5Q398.0,131.0 414.0,193.0L473.0,193.0L496.0,136.0Q521.0,76.0 556.0,76.0L556.0,0.0Q516.0,0.0 491.0,19.5Q466.0,39.0 446.0,80.0Q444.0,85.0 441.0,90.5Q438.0,96.0 436.0,101.0L432.0,101.0Q412.0,46.0 378.5,23.0Q345.0,0.0 290.0,0.0Q239.0,0.0 200.5,30.5Q162.0,61.0 146.0,112.0L143.0,111.0Q144.0,107.0 144.5,102.0Q145.0,97.0 146.0,92.0Q146.0,-31.0 226.5,-138.5Q307.0,-246.0 459.0,-322.0L445.0,-381.0L69.0,-381.0Z"  transform="translate(884, 986)"/>
+<path d="M-33.0,-208.0L-57.0,-183.0L5.0,-129.0L-26.0,-93.0L-87.0,-146.0L-110.0,-122.0L40.0,9.0L62.0,-17.0L0.0,-70.0L32.0,-105.0L93.0,-52.0L117.0,-78.0L-33.0,-208.0Z"  transform="translate(1609, 888)"/>
+<path d="M0.0,0.0Q-16.0,0.0 -27.5,10.0Q-39.0,20.0 -39.0,38.0Q-39.0,55.0 -27.5,65.5Q-16.0,76.0 0.0,76.0L277.0,76.0L-23.0,659.0L47.0,693.0L369.0,69.0L323.0,0.0L0.0,0.0Z"  transform="translate(1440, 986)"/>
+<path d="M-33.0,-208.0L-57.0,-183.0L5.0,-129.0L-26.0,-93.0L-87.0,-146.0L-110.0,-122.0L40.0,9.0L62.0,-17.0L0.0,-70.0L32.0,-105.0L93.0,-52.0L117.0,-78.0L-33.0,-208.0Z"  transform="translate(2191, 391)"/>
+<path d="M-123.0,-101.0L-123.0,-16.0L-41.0,-16.0L-41.0,-101.0L-123.0,-101.0ZM39.0,-101.0L39.0,-16.0L121.0,-16.0L121.0,-101.0L39.0,-101.0Z"  transform="translate(2195, 530)"/>
+<path d="M69.0,-381.0L69.0,-313.0L183.0,-313.0Q215.0,-313.0 254.5,-315.5Q294.0,-318.0 337.0,-323.0L338.0,-319.0Q228.0,-276.0 155.0,-168.0Q83.0,-61.0 83.0,62.0Q83.0,96.0 86.5,127.5Q90.0,159.0 101.0,192.0L165.0,194.0Q171.0,164.0 189.0,137.0Q207.0,110.0 234.5,93.0Q262.0,76.0 295.0,76.0Q340.0,76.0 371.5,103.5Q403.0,131.0 419.0,193.0L480.0,193.0L540.0,21.0L476.0,0.0L443.0,107.0L440.0,107.0Q401.0,0.0 290.0,0.0Q239.0,0.0 200.5,30.5Q162.0,61.0 146.0,112.0L143.0,111.0Q144.0,107.0 144.5,102.0Q145.0,97.0 146.0,92.0Q146.0,-31.0 226.5,-138.5Q307.0,-246.0 459.0,-322.0L445.0,-381.0L69.0,-381.0Z"  transform="translate(1933, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܷܱܝ̱ܨܴܾܘِܨٍٕܘܸܨ̮̭ܙܱ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0731.SYRN=18@159,-173+0|uni0719.SYRN=18+293|uni032D.SYRN=15@262,-456+0|uni032E.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0738.SYRN=13@289,-98+0|uni0718.SYRN=13+578|uni0655064D.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0650.SYRN=8@289,-98+0|uni0718.SYRN=8+578|uni073E.SYRN=5@262,-456+0|uni0734.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0331.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0731.SYRN=0@237,-456+0|uni0737.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni0731.SYRN=18@159,-173+0|uni0719.SYRN=18+293|uni032D.SYRN=15@262,-456+0|uni032E.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0738.SYRN=13@289,-98+0|uni0718.SYRN=13+578|uni0655064D.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0650.SYRN=8@289,-98+0|uni0718.SYRN=8+578|uni073E.SYRN=5@262,-456+0|uni0734.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0331.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0731.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4074 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(159, 813)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(293, 986)"/>
+<path d=""  transform="translate(1169, 888)"/>
+<path d=""  transform="translate(880, 986)"/>
+<path d=""  transform="translate(1720, 530)"/>
+<path d=""  transform="translate(1458, 986)"/>
+<path d=""  transform="translate(2334, 888)"/>
+<path d=""  transform="translate(2045, 986)"/>
+<path d=""  transform="translate(2885, 530)"/>
+<path d=""  transform="translate(2885, 530)"/>
+<path d=""  transform="translate(2623, 986)"/>
+<path d=""  transform="translate(3345, 889)"/>
+<path d=""  transform="translate(3179, 986)"/>
+<path d=""  transform="translate(3749, 530)"/>
+<path d=""  transform="translate(3749, 530)"/>
+<path d=""  transform="translate(3487, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4049 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(159, 813)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(293, 986)"/>
+<path d=""  transform="translate(1169, 888)"/>
+<path d=""  transform="translate(880, 986)"/>
+<path d=""  transform="translate(1720, 530)"/>
+<path d=""  transform="translate(1458, 986)"/>
+<path d=""  transform="translate(2334, 888)"/>
+<path d=""  transform="translate(2045, 986)"/>
+<path d=""  transform="translate(2885, 530)"/>
+<path d=""  transform="translate(2885, 530)"/>
+<path d=""  transform="translate(2623, 986)"/>
+<path d=""  transform="translate(3345, 889)"/>
+<path d=""  transform="translate(3179, 986)"/>
+<path d=""  transform="translate(3724, 530)"/>
+<path d=""  transform="translate(3724, 530)"/>
+<path d=""  transform="translate(3462, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݈ܻܝܻܨ̰̤ܡܾ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni073E.SYRN=8@435,-99+0|uni0721.SYRN=8+705|uni0324.SYRN=5@262,-456+0|uni0330.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni073B.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni073B.SYRN=0@237,-456+0|uni0748.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni073E.SYRN=8@435,-99+0|uni0721.SYRN=8+705|uni0324.SYRN=5@262,-456+0|uni0330.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni073B.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni073B.SYRN=0@262,-456+0|uni0748.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2156 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1427, 889)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1831, 530)"/>
+<path d=""  transform="translate(1831, 530)"/>
+<path d=""  transform="translate(1569, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2131 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1427, 889)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1806, 530)"/>
+<path d=""  transform="translate(1806, 530)"/>
+<path d=""  transform="translate(1544, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܷ݄ܠ݈ܨ̣ܱܡ݄ܨ݈̱ܠ݈ܨٍܹܝܱܨِ̰ܠ݆</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0746.SYRN=23@396,-98+0|uni0720.SYRN=23+800|uni0330.SYRN=20@337,-456+0|uni0650.SYRN=20@337,-456+0|uni0728.Fina.SYRN=20@75,0+631|uni0731.SYRN=18@166,-97+0|uni071D.Init.SYRN=18+308|uni0739.SYRN=15@237,-456+0|uni064D.SYRN=15@237,-456+0|uni0728.Fina.SYRN=15@-25,0+531|uni0748.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0331.SYRN=10@337,-456+0|uni0748.SYRN=10@337,-456+0|uni0728.Fina.SYRN=10@75,0+631|uni0744.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0731.SYRN=5@262,-594+0|uni0323.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0748.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0744.SYRN=0@337,-456+0|uni0737.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662</pre>
+
+
+
+<pre>Got     : uni0746.SYRN=23@396,-98+0|uni0720.SYRN=23+800|uni0330.SYRN=20@262,-456+0|uni0650.SYRN=20@262,-456+0|uni0728.Fina.SYRN=20+556|uni0731.SYRN=18@166,-97+0|uni071D.Init.SYRN=18+308|uni0739.SYRN=15@262,-456+0|uni064D.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0748.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0331.SYRN=10@262,-456+0|uni0748.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0744.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0731.SYRN=5@262,-594+0|uni0323.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0748.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0744.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                                     ^^                         ^^                            ^^^^^^^^^^                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5516 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1522, 889)"/>
+<path d=""  transform="translate(1356, 986)"/>
+<path d=""  transform="translate(1926, 530)"/>
+<path d=""  transform="translate(1926, 530)"/>
+<path d=""  transform="translate(1664, 986)"/>
+<path d=""  transform="translate(2389, 888)"/>
+<path d=""  transform="translate(2220, 986)"/>
+<path d=""  transform="translate(2900, 530)"/>
+<path d=""  transform="translate(2900, 530)"/>
+<path d=""  transform="translate(2638, 986)"/>
+<path d=""  transform="translate(3549, 888)"/>
+<path d=""  transform="translate(3194, 986)"/>
+<path d=""  transform="translate(4217, 392)"/>
+<path d=""  transform="translate(4217, 530)"/>
+<path d=""  transform="translate(3955, 986)"/>
+<path d=""  transform="translate(4680, 888)"/>
+<path d=""  transform="translate(4511, 986)"/>
+<path d=""  transform="translate(5191, 530)"/>
+<path d=""  transform="translate(5191, 530)"/>
+<path d=""  transform="translate(4929, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5716 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1597, 889)"/>
+<path d=""  transform="translate(1431, 986)"/>
+<path d=""  transform="translate(1976, 530)"/>
+<path d=""  transform="translate(1976, 530)"/>
+<path d=""  transform="translate(1714, 986)"/>
+<path d=""  transform="translate(2439, 888)"/>
+<path d=""  transform="translate(2270, 986)"/>
+<path d=""  transform="translate(3025, 530)"/>
+<path d=""  transform="translate(3025, 530)"/>
+<path d=""  transform="translate(2763, 986)"/>
+<path d=""  transform="translate(3674, 888)"/>
+<path d=""  transform="translate(3319, 986)"/>
+<path d=""  transform="translate(4342, 392)"/>
+<path d=""  transform="translate(4342, 530)"/>
+<path d=""  transform="translate(4080, 986)"/>
+<path d=""  transform="translate(4805, 888)"/>
+<path d=""  transform="translate(4636, 986)"/>
+<path d=""  transform="translate(5391, 530)"/>
+<path d=""  transform="translate(5391, 530)"/>
+<path d=""  transform="translate(5129, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̰ܸܩܴܨ̤ܻܡ̭ܨܸܹءܾ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni073E.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni0739.SYRN=10@300,-456+0|uni0738.SYRN=10@300,-456+0|uni0728.Fina.SYRN=10@38,0+594|uni032D.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni073B.SYRN=5@258,-595+0|uni0324.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0734.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni0738.SYRN=0@258,-597+0|uni0330.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni073E.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni0739.SYRN=10@262,-456+0|uni0738.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni032D.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni073B.SYRN=5@258,-595+0|uni0324.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0734.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni0738.SYRN=0@258,-597+0|uni0330.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3528 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1382, 888)"/>
+<path d=""  transform="translate(1027, 986)"/>
+<path d=""  transform="translate(2046, 391)"/>
+<path d=""  transform="translate(2050, 530)"/>
+<path d=""  transform="translate(1788, 986)"/>
+<path d=""  transform="translate(2660, 888)"/>
+<path d=""  transform="translate(2344, 986)"/>
+<path d=""  transform="translate(3199, 389)"/>
+<path d=""  transform="translate(3203, 530)"/>
+<path d=""  transform="translate(2941, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3566 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1420, 888)"/>
+<path d=""  transform="translate(1065, 986)"/>
+<path d=""  transform="translate(2084, 391)"/>
+<path d=""  transform="translate(2088, 530)"/>
+<path d=""  transform="translate(1826, 986)"/>
+<path d=""  transform="translate(2698, 888)"/>
+<path d=""  transform="translate(2382, 986)"/>
+<path d=""  transform="translate(3237, 389)"/>
+<path d=""  transform="translate(3241, 530)"/>
+<path d=""  transform="translate(2979, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܾܾܡܷܨ̠ܝ݆ܮِّܑܨܸܼܘ̭</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni032D.SYRN=16@289,-98+0|uni0718.SYRN=16+578|uni073C.SYRN=13@262,-456+0|uni0738.SYRN=13@262,-456+0|uni0728.Fina.SYRN=13+556|uni0711.SYRN=9@54,231+0|FC62=9@54,231+0|uni072E.MediW.SYRN=9+518|uni0746.SYRN=7@166,-97+0|uni071D.Init.SYRN=7+308|uni0320.SYRN=5+0|uni0728.Fina.SYRN=5@-25,0+531|uni0737.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073E.SYRN=0@262,-456+0|uni073E.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni032D.SYRN=16@289,-98+0|uni0718.SYRN=16+578|uni073C.SYRN=13@262,-456+0|uni0738.SYRN=13@262,-456+0|uni0728.Fina.SYRN=13+556|uni0711.SYRN=9@54,231+0|FC62=9@54,231+0|uni072E.MediW.SYRN=9+518|uni0746.SYRN=7@166,-97+0|uni071D.Init.SYRN=7+308|uni0320.SYRN=5+0|uni0728.Fina.SYRN=5+556|uni0737.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073E.SYRN=0@262,-456+0|uni073E.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                             ^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3864 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(289, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(578, 986)"/>
+<path d=""  transform="translate(1188, 1217)"/>
+<path d=""  transform="translate(1188, 1217)"/>
+<path d=""  transform="translate(1134, 986)"/>
+<path d=""  transform="translate(1818, 889)"/>
+<path d=""  transform="translate(1652, 986)"/>
+<path d=""  transform="translate(1960, 986)"/>
+<path d=""  transform="translate(1960, 986)"/>
+<path d=""  transform="translate(2871, 888)"/>
+<path d=""  transform="translate(2516, 986)"/>
+<path d=""  transform="translate(3539, 530)"/>
+<path d=""  transform="translate(3539, 530)"/>
+<path d=""  transform="translate(3277, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3839 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(289, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(578, 986)"/>
+<path d=""  transform="translate(1188, 1217)"/>
+<path d=""  transform="translate(1188, 1217)"/>
+<path d=""  transform="translate(1134, 986)"/>
+<path d=""  transform="translate(1818, 889)"/>
+<path d=""  transform="translate(1652, 986)"/>
+<path d=""  transform="translate(1960, 986)"/>
+<path d=""  transform="translate(1935, 986)"/>
+<path d=""  transform="translate(2846, 888)"/>
+<path d=""  transform="translate(2491, 986)"/>
+<path d=""  transform="translate(3514, 530)"/>
+<path d=""  transform="translate(3514, 530)"/>
+<path d=""  transform="translate(3252, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܱ̠ܘ݄ܨܸءٕ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0655.SYRN=7@238,-98+0|uni0621.SYRN=7+471|uni0738.SYRN=5@300,-456+0|uni0728.SYRN=5@38,0+625|uni0744.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0320.SYRN=0+0|uni0731.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0655.SYRN=7@238,-98+0|uni0621.SYRN=7+471|uni0738.SYRN=5@262,-456+0|uni0728.SYRN=5+587|uni0744.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0320.SYRN=0+0|uni0731.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                     ^^^                      +++++ ++
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2223 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1347, 888)"/>
+<path d=""  transform="translate(1058, 986)"/>
+<path d=""  transform="translate(1636, 986)"/>
+<path d=""  transform="translate(1898, 530)"/>
+<path d=""  transform="translate(1636, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2261 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1385, 888)"/>
+<path d=""  transform="translate(1096, 986)"/>
+<path d=""  transform="translate(1674, 986)"/>
+<path d=""  transform="translate(1936, 530)"/>
+<path d=""  transform="translate(1674, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̮̱ܝ̣ݎ̄ܨ݄ܻܡܱܨِ݆ء̠ܨِܾء̣</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0323.SYRN=20@238,-98+0|uni0621.SYRN=20+471|uni073E.SYRN=17@300,-456+0|uni0650.SYRN=17@300,-456+0|uni0728.SYRN=17@38,0+625|uni0320.SYRN=15+0|uni0621.SYRN=15+471|uni0746.SYRN=12@300,-456+0|uni0650.SYRN=12@300,-456+0|uni0728.Fina.SYRN=12@38,0+594|uni0731.SYRN=10@355,-98+0|uni0721.Init.SYRN=10+761|uni073B.SYRN=7@262,-456+0|uni0744.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0304.SYRN=5@289,162+0|uni074E.Medi.SYRN=5+574|uni0323.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0331.SYRN=0@237,-456+0|uni032E.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni0323.SYRN=20@238,-98+0|uni0621.SYRN=20+471|uni073E.SYRN=17@262,-456+0|uni0650.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni0320.SYRN=15+0|uni0621.SYRN=15+471|uni0746.SYRN=12@262,-456+0|uni0650.SYRN=12@262,-456+0|uni0728.Fina.SYRN=12+556|uni0731.SYRN=10@355,-98+0|uni0721.Init.SYRN=10+761|uni073B.SYRN=7@262,-456+0|uni0744.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0304.SYRN=5@289,162+0|uni074E.Medi.SYRN=5+574|uni0323.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0331.SYRN=0@262,-456+0|uni032E.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4871 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1058, 986)"/>
+<path d=""  transform="translate(1058, 986)"/>
+<path d=""  transform="translate(1791, 530)"/>
+<path d=""  transform="translate(1791, 530)"/>
+<path d=""  transform="translate(1529, 986)"/>
+<path d=""  transform="translate(2440, 888)"/>
+<path d=""  transform="translate(2085, 986)"/>
+<path d=""  transform="translate(3108, 530)"/>
+<path d=""  transform="translate(3108, 530)"/>
+<path d=""  transform="translate(2846, 986)"/>
+<path d=""  transform="translate(3691, 1148)"/>
+<path d=""  transform="translate(3402, 986)"/>
+<path d=""  transform="translate(4142, 889)"/>
+<path d=""  transform="translate(3976, 986)"/>
+<path d=""  transform="translate(4546, 530)"/>
+<path d=""  transform="translate(4546, 530)"/>
+<path d=""  transform="translate(4284, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4922 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1096, 986)"/>
+<path d=""  transform="translate(1096, 986)"/>
+<path d=""  transform="translate(1867, 530)"/>
+<path d=""  transform="translate(1867, 530)"/>
+<path d=""  transform="translate(1605, 986)"/>
+<path d=""  transform="translate(2516, 888)"/>
+<path d=""  transform="translate(2161, 986)"/>
+<path d=""  transform="translate(3184, 530)"/>
+<path d=""  transform="translate(3184, 530)"/>
+<path d=""  transform="translate(2922, 986)"/>
+<path d=""  transform="translate(3767, 1148)"/>
+<path d=""  transform="translate(3478, 986)"/>
+<path d=""  transform="translate(4218, 889)"/>
+<path d=""  transform="translate(4052, 986)"/>
+<path d=""  transform="translate(4597, 530)"/>
+<path d=""  transform="translate(4597, 530)"/>
+<path d=""  transform="translate(4335, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̰̱ܡ̣ܨ̤ܷܘ̠ܨܾܸܠܱܪ݇ܝ݀</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0740.SYRN=17@492,-98+0|uni071D.SYRN=17+628|uni0747.SYRN=15@251,145+0|uni072A.Fina.SYRN=15+518|uni0731.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0738.SYRN=10@337,-456+0|uni073E.SYRN=10@337,-456+0|uni0728.SYRN=10@75,0+662|uni0320.SYRN=8+0|uni0718.SYRN=8+578|uni0737.SYRN=5@258,-595+0|uni0324.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0323.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0331.SYRN=0@262,-456+0|uni0330.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0740.SYRN=17@492,-98+0|uni071D.SYRN=17+628|uni0747.SYRN=15@251,145+0|uni072A.Fina.SYRN=15+518|uni0731.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0738.SYRN=10@262,-456+0|uni073E.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0320.SYRN=8+0|uni0718.SYRN=8+578|uni0737.SYRN=5@258,-595+0|uni0324.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0323.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0331.SYRN=0@262,-456+0|uni0330.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                              ^^^                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4633 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(492, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(879, 1131)"/>
+<path d=""  transform="translate(628, 986)"/>
+<path d=""  transform="translate(1315, 888)"/>
+<path d=""  transform="translate(1146, 986)"/>
+<path d=""  transform="translate(1826, 530)"/>
+<path d=""  transform="translate(1826, 530)"/>
+<path d=""  transform="translate(1564, 986)"/>
+<path d=""  transform="translate(2151, 986)"/>
+<path d=""  transform="translate(2151, 986)"/>
+<path d=""  transform="translate(2987, 391)"/>
+<path d=""  transform="translate(2991, 530)"/>
+<path d=""  transform="translate(2729, 986)"/>
+<path d=""  transform="translate(3640, 888)"/>
+<path d=""  transform="translate(3285, 986)"/>
+<path d=""  transform="translate(4308, 530)"/>
+<path d=""  transform="translate(4308, 530)"/>
+<path d=""  transform="translate(4046, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4708 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(492, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(879, 1131)"/>
+<path d=""  transform="translate(628, 986)"/>
+<path d=""  transform="translate(1315, 888)"/>
+<path d=""  transform="translate(1146, 986)"/>
+<path d=""  transform="translate(1901, 530)"/>
+<path d=""  transform="translate(1901, 530)"/>
+<path d=""  transform="translate(1639, 986)"/>
+<path d=""  transform="translate(2226, 986)"/>
+<path d=""  transform="translate(2226, 986)"/>
+<path d=""  transform="translate(3062, 391)"/>
+<path d=""  transform="translate(3066, 530)"/>
+<path d=""  transform="translate(2804, 986)"/>
+<path d=""  transform="translate(3715, 888)"/>
+<path d=""  transform="translate(3360, 986)"/>
+<path d=""  transform="translate(4383, 530)"/>
+<path d=""  transform="translate(4383, 530)"/>
+<path d=""  transform="translate(4121, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̮̤ܩ݄ܨ̰݈ܝ݄ܭُܨٍ̠ܡ̣</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0323.SYRN=15@435,-99+0|uni0721.SYRN=15+705|uni0320.SYRN=12+0|uni064D.SYRN=12@262,-456+0|uni0728.Fina.SYRN=12+556|uni064F.SYRN=10@209,151+0|uni072D.Medi.SYRN=10+574|uni0744.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0748.SYRN=5@233,-597+0|uni0330.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni0744.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni0324.SYRN=0@262,-456+0|uni032E.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0323.SYRN=15@435,-99+0|uni0721.SYRN=15+705|uni0320.SYRN=12+0|uni064D.SYRN=12@262,-456+0|uni0728.Fina.SYRN=12+556|uni064F.SYRN=10@209,151+0|uni072D.Medi.SYRN=10+574|uni0744.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0748.SYRN=5@258,-597+0|uni0330.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0744.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni0324.SYRN=0@262,-456+0|uni032E.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           ^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3883 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1470, 1137)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(2001, 889)"/>
+<path d=""  transform="translate(1835, 986)"/>
+<path d=""  transform="translate(2401, 389)"/>
+<path d=""  transform="translate(2405, 530)"/>
+<path d=""  transform="translate(2143, 986)"/>
+<path d=""  transform="translate(3015, 888)"/>
+<path d=""  transform="translate(2699, 986)"/>
+<path d=""  transform="translate(3558, 530)"/>
+<path d=""  transform="translate(3558, 530)"/>
+<path d=""  transform="translate(3296, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3858 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1470, 1137)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(2001, 889)"/>
+<path d=""  transform="translate(1835, 986)"/>
+<path d=""  transform="translate(2376, 389)"/>
+<path d=""  transform="translate(2380, 530)"/>
+<path d=""  transform="translate(2118, 986)"/>
+<path d=""  transform="translate(2990, 888)"/>
+<path d=""  transform="translate(2674, 986)"/>
+<path d=""  transform="translate(3533, 530)"/>
+<path d=""  transform="translate(3533, 530)"/>
+<path d=""  transform="translate(3271, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̮݈ءܾـ݊ܐܷܢܨܷ̰ܡ̱</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0331.SYRN=13@435,-99+0|uni0721.SYRN=13+705|uni0330.SYRN=10@262,-456+0|uni0737.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0722.Init.SYRN=9+364|uni0737.SYRN=7@172,-141+0|uni0710.Medi2.SYRN=7+356|uni074A.SYRN=5@189,-239+0|uni0640.SYRN=5+379|uni073E.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0748.SYRN=0@296,-566+0|uni032E.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625</pre>
+
+
+
+<pre>Got     : uni0331.SYRN=13@435,-99+0|uni0721.SYRN=13+705|uni0330.SYRN=10@262,-456+0|uni0737.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0722.Init.SYRN=9+364|uni0737.SYRN=7@172,-141+0|uni0710.Medi2.SYRN=7+356|uni074A.SYRN=5@189,-239+0|uni0640.SYRN=5+379|uni073E.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0748.SYRN=0@258,-566+0|uni032E.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                           ^^                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3418 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1797, 845)"/>
+<path d=""  transform="translate(1625, 986)"/>
+<path d=""  transform="translate(2170, 747)"/>
+<path d=""  transform="translate(1981, 986)"/>
+<path d=""  transform="translate(2598, 888)"/>
+<path d=""  transform="translate(2360, 986)"/>
+<path d=""  transform="translate(3089, 420)"/>
+<path d=""  transform="translate(3093, 530)"/>
+<path d=""  transform="translate(2831, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3456 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1797, 845)"/>
+<path d=""  transform="translate(1625, 986)"/>
+<path d=""  transform="translate(2170, 747)"/>
+<path d=""  transform="translate(1981, 986)"/>
+<path d=""  transform="translate(2598, 888)"/>
+<path d=""  transform="translate(2360, 986)"/>
+<path d=""  transform="translate(3127, 420)"/>
+<path d=""  transform="translate(3131, 530)"/>
+<path d=""  transform="translate(2869, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܻ݄ܝ̰ܨܹܼܠِܨ̮ܠٕ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0655.SYRN=12@396,-98+0|uni0720.SYRN=12+800|uni032E.SYRN=10@337,-456+0|uni0728.Fina.SYRN=10@75,0+631|uni0650.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni073C.SYRN=5@337,-456+0|uni0739.SYRN=5@337,-456+0|uni0728.Fina.SYRN=5@75,0+631|uni0330.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0744.SYRN=0@237,-456+0|uni073B.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni0655.SYRN=12@396,-98+0|uni0720.SYRN=12+800|uni032E.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0650.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni073C.SYRN=5@262,-456+0|uni0739.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0330.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0744.SYRN=0@262,-456+0|uni073B.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^                            ^^^^^^^^^                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           ^^^^^^^^^                                                                  ^^                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3225 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1525, 888)"/>
+<path d=""  transform="translate(1356, 986)"/>
+<path d=""  transform="translate(2036, 530)"/>
+<path d=""  transform="translate(2036, 530)"/>
+<path d=""  transform="translate(1774, 986)"/>
+<path d=""  transform="translate(2496, 889)"/>
+<path d=""  transform="translate(2330, 986)"/>
+<path d=""  transform="translate(2900, 530)"/>
+<path d=""  transform="translate(2900, 530)"/>
+<path d=""  transform="translate(2638, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3350 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1600, 888)"/>
+<path d=""  transform="translate(1431, 986)"/>
+<path d=""  transform="translate(2186, 530)"/>
+<path d=""  transform="translate(2186, 530)"/>
+<path d=""  transform="translate(1924, 986)"/>
+<path d=""  transform="translate(2646, 889)"/>
+<path d=""  transform="translate(2480, 986)"/>
+<path d=""  transform="translate(3025, 530)"/>
+<path d=""  transform="translate(3025, 530)"/>
+<path d=""  transform="translate(2763, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܼ݄ܡ̮ܙܽܙ݃ܨܾٕءܻ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni073B.SYRN=12@238,-98+0|uni0621.SYRN=12+471|uni0655.SYRN=9@300,-456+0|uni073E.SYRN=9@300,-456+0|uni0728.SYRN=9@38,0+625|uni0743.SYRN=7@152,-57+0|uni0719.SYRN=7+293|uni073D.SYRN=5@203,-57+0|uni0719.Fina.SYRN=5@50,0+367|uni032E.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0744.SYRN=0@262,-456+0|uni073C.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni073B.SYRN=12@238,-98+0|uni0621.SYRN=12+471|uni0655.SYRN=9@262,-456+0|uni073E.SYRN=9@262,-456+0|uni0728.SYRN=9+587|uni0743.SYRN=7@152,-57+0|uni0719.SYRN=7+293|uni073D.SYRN=5@203,-57+0|uni0719.Fina.SYRN=5@50,0+367|uni032E.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0744.SYRN=0@262,-456+0|uni073C.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                       ^^^                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3066 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1210, 929)"/>
+<path d=""  transform="translate(1058, 986)"/>
+<path d=""  transform="translate(1554, 929)"/>
+<path d=""  transform="translate(1401, 986)"/>
+<path d=""  transform="translate(2073, 888)"/>
+<path d=""  transform="translate(1718, 986)"/>
+<path d=""  transform="translate(2741, 530)"/>
+<path d=""  transform="translate(2741, 530)"/>
+<path d=""  transform="translate(2479, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3104 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1248, 929)"/>
+<path d=""  transform="translate(1096, 986)"/>
+<path d=""  transform="translate(1592, 929)"/>
+<path d=""  transform="translate(1439, 986)"/>
+<path d=""  transform="translate(2111, 888)"/>
+<path d=""  transform="translate(1756, 986)"/>
+<path d=""  transform="translate(2779, 530)"/>
+<path d=""  transform="translate(2779, 530)"/>
+<path d=""  transform="translate(2517, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِٕܡ̣ܨِِܝܴܨ̭ܹܩܼܨ̱ٕءܾ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni073E.SYRN=18@238,-98+0|uni0621.SYRN=18+471|uni0655.SYRN=15@300,-576+0|uni0331.SYRN=15@300,-456+0|uni0728.Fina.SYRN=15@38,0+594|uni073C.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni0739.SYRN=10@258,-617+0|uni032D.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0734.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0650.SYRN=5@237,-456+0|uni0650.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni0323.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni06550650.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni073E.SYRN=18@238,-98+0|uni0621.SYRN=18+471|uni0655.SYRN=15@262,-576+0|uni0331.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni073C.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni0739.SYRN=10@258,-617+0|uni032D.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0734.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0650.SYRN=5@262,-456+0|uni0650.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0323.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni06550650.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           ^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4392 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 410)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1343, 888)"/>
+<path d=""  transform="translate(1027, 986)"/>
+<path d=""  transform="translate(1882, 369)"/>
+<path d=""  transform="translate(1886, 530)"/>
+<path d=""  transform="translate(1624, 986)"/>
+<path d=""  transform="translate(2346, 889)"/>
+<path d=""  transform="translate(2180, 986)"/>
+<path d=""  transform="translate(2750, 530)"/>
+<path d=""  transform="translate(2750, 530)"/>
+<path d=""  transform="translate(2488, 986)"/>
+<path d=""  transform="translate(3399, 888)"/>
+<path d=""  transform="translate(3044, 986)"/>
+<path d=""  transform="translate(4067, 530)"/>
+<path d=""  transform="translate(3805, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4405 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 410)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1381, 888)"/>
+<path d=""  transform="translate(1065, 986)"/>
+<path d=""  transform="translate(1920, 369)"/>
+<path d=""  transform="translate(1924, 530)"/>
+<path d=""  transform="translate(1662, 986)"/>
+<path d=""  transform="translate(2384, 889)"/>
+<path d=""  transform="translate(2218, 986)"/>
+<path d=""  transform="translate(2763, 530)"/>
+<path d=""  transform="translate(2763, 530)"/>
+<path d=""  transform="translate(2501, 986)"/>
+<path d=""  transform="translate(3412, 888)"/>
+<path d=""  transform="translate(3057, 986)"/>
+<path d=""  transform="translate(4080, 530)"/>
+<path d=""  transform="translate(3818, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̠̭ܘٕܚܪ݇ܝ݇ܨܱܷܠ̭</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni032D.SYRN=13@396,-98+0|uni0720.SYRN=13+800|uni0737.SYRN=10@337,-456+0|uni0731.SYRN=10@337,-456+0|uni0728.Fina.SYRN=10@75,0+631|uni0747.SYRN=8@151,-108+0|uni071D.Init.SYRN=8+308|uni0747.SYRN=6@251,145+0|uni072A.Fina.SYRN=6+518|uni071A.Init.SYRN=5+510|uni0655.SYRN=3@239,-98+0|uni0718.SYRN=3@-50,0+528|uni032D.SYRN=0@262,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni032D.SYRN=13@396,-98+0|uni0720.SYRN=13+800|uni0737.SYRN=10@262,-456+0|uni0731.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0747.SYRN=8@151,-108+0|uni071D.Init.SYRN=8+308|uni0747.SYRN=6@251,145+0|uni072A.Fina.SYRN=6+518|uni071A.Init.SYRN=5+510|uni0655.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni032D.SYRN=0@262,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                                                                                                            ^                      ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3857 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1507, 878)"/>
+<path d=""  transform="translate(1356, 986)"/>
+<path d=""  transform="translate(1915, 1131)"/>
+<path d=""  transform="translate(1664, 986)"/>
+<path d=""  transform="translate(2182, 986)"/>
+<path d=""  transform="translate(2981, 888)"/>
+<path d=""  transform="translate(2692, 986)"/>
+<path d=""  transform="translate(3532, 530)"/>
+<path d=""  transform="translate(3270, 986)"/>
+<path d=""  transform="translate(3270, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3882 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1582, 878)"/>
+<path d=""  transform="translate(1431, 986)"/>
+<path d=""  transform="translate(1990, 1131)"/>
+<path d=""  transform="translate(1739, 986)"/>
+<path d=""  transform="translate(2257, 986)"/>
+<path d=""  transform="translate(3006, 888)"/>
+<path d=""  transform="translate(2717, 986)"/>
+<path d=""  transform="translate(3557, 530)"/>
+<path d=""  transform="translate(3295, 986)"/>
+<path d=""  transform="translate(3295, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܹܠܴܨٍ̱ܝܻܨܾܴܝٕܨٕ̭ܠ̮</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni032E.SYRN=17@396,-98+0|uni0720.SYRN=17+800|uni032D.SYRN=14@337,-456+0|uni0655.SYRN=14@337,-456+0|uni0728.Fina.SYRN=14@75,0+631|uni0655.SYRN=12@166,-97+0|uni071D.Init.SYRN=12+308|uni0734.SYRN=9@237,-456+0|uni073E.SYRN=9@237,-456+0|uni0728.Fina.SYRN=9@-25,0+531|uni073B.SYRN=7@166,-97+0|uni071D.Init.SYRN=7+308|uni0331.SYRN=4@237,-456+0|uni064D.SYRN=4@237,-456+0|uni0728.Fina.SYRN=4@-25,0+531|uni0734.SYRN=2@169,-98+0|uni0720.Init.SYRN=2+418|uni0739.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662</pre>
+
+
+
+<pre>Got     : uni032E.SYRN=17@396,-98+0|uni0720.SYRN=17+800|uni032D.SYRN=14@262,-456+0|uni0655.SYRN=14@262,-456+0|uni0728.Fina.SYRN=14+556|uni0655.SYRN=12@166,-97+0|uni071D.Init.SYRN=12+308|uni0734.SYRN=9@262,-456+0|uni073E.SYRN=9@262,-456+0|uni0728.Fina.SYRN=9+556|uni073B.SYRN=7@166,-97+0|uni071D.Init.SYRN=7+308|uni0331.SYRN=4@262,-456+0|uni064D.SYRN=4@262,-456+0|uni0728.Fina.SYRN=4+556|uni0734.SYRN=2@169,-98+0|uni0720.Init.SYRN=2+418|uni0739.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                                    ^^                        ^^                           ^^^^^^^^^^                                                                  ^^                        ^^                           ^^^^^^^^^^                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4089 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1522, 889)"/>
+<path d=""  transform="translate(1356, 986)"/>
+<path d=""  transform="translate(1926, 530)"/>
+<path d=""  transform="translate(1926, 530)"/>
+<path d=""  transform="translate(1664, 986)"/>
+<path d=""  transform="translate(2386, 889)"/>
+<path d=""  transform="translate(2220, 986)"/>
+<path d=""  transform="translate(2790, 530)"/>
+<path d=""  transform="translate(2790, 530)"/>
+<path d=""  transform="translate(2528, 986)"/>
+<path d=""  transform="translate(3253, 888)"/>
+<path d=""  transform="translate(3084, 986)"/>
+<path d=""  transform="translate(3764, 530)"/>
+<path d=""  transform="translate(3502, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4189 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1597, 889)"/>
+<path d=""  transform="translate(1431, 986)"/>
+<path d=""  transform="translate(1976, 530)"/>
+<path d=""  transform="translate(1976, 530)"/>
+<path d=""  transform="translate(1714, 986)"/>
+<path d=""  transform="translate(2436, 889)"/>
+<path d=""  transform="translate(2270, 986)"/>
+<path d=""  transform="translate(2815, 530)"/>
+<path d=""  transform="translate(2815, 530)"/>
+<path d=""  transform="translate(2553, 986)"/>
+<path d=""  transform="translate(3278, 888)"/>
+<path d=""  transform="translate(3109, 986)"/>
+<path d=""  transform="translate(3864, 530)"/>
+<path d=""  transform="translate(3602, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܴ݆ܩ̤ܨ݆ܸܝܱܨܱ̭ء݄ܨٍ̠ܝ݄ܨܷ̭ܝٕ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0655.SYRN=23@492,-98+0|uni071D.SYRN=23+628|uni032D.SYRN=20@237,-456+0|uni0737.SYRN=20@237,-456+0|uni0728.Fina.SYRN=20@-25,0+531|uni0744.SYRN=18@166,-97+0|uni071D.Init.SYRN=18+308|uni0320.SYRN=15+0|uni064D.SYRN=15@237,-456+0|uni0728.SYRN=15@-25,0+562|uni0744.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni032D.SYRN=10@300,-456+0|uni0731.SYRN=10@300,-456+0|uni0728.Fina.SYRN=10@38,0+594|uni0731.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0738.SYRN=5@237,-456+0|uni0746.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni0324.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni0746.SYRN=0@262,-456+0|uni0734.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0655.SYRN=23@492,-98+0|uni071D.SYRN=23+628|uni032D.SYRN=20@262,-456+0|uni0737.SYRN=20@262,-456+0|uni0728.Fina.SYRN=20+556|uni0744.SYRN=18@166,-97+0|uni071D.Init.SYRN=18+308|uni0320.SYRN=15+0|uni064D.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0744.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni032D.SYRN=10@262,-456+0|uni0731.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0731.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0738.SYRN=5@262,-456+0|uni0746.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0324.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni0746.SYRN=0@262,-456+0|uni0734.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^^                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           ^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5154 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(492, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(628, 986)"/>
+<path d=""  transform="translate(1350, 889)"/>
+<path d=""  transform="translate(1184, 986)"/>
+<path d=""  transform="translate(1492, 986)"/>
+<path d=""  transform="translate(1754, 530)"/>
+<path d=""  transform="translate(1492, 986)"/>
+<path d=""  transform="translate(2317, 888)"/>
+<path d=""  transform="translate(2079, 986)"/>
+<path d=""  transform="translate(2812, 530)"/>
+<path d=""  transform="translate(2812, 530)"/>
+<path d=""  transform="translate(2550, 986)"/>
+<path d=""  transform="translate(3272, 889)"/>
+<path d=""  transform="translate(3106, 986)"/>
+<path d=""  transform="translate(3676, 530)"/>
+<path d=""  transform="translate(3676, 530)"/>
+<path d=""  transform="translate(3414, 986)"/>
+<path d=""  transform="translate(4286, 888)"/>
+<path d=""  transform="translate(3970, 986)"/>
+<path d=""  transform="translate(4829, 530)"/>
+<path d=""  transform="translate(4829, 530)"/>
+<path d=""  transform="translate(4567, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5117 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(492, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(603, 986)"/>
+<path d=""  transform="translate(1325, 889)"/>
+<path d=""  transform="translate(1159, 986)"/>
+<path d=""  transform="translate(1467, 986)"/>
+<path d=""  transform="translate(1704, 530)"/>
+<path d=""  transform="translate(1442, 986)"/>
+<path d=""  transform="translate(2267, 888)"/>
+<path d=""  transform="translate(2029, 986)"/>
+<path d=""  transform="translate(2800, 530)"/>
+<path d=""  transform="translate(2800, 530)"/>
+<path d=""  transform="translate(2538, 986)"/>
+<path d=""  transform="translate(3260, 889)"/>
+<path d=""  transform="translate(3094, 986)"/>
+<path d=""  transform="translate(3639, 530)"/>
+<path d=""  transform="translate(3639, 530)"/>
+<path d=""  transform="translate(3377, 986)"/>
+<path d=""  transform="translate(4249, 888)"/>
+<path d=""  transform="translate(3933, 986)"/>
+<path d=""  transform="translate(4792, 530)"/>
+<path d=""  transform="translate(4792, 530)"/>
+<path d=""  transform="translate(4530, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܱܩܴܨ̮ٕܝ̭ܨ݄̣ܠܾܨ̣ܸءܷ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0737.SYRN=17@238,-98+0|uni0621.SYRN=17+471|uni0738.SYRN=14@300,-594+0|uni0323.SYRN=14@300,-456+0|uni0728.Fina.SYRN=14@38,0+594|uni073E.SYRN=12@169,-98+0|uni0720.Init.SYRN=12+418|uni0323.SYRN=9@337,-456+0|uni0744.SYRN=9@337,-456+0|uni0728.Fina.SYRN=9@75,0+631|uni032D.SYRN=7@166,-97+0|uni071D.Init.SYRN=7+308|uni0655.SYRN=4@233,-566+0|uni032E.SYRN=4@237,-456+0|uni0728.Fina.SYRN=4@-25,0+531|uni0734.SYRN=2@316,-98+0|uni0729.Init.SYRN=2+597|uni0731.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0737.SYRN=17@238,-98+0|uni0621.SYRN=17+471|uni0738.SYRN=14@262,-594+0|uni0323.SYRN=14@262,-456+0|uni0728.Fina.SYRN=14+556|uni073E.SYRN=12@169,-98+0|uni0720.Init.SYRN=12+418|uni0323.SYRN=9@262,-456+0|uni0744.SYRN=9@262,-456+0|uni0728.Fina.SYRN=9+556|uni032D.SYRN=7@166,-97+0|uni071D.Init.SYRN=7+308|uni0655.SYRN=4@258,-566+0|uni032E.SYRN=4@262,-456+0|uni0728.Fina.SYRN=4+556|uni0734.SYRN=2@316,-98+0|uni0729.Init.SYRN=2+597|uni0731.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           ^^^^^^^^^                                                                  ^^                        ^^                           ^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4049 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 392)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1196, 888)"/>
+<path d=""  transform="translate(1027, 986)"/>
+<path d=""  transform="translate(1707, 530)"/>
+<path d=""  transform="translate(1707, 530)"/>
+<path d=""  transform="translate(1445, 986)"/>
+<path d=""  transform="translate(2167, 889)"/>
+<path d=""  transform="translate(2001, 986)"/>
+<path d=""  transform="translate(2567, 420)"/>
+<path d=""  transform="translate(2571, 530)"/>
+<path d=""  transform="translate(2309, 986)"/>
+<path d=""  transform="translate(3181, 888)"/>
+<path d=""  transform="translate(2865, 986)"/>
+<path d=""  transform="translate(3724, 530)"/>
+<path d=""  transform="translate(3462, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4137 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 392)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1234, 888)"/>
+<path d=""  transform="translate(1065, 986)"/>
+<path d=""  transform="translate(1820, 530)"/>
+<path d=""  transform="translate(1820, 530)"/>
+<path d=""  transform="translate(1558, 986)"/>
+<path d=""  transform="translate(2280, 889)"/>
+<path d=""  transform="translate(2114, 986)"/>
+<path d=""  transform="translate(2655, 420)"/>
+<path d=""  transform="translate(2659, 530)"/>
+<path d=""  transform="translate(2397, 986)"/>
+<path d=""  transform="translate(3269, 888)"/>
+<path d=""  transform="translate(2953, 986)"/>
+<path d=""  transform="translate(3812, 530)"/>
+<path d=""  transform="translate(3550, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܪ݄ܔܨܾ݆ܠܱ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0731.SYRN=6@396,-98+0|uni0720.SYRN=6+800|uni0746.SYRN=3@337,-456+0|uni073E.SYRN=3@337,-456+0|uni0728.Fina.SYRN=3@75,0+631|uni0714.Init.SYRN=2+451|uni0744.SYRN=0@295,-98+0|uni072A.SYRN=0@38,0+559</pre>
+
+
+
+<pre>Got     : uni0731.SYRN=6@396,-98+0|uni0720.SYRN=6+800|uni0746.SYRN=3@262,-456+0|uni073E.SYRN=3@262,-456+0|uni0728.Fina.SYRN=3+556|uni0714.Init.SYRN=2+451|uni0744.SYRN=0@257,-98+0|uni072A.SYRN=0+521</pre>
+
+
+
+<pre>                                                                     ^^^                       ^^^                           +++++  ++                                         +                      +++++  ^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2328 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1356, 986)"/>
+<path d=""  transform="translate(2064, 888)"/>
+<path d=""  transform="translate(1807, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2441 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1431, 986)"/>
+<path d=""  transform="translate(2177, 888)"/>
+<path d=""  transform="translate(1920, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܙ̤ܙܱܨܴܡ̣ܖًܝ̄ܨٕء݆ܨܱܱܠ݄</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0744.SYRN=19@396,-98+0|uni0720.SYRN=19+800|uni0731.SYRN=16@337,-456+0|uni0731.SYRN=16@337,-456+0|uni0728.SYRN=16@75,0+662|uni0746.SYRN=14@238,-98+0|uni0621.SYRN=14+471|uni0655.SYRN=12@300,-456+0|uni0728.Fina.SYRN=12@38,0+594|uni0304.SYRN=10@151,-108+0|uni071D.Init.SYRN=10+308|uni064B.SYRN=8@248,-37+0|uni0716.Fina.SYRN=8+518|uni0323.SYRN=6@355,-98+0|uni0721.Init.SYRN=6+761|uni0734.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni0731.SYRN=2@159,-173+0|uni0719.SYRN=2+293|uni0324.SYRN=0@209,-173+0|uni0719.SYRN=0@50,0+343</pre>
+
+
+
+<pre>Got     : uni0744.SYRN=19@396,-98+0|uni0720.SYRN=19+800|uni0731.SYRN=16@262,-456+0|uni0731.SYRN=16@262,-456+0|uni0728.SYRN=16+587|uni0746.SYRN=14@238,-98+0|uni0621.SYRN=14+471|uni0655.SYRN=12@262,-456+0|uni0728.Fina.SYRN=12+556|uni0304.SYRN=10@151,-108+0|uni071D.Init.SYRN=10+308|uni064B.SYRN=8@248,-37+0|uni0716.Fina.SYRN=8+518|uni0323.SYRN=6@355,-98+0|uni0721.Init.SYRN=6+761|uni0734.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni0731.SYRN=2@159,-173+0|uni0719.SYRN=2+293|uni0324.SYRN=0@209,-173+0|uni0719.SYRN=0@50,0+343</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5224 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1625, 888)"/>
+<path d=""  transform="translate(1387, 986)"/>
+<path d=""  transform="translate(2120, 530)"/>
+<path d=""  transform="translate(1858, 986)"/>
+<path d=""  transform="translate(2565, 878)"/>
+<path d=""  transform="translate(2414, 986)"/>
+<path d=""  transform="translate(2970, 949)"/>
+<path d=""  transform="translate(2722, 986)"/>
+<path d=""  transform="translate(3595, 888)"/>
+<path d=""  transform="translate(3240, 986)"/>
+<path d=""  transform="translate(4263, 530)"/>
+<path d=""  transform="translate(4001, 986)"/>
+<path d=""  transform="translate(4747, 813)"/>
+<path d=""  transform="translate(4588, 986)"/>
+<path d=""  transform="translate(5090, 813)"/>
+<path d=""  transform="translate(4931, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5337 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1700, 888)"/>
+<path d=""  transform="translate(1462, 986)"/>
+<path d=""  transform="translate(2233, 530)"/>
+<path d=""  transform="translate(1971, 986)"/>
+<path d=""  transform="translate(2678, 878)"/>
+<path d=""  transform="translate(2527, 986)"/>
+<path d=""  transform="translate(3083, 949)"/>
+<path d=""  transform="translate(2835, 986)"/>
+<path d=""  transform="translate(3708, 888)"/>
+<path d=""  transform="translate(3353, 986)"/>
+<path d=""  transform="translate(4376, 530)"/>
+<path d=""  transform="translate(4114, 986)"/>
+<path d=""  transform="translate(4860, 813)"/>
+<path d=""  transform="translate(4701, 986)"/>
+<path d=""  transform="translate(5203, 813)"/>
+<path d=""  transform="translate(5044, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܻ݄ܝ݄ܨܱܠܼܨܷܙܱܨܸܼܝٍܨ̣ܷܘ̭</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni032D.SYRN=21@289,-98+0|uni0718.SYRN=21+578|uni0737.SYRN=18@262,-594+0|uni0323.SYRN=18@262,-456+0|uni0728.Fina.SYRN=18+556|uni064D.SYRN=16@166,-97+0|uni071D.Init.SYRN=16+308|uni073C.SYRN=13@237,-456+0|uni0738.SYRN=13@237,-456+0|uni0728.SYRN=13@-25,0+562|uni0731.SYRN=11@159,-173+0|uni0719.SYRN=11+293|uni0737.SYRN=9@262,-456+0|uni0728.Fina.SYRN=9+556|uni073C.SYRN=7@169,-98+0|uni0720.Init.SYRN=7+418|uni0731.SYRN=5@337,-456+0|uni0728.Fina.SYRN=5@75,0+631|uni0744.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0744.SYRN=0@237,-456+0|uni073B.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni032D.SYRN=21@289,-98+0|uni0718.SYRN=21+578|uni0737.SYRN=18@262,-594+0|uni0323.SYRN=18@262,-456+0|uni0728.Fina.SYRN=18+556|uni064D.SYRN=16@166,-97+0|uni071D.Init.SYRN=16+308|uni073C.SYRN=13@262,-456+0|uni0738.SYRN=13@262,-456+0|uni0728.SYRN=13+587|uni0731.SYRN=11@159,-173+0|uni0719.SYRN=11+293|uni0737.SYRN=9@262,-456+0|uni0728.Fina.SYRN=9+556|uni073C.SYRN=7@169,-98+0|uni0720.Init.SYRN=7+418|uni0731.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0744.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0744.SYRN=0@262,-456+0|uni073B.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                  ^^^                           ^^^^^^^^^                                                                  ^^                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4747 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(289, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(840, 392)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(578, 986)"/>
+<path d=""  transform="translate(1300, 889)"/>
+<path d=""  transform="translate(1134, 986)"/>
+<path d=""  transform="translate(1704, 530)"/>
+<path d=""  transform="translate(1704, 530)"/>
+<path d=""  transform="translate(1442, 986)"/>
+<path d=""  transform="translate(2188, 813)"/>
+<path d=""  transform="translate(2029, 986)"/>
+<path d=""  transform="translate(2584, 530)"/>
+<path d=""  transform="translate(2322, 986)"/>
+<path d=""  transform="translate(3047, 888)"/>
+<path d=""  transform="translate(2878, 986)"/>
+<path d=""  transform="translate(3558, 530)"/>
+<path d=""  transform="translate(3296, 986)"/>
+<path d=""  transform="translate(4018, 889)"/>
+<path d=""  transform="translate(3852, 986)"/>
+<path d=""  transform="translate(4422, 530)"/>
+<path d=""  transform="translate(4422, 530)"/>
+<path d=""  transform="translate(4160, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4772 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(289, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(840, 392)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(578, 986)"/>
+<path d=""  transform="translate(1300, 889)"/>
+<path d=""  transform="translate(1134, 986)"/>
+<path d=""  transform="translate(1679, 530)"/>
+<path d=""  transform="translate(1679, 530)"/>
+<path d=""  transform="translate(1417, 986)"/>
+<path d=""  transform="translate(2163, 813)"/>
+<path d=""  transform="translate(2004, 986)"/>
+<path d=""  transform="translate(2559, 530)"/>
+<path d=""  transform="translate(2297, 986)"/>
+<path d=""  transform="translate(3022, 888)"/>
+<path d=""  transform="translate(2853, 986)"/>
+<path d=""  transform="translate(3608, 530)"/>
+<path d=""  transform="translate(3346, 986)"/>
+<path d=""  transform="translate(4068, 889)"/>
+<path d=""  transform="translate(3902, 986)"/>
+<path d=""  transform="translate(4447, 530)"/>
+<path d=""  transform="translate(4447, 530)"/>
+<path d=""  transform="translate(4185, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٕܴء݈ܨ̣̠ء̱ܨٍٕܠ݈</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0748.SYRN=13@396,-98+0|uni0720.SYRN=13+800|uni0655064D.SYRN=10@337,-456+0|uni0728.SYRN=10@75,0+662|uni0331.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni0320.SYRN=5+0|uni0323.SYRN=5@300,-456+0|uni0728.SYRN=5@38,0+625|uni0748.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0734.SYRN=0@300,-456+0|uni0655.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625</pre>
+
+
+
+<pre>Got     : uni0748.SYRN=13@396,-98+0|uni0720.SYRN=13+800|uni0655064D.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0331.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni0320.SYRN=5+0|uni0323.SYRN=5@262,-456+0|uni0728.SYRN=5+587|uni0748.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0734.SYRN=0@262,-456+0|uni0655.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3503 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1625, 888)"/>
+<path d=""  transform="translate(1387, 986)"/>
+<path d=""  transform="translate(1858, 986)"/>
+<path d=""  transform="translate(2120, 530)"/>
+<path d=""  transform="translate(1858, 986)"/>
+<path d=""  transform="translate(2683, 888)"/>
+<path d=""  transform="translate(2445, 986)"/>
+<path d=""  transform="translate(3178, 530)"/>
+<path d=""  transform="translate(3178, 530)"/>
+<path d=""  transform="translate(2916, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3654 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1700, 888)"/>
+<path d=""  transform="translate(1462, 986)"/>
+<path d=""  transform="translate(1933, 986)"/>
+<path d=""  transform="translate(2233, 530)"/>
+<path d=""  transform="translate(1971, 986)"/>
+<path d=""  transform="translate(2796, 888)"/>
+<path d=""  transform="translate(2558, 986)"/>
+<path d=""  transform="translate(3329, 530)"/>
+<path d=""  transform="translate(3329, 530)"/>
+<path d=""  transform="translate(3067, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̱̤ܡ̮ܪܩܨ̠ܱءܱܨِ̣ܝ̮ܨܾܴءܴ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0734.SYRN=20@238,-98+0|uni0621.SYRN=20+471|uni0734.SYRN=17@300,-456+0|uni073E.SYRN=17@300,-456+0|uni0728.Fina.SYRN=17@38,0+594|uni032E.SYRN=15@166,-97+0|uni071D.Init.SYRN=15+308|uni0323.SYRN=12@237,-456+0|uni0650.SYRN=12@237,-456+0|uni0728.SYRN=12@-25,0+562|uni0731.SYRN=10@238,-98+0|uni0621.SYRN=10+471|uni0731.SYRN=7@0,-120+0|uni0320.SYRN=7+0|uni0728.Fina.SYRN=7@38,0+594|uni0729.Init.SYRN=6+597|uni072A.Fina.SYRN=5+518|uni032E.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0324.SYRN=0@262,-456+0|uni0331.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0734.SYRN=20@238,-98+0|uni0621.SYRN=20+471|uni0734.SYRN=17@262,-456+0|uni073E.SYRN=17@262,-456+0|uni0728.Fina.SYRN=17+556|uni032E.SYRN=15@166,-97+0|uni071D.Init.SYRN=15+308|uni0323.SYRN=12@262,-456+0|uni0650.SYRN=12@262,-456+0|uni0728.SYRN=12+587|uni0731.SYRN=10@238,-98+0|uni0621.SYRN=10+471|uni0731.SYRN=7@262,-456+0|uni0320.SYRN=7+0|uni0728.Fina.SYRN=7+556|uni0729.Init.SYRN=6+597|uni072A.Fina.SYRN=5+518|uni032E.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0324.SYRN=0@262,-456+0|uni0331.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5412 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1193, 889)"/>
+<path d=""  transform="translate(1027, 986)"/>
+<path d=""  transform="translate(1597, 530)"/>
+<path d=""  transform="translate(1597, 530)"/>
+<path d=""  transform="translate(1335, 986)"/>
+<path d=""  transform="translate(2160, 888)"/>
+<path d=""  transform="translate(1922, 986)"/>
+<path d=""  transform="translate(2655, 530)"/>
+<path d=""  transform="translate(2393, 986)"/>
+<path d=""  transform="translate(2393, 986)"/>
+<path d=""  transform="translate(2949, 986)"/>
+<path d=""  transform="translate(3546, 986)"/>
+<path d=""  transform="translate(4419, 888)"/>
+<path d=""  transform="translate(4064, 986)"/>
+<path d=""  transform="translate(5087, 530)"/>
+<path d=""  transform="translate(5087, 530)"/>
+<path d=""  transform="translate(4825, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5463 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1231, 889)"/>
+<path d=""  transform="translate(1065, 986)"/>
+<path d=""  transform="translate(1610, 530)"/>
+<path d=""  transform="translate(1610, 530)"/>
+<path d=""  transform="translate(1348, 986)"/>
+<path d=""  transform="translate(2173, 888)"/>
+<path d=""  transform="translate(1935, 986)"/>
+<path d=""  transform="translate(2406, 866)"/>
+<path d=""  transform="translate(2406, 986)"/>
+<path d=""  transform="translate(2444, 986)"/>
+<path d=""  transform="translate(3000, 986)"/>
+<path d=""  transform="translate(3597, 986)"/>
+<path d=""  transform="translate(4470, 888)"/>
+<path d=""  transform="translate(4115, 986)"/>
+<path d=""  transform="translate(5138, 530)"/>
+<path d=""  transform="translate(5138, 530)"/>
+<path d=""  transform="translate(4876, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܕ̮ܛܨٍ̱ܡܾܨ̠ܷܠ̰ܨٍ̭ܝ̠ܨ̱ܴءٕ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0655.SYRN=21@238,-98+0|uni0621.SYRN=21+471|uni0734.SYRN=18@300,-576+0|uni0331.SYRN=18@300,-456+0|uni0728.Fina.SYRN=18@38,0+594|uni0320.SYRN=16+0|uni071D.Init.SYRN=16+308|uni032D.SYRN=13@237,-456+0|uni064D.SYRN=13@237,-456+0|uni0728.Fina.SYRN=13@-25,0+531|uni0330.SYRN=11@169,-98+0|uni0720.Init.SYRN=11+418|uni0737.SYRN=8@0,-120+0|uni0320.SYRN=8+0|uni0728.Fina.SYRN=8@75,0+631|uni073E.SYRN=6@355,-98+0|uni0721.Init.SYRN=6+761|uni0331.SYRN=3@262,-456+0|uni064D.SYRN=3@262,-456+0|uni0728.Fina.SYRN=3+556|uni071B.Init.SYRN=2+743|uni032E.SYRN=0@244,-257+0|uni0715.SYRN=0+521</pre>
+
+
+
+<pre>Got     : uni0655.SYRN=21@238,-98+0|uni0621.SYRN=21+471|uni0734.SYRN=18@262,-576+0|uni0331.SYRN=18@262,-456+0|uni0728.Fina.SYRN=18+556|uni0320.SYRN=16+0|uni071D.Init.SYRN=16+308|uni032D.SYRN=13@262,-456+0|uni064D.SYRN=13@262,-456+0|uni0728.Fina.SYRN=13+556|uni0330.SYRN=11@169,-98+0|uni0720.Init.SYRN=11+418|uni0737.SYRN=8@262,-456+0|uni0320.SYRN=8+0|uni0728.Fina.SYRN=8+556|uni073E.SYRN=6@355,-98+0|uni0721.Init.SYRN=6+761|uni0331.SYRN=3@262,-456+0|uni064D.SYRN=3@262,-456+0|uni0728.Fina.SYRN=3+556|uni071B.Init.SYRN=2+743|uni032E.SYRN=0@244,-257+0|uni0715.SYRN=0+521</pre>
+
+
+
+<pre>                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                             ^^                         ^^                            ^^^^^^^^^^                                                                   ^^^^^^                                       ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5446 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 410)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1027, 986)"/>
+<path d=""  transform="translate(1027, 986)"/>
+<path d=""  transform="translate(1597, 530)"/>
+<path d=""  transform="translate(1597, 530)"/>
+<path d=""  transform="translate(1335, 986)"/>
+<path d=""  transform="translate(2060, 888)"/>
+<path d=""  transform="translate(1891, 986)"/>
+<path d=""  transform="translate(2571, 530)"/>
+<path d=""  transform="translate(2309, 986)"/>
+<path d=""  transform="translate(2309, 986)"/>
+<path d=""  transform="translate(3220, 888)"/>
+<path d=""  transform="translate(2865, 986)"/>
+<path d=""  transform="translate(3888, 530)"/>
+<path d=""  transform="translate(3888, 530)"/>
+<path d=""  transform="translate(3626, 986)"/>
+<path d=""  transform="translate(4182, 986)"/>
+<path d=""  transform="translate(5169, 729)"/>
+<path d=""  transform="translate(4925, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5534 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 410)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1065, 986)"/>
+<path d=""  transform="translate(1065, 986)"/>
+<path d=""  transform="translate(1610, 530)"/>
+<path d=""  transform="translate(1610, 530)"/>
+<path d=""  transform="translate(1348, 986)"/>
+<path d=""  transform="translate(2073, 888)"/>
+<path d=""  transform="translate(1904, 986)"/>
+<path d=""  transform="translate(2322, 866)"/>
+<path d=""  transform="translate(2322, 986)"/>
+<path d=""  transform="translate(2397, 986)"/>
+<path d=""  transform="translate(3308, 888)"/>
+<path d=""  transform="translate(2953, 986)"/>
+<path d=""  transform="translate(3976, 530)"/>
+<path d=""  transform="translate(3976, 530)"/>
+<path d=""  transform="translate(3714, 986)"/>
+<path d=""  transform="translate(4270, 986)"/>
+<path d=""  transform="translate(5257, 729)"/>
+<path d=""  transform="translate(5013, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܭٓܨ̭ܷܡ̱ܨ̣ܠِ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0650.SYRN=9@396,-98+0|uni0720.SYRN=9+800|uni0323.SYRN=7@337,-456+0|uni0728.Fina.SYRN=7@75,0+631|uni0331.SYRN=5@355,-98+0|uni0721.Init.SYRN=5+761|uni0737.SYRN=2@258,-617+0|uni032D.SYRN=2@262,-456+0|uni0728.Fina.SYRN=2+556|uni0653.SYRN=0@210,149+0|uni072D.Init.SYRN=0+538</pre>
+
+
+
+<pre>Got     : uni0650.SYRN=9@396,-98+0|uni0720.SYRN=9+800|uni0323.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0331.SYRN=5@355,-98+0|uni0721.Init.SYRN=5+761|uni0737.SYRN=2@258,-617+0|uni032D.SYRN=2@262,-456+0|uni0728.Fina.SYRN=2+556|uni0653.SYRN=0@210,149+0|uni072D.Init.SYRN=0+538</pre>
+
+
+
+<pre>                                                                     ^^^                           ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3211 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1711, 888)"/>
+<path d=""  transform="translate(1356, 986)"/>
+<path d=""  transform="translate(2375, 369)"/>
+<path d=""  transform="translate(2379, 530)"/>
+<path d=""  transform="translate(2117, 986)"/>
+<path d=""  transform="translate(2883, 1135)"/>
+<path d=""  transform="translate(2673, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3286 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1786, 888)"/>
+<path d=""  transform="translate(1431, 986)"/>
+<path d=""  transform="translate(2450, 369)"/>
+<path d=""  transform="translate(2454, 530)"/>
+<path d=""  transform="translate(2192, 986)"/>
+<path d=""  transform="translate(2958, 1135)"/>
+<path d=""  transform="translate(2748, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܴ̤ܡ݆ܨِٕܝ̤</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0324.SYRN=8@492,-98+0|uni071D.SYRN=8+628|uni06550650.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni0746.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0324.SYRN=0@262,-456+0|uni0734.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0324.SYRN=8@492,-98+0|uni071D.SYRN=8+628|uni06550650.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0746.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0324.SYRN=0@262,-456+0|uni0734.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                          ^^                           ^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2532 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(492, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(628, 986)"/>
+<path d=""  transform="translate(1539, 888)"/>
+<path d=""  transform="translate(1184, 986)"/>
+<path d=""  transform="translate(2207, 530)"/>
+<path d=""  transform="translate(2207, 530)"/>
+<path d=""  transform="translate(1945, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2507 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(492, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(603, 986)"/>
+<path d=""  transform="translate(1514, 888)"/>
+<path d=""  transform="translate(1159, 986)"/>
+<path d=""  transform="translate(2182, 530)"/>
+<path d=""  transform="translate(2182, 530)"/>
+<path d=""  transform="translate(1920, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܴܾܡܷܨ̮̰ء̱ܨ̣ܡ̤</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0324.SYRN=12@435,-99+0|uni0721.SYRN=12+705|uni0323.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0331.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni0330.SYRN=5@300,-456+0|uni032E.SYRN=5@300,-456+0|uni0728.Fina.SYRN=5@38,0+594|uni0737.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073E.SYRN=0@262,-456+0|uni0734.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0324.SYRN=12@435,-99+0|uni0721.SYRN=12+705|uni0323.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0331.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni0330.SYRN=5@262,-456+0|uni032E.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0737.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073E.SYRN=0@262,-456+0|uni0734.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                  ^^^                       ^^^                           ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3667 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1530, 888)"/>
+<path d=""  transform="translate(1292, 986)"/>
+<path d=""  transform="translate(2025, 530)"/>
+<path d=""  transform="translate(2025, 530)"/>
+<path d=""  transform="translate(1763, 986)"/>
+<path d=""  transform="translate(2674, 888)"/>
+<path d=""  transform="translate(2319, 986)"/>
+<path d=""  transform="translate(3342, 530)"/>
+<path d=""  transform="translate(3342, 530)"/>
+<path d=""  transform="translate(3080, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3705 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1530, 888)"/>
+<path d=""  transform="translate(1292, 986)"/>
+<path d=""  transform="translate(2063, 530)"/>
+<path d=""  transform="translate(2063, 530)"/>
+<path d=""  transform="translate(1801, 986)"/>
+<path d=""  transform="translate(2712, 888)"/>
+<path d=""  transform="translate(2357, 986)"/>
+<path d=""  transform="translate(3380, 530)"/>
+<path d=""  transform="translate(3380, 530)"/>
+<path d=""  transform="translate(3118, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܷ̤ܙܻܨ̰ܱܠ̮ܐ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0710.FinaLiga.SYRN=10+403|uni032E.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni0731.SYRN=5@333,-597+0|uni0330.SYRN=5@337,-456+0|uni0728.SYRN=5@75,0+662|uni073B.SYRN=3@159,-173+0|uni0719.SYRN=3+293|uni0324.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0710.FinaLiga.SYRN=10+403|uni032E.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni0731.SYRN=5@258,-597+0|uni0330.SYRN=5@262,-456+0|uni0728.SYRN=5+587|uni073B.SYRN=3@159,-173+0|uni0719.SYRN=3+293|uni0324.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2288 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(572, 888)"/>
+<path d=""  transform="translate(403, 986)"/>
+<path d=""  transform="translate(1079, 389)"/>
+<path d=""  transform="translate(1083, 530)"/>
+<path d=""  transform="translate(821, 986)"/>
+<path d=""  transform="translate(1567, 813)"/>
+<path d=""  transform="translate(1408, 986)"/>
+<path d=""  transform="translate(1963, 530)"/>
+<path d=""  transform="translate(1963, 530)"/>
+<path d=""  transform="translate(1701, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2363 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(572, 888)"/>
+<path d=""  transform="translate(403, 986)"/>
+<path d=""  transform="translate(1154, 389)"/>
+<path d=""  transform="translate(1158, 530)"/>
+<path d=""  transform="translate(896, 986)"/>
+<path d=""  transform="translate(1642, 813)"/>
+<path d=""  transform="translate(1483, 986)"/>
+<path d=""  transform="translate(2038, 530)"/>
+<path d=""  transform="translate(2038, 530)"/>
+<path d=""  transform="translate(1776, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̠̣ܝٍܨ݆ܼءܱܨܷܹܩܼܚٰ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0670.SYRN=15@571,-108+0|uni071A.Fina.SYRN=15+821|uni073C.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni0739.SYRN=10@262,-456+0|uni0737.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0731.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni073C.SYRN=5@300,-456+0|uni0746.SYRN=5@300,-456+0|uni0728.Fina.SYRN=5@38,0+594|uni064D.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0323.SYRN=0@237,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni0670.SYRN=15@571,-108+0|uni071A.Fina.SYRN=15+821|uni073C.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni0739.SYRN=10@262,-456+0|uni0737.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0731.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni073C.SYRN=5@262,-456+0|uni0746.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni064D.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0323.SYRN=0@262,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           ^^^^^^^^^                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3927 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(571, 878)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 888)"/>
+<path d=""  transform="translate(821, 986)"/>
+<path d=""  transform="translate(1680, 530)"/>
+<path d=""  transform="translate(1680, 530)"/>
+<path d=""  transform="translate(1418, 986)"/>
+<path d=""  transform="translate(2243, 888)"/>
+<path d=""  transform="translate(2005, 986)"/>
+<path d=""  transform="translate(2738, 530)"/>
+<path d=""  transform="translate(2738, 530)"/>
+<path d=""  transform="translate(2476, 986)"/>
+<path d=""  transform="translate(3198, 889)"/>
+<path d=""  transform="translate(3032, 986)"/>
+<path d=""  transform="translate(3602, 530)"/>
+<path d=""  transform="translate(3340, 986)"/>
+<path d=""  transform="translate(3340, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3940 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(571, 878)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 888)"/>
+<path d=""  transform="translate(821, 986)"/>
+<path d=""  transform="translate(1680, 530)"/>
+<path d=""  transform="translate(1680, 530)"/>
+<path d=""  transform="translate(1418, 986)"/>
+<path d=""  transform="translate(2243, 888)"/>
+<path d=""  transform="translate(2005, 986)"/>
+<path d=""  transform="translate(2776, 530)"/>
+<path d=""  transform="translate(2776, 530)"/>
+<path d=""  transform="translate(2514, 986)"/>
+<path d=""  transform="translate(3236, 889)"/>
+<path d=""  transform="translate(3070, 986)"/>
+<path d=""  transform="translate(3615, 530)"/>
+<path d=""  transform="translate(3378, 986)"/>
+<path d=""  transform="translate(3353, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܱܼءܱܨ̣ܱܝ̰ܕ̤ܓܨܹܹءܻܨ݄̭ܝܻ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni073B.SYRN=21@492,-98+0|uni071D.SYRN=21+628|uni032D.SYRN=18@237,-456+0|uni0744.SYRN=18@237,-456+0|uni0728.SYRN=18@-25,0+562|uni073B.SYRN=16@238,-98+0|uni0621.SYRN=16+471|uni0739.SYRN=13@300,-456+0|uni0739.SYRN=13@300,-456+0|uni0728.Fina.SYRN=13@38,0+594|uni0713.Init.SYRN=12+451|uni0324.SYRN=10@281,-257+0|uni0715.Fina.SYRN=10@38,0+556|uni0330.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0731.SYRN=5@237,-594+0|uni0323.SYRN=5@237,-456+0|uni0728.SYRN=5@-25,0+562|uni0731.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni073C.SYRN=0@300,-456+0|uni0731.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625</pre>
+
+
+
+<pre>Got     : uni073B.SYRN=21@492,-98+0|uni071D.SYRN=21+628|uni032D.SYRN=18@262,-456+0|uni0744.SYRN=18@262,-456+0|uni0728.SYRN=18+587|uni073B.SYRN=16@238,-98+0|uni0621.SYRN=16+471|uni0739.SYRN=13@262,-456+0|uni0739.SYRN=13@262,-456+0|uni0728.Fina.SYRN=13+556|uni0713.Init.SYRN=12+451|uni0324.SYRN=10@243,-257+0|uni0715.Fina.SYRN=10+518|uni0330.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0731.SYRN=5@262,-594+0|uni0323.SYRN=5@262,-456+0|uni0728.SYRN=5+587|uni0731.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni073C.SYRN=0@262,-456+0|uni0731.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5164 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(492, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(628, 986)"/>
+<path d=""  transform="translate(1453, 888)"/>
+<path d=""  transform="translate(1215, 986)"/>
+<path d=""  transform="translate(1948, 530)"/>
+<path d=""  transform="translate(1948, 530)"/>
+<path d=""  transform="translate(1686, 986)"/>
+<path d=""  transform="translate(2242, 986)"/>
+<path d=""  transform="translate(2936, 729)"/>
+<path d=""  transform="translate(2693, 986)"/>
+<path d=""  transform="translate(3377, 889)"/>
+<path d=""  transform="translate(3211, 986)"/>
+<path d=""  transform="translate(3781, 392)"/>
+<path d=""  transform="translate(3781, 530)"/>
+<path d=""  transform="translate(3519, 986)"/>
+<path d=""  transform="translate(4344, 888)"/>
+<path d=""  transform="translate(4106, 986)"/>
+<path d=""  transform="translate(4839, 530)"/>
+<path d=""  transform="translate(4839, 530)"/>
+<path d=""  transform="translate(4577, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5228 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(492, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(603, 986)"/>
+<path d=""  transform="translate(1428, 888)"/>
+<path d=""  transform="translate(1190, 986)"/>
+<path d=""  transform="translate(1961, 530)"/>
+<path d=""  transform="translate(1961, 530)"/>
+<path d=""  transform="translate(1699, 986)"/>
+<path d=""  transform="translate(2255, 986)"/>
+<path d=""  transform="translate(2987, 729)"/>
+<path d=""  transform="translate(2744, 986)"/>
+<path d=""  transform="translate(3428, 889)"/>
+<path d=""  transform="translate(3262, 986)"/>
+<path d=""  transform="translate(3807, 392)"/>
+<path d=""  transform="translate(3807, 530)"/>
+<path d=""  transform="translate(3545, 986)"/>
+<path d=""  transform="translate(4370, 888)"/>
+<path d=""  transform="translate(4132, 986)"/>
+<path d=""  transform="translate(4903, 530)"/>
+<path d=""  transform="translate(4903, 530)"/>
+<path d=""  transform="translate(4641, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٍ݄ܠ̮ܨ݆݈ءܱܨ݆ܾءِܨܷܱܡܼܪ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni072A.Fina.SYRN=20+518|uni073C.SYRN=18@355,-98+0|uni0721.Init.SYRN=18+761|uni0731.SYRN=15@262,-456+0|uni0737.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0650.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni073E.SYRN=10@300,-456+0|uni0746.SYRN=10@300,-456+0|uni0728.SYRN=10@38,0+625|uni0731.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni0748.SYRN=5@300,-456+0|uni0746.SYRN=5@300,-456+0|uni0728.Fina.SYRN=5@38,0+594|uni032E.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0744.SYRN=0@337,-456+0|uni064D.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662</pre>
+
+
+
+<pre>Got     : uni072A.Fina.SYRN=20+518|uni073C.SYRN=18@355,-98+0|uni0721.Init.SYRN=18+761|uni0731.SYRN=15@262,-456+0|uni0737.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0650.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni073E.SYRN=10@262,-456+0|uni0746.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0731.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni0748.SYRN=5@262,-456+0|uni0746.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni032E.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0744.SYRN=0@262,-456+0|uni064D.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4956 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(873, 888)"/>
+<path d=""  transform="translate(518, 986)"/>
+<path d=""  transform="translate(1541, 530)"/>
+<path d=""  transform="translate(1541, 530)"/>
+<path d=""  transform="translate(1279, 986)"/>
+<path d=""  transform="translate(2104, 888)"/>
+<path d=""  transform="translate(1866, 986)"/>
+<path d=""  transform="translate(2599, 530)"/>
+<path d=""  transform="translate(2599, 530)"/>
+<path d=""  transform="translate(2337, 986)"/>
+<path d=""  transform="translate(3162, 888)"/>
+<path d=""  transform="translate(2924, 986)"/>
+<path d=""  transform="translate(3657, 530)"/>
+<path d=""  transform="translate(3657, 530)"/>
+<path d=""  transform="translate(3395, 986)"/>
+<path d=""  transform="translate(4120, 888)"/>
+<path d=""  transform="translate(3951, 986)"/>
+<path d=""  transform="translate(4631, 530)"/>
+<path d=""  transform="translate(4631, 530)"/>
+<path d=""  transform="translate(4369, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5107 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(873, 888)"/>
+<path d=""  transform="translate(518, 986)"/>
+<path d=""  transform="translate(1541, 530)"/>
+<path d=""  transform="translate(1541, 530)"/>
+<path d=""  transform="translate(1279, 986)"/>
+<path d=""  transform="translate(2104, 888)"/>
+<path d=""  transform="translate(1866, 986)"/>
+<path d=""  transform="translate(2637, 530)"/>
+<path d=""  transform="translate(2637, 530)"/>
+<path d=""  transform="translate(2375, 986)"/>
+<path d=""  transform="translate(3200, 888)"/>
+<path d=""  transform="translate(2962, 986)"/>
+<path d=""  transform="translate(3733, 530)"/>
+<path d=""  transform="translate(3733, 530)"/>
+<path d=""  transform="translate(3471, 986)"/>
+<path d=""  transform="translate(4196, 888)"/>
+<path d=""  transform="translate(4027, 986)"/>
+<path d=""  transform="translate(4782, 530)"/>
+<path d=""  transform="translate(4782, 530)"/>
+<path d=""  transform="translate(4520, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̠̱ܡ̣ܨܸܴܠ̮ܦٌܧ̄ܨٍܾܠٍ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni064D.SYRN=17@396,-98+0|uni0720.SYRN=17+800|uni073E.SYRN=14@337,-456+0|uni064D.SYRN=14@337,-456+0|uni0728.Fina.SYRN=14@75,0+631|uni0304.SYRN=12@288,209+0|uni0727.Medi.SYRN=12+547|uni064C.SYRN=10@197,113+0|uni0726.Medi.SYRN=10+551|uni032E.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni0734.SYRN=5@337,-456+0|uni0738.SYRN=5@337,-456+0|uni0728.Fina.SYRN=5@75,0+631|uni0323.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0331.SYRN=0@262,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni064D.SYRN=17@396,-98+0|uni0720.SYRN=17+800|uni073E.SYRN=14@262,-456+0|uni064D.SYRN=14@262,-456+0|uni0728.Fina.SYRN=14+556|uni0304.SYRN=12@288,209+0|uni0727.Medi.SYRN=12+547|uni064C.SYRN=10@197,113+0|uni0726.Medi.SYRN=10+551|uni032E.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni0734.SYRN=5@262,-456+0|uni0738.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0323.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0331.SYRN=0@262,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^                        ^^^                            ^^^^^^^^^                                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4776 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1644, 1195)"/>
+<path d=""  transform="translate(1356, 986)"/>
+<path d=""  transform="translate(2100, 1099)"/>
+<path d=""  transform="translate(1903, 986)"/>
+<path d=""  transform="translate(2623, 888)"/>
+<path d=""  transform="translate(2454, 986)"/>
+<path d=""  transform="translate(3134, 530)"/>
+<path d=""  transform="translate(3134, 530)"/>
+<path d=""  transform="translate(2872, 986)"/>
+<path d=""  transform="translate(3783, 888)"/>
+<path d=""  transform="translate(3428, 986)"/>
+<path d=""  transform="translate(4451, 530)"/>
+<path d=""  transform="translate(4189, 986)"/>
+<path d=""  transform="translate(4189, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4926 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1719, 1195)"/>
+<path d=""  transform="translate(1431, 986)"/>
+<path d=""  transform="translate(2175, 1099)"/>
+<path d=""  transform="translate(1978, 986)"/>
+<path d=""  transform="translate(2698, 888)"/>
+<path d=""  transform="translate(2529, 986)"/>
+<path d=""  transform="translate(3284, 530)"/>
+<path d=""  transform="translate(3284, 530)"/>
+<path d=""  transform="translate(3022, 986)"/>
+<path d=""  transform="translate(3933, 888)"/>
+<path d=""  transform="translate(3578, 986)"/>
+<path d=""  transform="translate(4601, 530)"/>
+<path d=""  transform="translate(4339, 986)"/>
+<path d=""  transform="translate(4339, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܙُܙّܨܹܾء̰ܕ݅ܝٌܘَ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni064E.SYRN=13@292,7+0|uni0718.Fina.SYRN=13+573|uni064C.SYRN=11@151,-108+0|uni071D.Init.SYRN=11+308|uni0745.SYRN=9@248,-37+0|uni0715.SYRN=9+521|uni0330.SYRN=7@238,-98+0|uni0621.SYRN=7+471|uni073E.SYRN=4@300,-456+0|uni0739.SYRN=4@300,-456+0|uni0728.SYRN=4@38,0+625|uni0651.SYRN=2@152,-57+0|uni0719.SYRN=2+293|uni064F.SYRN=0@202,-57+0|uni0719.SYRN=0@50,0+343</pre>
+
+
+
+<pre>Got     : uni064E.SYRN=13@292,7+0|uni0718.Fina.SYRN=13+573|uni064C.SYRN=11@151,-108+0|uni071D.Init.SYRN=11+308|uni0745.SYRN=9@248,-37+0|uni0715.SYRN=9+521|uni0330.SYRN=7@238,-98+0|uni0621.SYRN=7+471|uni073E.SYRN=4@262,-456+0|uni0739.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni0651.SYRN=2@152,-57+0|uni0719.SYRN=2+293|uni064F.SYRN=0@202,-57+0|uni0719.SYRN=0@50,0+343</pre>
+
+
+
+<pre>                                                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3096 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(292, 993)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(724, 878)"/>
+<path d=""  transform="translate(573, 986)"/>
+<path d=""  transform="translate(1129, 949)"/>
+<path d=""  transform="translate(881, 986)"/>
+<path d=""  transform="translate(1640, 888)"/>
+<path d=""  transform="translate(1402, 986)"/>
+<path d=""  transform="translate(2135, 530)"/>
+<path d=""  transform="translate(2135, 530)"/>
+<path d=""  transform="translate(1873, 986)"/>
+<path d=""  transform="translate(2612, 929)"/>
+<path d=""  transform="translate(2460, 986)"/>
+<path d=""  transform="translate(2955, 929)"/>
+<path d=""  transform="translate(2803, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3134 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(292, 993)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(724, 878)"/>
+<path d=""  transform="translate(573, 986)"/>
+<path d=""  transform="translate(1129, 949)"/>
+<path d=""  transform="translate(881, 986)"/>
+<path d=""  transform="translate(1640, 888)"/>
+<path d=""  transform="translate(1402, 986)"/>
+<path d=""  transform="translate(2173, 530)"/>
+<path d=""  transform="translate(2173, 530)"/>
+<path d=""  transform="translate(1911, 986)"/>
+<path d=""  transform="translate(2650, 929)"/>
+<path d=""  transform="translate(2498, 986)"/>
+<path d=""  transform="translate(2993, 929)"/>
+<path d=""  transform="translate(2841, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٍ݆ܘِܙܻܮ̊ܨ̭݈ء̮ܨٕ̰ܘِ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0650.SYRN=17@289,-98+0|uni0718.SYRN=17+578|uni0330.SYRN=14@262,-456+0|uni0655.SYRN=14@262,-456+0|uni0728.SYRN=14+587|uni032E.SYRN=12@238,-98+0|uni0621.SYRN=12+471|uni0748.SYRN=9@296,-617+0|uni032D.SYRN=9@300,-456+0|uni0728.Fina.SYRN=9@38,0+594|uni030A.SYRN=7@-10,231+0|uni072E.Init.SYRN=7+451|uni073B.SYRN=5@222,-338+0|uni0719.SYRN=5@25,0+318|uni0650.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0746.SYRN=0@262,-456+0|uni064D.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0650.SYRN=17@289,-98+0|uni0718.SYRN=17+578|uni0330.SYRN=14@262,-456+0|uni0655.SYRN=14@262,-456+0|uni0728.SYRN=14+587|uni032E.SYRN=12@238,-98+0|uni0621.SYRN=12+471|uni0748.SYRN=9@258,-617+0|uni032D.SYRN=9@262,-456+0|uni0728.Fina.SYRN=9+556|uni030A.SYRN=7@-10,231+0|uni072E.Init.SYRN=7+451|uni073B.SYRN=5@197,-338+0|uni0719.SYRN=5+293|uni0650.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0746.SYRN=0@262,-456+0|uni064D.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                ^^                       ^^^                           ^^^^^^^^^                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4101 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(289, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(578, 986)"/>
+<path d=""  transform="translate(1403, 888)"/>
+<path d=""  transform="translate(1165, 986)"/>
+<path d=""  transform="translate(1894, 369)"/>
+<path d=""  transform="translate(1898, 530)"/>
+<path d=""  transform="translate(1636, 986)"/>
+<path d=""  transform="translate(2182, 1217)"/>
+<path d=""  transform="translate(2192, 986)"/>
+<path d=""  transform="translate(2840, 648)"/>
+<path d=""  transform="translate(2643, 986)"/>
+<path d=""  transform="translate(3225, 888)"/>
+<path d=""  transform="translate(2936, 986)"/>
+<path d=""  transform="translate(3776, 530)"/>
+<path d=""  transform="translate(3776, 530)"/>
+<path d=""  transform="translate(3514, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4164 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(289, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(578, 986)"/>
+<path d=""  transform="translate(1403, 888)"/>
+<path d=""  transform="translate(1165, 986)"/>
+<path d=""  transform="translate(1932, 369)"/>
+<path d=""  transform="translate(1936, 530)"/>
+<path d=""  transform="translate(1674, 986)"/>
+<path d=""  transform="translate(2220, 1217)"/>
+<path d=""  transform="translate(2230, 986)"/>
+<path d=""  transform="translate(2903, 648)"/>
+<path d=""  transform="translate(2706, 986)"/>
+<path d=""  transform="translate(3288, 888)"/>
+<path d=""  transform="translate(2999, 986)"/>
+<path d=""  transform="translate(3839, 530)"/>
+<path d=""  transform="translate(3839, 530)"/>
+<path d=""  transform="translate(3577, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̭̭ܘܹܨٕ̭ܝ̱ܨٍٕܡ̱</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0331.SYRN=13@435,-99+0|uni0721.SYRN=13+705|uni0655064D.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0331.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni032D.SYRN=5@237,-456+0|uni0655.SYRN=5@237,-456+0|uni0728.SYRN=5@-25,0+562|uni0739.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni032D.SYRN=0@262,-456+0|uni032D.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0331.SYRN=13@435,-99+0|uni0721.SYRN=13+705|uni0655064D.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0331.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni032D.SYRN=5@262,-456+0|uni0655.SYRN=5@262,-456+0|uni0728.SYRN=5+587|uni0739.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni032D.SYRN=0@262,-456+0|uni032D.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3321 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1427, 889)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1831, 530)"/>
+<path d=""  transform="translate(1831, 530)"/>
+<path d=""  transform="translate(1569, 986)"/>
+<path d=""  transform="translate(2445, 888)"/>
+<path d=""  transform="translate(2156, 986)"/>
+<path d=""  transform="translate(2996, 530)"/>
+<path d=""  transform="translate(2996, 530)"/>
+<path d=""  transform="translate(2734, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3296 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1427, 889)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1806, 530)"/>
+<path d=""  transform="translate(1806, 530)"/>
+<path d=""  transform="translate(1544, 986)"/>
+<path d=""  transform="translate(2420, 888)"/>
+<path d=""  transform="translate(2131, 986)"/>
+<path d=""  transform="translate(2971, 530)"/>
+<path d=""  transform="translate(2971, 530)"/>
+<path d=""  transform="translate(2709, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܼ̠ܙ݄ܨ̭ܝ̱</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0331.SYRN=7@492,-98+0|uni071D.SYRN=7+628|uni032D.SYRN=5@237,-456+0|uni0728.SYRN=5@-25,0+562|uni0744.SYRN=3@159,-173+0|uni0719.SYRN=3+293|uni0320.SYRN=0+0|uni073C.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0331.SYRN=7@492,-98+0|uni071D.SYRN=7+628|uni032D.SYRN=5@262,-456+0|uni0728.SYRN=5+587|uni0744.SYRN=3@159,-173+0|uni0719.SYRN=3+293|uni0320.SYRN=0+0|uni073C.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2095 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(492, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(628, 986)"/>
+<path d=""  transform="translate(1374, 813)"/>
+<path d=""  transform="translate(1215, 986)"/>
+<path d=""  transform="translate(1508, 986)"/>
+<path d=""  transform="translate(1770, 530)"/>
+<path d=""  transform="translate(1508, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2070 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(492, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(603, 986)"/>
+<path d=""  transform="translate(1349, 813)"/>
+<path d=""  transform="translate(1190, 986)"/>
+<path d=""  transform="translate(1483, 986)"/>
+<path d=""  transform="translate(1745, 530)"/>
+<path d=""  transform="translate(1483, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܙܾܨܴܹء݆ܨِܴܩٕ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0655.SYRN=11@483,-99+0|uni0729.SYRN=11+884|uni0734.SYRN=8@262,-456+0|uni0650.SYRN=8@262,-456+0|uni0728.SYRN=8+587|uni0746.SYRN=6@238,-98+0|uni0621.SYRN=6+471|uni0739.SYRN=3@300,-456+0|uni0734.SYRN=3@300,-456+0|uni0728.SYRN=3@38,0+625|uni073E.SYRN=1@159,-173+0|uni0719.SYRN=1+293|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0655.SYRN=11@483,-99+0|uni0729.SYRN=11+884|uni0734.SYRN=8@262,-456+0|uni0650.SYRN=8@262,-456+0|uni0728.SYRN=8+587|uni0746.SYRN=6@238,-98+0|uni0621.SYRN=6+471|uni0739.SYRN=3@262,-456+0|uni0734.SYRN=3@262,-456+0|uni0728.SYRN=3+587|uni073E.SYRN=1@159,-173+0|uni0719.SYRN=1+293|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3409 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(483, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1146, 530)"/>
+<path d=""  transform="translate(1146, 530)"/>
+<path d=""  transform="translate(884, 986)"/>
+<path d=""  transform="translate(1709, 888)"/>
+<path d=""  transform="translate(1471, 986)"/>
+<path d=""  transform="translate(2204, 530)"/>
+<path d=""  transform="translate(2204, 530)"/>
+<path d=""  transform="translate(1942, 986)"/>
+<path d=""  transform="translate(2688, 813)"/>
+<path d=""  transform="translate(2529, 986)"/>
+<path d=""  transform="translate(2822, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3447 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(483, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1146, 530)"/>
+<path d=""  transform="translate(1146, 530)"/>
+<path d=""  transform="translate(884, 986)"/>
+<path d=""  transform="translate(1709, 888)"/>
+<path d=""  transform="translate(1471, 986)"/>
+<path d=""  transform="translate(2242, 530)"/>
+<path d=""  transform="translate(2242, 530)"/>
+<path d=""  transform="translate(1980, 986)"/>
+<path d=""  transform="translate(2726, 813)"/>
+<path d=""  transform="translate(2567, 986)"/>
+<path d=""  transform="translate(2860, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܴ݈ܠ̭ܨ݆ܾܘ̮ܨِٕܩ݆ܨ݆ܱܠܹ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0739.SYRN=18@396,-98+0|uni0720.SYRN=18+800|uni0731.SYRN=15@337,-456+0|uni0746.SYRN=15@337,-456+0|uni0728.Fina.SYRN=15@75,0+631|uni0746.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni06550650.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni032E.SYRN=8@289,-98+0|uni0718.SYRN=8+578|uni073E.SYRN=5@262,-456+0|uni0746.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni032D.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0748.SYRN=0@337,-456+0|uni0734.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662</pre>
+
+
+
+<pre>Got     : uni0739.SYRN=18@396,-98+0|uni0720.SYRN=18+800|uni0731.SYRN=15@262,-456+0|uni0746.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0746.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni06550650.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni032E.SYRN=8@289,-98+0|uni0718.SYRN=8+578|uni073E.SYRN=5@262,-456+0|uni0746.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni032D.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0748.SYRN=0@262,-456+0|uni0734.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4679 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1672, 888)"/>
+<path d=""  transform="translate(1356, 986)"/>
+<path d=""  transform="translate(2215, 530)"/>
+<path d=""  transform="translate(1953, 986)"/>
+<path d=""  transform="translate(2829, 888)"/>
+<path d=""  transform="translate(2540, 986)"/>
+<path d=""  transform="translate(3380, 530)"/>
+<path d=""  transform="translate(3380, 530)"/>
+<path d=""  transform="translate(3118, 986)"/>
+<path d=""  transform="translate(3843, 888)"/>
+<path d=""  transform="translate(3674, 986)"/>
+<path d=""  transform="translate(4354, 530)"/>
+<path d=""  transform="translate(4354, 530)"/>
+<path d=""  transform="translate(4092, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4829 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1747, 888)"/>
+<path d=""  transform="translate(1431, 986)"/>
+<path d=""  transform="translate(2290, 530)"/>
+<path d=""  transform="translate(2028, 986)"/>
+<path d=""  transform="translate(2904, 888)"/>
+<path d=""  transform="translate(2615, 986)"/>
+<path d=""  transform="translate(3455, 530)"/>
+<path d=""  transform="translate(3455, 530)"/>
+<path d=""  transform="translate(3193, 986)"/>
+<path d=""  transform="translate(3918, 888)"/>
+<path d=""  transform="translate(3749, 986)"/>
+<path d=""  transform="translate(4504, 530)"/>
+<path d=""  transform="translate(4504, 530)"/>
+<path d=""  transform="translate(4242, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܝ̄܈ܨ̤ٕء݆ܨ̱ܹܡ݈</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0748.SYRN=11@435,-99+0|uni0721.SYRN=11+705|uni0739.SYRN=8@262,-576+0|uni0331.SYRN=8@262,-456+0|uni0728.SYRN=8+587|uni0746.SYRN=6@238,-98+0|uni0621.SYRN=6+471|uni0655.SYRN=3@296,-595+0|uni0324.SYRN=3@300,-456+0|uni0728.SYRN=3@38,0+625|uni0708.SYRN=2+374|uni0304.SYRN=0@418,-108+0|uni071D.SYRN=0@-50,0+578</pre>
+
+
+
+<pre>Got     : uni0748.SYRN=11@435,-99+0|uni0721.SYRN=11+705|uni0739.SYRN=8@262,-576+0|uni0331.SYRN=8@262,-456+0|uni0728.SYRN=8+587|uni0746.SYRN=6@238,-98+0|uni0621.SYRN=6+471|uni0655.SYRN=3@258,-595+0|uni0324.SYRN=3@262,-456+0|uni0728.SYRN=3+587|uni0708.SYRN=2+374|uni0304.SYRN=0@418,-108+0|uni071D.SYRN=0@-50,0+578</pre>
+
+
+
+<pre>                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3302 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 410)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1530, 888)"/>
+<path d=""  transform="translate(1292, 986)"/>
+<path d=""  transform="translate(2021, 391)"/>
+<path d=""  transform="translate(2025, 530)"/>
+<path d=""  transform="translate(1763, 986)"/>
+<path d=""  transform="translate(2350, 986)"/>
+<path d=""  transform="translate(3142, 878)"/>
+<path d=""  transform="translate(2674, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3340 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 410)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1530, 888)"/>
+<path d=""  transform="translate(1292, 986)"/>
+<path d=""  transform="translate(2059, 391)"/>
+<path d=""  transform="translate(2063, 530)"/>
+<path d=""  transform="translate(1801, 986)"/>
+<path d=""  transform="translate(2388, 986)"/>
+<path d=""  transform="translate(3180, 878)"/>
+<path d=""  transform="translate(2712, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݄ܴܝ̮ܨܹ݈ܠܸܨ݈ܱܩ݆ܨٕܱܩ݄ܓ̮</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni032E.SYRN=20@372,-98+0|uni0713.Fina.SYRN=20+768|uni0744.SYRN=18@316,-98+0|uni0729.Init.SYRN=18+597|uni0731.SYRN=15@262,-456+0|uni0655.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0746.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni0731.SYRN=10@262,-456+0|uni0748.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0738.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni0748.SYRN=5@337,-456+0|uni0739.SYRN=5@337,-456+0|uni0728.Fina.SYRN=5@75,0+631|uni032E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0734.SYRN=0@237,-456+0|uni0744.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni032E.SYRN=20@372,-98+0|uni0713.Fina.SYRN=20+768|uni0744.SYRN=18@316,-98+0|uni0729.Init.SYRN=18+597|uni0731.SYRN=15@262,-456+0|uni0655.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0746.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni0731.SYRN=10@262,-456+0|uni0748.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0738.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni0748.SYRN=5@262,-456+0|uni0739.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni032E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0734.SYRN=0@262,-456+0|uni0744.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           ^^^^^^^^^                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4943 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(372, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1084, 888)"/>
+<path d=""  transform="translate(768, 986)"/>
+<path d=""  transform="translate(1627, 530)"/>
+<path d=""  transform="translate(1627, 530)"/>
+<path d=""  transform="translate(1365, 986)"/>
+<path d=""  transform="translate(2237, 888)"/>
+<path d=""  transform="translate(1921, 986)"/>
+<path d=""  transform="translate(2780, 530)"/>
+<path d=""  transform="translate(2780, 530)"/>
+<path d=""  transform="translate(2518, 986)"/>
+<path d=""  transform="translate(3243, 888)"/>
+<path d=""  transform="translate(3074, 986)"/>
+<path d=""  transform="translate(3754, 530)"/>
+<path d=""  transform="translate(3754, 530)"/>
+<path d=""  transform="translate(3492, 986)"/>
+<path d=""  transform="translate(4214, 889)"/>
+<path d=""  transform="translate(4048, 986)"/>
+<path d=""  transform="translate(4618, 530)"/>
+<path d=""  transform="translate(4618, 530)"/>
+<path d=""  transform="translate(4356, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4993 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(372, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1084, 888)"/>
+<path d=""  transform="translate(768, 986)"/>
+<path d=""  transform="translate(1627, 530)"/>
+<path d=""  transform="translate(1627, 530)"/>
+<path d=""  transform="translate(1365, 986)"/>
+<path d=""  transform="translate(2237, 888)"/>
+<path d=""  transform="translate(1921, 986)"/>
+<path d=""  transform="translate(2780, 530)"/>
+<path d=""  transform="translate(2780, 530)"/>
+<path d=""  transform="translate(2518, 986)"/>
+<path d=""  transform="translate(3243, 888)"/>
+<path d=""  transform="translate(3074, 986)"/>
+<path d=""  transform="translate(3829, 530)"/>
+<path d=""  transform="translate(3829, 530)"/>
+<path d=""  transform="translate(3567, 986)"/>
+<path d=""  transform="translate(4289, 889)"/>
+<path d=""  transform="translate(4123, 986)"/>
+<path d=""  transform="translate(4668, 530)"/>
+<path d=""  transform="translate(4668, 530)"/>
+<path d=""  transform="translate(4406, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܷܷܩِء̮ܮܨ̮̭ܡ݈ܨٍٕܙܻ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni073B.SYRN=16@159,-173+0|uni0719.SYRN=16+293|uni0655064D.SYRN=13@262,-456+0|uni0728.Fina.SYRN=13+556|uni0748.SYRN=11@355,-98+0|uni0721.Init.SYRN=11+761|uni032D.SYRN=8@262,-456+0|uni032E.SYRN=8@262,-456+0|uni0728.Fina.SYRN=8+556|uni072E.Init.SYRN=7+451|uni032E.SYRN=5@288,-98+0|uni0621.SYRN=5@50,0+521|uni0650.SYRN=3@483,-99+0|uni0729.SYRN=3+884|uni0737.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni073B.SYRN=16@159,-173+0|uni0719.SYRN=16+293|uni0655064D.SYRN=13@262,-456+0|uni0728.Fina.SYRN=13+556|uni0748.SYRN=11@355,-98+0|uni0721.Init.SYRN=11+761|uni032D.SYRN=8@262,-456+0|uni032E.SYRN=8@262,-456+0|uni0728.Fina.SYRN=8+556|uni072E.Init.SYRN=7+451|uni032E.SYRN=5@238,-98+0|uni0621.SYRN=5+471|uni0650.SYRN=3@483,-99+0|uni0729.SYRN=3+884|uni0737.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4559 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(159, 813)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(293, 986)"/>
+<path d=""  transform="translate(1204, 888)"/>
+<path d=""  transform="translate(849, 986)"/>
+<path d=""  transform="translate(1872, 530)"/>
+<path d=""  transform="translate(1872, 530)"/>
+<path d=""  transform="translate(1610, 986)"/>
+<path d=""  transform="translate(2166, 986)"/>
+<path d=""  transform="translate(2855, 888)"/>
+<path d=""  transform="translate(2617, 986)"/>
+<path d=""  transform="translate(3571, 887)"/>
+<path d=""  transform="translate(3088, 986)"/>
+<path d=""  transform="translate(4234, 530)"/>
+<path d=""  transform="translate(4234, 530)"/>
+<path d=""  transform="translate(3972, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4609 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(159, 813)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(293, 986)"/>
+<path d=""  transform="translate(1204, 888)"/>
+<path d=""  transform="translate(849, 986)"/>
+<path d=""  transform="translate(1872, 530)"/>
+<path d=""  transform="translate(1872, 530)"/>
+<path d=""  transform="translate(1610, 986)"/>
+<path d=""  transform="translate(2166, 986)"/>
+<path d=""  transform="translate(2905, 888)"/>
+<path d=""  transform="translate(2667, 986)"/>
+<path d=""  transform="translate(3621, 887)"/>
+<path d=""  transform="translate(3138, 986)"/>
+<path d=""  transform="translate(4284, 530)"/>
+<path d=""  transform="translate(4284, 530)"/>
+<path d=""  transform="translate(4022, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܷء݆ܨ݆݆ܡܴܨ̣̱ܘ݄ܨܢܨܸܼءܱ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0731.SYRN=19@238,-98+0|uni0621.SYRN=19+471|uni073C.SYRN=16@300,-456+0|uni0738.SYRN=16@300,-456+0|uni0728.Fina.SYRN=16@38,0+594|uni0722.Init.SYRN=15+364|uni0728.SYRN=14+587|uni0744.SYRN=12@289,-98+0|uni0718.SYRN=12+578|uni0331.SYRN=9@262,-456+0|uni0323.SYRN=9@262,-456+0|uni0728.Fina.SYRN=9+556|uni0734.SYRN=7@355,-98+0|uni0721.Init.SYRN=7+761|uni0746.SYRN=4@262,-456+0|uni0746.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni0746.SYRN=2@238,-98+0|uni0621.SYRN=2+471|uni0737.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625</pre>
+
+
+
+<pre>Got     : uni0731.SYRN=19@238,-98+0|uni0621.SYRN=19+471|uni073C.SYRN=16@262,-456+0|uni0738.SYRN=16@262,-456+0|uni0728.Fina.SYRN=16+556|uni0722.Init.SYRN=15+364|uni0728.SYRN=14+587|uni0744.SYRN=12@289,-98+0|uni0718.SYRN=12+578|uni0331.SYRN=9@262,-456+0|uni0323.SYRN=9@262,-456+0|uni0728.Fina.SYRN=9+556|uni0734.SYRN=7@355,-98+0|uni0721.Init.SYRN=7+761|uni0746.SYRN=4@262,-456+0|uni0746.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni0746.SYRN=2@238,-98+0|uni0621.SYRN=2+471|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                                                                                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5518 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1027, 986)"/>
+<path d=""  transform="translate(1391, 986)"/>
+<path d=""  transform="translate(2267, 888)"/>
+<path d=""  transform="translate(1978, 986)"/>
+<path d=""  transform="translate(2818, 530)"/>
+<path d=""  transform="translate(2818, 530)"/>
+<path d=""  transform="translate(2556, 986)"/>
+<path d=""  transform="translate(3467, 888)"/>
+<path d=""  transform="translate(3112, 986)"/>
+<path d=""  transform="translate(4135, 530)"/>
+<path d=""  transform="translate(4135, 530)"/>
+<path d=""  transform="translate(3873, 986)"/>
+<path d=""  transform="translate(4698, 888)"/>
+<path d=""  transform="translate(4460, 986)"/>
+<path d=""  transform="translate(5193, 530)"/>
+<path d=""  transform="translate(4931, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5594 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1065, 986)"/>
+<path d=""  transform="translate(1429, 986)"/>
+<path d=""  transform="translate(2305, 888)"/>
+<path d=""  transform="translate(2016, 986)"/>
+<path d=""  transform="translate(2856, 530)"/>
+<path d=""  transform="translate(2856, 530)"/>
+<path d=""  transform="translate(2594, 986)"/>
+<path d=""  transform="translate(3505, 888)"/>
+<path d=""  transform="translate(3150, 986)"/>
+<path d=""  transform="translate(4173, 530)"/>
+<path d=""  transform="translate(4173, 530)"/>
+<path d=""  transform="translate(3911, 986)"/>
+<path d=""  transform="translate(4736, 888)"/>
+<path d=""  transform="translate(4498, 986)"/>
+<path d=""  transform="translate(5269, 530)"/>
+<path d=""  transform="translate(5007, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܬ̱ܮܨ݆ܷءܻ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni073B.SYRN=6@238,-98+0|uni0621.SYRN=6+471|uni0737.SYRN=3@300,-456+0|uni0746.SYRN=3@300,-456+0|uni0728.Fina.SYRN=3@38,0+594|uni072E.Init.SYRN=2+451|uni0331.SYRN=0@303,-83+0|uni072C.SYRN=0@38,0+737</pre>
+
+
+
+<pre>Got     : uni073B.SYRN=6@238,-98+0|uni0621.SYRN=6+471|uni0737.SYRN=3@262,-456+0|uni0746.SYRN=3@262,-456+0|uni0728.Fina.SYRN=3+556|uni072E.Init.SYRN=2+451|uni0331.SYRN=0@265,-83+0|uni072C.SYRN=0+699</pre>
+
+
+
+<pre>                                                                     ^^^                       ^^^                           +++++  ^^                                        ^^^                     +++++ ^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2177 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1027, 986)"/>
+<path d=""  transform="translate(1743, 903)"/>
+<path d=""  transform="translate(1478, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2253 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1065, 986)"/>
+<path d=""  transform="translate(1819, 903)"/>
+<path d=""  transform="translate(1554, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܴ݈ܝ݆ܖ݄ܜܨܼ̱ءܻܨِ̣ܝ̠</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0320.SYRN=16+0|uni071D.SYRN=16+628|uni0323.SYRN=13@237,-456+0|uni0650.SYRN=13@237,-456+0|uni0728.SYRN=13@-25,0+562|uni073B.SYRN=11@238,-98+0|uni0621.SYRN=11+471|uni0331.SYRN=8@300,-456+0|uni073C.SYRN=8@300,-456+0|uni0728.Fina.SYRN=8@38,0+594|uni071C.Init.SYRN=7+757|uni0744.SYRN=5@259,-98+0|uni0716.Fina.SYRN=5+518|uni0746.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0748.SYRN=0@237,-456+0|uni0734.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni0320.SYRN=16+0|uni071D.SYRN=16+628|uni0323.SYRN=13@262,-456+0|uni0650.SYRN=13@262,-456+0|uni0728.SYRN=13+587|uni073B.SYRN=11@238,-98+0|uni0621.SYRN=11+471|uni0331.SYRN=8@262,-456+0|uni073C.SYRN=8@262,-456+0|uni0728.Fina.SYRN=8+556|uni071C.Init.SYRN=7+757|uni0744.SYRN=5@259,-98+0|uni0716.Fina.SYRN=5+518|uni0746.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0748.SYRN=0@262,-456+0|uni0734.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4412 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(628, 986)"/>
+<path d=""  transform="translate(1453, 888)"/>
+<path d=""  transform="translate(1215, 986)"/>
+<path d=""  transform="translate(1948, 530)"/>
+<path d=""  transform="translate(1948, 530)"/>
+<path d=""  transform="translate(1686, 986)"/>
+<path d=""  transform="translate(2242, 986)"/>
+<path d=""  transform="translate(3258, 888)"/>
+<path d=""  transform="translate(2999, 986)"/>
+<path d=""  transform="translate(3683, 889)"/>
+<path d=""  transform="translate(3517, 986)"/>
+<path d=""  transform="translate(4087, 530)"/>
+<path d=""  transform="translate(4087, 530)"/>
+<path d=""  transform="translate(3825, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4400 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(603, 986)"/>
+<path d=""  transform="translate(1428, 888)"/>
+<path d=""  transform="translate(1190, 986)"/>
+<path d=""  transform="translate(1961, 530)"/>
+<path d=""  transform="translate(1961, 530)"/>
+<path d=""  transform="translate(1699, 986)"/>
+<path d=""  transform="translate(2255, 986)"/>
+<path d=""  transform="translate(3271, 888)"/>
+<path d=""  transform="translate(3012, 986)"/>
+<path d=""  transform="translate(3696, 889)"/>
+<path d=""  transform="translate(3530, 986)"/>
+<path d=""  transform="translate(4075, 530)"/>
+<path d=""  transform="translate(4075, 530)"/>
+<path d=""  transform="translate(3813, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٍ̣ءܱܨِܼܘܷܨ݄݈ܘܸܨܱٕܘܾܙ̮ܢ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0722.SYRN=22+427|uni032E.SYRN=20@184,-450+0|uni0719.SYRN=20@25,0+318|uni073E.SYRN=18@289,-98+0|uni0718.SYRN=18+578|uni0655.SYRN=15@262,-456+0|uni0731.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0738.SYRN=13@289,-98+0|uni0718.SYRN=13+578|uni0748.SYRN=10@262,-456+0|uni0744.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0737.SYRN=8@289,-98+0|uni0718.SYRN=8+578|uni073C.SYRN=5@262,-456+0|uni0650.SYRN=5@262,-456+0|uni0728.SYRN=5+587|uni0731.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0323.SYRN=0@300,-456+0|uni064D.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625</pre>
+
+
+
+<pre>Got     : uni0722.SYRN=22+427|uni032E.SYRN=20@159,-450+0|uni0719.SYRN=20+293|uni073E.SYRN=18@289,-98+0|uni0718.SYRN=18+578|uni0655.SYRN=15@262,-456+0|uni0731.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0738.SYRN=13@289,-98+0|uni0718.SYRN=13+578|uni0748.SYRN=10@262,-456+0|uni0744.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0737.SYRN=8@289,-98+0|uni0718.SYRN=8+578|uni073C.SYRN=5@262,-456+0|uni0650.SYRN=5@262,-456+0|uni0728.SYRN=5+587|uni0731.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0323.SYRN=0@262,-456+0|uni064D.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                                                                                                                                                                                                                               ^^^                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5273 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(586, 536)"/>
+<path d=""  transform="translate(427, 986)"/>
+<path d=""  transform="translate(1009, 888)"/>
+<path d=""  transform="translate(720, 986)"/>
+<path d=""  transform="translate(1560, 530)"/>
+<path d=""  transform="translate(1560, 530)"/>
+<path d=""  transform="translate(1298, 986)"/>
+<path d=""  transform="translate(2174, 888)"/>
+<path d=""  transform="translate(1885, 986)"/>
+<path d=""  transform="translate(2725, 530)"/>
+<path d=""  transform="translate(2725, 530)"/>
+<path d=""  transform="translate(2463, 986)"/>
+<path d=""  transform="translate(3339, 888)"/>
+<path d=""  transform="translate(3050, 986)"/>
+<path d=""  transform="translate(3890, 530)"/>
+<path d=""  transform="translate(3890, 530)"/>
+<path d=""  transform="translate(3628, 986)"/>
+<path d=""  transform="translate(4453, 888)"/>
+<path d=""  transform="translate(4215, 986)"/>
+<path d=""  transform="translate(4948, 530)"/>
+<path d=""  transform="translate(4948, 530)"/>
+<path d=""  transform="translate(4686, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5336 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(611, 536)"/>
+<path d=""  transform="translate(452, 986)"/>
+<path d=""  transform="translate(1034, 888)"/>
+<path d=""  transform="translate(745, 986)"/>
+<path d=""  transform="translate(1585, 530)"/>
+<path d=""  transform="translate(1585, 530)"/>
+<path d=""  transform="translate(1323, 986)"/>
+<path d=""  transform="translate(2199, 888)"/>
+<path d=""  transform="translate(1910, 986)"/>
+<path d=""  transform="translate(2750, 530)"/>
+<path d=""  transform="translate(2750, 530)"/>
+<path d=""  transform="translate(2488, 986)"/>
+<path d=""  transform="translate(3364, 888)"/>
+<path d=""  transform="translate(3075, 986)"/>
+<path d=""  transform="translate(3915, 530)"/>
+<path d=""  transform="translate(3915, 530)"/>
+<path d=""  transform="translate(3653, 986)"/>
+<path d=""  transform="translate(4478, 888)"/>
+<path d=""  transform="translate(4240, 986)"/>
+<path d=""  transform="translate(5011, 530)"/>
+<path d=""  transform="translate(5011, 530)"/>
+<path d=""  transform="translate(4749, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܷܼܝܾܨܷ݈ءٕܨِٕܩ̤ܕٕܢܨِ݈ܠܴ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0734.SYRN=21@396,-98+0|uni0720.SYRN=21+800|uni0748.SYRN=18@337,-456+0|uni0650.SYRN=18@337,-456+0|uni0728.Fina.SYRN=18@75,0+631|uni0722.Init.SYRN=17+364|uni0655.SYRN=15@243,-257+0|uni0715.Fina.SYRN=15+518|uni0324.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni06550650.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0655.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni0748.SYRN=5@300,-456+0|uni0737.SYRN=5@300,-456+0|uni0728.Fina.SYRN=5@38,0+594|uni073E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni073C.SYRN=0@237,-456+0|uni0737.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni0734.SYRN=21@396,-98+0|uni0720.SYRN=21+800|uni0748.SYRN=18@262,-456+0|uni0650.SYRN=18@262,-456+0|uni0728.Fina.SYRN=18+556|uni0722.Init.SYRN=17+364|uni0655.SYRN=15@243,-257+0|uni0715.Fina.SYRN=15+518|uni0324.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni06550650.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0655.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni0748.SYRN=5@262,-456+0|uni0737.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni073E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni073C.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                                                                                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           ^^^^^^^^^                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5344 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1356, 986)"/>
+<path d=""  transform="translate(1963, 729)"/>
+<path d=""  transform="translate(1720, 986)"/>
+<path d=""  transform="translate(2554, 888)"/>
+<path d=""  transform="translate(2238, 986)"/>
+<path d=""  transform="translate(3097, 530)"/>
+<path d=""  transform="translate(2835, 986)"/>
+<path d=""  transform="translate(3660, 888)"/>
+<path d=""  transform="translate(3422, 986)"/>
+<path d=""  transform="translate(4155, 530)"/>
+<path d=""  transform="translate(4155, 530)"/>
+<path d=""  transform="translate(3893, 986)"/>
+<path d=""  transform="translate(4615, 889)"/>
+<path d=""  transform="translate(4449, 986)"/>
+<path d=""  transform="translate(5019, 530)"/>
+<path d=""  transform="translate(5019, 530)"/>
+<path d=""  transform="translate(4757, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5432 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1431, 986)"/>
+<path d=""  transform="translate(2038, 729)"/>
+<path d=""  transform="translate(1795, 986)"/>
+<path d=""  transform="translate(2629, 888)"/>
+<path d=""  transform="translate(2313, 986)"/>
+<path d=""  transform="translate(3172, 530)"/>
+<path d=""  transform="translate(2910, 986)"/>
+<path d=""  transform="translate(3735, 888)"/>
+<path d=""  transform="translate(3497, 986)"/>
+<path d=""  transform="translate(4268, 530)"/>
+<path d=""  transform="translate(4268, 530)"/>
+<path d=""  transform="translate(4006, 986)"/>
+<path d=""  transform="translate(4728, 889)"/>
+<path d=""  transform="translate(4562, 986)"/>
+<path d=""  transform="translate(5107, 530)"/>
+<path d=""  transform="translate(5107, 530)"/>
+<path d=""  transform="translate(4845, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܻܷܠ̠ܨ݆ܘًّ̣</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0323.SYRN=7@289,-98+0|uni064B0651.SYRN=7@292,13+0|uni0718.SYRN=7+578|uni0746.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0320.SYRN=3+0|uni0720.Init.SYRN=3+418|uni0737.SYRN=0@337,-456+0|uni073B.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662</pre>
+
+
+
+<pre>Got     : uni0323.SYRN=7@289,-98+0|uni064B0651.SYRN=7@292,13+0|uni0718.SYRN=7+578|uni0746.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0320.SYRN=3+0|uni0720.Init.SYRN=3+418|uni0737.SYRN=0@262,-456+0|uni073B.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                            ^^^                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2139 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(289, 888)"/>
+<path d=""  transform="translate(292, 999)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(578, 986)"/>
+<path d=""  transform="translate(1134, 986)"/>
+<path d=""  transform="translate(1134, 986)"/>
+<path d=""  transform="translate(1814, 530)"/>
+<path d=""  transform="translate(1814, 530)"/>
+<path d=""  transform="translate(1552, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2214 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(289, 888)"/>
+<path d=""  transform="translate(292, 999)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(578, 986)"/>
+<path d=""  transform="translate(1134, 986)"/>
+<path d=""  transform="translate(1134, 986)"/>
+<path d=""  transform="translate(1889, 530)"/>
+<path d=""  transform="translate(1889, 530)"/>
+<path d=""  transform="translate(1627, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̰̮ܩ݈ܨِ̰ܡܱܨ̮̣ܠ̱ܨ̮̣ܘܻܪ܉</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0709.SYRN=21+374|uni072A.SYRN=20+521|uni073B.SYRN=18@289,-98+0|uni0718.SYRN=18+578|uni0323.SYRN=15@262,-456+0|uni032E.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0331.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0323.SYRN=10@337,-456+0|uni032E.SYRN=10@337,-456+0|uni0728.Fina.SYRN=10@75,0+631|uni0731.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0330.SYRN=5@262,-456+0|uni0650.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0748.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni032E.SYRN=0@262,-456+0|uni0330.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0709.SYRN=21+374|uni072A.SYRN=20+521|uni073B.SYRN=18@289,-98+0|uni0718.SYRN=18+578|uni0323.SYRN=15@262,-456+0|uni032E.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0331.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0323.SYRN=10@262,-456+0|uni032E.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0731.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0330.SYRN=5@262,-456+0|uni0650.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0748.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni032E.SYRN=0@262,-456+0|uni0330.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                  ^^^                        ^^^                            ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5504 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(374, 986)"/>
+<path d=""  transform="translate(1184, 888)"/>
+<path d=""  transform="translate(895, 986)"/>
+<path d=""  transform="translate(1735, 530)"/>
+<path d=""  transform="translate(1735, 530)"/>
+<path d=""  transform="translate(1473, 986)"/>
+<path d=""  transform="translate(2198, 888)"/>
+<path d=""  transform="translate(2029, 986)"/>
+<path d=""  transform="translate(2709, 530)"/>
+<path d=""  transform="translate(2709, 530)"/>
+<path d=""  transform="translate(2447, 986)"/>
+<path d=""  transform="translate(3358, 888)"/>
+<path d=""  transform="translate(3003, 986)"/>
+<path d=""  transform="translate(4026, 530)"/>
+<path d=""  transform="translate(4026, 530)"/>
+<path d=""  transform="translate(3764, 986)"/>
+<path d=""  transform="translate(4636, 888)"/>
+<path d=""  transform="translate(4320, 986)"/>
+<path d=""  transform="translate(5179, 530)"/>
+<path d=""  transform="translate(5179, 530)"/>
+<path d=""  transform="translate(4917, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5579 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(374, 986)"/>
+<path d=""  transform="translate(1184, 888)"/>
+<path d=""  transform="translate(895, 986)"/>
+<path d=""  transform="translate(1735, 530)"/>
+<path d=""  transform="translate(1735, 530)"/>
+<path d=""  transform="translate(1473, 986)"/>
+<path d=""  transform="translate(2198, 888)"/>
+<path d=""  transform="translate(2029, 986)"/>
+<path d=""  transform="translate(2784, 530)"/>
+<path d=""  transform="translate(2784, 530)"/>
+<path d=""  transform="translate(2522, 986)"/>
+<path d=""  transform="translate(3433, 888)"/>
+<path d=""  transform="translate(3078, 986)"/>
+<path d=""  transform="translate(4101, 530)"/>
+<path d=""  transform="translate(4101, 530)"/>
+<path d=""  transform="translate(3839, 986)"/>
+<path d=""  transform="translate(4711, 888)"/>
+<path d=""  transform="translate(4395, 986)"/>
+<path d=""  transform="translate(5254, 530)"/>
+<path d=""  transform="translate(5254, 530)"/>
+<path d=""  transform="translate(4992, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݈ܴءܴܬܼܢ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0722.SYRN=7+427|uni073C.SYRN=5@402,-83+0|uni072C.SYRN=5@137,0+836|uni0734.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0734.SYRN=0@300,-456+0|uni0748.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625</pre>
+
+
+
+<pre>Got     : uni0722.SYRN=7+427|uni073C.SYRN=5@377,-83+0|uni072C.SYRN=5@112,0+811|uni0734.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0734.SYRN=0@262,-456+0|uni0748.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                            ^^^                       ^^    ^^                                                            ^^^                       ^^^                      +++++ ++
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2296 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(804, 903)"/>
+<path d=""  transform="translate(539, 986)"/>
+<path d=""  transform="translate(1476, 888)"/>
+<path d=""  transform="translate(1238, 986)"/>
+<path d=""  transform="translate(1971, 530)"/>
+<path d=""  transform="translate(1971, 530)"/>
+<path d=""  transform="translate(1709, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2359 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(829, 903)"/>
+<path d=""  transform="translate(564, 986)"/>
+<path d=""  transform="translate(1501, 888)"/>
+<path d=""  transform="translate(1263, 986)"/>
+<path d=""  transform="translate(2034, 530)"/>
+<path d=""  transform="translate(2034, 530)"/>
+<path d=""  transform="translate(1772, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܹܙܾܨܷ̠ܡܱܯݏܨܻܼܠܻ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni073B.SYRN=14@396,-98+0|uni0720.SYRN=14+800|uni073C.SYRN=11@337,-456+0|uni073B.SYRN=11@337,-456+0|uni0728.Fina.SYRN=11@75,0+631|uni074F.Init.SYRN=10+485|uni072F.Fina.SYRN=9+691|uni0731.SYRN=7@355,-98+0|uni0721.Init.SYRN=7+761|uni0320.SYRN=4+0|uni0737.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni073E.SYRN=2@159,-173+0|uni0719.SYRN=2+293|uni0739.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni073B.SYRN=14@396,-98+0|uni0720.SYRN=14+800|uni073C.SYRN=11@262,-456+0|uni073B.SYRN=11@262,-456+0|uni0728.Fina.SYRN=11+556|uni074F.Init.SYRN=10+485|uni072F.Fina.SYRN=9+691|uni0731.SYRN=7@355,-98+0|uni0721.Init.SYRN=7+761|uni0320.SYRN=4+0|uni0737.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni073E.SYRN=2@159,-173+0|uni0719.SYRN=2+293|uni0739.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^                        ^^^                            ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4760 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1356, 986)"/>
+<path d=""  transform="translate(1841, 986)"/>
+<path d=""  transform="translate(2887, 888)"/>
+<path d=""  transform="translate(2532, 986)"/>
+<path d=""  transform="translate(3293, 986)"/>
+<path d=""  transform="translate(3555, 530)"/>
+<path d=""  transform="translate(3293, 986)"/>
+<path d=""  transform="translate(4039, 813)"/>
+<path d=""  transform="translate(3880, 986)"/>
+<path d=""  transform="translate(4435, 530)"/>
+<path d=""  transform="translate(4173, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4835 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1431, 986)"/>
+<path d=""  transform="translate(1916, 986)"/>
+<path d=""  transform="translate(2962, 888)"/>
+<path d=""  transform="translate(2607, 986)"/>
+<path d=""  transform="translate(3368, 986)"/>
+<path d=""  transform="translate(3630, 530)"/>
+<path d=""  transform="translate(3368, 986)"/>
+<path d=""  transform="translate(4114, 813)"/>
+<path d=""  transform="translate(3955, 986)"/>
+<path d=""  transform="translate(4510, 530)"/>
+<path d=""  transform="translate(4248, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِ̮ܠܸܨ̮ܨ̭̣ء̣</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0323.SYRN=10@238,-98+0|uni0621.SYRN=10+471|uni0323.SYRN=7@300,-456+0|uni032D.SYRN=7@300,-456+0|uni0728.SYRN=7@38,0+625|uni032E.SYRN=5@277,-456+0|uni0728.Fina.SYRN=5@15,0+571|uni0738.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni032E.SYRN=0@337,-456+0|uni0650.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662</pre>
+
+
+
+<pre>Got     : uni0323.SYRN=10@238,-98+0|uni0621.SYRN=10+471|uni0323.SYRN=7@262,-456+0|uni032D.SYRN=7@262,-456+0|uni0728.SYRN=7+587|uni032E.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0738.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni032E.SYRN=0@262,-456+0|uni0650.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2619 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1320, 530)"/>
+<path d=""  transform="translate(1058, 986)"/>
+<path d=""  transform="translate(1783, 888)"/>
+<path d=""  transform="translate(1614, 986)"/>
+<path d=""  transform="translate(2294, 530)"/>
+<path d=""  transform="translate(2294, 530)"/>
+<path d=""  transform="translate(2032, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2747 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1373, 530)"/>
+<path d=""  transform="translate(1111, 986)"/>
+<path d=""  transform="translate(1836, 888)"/>
+<path d=""  transform="translate(1667, 986)"/>
+<path d=""  transform="translate(2422, 530)"/>
+<path d=""  transform="translate(2422, 530)"/>
+<path d=""  transform="translate(2160, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܷܼܡ݄ܨِٕء̤ܨܹٕܝܸܨٕ̱ܘܴ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0734.SYRN=18@289,-98+0|uni0718.SYRN=18+578|uni0331.SYRN=15@262,-456+0|uni0655.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0738.SYRN=13@166,-97+0|uni071D.Init.SYRN=13+308|uni0655.SYRN=10@237,-456+0|uni0739.SYRN=10@237,-456+0|uni0728.SYRN=10@-25,0+562|uni0324.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni06550650.SYRN=5@300,-456+0|uni0728.Fina.SYRN=5@38,0+594|uni0744.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073C.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0734.SYRN=18@289,-98+0|uni0718.SYRN=18+578|uni0331.SYRN=15@262,-456+0|uni0655.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0738.SYRN=13@166,-97+0|uni071D.Init.SYRN=13+308|uni0655.SYRN=10@262,-456+0|uni0739.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0324.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni06550650.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0744.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073C.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4404 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(289, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(578, 986)"/>
+<path d=""  transform="translate(1300, 889)"/>
+<path d=""  transform="translate(1134, 986)"/>
+<path d=""  transform="translate(1704, 530)"/>
+<path d=""  transform="translate(1704, 530)"/>
+<path d=""  transform="translate(1442, 986)"/>
+<path d=""  transform="translate(2267, 888)"/>
+<path d=""  transform="translate(2029, 986)"/>
+<path d=""  transform="translate(2762, 530)"/>
+<path d=""  transform="translate(2500, 986)"/>
+<path d=""  transform="translate(3411, 888)"/>
+<path d=""  transform="translate(3056, 986)"/>
+<path d=""  transform="translate(4079, 530)"/>
+<path d=""  transform="translate(4079, 530)"/>
+<path d=""  transform="translate(3817, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4417 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(289, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(578, 986)"/>
+<path d=""  transform="translate(1300, 889)"/>
+<path d=""  transform="translate(1134, 986)"/>
+<path d=""  transform="translate(1679, 530)"/>
+<path d=""  transform="translate(1679, 530)"/>
+<path d=""  transform="translate(1417, 986)"/>
+<path d=""  transform="translate(2242, 888)"/>
+<path d=""  transform="translate(2004, 986)"/>
+<path d=""  transform="translate(2775, 530)"/>
+<path d=""  transform="translate(2513, 986)"/>
+<path d=""  transform="translate(3424, 888)"/>
+<path d=""  transform="translate(3069, 986)"/>
+<path d=""  transform="translate(4092, 530)"/>
+<path d=""  transform="translate(4092, 530)"/>
+<path d=""  transform="translate(3830, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܷٕܝ݈ܨ݆̣ܘܷܨٍ̤ܩܻܙ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0719.Fina.SYRN=15+317|uni073B.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni0324.SYRN=10@262,-456+0|uni064D.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0737.SYRN=8@289,-98+0|uni0718.SYRN=8+578|uni0323.SYRN=5@262,-456+0|uni0746.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0748.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0655.SYRN=0@237,-456+0|uni0737.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni0719.Fina.SYRN=15+317|uni073B.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni0324.SYRN=10@262,-456+0|uni064D.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0737.SYRN=8@289,-98+0|uni0718.SYRN=8+578|uni0323.SYRN=5@262,-456+0|uni0746.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0748.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0655.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3530 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(633, 888)"/>
+<path d=""  transform="translate(317, 986)"/>
+<path d=""  transform="translate(1176, 530)"/>
+<path d=""  transform="translate(1176, 530)"/>
+<path d=""  transform="translate(914, 986)"/>
+<path d=""  transform="translate(1790, 888)"/>
+<path d=""  transform="translate(1501, 986)"/>
+<path d=""  transform="translate(2341, 530)"/>
+<path d=""  transform="translate(2341, 530)"/>
+<path d=""  transform="translate(2079, 986)"/>
+<path d=""  transform="translate(2801, 889)"/>
+<path d=""  transform="translate(2635, 986)"/>
+<path d=""  transform="translate(3205, 530)"/>
+<path d=""  transform="translate(3205, 530)"/>
+<path d=""  transform="translate(2943, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3505 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(633, 888)"/>
+<path d=""  transform="translate(317, 986)"/>
+<path d=""  transform="translate(1176, 530)"/>
+<path d=""  transform="translate(1176, 530)"/>
+<path d=""  transform="translate(914, 986)"/>
+<path d=""  transform="translate(1790, 888)"/>
+<path d=""  transform="translate(1501, 986)"/>
+<path d=""  transform="translate(2341, 530)"/>
+<path d=""  transform="translate(2341, 530)"/>
+<path d=""  transform="translate(2079, 986)"/>
+<path d=""  transform="translate(2801, 889)"/>
+<path d=""  transform="translate(2635, 986)"/>
+<path d=""  transform="translate(3180, 530)"/>
+<path d=""  transform="translate(3180, 530)"/>
+<path d=""  transform="translate(2918, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̠ٕܘ̭ܘܷܮܨܼ݆ܝ̠</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0320.SYRN=11+0|uni071D.SYRN=11+628|uni0746.SYRN=8@237,-456+0|uni073C.SYRN=8@237,-456+0|uni0728.Fina.SYRN=8@-25,0+531|uni072E.Init.SYRN=7+451|uni0737.SYRN=5@277,-98+0|uni0718.SYRN=5@-12,0+566|uni032D.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0655.SYRN=0@0,-120+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0320.SYRN=11+0|uni071D.SYRN=11+628|uni0746.SYRN=8@262,-456+0|uni073C.SYRN=8@262,-456+0|uni0728.Fina.SYRN=8+556|uni072E.Init.SYRN=7+451|uni0737.SYRN=5@289,-98+0|uni0718.SYRN=5+578|uni032D.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0655.SYRN=0@262,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3378 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(628, 986)"/>
+<path d=""  transform="translate(1184, 986)"/>
+<path d=""  transform="translate(1924, 888)"/>
+<path d=""  transform="translate(1635, 986)"/>
+<path d=""  transform="translate(2502, 888)"/>
+<path d=""  transform="translate(2213, 986)"/>
+<path d=""  transform="translate(3053, 530)"/>
+<path d=""  transform="translate(2791, 986)"/>
+<path d=""  transform="translate(2791, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3341 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(603, 986)"/>
+<path d=""  transform="translate(1159, 986)"/>
+<path d=""  transform="translate(1887, 888)"/>
+<path d=""  transform="translate(1598, 986)"/>
+<path d=""  transform="translate(2465, 888)"/>
+<path d=""  transform="translate(2176, 986)"/>
+<path d=""  transform="translate(2754, 866)"/>
+<path d=""  transform="translate(2754, 986)"/>
+<path d=""  transform="translate(2754, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِٕܝ̮ݏ̄ܨܹܷܠٍ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni064D.SYRN=10@396,-98+0|uni0720.SYRN=10+800|uni0737.SYRN=7@337,-456+0|uni0739.SYRN=7@337,-456+0|uni0728.Fina.SYRN=7@75,0+631|uni0304.SYRN=5@203,8+0|uni074F.Medi.SYRN=5+476|uni032E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni06550650.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni064D.SYRN=10@396,-98+0|uni0720.SYRN=10+800|uni0737.SYRN=7@262,-456+0|uni0739.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0304.SYRN=5@203,8+0|uni074F.Medi.SYRN=5+476|uni032E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni06550650.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           ^^^^^^^^^                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2727 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(1062, 530)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1559, 994)"/>
+<path d=""  transform="translate(1356, 986)"/>
+<path d=""  transform="translate(1998, 889)"/>
+<path d=""  transform="translate(1832, 986)"/>
+<path d=""  transform="translate(2402, 530)"/>
+<path d=""  transform="translate(2140, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2777 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(396, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(1137, 530)"/>
+<path d=""  transform="translate(875, 986)"/>
+<path d=""  transform="translate(1634, 994)"/>
+<path d=""  transform="translate(1431, 986)"/>
+<path d=""  transform="translate(2073, 889)"/>
+<path d=""  transform="translate(1907, 986)"/>
+<path d=""  transform="translate(2452, 530)"/>
+<path d=""  transform="translate(2190, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݄̠ܝٕܨٕ݈ܡܸܨܾ݄ܠ̰ܨ̰ܷܘ̱ܪܱܢ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0722.SYRN=22+427|uni0731.SYRN=20@457,-98+0|uni072A.SYRN=20@200,0+721|uni0331.SYRN=18@289,-98+0|uni0718.SYRN=18+578|uni0737.SYRN=15@258,-597+0|uni0330.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0330.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0744.SYRN=10@337,-456+0|uni073E.SYRN=10@337,-456+0|uni0728.Fina.SYRN=10@75,0+631|uni0738.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0748.SYRN=5@262,-456+0|uni0655.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0655.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0320.SYRN=0+0|uni0744.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni0722.SYRN=22+427|uni0731.SYRN=20@407,-98+0|uni072A.SYRN=20@150,0+671|uni0331.SYRN=18@289,-98+0|uni0718.SYRN=18+578|uni0737.SYRN=15@258,-597+0|uni0330.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0330.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0744.SYRN=10@262,-456+0|uni073E.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0738.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0748.SYRN=5@262,-456+0|uni0655.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0655.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0320.SYRN=0+0|uni0744.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                               ^                        ^^^^^^^^                                                                                                                                                                                                  ^^^                        ^^^                            ^^^^^^^^^                                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5418 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(834, 888)"/>
+<path d=""  transform="translate(577, 986)"/>
+<path d=""  transform="translate(1387, 888)"/>
+<path d=""  transform="translate(1098, 986)"/>
+<path d=""  transform="translate(1934, 389)"/>
+<path d=""  transform="translate(1938, 530)"/>
+<path d=""  transform="translate(1676, 986)"/>
+<path d=""  transform="translate(2401, 888)"/>
+<path d=""  transform="translate(2232, 986)"/>
+<path d=""  transform="translate(2912, 530)"/>
+<path d=""  transform="translate(2912, 530)"/>
+<path d=""  transform="translate(2650, 986)"/>
+<path d=""  transform="translate(3561, 888)"/>
+<path d=""  transform="translate(3206, 986)"/>
+<path d=""  transform="translate(4229, 530)"/>
+<path d=""  transform="translate(4229, 530)"/>
+<path d=""  transform="translate(3967, 986)"/>
+<path d=""  transform="translate(4689, 889)"/>
+<path d=""  transform="translate(4523, 986)"/>
+<path d=""  transform="translate(4831, 986)"/>
+<path d=""  transform="translate(5093, 530)"/>
+<path d=""  transform="translate(4831, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5518 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(884, 888)"/>
+<path d=""  transform="translate(627, 986)"/>
+<path d=""  transform="translate(1437, 888)"/>
+<path d=""  transform="translate(1148, 986)"/>
+<path d=""  transform="translate(1984, 389)"/>
+<path d=""  transform="translate(1988, 530)"/>
+<path d=""  transform="translate(1726, 986)"/>
+<path d=""  transform="translate(2451, 888)"/>
+<path d=""  transform="translate(2282, 986)"/>
+<path d=""  transform="translate(3037, 530)"/>
+<path d=""  transform="translate(3037, 530)"/>
+<path d=""  transform="translate(2775, 986)"/>
+<path d=""  transform="translate(3686, 888)"/>
+<path d=""  transform="translate(3331, 986)"/>
+<path d=""  transform="translate(4354, 530)"/>
+<path d=""  transform="translate(4354, 530)"/>
+<path d=""  transform="translate(4092, 986)"/>
+<path d=""  transform="translate(4814, 889)"/>
+<path d=""  transform="translate(4648, 986)"/>
+<path d=""  transform="translate(4956, 986)"/>
+<path d=""  transform="translate(5193, 530)"/>
+<path d=""  transform="translate(4931, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܸܼܝ̭ܨܹ̣ܡܸܨܼ̮ܙܾܨِٕܩِ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0650.SYRN=18@483,-99+0|uni0729.SYRN=18+884|uni06550650.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni073E.SYRN=13@159,-173+0|uni0719.SYRN=13+293|uni032E.SYRN=10@262,-456+0|uni073C.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0738.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0323.SYRN=5@262,-456+0|uni0739.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni032D.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni073C.SYRN=0@237,-456+0|uni0738.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni0650.SYRN=18@483,-99+0|uni0729.SYRN=18+884|uni06550650.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni073E.SYRN=13@159,-173+0|uni0719.SYRN=13+293|uni032E.SYRN=10@262,-456+0|uni073C.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0738.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0323.SYRN=5@262,-456+0|uni0739.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni032D.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni073C.SYRN=0@262,-456+0|uni0738.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4532 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(483, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1146, 530)"/>
+<path d=""  transform="translate(884, 986)"/>
+<path d=""  transform="translate(1630, 813)"/>
+<path d=""  transform="translate(1471, 986)"/>
+<path d=""  transform="translate(2026, 530)"/>
+<path d=""  transform="translate(2026, 530)"/>
+<path d=""  transform="translate(1764, 986)"/>
+<path d=""  transform="translate(2675, 888)"/>
+<path d=""  transform="translate(2320, 986)"/>
+<path d=""  transform="translate(3343, 530)"/>
+<path d=""  transform="translate(3343, 530)"/>
+<path d=""  transform="translate(3081, 986)"/>
+<path d=""  transform="translate(3803, 889)"/>
+<path d=""  transform="translate(3637, 986)"/>
+<path d=""  transform="translate(4207, 530)"/>
+<path d=""  transform="translate(4207, 530)"/>
+<path d=""  transform="translate(3945, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4507 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(483, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1146, 530)"/>
+<path d=""  transform="translate(884, 986)"/>
+<path d=""  transform="translate(1630, 813)"/>
+<path d=""  transform="translate(1471, 986)"/>
+<path d=""  transform="translate(2026, 530)"/>
+<path d=""  transform="translate(2026, 530)"/>
+<path d=""  transform="translate(1764, 986)"/>
+<path d=""  transform="translate(2675, 888)"/>
+<path d=""  transform="translate(2320, 986)"/>
+<path d=""  transform="translate(3343, 530)"/>
+<path d=""  transform="translate(3343, 530)"/>
+<path d=""  transform="translate(3081, 986)"/>
+<path d=""  transform="translate(3803, 889)"/>
+<path d=""  transform="translate(3637, 986)"/>
+<path d=""  transform="translate(4182, 530)"/>
+<path d=""  transform="translate(4182, 530)"/>
+<path d=""  transform="translate(3920, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܷܸܘ̣ܨءܷ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0737.SYRN=6@238,-98+0|uni0621.SYRN=6+471|uni0728.SYRN=5@38,0+625|uni0323.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0738.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0737.SYRN=6@238,-98+0|uni0621.SYRN=6+471|uni0728.SYRN=5+587|uni0323.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0738.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                    +++++ ++
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2223 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1347, 888)"/>
+<path d=""  transform="translate(1058, 986)"/>
+<path d=""  transform="translate(1898, 530)"/>
+<path d=""  transform="translate(1898, 530)"/>
+<path d=""  transform="translate(1636, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2261 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1385, 888)"/>
+<path d=""  transform="translate(1096, 986)"/>
+<path d=""  transform="translate(1936, 530)"/>
+<path d=""  transform="translate(1936, 530)"/>
+<path d=""  transform="translate(1674, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݆ܠ̠ܨٍ݄ܡ݄ܐܨ݆ܷܠܱܨܱ݈ءܷ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0737.SYRN=18@238,-98+0|uni0621.SYRN=18+471|uni0748.SYRN=15@300,-456+0|uni0731.SYRN=15@300,-456+0|uni0728.Fina.SYRN=15@38,0+594|uni0731.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0737.SYRN=10@337,-456+0|uni0746.SYRN=10@337,-456+0|uni0728.SYRN=10@75,0+662|uni0710.Medi2.SYRN=9+356|uni0744.SYRN=7@355,-98+0|uni0721.Init.SYRN=7+761|uni0744.SYRN=4@262,-456+0|uni064D.SYRN=4@262,-456+0|uni0728.Fina.SYRN=4+556|uni0320.SYRN=2+0|uni0720.Init.SYRN=2+418|uni0746.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662</pre>
+
+
+
+<pre>Got     : uni0737.SYRN=18@238,-98+0|uni0621.SYRN=18+471|uni0748.SYRN=15@262,-456+0|uni0731.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0731.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0737.SYRN=10@262,-456+0|uni0746.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0710.Medi2.SYRN=9+356|uni0744.SYRN=7@355,-98+0|uni0721.Init.SYRN=7+761|uni0744.SYRN=4@262,-456+0|uni064D.SYRN=4@262,-456+0|uni0728.Fina.SYRN=4+556|uni0320.SYRN=2+0|uni0720.Init.SYRN=2+418|uni0746.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4710 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1196, 888)"/>
+<path d=""  transform="translate(1027, 986)"/>
+<path d=""  transform="translate(1707, 530)"/>
+<path d=""  transform="translate(1707, 530)"/>
+<path d=""  transform="translate(1445, 986)"/>
+<path d=""  transform="translate(2032, 986)"/>
+<path d=""  transform="translate(2743, 888)"/>
+<path d=""  transform="translate(2388, 986)"/>
+<path d=""  transform="translate(3411, 530)"/>
+<path d=""  transform="translate(3411, 530)"/>
+<path d=""  transform="translate(3149, 986)"/>
+<path d=""  transform="translate(3705, 986)"/>
+<path d=""  transform="translate(3705, 986)"/>
+<path d=""  transform="translate(4385, 530)"/>
+<path d=""  transform="translate(4123, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4898 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1234, 888)"/>
+<path d=""  transform="translate(1065, 986)"/>
+<path d=""  transform="translate(1820, 530)"/>
+<path d=""  transform="translate(1820, 530)"/>
+<path d=""  transform="translate(1558, 986)"/>
+<path d=""  transform="translate(2145, 986)"/>
+<path d=""  transform="translate(2856, 888)"/>
+<path d=""  transform="translate(2501, 986)"/>
+<path d=""  transform="translate(3524, 530)"/>
+<path d=""  transform="translate(3524, 530)"/>
+<path d=""  transform="translate(3262, 986)"/>
+<path d=""  transform="translate(3818, 986)"/>
+<path d=""  transform="translate(3818, 986)"/>
+<path d=""  transform="translate(4573, 530)"/>
+<path d=""  transform="translate(4311, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܧܿܨ݄ܹءܻܨٍܸܘܷܨ݄ܱء̭ܨ݄̱ܙܱ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0731.SYRN=20@159,-173+0|uni0719.SYRN=20+293|uni0331.SYRN=17@262,-456+0|uni0744.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni032D.SYRN=15@238,-98+0|uni0621.SYRN=15+471|uni0731.SYRN=12@300,-456+0|uni0744.SYRN=12@300,-456+0|uni0728.SYRN=12@38,0+625|uni0737.SYRN=10@289,-98+0|uni0718.SYRN=10+578|uni0738.SYRN=7@262,-456+0|uni064D.SYRN=7@262,-456+0|uni0728.SYRN=7+587|uni073B.SYRN=5@238,-98+0|uni0621.SYRN=5+471|uni0739.SYRN=2@300,-456+0|uni0744.SYRN=2@300,-456+0|uni0728.Fina.SYRN=2@38,0+594|uni073F.SYRN=0@288,209+0|uni0727.Init.SYRN=0+570</pre>
+
+
+
+<pre>Got     : uni0731.SYRN=20@159,-173+0|uni0719.SYRN=20+293|uni0331.SYRN=17@262,-456+0|uni0744.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni032D.SYRN=15@238,-98+0|uni0621.SYRN=15+471|uni0731.SYRN=12@262,-456+0|uni0744.SYRN=12@262,-456+0|uni0728.SYRN=12+587|uni0737.SYRN=10@289,-98+0|uni0718.SYRN=10+578|uni0738.SYRN=7@262,-456+0|uni064D.SYRN=7@262,-456+0|uni0728.SYRN=7+587|uni073B.SYRN=5@238,-98+0|uni0621.SYRN=5+471|uni0739.SYRN=2@262,-456+0|uni0744.SYRN=2@262,-456+0|uni0728.Fina.SYRN=2+556|uni073F.SYRN=0@288,209+0|uni0727.Init.SYRN=0+570</pre>
+
+
+
+<pre>                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4700 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(159, 813)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(293, 986)"/>
+<path d=""  transform="translate(1118, 888)"/>
+<path d=""  transform="translate(880, 986)"/>
+<path d=""  transform="translate(1613, 530)"/>
+<path d=""  transform="translate(1613, 530)"/>
+<path d=""  transform="translate(1351, 986)"/>
+<path d=""  transform="translate(2227, 888)"/>
+<path d=""  transform="translate(1938, 986)"/>
+<path d=""  transform="translate(2778, 530)"/>
+<path d=""  transform="translate(2778, 530)"/>
+<path d=""  transform="translate(2516, 986)"/>
+<path d=""  transform="translate(3341, 888)"/>
+<path d=""  transform="translate(3103, 986)"/>
+<path d=""  transform="translate(3836, 530)"/>
+<path d=""  transform="translate(3836, 530)"/>
+<path d=""  transform="translate(3574, 986)"/>
+<path d=""  transform="translate(4418, 1195)"/>
+<path d=""  transform="translate(4130, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4776 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(159, 813)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(293, 986)"/>
+<path d=""  transform="translate(1118, 888)"/>
+<path d=""  transform="translate(880, 986)"/>
+<path d=""  transform="translate(1651, 530)"/>
+<path d=""  transform="translate(1651, 530)"/>
+<path d=""  transform="translate(1389, 986)"/>
+<path d=""  transform="translate(2265, 888)"/>
+<path d=""  transform="translate(1976, 986)"/>
+<path d=""  transform="translate(2816, 530)"/>
+<path d=""  transform="translate(2816, 530)"/>
+<path d=""  transform="translate(2554, 986)"/>
+<path d=""  transform="translate(3379, 888)"/>
+<path d=""  transform="translate(3141, 986)"/>
+<path d=""  transform="translate(3912, 530)"/>
+<path d=""  transform="translate(3912, 530)"/>
+<path d=""  transform="translate(3650, 986)"/>
+<path d=""  transform="translate(4494, 1195)"/>
+<path d=""  transform="translate(4206, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̠̤ܘܾܨܾ݆ܝ̣ܟْ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0652.SYRN=10@270,-98+0|uni071F.Fina.SYRN=10+615|uni0323.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0746.SYRN=5@237,-456+0|uni073E.SYRN=5@237,-456+0|uni0728.SYRN=5@-25,0+562|uni073E.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0324.SYRN=0@262,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0652.SYRN=10@270,-98+0|uni071F.Fina.SYRN=10+615|uni0323.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0746.SYRN=5@262,-456+0|uni073E.SYRN=5@262,-456+0|uni0728.SYRN=5+587|uni073E.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0324.SYRN=0@262,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                              ^^                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2675 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(270, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(781, 889)"/>
+<path d=""  transform="translate(615, 986)"/>
+<path d=""  transform="translate(1185, 530)"/>
+<path d=""  transform="translate(1185, 530)"/>
+<path d=""  transform="translate(923, 986)"/>
+<path d=""  transform="translate(1799, 888)"/>
+<path d=""  transform="translate(1510, 986)"/>
+<path d=""  transform="translate(2350, 530)"/>
+<path d=""  transform="translate(2088, 986)"/>
+<path d=""  transform="translate(2088, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2650 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(270, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(781, 889)"/>
+<path d=""  transform="translate(615, 986)"/>
+<path d=""  transform="translate(1160, 530)"/>
+<path d=""  transform="translate(1160, 530)"/>
+<path d=""  transform="translate(898, 986)"/>
+<path d=""  transform="translate(1774, 888)"/>
+<path d=""  transform="translate(1485, 986)"/>
+<path d=""  transform="translate(2325, 530)"/>
+<path d=""  transform="translate(2063, 986)"/>
+<path d=""  transform="translate(2063, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̭ܻܡܼܨِܷܝٍܨ݆̰ءٕܨ̤ܱܡܼܬ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni072C.Fina.SYRN=20+625|uni073C.SYRN=18@355,-98+0|uni0721.Init.SYRN=18+761|uni0731.SYRN=15@258,-595+0|uni0324.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0655.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni0330.SYRN=10@300,-456+0|uni0746.SYRN=10@300,-456+0|uni0728.Fina.SYRN=10@38,0+594|uni064D.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0737.SYRN=5@237,-456+0|uni0650.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni073C.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073B.SYRN=0@258,-617+0|uni032D.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni072C.Fina.SYRN=20+625|uni073C.SYRN=18@355,-98+0|uni0721.Init.SYRN=18+761|uni0731.SYRN=15@258,-595+0|uni0324.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0655.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni0330.SYRN=10@262,-456+0|uni0746.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni064D.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0737.SYRN=5@262,-456+0|uni0650.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni073C.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073B.SYRN=0@258,-617+0|uni032D.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^                           ^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5212 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(980, 888)"/>
+<path d=""  transform="translate(625, 986)"/>
+<path d=""  transform="translate(1644, 391)"/>
+<path d=""  transform="translate(1648, 530)"/>
+<path d=""  transform="translate(1386, 986)"/>
+<path d=""  transform="translate(2211, 888)"/>
+<path d=""  transform="translate(1973, 986)"/>
+<path d=""  transform="translate(2706, 530)"/>
+<path d=""  transform="translate(2706, 530)"/>
+<path d=""  transform="translate(2444, 986)"/>
+<path d=""  transform="translate(3166, 889)"/>
+<path d=""  transform="translate(3000, 986)"/>
+<path d=""  transform="translate(3570, 530)"/>
+<path d=""  transform="translate(3570, 530)"/>
+<path d=""  transform="translate(3308, 986)"/>
+<path d=""  transform="translate(4219, 888)"/>
+<path d=""  transform="translate(3864, 986)"/>
+<path d=""  transform="translate(4883, 369)"/>
+<path d=""  transform="translate(4887, 530)"/>
+<path d=""  transform="translate(4625, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5225 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(980, 888)"/>
+<path d=""  transform="translate(625, 986)"/>
+<path d=""  transform="translate(1644, 391)"/>
+<path d=""  transform="translate(1648, 530)"/>
+<path d=""  transform="translate(1386, 986)"/>
+<path d=""  transform="translate(2211, 888)"/>
+<path d=""  transform="translate(1973, 986)"/>
+<path d=""  transform="translate(2744, 530)"/>
+<path d=""  transform="translate(2744, 530)"/>
+<path d=""  transform="translate(2482, 986)"/>
+<path d=""  transform="translate(3204, 889)"/>
+<path d=""  transform="translate(3038, 986)"/>
+<path d=""  transform="translate(3583, 530)"/>
+<path d=""  transform="translate(3583, 530)"/>
+<path d=""  transform="translate(3321, 986)"/>
+<path d=""  transform="translate(4232, 888)"/>
+<path d=""  transform="translate(3877, 986)"/>
+<path d=""  transform="translate(4896, 369)"/>
+<path d=""  transform="translate(4900, 530)"/>
+<path d=""  transform="translate(4638, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̠̤ܠ̭ܨܹܴܝ̱ܠ݈ܨِٕءܴܨܱܹܝ̠</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0320.SYRN=20+0|uni071D.SYRN=20+628|uni0739.SYRN=17@237,-456+0|uni0731.SYRN=17@237,-456+0|uni0728.SYRN=17@-25,0+562|uni0734.SYRN=15@238,-98+0|uni0621.SYRN=15+471|uni06550650.SYRN=12@300,-456+0|uni0728.Fina.SYRN=12@38,0+594|uni0748.SYRN=10@169,-98+0|uni0720.Medi.SYRN=10+383|uni0331.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0734.SYRN=5@237,-456+0|uni0739.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni032D.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0324.SYRN=0@337,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0@75,0+662</pre>
+
+
+
+<pre>Got     : uni0320.SYRN=20+0|uni071D.SYRN=20+628|uni0739.SYRN=17@262,-456+0|uni0731.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni0734.SYRN=15@238,-98+0|uni0621.SYRN=15+471|uni06550650.SYRN=12@262,-456+0|uni0728.Fina.SYRN=12+556|uni0748.SYRN=10@169,-98+0|uni0720.Medi.SYRN=10+383|uni0331.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0734.SYRN=5@262,-456+0|uni0739.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni032D.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0324.SYRN=0@262,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4494 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(628, 986)"/>
+<path d=""  transform="translate(1453, 888)"/>
+<path d=""  transform="translate(1215, 986)"/>
+<path d=""  transform="translate(1948, 530)"/>
+<path d=""  transform="translate(1686, 986)"/>
+<path d=""  transform="translate(2411, 888)"/>
+<path d=""  transform="translate(2242, 986)"/>
+<path d=""  transform="translate(2791, 889)"/>
+<path d=""  transform="translate(2625, 986)"/>
+<path d=""  transform="translate(3195, 530)"/>
+<path d=""  transform="translate(3195, 530)"/>
+<path d=""  transform="translate(2933, 986)"/>
+<path d=""  transform="translate(3658, 888)"/>
+<path d=""  transform="translate(3489, 986)"/>
+<path d=""  transform="translate(4169, 530)"/>
+<path d=""  transform="translate(3907, 986)"/>
+<path d=""  transform="translate(3907, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4557 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(603, 986)"/>
+<path d=""  transform="translate(1428, 888)"/>
+<path d=""  transform="translate(1190, 986)"/>
+<path d=""  transform="translate(1961, 530)"/>
+<path d=""  transform="translate(1699, 986)"/>
+<path d=""  transform="translate(2424, 888)"/>
+<path d=""  transform="translate(2255, 986)"/>
+<path d=""  transform="translate(2804, 889)"/>
+<path d=""  transform="translate(2638, 986)"/>
+<path d=""  transform="translate(3183, 530)"/>
+<path d=""  transform="translate(3183, 530)"/>
+<path d=""  transform="translate(2921, 986)"/>
+<path d=""  transform="translate(3646, 888)"/>
+<path d=""  transform="translate(3477, 986)"/>
+<path d=""  transform="translate(4232, 530)"/>
+<path d=""  transform="translate(3895, 986)"/>
+<path d=""  transform="translate(3970, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܙٕܙ̤ܨܻٕܘ݆ܐٕܨ̣̠ܡܷ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0737.SYRN=14@435,-99+0|uni0721.SYRN=14+705|uni0320.SYRN=11+0|uni0323.SYRN=11@262,-456+0|uni0728.SYRN=11+587|uni0655.SYRN=9@183,-98+0|uni0710.SYRN=9+371|uni0746.SYRN=7@251,-98+0|uni0718.SYRN=7@-38,0+540|uni0655.SYRN=4@262,-456+0|uni073B.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni0324.SYRN=2@159,-173+0|uni0719.SYRN=2+293|uni0655.SYRN=0@209,-173+0|uni0719.SYRN=0@50,0+343</pre>
+
+
+
+<pre>Got     : uni0737.SYRN=14@435,-99+0|uni0721.SYRN=14+705|uni0320.SYRN=11+0|uni0323.SYRN=11@262,-456+0|uni0728.SYRN=11+587|uni0655.SYRN=9@183,-98+0|uni0710.SYRN=9+371|uni0746.SYRN=7@289,-98+0|uni0718.SYRN=7+578|uni0655.SYRN=4@262,-456+0|uni073B.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni0324.SYRN=2@159,-173+0|uni0719.SYRN=2+293|uni0655.SYRN=0@209,-173+0|uni0719.SYRN=0@50,0+343</pre>
+
+
+
+<pre>                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3464 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1475, 888)"/>
+<path d=""  transform="translate(1292, 986)"/>
+<path d=""  transform="translate(1952, 888)"/>
+<path d=""  transform="translate(1663, 986)"/>
+<path d=""  transform="translate(2503, 530)"/>
+<path d=""  transform="translate(2503, 530)"/>
+<path d=""  transform="translate(2241, 986)"/>
+<path d=""  transform="translate(2987, 813)"/>
+<path d=""  transform="translate(2828, 986)"/>
+<path d=""  transform="translate(3330, 813)"/>
+<path d=""  transform="translate(3171, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3426 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1475, 888)"/>
+<path d=""  transform="translate(1292, 986)"/>
+<path d=""  transform="translate(1914, 888)"/>
+<path d=""  transform="translate(1625, 986)"/>
+<path d=""  transform="translate(2465, 530)"/>
+<path d=""  transform="translate(2465, 530)"/>
+<path d=""  transform="translate(2203, 986)"/>
+<path d=""  transform="translate(2949, 813)"/>
+<path d=""  transform="translate(2790, 986)"/>
+<path d=""  transform="translate(3292, 813)"/>
+<path d=""  transform="translate(3133, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܴ݆ܠܹܨٍ̠ܝٍܖܟܨ̠̤ܙܴ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0734.SYRN=15@159,-173+0|uni0719.SYRN=15+293|uni0324.SYRN=12@262,-456+0|uni0320.SYRN=12+0|uni0728.Fina.SYRN=12+556|uni071F.Init.SYRN=11+616|uni0716.Fina.SYRN=10+518|uni064D.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0320.SYRN=5+0|uni064D.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni0739.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0746.SYRN=0@337,-456+0|uni0734.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662</pre>
+
+
+
+<pre>Got     : uni0734.SYRN=15@159,-173+0|uni0719.SYRN=15+293|uni0324.SYRN=12@262,-456+0|uni0320.SYRN=12+0|uni0728.Fina.SYRN=12+556|uni071F.Init.SYRN=11+616|uni0716.Fina.SYRN=10+518|uni064D.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0320.SYRN=5+0|uni064D.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0739.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0746.SYRN=0@262,-456+0|uni0734.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                   ^^                           ^^^^^^^^^^                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3852 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(159, 813)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(293, 986)"/>
+<path d=""  transform="translate(293, 986)"/>
+<path d=""  transform="translate(849, 986)"/>
+<path d=""  transform="translate(1465, 986)"/>
+<path d=""  transform="translate(2149, 889)"/>
+<path d=""  transform="translate(1983, 986)"/>
+<path d=""  transform="translate(2291, 986)"/>
+<path d=""  transform="translate(2553, 530)"/>
+<path d=""  transform="translate(2291, 986)"/>
+<path d=""  transform="translate(3016, 888)"/>
+<path d=""  transform="translate(2847, 986)"/>
+<path d=""  transform="translate(3527, 530)"/>
+<path d=""  transform="translate(3527, 530)"/>
+<path d=""  transform="translate(3265, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3902 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(159, 813)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(293, 986)"/>
+<path d=""  transform="translate(293, 986)"/>
+<path d=""  transform="translate(849, 986)"/>
+<path d=""  transform="translate(1465, 986)"/>
+<path d=""  transform="translate(2149, 889)"/>
+<path d=""  transform="translate(1983, 986)"/>
+<path d=""  transform="translate(2291, 986)"/>
+<path d=""  transform="translate(2528, 530)"/>
+<path d=""  transform="translate(2266, 986)"/>
+<path d=""  transform="translate(2991, 888)"/>
+<path d=""  transform="translate(2822, 986)"/>
+<path d=""  transform="translate(3577, 530)"/>
+<path d=""  transform="translate(3577, 530)"/>
+<path d=""  transform="translate(3315, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٍܻܝܻݍ̇ܨِܸءܻܨ̣݆ܘܸܨܻ݈ܡ̰</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0330.SYRN=20@435,-99+0|uni0721.SYRN=20+705|uni0748.SYRN=17@262,-456+0|uni073B.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni0738.SYRN=15@289,-98+0|uni0718.SYRN=15+578|uni0746.SYRN=12@262,-594+0|uni0323.SYRN=12@262,-456+0|uni0728.SYRN=12+587|uni073B.SYRN=10@238,-98+0|uni0621.SYRN=10+471|uni0738.SYRN=7@300,-456+0|uni0650.SYRN=7@300,-456+0|uni0728.SYRN=7@38,0+625|uni0307.SYRN=5@298,-203+0|uni074D.Fina.SYRN=5+583|uni073B.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni073B.SYRN=0@237,-456+0|uni064D.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni0330.SYRN=20@435,-99+0|uni0721.SYRN=20+705|uni0748.SYRN=17@262,-456+0|uni073B.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni0738.SYRN=15@289,-98+0|uni0718.SYRN=15+578|uni0746.SYRN=12@262,-594+0|uni0323.SYRN=12@262,-456+0|uni0728.SYRN=12+587|uni073B.SYRN=10@238,-98+0|uni0621.SYRN=10+471|uni0738.SYRN=7@262,-456+0|uni0650.SYRN=7@262,-456+0|uni0728.SYRN=7+587|uni0307.SYRN=5@298,-203+0|uni074D.Fina.SYRN=5+583|uni073B.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni073B.SYRN=0@262,-456+0|uni064D.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                                                                    ^^                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4993 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1581, 888)"/>
+<path d=""  transform="translate(1292, 986)"/>
+<path d=""  transform="translate(2132, 392)"/>
+<path d=""  transform="translate(2132, 530)"/>
+<path d=""  transform="translate(1870, 986)"/>
+<path d=""  transform="translate(2695, 888)"/>
+<path d=""  transform="translate(2457, 986)"/>
+<path d=""  transform="translate(3190, 530)"/>
+<path d=""  transform="translate(3190, 530)"/>
+<path d=""  transform="translate(2928, 986)"/>
+<path d=""  transform="translate(3813, 783)"/>
+<path d=""  transform="translate(3515, 986)"/>
+<path d=""  transform="translate(4264, 889)"/>
+<path d=""  transform="translate(4098, 986)"/>
+<path d=""  transform="translate(4668, 530)"/>
+<path d=""  transform="translate(4668, 530)"/>
+<path d=""  transform="translate(4406, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5006 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1581, 888)"/>
+<path d=""  transform="translate(1292, 986)"/>
+<path d=""  transform="translate(2132, 392)"/>
+<path d=""  transform="translate(2132, 530)"/>
+<path d=""  transform="translate(1870, 986)"/>
+<path d=""  transform="translate(2695, 888)"/>
+<path d=""  transform="translate(2457, 986)"/>
+<path d=""  transform="translate(3228, 530)"/>
+<path d=""  transform="translate(3228, 530)"/>
+<path d=""  transform="translate(2966, 986)"/>
+<path d=""  transform="translate(3851, 783)"/>
+<path d=""  transform="translate(3553, 986)"/>
+<path d=""  transform="translate(4302, 889)"/>
+<path d=""  transform="translate(4136, 986)"/>
+<path d=""  transform="translate(4681, 530)"/>
+<path d=""  transform="translate(4681, 530)"/>
+<path d=""  transform="translate(4419, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݆̮ܝ̮ܡ̣ܨٕ݈ܩܱܨ̰ܹء̭ܨ̱ܸܩ݆</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0746.SYRN=20@483,-99+0|uni0729.SYRN=20+884|uni0738.SYRN=17@262,-576+0|uni0331.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni032D.SYRN=15@238,-98+0|uni0621.SYRN=15+471|uni0739.SYRN=12@296,-597+0|uni0330.SYRN=12@300,-456+0|uni0728.Fina.SYRN=12@38,0+594|uni0731.SYRN=10@316,-98+0|uni0729.Init.SYRN=10+597|uni0748.SYRN=7@262,-456+0|uni0655.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0323.SYRN=5@355,-98+0|uni0721.Medi.SYRN=5+761|uni032E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni032E.SYRN=0@237,-456+0|uni0746.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni0746.SYRN=20@483,-99+0|uni0729.SYRN=20+884|uni0738.SYRN=17@262,-576+0|uni0331.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni032D.SYRN=15@238,-98+0|uni0621.SYRN=15+471|uni0739.SYRN=12@258,-597+0|uni0330.SYRN=12@262,-456+0|uni0728.Fina.SYRN=12+556|uni0731.SYRN=10@316,-98+0|uni0729.Init.SYRN=10+597|uni0748.SYRN=7@262,-456+0|uni0655.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0323.SYRN=5@355,-98+0|uni0721.Medi.SYRN=5+761|uni032E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni032E.SYRN=0@262,-456+0|uni0746.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                                                                                                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5307 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(483, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1146, 410)"/>
+<path d=""  transform="translate(1146, 530)"/>
+<path d=""  transform="translate(884, 986)"/>
+<path d=""  transform="translate(1709, 888)"/>
+<path d=""  transform="translate(1471, 986)"/>
+<path d=""  transform="translate(2200, 389)"/>
+<path d=""  transform="translate(2204, 530)"/>
+<path d=""  transform="translate(1942, 986)"/>
+<path d=""  transform="translate(2814, 888)"/>
+<path d=""  transform="translate(2498, 986)"/>
+<path d=""  transform="translate(3357, 530)"/>
+<path d=""  transform="translate(3357, 530)"/>
+<path d=""  transform="translate(3095, 986)"/>
+<path d=""  transform="translate(4006, 888)"/>
+<path d=""  transform="translate(3651, 986)"/>
+<path d=""  transform="translate(4578, 889)"/>
+<path d=""  transform="translate(4412, 986)"/>
+<path d=""  transform="translate(4982, 530)"/>
+<path d=""  transform="translate(4982, 530)"/>
+<path d=""  transform="translate(4720, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5320 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(483, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1146, 410)"/>
+<path d=""  transform="translate(1146, 530)"/>
+<path d=""  transform="translate(884, 986)"/>
+<path d=""  transform="translate(1709, 888)"/>
+<path d=""  transform="translate(1471, 986)"/>
+<path d=""  transform="translate(2238, 389)"/>
+<path d=""  transform="translate(2242, 530)"/>
+<path d=""  transform="translate(1980, 986)"/>
+<path d=""  transform="translate(2852, 888)"/>
+<path d=""  transform="translate(2536, 986)"/>
+<path d=""  transform="translate(3395, 530)"/>
+<path d=""  transform="translate(3395, 530)"/>
+<path d=""  transform="translate(3133, 986)"/>
+<path d=""  transform="translate(4044, 888)"/>
+<path d=""  transform="translate(3689, 986)"/>
+<path d=""  transform="translate(4616, 889)"/>
+<path d=""  transform="translate(4450, 986)"/>
+<path d=""  transform="translate(4995, 530)"/>
+<path d=""  transform="translate(4995, 530)"/>
+<path d=""  transform="translate(4733, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̱̰ܡ̣ܚܨِ̱ܩ̣ܨٍِܝ̣ܨܹ݆ܘٍ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni064D.SYRN=19@289,-98+0|uni0718.SYRN=19+578|uni0746.SYRN=16@262,-456+0|uni0739.SYRN=16@262,-456+0|uni0728.Fina.SYRN=16+556|uni0323.SYRN=14@166,-97+0|uni071D.Init.SYRN=14+308|uni0650.SYRN=11@237,-456+0|uni064D.SYRN=11@237,-456+0|uni0728.Fina.SYRN=11@-25,0+531|uni0323.SYRN=9@316,-98+0|uni0729.Init.SYRN=9+597|uni0331.SYRN=6@262,-456+0|uni0650.SYRN=6@262,-456+0|uni0728.Fina.SYRN=6+556|uni071A.Medi.SYRN=5+497|uni0323.SYRN=3@403,-98+0|uni0721.InitN.SYRN=3+675|uni0330.SYRN=0@262,-456+0|uni0331.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni064D.SYRN=19@289,-98+0|uni0718.SYRN=19+578|uni0746.SYRN=16@262,-456+0|uni0739.SYRN=16@262,-456+0|uni0728.Fina.SYRN=16+556|uni0323.SYRN=14@166,-97+0|uni071D.Init.SYRN=14+308|uni0650.SYRN=11@262,-456+0|uni064D.SYRN=11@262,-456+0|uni0728.Fina.SYRN=11+556|uni0323.SYRN=9@316,-98+0|uni0729.Init.SYRN=9+597|uni0331.SYRN=6@262,-456+0|uni0650.SYRN=6@262,-456+0|uni0728.Fina.SYRN=6+556|uni071A.Medi.SYRN=5+497|uni0323.SYRN=3@403,-98+0|uni0721.InitN.SYRN=3+675|uni0330.SYRN=0@262,-456+0|uni0331.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                           ^^                         ^^                            ^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4910 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(289, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(578, 986)"/>
+<path d=""  transform="translate(1300, 889)"/>
+<path d=""  transform="translate(1134, 986)"/>
+<path d=""  transform="translate(1704, 530)"/>
+<path d=""  transform="translate(1704, 530)"/>
+<path d=""  transform="translate(1442, 986)"/>
+<path d=""  transform="translate(2314, 888)"/>
+<path d=""  transform="translate(1998, 986)"/>
+<path d=""  transform="translate(2857, 530)"/>
+<path d=""  transform="translate(2857, 530)"/>
+<path d=""  transform="translate(2595, 986)"/>
+<path d=""  transform="translate(3151, 986)"/>
+<path d=""  transform="translate(4051, 888)"/>
+<path d=""  transform="translate(3648, 986)"/>
+<path d=""  transform="translate(4585, 530)"/>
+<path d=""  transform="translate(4585, 530)"/>
+<path d=""  transform="translate(4323, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4885 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(289, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(840, 530)"/>
+<path d=""  transform="translate(578, 986)"/>
+<path d=""  transform="translate(1300, 889)"/>
+<path d=""  transform="translate(1134, 986)"/>
+<path d=""  transform="translate(1679, 530)"/>
+<path d=""  transform="translate(1679, 530)"/>
+<path d=""  transform="translate(1417, 986)"/>
+<path d=""  transform="translate(2289, 888)"/>
+<path d=""  transform="translate(1973, 986)"/>
+<path d=""  transform="translate(2832, 530)"/>
+<path d=""  transform="translate(2832, 530)"/>
+<path d=""  transform="translate(2570, 986)"/>
+<path d=""  transform="translate(3126, 986)"/>
+<path d=""  transform="translate(4026, 888)"/>
+<path d=""  transform="translate(3623, 986)"/>
+<path d=""  transform="translate(4560, 530)"/>
+<path d=""  transform="translate(4560, 530)"/>
+<path d=""  transform="translate(4298, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܘ܉ܨܾٕܝܷܨِܱܙܻ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni073B.SYRN=10@159,-173+0|uni0719.SYRN=10+293|uni0731.SYRN=7@262,-456+0|uni0650.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0737.SYRN=5@166,-97+0|uni071D.Init.SYRN=5+308|uni0655.SYRN=2@237,-456+0|uni073E.SYRN=2@237,-456+0|uni0728.SYRN=2@-25,0+562|uni0709.SYRN=1+374|uni0718.SYRN=0@-38,0+540</pre>
+
+
+
+<pre>Got     : uni073B.SYRN=10@159,-173+0|uni0719.SYRN=10+293|uni0731.SYRN=7@262,-456+0|uni0650.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0737.SYRN=5@166,-97+0|uni071D.Init.SYRN=5+308|uni0655.SYRN=2@262,-456+0|uni073E.SYRN=2@262,-456+0|uni0728.SYRN=2+587|uni0709.SYRN=1+374|uni0718.SYRN=0@-38,0+540</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2658 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(159, 813)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(293, 986)"/>
+<path d=""  transform="translate(1015, 889)"/>
+<path d=""  transform="translate(849, 986)"/>
+<path d=""  transform="translate(1419, 530)"/>
+<path d=""  transform="translate(1419, 530)"/>
+<path d=""  transform="translate(1157, 986)"/>
+<path d=""  transform="translate(1744, 986)"/>
+<path d=""  transform="translate(2080, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2633 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(159, 813)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(555, 530)"/>
+<path d=""  transform="translate(293, 986)"/>
+<path d=""  transform="translate(1015, 889)"/>
+<path d=""  transform="translate(849, 986)"/>
+<path d=""  transform="translate(1394, 530)"/>
+<path d=""  transform="translate(1394, 530)"/>
+<path d=""  transform="translate(1132, 986)"/>
+<path d=""  transform="translate(1719, 986)"/>
+<path d=""  transform="translate(2055, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܖ݅ܝܳܨ̣ܾܘ݄ܙ̄ܙ݅ݍܓܨ̣ܾءܻ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni073B.SYRN=18@238,-98+0|uni0621.SYRN=18+471|uni073E.SYRN=15@300,-594+0|uni0323.SYRN=15@300,-456+0|uni0728.Fina.SYRN=15@38,0+594|uni0713.Init.SYRN=14+451|uni074D.SYRN=13@38,0+621|uni0745.SYRN=11@152,-57+0|uni0719.SYRN=11+293|uni0304.SYRN=9@202,-57+0|uni0719.SYRN=9@50,0+343|uni0744.SYRN=7@289,-98+0|uni0718.SYRN=7+578|uni073E.SYRN=4@262,-594+0|uni0323.SYRN=4@262,-456+0|uni0728.Fina.SYRN=4+556|uni0733.SYRN=2@151,-108+0|uni071D.Init.SYRN=2+308|uni0745.SYRN=0@248,-37+0|uni0716.SYRN=0+521</pre>
+
+
+
+<pre>Got     : uni073B.SYRN=18@238,-98+0|uni0621.SYRN=18+471|uni073E.SYRN=15@262,-594+0|uni0323.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0713.Init.SYRN=14+451|uni074D.SYRN=13+583|uni0745.SYRN=11@152,-57+0|uni0719.SYRN=11+293|uni0304.SYRN=9@202,-57+0|uni0719.SYRN=9@50,0+343|uni0744.SYRN=7@289,-98+0|uni0718.SYRN=7+578|uni073E.SYRN=4@262,-594+0|uni0323.SYRN=4@262,-456+0|uni0728.Fina.SYRN=4+556|uni0733.SYRN=2@151,-108+0|uni071D.Init.SYRN=2+308|uni0745.SYRN=0@248,-37+0|uni0716.SYRN=0+521</pre>
+
+
+
+<pre>                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^                                         ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4660 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 392)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1027, 986)"/>
+<path d=""  transform="translate(1478, 986)"/>
+<path d=""  transform="translate(2213, 929)"/>
+<path d=""  transform="translate(2061, 986)"/>
+<path d=""  transform="translate(2556, 929)"/>
+<path d=""  transform="translate(2404, 986)"/>
+<path d=""  transform="translate(2986, 888)"/>
+<path d=""  transform="translate(2697, 986)"/>
+<path d=""  transform="translate(3537, 392)"/>
+<path d=""  transform="translate(3537, 530)"/>
+<path d=""  transform="translate(3275, 986)"/>
+<path d=""  transform="translate(3982, 878)"/>
+<path d=""  transform="translate(3831, 986)"/>
+<path d=""  transform="translate(4387, 949)"/>
+<path d=""  transform="translate(4139, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4736 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 392)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1065, 986)"/>
+<path d=""  transform="translate(1554, 986)"/>
+<path d=""  transform="translate(2289, 929)"/>
+<path d=""  transform="translate(2137, 986)"/>
+<path d=""  transform="translate(2632, 929)"/>
+<path d=""  transform="translate(2480, 986)"/>
+<path d=""  transform="translate(3062, 888)"/>
+<path d=""  transform="translate(2773, 986)"/>
+<path d=""  transform="translate(3613, 392)"/>
+<path d=""  transform="translate(3613, 530)"/>
+<path d=""  transform="translate(3351, 986)"/>
+<path d=""  transform="translate(4058, 878)"/>
+<path d=""  transform="translate(3907, 986)"/>
+<path d=""  transform="translate(4463, 949)"/>
+<path d=""  transform="translate(4215, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܥܑܨܹ̠ܝ̤ܨ̱݈ܡ݆</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0746.SYRN=10@435,-99+0|uni0721.SYRN=10+705|uni0748.SYRN=7@262,-576+0|uni0331.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0324.SYRN=5@166,-97+0|uni071D.Init.SYRN=5+308|uni0320.SYRN=2+0|uni0739.SYRN=2@237,-456+0|uni0728.Fina.SYRN=2@-25,0+531|uni0711.SYRN=0@145,-2+0|uni0725.Init.SYRN=0+561</pre>
+
+
+
+<pre>Got     : uni0746.SYRN=10@435,-99+0|uni0721.SYRN=10+705|uni0748.SYRN=7@262,-576+0|uni0331.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0324.SYRN=5@166,-97+0|uni071D.Init.SYRN=5+308|uni0320.SYRN=2+0|uni0739.SYRN=2@262,-456+0|uni0728.Fina.SYRN=2+556|uni0711.SYRN=0@145,-2+0|uni0725.Init.SYRN=0+561</pre>
+
+
+
+<pre>                                                                                                                                                                                                                      ^^                           ^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2686 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 410)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1427, 889)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1569, 986)"/>
+<path d=""  transform="translate(1831, 530)"/>
+<path d=""  transform="translate(1569, 986)"/>
+<path d=""  transform="translate(2270, 984)"/>
+<path d=""  transform="translate(2125, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2661 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 410)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1427, 889)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1569, 986)"/>
+<path d=""  transform="translate(1806, 530)"/>
+<path d=""  transform="translate(1544, 986)"/>
+<path d=""  transform="translate(2245, 984)"/>
+<path d=""  transform="translate(2100, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̰̱ܘ̮ܲܨܸ̱ءٍ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni064D.SYRN=9@238,-98+0|uni0621.SYRN=9+471|uni0331.SYRN=6@300,-456+0|uni0738.SYRN=6@300,-456+0|uni0728.SYRN=6@38,0+625|uni0732.below.SYRN=3@289,-98+0|uni0732.above.SYRN=3@292,13+0|uni032E.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0331.SYRN=0@262,-456+0|uni0330.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni064D.SYRN=9@238,-98+0|uni0621.SYRN=9+471|uni0331.SYRN=6@262,-456+0|uni0738.SYRN=6@262,-456+0|uni0728.SYRN=6+587|uni0732.below.SYRN=3@285,-208+0|uni0732.above.SYRN=3@292,13+0|uni032E.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0331.SYRN=0@262,-456+0|uni0330.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                        ^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2223 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(733, 530)"/>
+<path d=""  transform="translate(471, 986)"/>
+<path d=""  transform="translate(1343, 778)"/>
+<path d=""  transform="translate(1350, 999)"/>
+<path d=""  transform="translate(1347, 888)"/>
+<path d=""  transform="translate(1058, 986)"/>
+<path d=""  transform="translate(1898, 530)"/>
+<path d=""  transform="translate(1898, 530)"/>
+<path d=""  transform="translate(1636, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2261 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(238, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(771, 530)"/>
+<path d=""  transform="translate(509, 986)"/>
+<path d=""  transform="translate(1385, 888)"/>
+<path d=""  transform="translate(1388, 999)"/>
+<path d=""  transform="translate(1385, 888)"/>
+<path d=""  transform="translate(1096, 986)"/>
+<path d=""  transform="translate(1936, 530)"/>
+<path d=""  transform="translate(1936, 530)"/>
+<path d=""  transform="translate(1674, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܻ݄ܠܸܨܹٕܙ݄ܨܴܻءܹܤِܨ̰̭ܝܹ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0739.SYRN=20@492,-98+0|uni071D.SYRN=20+628|uni032D.SYRN=17@237,-456+0|uni0330.SYRN=17@237,-456+0|uni0728.Fina.SYRN=17@-25,0+531|uni0650.SYRN=15@364,-98+0|uni0724.Init.SYRN=15+784|uni0739.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni073B.SYRN=10@300,-456+0|uni0734.SYRN=10@300,-456+0|uni0728.SYRN=10@38,0+625|uni0744.SYRN=8@159,-173+0|uni0719.SYRN=8+293|uni0655.SYRN=5@262,-456+0|uni0739.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0738.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0744.SYRN=0@337,-456+0|uni073B.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662</pre>
+
+
+
+<pre>Got     : uni0739.SYRN=20@492,-98+0|uni071D.SYRN=20+628|uni032D.SYRN=17@262,-456+0|uni0330.SYRN=17@262,-456+0|uni0728.Fina.SYRN=17+556|uni0650.SYRN=15@364,-98+0|uni0724.Init.SYRN=15+784|uni0739.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni073B.SYRN=10@262,-456+0|uni0734.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0744.SYRN=8@159,-173+0|uni0719.SYRN=8+293|uni0655.SYRN=5@262,-456+0|uni0739.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0738.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0744.SYRN=0@262,-456+0|uni073B.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                            ^^^^^^^^^^                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                          ^^^                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4880 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(492, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(890, 530)"/>
+<path d=""  transform="translate(628, 986)"/>
+<path d=""  transform="translate(1548, 888)"/>
+<path d=""  transform="translate(1184, 986)"/>
+<path d=""  transform="translate(2206, 888)"/>
+<path d=""  transform="translate(1968, 986)"/>
+<path d=""  transform="translate(2701, 530)"/>
+<path d=""  transform="translate(2701, 530)"/>
+<path d=""  transform="translate(2439, 986)"/>
+<path d=""  transform="translate(3185, 813)"/>
+<path d=""  transform="translate(3026, 986)"/>
+<path d=""  transform="translate(3581, 530)"/>
+<path d=""  transform="translate(3581, 530)"/>
+<path d=""  transform="translate(3319, 986)"/>
+<path d=""  transform="translate(4044, 888)"/>
+<path d=""  transform="translate(3875, 986)"/>
+<path d=""  transform="translate(4555, 530)"/>
+<path d=""  transform="translate(4555, 530)"/>
+<path d=""  transform="translate(4293, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4968 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(492, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(865, 530)"/>
+<path d=""  transform="translate(603, 986)"/>
+<path d=""  transform="translate(1523, 888)"/>
+<path d=""  transform="translate(1159, 986)"/>
+<path d=""  transform="translate(2181, 888)"/>
+<path d=""  transform="translate(1943, 986)"/>
+<path d=""  transform="translate(2714, 530)"/>
+<path d=""  transform="translate(2714, 530)"/>
+<path d=""  transform="translate(2452, 986)"/>
+<path d=""  transform="translate(3198, 813)"/>
+<path d=""  transform="translate(3039, 986)"/>
+<path d=""  transform="translate(3594, 530)"/>
+<path d=""  transform="translate(3594, 530)"/>
+<path d=""  transform="translate(3332, 986)"/>
+<path d=""  transform="translate(4057, 888)"/>
+<path d=""  transform="translate(3888, 986)"/>
+<path d=""  transform="translate(4643, 530)"/>
+<path d=""  transform="translate(4643, 530)"/>
+<path d=""  transform="translate(4381, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̣̠ܡ݄ܨ̰ܹܡܱܥܑܨ̠ܹء̣ܨٍܼܡܱ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0731.SYRN=20@435,-99+0|uni0721.SYRN=20+705|uni073C.SYRN=17@262,-456+0|uni064D.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni0323.SYRN=15@238,-98+0|uni0621.SYRN=15+471|uni0739.SYRN=12@0,-120+0|uni0320.SYRN=12+0|uni0728.Fina.SYRN=12@38,0+594|uni0711.SYRN=10@144,-3+0|uni0725.Medi.SYRN=10+421|uni0731.SYRN=8@403,-98+0|uni0721.InitN.SYRN=8+675|uni0739.SYRN=5@258,-597+0|uni0330.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0744.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0320.SYRN=0+0|uni0323.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni0731.SYRN=20@435,-99+0|uni0721.SYRN=20+705|uni073C.SYRN=17@262,-456+0|uni064D.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni0323.SYRN=15@238,-98+0|uni0621.SYRN=15+471|uni0739.SYRN=12@262,-456+0|uni0320.SYRN=12+0|uni0728.Fina.SYRN=12+556|uni0711.SYRN=10@144,-3+0|uni0725.Medi.SYRN=10+421|uni0731.SYRN=8@403,-98+0|uni0721.InitN.SYRN=8+675|uni0739.SYRN=5@258,-597+0|uni0330.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0744.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0320.SYRN=0+0|uni0323.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                ^^^^^^                                         ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5319 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1530, 888)"/>
+<path d=""  transform="translate(1292, 986)"/>
+<path d=""  transform="translate(2025, 530)"/>
+<path d=""  transform="translate(1763, 986)"/>
+<path d=""  transform="translate(1763, 986)"/>
+<path d=""  transform="translate(2463, 983)"/>
+<path d=""  transform="translate(2319, 986)"/>
+<path d=""  transform="translate(3143, 888)"/>
+<path d=""  transform="translate(2740, 986)"/>
+<path d=""  transform="translate(3673, 389)"/>
+<path d=""  transform="translate(3677, 530)"/>
+<path d=""  transform="translate(3415, 986)"/>
+<path d=""  transform="translate(4326, 888)"/>
+<path d=""  transform="translate(3971, 986)"/>
+<path d=""  transform="translate(4732, 986)"/>
+<path d=""  transform="translate(4994, 530)"/>
+<path d=""  transform="translate(4732, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5357 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1530, 888)"/>
+<path d=""  transform="translate(1292, 986)"/>
+<path d=""  transform="translate(1763, 866)"/>
+<path d=""  transform="translate(1763, 986)"/>
+<path d=""  transform="translate(1801, 986)"/>
+<path d=""  transform="translate(2501, 983)"/>
+<path d=""  transform="translate(2357, 986)"/>
+<path d=""  transform="translate(3181, 888)"/>
+<path d=""  transform="translate(2778, 986)"/>
+<path d=""  transform="translate(3711, 389)"/>
+<path d=""  transform="translate(3715, 530)"/>
+<path d=""  transform="translate(3453, 986)"/>
+<path d=""  transform="translate(4364, 888)"/>
+<path d=""  transform="translate(4009, 986)"/>
+<path d=""  transform="translate(4770, 986)"/>
+<path d=""  transform="translate(5032, 530)"/>
+<path d=""  transform="translate(4770, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̱ܱܝܾܨ̰̮ܩܱܤ̠</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0320.SYRN=10+0|uni0724.Fina.SYRN=10+780|uni0731.SYRN=8@316,-98+0|uni0729.Init.SYRN=8+597|uni032E.SYRN=5@262,-456+0|uni0330.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni073E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0731.SYRN=0@237,-576+0|uni0331.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562</pre>
+
+
+
+<pre>Got     : uni0320.SYRN=10+0|uni0724.Fina.SYRN=10+780|uni0731.SYRN=8@316,-98+0|uni0729.Init.SYRN=8+597|uni032E.SYRN=5@262,-456+0|uni0330.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni073E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0731.SYRN=0@262,-576+0|uni0331.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2828 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1096, 888)"/>
+<path d=""  transform="translate(780, 986)"/>
+<path d=""  transform="translate(1639, 530)"/>
+<path d=""  transform="translate(1639, 530)"/>
+<path d=""  transform="translate(1377, 986)"/>
+<path d=""  transform="translate(2099, 889)"/>
+<path d=""  transform="translate(1933, 986)"/>
+<path d=""  transform="translate(2503, 410)"/>
+<path d=""  transform="translate(2503, 530)"/>
+<path d=""  transform="translate(2241, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2803 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1096, 888)"/>
+<path d=""  transform="translate(780, 986)"/>
+<path d=""  transform="translate(1639, 530)"/>
+<path d=""  transform="translate(1639, 530)"/>
+<path d=""  transform="translate(1377, 986)"/>
+<path d=""  transform="translate(2099, 889)"/>
+<path d=""  transform="translate(1933, 986)"/>
+<path d=""  transform="translate(2478, 410)"/>
+<path d=""  transform="translate(2478, 530)"/>
+<path d=""  transform="translate(2216, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܙ݆ܮܨٍٍܩِܨ̰݈ܙܱܨٕܥܑ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0711.SYRN=15@307,-10+0|uni0725.SYRN=15+776|uni0655.SYRN=13@262,-456+0|uni0728.SYRN=13+587|uni0731.SYRN=11@159,-173+0|uni0719.SYRN=11+293|uni0748.SYRN=8@258,-597+0|uni0330.SYRN=8@262,-456+0|uni0728.Fina.SYRN=8+556|uni0650.SYRN=6@316,-98+0|uni0729.Init.SYRN=6+597|uni064D.SYRN=3@262,-456+0|uni064D.SYRN=3@262,-456+0|uni0728.Fina.SYRN=3+556|uni072E.Init.SYRN=2+451|uni0746.SYRN=0@222,-338+0|uni0719.SYRN=0@25,0+318</pre>
+
+
+
+<pre>Got     : uni0711.SYRN=15@307,-10+0|uni0725.SYRN=15+776|uni0655.SYRN=13@262,-456+0|uni0728.SYRN=13+587|uni0731.SYRN=11@159,-173+0|uni0719.SYRN=11+293|uni0748.SYRN=8@258,-597+0|uni0330.SYRN=8@262,-456+0|uni0728.Fina.SYRN=8+556|uni0650.SYRN=6@316,-98+0|uni0729.Init.SYRN=6+597|uni064D.SYRN=3@262,-456+0|uni064D.SYRN=3@262,-456+0|uni0728.Fina.SYRN=3+556|uni072E.Init.SYRN=2+451|uni0746.SYRN=0@197,-338+0|uni0719.SYRN=0+293</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4109 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(307, 976)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1038, 530)"/>
+<path d=""  transform="translate(776, 986)"/>
+<path d=""  transform="translate(1522, 813)"/>
+<path d=""  transform="translate(1363, 986)"/>
+<path d=""  transform="translate(1914, 389)"/>
+<path d=""  transform="translate(1918, 530)"/>
+<path d=""  transform="translate(1656, 986)"/>
+<path d=""  transform="translate(2528, 888)"/>
+<path d=""  transform="translate(2212, 986)"/>
+<path d=""  transform="translate(3071, 530)"/>
+<path d=""  transform="translate(3071, 530)"/>
+<path d=""  transform="translate(2809, 986)"/>
+<path d=""  transform="translate(3365, 986)"/>
+<path d=""  transform="translate(4013, 648)"/>
+<path d=""  transform="translate(3816, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4134 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(307, 976)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1038, 530)"/>
+<path d=""  transform="translate(776, 986)"/>
+<path d=""  transform="translate(1522, 813)"/>
+<path d=""  transform="translate(1363, 986)"/>
+<path d=""  transform="translate(1914, 389)"/>
+<path d=""  transform="translate(1918, 530)"/>
+<path d=""  transform="translate(1656, 986)"/>
+<path d=""  transform="translate(2528, 888)"/>
+<path d=""  transform="translate(2212, 986)"/>
+<path d=""  transform="translate(3071, 530)"/>
+<path d=""  transform="translate(3071, 530)"/>
+<path d=""  transform="translate(2809, 986)"/>
+<path d=""  transform="translate(3365, 986)"/>
+<path d=""  transform="translate(4038, 648)"/>
+<path d=""  transform="translate(3841, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܷ݄ء݈ܨܸܼܠ݆ܨܻ̠ܘܹܐܰ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni0730.SYRN=15@187,149+0|uni0710.Fina2.SYRN=15+370|uni0739.SYRN=13@251,-98+0|uni0718.SYRN=13@-38,0+540|uni0320.SYRN=10+0|uni073B.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0746.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni073C.SYRN=5@337,-456+0|uni0738.SYRN=5@337,-456+0|uni0728.SYRN=5@75,0+662|uni0748.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0744.SYRN=0@300,-456+0|uni0737.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625</pre>
+
+
+
+<pre>Got     : uni0730.SYRN=15@187,149+0|uni0710.Fina2.SYRN=15+370|uni0739.SYRN=13@289,-98+0|uni0718.SYRN=13+578|uni0320.SYRN=10+0|uni073B.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0746.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni073C.SYRN=5@262,-456+0|uni0738.SYRN=5@262,-456+0|uni0728.SYRN=5+587|uni0748.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0744.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3567 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(187, 1135)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(659, 888)"/>
+<path d=""  transform="translate(370, 986)"/>
+<path d=""  transform="translate(948, 986)"/>
+<path d=""  transform="translate(1210, 530)"/>
+<path d=""  transform="translate(948, 986)"/>
+<path d=""  transform="translate(1673, 888)"/>
+<path d=""  transform="translate(1504, 986)"/>
+<path d=""  transform="translate(2184, 530)"/>
+<path d=""  transform="translate(2184, 530)"/>
+<path d=""  transform="translate(1922, 986)"/>
+<path d=""  transform="translate(2747, 888)"/>
+<path d=""  transform="translate(2509, 986)"/>
+<path d=""  transform="translate(3242, 530)"/>
+<path d=""  transform="translate(3242, 530)"/>
+<path d=""  transform="translate(2980, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3642 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(187, 1135)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(621, 888)"/>
+<path d=""  transform="translate(332, 986)"/>
+<path d=""  transform="translate(910, 986)"/>
+<path d=""  transform="translate(1172, 530)"/>
+<path d=""  transform="translate(910, 986)"/>
+<path d=""  transform="translate(1635, 888)"/>
+<path d=""  transform="translate(1466, 986)"/>
+<path d=""  transform="translate(2221, 530)"/>
+<path d=""  transform="translate(2221, 530)"/>
+<path d=""  transform="translate(1959, 986)"/>
+<path d=""  transform="translate(2784, 888)"/>
+<path d=""  transform="translate(2546, 986)"/>
+<path d=""  transform="translate(3317, 530)"/>
+<path d=""  transform="translate(3317, 530)"/>
+<path d=""  transform="translate(3055, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِ݈ܡ̠ܨܱ݈ܡܼܨܻ݈ءٕܥܨ̠݆ܡܾ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524E'}</pre>
+
+
+
+<pre>Expected: uni073E.SYRN=19@435,-99+0|uni0721.SYRN=19+705|uni0746.SYRN=16@0,-120+0|uni0320.SYRN=16+0|uni0728.Fina.SYRN=16+556|uni0725.Init.SYRN=15+561|uni0655.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni0748.SYRN=10@300,-456+0|uni073B.SYRN=10@300,-456+0|uni0728.Fina.SYRN=10@38,0+594|uni073C.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0748.SYRN=5@262,-456+0|uni0731.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0320.SYRN=3+0|uni0721.Init.SYRN=3+761|uni0748.SYRN=0@262,-456+0|uni0650.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>Got     : uni073E.SYRN=19@435,-99+0|uni0721.SYRN=19+705|uni0746.SYRN=16@262,-456+0|uni0320.SYRN=16+0|uni0728.Fina.SYRN=16+556|uni0725.Init.SYRN=15+561|uni0655.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni0748.SYRN=10@262,-456+0|uni073B.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni073C.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0748.SYRN=5@262,-456+0|uni0731.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0320.SYRN=3+0|uni0721.Init.SYRN=3+761|uni0748.SYRN=0@262,-456+0|uni0650.SYRN=0@262,-456+0|uni0728.SYRN=0+587</pre>
+
+
+
+<pre>                                                                        ^^^^^^                                                                                                                                     ^^^                        ^^^                            ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5514 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(967, 530)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(2060, 888)"/>
+<path d=""  transform="translate(1822, 986)"/>
+<path d=""  transform="translate(2555, 530)"/>
+<path d=""  transform="translate(2555, 530)"/>
+<path d=""  transform="translate(2293, 986)"/>
+<path d=""  transform="translate(3204, 888)"/>
+<path d=""  transform="translate(2849, 986)"/>
+<path d=""  transform="translate(3872, 530)"/>
+<path d=""  transform="translate(3872, 530)"/>
+<path d=""  transform="translate(3610, 986)"/>
+<path d=""  transform="translate(4166, 986)"/>
+<path d=""  transform="translate(4166, 986)"/>
+<path d=""  transform="translate(5189, 530)"/>
+<path d=""  transform="translate(5189, 530)"/>
+<path d=""  transform="translate(4927, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5552 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(435, 887)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(705, 866)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(2060, 888)"/>
+<path d=""  transform="translate(1822, 986)"/>
+<path d=""  transform="translate(2593, 530)"/>
+<path d=""  transform="translate(2593, 530)"/>
+<path d=""  transform="translate(2331, 986)"/>
+<path d=""  transform="translate(3242, 888)"/>
+<path d=""  transform="translate(2887, 986)"/>
+<path d=""  transform="translate(3910, 530)"/>
+<path d=""  transform="translate(3910, 530)"/>
+<path d=""  transform="translate(3648, 986)"/>
+<path d=""  transform="translate(4204, 986)"/>
+<path d=""  transform="translate(4204, 986)"/>
+<path d=""  transform="translate(5227, 530)"/>
+<path d=""  transform="translate(5227, 530)"/>
+<path d=""  transform="translate(4965, 986)"/>
+</svg>
+
+
+</div> [code: shaping-regression]
+* 🔥 **FAIL** qa/shaping_tests/syriac.json: Expected and actual shaping not matching
+<div class="shaping">
+
+
+<style type="text/css">
+    @font-face {font-family: "TestFont"; src: url(../../fonts/NotoSansSyriac-Regular/googlefonts/ttf/NotoSansSyriac-Regular.ttf);}
+    .tf { font-family: "TestFont"; }
+    .shaping pre { font-size: 1.2rem; }
+    .shaping li {
+        font-size: 1.2rem;
+        border-top: 1px solid #ddd;
+        padding: 12px;
+        margin-top: 12px;
+    }
+    .shaping-svg {
+        height: 100px;
+        margin: 10px;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+</style>
+
+<h4>qa/shaping_tests/syriac.json: Expected and actual shaping not matching</h4>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̠̱ܠܼܨܴܷءٍ̱ܨܾܼܡ̱ܨ̮ܼܩ̭</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni032D=19@533,-98+0|uni0729=19+834|uni073C=16@358,-577+0|uni032E=16@361,-455+0|uni0728.Fina=16@63,0+619|uni0331=14@465,-97+0|uni0721.Init=14+880|uni073C=11@295,-455+0|uni073E=11@295,-455+0|uni0728=11+626|uni0331=8@229,-98+0|uni064D=8@229,-100+0|uni0621=8+462|uni0737=5@298,-455+0|uni0734=5@298,-455+0|uni0728.Fina=5+556|uni073C=3@169,-98+0|uni0720.Init=3+341|uni0331=0@320,-455+0|uni0320=0@320,-455+0|uni0728=0@25,0+651</pre>
+
+
+
+<pre>Got     : uni032D=19@533,-98+0|uni0729=19+834|uni073C=16@358,-577+0|uni032E=16@361,-455+0|uni0728.Fina=16@63,0+619|uni0331=14@465,-97+0|uni0721.Init=14+880|uni073C=11@295,-455+0|uni073E=11@295,-455+0|uni0728=11+626|uni0331=8@229,-98+0|uni064D=8@229,-100+0|uni0621=8+462|uni0737=5@298,-455+0|uni0734=5@298,-455+0|uni0728.Fina=5+556|uni073C=3@169,-98+0|uni0720.Init=3+341|uni0331=0@295,-455+0|uni0320=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4944 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1192, 409)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1918, 889)"/>
+<path d=""  transform="translate(1453, 986)"/>
+<path d=""  transform="translate(2628, 531)"/>
+<path d=""  transform="translate(2628, 531)"/>
+<path d=""  transform="translate(2333, 986)"/>
+<path d=""  transform="translate(3188, 888)"/>
+<path d=""  transform="translate(3188, 886)"/>
+<path d=""  transform="translate(2959, 986)"/>
+<path d=""  transform="translate(3719, 531)"/>
+<path d=""  transform="translate(3719, 531)"/>
+<path d=""  transform="translate(3421, 986)"/>
+<path d=""  transform="translate(4146, 888)"/>
+<path d=""  transform="translate(3977, 986)"/>
+<path d=""  transform="translate(4613, 531)"/>
+<path d=""  transform="translate(4613, 531)"/>
+<path d=""  transform="translate(4318, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4969 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1192, 409)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1918, 889)"/>
+<path d=""  transform="translate(1453, 986)"/>
+<path d=""  transform="translate(2628, 531)"/>
+<path d=""  transform="translate(2628, 531)"/>
+<path d=""  transform="translate(2333, 986)"/>
+<path d=""  transform="translate(3188, 888)"/>
+<path d=""  transform="translate(3188, 886)"/>
+<path d=""  transform="translate(2959, 986)"/>
+<path d=""  transform="translate(3719, 531)"/>
+<path d=""  transform="translate(3719, 531)"/>
+<path d=""  transform="translate(3421, 986)"/>
+<path d=""  transform="translate(4146, 888)"/>
+<path d=""  transform="translate(3977, 986)"/>
+<path d=""  transform="translate(4638, 531)"/>
+<path d=""  transform="translate(4638, 531)"/>
+<path d=""  transform="translate(4343, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̭ܹܡܸܨ̮݄ܝ̣</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0323=8@120,-454+0|uni071D=8+243|uni0744=5@335,-577+0|uni032E=5@338,-455+0|uni0728.Fina=5@40,0+596|uni0738=3@465,-97+0|uni0721.Init=3+880|uni0739=0@292,-635+0|uni032D=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0323=8@120,-454+0|uni071D=8+243|uni0744=5@334,-577+0|uni032E=5@337,-455+0|uni0728.Fina=5@39,0+595|uni0738=3@465,-97+0|uni0721.Init=3+880|uni0739=0@292,-635+0|uni032D=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                         ^                    ^                       ^^     ^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2344 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(120, 532)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(577, 409)"/>
+<path d=""  transform="translate(580, 531)"/>
+<path d=""  transform="translate(282, 986)"/>
+<path d=""  transform="translate(1303, 889)"/>
+<path d=""  transform="translate(838, 986)"/>
+<path d=""  transform="translate(2010, 351)"/>
+<path d=""  transform="translate(2013, 531)"/>
+<path d=""  transform="translate(1718, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2345 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(120, 532)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(578, 409)"/>
+<path d=""  transform="translate(581, 531)"/>
+<path d=""  transform="translate(283, 986)"/>
+<path d=""  transform="translate(1304, 889)"/>
+<path d=""  transform="translate(839, 986)"/>
+<path d=""  transform="translate(2011, 351)"/>
+<path d=""  transform="translate(2014, 531)"/>
+<path d=""  transform="translate(1719, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݄݈ܝٍܨِܷܘܱܨܾ̠ء̭</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni032D=13@229,-100+0|uni0621=13+462|uni0320=10@295,-455+0|uni073E=10@295,-455+0|uni0728=10+626|uni0731=8@316,-98+0|uni0718=8+610|uni0737=5@420,-455+0|uni0650=5@420,-455+0|uni0728.Fina=5@122,0+678|uni064D=3@135,-97+0|uni071D.Init=3+278|uni0748=0@295,-455+0|uni0744=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni032D=13@229,-100+0|uni0621=13+462|uni0320=10@295,-455+0|uni073E=10@295,-455+0|uni0728=10+626|uni0731=8@316,-98+0|uni0718=8+610|uni0737=5@419,-455+0|uni0650=5@419,-455+0|uni0728.Fina=5@121,0+677|uni064D=3@135,-97+0|uni071D.Init=3+278|uni0748=0@295,-455+0|uni0744=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^                         ^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3279 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1404, 888)"/>
+<path d=""  transform="translate(1088, 986)"/>
+<path d=""  transform="translate(2117, 531)"/>
+<path d=""  transform="translate(2117, 531)"/>
+<path d=""  transform="translate(1819, 986)"/>
+<path d=""  transform="translate(2510, 889)"/>
+<path d=""  transform="translate(2375, 986)"/>
+<path d=""  transform="translate(2948, 531)"/>
+<path d=""  transform="translate(2948, 531)"/>
+<path d=""  transform="translate(2653, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3280 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1404, 888)"/>
+<path d=""  transform="translate(1088, 986)"/>
+<path d=""  transform="translate(2118, 531)"/>
+<path d=""  transform="translate(2118, 531)"/>
+<path d=""  transform="translate(1820, 986)"/>
+<path d=""  transform="translate(2511, 889)"/>
+<path d=""  transform="translate(2376, 986)"/>
+<path d=""  transform="translate(2949, 531)"/>
+<path d=""  transform="translate(2949, 531)"/>
+<path d=""  transform="translate(2654, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܷܷܘِܨܻ̭ܠ̠ܯّܨ̤ܴܡ݆</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0746=15@607,-98+0|uni0721=15+885|uni0734=12@354,-635+0|uni0324=12@358,-455+0|uni0728=12@63,0+689|uni0651=10@257,-19+0|uni072F.Fina=10+581|uni0320=8@169,-98+0|uni0720.Init=8+341|uni032D=5@320,-455+0|uni073B=5@320,-455+0|uni0728=5@25,0+651|uni0650=3@316,-98+0|uni0718=3+610|uni0737=0@417,-455+0|uni0737=0@417,-455+0|uni0728=0@122,0+748</pre>
+
+
+
+<pre>Got     : uni0746=15@607,-98+0|uni0721=15+885|uni0734=12@354,-635+0|uni0324=12@358,-455+0|uni0728=12@63,0+689|uni0651=10@257,-19+0|uni072F.Fina=10+581|uni0320=8@169,-98+0|uni0720.Init=8+341|uni032D=5@295,-455+0|uni073B=5@295,-455+0|uni0728=5+626|uni0650=3@316,-98+0|uni0718=3+610|uni0737=0@375,-455+0|uni0737=0@375,-455+0|uni0728=0@80,0+706</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4438 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(607, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1239, 351)"/>
+<path d=""  transform="translate(1243, 531)"/>
+<path d=""  transform="translate(948, 986)"/>
+<path d=""  transform="translate(1831, 967)"/>
+<path d=""  transform="translate(1574, 986)"/>
+<path d=""  transform="translate(2324, 888)"/>
+<path d=""  transform="translate(2155, 986)"/>
+<path d=""  transform="translate(2791, 531)"/>
+<path d=""  transform="translate(2791, 531)"/>
+<path d=""  transform="translate(2496, 986)"/>
+<path d=""  transform="translate(3438, 888)"/>
+<path d=""  transform="translate(3122, 986)"/>
+<path d=""  transform="translate(4107, 531)"/>
+<path d=""  transform="translate(4107, 531)"/>
+<path d=""  transform="translate(3812, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4505 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(607, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1239, 351)"/>
+<path d=""  transform="translate(1243, 531)"/>
+<path d=""  transform="translate(948, 986)"/>
+<path d=""  transform="translate(1831, 967)"/>
+<path d=""  transform="translate(1574, 986)"/>
+<path d=""  transform="translate(2324, 888)"/>
+<path d=""  transform="translate(2155, 986)"/>
+<path d=""  transform="translate(2816, 531)"/>
+<path d=""  transform="translate(2816, 531)"/>
+<path d=""  transform="translate(2521, 986)"/>
+<path d=""  transform="translate(3463, 888)"/>
+<path d=""  transform="translate(3147, 986)"/>
+<path d=""  transform="translate(4174, 531)"/>
+<path d=""  transform="translate(4174, 531)"/>
+<path d=""  transform="translate(3879, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٕ݆ܝٕܨ̰ܷܝܻܨٍ̣ܠܷ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0737=13@318,-98+0|uni0720=13+656|uni0323=10@348,-455+0|uni064D=10@348,-455+0|uni0728.Fina=10@50,0+606|uni073B=8@135,-457+0|uni071D.Init=8+278|uni0737=5@295,-607+0|uni0330=5@298,-455+0|uni0728.Fina=5+556|uni0655=3@135,-97+0|uni071D.Init=3+278|uni0746=0@295,-455+0|uni0655=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0737=13@318,-98+0|uni0720=13+656|uni0323=10@347,-455+0|uni064D=10@347,-455+0|uni0728.Fina=10@49,0+605|uni073B=8@135,-457+0|uni071D.Init=8+278|uni0737=5@295,-607+0|uni0330=5@298,-455+0|uni0728.Fina=5+556|uni0655=3@135,-97+0|uni071D.Init=3+278|uni0746=0@295,-455+0|uni0655=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                           ^                     ^                        ^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2999 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1396, 529)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1834, 379)"/>
+<path d=""  transform="translate(1837, 531)"/>
+<path d=""  transform="translate(1539, 986)"/>
+<path d=""  transform="translate(2230, 889)"/>
+<path d=""  transform="translate(2095, 986)"/>
+<path d=""  transform="translate(2668, 531)"/>
+<path d=""  transform="translate(2668, 531)"/>
+<path d=""  transform="translate(2373, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3000 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1397, 529)"/>
+<path d=""  transform="translate(1262, 986)"/>
+<path d=""  transform="translate(1835, 379)"/>
+<path d=""  transform="translate(1838, 531)"/>
+<path d=""  transform="translate(1540, 986)"/>
+<path d=""  transform="translate(2231, 889)"/>
+<path d=""  transform="translate(2096, 986)"/>
+<path d=""  transform="translate(2669, 531)"/>
+<path d=""  transform="translate(2669, 531)"/>
+<path d=""  transform="translate(2374, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܗܳܙܴܙٍܨܻܾܝ̱ܙܺܙܺܨܷ݈ܙ݆</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0746=18@152,-458+0|uni0719=18+275|uni0748=15@337,-455+0|uni0737=15@337,-455+0|uni0728=15@42,0+668|uni073A=13@53,-5+0|uni0719=13@-35,0+240|uni073A=11@113,-5+0|uni0719.Fina=11@25,0+302|uni0331=9@135,-97+0|uni071D.Init=9+278|uni073E=6@295,-455+0|uni073B=6@295,-455+0|uni0728=6+626|uni064D=4@117,-138+0|uni0719=4@-35,0+240|uni0734=2@177,-138+0|uni0719=2@25,0+300|uni0733=0@464,-2+0|uni0717=0+930</pre>
+
+
+
+<pre>Got     : uni0746=18@152,-458+0|uni0719=18+275|uni0748=15@295,-455+0|uni0737=15@295,-455+0|uni0728=15+626|uni073A=13@88,-5+0|uni0719=13+275|uni073A=11@113,-5+0|uni0719.Fina=11@25,0+302|uni0331=9@135,-97+0|uni071D.Init=9+278|uni073E=6@295,-455+0|uni073B=6@295,-455+0|uni0728=6+626|uni064D=4@152,-138+0|uni0719=4+275|uni0734=2@177,-138+0|uni0719=2@25,0+300|uni0733=0@464,-2+0|uni0717=0+930</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3887 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(152, 528)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(570, 531)"/>
+<path d=""  transform="translate(570, 531)"/>
+<path d=""  transform="translate(275, 986)"/>
+<path d=""  transform="translate(989, 981)"/>
+<path d=""  transform="translate(901, 986)"/>
+<path d=""  transform="translate(1289, 981)"/>
+<path d=""  transform="translate(1201, 986)"/>
+<path d=""  transform="translate(1613, 889)"/>
+<path d=""  transform="translate(1478, 986)"/>
+<path d=""  transform="translate(2051, 531)"/>
+<path d=""  transform="translate(2051, 531)"/>
+<path d=""  transform="translate(1756, 986)"/>
+<path d=""  transform="translate(2534, 848)"/>
+<path d=""  transform="translate(2382, 986)"/>
+<path d=""  transform="translate(2834, 848)"/>
+<path d=""  transform="translate(2682, 986)"/>
+<path d=""  transform="translate(3421, 984)"/>
+<path d=""  transform="translate(2957, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3859 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(152, 528)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(612, 531)"/>
+<path d=""  transform="translate(612, 531)"/>
+<path d=""  transform="translate(317, 986)"/>
+<path d=""  transform="translate(996, 981)"/>
+<path d=""  transform="translate(908, 986)"/>
+<path d=""  transform="translate(1296, 981)"/>
+<path d=""  transform="translate(1208, 986)"/>
+<path d=""  transform="translate(1620, 889)"/>
+<path d=""  transform="translate(1485, 986)"/>
+<path d=""  transform="translate(2058, 531)"/>
+<path d=""  transform="translate(2058, 531)"/>
+<path d=""  transform="translate(1763, 986)"/>
+<path d=""  transform="translate(2506, 848)"/>
+<path d=""  transform="translate(2354, 986)"/>
+<path d=""  transform="translate(2806, 848)"/>
+<path d=""  transform="translate(2654, 986)"/>
+<path d=""  transform="translate(3393, 984)"/>
+<path d=""  transform="translate(2929, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܸ݆ܝ̠ܨ̠̮ܠܻܨܻ̠ء݄ܨܱܼܠ̭</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni032D=18@318,-98+0|uni0720=18+656|uni073C=15@345,-455+0|uni0731=15@345,-455+0|uni0728=15@50,0+676|uni0744=13@229,-460+0|uni0621=13+462|uni0320=10@298,-455+0|uni073B=10@298,-455+0|uni0728.Fina=10+556|uni073B=8@169,-458+0|uni0720.Init=8+341|uni032E=5@323,-455+0|uni0320=5@323,-455+0|uni0728.Fina=5@25,0+581|uni0320=3@135,-97+0|uni071D.Init=3+278|uni0746=0@295,-455+0|uni0738=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni032D=18@318,-98+0|uni0720=18+656|uni073C=15@320,-455+0|uni0731=15@320,-455+0|uni0728=15@25,0+651|uni0744=13@229,-460+0|uni0621=13+462|uni0320=10@298,-455+0|uni073B=10@298,-455+0|uni0728.Fina=10+556|uni073B=8@169,-458+0|uni0720.Init=8+341|uni032E=5@298,-455+0|uni0320=5@298,-455+0|uni0728.Fina=5+556|uni0320=3@135,-97+0|uni071D.Init=3+278|uni0746=0@295,-455+0|uni0738=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^                      ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4126 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(976, 531)"/>
+<path d=""  transform="translate(976, 531)"/>
+<path d=""  transform="translate(681, 986)"/>
+<path d=""  transform="translate(1536, 526)"/>
+<path d=""  transform="translate(1307, 986)"/>
+<path d=""  transform="translate(2067, 531)"/>
+<path d=""  transform="translate(2067, 531)"/>
+<path d=""  transform="translate(1769, 986)"/>
+<path d=""  transform="translate(2494, 528)"/>
+<path d=""  transform="translate(2325, 986)"/>
+<path d=""  transform="translate(2964, 531)"/>
+<path d=""  transform="translate(2964, 531)"/>
+<path d=""  transform="translate(2666, 986)"/>
+<path d=""  transform="translate(3357, 889)"/>
+<path d=""  transform="translate(3222, 986)"/>
+<path d=""  transform="translate(3795, 531)"/>
+<path d=""  transform="translate(3795, 531)"/>
+<path d=""  transform="translate(3500, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4176 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1001, 531)"/>
+<path d=""  transform="translate(1001, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1561, 526)"/>
+<path d=""  transform="translate(1332, 986)"/>
+<path d=""  transform="translate(2092, 531)"/>
+<path d=""  transform="translate(2092, 531)"/>
+<path d=""  transform="translate(1794, 986)"/>
+<path d=""  transform="translate(2519, 528)"/>
+<path d=""  transform="translate(2350, 986)"/>
+<path d=""  transform="translate(3014, 531)"/>
+<path d=""  transform="translate(3014, 531)"/>
+<path d=""  transform="translate(2716, 986)"/>
+<path d=""  transform="translate(3407, 889)"/>
+<path d=""  transform="translate(3272, 986)"/>
+<path d=""  transform="translate(3845, 531)"/>
+<path d=""  transform="translate(3845, 531)"/>
+<path d=""  transform="translate(3550, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݈̱ءܱܕ̇ܝ݊ܝ݅ܨ݈̭ܠܷܨِِءܱ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0731=19@229,-460+0|uni0621=19+462|uni0650=16@298,-455+0|uni0650=16@298,-455+0|uni0728.Fina=16+556|uni0737=14@169,-458+0|uni0720.Init=14+341|uni032D=11@323,-455+0|uni0748=11@323,-455+0|uni0728.Fina=11@25,0+581|uni0745=9@137,-122+0|uni071D.Medi=9+310|uni074A=7@125,-135+0|uni071D.Init=7+278|uni0307=5@233,-17+0|uni0715=5@32,0+571|uni0731=3@229,-460+0|uni0621=3+462|uni0331=0@295,-455+0|uni0748=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0731=19@229,-460+0|uni0621=19+462|uni0650=16@298,-455+0|uni0650=16@298,-455+0|uni0728.Fina=16+556|uni0737=14@169,-458+0|uni0720.Init=14+341|uni032D=11@298,-455+0|uni0748=11@298,-455+0|uni0728.Fina=11+556|uni0745=9@137,-122+0|uni071D.Medi=9+310|uni074A=7@125,-135+0|uni071D.Init=7+278|uni0307=5@257,-17+0|uni0715=5@56,0+595|uni0731=3@229,-460+0|uni0621=3+462|uni0331=0@295,-455+0|uni0748=0@295,-455+0|uni0728=0+626</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4186 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 526)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1187, 528)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(1657, 531)"/>
+<path d=""  transform="translate(1657, 531)"/>
+<path d=""  transform="translate(1359, 986)"/>
+<path d=""  transform="translate(2052, 864)"/>
+<path d=""  transform="translate(1915, 986)"/>
+<path d=""  transform="translate(2350, 851)"/>
+<path d=""  transform="translate(2225, 986)"/>
+<path d=""  transform="translate(2760, 969)"/>
+<path d=""  transform="translate(2559, 986)"/>
+<path d=""  transform="translate(3327, 526)"/>
+<path d=""  transform="translate(3098, 986)"/>
+<path d=""  transform="translate(3855, 531)"/>
+<path d=""  transform="translate(3855, 531)"/>
+<path d=""  transform="translate(3560, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4187 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 526)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1187, 528)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(1682, 531)"/>
+<path d=""  transform="translate(1682, 531)"/>
+<path d=""  transform="translate(1384, 986)"/>
+<path d=""  transform="translate(2077, 864)"/>
+<path d=""  transform="translate(1940, 986)"/>
+<path d=""  transform="translate(2375, 851)"/>
+<path d=""  transform="translate(2250, 986)"/>
+<path d=""  transform="translate(2761, 969)"/>
+<path d=""  transform="translate(2560, 986)"/>
+<path d=""  transform="translate(3328, 526)"/>
+<path d=""  transform="translate(3099, 986)"/>
+<path d=""  transform="translate(3856, 531)"/>
+<path d=""  transform="translate(3856, 531)"/>
+<path d=""  transform="translate(3561, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݈ܼܩٕܨِ݄ܠ̣ܨء̮</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni032E=11@229,-100+0|uni0621=11+462|uni0728.Fina=10+556|uni0323=8@169,-98+0|uni0720.Init=8+341|uni0744=5@323,-455+0|uni0650=5@323,-455+0|uni0728.Fina=5@25,0+581|uni0655=3@364,-98+0|uni0729.Init=3+665|uni073C=0@358,-455+0|uni0748=0@358,-455+0|uni0728=0@63,0+689</pre>
+
+
+
+<pre>Got     : uni032E=11@229,-100+0|uni0621=11+462|uni0728.Fina=10+556|uni0323=8@169,-98+0|uni0720.Init=8+341|uni0744=5@298,-455+0|uni0650=5@298,-455+0|uni0728.Fina=5+556|uni0655=3@364,-98+0|uni0729.Init=3+665|uni073C=0@358,-455+0|uni0748=0@358,-455+0|uni0728=0@63,0+689</pre>
+
+
+
+<pre>                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^                      ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3269 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1187, 888)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(1657, 531)"/>
+<path d=""  transform="translate(1657, 531)"/>
+<path d=""  transform="translate(1359, 986)"/>
+<path d=""  transform="translate(2279, 888)"/>
+<path d=""  transform="translate(1915, 986)"/>
+<path d=""  transform="translate(2938, 531)"/>
+<path d=""  transform="translate(2938, 531)"/>
+<path d=""  transform="translate(2643, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3294 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1187, 888)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(1682, 531)"/>
+<path d=""  transform="translate(1682, 531)"/>
+<path d=""  transform="translate(1384, 986)"/>
+<path d=""  transform="translate(2304, 888)"/>
+<path d=""  transform="translate(1940, 986)"/>
+<path d=""  transform="translate(2963, 531)"/>
+<path d=""  transform="translate(2963, 531)"/>
+<path d=""  transform="translate(2668, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِܾܝ̠ܨܴ̱ܠܷء̱ܔܨܾܷܩܼ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni073C=16@533,-98+0|uni0729=16+834|uni0737=13@361,-455+0|uni073E=13@361,-455+0|uni0728.Fina=13@63,0+619|uni0714.Init=12+718|uni0331=10@467,-98+0|uni0621=10@238,0+700|uni0737=8@318,-98+0|uni0720=8+656|uni0331=5@348,-455+0|uni0734=5@348,-455+0|uni0728.Fina=5@50,0+606|uni0320=3@135,-97+0|uni071D.Init=3+278|uni073E=0@295,-455+0|uni0650=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni073C=16@533,-98+0|uni0729=16+834|uni0737=13@361,-455+0|uni073E=13@361,-455+0|uni0728.Fina=13@63,0+619|uni0714.Init=12+718|uni0331=10@417,-98+0|uni0621=10@188,0+650|uni0737=8@318,-98+0|uni0720=8+656|uni0331=5@347,-455+0|uni0734=5@347,-455+0|uni0728.Fina=5@49,0+605|uni0320=3@135,-97+0|uni071D.Init=3+278|uni073E=0@295,-455+0|uni0650=0@295,-455+0|uni0728=0+626</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4986 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1453, 986)"/>
+<path d=""  transform="translate(2588, 888)"/>
+<path d=""  transform="translate(2359, 986)"/>
+<path d=""  transform="translate(3139, 888)"/>
+<path d=""  transform="translate(2821, 986)"/>
+<path d=""  transform="translate(3824, 531)"/>
+<path d=""  transform="translate(3824, 531)"/>
+<path d=""  transform="translate(3526, 986)"/>
+<path d=""  transform="translate(4217, 889)"/>
+<path d=""  transform="translate(4082, 986)"/>
+<path d=""  transform="translate(4655, 531)"/>
+<path d=""  transform="translate(4655, 531)"/>
+<path d=""  transform="translate(4360, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5037 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1453, 986)"/>
+<path d=""  transform="translate(2638, 888)"/>
+<path d=""  transform="translate(2409, 986)"/>
+<path d=""  transform="translate(3189, 888)"/>
+<path d=""  transform="translate(2871, 986)"/>
+<path d=""  transform="translate(3875, 531)"/>
+<path d=""  transform="translate(3875, 531)"/>
+<path d=""  transform="translate(3577, 986)"/>
+<path d=""  transform="translate(4268, 889)"/>
+<path d=""  transform="translate(4133, 986)"/>
+<path d=""  transform="translate(4706, 531)"/>
+<path d=""  transform="translate(4706, 531)"/>
+<path d=""  transform="translate(4411, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̤ٕܩ̱ܐܖܽܝܑܨ̣ܹܡ̱ܨ݈̤ܘٕ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0655=18@316,-98+0|uni0718=18+610|uni0324=15@420,-455+0|uni0748=15@420,-455+0|uni0728.Fina=15@122,0+678|uni0331=13@465,-97+0|uni0721.Init=13+880|uni0739=10@298,-635+0|uni0323=10@298,-455+0|uni0728.Fina=10+556|uni0711=8@125,-135+0|uni071D.Init=8+278|uni073D=6@233,-18+0|uni0716=6@32,0+571|uni0710.Medi2=5+870|uni0331=3@364,-98+0|uni0729.Init=3+665|uni0655=0@354,-635+0|uni0324=0@358,-455+0|uni0728=0@63,0+689</pre>
+
+
+
+<pre>Got     : uni0655=18@316,-98+0|uni0718=18+610|uni0324=15@419,-455+0|uni0748=15@419,-455+0|uni0728.Fina=15@121,0+677|uni0331=13@465,-97+0|uni0721.Init=13+880|uni0739=10@298,-635+0|uni0323=10@298,-455+0|uni0728.Fina=10+556|uni0711=8@125,-135+0|uni071D.Init=8+278|uni073D=6@233,-18+0|uni0716=6@32,0+571|uni0710.Medi2=5+870|uni0331=3@364,-98+0|uni0729.Init=3+665|uni0655=0@354,-635+0|uni0324=0@358,-455+0|uni0728=0@63,0+689</pre>
+
+
+
+<pre>                                                          ^^^^^^^^^^^^^^^^^^^^^^^^                          ^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5796 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1029, 531)"/>
+<path d=""  transform="translate(1029, 531)"/>
+<path d=""  transform="translate(731, 986)"/>
+<path d=""  transform="translate(1752, 889)"/>
+<path d=""  transform="translate(1287, 986)"/>
+<path d=""  transform="translate(2465, 351)"/>
+<path d=""  transform="translate(2465, 531)"/>
+<path d=""  transform="translate(2167, 986)"/>
+<path d=""  transform="translate(2848, 851)"/>
+<path d=""  transform="translate(2723, 986)"/>
+<path d=""  transform="translate(3234, 968)"/>
+<path d=""  transform="translate(3033, 986)"/>
+<path d=""  transform="translate(3572, 986)"/>
+<path d=""  transform="translate(4806, 888)"/>
+<path d=""  transform="translate(4442, 986)"/>
+<path d=""  transform="translate(5461, 351)"/>
+<path d=""  transform="translate(5465, 531)"/>
+<path d=""  transform="translate(5170, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5797 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1030, 531)"/>
+<path d=""  transform="translate(1030, 531)"/>
+<path d=""  transform="translate(732, 986)"/>
+<path d=""  transform="translate(1753, 889)"/>
+<path d=""  transform="translate(1288, 986)"/>
+<path d=""  transform="translate(2466, 351)"/>
+<path d=""  transform="translate(2466, 531)"/>
+<path d=""  transform="translate(2168, 986)"/>
+<path d=""  transform="translate(2849, 851)"/>
+<path d=""  transform="translate(2724, 986)"/>
+<path d=""  transform="translate(3235, 968)"/>
+<path d=""  transform="translate(3034, 986)"/>
+<path d=""  transform="translate(3573, 986)"/>
+<path d=""  transform="translate(4807, 888)"/>
+<path d=""  transform="translate(4443, 986)"/>
+<path d=""  transform="translate(5462, 351)"/>
+<path d=""  transform="translate(5466, 531)"/>
+<path d=""  transform="translate(5171, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̱̮ء݈ܨܱܠ̣</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0323=7@318,-98+0|uni0720=7+656|uni0731=5@345,-455+0|uni0728=5@50,0+676|uni0748=3@229,-460+0|uni0621=3+462|uni032E=0@295,-455+0|uni0331=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0323=7@318,-98+0|uni0720=7+656|uni0731=5@320,-455+0|uni0728=5@25,0+651|uni0748=3@229,-460+0|uni0621=3+462|uni032E=0@295,-455+0|uni0331=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                       ^^                   +    ^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2395 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(976, 531)"/>
+<path d=""  transform="translate(681, 986)"/>
+<path d=""  transform="translate(1536, 526)"/>
+<path d=""  transform="translate(1307, 986)"/>
+<path d=""  transform="translate(2064, 531)"/>
+<path d=""  transform="translate(2064, 531)"/>
+<path d=""  transform="translate(1769, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2420 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1001, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1561, 526)"/>
+<path d=""  transform="translate(1332, 986)"/>
+<path d=""  transform="translate(2089, 531)"/>
+<path d=""  transform="translate(2089, 531)"/>
+<path d=""  transform="translate(1794, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِܴܠܻܨܱܴܡܾܨ̤ܴܩ̣ܨٍٕء̠</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0320=18@229,-100+0|uni0621=18+462|uni0655064D=15@298,-455+0|uni0728.Fina=15+556|uni0323=13@364,-98+0|uni0729.Init=13+665|uni0734=10@357,-635+0|uni0324=10@361,-455+0|uni0728.Fina=10@63,0+619|uni073E=8@465,-97+0|uni0721.Init=8+880|uni0734=5@298,-455+0|uni0731=5@298,-455+0|uni0728.Fina=5+556|uni073B=3@169,-458+0|uni0720.Init=3+341|uni0734=0@320,-455+0|uni0650=0@320,-455+0|uni0728=0@25,0+651</pre>
+
+
+
+<pre>Got     : uni0320=18@229,-100+0|uni0621=18+462|uni0655064D=15@298,-455+0|uni0728.Fina=15+556|uni0323=13@364,-98+0|uni0729.Init=13+665|uni0734=10@357,-635+0|uni0324=10@361,-455+0|uni0728.Fina=10@63,0+619|uni073E=8@465,-97+0|uni0721.Init=8+880|uni0734=5@298,-455+0|uni0731=5@298,-455+0|uni0728.Fina=5+556|uni073B=3@169,-458+0|uni0720.Init=3+341|uni0734=0@295,-455+0|uni0650=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4705 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1382, 888)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(2040, 351)"/>
+<path d=""  transform="translate(2044, 531)"/>
+<path d=""  transform="translate(1746, 986)"/>
+<path d=""  transform="translate(2767, 889)"/>
+<path d=""  transform="translate(2302, 986)"/>
+<path d=""  transform="translate(3480, 531)"/>
+<path d=""  transform="translate(3480, 531)"/>
+<path d=""  transform="translate(3182, 986)"/>
+<path d=""  transform="translate(3907, 528)"/>
+<path d=""  transform="translate(3738, 986)"/>
+<path d=""  transform="translate(4374, 531)"/>
+<path d=""  transform="translate(4374, 531)"/>
+<path d=""  transform="translate(4079, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4730 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1382, 888)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(2040, 351)"/>
+<path d=""  transform="translate(2044, 531)"/>
+<path d=""  transform="translate(1746, 986)"/>
+<path d=""  transform="translate(2767, 889)"/>
+<path d=""  transform="translate(2302, 986)"/>
+<path d=""  transform="translate(3480, 531)"/>
+<path d=""  transform="translate(3480, 531)"/>
+<path d=""  transform="translate(3182, 986)"/>
+<path d=""  transform="translate(3907, 528)"/>
+<path d=""  transform="translate(3738, 986)"/>
+<path d=""  transform="translate(4399, 531)"/>
+<path d=""  transform="translate(4399, 531)"/>
+<path d=""  transform="translate(4104, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܥ̣ܨܹ݆ܝܾܨ݈ܴܠܻ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni073B=10@318,-98+0|uni0720=10+656|uni0734=7@348,-455+0|uni0748=7@348,-455+0|uni0728.Fina=7@50,0+606|uni073E=5@135,-457+0|uni071D.Init=5+278|uni0746=2@298,-455+0|uni0739=2@298,-455+0|uni0728.Fina=2+556|uni0323=0@272,-98+0|uni0725.Init=0+709</pre>
+
+
+
+<pre>Got     : uni073B=10@318,-98+0|uni0720=10+656|uni0734=7@347,-455+0|uni0748=7@347,-455+0|uni0728.Fina=7@49,0+605|uni073E=5@135,-457+0|uni071D.Init=5+278|uni0746=2@298,-455+0|uni0739=2@298,-455+0|uni0728.Fina=2+556|uni0323=0@272,-98+0|uni0725.Init=0+709</pre>
+
+
+
+<pre>                                                          ^^^^^^^^^^^^^^^^^^^^^^                       ^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2804 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1396, 529)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1837, 531)"/>
+<path d=""  transform="translate(1837, 531)"/>
+<path d=""  transform="translate(1539, 986)"/>
+<path d=""  transform="translate(2367, 888)"/>
+<path d=""  transform="translate(2095, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2805 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1397, 529)"/>
+<path d=""  transform="translate(1262, 986)"/>
+<path d=""  transform="translate(1838, 531)"/>
+<path d=""  transform="translate(1838, 531)"/>
+<path d=""  transform="translate(1540, 986)"/>
+<path d=""  transform="translate(2368, 888)"/>
+<path d=""  transform="translate(2096, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̤̣ء̤ܖ݊ܝܰ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0730=7@85,-197+0|uni071D=7+243|uni074A=5@201,-18+0|uni0716=5+539|uni0324=3@229,-100+0|uni0621=3+462|uni0323=0@295,-455+0|uni0324=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0730=7@85,-197+0|uni071D=7+243|uni074A=5@233,-18+0|uni0716=5@32,0+571|uni0324=3@229,-100+0|uni0621=3+462|uni0323=0@295,-455+0|uni0324=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                       ^^                  ^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1902 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(85, 789)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(476, 968)"/>
+<path d=""  transform="translate(275, 986)"/>
+<path d=""  transform="translate(1043, 886)"/>
+<path d=""  transform="translate(814, 986)"/>
+<path d=""  transform="translate(1571, 531)"/>
+<path d=""  transform="translate(1571, 531)"/>
+<path d=""  transform="translate(1276, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1870 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(85, 789)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(444, 968)"/>
+<path d=""  transform="translate(243, 986)"/>
+<path d=""  transform="translate(1011, 886)"/>
+<path d=""  transform="translate(782, 986)"/>
+<path d=""  transform="translate(1539, 531)"/>
+<path d=""  transform="translate(1539, 531)"/>
+<path d=""  transform="translate(1244, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܟܨ݄̮ܘِܨ̭݄ܝٕܨ݆̣ܩܸܨܾܸܘ݆</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0746=19@316,-98+0|uni0718=19+610|uni0738=16@420,-455+0|uni073E=16@420,-455+0|uni0728.Fina=16@122,0+678|uni0738=14@364,-98+0|uni0729.Init=14+665|uni0323=11@361,-455+0|uni0746=11@361,-455+0|uni0728.Fina=11@63,0+619|uni0655=9@135,-97+0|uni071D.Init=9+278|uni0744=6@292,-635+0|uni032D=6@295,-455+0|uni0728=6+626|uni0650=4@316,-98+0|uni0718=4+610|uni032E=1@420,-455+0|uni0744=1@420,-455+0|uni0728.Fina=1@122,0+678|uni071F.Init=0+673</pre>
+
+
+
+<pre>Got     : uni0746=19@316,-98+0|uni0718=19+610|uni0738=16@419,-455+0|uni073E=16@419,-455+0|uni0728.Fina=16@121,0+677|uni0738=14@364,-98+0|uni0729.Init=14+665|uni0323=11@361,-455+0|uni0746=11@361,-455+0|uni0728.Fina=11@63,0+619|uni0655=9@135,-97+0|uni071D.Init=9+278|uni0744=6@292,-635+0|uni032D=6@295,-455+0|uni0728=6+626|uni0650=4@316,-98+0|uni0718=4+610|uni032E=1@419,-455+0|uni0744=1@419,-455+0|uni0728.Fina=1@121,0+677|uni071F.Init=0+673</pre>
+
+
+
+<pre>                                                          ^^                    ^^                          ^^^^^^^                                                                                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^                         ^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5435 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1029, 531)"/>
+<path d=""  transform="translate(1029, 531)"/>
+<path d=""  transform="translate(731, 986)"/>
+<path d=""  transform="translate(1651, 888)"/>
+<path d=""  transform="translate(1287, 986)"/>
+<path d=""  transform="translate(2313, 531)"/>
+<path d=""  transform="translate(2313, 531)"/>
+<path d=""  transform="translate(2015, 986)"/>
+<path d=""  transform="translate(2706, 889)"/>
+<path d=""  transform="translate(2571, 986)"/>
+<path d=""  transform="translate(3141, 351)"/>
+<path d=""  transform="translate(3144, 531)"/>
+<path d=""  transform="translate(2849, 986)"/>
+<path d=""  transform="translate(3791, 888)"/>
+<path d=""  transform="translate(3475, 986)"/>
+<path d=""  transform="translate(4504, 531)"/>
+<path d=""  transform="translate(4504, 531)"/>
+<path d=""  transform="translate(4206, 986)"/>
+<path d=""  transform="translate(4762, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5437 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1030, 531)"/>
+<path d=""  transform="translate(1030, 531)"/>
+<path d=""  transform="translate(732, 986)"/>
+<path d=""  transform="translate(1652, 888)"/>
+<path d=""  transform="translate(1288, 986)"/>
+<path d=""  transform="translate(2314, 531)"/>
+<path d=""  transform="translate(2314, 531)"/>
+<path d=""  transform="translate(2016, 986)"/>
+<path d=""  transform="translate(2707, 889)"/>
+<path d=""  transform="translate(2572, 986)"/>
+<path d=""  transform="translate(3142, 351)"/>
+<path d=""  transform="translate(3145, 531)"/>
+<path d=""  transform="translate(2850, 986)"/>
+<path d=""  transform="translate(3792, 888)"/>
+<path d=""  transform="translate(3476, 986)"/>
+<path d=""  transform="translate(4506, 531)"/>
+<path d=""  transform="translate(4506, 531)"/>
+<path d=""  transform="translate(4208, 986)"/>
+<path d=""  transform="translate(4764, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܜܨܸܾءܻܨ̣̮ܠٍ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni064D=9@318,-98+0|uni0720=9+656|uni032E=6@345,-455+0|uni0323=6@345,-455+0|uni0728=6@50,0+676|uni073B=4@229,-460+0|uni0621=4+462|uni073E=1@298,-455+0|uni0738=1@298,-455+0|uni0728.Fina=1+556|uni071C.Init=0+697</pre>
+
+
+
+<pre>Got     : uni064D=9@318,-98+0|uni0720=9+656|uni032E=6@320,-455+0|uni0323=6@320,-455+0|uni0728=6@25,0+651|uni073B=4@229,-460+0|uni0621=4+462|uni073E=1@298,-455+0|uni0738=1@298,-455+0|uni0728.Fina=1+556|uni071C.Init=0+697</pre>
+
+
+
+<pre>                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3022 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(976, 531)"/>
+<path d=""  transform="translate(976, 531)"/>
+<path d=""  transform="translate(681, 986)"/>
+<path d=""  transform="translate(1536, 526)"/>
+<path d=""  transform="translate(1307, 986)"/>
+<path d=""  transform="translate(2067, 531)"/>
+<path d=""  transform="translate(2067, 531)"/>
+<path d=""  transform="translate(1769, 986)"/>
+<path d=""  transform="translate(2325, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3047 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1001, 531)"/>
+<path d=""  transform="translate(1001, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1561, 526)"/>
+<path d=""  transform="translate(1332, 986)"/>
+<path d=""  transform="translate(2092, 531)"/>
+<path d=""  transform="translate(2092, 531)"/>
+<path d=""  transform="translate(1794, 986)"/>
+<path d=""  transform="translate(2350, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̱ܼܙ݆ܨ̱ءܾܨ̮ܝ݆ܨܴ̠ء݆ܨ݈̮ܘ̠</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0320=21@316,-98+0|uni0718=21+610|uni032E=18@417,-455+0|uni0748=18@417,-455+0|uni0728=18@122,0+748|uni0746=16@229,-460+0|uni0621=16+462|uni0320=13@298,-455+0|uni0734=13@298,-455+0|uni0728.Fina=13+556|uni0746=11@135,-457+0|uni071D.Init=11+278|uni032E=9@295,-455+0|uni0728=9+626|uni073E=7@229,-460+0|uni0621=7+462|uni0331=5@295,-455+0|uni0728=5+626|uni0746=3@117,-458+0|uni0719=3@-35,0+240|uni073C=0@337,-585+0|uni0331=0@337,-455+0|uni0728=0@42,0+668</pre>
+
+
+
+<pre>Got     : uni0320=21@316,-98+0|uni0718=21+610|uni032E=18@375,-455+0|uni0748=18@375,-455+0|uni0728=18@80,0+706|uni0746=16@229,-460+0|uni0621=16+462|uni0320=13@298,-455+0|uni0734=13@298,-455+0|uni0728.Fina=13+556|uni0746=11@135,-457+0|uni071D.Init=11+278|uni032E=9@295,-455+0|uni0728=9+626|uni073E=7@229,-460+0|uni0621=7+462|uni0331=5@295,-455+0|uni0728=5+626|uni0746=3@152,-458+0|uni0719=3+275|uni073C=0@295,-585+0|uni0331=0@295,-455+0|uni0728=0+626</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5227 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(985, 531)"/>
+<path d=""  transform="translate(985, 531)"/>
+<path d=""  transform="translate(690, 986)"/>
+<path d=""  transform="translate(1545, 526)"/>
+<path d=""  transform="translate(1316, 986)"/>
+<path d=""  transform="translate(2076, 531)"/>
+<path d=""  transform="translate(2076, 531)"/>
+<path d=""  transform="translate(1778, 986)"/>
+<path d=""  transform="translate(2469, 529)"/>
+<path d=""  transform="translate(2334, 986)"/>
+<path d=""  transform="translate(2907, 531)"/>
+<path d=""  transform="translate(2612, 986)"/>
+<path d=""  transform="translate(3467, 526)"/>
+<path d=""  transform="translate(3238, 986)"/>
+<path d=""  transform="translate(3995, 531)"/>
+<path d=""  transform="translate(3700, 986)"/>
+<path d=""  transform="translate(4478, 528)"/>
+<path d=""  transform="translate(4326, 986)"/>
+<path d=""  transform="translate(4896, 401)"/>
+<path d=""  transform="translate(4896, 531)"/>
+<path d=""  transform="translate(4601, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5276 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1027, 531)"/>
+<path d=""  transform="translate(1027, 531)"/>
+<path d=""  transform="translate(732, 986)"/>
+<path d=""  transform="translate(1587, 526)"/>
+<path d=""  transform="translate(1358, 986)"/>
+<path d=""  transform="translate(2118, 531)"/>
+<path d=""  transform="translate(2118, 531)"/>
+<path d=""  transform="translate(1820, 986)"/>
+<path d=""  transform="translate(2511, 529)"/>
+<path d=""  transform="translate(2376, 986)"/>
+<path d=""  transform="translate(2949, 531)"/>
+<path d=""  transform="translate(2654, 986)"/>
+<path d=""  transform="translate(3509, 526)"/>
+<path d=""  transform="translate(3280, 986)"/>
+<path d=""  transform="translate(4037, 531)"/>
+<path d=""  transform="translate(3742, 986)"/>
+<path d=""  transform="translate(4485, 528)"/>
+<path d=""  transform="translate(4333, 986)"/>
+<path d=""  transform="translate(4945, 401)"/>
+<path d=""  transform="translate(4945, 531)"/>
+<path d=""  transform="translate(4650, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̤ܻܠܹܔܵܨ̱̣ܡܴܨܴܷܠ̤</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0324=15@318,-98+0|uni0720=15+656|uni0737=12@348,-455+0|uni0734=12@348,-455+0|uni0728.Fina=12@50,0+606|uni0734=10@465,-97+0|uni0721.Init=10+880|uni0323=7@298,-455+0|uni0331=7@298,-455+0|uni0728.Fina=7+556|uni0735=5@271,44+0|uni0714.MediWide2=5+962|uni0739=3@169,-98+0|uni0720.Init=3+341|uni073B=0@316,-635+0|uni0324=0@320,-455+0|uni0728=0@25,0+651</pre>
+
+
+
+<pre>Got     : uni0324=15@318,-98+0|uni0720=15+656|uni0737=12@347,-455+0|uni0734=12@347,-455+0|uni0728.Fina=12@49,0+605|uni0734=10@465,-97+0|uni0721.Init=10+880|uni0323=7@298,-455+0|uni0331=7@298,-455+0|uni0728.Fina=7+556|uni0735=5@271,44+0|uni0714.MediWide2=5+962|uni0739=3@169,-98+0|uni0720.Init=3+341|uni073B=0@291,-635+0|uni0324=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                           ^^^^^^^^^^^^^^^^^^^^^^^                        ^^^^^^^^                                                                                                                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4626 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1726, 889)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(2439, 531)"/>
+<path d=""  transform="translate(2439, 531)"/>
+<path d=""  transform="translate(2141, 986)"/>
+<path d=""  transform="translate(2968, 1030)"/>
+<path d=""  transform="translate(2697, 986)"/>
+<path d=""  transform="translate(3828, 888)"/>
+<path d=""  transform="translate(3659, 986)"/>
+<path d=""  transform="translate(4291, 351)"/>
+<path d=""  transform="translate(4295, 531)"/>
+<path d=""  transform="translate(4000, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4652 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1727, 889)"/>
+<path d=""  transform="translate(1262, 986)"/>
+<path d=""  transform="translate(2440, 531)"/>
+<path d=""  transform="translate(2440, 531)"/>
+<path d=""  transform="translate(2142, 986)"/>
+<path d=""  transform="translate(2969, 1030)"/>
+<path d=""  transform="translate(2698, 986)"/>
+<path d=""  transform="translate(3829, 888)"/>
+<path d=""  transform="translate(3660, 986)"/>
+<path d=""  transform="translate(4317, 351)"/>
+<path d=""  transform="translate(4321, 531)"/>
+<path d=""  transform="translate(4026, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܱܸܠܷܨ̱ܷܝܻܒ݈ܨܸ̣ܩ̤ܨ̰ܸܠܷ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0737=20@318,-98+0|uni0720=20+656|uni0738=17@345,-607+0|uni0330=17@348,-455+0|uni0728.Fina=17@50,0+606|uni0324=15@364,-98+0|uni0729.Init=15+665|uni0323=12@361,-455+0|uni0738=12@361,-455+0|uni0728.Fina=12@63,0+619|uni0748=10@296,-98+0|uni0712.Medi=10+740|uni073B=8@135,-457+0|uni071D.Init=8+278|uni0737=5@298,-585+0|uni0331=5@298,-455+0|uni0728.Fina=5+556|uni0737=3@169,-458+0|uni0720.Init=3+341|uni0738=0@320,-455+0|uni0731=0@320,-455+0|uni0728=0@25,0+651</pre>
+
+
+
+<pre>Got     : uni0737=20@318,-98+0|uni0720=20+656|uni0738=17@344,-607+0|uni0330=17@347,-455+0|uni0728.Fina=17@49,0+605|uni0324=15@364,-98+0|uni0729.Init=15+665|uni0323=12@361,-455+0|uni0738=12@361,-455+0|uni0728.Fina=12@63,0+619|uni0748=10@296,-98+0|uni0712.Medi=10+740|uni073B=8@135,-457+0|uni071D.Init=8+278|uni0737=5@298,-585+0|uni0331=5@298,-455+0|uni0728.Fina=5+556|uni0737=3@169,-458+0|uni0720.Init=3+341|uni0738=0@295,-455+0|uni0731=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                           ^^^^^^^^^^^^^^^^^^^^^^^                        ^^^^^^^^                                                                                                                                                                                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5086 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1000, 379)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1625, 888)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(2287, 531)"/>
+<path d=""  transform="translate(2287, 531)"/>
+<path d=""  transform="translate(1989, 986)"/>
+<path d=""  transform="translate(2841, 888)"/>
+<path d=""  transform="translate(2545, 986)"/>
+<path d=""  transform="translate(3420, 529)"/>
+<path d=""  transform="translate(3285, 986)"/>
+<path d=""  transform="translate(3861, 401)"/>
+<path d=""  transform="translate(3861, 531)"/>
+<path d=""  transform="translate(3563, 986)"/>
+<path d=""  transform="translate(4288, 528)"/>
+<path d=""  transform="translate(4119, 986)"/>
+<path d=""  transform="translate(4755, 531)"/>
+<path d=""  transform="translate(4755, 531)"/>
+<path d=""  transform="translate(4460, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5112 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1001, 379)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1626, 888)"/>
+<path d=""  transform="translate(1262, 986)"/>
+<path d=""  transform="translate(2288, 531)"/>
+<path d=""  transform="translate(2288, 531)"/>
+<path d=""  transform="translate(1990, 986)"/>
+<path d=""  transform="translate(2842, 888)"/>
+<path d=""  transform="translate(2546, 986)"/>
+<path d=""  transform="translate(3421, 529)"/>
+<path d=""  transform="translate(3286, 986)"/>
+<path d=""  transform="translate(3862, 401)"/>
+<path d=""  transform="translate(3862, 531)"/>
+<path d=""  transform="translate(3564, 986)"/>
+<path d=""  transform="translate(4289, 528)"/>
+<path d=""  transform="translate(4120, 986)"/>
+<path d=""  transform="translate(4781, 531)"/>
+<path d=""  transform="translate(4781, 531)"/>
+<path d=""  transform="translate(4486, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̭ܷܩܱܬٍܓܨ̮ءܹ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0739=10@229,-100+0|uni0621=10+462|uni032E=8@298,-455+0|uni0728.Fina=8+556|uni0713.Init=7+718|uni064D=5@391,-121+0|uni072C.Fina=5@18,0+748|uni0731=3@364,-98+0|uni0729.Init=3+665|uni0737=0@355,-635+0|uni032D=0@358,-455+0|uni0728=0@63,0+689</pre>
+
+
+
+<pre>Got     : uni0739=10@229,-100+0|uni0621=10+462|uni032E=8@298,-455+0|uni0728.Fina=8+556|uni0713.Init=7+718|uni064D=5@411,-121+0|uni072C.Fina=5@38,0+768|uni0731=3@364,-98+0|uni0729.Init=3+665|uni0737=0@355,-635+0|uni032D=0@358,-455+0|uni0728=0@63,0+689</pre>
+
+
+
+<pre>                                                                                                                    ^^                        ^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3858 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(2147, 865)"/>
+<path d=""  transform="translate(1774, 986)"/>
+<path d=""  transform="translate(2868, 888)"/>
+<path d=""  transform="translate(2504, 986)"/>
+<path d=""  transform="translate(3524, 351)"/>
+<path d=""  transform="translate(3527, 531)"/>
+<path d=""  transform="translate(3232, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3838 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(2127, 865)"/>
+<path d=""  transform="translate(1754, 986)"/>
+<path d=""  transform="translate(2848, 888)"/>
+<path d=""  transform="translate(2484, 986)"/>
+<path d=""  transform="translate(3504, 351)"/>
+<path d=""  transform="translate(3507, 531)"/>
+<path d=""  transform="translate(3212, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٍٕءܻܨٕܹء݆ܨ̰̱ܙ݈</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0748=13@152,-458+0|uni0719=13+275|uni0331=10@337,-455+0|uni0330=10@337,-455+0|uni0728=10@42,0+668|uni0746=8@229,-460+0|uni0621=8+462|uni0739=5@295,-455+0|uni0655=5@295,-455+0|uni0728=5+626|uni073B=3@229,-460+0|uni0621=3+462|uni0655064D=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0748=13@152,-458+0|uni0719=13+275|uni0331=10@295,-455+0|uni0330=10@295,-455+0|uni0728=10+626|uni0746=8@229,-460+0|uni0621=8+462|uni0739=5@295,-455+0|uni0655=5@295,-455+0|uni0728=5+626|uni073B=3@229,-460+0|uni0621=3+462|uni0655064D=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3077 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(152, 528)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(570, 531)"/>
+<path d=""  transform="translate(570, 531)"/>
+<path d=""  transform="translate(275, 986)"/>
+<path d=""  transform="translate(1130, 526)"/>
+<path d=""  transform="translate(901, 986)"/>
+<path d=""  transform="translate(1658, 531)"/>
+<path d=""  transform="translate(1658, 531)"/>
+<path d=""  transform="translate(1363, 986)"/>
+<path d=""  transform="translate(2218, 526)"/>
+<path d=""  transform="translate(1989, 986)"/>
+<path d=""  transform="translate(2746, 531)"/>
+<path d=""  transform="translate(2451, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3119 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(152, 528)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(612, 531)"/>
+<path d=""  transform="translate(612, 531)"/>
+<path d=""  transform="translate(317, 986)"/>
+<path d=""  transform="translate(1172, 526)"/>
+<path d=""  transform="translate(943, 986)"/>
+<path d=""  transform="translate(1700, 531)"/>
+<path d=""  transform="translate(1700, 531)"/>
+<path d=""  transform="translate(1405, 986)"/>
+<path d=""  transform="translate(2260, 526)"/>
+<path d=""  transform="translate(2031, 986)"/>
+<path d=""  transform="translate(2788, 531)"/>
+<path d=""  transform="translate(2493, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܪٍܢܨِ̤ءܻܨ݄ܾܡ̤ܨ̮ܷܘ̱ܨ̣ܼܝܱ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0731=21@120,-454+0|uni071D=21+243|uni073C=18@335,-635+0|uni0323=18@335,-455+0|uni0728=18@40,0+666|uni0331=16@316,-98+0|uni0718=16+610|uni0737=13@417,-577+0|uni032E=13@420,-455+0|uni0728.Fina=13@122,0+678|uni0324=11@465,-97+0|uni0721.Init=11+880|uni073E=8@295,-455+0|uni0744=8@295,-455+0|uni0728=8+626|uni073B=6@229,-460+0|uni0621=6+462|uni0324=3@298,-455+0|uni0650=3@298,-455+0|uni0728.Fina=3+556|uni0722.Init=2+291|uni064D=0@228,-73+0|uni072A=0@25,0+564</pre>
+
+
+
+<pre>Got     : uni0731=21@120,-454+0|uni071D=21+243|uni073C=18@295,-635+0|uni0323=18@295,-455+0|uni0728=18+626|uni0331=16@316,-98+0|uni0718=16+610|uni0737=13@416,-577+0|uni032E=13@419,-455+0|uni0728.Fina=13@121,0+677|uni0324=11@465,-97+0|uni0721.Init=11+880|uni073E=8@295,-455+0|uni0744=8@295,-455+0|uni0728=8+626|uni073B=6@229,-460+0|uni0621=6+462|uni0324=3@298,-455+0|uni0650=3@298,-455+0|uni0728.Fina=3+556|uni0722.Init=2+291|uni064D=0@227,-73+0|uni072A=0@24,0+563</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5534 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(120, 532)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(538, 351)"/>
+<path d=""  transform="translate(538, 531)"/>
+<path d=""  transform="translate(243, 986)"/>
+<path d=""  transform="translate(1185, 888)"/>
+<path d=""  transform="translate(869, 986)"/>
+<path d=""  transform="translate(1895, 409)"/>
+<path d=""  transform="translate(1898, 531)"/>
+<path d=""  transform="translate(1600, 986)"/>
+<path d=""  transform="translate(2621, 889)"/>
+<path d=""  transform="translate(2156, 986)"/>
+<path d=""  transform="translate(3331, 531)"/>
+<path d=""  transform="translate(3331, 531)"/>
+<path d=""  transform="translate(3036, 986)"/>
+<path d=""  transform="translate(3891, 526)"/>
+<path d=""  transform="translate(3662, 986)"/>
+<path d=""  transform="translate(4422, 531)"/>
+<path d=""  transform="translate(4422, 531)"/>
+<path d=""  transform="translate(4124, 986)"/>
+<path d=""  transform="translate(4680, 986)"/>
+<path d=""  transform="translate(5198, 913)"/>
+<path d=""  transform="translate(4995, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5576 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(120, 532)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(578, 351)"/>
+<path d=""  transform="translate(578, 531)"/>
+<path d=""  transform="translate(283, 986)"/>
+<path d=""  transform="translate(1225, 888)"/>
+<path d=""  transform="translate(909, 986)"/>
+<path d=""  transform="translate(1936, 409)"/>
+<path d=""  transform="translate(1939, 531)"/>
+<path d=""  transform="translate(1641, 986)"/>
+<path d=""  transform="translate(2662, 889)"/>
+<path d=""  transform="translate(2197, 986)"/>
+<path d=""  transform="translate(3372, 531)"/>
+<path d=""  transform="translate(3372, 531)"/>
+<path d=""  transform="translate(3077, 986)"/>
+<path d=""  transform="translate(3932, 526)"/>
+<path d=""  transform="translate(3703, 986)"/>
+<path d=""  transform="translate(4463, 531)"/>
+<path d=""  transform="translate(4463, 531)"/>
+<path d=""  transform="translate(4165, 986)"/>
+<path d=""  transform="translate(4721, 986)"/>
+<path d=""  transform="translate(5240, 913)"/>
+<path d=""  transform="translate(5037, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܦܨ݄ܼءܷܨܹܾܠٕܕ̃ܝ̃ܨ̭ܻءٍ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni064D=18@229,-100+0|uni0621=18+462|uni073B=15@295,-635+0|uni032D=15@298,-455+0|uni0728.Fina=15+556|uni0303=13@125,-135+0|uni071D.Init=13+278|uni0303=11@233,-17+0|uni0715.Fina=11@32,0+557|uni0655=9@169,-98+0|uni0720.Init=9+341|uni073E=6@320,-455+0|uni0739=6@320,-455+0|uni0728=6@25,0+651|uni0737=4@229,-460+0|uni0621=4+462|uni073C=1@298,-455+0|uni0744=1@298,-455+0|uni0728.Fina=1+556|uni0726.Init=0+616</pre>
+
+
+
+<pre>Got     : uni064D=18@229,-100+0|uni0621=18+462|uni073B=15@295,-635+0|uni032D=15@298,-455+0|uni0728.Fina=15+556|uni0303=13@125,-135+0|uni071D.Init=13+278|uni0303=11@233,-17+0|uni0715.Fina=11@32,0+557|uni0655=9@169,-98+0|uni0720.Init=9+341|uni073E=6@295,-455+0|uni0739=6@295,-455+0|uni0728=6+626|uni0737=4@229,-460+0|uni0621=4+462|uni073C=1@298,-455+0|uni0744=1@298,-455+0|uni0728.Fina=1+556|uni0726.Init=0@-73,0+543</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                                                               ^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4381 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(757, 351)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1143, 851)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(1529, 969)"/>
+<path d=""  transform="translate(1328, 986)"/>
+<path d=""  transform="translate(2022, 888)"/>
+<path d=""  transform="translate(1853, 986)"/>
+<path d=""  transform="translate(2489, 531)"/>
+<path d=""  transform="translate(2489, 531)"/>
+<path d=""  transform="translate(2194, 986)"/>
+<path d=""  transform="translate(3049, 526)"/>
+<path d=""  transform="translate(2820, 986)"/>
+<path d=""  transform="translate(3580, 531)"/>
+<path d=""  transform="translate(3580, 531)"/>
+<path d=""  transform="translate(3282, 986)"/>
+<path d=""  transform="translate(3765, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4479 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(757, 351)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1143, 851)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(1529, 969)"/>
+<path d=""  transform="translate(1328, 986)"/>
+<path d=""  transform="translate(2022, 888)"/>
+<path d=""  transform="translate(1853, 986)"/>
+<path d=""  transform="translate(2514, 531)"/>
+<path d=""  transform="translate(2514, 531)"/>
+<path d=""  transform="translate(2219, 986)"/>
+<path d=""  transform="translate(3074, 526)"/>
+<path d=""  transform="translate(2845, 986)"/>
+<path d=""  transform="translate(3605, 531)"/>
+<path d=""  transform="translate(3605, 531)"/>
+<path d=""  transform="translate(3307, 986)"/>
+<path d=""  transform="translate(3863, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِܱء̭ܪٓܝ̄ܨٍܱء̣ܬ݅ܨ݄݆ܩ̭</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni032D=19@533,-98+0|uni0729=19+834|uni0746=16@358,-455+0|uni0744=16@358,-455+0|uni0728=16@63,0+689|uni0745=14@397,182+0|uni072C=14+743|uni0323=12@269,-100+0|uni0621=12@40,0+502|uni0731=9@298,-455+0|uni064D=9@298,-455+0|uni0728.Fina=9+556|uni0304=7@125,-135+0|uni071D.Init=7+278|uni0653=5@247,140+0|uni072A=5@32,0+571|uni032D=3@229,-100+0|uni0621=3+462|uni0731=0@295,-455+0|uni0650=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni032D=19@533,-98+0|uni0729=19+834|uni0746=16@358,-455+0|uni0744=16@358,-455+0|uni0728=16@63,0+689|uni0745=14@397,182+0|uni072C=14+743|uni0323=12@266,-100+0|uni0621=12@37,0+499|uni0731=9@298,-455+0|uni064D=9@298,-455+0|uni0728.Fina=9+556|uni0304=7@125,-135+0|uni071D.Init=7+278|uni0653=5@247,140+0|uni072A=5@32,0+571|uni032D=3@229,-100+0|uni0621=3+462|uni0731=0@295,-455+0|uni0650=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5258 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1192, 531)"/>
+<path d=""  transform="translate(1192, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1920, 1168)"/>
+<path d=""  transform="translate(1523, 986)"/>
+<path d=""  transform="translate(2532, 886)"/>
+<path d=""  transform="translate(2303, 986)"/>
+<path d=""  transform="translate(3063, 531)"/>
+<path d=""  transform="translate(3063, 531)"/>
+<path d=""  transform="translate(2765, 986)"/>
+<path d=""  transform="translate(3446, 851)"/>
+<path d=""  transform="translate(3321, 986)"/>
+<path d=""  transform="translate(3846, 1126)"/>
+<path d=""  transform="translate(3631, 986)"/>
+<path d=""  transform="translate(4399, 886)"/>
+<path d=""  transform="translate(4170, 986)"/>
+<path d=""  transform="translate(4927, 531)"/>
+<path d=""  transform="translate(4927, 531)"/>
+<path d=""  transform="translate(4632, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5261 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1192, 531)"/>
+<path d=""  transform="translate(1192, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1920, 1168)"/>
+<path d=""  transform="translate(1523, 986)"/>
+<path d=""  transform="translate(2535, 886)"/>
+<path d=""  transform="translate(2306, 986)"/>
+<path d=""  transform="translate(3066, 531)"/>
+<path d=""  transform="translate(3066, 531)"/>
+<path d=""  transform="translate(2768, 986)"/>
+<path d=""  transform="translate(3449, 851)"/>
+<path d=""  transform="translate(3324, 986)"/>
+<path d=""  transform="translate(3849, 1126)"/>
+<path d=""  transform="translate(3634, 986)"/>
+<path d=""  transform="translate(4402, 886)"/>
+<path d=""  transform="translate(4173, 986)"/>
+<path d=""  transform="translate(4930, 531)"/>
+<path d=""  transform="translate(4930, 531)"/>
+<path d=""  transform="translate(4635, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِܷܝ̣ܕ̈ܨܾ݆ܡ̭ܨܼܷܝܴܨ̰̭ܡِ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0650=20@607,-98+0|uni0721=20+885|uni032D=17@361,-455+0|uni0330=17@361,-455+0|uni0728.Fina=17@63,0+619|uni0734=15@135,-457+0|uni071D.Init=15+278|uni0737=12@298,-455+0|uni073C=12@298,-455+0|uni0728.Fina=12+556|uni032D=10@465,-97+0|uni0721.Init=10+880|uni0746=7@295,-455+0|uni073E=7@295,-455+0|uni0728=7+626|uni0308=5@118,-17+0|uni0715.Fina=5@-83,0+442|uni0323=3@135,-97+0|uni071D.Init=3+278|uni0737=0@295,-455+0|uni0650=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0650=20@607,-98+0|uni0721=20+885|uni032D=17@361,-455+0|uni0330=17@361,-455+0|uni0728.Fina=17@63,0+619|uni0734=15@135,-457+0|uni071D.Init=15+278|uni0737=12@298,-455+0|uni073C=12@298,-455+0|uni0728.Fina=12+556|uni032D=10@465,-97+0|uni0721.Init=10+880|uni0746=7@295,-455+0|uni073E=7@295,-455+0|uni0728=7+626|uni0308=5@201,-17+0|uni0715.Fina=5+525|uni0323=3@135,-97+0|uni071D.Init=3+278|uni0737=0@295,-455+0|uni0650=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                        ^^^                     ^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5273 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(607, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1246, 531)"/>
+<path d=""  transform="translate(1246, 531)"/>
+<path d=""  transform="translate(948, 986)"/>
+<path d=""  transform="translate(1639, 529)"/>
+<path d=""  transform="translate(1504, 986)"/>
+<path d=""  transform="translate(2080, 531)"/>
+<path d=""  transform="translate(2080, 531)"/>
+<path d=""  transform="translate(1782, 986)"/>
+<path d=""  transform="translate(2803, 889)"/>
+<path d=""  transform="translate(2338, 986)"/>
+<path d=""  transform="translate(3513, 531)"/>
+<path d=""  transform="translate(3513, 531)"/>
+<path d=""  transform="translate(3218, 986)"/>
+<path d=""  transform="translate(4045, 969)"/>
+<path d=""  transform="translate(3844, 986)"/>
+<path d=""  transform="translate(4504, 889)"/>
+<path d=""  transform="translate(4369, 986)"/>
+<path d=""  transform="translate(4942, 531)"/>
+<path d=""  transform="translate(4942, 531)"/>
+<path d=""  transform="translate(4647, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5190 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(607, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1246, 531)"/>
+<path d=""  transform="translate(1246, 531)"/>
+<path d=""  transform="translate(948, 986)"/>
+<path d=""  transform="translate(1639, 529)"/>
+<path d=""  transform="translate(1504, 986)"/>
+<path d=""  transform="translate(2080, 531)"/>
+<path d=""  transform="translate(2080, 531)"/>
+<path d=""  transform="translate(1782, 986)"/>
+<path d=""  transform="translate(2803, 889)"/>
+<path d=""  transform="translate(2338, 986)"/>
+<path d=""  transform="translate(3513, 531)"/>
+<path d=""  transform="translate(3513, 531)"/>
+<path d=""  transform="translate(3218, 986)"/>
+<path d=""  transform="translate(3962, 969)"/>
+<path d=""  transform="translate(3761, 986)"/>
+<path d=""  transform="translate(4421, 889)"/>
+<path d=""  transform="translate(4286, 986)"/>
+<path d=""  transform="translate(4859, 531)"/>
+<path d=""  transform="translate(4859, 531)"/>
+<path d=""  transform="translate(4564, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܻܱܠ̰ܜܨٕ݆ܩܻ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni073B=9@533,-98+0|uni0729=9+834|uni0746=6@361,-455+0|uni0655=6@361,-455+0|uni0728.Fina=6@63,0+619|uni071C.Medi=5+621|uni0330=3@267,-98+0|uni0720.InitB=3+439|uni0731=0@320,-455+0|uni073B=0@320,-455+0|uni0728=0@25,0+651</pre>
+
+
+
+<pre>Got     : uni073B=9@533,-98+0|uni0729=9+834|uni0746=6@361,-455+0|uni0655=6@361,-455+0|uni0728.Fina=6@63,0+619|uni071C.Medi=5+621|uni0330=3@267,-98+0|uni0720.InitB=3+439|uni0731=0@295,-455+0|uni073B=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                                                   ^^^                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3139 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1453, 986)"/>
+<path d=""  transform="translate(2341, 888)"/>
+<path d=""  transform="translate(2074, 986)"/>
+<path d=""  transform="translate(2808, 531)"/>
+<path d=""  transform="translate(2808, 531)"/>
+<path d=""  transform="translate(2513, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3164 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1453, 986)"/>
+<path d=""  transform="translate(2341, 888)"/>
+<path d=""  transform="translate(2074, 986)"/>
+<path d=""  transform="translate(2833, 531)"/>
+<path d=""  transform="translate(2833, 531)"/>
+<path d=""  transform="translate(2538, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܕّܝٓܨٕٕܘܸܨٍܹܘ݈ܨ̱ܙܻ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni073B=16@152,-458+0|uni0719=16+275|uni0331=14@337,-455+0|uni0728=14@42,0+668|uni0748=12@316,-98+0|uni0718=12+610|uni0739=9@417,-455+0|uni064D=9@417,-455+0|uni0728=9@122,0+748|uni0738=7@316,-98+0|uni0718=7+610|uni0655=4@420,-455+0|uni0655=4@420,-455+0|uni0728.Fina=4@122,0+678|uni0653=2@125,-135+0|uni071D.Init=2+278|uni0651=0@233,-17+0|uni0715=0@32,0+571</pre>
+
+
+
+<pre>Got     : uni073B=16@152,-458+0|uni0719=16+275|uni0331=14@295,-455+0|uni0728=14+626|uni0748=12@316,-98+0|uni0718=12+610|uni0739=9@375,-455+0|uni064D=9@375,-455+0|uni0728=9@80,0+706|uni0738=7@316,-98+0|uni0718=7+610|uni0655=4@419,-455+0|uni0655=4@419,-455+0|uni0728.Fina=4@121,0+677|uni0653=2@125,-135+0|uni071D.Init=2+278|uni0651=0@257,-17+0|uni0715=0@56,0+595</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4377 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(152, 528)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(570, 531)"/>
+<path d=""  transform="translate(275, 986)"/>
+<path d=""  transform="translate(1217, 888)"/>
+<path d=""  transform="translate(901, 986)"/>
+<path d=""  transform="translate(1886, 531)"/>
+<path d=""  transform="translate(1886, 531)"/>
+<path d=""  transform="translate(1591, 986)"/>
+<path d=""  transform="translate(2533, 888)"/>
+<path d=""  transform="translate(2217, 986)"/>
+<path d=""  transform="translate(3246, 531)"/>
+<path d=""  transform="translate(3246, 531)"/>
+<path d=""  transform="translate(2948, 986)"/>
+<path d=""  transform="translate(3629, 851)"/>
+<path d=""  transform="translate(3504, 986)"/>
+<path d=""  transform="translate(4039, 969)"/>
+<path d=""  transform="translate(3838, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4438 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(152, 528)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(612, 531)"/>
+<path d=""  transform="translate(317, 986)"/>
+<path d=""  transform="translate(1259, 888)"/>
+<path d=""  transform="translate(943, 986)"/>
+<path d=""  transform="translate(1970, 531)"/>
+<path d=""  transform="translate(1970, 531)"/>
+<path d=""  transform="translate(1675, 986)"/>
+<path d=""  transform="translate(2617, 888)"/>
+<path d=""  transform="translate(2301, 986)"/>
+<path d=""  transform="translate(3331, 531)"/>
+<path d=""  transform="translate(3331, 531)"/>
+<path d=""  transform="translate(3033, 986)"/>
+<path d=""  transform="translate(3714, 851)"/>
+<path d=""  transform="translate(3589, 986)"/>
+<path d=""  transform="translate(4100, 969)"/>
+<path d=""  transform="translate(3899, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܹܻءܻܨ݈ܾܝِܨ̠ܝ݆</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0746=12@120,-454+0|uni071D=12+243|uni0320=10@338,-455+0|uni0728.Fina=10@40,0+596|uni0650=8@135,-97+0|uni071D.Init=8+278|uni073E=5@295,-455+0|uni0748=5@295,-455+0|uni0728=5+626|uni073B=3@229,-460+0|uni0621=3+462|uni073B=0@295,-455+0|uni0739=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0746=12@120,-454+0|uni071D=12+243|uni0320=10@337,-455+0|uni0728.Fina=10@39,0+595|uni0650=8@135,-97+0|uni071D.Init=8+278|uni073E=5@295,-455+0|uni0748=5@295,-455+0|uni0728=5+626|uni073B=3@229,-460+0|uni0621=3+462|uni073B=0@295,-455+0|uni0739=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                            ^                        ^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2830 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(120, 532)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(580, 531)"/>
+<path d=""  transform="translate(282, 986)"/>
+<path d=""  transform="translate(973, 889)"/>
+<path d=""  transform="translate(838, 986)"/>
+<path d=""  transform="translate(1411, 531)"/>
+<path d=""  transform="translate(1411, 531)"/>
+<path d=""  transform="translate(1116, 986)"/>
+<path d=""  transform="translate(1971, 526)"/>
+<path d=""  transform="translate(1742, 986)"/>
+<path d=""  transform="translate(2499, 531)"/>
+<path d=""  transform="translate(2499, 531)"/>
+<path d=""  transform="translate(2204, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2831 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(120, 532)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(581, 531)"/>
+<path d=""  transform="translate(283, 986)"/>
+<path d=""  transform="translate(974, 889)"/>
+<path d=""  transform="translate(839, 986)"/>
+<path d=""  transform="translate(1412, 531)"/>
+<path d=""  transform="translate(1412, 531)"/>
+<path d=""  transform="translate(1117, 986)"/>
+<path d=""  transform="translate(1972, 526)"/>
+<path d=""  transform="translate(1743, 986)"/>
+<path d=""  transform="translate(2500, 531)"/>
+<path d=""  transform="translate(2500, 531)"/>
+<path d=""  transform="translate(2205, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܩ̰ܨ̮ܝܸܨ݆̠ܠܸܨ݈ܴܩِ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0650=15@533,-98+0|uni0729=15+834|uni0734=12@361,-455+0|uni0748=12@361,-455+0|uni0728.Fina=12@63,0+619|uni0738=10@169,-98+0|uni0720.Init=10+341|uni0320=7@323,-455+0|uni0746=7@323,-455+0|uni0728.Fina=7@25,0+581|uni0738=5@135,-97+0|uni071D.Init=5+278|uni032E=3@298,-455+0|uni0728.Fina=3+556|uni0330=1@364,-98+0|uni0729.Init=1+665|uni0728=0@63,0+689</pre>
+
+
+
+<pre>Got     : uni0650=15@533,-98+0|uni0729=15+834|uni0734=12@361,-455+0|uni0748=12@361,-455+0|uni0728.Fina=12@63,0+619|uni0738=10@169,-98+0|uni0720.Init=10+341|uni0320=7@298,-455+0|uni0746=7@298,-455+0|uni0728.Fina=7+556|uni0738=5@135,-97+0|uni071D.Init=5+278|uni032E=3@298,-455+0|uni0728.Fina=3+556|uni0330=1@364,-98+0|uni0729.Init=1+665|uni0728=0@63,0+689</pre>
+
+
+
+<pre>                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^                      ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4538 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1622, 888)"/>
+<path d=""  transform="translate(1453, 986)"/>
+<path d=""  transform="translate(2092, 531)"/>
+<path d=""  transform="translate(2092, 531)"/>
+<path d=""  transform="translate(1794, 986)"/>
+<path d=""  transform="translate(2485, 889)"/>
+<path d=""  transform="translate(2350, 986)"/>
+<path d=""  transform="translate(2926, 531)"/>
+<path d=""  transform="translate(2628, 986)"/>
+<path d=""  transform="translate(3548, 888)"/>
+<path d=""  transform="translate(3184, 986)"/>
+<path d=""  transform="translate(3912, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4563 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1622, 888)"/>
+<path d=""  transform="translate(1453, 986)"/>
+<path d=""  transform="translate(2117, 531)"/>
+<path d=""  transform="translate(2117, 531)"/>
+<path d=""  transform="translate(1819, 986)"/>
+<path d=""  transform="translate(2510, 889)"/>
+<path d=""  transform="translate(2375, 986)"/>
+<path d=""  transform="translate(2951, 531)"/>
+<path d=""  transform="translate(2653, 986)"/>
+<path d=""  transform="translate(3573, 888)"/>
+<path d=""  transform="translate(3209, 986)"/>
+<path d=""  transform="translate(3937, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܻ̭ܡܹܨܻ̰ܙܴܨܾ̭ܝܹܨِٕءٍ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni064D=18@229,-100+0|uni0621=18+462|uni06550650=15@298,-455+0|uni0728.Fina=15+556|uni0739=13@135,-97+0|uni071D.Init=13+278|uni032D=10@295,-455+0|uni073E=10@295,-455+0|uni0728=10+626|uni0734=8@117,-458+0|uni0719=8@-35,0+240|uni0330=5@340,-455+0|uni073B=5@340,-455+0|uni0728.Fina=5@42,0+598|uni0739=3@465,-97+0|uni0721.Init=3+880|uni032D=0@295,-455+0|uni073B=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni064D=18@229,-100+0|uni0621=18+462|uni06550650=15@298,-455+0|uni0728.Fina=15+556|uni0739=13@135,-97+0|uni071D.Init=13+278|uni032D=10@295,-455+0|uni073E=10@295,-455+0|uni0728=10+626|uni0734=8@152,-458+0|uni0719=8+275|uni0330=5@339,-455+0|uni073B=5@339,-455+0|uni0728.Fina=5@41,0+597|uni0739=3@465,-97+0|uni0721.Init=3+880|uni032D=0@295,-455+0|uni073B=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                                                                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                   ^^                        ^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4300 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1153, 889)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(1591, 531)"/>
+<path d=""  transform="translate(1591, 531)"/>
+<path d=""  transform="translate(1296, 986)"/>
+<path d=""  transform="translate(2074, 528)"/>
+<path d=""  transform="translate(1922, 986)"/>
+<path d=""  transform="translate(2536, 531)"/>
+<path d=""  transform="translate(2536, 531)"/>
+<path d=""  transform="translate(2238, 986)"/>
+<path d=""  transform="translate(3259, 889)"/>
+<path d=""  transform="translate(2794, 986)"/>
+<path d=""  transform="translate(3969, 531)"/>
+<path d=""  transform="translate(3969, 531)"/>
+<path d=""  transform="translate(3674, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4266 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1153, 889)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(1591, 531)"/>
+<path d=""  transform="translate(1591, 531)"/>
+<path d=""  transform="translate(1296, 986)"/>
+<path d=""  transform="translate(2039, 528)"/>
+<path d=""  transform="translate(1887, 986)"/>
+<path d=""  transform="translate(2502, 531)"/>
+<path d=""  transform="translate(2502, 531)"/>
+<path d=""  transform="translate(2204, 986)"/>
+<path d=""  transform="translate(3225, 889)"/>
+<path d=""  transform="translate(2760, 986)"/>
+<path d=""  transform="translate(3935, 531)"/>
+<path d=""  transform="translate(3935, 531)"/>
+<path d=""  transform="translate(3640, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̠݆ܝٕܨِ̰ܡܼܨٍ̰ܠ̮ܨ̭ܹܝ̭ܨ̮ܩܹ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0739=22@533,-98+0|uni0729=22+834|uni032E=20@361,-455+0|uni0728.Fina=20@63,0+619|uni032D=18@135,-97+0|uni071D.Init=18+278|uni0739=15@295,-635+0|uni032D=15@298,-455+0|uni0728.Fina=15+556|uni032E=13@169,-98+0|uni0720.Init=13+341|uni0330=10@323,-455+0|uni064D=10@323,-455+0|uni0728.Fina=10@25,0+581|uni073C=8@465,-97+0|uni0721.Init=8+880|uni0330=5@298,-455+0|uni0650=5@298,-455+0|uni0728.Fina=5+556|uni0655=3@135,-97+0|uni071D.Init=3+278|uni0746=0@295,-585+0|uni0320=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0739=22@533,-98+0|uni0729=22+834|uni032E=20@361,-455+0|uni0728.Fina=20@63,0+619|uni032D=18@135,-97+0|uni071D.Init=18+278|uni0739=15@295,-635+0|uni032D=15@298,-455+0|uni0728.Fina=15+556|uni032E=13@169,-98+0|uni0720.Init=13+341|uni0330=10@298,-455+0|uni064D=10@298,-455+0|uni0728.Fina=10+556|uni073C=8@465,-97+0|uni0721.Init=8+880|uni0330=5@298,-455+0|uni0650=5@298,-455+0|uni0728.Fina=5+556|uni0655=3@135,-97+0|uni071D.Init=3+278|uni0746=0@295,-585+0|uni0320=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                          ^^^                   ^^^                       ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5524 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1588, 889)"/>
+<path d=""  transform="translate(1453, 986)"/>
+<path d=""  transform="translate(2026, 351)"/>
+<path d=""  transform="translate(2029, 531)"/>
+<path d=""  transform="translate(1731, 986)"/>
+<path d=""  transform="translate(2456, 888)"/>
+<path d=""  transform="translate(2287, 986)"/>
+<path d=""  transform="translate(2926, 531)"/>
+<path d=""  transform="translate(2926, 531)"/>
+<path d=""  transform="translate(2628, 986)"/>
+<path d=""  transform="translate(3649, 889)"/>
+<path d=""  transform="translate(3184, 986)"/>
+<path d=""  transform="translate(4362, 531)"/>
+<path d=""  transform="translate(4362, 531)"/>
+<path d=""  transform="translate(4064, 986)"/>
+<path d=""  transform="translate(4755, 889)"/>
+<path d=""  transform="translate(4620, 986)"/>
+<path d=""  transform="translate(5193, 401)"/>
+<path d=""  transform="translate(5193, 531)"/>
+<path d=""  transform="translate(4898, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5549 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1588, 889)"/>
+<path d=""  transform="translate(1453, 986)"/>
+<path d=""  transform="translate(2026, 351)"/>
+<path d=""  transform="translate(2029, 531)"/>
+<path d=""  transform="translate(1731, 986)"/>
+<path d=""  transform="translate(2456, 888)"/>
+<path d=""  transform="translate(2287, 986)"/>
+<path d=""  transform="translate(2951, 531)"/>
+<path d=""  transform="translate(2951, 531)"/>
+<path d=""  transform="translate(2653, 986)"/>
+<path d=""  transform="translate(3674, 889)"/>
+<path d=""  transform="translate(3209, 986)"/>
+<path d=""  transform="translate(4387, 531)"/>
+<path d=""  transform="translate(4387, 531)"/>
+<path d=""  transform="translate(4089, 986)"/>
+<path d=""  transform="translate(4780, 889)"/>
+<path d=""  transform="translate(4645, 986)"/>
+<path d=""  transform="translate(5218, 401)"/>
+<path d=""  transform="translate(5218, 531)"/>
+<path d=""  transform="translate(4923, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܖّܝܳܘ̱ܓ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0713=6+1091|uni0331=4@391,-98+0|uni0718.Fina=4@75,0+673|uni0733=2@125,-135+0|uni071D.Init=2+278|uni0651=0@233,-18+0|uni0716=0@32,0+571</pre>
+
+
+
+<pre>Got     : uni0713=6+1091|uni0331=4@441,-98+0|uni0718.Fina=4@125,0+723|uni0733=2@125,-135+0|uni071D.Init=2+278|uni0651=0@233,-18+0|uni0716=0@32,0+571</pre>
+
+
+
+<pre>                                   ^^                       ^    +
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2663 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1532, 888)"/>
+<path d=""  transform="translate(1216, 986)"/>
+<path d=""  transform="translate(1939, 851)"/>
+<path d=""  transform="translate(1814, 986)"/>
+<path d=""  transform="translate(2325, 968)"/>
+<path d=""  transform="translate(2124, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2613 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1482, 888)"/>
+<path d=""  transform="translate(1166, 986)"/>
+<path d=""  transform="translate(1889, 851)"/>
+<path d=""  transform="translate(1764, 986)"/>
+<path d=""  transform="translate(2275, 968)"/>
+<path d=""  transform="translate(2074, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܓٕܛ݅ܨ݆̱ܠ݆</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0746=7@318,-98+0|uni0720=7+656|uni0331=4@348,-455+0|uni0746=4@348,-455+0|uni0728.Fina=4@50,0+606|uni0745=2@224,208+0|uni071B.Medi=2+621|uni0655=0@248,-157+0|uni0713.Init=0+718</pre>
+
+
+
+<pre>Got     : uni0746=7@318,-98+0|uni0720=7+656|uni0331=4@347,-455+0|uni0746=4@347,-455+0|uni0728.Fina=4@49,0+605|uni0745=2@224,208+0|uni071B.Medi=2+621|uni0655=0@248,-157+0|uni0713.Init=0+718</pre>
+
+
+
+<pre>                                                        ^                    ^                       ^^     ^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2600 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1485, 1194)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(2130, 829)"/>
+<path d=""  transform="translate(1882, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2601 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1486, 1194)"/>
+<path d=""  transform="translate(1262, 986)"/>
+<path d=""  transform="translate(2131, 829)"/>
+<path d=""  transform="translate(1883, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̮ܱء̭ܨܻ݆ܩِܨ݄ܾܘܾܨ̰݈ءٍܨِٕܝܸ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0738=23@120,-454+0|uni071D=23+243|uni06550650=20@335,-455+0|uni0728=20@40,0+666|uni064D=18@229,-100+0|uni0621=18+462|uni0748=15@292,-607+0|uni0330=15@295,-455+0|uni0728=15+626|uni073E=13@316,-98+0|uni0718=13+610|uni073E=10@420,-455+0|uni0744=10@420,-455+0|uni0728.Fina=10@122,0+678|uni0650=8@364,-98+0|uni0729.Init=8+665|uni0746=5@358,-455+0|uni073B=5@358,-455+0|uni0728=5@63,0+689|uni032D=3@229,-100+0|uni0621=3+462|uni0731=0@292,-577+0|uni032E=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0738=23@120,-454+0|uni071D=23+243|uni06550650=20@295,-455+0|uni0728=20+626|uni064D=18@229,-100+0|uni0621=18+462|uni0748=15@292,-607+0|uni0330=15@295,-455+0|uni0728=15+626|uni073E=13@316,-98+0|uni0718=13+610|uni073E=10@419,-455+0|uni0744=10@419,-455+0|uni0728.Fina=10@121,0+677|uni0650=8@364,-98+0|uni0729.Init=8+665|uni0746=5@358,-455+0|uni073B=5@358,-455+0|uni0728=5@63,0+689|uni032D=3@229,-100+0|uni0621=3+462|uni0731=0@292,-577+0|uni032E=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^                          ^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5686 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(120, 532)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(538, 531)"/>
+<path d=""  transform="translate(243, 986)"/>
+<path d=""  transform="translate(1098, 886)"/>
+<path d=""  transform="translate(869, 986)"/>
+<path d=""  transform="translate(1623, 379)"/>
+<path d=""  transform="translate(1626, 531)"/>
+<path d=""  transform="translate(1331, 986)"/>
+<path d=""  transform="translate(2273, 888)"/>
+<path d=""  transform="translate(1957, 986)"/>
+<path d=""  transform="translate(2986, 531)"/>
+<path d=""  transform="translate(2986, 531)"/>
+<path d=""  transform="translate(2688, 986)"/>
+<path d=""  transform="translate(3608, 888)"/>
+<path d=""  transform="translate(3244, 986)"/>
+<path d=""  transform="translate(4267, 531)"/>
+<path d=""  transform="translate(4267, 531)"/>
+<path d=""  transform="translate(3972, 986)"/>
+<path d=""  transform="translate(4827, 886)"/>
+<path d=""  transform="translate(4598, 986)"/>
+<path d=""  transform="translate(5352, 409)"/>
+<path d=""  transform="translate(5355, 531)"/>
+<path d=""  transform="translate(5060, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5727 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(120, 532)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(578, 531)"/>
+<path d=""  transform="translate(283, 986)"/>
+<path d=""  transform="translate(1138, 886)"/>
+<path d=""  transform="translate(909, 986)"/>
+<path d=""  transform="translate(1663, 379)"/>
+<path d=""  transform="translate(1666, 531)"/>
+<path d=""  transform="translate(1371, 986)"/>
+<path d=""  transform="translate(2313, 888)"/>
+<path d=""  transform="translate(1997, 986)"/>
+<path d=""  transform="translate(3027, 531)"/>
+<path d=""  transform="translate(3027, 531)"/>
+<path d=""  transform="translate(2729, 986)"/>
+<path d=""  transform="translate(3649, 888)"/>
+<path d=""  transform="translate(3285, 986)"/>
+<path d=""  transform="translate(4308, 531)"/>
+<path d=""  transform="translate(4308, 531)"/>
+<path d=""  transform="translate(4013, 986)"/>
+<path d=""  transform="translate(4868, 886)"/>
+<path d=""  transform="translate(4639, 986)"/>
+<path d=""  transform="translate(5393, 409)"/>
+<path d=""  transform="translate(5396, 531)"/>
+<path d=""  transform="translate(5101, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܠܻܨٕٕءܱܨٕ̠ܠ̤ܨܷ݆ܠܴ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0734=16@318,-98+0|uni0720=16+656|uni0746=13@348,-455+0|uni0737=13@348,-455+0|uni0728.Fina=13@50,0+606|uni0324=11@169,-98+0|uni0720.Init=11+341|uni0320=8@320,-455+0|uni0655=8@320,-455+0|uni0728=8@25,0+651|uni0731=6@229,-460+0|uni0621=6+462|uni0655=3@298,-455+0|uni0655=3@298,-455+0|uni0728.Fina=3+556|uni073B=1@169,-458+0|uni0720.Init=1+341|uni0728=0@25,0+651</pre>
+
+
+
+<pre>Got     : uni0734=16@318,-98+0|uni0720=16+656|uni0746=13@347,-455+0|uni0737=13@347,-455+0|uni0728.Fina=13@49,0+605|uni0324=11@169,-98+0|uni0720.Init=11+341|uni0320=8@295,-455+0|uni0655=8@295,-455+0|uni0728=8+626|uni0731=6@229,-460+0|uni0621=6+462|uni0655=3@298,-455+0|uni0655=3@298,-455+0|uni0728.Fina=3+556|uni073B=1@169,-458+0|uni0720.Init=1+341|uni0728=0+626</pre>
+
+
+
+<pre>                                                           ^^^^^^^^^^^^^^^^^^^^^^^                        ^^^^^^^^                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                  ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4213 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1430, 888)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1897, 531)"/>
+<path d=""  transform="translate(1897, 531)"/>
+<path d=""  transform="translate(1602, 986)"/>
+<path d=""  transform="translate(2457, 526)"/>
+<path d=""  transform="translate(2228, 986)"/>
+<path d=""  transform="translate(2988, 531)"/>
+<path d=""  transform="translate(2988, 531)"/>
+<path d=""  transform="translate(2690, 986)"/>
+<path d=""  transform="translate(3415, 528)"/>
+<path d=""  transform="translate(3246, 986)"/>
+<path d=""  transform="translate(3587, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4264 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1431, 888)"/>
+<path d=""  transform="translate(1262, 986)"/>
+<path d=""  transform="translate(1923, 531)"/>
+<path d=""  transform="translate(1923, 531)"/>
+<path d=""  transform="translate(1628, 986)"/>
+<path d=""  transform="translate(2483, 526)"/>
+<path d=""  transform="translate(2254, 986)"/>
+<path d=""  transform="translate(3014, 531)"/>
+<path d=""  transform="translate(3014, 531)"/>
+<path d=""  transform="translate(2716, 986)"/>
+<path d=""  transform="translate(3441, 528)"/>
+<path d=""  transform="translate(3272, 986)"/>
+<path d=""  transform="translate(3638, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܸٕܡٍܜ݇ܨ̱ܴܘܼ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni073C=10@316,-98+0|uni0718=10+610|uni0734=7@420,-585+0|uni0331=7@420,-455+0|uni0728.Fina=7@122,0+678|uni0747=5@224,208+0|uni071C.Medi=5+621|uni064D=3@240,-97+0|uni0721.Init=3@-225,0+655|uni0655=0@295,-455+0|uni0738=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni073C=10@316,-98+0|uni0718=10+610|uni0734=7@419,-585+0|uni0331=7@419,-455+0|uni0728.Fina=7@121,0+677|uni0747=5@224,208+0|uni071C.Medi=5+621|uni064D=3@240,-97+0|uni0721.Init=3@-225,0+655|uni0655=0@295,-455+0|uni0738=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                         ^^^^^^^^^^^^^^^^^^^^^^^                         ^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3189 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1029, 401)"/>
+<path d=""  transform="translate(1029, 531)"/>
+<path d=""  transform="translate(731, 986)"/>
+<path d=""  transform="translate(1511, 1194)"/>
+<path d=""  transform="translate(1287, 986)"/>
+<path d=""  transform="translate(2148, 889)"/>
+<path d=""  transform="translate(1683, 986)"/>
+<path d=""  transform="translate(2858, 531)"/>
+<path d=""  transform="translate(2858, 531)"/>
+<path d=""  transform="translate(2563, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3190 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1030, 401)"/>
+<path d=""  transform="translate(1030, 531)"/>
+<path d=""  transform="translate(732, 986)"/>
+<path d=""  transform="translate(1512, 1194)"/>
+<path d=""  transform="translate(1288, 986)"/>
+<path d=""  transform="translate(2149, 889)"/>
+<path d=""  transform="translate(1684, 986)"/>
+<path d=""  transform="translate(2859, 531)"/>
+<path d=""  transform="translate(2859, 531)"/>
+<path d=""  transform="translate(2564, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܕܻܜܨܸ̮ܘ̣ܨ̭̭ܘ݈ܨܹܸܠ̠</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0320=16@318,-98+0|uni0720=16+656|uni0738=13@345,-455+0|uni0739=13@345,-455+0|uni0728=13@50,0+676|uni0748=11@316,-98+0|uni0718=11+610|uni032D=8@417,-455+0|uni032D=8@417,-455+0|uni0728=8@122,0+748|uni0323=6@316,-98+0|uni0718=6+610|uni032E=3@420,-455+0|uni0738=3@420,-455+0|uni0728.Fina=3@122,0+678|uni071C.Init=2+697|uni073B=0@115,-73+0|uni0715=0@-88,0+451</pre>
+
+
+
+<pre>Got     : uni0320=16@318,-98+0|uni0720=16+656|uni0738=13@320,-455+0|uni0739=13@320,-455+0|uni0728=13@25,0+651|uni0748=11@316,-98+0|uni0718=11+610|uni032D=8@375,-455+0|uni032D=8@375,-455+0|uni0728=8@80,0+706|uni0323=6@316,-98+0|uni0718=6+610|uni032E=3@419,-455+0|uni0738=3@419,-455+0|uni0728.Fina=3@121,0+677|uni071C.Init=2+697|uni073B=0@253,-73+0|uni0715=0@50,0+589</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5196 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(976, 531)"/>
+<path d=""  transform="translate(976, 531)"/>
+<path d=""  transform="translate(681, 986)"/>
+<path d=""  transform="translate(1623, 888)"/>
+<path d=""  transform="translate(1307, 986)"/>
+<path d=""  transform="translate(2292, 531)"/>
+<path d=""  transform="translate(2292, 531)"/>
+<path d=""  transform="translate(1997, 986)"/>
+<path d=""  transform="translate(2939, 888)"/>
+<path d=""  transform="translate(2623, 986)"/>
+<path d=""  transform="translate(3652, 531)"/>
+<path d=""  transform="translate(3652, 531)"/>
+<path d=""  transform="translate(3354, 986)"/>
+<path d=""  transform="translate(3910, 986)"/>
+<path d=""  transform="translate(4860, 913)"/>
+<path d=""  transform="translate(4657, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5126 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1001, 531)"/>
+<path d=""  transform="translate(1001, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1648, 888)"/>
+<path d=""  transform="translate(1332, 986)"/>
+<path d=""  transform="translate(2359, 531)"/>
+<path d=""  transform="translate(2359, 531)"/>
+<path d=""  transform="translate(2064, 986)"/>
+<path d=""  transform="translate(3006, 888)"/>
+<path d=""  transform="translate(2690, 986)"/>
+<path d=""  transform="translate(3720, 531)"/>
+<path d=""  transform="translate(3720, 531)"/>
+<path d=""  transform="translate(3422, 986)"/>
+<path d=""  transform="translate(3978, 986)"/>
+<path d=""  transform="translate(4790, 913)"/>
+<path d=""  transform="translate(4587, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܙ̭ܙ̣ܨܾܹܘܷ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0737=7@316,-98+0|uni0718=7+610|uni0739=4@417,-455+0|uni073E=4@417,-455+0|uni0728=4@122,0+748|uni0323=2@117,-138+0|uni0719=2@-35,0+240|uni032D=0@177,-138+0|uni0719=0@25,0+300</pre>
+
+
+
+<pre>Got     : uni0737=7@316,-98+0|uni0718=7+610|uni0739=4@375,-455+0|uni073E=4@375,-455+0|uni0728=4@80,0+706|uni0323=2@152,-138+0|uni0719=2+275|uni032D=0@177,-138+0|uni0719=0@25,0+300</pre>
+
+
+
+<pre>                                                      ^^                   ^^                   ^^^    ^^            ^^                 ++++++  ^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1891 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(985, 531)"/>
+<path d=""  transform="translate(985, 531)"/>
+<path d=""  transform="translate(690, 986)"/>
+<path d=""  transform="translate(1468, 848)"/>
+<path d=""  transform="translate(1316, 986)"/>
+<path d=""  transform="translate(1768, 848)"/>
+<path d=""  transform="translate(1616, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1898 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1027, 531)"/>
+<path d=""  transform="translate(1027, 531)"/>
+<path d=""  transform="translate(732, 986)"/>
+<path d=""  transform="translate(1475, 848)"/>
+<path d=""  transform="translate(1323, 986)"/>
+<path d=""  transform="translate(1775, 848)"/>
+<path d=""  transform="translate(1623, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِܱܩܸܨܻ݄ܝܾܨ̱ܘܸܨِ̠ءܴܪܿܝܳ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0733=21@85,-197+0|uni071D=21+243|uni073F=19@215,140+0|uni072A=19+539|uni0734=17@229,-460+0|uni0621=17+462|uni0320=14@295,-455+0|uni0650=14@295,-455+0|uni0728=14+626|uni0738=12@316,-98+0|uni0718=12+610|uni0331=10@420,-455+0|uni0728.Fina=10@122,0+678|uni073E=8@135,-457+0|uni071D.Init=8+278|uni0744=5@298,-455+0|uni073B=5@298,-455+0|uni0728.Fina=5+556|uni0738=3@364,-98+0|uni0729.Init=3+665|uni0731=0@358,-455+0|uni0650=0@358,-455+0|uni0728=0@63,0+689</pre>
+
+
+
+<pre>Got     : uni0733=21@85,-197+0|uni071D=21+243|uni073F=19@247,140+0|uni072A=19@32,0+571|uni0734=17@229,-460+0|uni0621=17+462|uni0320=14@295,-455+0|uni0650=14@295,-455+0|uni0728=14+626|uni0738=12@316,-98+0|uni0718=12+610|uni0331=10@419,-455+0|uni0728.Fina=10@121,0+677|uni073E=8@135,-457+0|uni071D.Init=8+278|uni0744=5@298,-455+0|uni073B=5@298,-455+0|uni0728.Fina=5+556|uni0738=3@364,-98+0|uni0729.Init=3+665|uni0731=0@358,-455+0|uni0650=0@358,-455+0|uni0728=0@63,0+689</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5377 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(85, 789)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(490, 1126)"/>
+<path d=""  transform="translate(275, 986)"/>
+<path d=""  transform="translate(1043, 526)"/>
+<path d=""  transform="translate(814, 986)"/>
+<path d=""  transform="translate(1571, 531)"/>
+<path d=""  transform="translate(1571, 531)"/>
+<path d=""  transform="translate(1276, 986)"/>
+<path d=""  transform="translate(2218, 888)"/>
+<path d=""  transform="translate(1902, 986)"/>
+<path d=""  transform="translate(2931, 531)"/>
+<path d=""  transform="translate(2633, 986)"/>
+<path d=""  transform="translate(3324, 529)"/>
+<path d=""  transform="translate(3189, 986)"/>
+<path d=""  transform="translate(3765, 531)"/>
+<path d=""  transform="translate(3765, 531)"/>
+<path d=""  transform="translate(3467, 986)"/>
+<path d=""  transform="translate(4387, 888)"/>
+<path d=""  transform="translate(4023, 986)"/>
+<path d=""  transform="translate(5046, 531)"/>
+<path d=""  transform="translate(5046, 531)"/>
+<path d=""  transform="translate(4751, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5346 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(85, 789)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(458, 1126)"/>
+<path d=""  transform="translate(243, 986)"/>
+<path d=""  transform="translate(1011, 526)"/>
+<path d=""  transform="translate(782, 986)"/>
+<path d=""  transform="translate(1539, 531)"/>
+<path d=""  transform="translate(1539, 531)"/>
+<path d=""  transform="translate(1244, 986)"/>
+<path d=""  transform="translate(2186, 888)"/>
+<path d=""  transform="translate(1870, 986)"/>
+<path d=""  transform="translate(2900, 531)"/>
+<path d=""  transform="translate(2602, 986)"/>
+<path d=""  transform="translate(3293, 529)"/>
+<path d=""  transform="translate(3158, 986)"/>
+<path d=""  transform="translate(3734, 531)"/>
+<path d=""  transform="translate(3734, 531)"/>
+<path d=""  transform="translate(3436, 986)"/>
+<path d=""  transform="translate(4356, 888)"/>
+<path d=""  transform="translate(3992, 986)"/>
+<path d=""  transform="translate(5015, 531)"/>
+<path d=""  transform="translate(5015, 531)"/>
+<path d=""  transform="translate(4720, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٍܴܩ݄ܨܘ݄</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0744=6@316,-98+0|uni0718=6+610|uni0728.Fina=5@122,0+678|uni0744=3@364,-98+0|uni0729.Init=3+665|uni0734=0@358,-455+0|uni064D=0@358,-455+0|uni0728=0@63,0+689</pre>
+
+
+
+<pre>Got     : uni0744=6@316,-98+0|uni0718=6+610|uni0728.Fina=5@121,0+677|uni0744=3@364,-98+0|uni0729.Init=3+665|uni0734=0@358,-455+0|uni064D=0@358,-455+0|uni0728=0@63,0+689</pre>
+
+
+
+<pre>                                                             ^     ^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2641 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(731, 986)"/>
+<path d=""  transform="translate(1651, 888)"/>
+<path d=""  transform="translate(1287, 986)"/>
+<path d=""  transform="translate(2310, 531)"/>
+<path d=""  transform="translate(2310, 531)"/>
+<path d=""  transform="translate(2015, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2642 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(732, 986)"/>
+<path d=""  transform="translate(1652, 888)"/>
+<path d=""  transform="translate(1288, 986)"/>
+<path d=""  transform="translate(2311, 531)"/>
+<path d=""  transform="translate(2311, 531)"/>
+<path d=""  transform="translate(2016, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܪ̠ܔܨ݆ܴܡٍܨٕٕء݆</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0746=11@229,-460+0|uni0621=11+462|uni0655=8@298,-455+0|uni0655=8@298,-455+0|uni0728.Fina=8+556|uni064D=6@465,-97+0|uni0721.Init=6+880|uni0734=3@298,-455+0|uni0746=3@298,-455+0|uni0728.Fina=3+556|uni0714.Init=2+718|uni0320=0@390,-73+0|uni072A=0@187,0+726</pre>
+
+
+
+<pre>Got     : uni0746=11@229,-460+0|uni0621=11+462|uni0655=8@298,-455+0|uni0655=8@298,-455+0|uni0728.Fina=8+556|uni064D=6@465,-97+0|uni0721.Init=6+880|uni0734=3@298,-455+0|uni0746=3@298,-455+0|uni0728.Fina=3+556|uni0714.Init=2+718|uni0320=0@628,-73+0|uni072A=0@425,0+964</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                             ^^^                 ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4136 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 526)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1483, 889)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(2196, 531)"/>
+<path d=""  transform="translate(2196, 531)"/>
+<path d=""  transform="translate(1898, 986)"/>
+<path d=""  transform="translate(2454, 986)"/>
+<path d=""  transform="translate(3800, 913)"/>
+<path d=""  transform="translate(3597, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3898 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 526)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1483, 889)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(2196, 531)"/>
+<path d=""  transform="translate(2196, 531)"/>
+<path d=""  transform="translate(1898, 986)"/>
+<path d=""  transform="translate(2454, 986)"/>
+<path d=""  transform="translate(3562, 913)"/>
+<path d=""  transform="translate(3359, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٍ̤ءܱܫܽܨ̠ܻܩܼ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni073C=10@533,-98+0|uni0729=10+834|uni073B=7@361,-585+0|uni0320=7@361,-455+0|uni0728.Fina=7@63,0+619|uni073D=5@274,-5+0|uni072B.Init=5+739|uni0731=3@279,-460+0|uni0621=3@50,0+512|uni0324=0@295,-455+0|uni064D=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni073C=10@533,-98+0|uni0729=10+834|uni073B=7@361,-585+0|uni0320=7@361,-455+0|uni0728.Fina=7@63,0+619|uni073D=5@274,-5+0|uni072B.Init=5+739|uni0731=3@229,-460+0|uni0621=3+462|uni0324=0@295,-455+0|uni064D=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3280 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1195, 401)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1727, 981)"/>
+<path d=""  transform="translate(1453, 986)"/>
+<path d=""  transform="translate(2421, 526)"/>
+<path d=""  transform="translate(2192, 986)"/>
+<path d=""  transform="translate(2949, 531)"/>
+<path d=""  transform="translate(2949, 531)"/>
+<path d=""  transform="translate(2654, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3330 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(533, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1195, 401)"/>
+<path d=""  transform="translate(1195, 531)"/>
+<path d=""  transform="translate(897, 986)"/>
+<path d=""  transform="translate(1727, 981)"/>
+<path d=""  transform="translate(1453, 986)"/>
+<path d=""  transform="translate(2471, 526)"/>
+<path d=""  transform="translate(2242, 986)"/>
+<path d=""  transform="translate(2999, 531)"/>
+<path d=""  transform="translate(2999, 531)"/>
+<path d=""  transform="translate(2704, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܼ݄ܘܸܨܴܹܠܴܨ݈ܼء̭܏ܢݍ̃</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: None</pre>
+
+
+
+<pre>Got     : uni0303=17@298,-214+0|uni074D.Fina=17+586|uni0722.Init=16+291|SAM4xout=15@-1592,0+0|SAMline=15@-1266,0+0|SAMdot=15@-1031,0+0|SAMline=15@-561,0+0|SAM4in=15@-326,0+0|uni032D=13@229,-100+0|uni0621=13+462|uni073C=10@298,-455+0|uni0748=10@298,-455+0|uni0728.Fina=10+556|uni0734=8@169,-458+0|uni0720.Init=8+341|uni0739=5@295,-455+0|uni0734=5@295,-455+0|uni0728=5+626|uni0738=3@316,-98+0|uni0718=3+610|uni0744=0@375,-455+0|uni073C=0@375,-455+0|uni0728=0@80,0+706</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4178 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(298, 772)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(586, 986)"/>
+<path d=""  transform="translate(-715, 986)"/>
+<path d=""  transform="translate(-389, 986)"/>
+<path d=""  transform="translate(-154, 986)"/>
+<path d=""  transform="translate(316, 986)"/>
+<path d=""  transform="translate(551, 986)"/>
+<path d=""  transform="translate(1106, 886)"/>
+<path d=""  transform="translate(877, 986)"/>
+<path d=""  transform="translate(1637, 531)"/>
+<path d=""  transform="translate(1637, 531)"/>
+<path d=""  transform="translate(1339, 986)"/>
+<path d=""  transform="translate(2064, 528)"/>
+<path d=""  transform="translate(1895, 986)"/>
+<path d=""  transform="translate(2531, 531)"/>
+<path d=""  transform="translate(2531, 531)"/>
+<path d=""  transform="translate(2236, 986)"/>
+<path d=""  transform="translate(3178, 888)"/>
+<path d=""  transform="translate(2862, 986)"/>
+<path d=""  transform="translate(3847, 531)"/>
+<path d=""  transform="translate(3847, 531)"/>
+<path d=""  transform="translate(3552, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̱݆ܙ݄ܨ̱ܱܡ݆ܨܴܠܴܨ̭݆ܠ̰</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0330=17@318,-98+0|uni0720=17+656|uni0746=14@345,-635+0|uni032D=14@348,-455+0|uni0728.Fina=14@50,0+606|uni0734=12@169,-458+0|uni0720.Init=12+341|uni0734=10@323,-455+0|uni0728.Fina=10@25,0+581|uni0746=8@465,-97+0|uni0721.Init=8+880|uni0731=5@295,-585+0|uni0331=5@295,-455+0|uni0728=5+626|uni0744=3@117,-458+0|uni0719=3@-35,0+240|uni0746=0@337,-585+0|uni0331=0@337,-455+0|uni0728=0@42,0+668</pre>
+
+
+
+<pre>Got     : uni0330=17@318,-98+0|uni0720=17+656|uni0746=14@344,-635+0|uni032D=14@347,-455+0|uni0728.Fina=14@49,0+605|uni0734=12@169,-458+0|uni0720.Init=12+341|uni0734=10@298,-455+0|uni0728.Fina=10+556|uni0746=8@465,-97+0|uni0721.Init=8+880|uni0731=5@295,-585+0|uni0331=5@295,-455+0|uni0728=5+626|uni0744=3@152,-458+0|uni0719=3+275|uni0746=0@295,-585+0|uni0331=0@295,-455+0|uni0728=0+626</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4565 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1000, 351)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1430, 528)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1900, 531)"/>
+<path d=""  transform="translate(1602, 986)"/>
+<path d=""  transform="translate(2623, 889)"/>
+<path d=""  transform="translate(2158, 986)"/>
+<path d=""  transform="translate(3333, 401)"/>
+<path d=""  transform="translate(3333, 531)"/>
+<path d=""  transform="translate(3038, 986)"/>
+<path d=""  transform="translate(3816, 528)"/>
+<path d=""  transform="translate(3664, 986)"/>
+<path d=""  transform="translate(4234, 401)"/>
+<path d=""  transform="translate(4234, 531)"/>
+<path d=""  transform="translate(3939, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4598 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1001, 351)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1431, 528)"/>
+<path d=""  transform="translate(1262, 986)"/>
+<path d=""  transform="translate(1926, 531)"/>
+<path d=""  transform="translate(1628, 986)"/>
+<path d=""  transform="translate(2649, 889)"/>
+<path d=""  transform="translate(2184, 986)"/>
+<path d=""  transform="translate(3359, 401)"/>
+<path d=""  transform="translate(3359, 531)"/>
+<path d=""  transform="translate(3064, 986)"/>
+<path d=""  transform="translate(3807, 528)"/>
+<path d=""  transform="translate(3655, 986)"/>
+<path d=""  transform="translate(4267, 401)"/>
+<path d=""  transform="translate(4267, 531)"/>
+<path d=""  transform="translate(3972, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٕ݈ܙܾݎ̮ܨ̤ܾܝ̣ܨ݄̭ܠ̱ܨ̣ܻܠܼ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni073C=20@318,-98+0|uni0720=20+656|uni073B=17@348,-635+0|uni0323=17@348,-455+0|uni0728.Fina=17@50,0+606|uni0331=15@169,-98+0|uni0720.Init=15+341|uni032D=12@323,-455+0|uni0744=12@323,-455+0|uni0728.Fina=12@25,0+581|uni0323=10@135,-97+0|uni071D.Init=10+278|uni073E=7@294,-635+0|uni0324=7@298,-455+0|uni0728.Fina=7+556|uni032E=5@303,-98+0|uni074E.Init=5+591|uni073E=3@152,-458+0|uni0719=3+275|uni0748=0@337,-455+0|uni0655=0@337,-455+0|uni0728=0@42,0+668</pre>
+
+
+
+<pre>Got     : uni073C=20@318,-98+0|uni0720=20+656|uni073B=17@347,-635+0|uni0323=17@347,-455+0|uni0728.Fina=17@49,0+605|uni0331=15@169,-98+0|uni0720.Init=15+341|uni032D=12@298,-455+0|uni0744=12@298,-455+0|uni0728.Fina=12+556|uni0323=10@135,-97+0|uni071D.Init=10+278|uni073E=7@294,-635+0|uni0324=7@298,-455+0|uni0728.Fina=7+556|uni032E=5@303,-98+0|uni074E.Init=5+591|uni073E=3@152,-458+0|uni0719=3+275|uni0748=0@295,-455+0|uni0655=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                           ^^^^^^^^^^^^^^^^^^^^^^^                        ^^^^^^^^                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^                       ^^^^^^^^^                                                                                                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4484 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1003, 351)"/>
+<path d=""  transform="translate(1003, 531)"/>
+<path d=""  transform="translate(705, 986)"/>
+<path d=""  transform="translate(1430, 888)"/>
+<path d=""  transform="translate(1261, 986)"/>
+<path d=""  transform="translate(1900, 531)"/>
+<path d=""  transform="translate(1900, 531)"/>
+<path d=""  transform="translate(1602, 986)"/>
+<path d=""  transform="translate(2293, 889)"/>
+<path d=""  transform="translate(2158, 986)"/>
+<path d=""  transform="translate(2730, 351)"/>
+<path d=""  transform="translate(2734, 531)"/>
+<path d=""  transform="translate(2436, 986)"/>
+<path d=""  transform="translate(3295, 888)"/>
+<path d=""  transform="translate(2992, 986)"/>
+<path d=""  transform="translate(3735, 528)"/>
+<path d=""  transform="translate(3583, 986)"/>
+<path d=""  transform="translate(4153, 531)"/>
+<path d=""  transform="translate(4153, 531)"/>
+<path d=""  transform="translate(3858, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4552 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1004, 351)"/>
+<path d=""  transform="translate(1004, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1431, 888)"/>
+<path d=""  transform="translate(1262, 986)"/>
+<path d=""  transform="translate(1926, 531)"/>
+<path d=""  transform="translate(1926, 531)"/>
+<path d=""  transform="translate(1628, 986)"/>
+<path d=""  transform="translate(2319, 889)"/>
+<path d=""  transform="translate(2184, 986)"/>
+<path d=""  transform="translate(2756, 351)"/>
+<path d=""  transform="translate(2760, 531)"/>
+<path d=""  transform="translate(2462, 986)"/>
+<path d=""  transform="translate(3321, 888)"/>
+<path d=""  transform="translate(3018, 986)"/>
+<path d=""  transform="translate(3761, 528)"/>
+<path d=""  transform="translate(3609, 986)"/>
+<path d=""  transform="translate(4221, 531)"/>
+<path d=""  transform="translate(4221, 531)"/>
+<path d=""  transform="translate(3926, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ءܛܨِܾܡ̠</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0320=5@607,-98+0|uni0721=5+885|uni073E=2@361,-455+0|uni0650=2@361,-455+0|uni0728.Fina=2@63,0+619|uni071B.Init=1+697|uni0621=0@60,0+522</pre>
+
+
+
+<pre>Got     : uni0320=5@607,-98+0|uni0721=5+885|uni073E=2@361,-455+0|uni0650=2@361,-455+0|uni0728.Fina=2@63,0+619|uni071B.Init=1+697|uni0621=0+462</pre>
+
+
+
+<pre>                                                                                                                                          +++++ ^ +
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2663 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(607, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1246, 531)"/>
+<path d=""  transform="translate(1246, 531)"/>
+<path d=""  transform="translate(948, 986)"/>
+<path d=""  transform="translate(1504, 986)"/>
+<path d=""  transform="translate(2201, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2723 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(607, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1246, 531)"/>
+<path d=""  transform="translate(1246, 531)"/>
+<path d=""  transform="translate(948, 986)"/>
+<path d=""  transform="translate(1504, 986)"/>
+<path d=""  transform="translate(2261, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܕ̰ܮܨٕ̠ܡٕܨܷ݆ܩ̰ܨܱܷء̰ܟ݈</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0748=18@337,-117+0|uni071F=18+889|uni0330=16@229,-100+0|uni0621=16+462|uni0737=13@298,-455+0|uni0731=13@298,-455+0|uni0728.Fina=13+556|uni0330=11@364,-98+0|uni0729.Init=11+665|uni0746=8@361,-455+0|uni0737=8@361,-455+0|uni0728.Fina=8@63,0+619|uni0655=6@465,-97+0|uni0721.Init=6+880|uni0320=3@298,-455+0|uni0655=3@298,-455+0|uni0728.Fina=3+556|uni072E.Init=2+718|uni0330=0@390,-73+0|uni0715=0@187,0+726</pre>
+
+
+
+<pre>Got     : uni0748=18@337,-117+0|uni071F=18+889|uni0330=16@229,-100+0|uni0621=16+462|uni0737=13@298,-455+0|uni0731=13@298,-455+0|uni0728.Fina=13+556|uni0330=11@364,-98+0|uni0729.Init=11+665|uni0746=8@361,-455+0|uni0737=8@361,-455+0|uni0728.Fina=8@63,0+619|uni0655=6@465,-97+0|uni0721.Init=6+880|uni0320=3@298,-455+0|uni0655=3@298,-455+0|uni0728.Fina=3+556|uni072E.Init=2+718|uni0330=0@628,-73+0|uni0715=0@425,0+964</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6309 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(337, 869)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1118, 886)"/>
+<path d=""  transform="translate(889, 986)"/>
+<path d=""  transform="translate(1649, 531)"/>
+<path d=""  transform="translate(1649, 531)"/>
+<path d=""  transform="translate(1351, 986)"/>
+<path d=""  transform="translate(2271, 888)"/>
+<path d=""  transform="translate(1907, 986)"/>
+<path d=""  transform="translate(2933, 531)"/>
+<path d=""  transform="translate(2933, 531)"/>
+<path d=""  transform="translate(2635, 986)"/>
+<path d=""  transform="translate(3656, 889)"/>
+<path d=""  transform="translate(3191, 986)"/>
+<path d=""  transform="translate(4369, 531)"/>
+<path d=""  transform="translate(4369, 531)"/>
+<path d=""  transform="translate(4071, 986)"/>
+<path d=""  transform="translate(4627, 986)"/>
+<path d=""  transform="translate(5973, 913)"/>
+<path d=""  transform="translate(5770, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 6071 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(337, 869)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1118, 886)"/>
+<path d=""  transform="translate(889, 986)"/>
+<path d=""  transform="translate(1649, 531)"/>
+<path d=""  transform="translate(1649, 531)"/>
+<path d=""  transform="translate(1351, 986)"/>
+<path d=""  transform="translate(2271, 888)"/>
+<path d=""  transform="translate(1907, 986)"/>
+<path d=""  transform="translate(2933, 531)"/>
+<path d=""  transform="translate(2933, 531)"/>
+<path d=""  transform="translate(2635, 986)"/>
+<path d=""  transform="translate(3656, 889)"/>
+<path d=""  transform="translate(3191, 986)"/>
+<path d=""  transform="translate(4369, 531)"/>
+<path d=""  transform="translate(4369, 531)"/>
+<path d=""  transform="translate(4071, 986)"/>
+<path d=""  transform="translate(4627, 986)"/>
+<path d=""  transform="translate(5735, 913)"/>
+<path d=""  transform="translate(5532, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݄ٕܠ̰ܨܻܹܠِܩٰܨܻܹءܴܨܻ̤ءٍ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni064D=20@229,-100+0|uni0621=20+462|uni0324=17@295,-455+0|uni073B=17@295,-455+0|uni0728=17+626|uni0734=15@229,-460+0|uni0621=15+462|uni0739=12@298,-455+0|uni073B=12@298,-455+0|uni0728.Fina=12+556|uni0670=10@337,-19+0|uni0729.Medi=10+676|uni0650=8@169,-98+0|uni0720.Init=8+341|uni0739=5@323,-455+0|uni073B=5@323,-455+0|uni0728.Fina=5@25,0+581|uni0330=3@169,-98+0|uni0720.Init=3+341|uni0655=0@320,-455+0|uni0744=0@320,-455+0|uni0728=0@25,0+651</pre>
+
+
+
+<pre>Got     : uni064D=20@229,-100+0|uni0621=20+462|uni0324=17@295,-455+0|uni073B=17@295,-455+0|uni0728=17+626|uni0734=15@229,-460+0|uni0621=15+462|uni0739=12@298,-455+0|uni073B=12@298,-455+0|uni0728.Fina=12+556|uni0670=10@337,-19+0|uni0729.Medi=10+676|uni0650=8@169,-98+0|uni0720.Init=8+341|uni0739=5@298,-455+0|uni073B=5@298,-455+0|uni0728.Fina=5+556|uni0330=3@169,-98+0|uni0720.Init=3+341|uni0655=0@295,-455+0|uni0744=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                         ^^^                  ^^^                      ^^^^^^^^^                                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4646 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1317, 526)"/>
+<path d=""  transform="translate(1088, 986)"/>
+<path d=""  transform="translate(1848, 531)"/>
+<path d=""  transform="translate(1848, 531)"/>
+<path d=""  transform="translate(1550, 986)"/>
+<path d=""  transform="translate(2443, 967)"/>
+<path d=""  transform="translate(2106, 986)"/>
+<path d=""  transform="translate(2951, 888)"/>
+<path d=""  transform="translate(2782, 986)"/>
+<path d=""  transform="translate(3421, 531)"/>
+<path d=""  transform="translate(3421, 531)"/>
+<path d=""  transform="translate(3123, 986)"/>
+<path d=""  transform="translate(3848, 888)"/>
+<path d=""  transform="translate(3679, 986)"/>
+<path d=""  transform="translate(4315, 531)"/>
+<path d=""  transform="translate(4315, 531)"/>
+<path d=""  transform="translate(4020, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4696 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1317, 526)"/>
+<path d=""  transform="translate(1088, 986)"/>
+<path d=""  transform="translate(1848, 531)"/>
+<path d=""  transform="translate(1848, 531)"/>
+<path d=""  transform="translate(1550, 986)"/>
+<path d=""  transform="translate(2443, 967)"/>
+<path d=""  transform="translate(2106, 986)"/>
+<path d=""  transform="translate(2951, 888)"/>
+<path d=""  transform="translate(2782, 986)"/>
+<path d=""  transform="translate(3446, 531)"/>
+<path d=""  transform="translate(3446, 531)"/>
+<path d=""  transform="translate(3148, 986)"/>
+<path d=""  transform="translate(3873, 888)"/>
+<path d=""  transform="translate(3704, 986)"/>
+<path d=""  transform="translate(4365, 531)"/>
+<path d=""  transform="translate(4365, 531)"/>
+<path d=""  transform="translate(4070, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܙ̮ܙܸܨِ̰ܝ̤ܨِܷܠܴܧ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0727.Fina=14+748|uni0734=12@169,-458+0|uni0720.Init=12+341|uni0737=9@323,-455+0|uni0650=9@323,-455+0|uni0728.Fina=9@25,0+581|uni0324=7@135,-97+0|uni071D.Init=7+278|uni0330=4@295,-455+0|uni0650=4@295,-455+0|uni0728=4+626|uni0738=2@117,-138+0|uni0719=2@-35,0+240|uni032E=0@177,-138+0|uni0719=0@25,0+300</pre>
+
+
+
+<pre>Got     : uni0727.Fina=14+748|uni0734=12@169,-458+0|uni0720.Init=12+341|uni0737=9@298,-455+0|uni0650=9@298,-455+0|uni0728.Fina=9+556|uni0324=7@135,-97+0|uni071D.Init=7+278|uni0330=4@295,-455+0|uni0650=4@295,-455+0|uni0728=4+626|uni0738=2@152,-138+0|uni0719=2+275|uni032E=0@177,-138+0|uni0719=0@25,0+300</pre>
+
+
+
+<pre>                                                                                  ^^^^^^^^^^^^^^^^^^^^^^^^                      ^^^^^^^^^                                                                                                           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3124 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(917, 528)"/>
+<path d=""  transform="translate(748, 986)"/>
+<path d=""  transform="translate(1387, 531)"/>
+<path d=""  transform="translate(1387, 531)"/>
+<path d=""  transform="translate(1089, 986)"/>
+<path d=""  transform="translate(1780, 889)"/>
+<path d=""  transform="translate(1645, 986)"/>
+<path d=""  transform="translate(2218, 531)"/>
+<path d=""  transform="translate(2218, 531)"/>
+<path d=""  transform="translate(1923, 986)"/>
+<path d=""  transform="translate(2701, 848)"/>
+<path d=""  transform="translate(2549, 986)"/>
+<path d=""  transform="translate(3001, 848)"/>
+<path d=""  transform="translate(2849, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3114 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(917, 528)"/>
+<path d=""  transform="translate(748, 986)"/>
+<path d=""  transform="translate(1412, 531)"/>
+<path d=""  transform="translate(1412, 531)"/>
+<path d=""  transform="translate(1114, 986)"/>
+<path d=""  transform="translate(1805, 889)"/>
+<path d=""  transform="translate(1670, 986)"/>
+<path d=""  transform="translate(2243, 531)"/>
+<path d=""  transform="translate(2243, 531)"/>
+<path d=""  transform="translate(1948, 986)"/>
+<path d=""  transform="translate(2691, 848)"/>
+<path d=""  transform="translate(2539, 986)"/>
+<path d=""  transform="translate(2991, 848)"/>
+<path d=""  transform="translate(2839, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̮̭ܠ̭ܨِܹܝܱܨܹ݄ܡܸءܻܢ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0722=17+678|uni073B=15@354,-373+0|uni0621=15@125,0+587|uni0738=13@607,-98+0|uni0721=13+885|uni0744=10@361,-455+0|uni0739=10@361,-455+0|uni0728.Fina=10@63,0+619|uni0731=8@135,-457+0|uni071D.Init=8+278|uni0739=5@298,-455+0|uni0650=5@298,-455+0|uni0728.Fina=5+556|uni032D=3@169,-98+0|uni0720.Init=3+341|uni032D=0@320,-455+0|uni032E=0@320,-455+0|uni0728=0@25,0+651</pre>
+
+
+
+<pre>Got     : uni0722=17+678|uni073B=15@351,-373+0|uni0621=15@122,0+584|uni0738=13@607,-98+0|uni0721=13+885|uni0744=10@361,-455+0|uni0739=10@361,-455+0|uni0728.Fina=10@63,0+619|uni0731=8@135,-457+0|uni071D.Init=8+278|uni0739=5@298,-455+0|uni0650=5@298,-455+0|uni0728.Fina=5+556|uni032D=3@169,-98+0|uni0720.Init=3+341|uni032D=0@295,-455+0|uni032E=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                                                                                                                                ^^^                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4567 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1029, 613)"/>
+<path d=""  transform="translate(800, 986)"/>
+<path d=""  transform="translate(1869, 888)"/>
+<path d=""  transform="translate(1262, 986)"/>
+<path d=""  transform="translate(2508, 531)"/>
+<path d=""  transform="translate(2508, 531)"/>
+<path d=""  transform="translate(2210, 986)"/>
+<path d=""  transform="translate(2901, 529)"/>
+<path d=""  transform="translate(2766, 986)"/>
+<path d=""  transform="translate(3342, 531)"/>
+<path d=""  transform="translate(3342, 531)"/>
+<path d=""  transform="translate(3044, 986)"/>
+<path d=""  transform="translate(3769, 888)"/>
+<path d=""  transform="translate(3600, 986)"/>
+<path d=""  transform="translate(4236, 531)"/>
+<path d=""  transform="translate(4236, 531)"/>
+<path d=""  transform="translate(3941, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4595 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1032, 613)"/>
+<path d=""  transform="translate(803, 986)"/>
+<path d=""  transform="translate(1872, 888)"/>
+<path d=""  transform="translate(1265, 986)"/>
+<path d=""  transform="translate(2511, 531)"/>
+<path d=""  transform="translate(2511, 531)"/>
+<path d=""  transform="translate(2213, 986)"/>
+<path d=""  transform="translate(2904, 529)"/>
+<path d=""  transform="translate(2769, 986)"/>
+<path d=""  transform="translate(3345, 531)"/>
+<path d=""  transform="translate(3345, 531)"/>
+<path d=""  transform="translate(3047, 986)"/>
+<path d=""  transform="translate(3772, 888)"/>
+<path d=""  transform="translate(3603, 986)"/>
+<path d=""  transform="translate(4264, 531)"/>
+<path d=""  transform="translate(4264, 531)"/>
+<path d=""  transform="translate(3969, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܒܨܹܾܠܷܨ݆ܹܝ݄ܨٍܩܻܨ݆̠ܘܻ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni073B=18@316,-98+0|uni0718=18+610|uni0320=15@420,-455+0|uni0746=15@420,-455+0|uni0728.Fina=15@122,0+678|uni073B=13@364,-98+0|uni0729.Init=13+665|uni064D=11@361,-455+0|uni0728.Fina=11@63,0+619|uni0744=9@135,-457+0|uni071D.Init=9+278|uni0739=6@298,-455+0|uni0746=6@298,-455+0|uni0728.Fina=6+556|uni0737=4@169,-458+0|uni0720.Init=4+341|uni073E=1@323,-455+0|uni0739=1@323,-455+0|uni0728.Fina=1@25,0+581|uni0712.Init=0+730</pre>
+
+
+
+<pre>Got     : uni073B=18@316,-98+0|uni0718=18+610|uni0320=15@419,-455+0|uni0746=15@419,-455+0|uni0728.Fina=15@121,0+677|uni073B=13@364,-98+0|uni0729.Init=13+665|uni064D=11@361,-455+0|uni0728.Fina=11@63,0+619|uni0744=9@135,-457+0|uni071D.Init=9+278|uni0739=6@298,-455+0|uni0746=6@298,-455+0|uni0728.Fina=6+556|uni0737=4@169,-458+0|uni0720.Init=4+341|uni073E=1@298,-455+0|uni0739=1@298,-455+0|uni0728.Fina=1+556|uni0712.Init=0+730</pre>
+
+
+
+<pre>                                                          ^^^^^^^^^^^^^^^^^^^^^^^^                          ^^^^^^^                                                                                                                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^                      ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5032 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1029, 531)"/>
+<path d=""  transform="translate(1029, 531)"/>
+<path d=""  transform="translate(731, 986)"/>
+<path d=""  transform="translate(1651, 888)"/>
+<path d=""  transform="translate(1287, 986)"/>
+<path d=""  transform="translate(2313, 531)"/>
+<path d=""  transform="translate(2015, 986)"/>
+<path d=""  transform="translate(2706, 529)"/>
+<path d=""  transform="translate(2571, 986)"/>
+<path d=""  transform="translate(3147, 531)"/>
+<path d=""  transform="translate(3147, 531)"/>
+<path d=""  transform="translate(2849, 986)"/>
+<path d=""  transform="translate(3574, 528)"/>
+<path d=""  transform="translate(3405, 986)"/>
+<path d=""  transform="translate(4044, 531)"/>
+<path d=""  transform="translate(4044, 531)"/>
+<path d=""  transform="translate(3746, 986)"/>
+<path d=""  transform="translate(4302, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5058 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1030, 531)"/>
+<path d=""  transform="translate(1030, 531)"/>
+<path d=""  transform="translate(732, 986)"/>
+<path d=""  transform="translate(1652, 888)"/>
+<path d=""  transform="translate(1288, 986)"/>
+<path d=""  transform="translate(2314, 531)"/>
+<path d=""  transform="translate(2016, 986)"/>
+<path d=""  transform="translate(2707, 529)"/>
+<path d=""  transform="translate(2572, 986)"/>
+<path d=""  transform="translate(3148, 531)"/>
+<path d=""  transform="translate(3148, 531)"/>
+<path d=""  transform="translate(2850, 986)"/>
+<path d=""  transform="translate(3575, 528)"/>
+<path d=""  transform="translate(3406, 986)"/>
+<path d=""  transform="translate(4070, 531)"/>
+<path d=""  transform="translate(4070, 531)"/>
+<path d=""  transform="translate(3772, 986)"/>
+<path d=""  transform="translate(4328, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ّٰܨ̣̮ܡ̭ܙِܙܷܨ̱ܼء̣ݍٕ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0655=16@272,-444+0|uni074D=16+583|uni0323=14@229,-100+0|uni0621=14+462|uni073C=11@295,-585+0|uni0331=11@295,-455+0|uni0728=11+626|uni0737=9@117,-138+0|uni0719=9@-35,0+240|uni0650=7@176,-137+0|uni0719.Fina=7@25,0+302|uni032D=5@465,-97+0|uni0721.Init=5+880|uni032E=2@295,-455+0|uni0323=2@295,-455+0|uni0728=2+626|FC63=0+0</pre>
+
+
+
+<pre>Got     : uni0655=16@272,-444+0|uni074D=16+583|uni0323=14@229,-100+0|uni0621=14+462|uni073C=11@295,-585+0|uni0331=11@295,-455+0|uni0728=11+626|uni0737=9@152,-138+0|uni0719=9+275|uni0650=7@176,-137+0|uni0719.Fina=7@25,0+302|uni032D=5@465,-97+0|uni0721.Init=5+880|uni032E=2@295,-455+0|uni0323=2@295,-455+0|uni0728=2+626|FC63=0+0</pre>
+
+
+
+<pre>                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3754 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(272, 542)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(812, 886)"/>
+<path d=""  transform="translate(583, 986)"/>
+<path d=""  transform="translate(1340, 401)"/>
+<path d=""  transform="translate(1340, 531)"/>
+<path d=""  transform="translate(1045, 986)"/>
+<path d=""  transform="translate(1823, 848)"/>
+<path d=""  transform="translate(1671, 986)"/>
+<path d=""  transform="translate(2122, 849)"/>
+<path d=""  transform="translate(1971, 986)"/>
+<path d=""  transform="translate(2713, 889)"/>
+<path d=""  transform="translate(2248, 986)"/>
+<path d=""  transform="translate(3423, 531)"/>
+<path d=""  transform="translate(3423, 531)"/>
+<path d=""  transform="translate(3128, 986)"/>
+<path d=""  transform="translate(3754, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3719 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(272, 542)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(812, 886)"/>
+<path d=""  transform="translate(583, 986)"/>
+<path d=""  transform="translate(1340, 401)"/>
+<path d=""  transform="translate(1340, 531)"/>
+<path d=""  transform="translate(1045, 986)"/>
+<path d=""  transform="translate(1788, 848)"/>
+<path d=""  transform="translate(1636, 986)"/>
+<path d=""  transform="translate(2087, 849)"/>
+<path d=""  transform="translate(1936, 986)"/>
+<path d=""  transform="translate(2678, 889)"/>
+<path d=""  transform="translate(2213, 986)"/>
+<path d=""  transform="translate(3388, 531)"/>
+<path d=""  transform="translate(3388, 531)"/>
+<path d=""  transform="translate(3093, 986)"/>
+<path d=""  transform="translate(3719, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِِܠِّٰ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0670=3@278,270+0|FC62=3@278,270+0|uni0720=3+656|uni0650=0@320,-455+0|uni0650=0@320,-455+0|uni0728=0@25,0+651</pre>
+
+
+
+<pre>Got     : uni0670=3@278,270+0|FC62=3@278,270+0|uni0720=3+656|uni0650=0@295,-455+0|uni0650=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                       + ^                  + ^                 +++++  ^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1282 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(278, 1256)"/>
+<path d=""  transform="translate(278, 1256)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(951, 531)"/>
+<path d=""  transform="translate(951, 531)"/>
+<path d=""  transform="translate(656, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1307 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(278, 1256)"/>
+<path d=""  transform="translate(278, 1256)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(976, 531)"/>
+<path d=""  transform="translate(976, 531)"/>
+<path d=""  transform="translate(681, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٍܾܝܷܨܴܱܩ̠ܪ̈ܨ̤̣ءܻ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni073B=15@229,-460+0|uni0621=15+462|uni0323=12@295,-455+0|uni0324=12@295,-455+0|uni0728=12+626|uni072Auni0308.Fina=10@-83,0+442|uni0320=8@364,-98+0|uni0729.Init=8+665|uni0731=5@361,-455+0|uni0734=5@361,-455+0|uni0728.Fina=5@63,0+619|uni0737=3@135,-457+0|uni071D.Init=3+278|uni073E=0@295,-455+0|uni064D=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni073B=15@229,-460+0|uni0621=15+462|uni0323=12@295,-455+0|uni0324=12@295,-455+0|uni0728=12+626|uni072Auni0308.Fina=10+525|uni0320=8@364,-98+0|uni0729.Init=8+665|uni0731=5@361,-455+0|uni0734=5@361,-455+0|uni0728.Fina=5@63,0+619|uni0737=3@135,-457+0|uni071D.Init=3+278|uni073E=0@295,-455+0|uni064D=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                ^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3801 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 526)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1088, 986)"/>
+<path d=""  transform="translate(1977, 888)"/>
+<path d=""  transform="translate(1613, 986)"/>
+<path d=""  transform="translate(2639, 531)"/>
+<path d=""  transform="translate(2639, 531)"/>
+<path d=""  transform="translate(2341, 986)"/>
+<path d=""  transform="translate(3032, 529)"/>
+<path d=""  transform="translate(2897, 986)"/>
+<path d=""  transform="translate(3470, 531)"/>
+<path d=""  transform="translate(3470, 531)"/>
+<path d=""  transform="translate(3175, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3718 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 526)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1005, 986)"/>
+<path d=""  transform="translate(1894, 888)"/>
+<path d=""  transform="translate(1530, 986)"/>
+<path d=""  transform="translate(2556, 531)"/>
+<path d=""  transform="translate(2556, 531)"/>
+<path d=""  transform="translate(2258, 986)"/>
+<path d=""  transform="translate(2949, 529)"/>
+<path d=""  transform="translate(2814, 986)"/>
+<path d=""  transform="translate(3387, 531)"/>
+<path d=""  transform="translate(3387, 531)"/>
+<path d=""  transform="translate(3092, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܸ݆ܡ̠ܨ݈݄ܠ̣ܮ݆ܨِ̣ء̱ܙًܙܰ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0730=19@88,-5+0|uni0719=19+275|uni064B=17@113,-5+0|uni0719=17@25,0+300|uni0331=15@229,-100+0|uni0621=15+462|uni0323=12@298,-455+0|uni0650=12@298,-455+0|uni0728.Fina=12+556|uni0746=10@248,-157+0|uni072E.MediWide2=10+962|uni0323=8@169,-98+0|uni0720.Init=8+341|uni0744=5@323,-455+0|uni0748=5@323,-455+0|uni0728.Fina=5@25,0+581|uni0320=3@465,-97+0|uni0721.Init=3+880|uni0746=0@295,-455+0|uni0738=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0730=19@88,-5+0|uni0719=19+275|uni064B=17@113,-5+0|uni0719=17@25,0+300|uni0331=15@229,-100+0|uni0621=15+462|uni0323=12@298,-455+0|uni0650=12@298,-455+0|uni0728.Fina=12+556|uni0746=10@248,-157+0|uni072E.MediWide2=10+962|uni0323=8@169,-98+0|uni0720.Init=8+341|uni0744=5@298,-455+0|uni0748=5@298,-455+0|uni0728.Fina=5+556|uni0320=3@465,-97+0|uni0721.Init=3+880|uni0746=0@295,-455+0|uni0738=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                         ^^^^^^^^^^^^^^^^^^^^^^^^                      ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4958 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(88, 981)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(388, 981)"/>
+<path d=""  transform="translate(300, 986)"/>
+<path d=""  transform="translate(804, 886)"/>
+<path d=""  transform="translate(575, 986)"/>
+<path d=""  transform="translate(1335, 531)"/>
+<path d=""  transform="translate(1335, 531)"/>
+<path d=""  transform="translate(1037, 986)"/>
+<path d=""  transform="translate(1841, 829)"/>
+<path d=""  transform="translate(1593, 986)"/>
+<path d=""  transform="translate(2724, 888)"/>
+<path d=""  transform="translate(2555, 986)"/>
+<path d=""  transform="translate(3194, 531)"/>
+<path d=""  transform="translate(3194, 531)"/>
+<path d=""  transform="translate(2896, 986)"/>
+<path d=""  transform="translate(3917, 889)"/>
+<path d=""  transform="translate(3452, 986)"/>
+<path d=""  transform="translate(4627, 531)"/>
+<path d=""  transform="translate(4627, 531)"/>
+<path d=""  transform="translate(4332, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4983 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(88, 981)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(388, 981)"/>
+<path d=""  transform="translate(300, 986)"/>
+<path d=""  transform="translate(804, 886)"/>
+<path d=""  transform="translate(575, 986)"/>
+<path d=""  transform="translate(1335, 531)"/>
+<path d=""  transform="translate(1335, 531)"/>
+<path d=""  transform="translate(1037, 986)"/>
+<path d=""  transform="translate(1841, 829)"/>
+<path d=""  transform="translate(1593, 986)"/>
+<path d=""  transform="translate(2724, 888)"/>
+<path d=""  transform="translate(2555, 986)"/>
+<path d=""  transform="translate(3219, 531)"/>
+<path d=""  transform="translate(3219, 531)"/>
+<path d=""  transform="translate(2921, 986)"/>
+<path d=""  transform="translate(3942, 889)"/>
+<path d=""  transform="translate(3477, 986)"/>
+<path d=""  transform="translate(4652, 531)"/>
+<path d=""  transform="translate(4652, 531)"/>
+<path d=""  transform="translate(4357, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܼ̭ءܷܨِܼܘ̰ܖܨܨ̰ܹܠ̱</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0331=15@318,-98+0|uni0720=15+656|uni0739=12@342,-607+0|uni0330=12@345,-455+0|uni0728=12@50,0+676|uni0728=11@235,0+861|uni0716=10@-83,0+456|uni0330=8@316,-98+0|uni0718=8+610|uni073C=5@417,-455+0|uni0650=5@417,-455+0|uni0728=5@122,0+748|uni0737=3@229,-460+0|uni0621=3+462|uni032D=0@295,-455+0|uni073C=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0331=15@318,-98+0|uni0720=15+656|uni0739=12@317,-607+0|uni0330=12@320,-455+0|uni0728=12@25,0+651|uni0728=11+626|uni0716=10+539|uni0330=8@316,-98+0|uni0718=8+610|uni073C=5@375,-455+0|uni0650=5@375,-455+0|uni0728=5@80,0+706|uni0737=3@229,-460+0|uni0621=3+462|uni032D=0@295,-455+0|uni073C=0@295,-455+0|uni0728=0+626</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4876 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(973, 379)"/>
+<path d=""  transform="translate(976, 531)"/>
+<path d=""  transform="translate(681, 986)"/>
+<path d=""  transform="translate(1307, 986)"/>
+<path d=""  transform="translate(1933, 986)"/>
+<path d=""  transform="translate(2788, 888)"/>
+<path d=""  transform="translate(2472, 986)"/>
+<path d=""  transform="translate(3457, 531)"/>
+<path d=""  transform="translate(3457, 531)"/>
+<path d=""  transform="translate(3162, 986)"/>
+<path d=""  transform="translate(4017, 526)"/>
+<path d=""  transform="translate(3788, 986)"/>
+<path d=""  transform="translate(4545, 531)"/>
+<path d=""  transform="translate(4545, 531)"/>
+<path d=""  transform="translate(4250, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5095 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(998, 379)"/>
+<path d=""  transform="translate(1001, 531)"/>
+<path d=""  transform="translate(706, 986)"/>
+<path d=""  transform="translate(1567, 986)"/>
+<path d=""  transform="translate(2110, 986)"/>
+<path d=""  transform="translate(2965, 888)"/>
+<path d=""  transform="translate(2649, 986)"/>
+<path d=""  transform="translate(3676, 531)"/>
+<path d=""  transform="translate(3676, 531)"/>
+<path d=""  transform="translate(3381, 986)"/>
+<path d=""  transform="translate(4236, 526)"/>
+<path d=""  transform="translate(4007, 986)"/>
+<path d=""  transform="translate(4764, 531)"/>
+<path d=""  transform="translate(4764, 531)"/>
+<path d=""  transform="translate(4469, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܯܻܔܨٕ̮ء݄ܨ̱̠ܙ݈ܨ݈ܸءܾ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni073E=16@229,-460+0|uni0621=16+462|uni0738=13@295,-455+0|uni0748=13@295,-455+0|uni0728=13+626|uni0748=11@117,-458+0|uni0719=11@-35,0+240|uni0320=8@337,-455+0|uni0331=8@337,-455+0|uni0728=8@42,0+668|uni0744=6@229,-460+0|uni0621=6+462|uni032E=3@298,-455+0|uni0655=3@298,-455+0|uni0728.Fina=3+556|uni0714.Init=2+718|uni073B=0@523,-225+0|uni072F=0@238,0+833</pre>
+
+
+
+<pre>Got     : uni073E=16@229,-460+0|uni0621=16+462|uni0738=13@295,-455+0|uni0748=13@295,-455+0|uni0728=13+626|uni0748=11@152,-458+0|uni0719=11+275|uni0320=8@295,-455+0|uni0331=8@295,-455+0|uni0728=8+626|uni0744=6@229,-460+0|uni0621=6+462|uni032E=3@298,-455+0|uni0655=3@298,-455+0|uni0728.Fina=3+556|uni0714.Init=2+718|uni073B=0@485,-225+0|uni072F=0@200,0+795</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4520 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 526)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1240, 528)"/>
+<path d=""  transform="translate(1088, 986)"/>
+<path d=""  transform="translate(1658, 531)"/>
+<path d=""  transform="translate(1658, 531)"/>
+<path d=""  transform="translate(1363, 986)"/>
+<path d=""  transform="translate(2218, 526)"/>
+<path d=""  transform="translate(1989, 986)"/>
+<path d=""  transform="translate(2749, 531)"/>
+<path d=""  transform="translate(2749, 531)"/>
+<path d=""  transform="translate(2451, 986)"/>
+<path d=""  transform="translate(3007, 986)"/>
+<path d=""  transform="translate(4210, 761)"/>
+<path d=""  transform="translate(3925, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4565 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 526)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(757, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1205, 528)"/>
+<path d=""  transform="translate(1053, 986)"/>
+<path d=""  transform="translate(1665, 531)"/>
+<path d=""  transform="translate(1665, 531)"/>
+<path d=""  transform="translate(1370, 986)"/>
+<path d=""  transform="translate(2225, 526)"/>
+<path d=""  transform="translate(1996, 986)"/>
+<path d=""  transform="translate(2756, 531)"/>
+<path d=""  transform="translate(2756, 531)"/>
+<path d=""  transform="translate(2458, 986)"/>
+<path d=""  transform="translate(3014, 986)"/>
+<path d=""  transform="translate(4255, 761)"/>
+<path d=""  transform="translate(3970, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܼ̣ء݄ܖܺܝܵܨܴ̣ܠٍܨ݈ܡ݆</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0746=16@607,-98+0|uni0721=16+885|uni0748=14@361,-455+0|uni0728.Fina=14@63,0+619|uni064D=12@169,-98+0|uni0720.Init=12+341|uni0323=9@323,-455+0|uni0734=9@323,-455+0|uni0728.Fina=9@25,0+581|uni0735=7@125,-135+0|uni071D.Init=7+278|uni073A=5@233,-18+0|uni0716=5@32,0+571|uni0744=3@229,-460+0|uni0621=3+462|uni0323=0@295,-455+0|uni073C=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0746=16@607,-98+0|uni0721=16+885|uni0748=14@361,-455+0|uni0728.Fina=14@63,0+619|uni064D=12@169,-98+0|uni0720.Init=12+341|uni0323=9@298,-455+0|uni0734=9@298,-455+0|uni0728.Fina=9+556|uni0735=7@125,-135+0|uni071D.Init=7+278|uni073A=5@233,-18+0|uni0716=5@32,0+571|uni0744=3@229,-460+0|uni0621=3+462|uni0323=0@295,-455+0|uni073C=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                ^^^^^^^^^^^^^^^^^^^^^^^^                      ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4338 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(607, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1246, 531)"/>
+<path d=""  transform="translate(948, 986)"/>
+<path d=""  transform="translate(1673, 888)"/>
+<path d=""  transform="translate(1504, 986)"/>
+<path d=""  transform="translate(2143, 531)"/>
+<path d=""  transform="translate(2143, 531)"/>
+<path d=""  transform="translate(1845, 986)"/>
+<path d=""  transform="translate(2526, 851)"/>
+<path d=""  transform="translate(2401, 986)"/>
+<path d=""  transform="translate(2912, 968)"/>
+<path d=""  transform="translate(2711, 986)"/>
+<path d=""  transform="translate(3479, 526)"/>
+<path d=""  transform="translate(3250, 986)"/>
+<path d=""  transform="translate(4007, 531)"/>
+<path d=""  transform="translate(4007, 531)"/>
+<path d=""  transform="translate(3712, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4363 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(607, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1246, 531)"/>
+<path d=""  transform="translate(948, 986)"/>
+<path d=""  transform="translate(1673, 888)"/>
+<path d=""  transform="translate(1504, 986)"/>
+<path d=""  transform="translate(2168, 531)"/>
+<path d=""  transform="translate(2168, 531)"/>
+<path d=""  transform="translate(1870, 986)"/>
+<path d=""  transform="translate(2551, 851)"/>
+<path d=""  transform="translate(2426, 986)"/>
+<path d=""  transform="translate(2937, 968)"/>
+<path d=""  transform="translate(2736, 986)"/>
+<path d=""  transform="translate(3504, 526)"/>
+<path d=""  transform="translate(3275, 986)"/>
+<path d=""  transform="translate(4032, 531)"/>
+<path d=""  transform="translate(4032, 531)"/>
+<path d=""  transform="translate(3737, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٕܼءܱܨܸ̱ܠܸܟ݀ܨٍ̮ܡ݆ܨ̠ܾܘܸ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0738=20@316,-98+0|uni0718=20+610|uni073E=17@420,-585+0|uni0320=17@420,-455+0|uni0728.Fina=17@122,0+678|uni0746=15@465,-97+0|uni0721.Init=15+880|uni032E=12@298,-455+0|uni064D=12@298,-455+0|uni0728.Fina=12+556|uni0740=10@251,-21+0|uni071F.Medi=10+643|uni0738=8@169,-98+0|uni0720.Init=8+341|uni0331=5@320,-455+0|uni0738=5@320,-455+0|uni0728=5@25,0+651|uni0731=3@229,-460+0|uni0621=3+462|uni073C=0@295,-455+0|uni0655=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0738=20@316,-98+0|uni0718=20+610|uni073E=17@419,-585+0|uni0320=17@419,-455+0|uni0728.Fina=17@121,0+677|uni0746=15@465,-97+0|uni0721.Init=15+880|uni032E=12@298,-455+0|uni064D=12@298,-455+0|uni0728.Fina=12+556|uni0740=10@251,-21+0|uni071F.Medi=10+643|uni0738=8@169,-98+0|uni0720.Init=8+341|uni0331=5@295,-455+0|uni0738=5@295,-455+0|uni0728=5+626|uni0731=3@229,-460+0|uni0621=3+462|uni073C=0@295,-455+0|uni0655=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                          ^^^^^^^^^^^^^^^^^^^^^^^^                          ^^^^^^^                                                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5421 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1029, 401)"/>
+<path d=""  transform="translate(1029, 531)"/>
+<path d=""  transform="translate(731, 986)"/>
+<path d=""  transform="translate(1752, 889)"/>
+<path d=""  transform="translate(1287, 986)"/>
+<path d=""  transform="translate(2465, 531)"/>
+<path d=""  transform="translate(2465, 531)"/>
+<path d=""  transform="translate(2167, 986)"/>
+<path d=""  transform="translate(2974, 965)"/>
+<path d=""  transform="translate(2723, 986)"/>
+<path d=""  transform="translate(3535, 888)"/>
+<path d=""  transform="translate(3366, 986)"/>
+<path d=""  transform="translate(4002, 531)"/>
+<path d=""  transform="translate(4002, 531)"/>
+<path d=""  transform="translate(3707, 986)"/>
+<path d=""  transform="translate(4562, 526)"/>
+<path d=""  transform="translate(4333, 986)"/>
+<path d=""  transform="translate(5090, 531)"/>
+<path d=""  transform="translate(5090, 531)"/>
+<path d=""  transform="translate(4795, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5447 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1030, 401)"/>
+<path d=""  transform="translate(1030, 531)"/>
+<path d=""  transform="translate(732, 986)"/>
+<path d=""  transform="translate(1753, 889)"/>
+<path d=""  transform="translate(1288, 986)"/>
+<path d=""  transform="translate(2466, 531)"/>
+<path d=""  transform="translate(2466, 531)"/>
+<path d=""  transform="translate(2168, 986)"/>
+<path d=""  transform="translate(2975, 965)"/>
+<path d=""  transform="translate(2724, 986)"/>
+<path d=""  transform="translate(3536, 888)"/>
+<path d=""  transform="translate(3367, 986)"/>
+<path d=""  transform="translate(4028, 531)"/>
+<path d=""  transform="translate(4028, 531)"/>
+<path d=""  transform="translate(3733, 986)"/>
+<path d=""  transform="translate(4588, 526)"/>
+<path d=""  transform="translate(4359, 986)"/>
+<path d=""  transform="translate(5116, 531)"/>
+<path d=""  transform="translate(5116, 531)"/>
+<path d=""  transform="translate(4821, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِٕܝ݈ܨٍܸܘِ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0650=8@316,-98+0|uni0718=8+610|uni0738=5@420,-455+0|uni064D=5@420,-455+0|uni0728.Fina=5@122,0+678|uni0748=3@135,-457+0|uni071D.Init=3+278|uni06550650=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0650=8@316,-98+0|uni0718=8+610|uni0738=5@419,-455+0|uni064D=5@419,-455+0|uni0728.Fina=5@121,0+677|uni0748=3@135,-457+0|uni071D.Init=3+278|uni06550650=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                       ^^                   ^^                         ^     ^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2191 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1029, 531)"/>
+<path d=""  transform="translate(1029, 531)"/>
+<path d=""  transform="translate(731, 986)"/>
+<path d=""  transform="translate(1422, 529)"/>
+<path d=""  transform="translate(1287, 986)"/>
+<path d=""  transform="translate(1860, 531)"/>
+<path d=""  transform="translate(1565, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2192 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1030, 531)"/>
+<path d=""  transform="translate(1030, 531)"/>
+<path d=""  transform="translate(732, 986)"/>
+<path d=""  transform="translate(1423, 529)"/>
+<path d=""  transform="translate(1288, 986)"/>
+<path d=""  transform="translate(1861, 531)"/>
+<path d=""  transform="translate(1566, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܧ݊ܨ݄ܝ݈</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0748=4@120,-454+0|uni071D=4+243|uni0744=2@338,-455+0|uni0728.Fina=2@40,0+596|uni074A=0@301,191+0|uni0727.Init=0+630</pre>
+
+
+
+<pre>Got     : uni0748=4@120,-454+0|uni071D=4+243|uni0744=2@337,-455+0|uni0728.Fina=2@39,0+595|uni074A=0@301,191+0|uni0727.Init=0+630</pre>
+
+
+
+<pre>                                                         ^                       ^^     ^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1468 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(120, 532)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(580, 531)"/>
+<path d=""  transform="translate(282, 986)"/>
+<path d=""  transform="translate(1139, 1177)"/>
+<path d=""  transform="translate(838, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1469 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(120, 532)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(581, 531)"/>
+<path d=""  transform="translate(283, 986)"/>
+<path d=""  transform="translate(1140, 1177)"/>
+<path d=""  transform="translate(839, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݄ܸܩٍܓ̣ܨܹܠٕܨ݄ܾܘܾ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni073E=14@316,-98+0|uni0718=14+610|uni073E=11@420,-455+0|uni0744=11@420,-455+0|uni0728.Fina=11@122,0+678|uni0655=9@169,-98+0|uni0720.Init=9+341|uni0739=7@323,-455+0|uni0728.Fina=7@25,0+581|uni0323=5@255,-158+0|uni0713.MediWide=5+840|uni064D=3@364,-98+0|uni0729.Init=3+665|uni0738=0@358,-455+0|uni0744=0@358,-455+0|uni0728=0@63,0+689</pre>
+
+
+
+<pre>Got     : uni073E=14@316,-98+0|uni0718=14+610|uni073E=11@419,-455+0|uni0744=11@419,-455+0|uni0728.Fina=11@121,0+677|uni0655=9@169,-98+0|uni0720.Init=9+341|uni0739=7@298,-455+0|uni0728.Fina=7+556|uni0323=5@255,-158+0|uni0713.MediWide=5+840|uni064D=3@364,-98+0|uni0729.Init=3+665|uni0738=0@358,-455+0|uni0744=0@358,-455+0|uni0728=0@63,0+689</pre>
+
+
+
+<pre>                                                          ^^^^^^^^^^^^^^^^^^^^^^^^                          ^^^^^^^                                                  ^^^                      ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4378 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1029, 531)"/>
+<path d=""  transform="translate(1029, 531)"/>
+<path d=""  transform="translate(731, 986)"/>
+<path d=""  transform="translate(1456, 888)"/>
+<path d=""  transform="translate(1287, 986)"/>
+<path d=""  transform="translate(1926, 531)"/>
+<path d=""  transform="translate(1628, 986)"/>
+<path d=""  transform="translate(2439, 828)"/>
+<path d=""  transform="translate(2184, 986)"/>
+<path d=""  transform="translate(3388, 888)"/>
+<path d=""  transform="translate(3024, 986)"/>
+<path d=""  transform="translate(4047, 531)"/>
+<path d=""  transform="translate(4047, 531)"/>
+<path d=""  transform="translate(3752, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4404 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1030, 531)"/>
+<path d=""  transform="translate(1030, 531)"/>
+<path d=""  transform="translate(732, 986)"/>
+<path d=""  transform="translate(1457, 888)"/>
+<path d=""  transform="translate(1288, 986)"/>
+<path d=""  transform="translate(1952, 531)"/>
+<path d=""  transform="translate(1654, 986)"/>
+<path d=""  transform="translate(2465, 828)"/>
+<path d=""  transform="translate(2210, 986)"/>
+<path d=""  transform="translate(3414, 888)"/>
+<path d=""  transform="translate(3050, 986)"/>
+<path d=""  transform="translate(4073, 531)"/>
+<path d=""  transform="translate(4073, 531)"/>
+<path d=""  transform="translate(3778, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܱ݄ܡ̤ܨ̮̣ء݈ܨ̮ܸܘܼܕ܉</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0709=16+376|uni0715=15@-75,0+464|uni073C=13@316,-98+0|uni0718=13+610|uni0738=10@414,-577+0|uni032E=10@417,-455+0|uni0728=10@122,0+748|uni0748=8@229,-460+0|uni0621=8+462|uni0323=5@298,-455+0|uni032E=5@298,-455+0|uni0728.Fina=5+556|uni0324=3@465,-97+0|uni0721.Init=3+880|uni0744=0@295,-455+0|uni0731=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>Got     : uni0709=16+376|uni0715=15@-98,0+441|uni073C=13@316,-98+0|uni0718=13+610|uni0738=10@372,-577+0|uni032E=10@375,-455+0|uni0728=10@80,0+706|uni0748=8@229,-460+0|uni0621=8+462|uni0323=5@298,-455+0|uni032E=5@298,-455+0|uni0728.Fina=5+556|uni0324=3@465,-97+0|uni0721.Init=3+880|uni0744=0@295,-455+0|uni0731=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                     ^^^^^^^^                                                ^^^                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4657 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(278, 986)"/>
+<path d=""  transform="translate(1133, 888)"/>
+<path d=""  transform="translate(817, 986)"/>
+<path d=""  transform="translate(1799, 409)"/>
+<path d=""  transform="translate(1802, 531)"/>
+<path d=""  transform="translate(1507, 986)"/>
+<path d=""  transform="translate(2362, 526)"/>
+<path d=""  transform="translate(2133, 986)"/>
+<path d=""  transform="translate(2893, 531)"/>
+<path d=""  transform="translate(2893, 531)"/>
+<path d=""  transform="translate(2595, 986)"/>
+<path d=""  transform="translate(3616, 889)"/>
+<path d=""  transform="translate(3151, 986)"/>
+<path d=""  transform="translate(4326, 531)"/>
+<path d=""  transform="translate(4326, 531)"/>
+<path d=""  transform="translate(4031, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4722 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(301, 986)"/>
+<path d=""  transform="translate(1156, 888)"/>
+<path d=""  transform="translate(840, 986)"/>
+<path d=""  transform="translate(1864, 409)"/>
+<path d=""  transform="translate(1867, 531)"/>
+<path d=""  transform="translate(1572, 986)"/>
+<path d=""  transform="translate(2427, 526)"/>
+<path d=""  transform="translate(2198, 986)"/>
+<path d=""  transform="translate(2958, 531)"/>
+<path d=""  transform="translate(2958, 531)"/>
+<path d=""  transform="translate(2660, 986)"/>
+<path d=""  transform="translate(3681, 889)"/>
+<path d=""  transform="translate(3216, 986)"/>
+<path d=""  transform="translate(4391, 531)"/>
+<path d=""  transform="translate(4391, 531)"/>
+<path d=""  transform="translate(4096, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݈̤ܠ̮ܡ̱ܨٍء̰ܨ̠ٕܝܾܨܴ݆ء̮</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni032E=19@229,-100+0|uni0621=19+462|uni0746=16@298,-455+0|uni0734=16@298,-455+0|uni0728.Fina=16+556|uni073E=14@135,-457+0|uni071D.Init=14+278|uni0655=11@295,-585+0|uni0320=11@295,-455+0|uni0728=11+626|uni0330=9@229,-100+0|uni0621=9+462|uni064D=7@298,-455+0|uni0728.Fina=7+556|uni0331=5@465,-97+0|uni0721.Medi=5+896|uni032E=3@169,-98+0|uni0720.Init=3+341|uni0324=0@320,-455+0|uni0748=0@320,-455+0|uni0728=0@25,0+651</pre>
+
+
+
+<pre>Got     : uni032E=19@229,-100+0|uni0621=19+462|uni0746=16@298,-455+0|uni0734=16@298,-455+0|uni0728.Fina=16+556|uni073E=14@135,-457+0|uni071D.Init=14+278|uni0655=11@295,-585+0|uni0320=11@295,-455+0|uni0728=11+626|uni0330=9@229,-100+0|uni0621=9+462|uni064D=7@298,-455+0|uni0728.Fina=7+556|uni0331=5@465,-97+0|uni0721.Medi=5+896|uni032E=3@169,-98+0|uni0720.Init=3+341|uni0324=0@295,-455+0|uni0748=0@295,-455+0|uni0728=0+626</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4803 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1153, 529)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(1591, 401)"/>
+<path d=""  transform="translate(1591, 531)"/>
+<path d=""  transform="translate(1296, 986)"/>
+<path d=""  transform="translate(2151, 886)"/>
+<path d=""  transform="translate(1922, 986)"/>
+<path d=""  transform="translate(2682, 531)"/>
+<path d=""  transform="translate(2384, 986)"/>
+<path d=""  transform="translate(3405, 889)"/>
+<path d=""  transform="translate(2940, 986)"/>
+<path d=""  transform="translate(4005, 888)"/>
+<path d=""  transform="translate(3836, 986)"/>
+<path d=""  transform="translate(4472, 531)"/>
+<path d=""  transform="translate(4472, 531)"/>
+<path d=""  transform="translate(4177, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4828 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 886)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(760, 531)"/>
+<path d=""  transform="translate(462, 986)"/>
+<path d=""  transform="translate(1153, 529)"/>
+<path d=""  transform="translate(1018, 986)"/>
+<path d=""  transform="translate(1591, 401)"/>
+<path d=""  transform="translate(1591, 531)"/>
+<path d=""  transform="translate(1296, 986)"/>
+<path d=""  transform="translate(2151, 886)"/>
+<path d=""  transform="translate(1922, 986)"/>
+<path d=""  transform="translate(2682, 531)"/>
+<path d=""  transform="translate(2384, 986)"/>
+<path d=""  transform="translate(3405, 889)"/>
+<path d=""  transform="translate(2940, 986)"/>
+<path d=""  transform="translate(4005, 888)"/>
+<path d=""  transform="translate(3836, 986)"/>
+<path d=""  transform="translate(4497, 531)"/>
+<path d=""  transform="translate(4497, 531)"/>
+<path d=""  transform="translate(4202, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٕ̮ܘ̤ܨܼܼܡܾܥܼܨ݈ܸܙ݄ܨ̰݈ܘ݈</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0748=20@316,-98+0|uni0718=20+610|uni0748=17@414,-607+0|uni0330=17@417,-455+0|uni0728=17@122,0+748|uni0744=15@117,-458+0|uni0719=15@-35,0+240|uni0738=12@340,-455+0|uni0748=12@340,-455+0|uni0728.Fina=12@42,0+598|uni073C=10@272,-98+0|uni0725.Medi=10+500|uni073E=8@370,-97+0|uni0721.Init=8@-95,0+785|uni073C=5@295,-455+0|uni073C=5@295,-455+0|uni0728=5+626|uni0324=3@316,-98+0|uni0718=3+610|uni032E=0@417,-455+0|uni0655=0@417,-455+0|uni0728=0@122,0+748</pre>
+
+
+
+<pre>Got     : uni0748=20@316,-98+0|uni0718=20+610|uni0748=17@372,-607+0|uni0330=17@375,-455+0|uni0728=17@80,0+706|uni0744=15@152,-458+0|uni0719=15+275|uni0738=12@339,-455+0|uni0748=12@339,-455+0|uni0728.Fina=12@41,0+597|uni073C=10@272,-98+0|uni0725.Medi=10+500|uni073E=8@370,-97+0|uni0721.Init=8@-95,0+785|uni073C=5@295,-455+0|uni073C=5@295,-455+0|uni0728=5+626|uni0324=3@316,-98+0|uni0718=3+610|uni032E=0@375,-455+0|uni0655=0@375,-455+0|uni0728=0@80,0+706</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5415 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(982, 379)"/>
+<path d=""  transform="translate(985, 531)"/>
+<path d=""  transform="translate(690, 986)"/>
+<path d=""  transform="translate(1468, 528)"/>
+<path d=""  transform="translate(1316, 986)"/>
+<path d=""  transform="translate(1930, 531)"/>
+<path d=""  transform="translate(1930, 531)"/>
+<path d=""  transform="translate(1632, 986)"/>
+<path d=""  transform="translate(2460, 888)"/>
+<path d=""  transform="translate(2188, 986)"/>
+<path d=""  transform="translate(3058, 889)"/>
+<path d=""  transform="translate(2593, 986)"/>
+<path d=""  transform="translate(3768, 531)"/>
+<path d=""  transform="translate(3768, 531)"/>
+<path d=""  transform="translate(3473, 986)"/>
+<path d=""  transform="translate(4415, 888)"/>
+<path d=""  transform="translate(4099, 986)"/>
+<path d=""  transform="translate(5084, 531)"/>
+<path d=""  transform="translate(5084, 531)"/>
+<path d=""  transform="translate(4789, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5465 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1024, 379)"/>
+<path d=""  transform="translate(1027, 531)"/>
+<path d=""  transform="translate(732, 986)"/>
+<path d=""  transform="translate(1475, 528)"/>
+<path d=""  transform="translate(1323, 986)"/>
+<path d=""  transform="translate(1938, 531)"/>
+<path d=""  transform="translate(1938, 531)"/>
+<path d=""  transform="translate(1640, 986)"/>
+<path d=""  transform="translate(2468, 888)"/>
+<path d=""  transform="translate(2196, 986)"/>
+<path d=""  transform="translate(3066, 889)"/>
+<path d=""  transform="translate(2601, 986)"/>
+<path d=""  transform="translate(3776, 531)"/>
+<path d=""  transform="translate(3776, 531)"/>
+<path d=""  transform="translate(3481, 986)"/>
+<path d=""  transform="translate(4423, 888)"/>
+<path d=""  transform="translate(4107, 986)"/>
+<path d=""  transform="translate(5134, 531)"/>
+<path d=""  transform="translate(5134, 531)"/>
+<path d=""  transform="translate(4839, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̮݈ܠ̣ܨِܾܠ̤ܚ݅ܨ݄̠ܘٕܨ݆݈ܘِ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0650=20@316,-98+0|uni0718=20+610|uni0748=17@417,-455+0|uni0746=17@417,-455+0|uni0728=17@122,0+748|uni0655=15@316,-98+0|uni0718=15+610|uni0320=12@420,-455+0|uni0744=12@420,-455+0|uni0728.Fina=12@122,0+678|uni0745=10@242,-84+0|uni071A.Medi=10+541|uni0324=8@169,-98+0|uni0720.Init=8+341|uni073E=5@323,-455+0|uni0650=5@323,-455+0|uni0728.Fina=5@25,0+581|uni0323=3@169,-98+0|uni0720.Init=3+341|uni0748=0@317,-577+0|uni032E=0@320,-455+0|uni0728=0@25,0+651</pre>
+
+
+
+<pre>Got     : uni0650=20@316,-98+0|uni0718=20+610|uni0748=17@375,-455+0|uni0746=17@375,-455+0|uni0728=17@80,0+706|uni0655=15@316,-98+0|uni0718=15+610|uni0320=12@419,-455+0|uni0744=12@419,-455+0|uni0728.Fina=12@121,0+677|uni0745=10@242,-84+0|uni071A.Medi=10+541|uni0324=8@169,-98+0|uni0720.Init=8+341|uni073E=5@298,-455+0|uni0650=5@298,-455+0|uni0728.Fina=5+556|uni0323=3@169,-98+0|uni0720.Init=3+341|uni0748=0@292,-577+0|uni032E=0@295,-455+0|uni0728=0+626</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5008 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(985, 531)"/>
+<path d=""  transform="translate(985, 531)"/>
+<path d=""  transform="translate(690, 986)"/>
+<path d=""  transform="translate(1632, 888)"/>
+<path d=""  transform="translate(1316, 986)"/>
+<path d=""  transform="translate(2345, 531)"/>
+<path d=""  transform="translate(2345, 531)"/>
+<path d=""  transform="translate(2047, 986)"/>
+<path d=""  transform="translate(2845, 902)"/>
+<path d=""  transform="translate(2603, 986)"/>
+<path d=""  transform="translate(3313, 888)"/>
+<path d=""  transform="translate(3144, 986)"/>
+<path d=""  transform="translate(3783, 531)"/>
+<path d=""  transform="translate(3783, 531)"/>
+<path d=""  transform="translate(3485, 986)"/>
+<path d=""  transform="translate(4210, 888)"/>
+<path d=""  transform="translate(4041, 986)"/>
+<path d=""  transform="translate(4674, 409)"/>
+<path d=""  transform="translate(4677, 531)"/>
+<path d=""  transform="translate(4382, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 5101 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(316, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1027, 531)"/>
+<path d=""  transform="translate(1027, 531)"/>
+<path d=""  transform="translate(732, 986)"/>
+<path d=""  transform="translate(1674, 888)"/>
+<path d=""  transform="translate(1358, 986)"/>
+<path d=""  transform="translate(2388, 531)"/>
+<path d=""  transform="translate(2388, 531)"/>
+<path d=""  transform="translate(2090, 986)"/>
+<path d=""  transform="translate(2888, 902)"/>
+<path d=""  transform="translate(2646, 986)"/>
+<path d=""  transform="translate(3356, 888)"/>
+<path d=""  transform="translate(3187, 986)"/>
+<path d=""  transform="translate(3851, 531)"/>
+<path d=""  transform="translate(3851, 531)"/>
+<path d=""  transform="translate(3553, 986)"/>
+<path d=""  transform="translate(4278, 888)"/>
+<path d=""  transform="translate(4109, 986)"/>
+<path d=""  transform="translate(4767, 409)"/>
+<path d=""  transform="translate(4770, 531)"/>
+<path d=""  transform="translate(4475, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܘٍܔܨٍٕܡܱ</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0731=6@607,-98+0|uni0721=6+885|uni0655064D=3@361,-455+0|uni0728.Fina=3@63,0+619|uni0714.Init=2+718|uni064D=0@391,-98+0|uni0718=0@75,0+685</pre>
+
+
+
+<pre>Got     : uni0731=6@607,-98+0|uni0721=6+885|uni0655064D=3@361,-455+0|uni0728.Fina=3@63,0+619|uni0714.Init=2+718|uni064D=0@441,-98+0|uni0718=0@125,0+735</pre>
+
+
+
+<pre>                                                                                                                          ^^                  ^    ^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2957 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(607, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1246, 531)"/>
+<path d=""  transform="translate(948, 986)"/>
+<path d=""  transform="translate(1504, 986)"/>
+<path d=""  transform="translate(2663, 888)"/>
+<path d=""  transform="translate(2347, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2907 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(607, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1246, 531)"/>
+<path d=""  transform="translate(948, 986)"/>
+<path d=""  transform="translate(1504, 986)"/>
+<path d=""  transform="translate(2613, 888)"/>
+<path d=""  transform="translate(2297, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ݏ̈ܨٕ̤ܩ̮ܨ̠̰ܩٍܨٍܝ̤</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0324=14@120,-454+0|uni071D=14+243|uni064D=12@338,-455+0|uni0728.Fina=12@40,0+596|uni064D=10@364,-98+0|uni0729.Init=10+665|uni0330=7@361,-455+0|uni0320=7@361,-455+0|uni0728.Fina=7@63,0+619|uni032E=5@364,-98+0|uni0729.Init=5+665|uni0324=2@361,-455+0|uni0655=2@361,-455+0|uni0728.Fina=2@63,0+619|uni0308=0@42,127+0|uni074F.Init=0+339</pre>
+
+
+
+<pre>Got     : uni0324=14@120,-454+0|uni071D=14+243|uni064D=12@337,-455+0|uni0728.Fina=12@39,0+595|uni064D=10@364,-98+0|uni0729.Init=10+665|uni0330=7@361,-455+0|uni0320=7@361,-455+0|uni0728.Fina=7@63,0+619|uni032E=5@364,-98+0|uni0729.Init=5+665|uni0324=2@361,-455+0|uni0655=2@361,-455+0|uni0728.Fina=2@63,0+619|uni0308=0@42,127+0|uni074F.Init=0+339</pre>
+
+
+
+<pre>                                                            ^                        ^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3745 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(120, 532)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(580, 531)"/>
+<path d=""  transform="translate(282, 986)"/>
+<path d=""  transform="translate(1202, 888)"/>
+<path d=""  transform="translate(838, 986)"/>
+<path d=""  transform="translate(1864, 531)"/>
+<path d=""  transform="translate(1864, 531)"/>
+<path d=""  transform="translate(1566, 986)"/>
+<path d=""  transform="translate(2486, 888)"/>
+<path d=""  transform="translate(2122, 986)"/>
+<path d=""  transform="translate(3148, 531)"/>
+<path d=""  transform="translate(3148, 531)"/>
+<path d=""  transform="translate(2850, 986)"/>
+<path d=""  transform="translate(3448, 1113)"/>
+<path d=""  transform="translate(3406, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3746 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(120, 532)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(581, 531)"/>
+<path d=""  transform="translate(283, 986)"/>
+<path d=""  transform="translate(1203, 888)"/>
+<path d=""  transform="translate(839, 986)"/>
+<path d=""  transform="translate(1865, 531)"/>
+<path d=""  transform="translate(1865, 531)"/>
+<path d=""  transform="translate(1567, 986)"/>
+<path d=""  transform="translate(2487, 888)"/>
+<path d=""  transform="translate(2123, 986)"/>
+<path d=""  transform="translate(3149, 531)"/>
+<path d=""  transform="translate(3149, 531)"/>
+<path d=""  transform="translate(2851, 986)"/>
+<path d=""  transform="translate(3449, 1113)"/>
+<path d=""  transform="translate(3407, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̠ܱܘܷܨܴܷܠٕܨِٕܙ݈</span> (Added by SIESTA)</li>
+
+
+<pre>Expected: uni0748=13@152,-458+0|uni0719=13+275|uni06550650=10@340,-455+0|uni0728.Fina=10@42,0+598|uni0655=8@169,-98+0|uni0720.Init=8+341|uni0737=5@320,-455+0|uni0734=5@320,-455+0|uni0728=5@25,0+651|uni0737=3@316,-98+0|uni0718=3+610|uni0731=0@417,-585+0|uni0320=0@417,-455+0|uni0728=0@122,0+748</pre>
+
+
+
+<pre>Got     : uni0748=13@152,-458+0|uni0719=13+275|uni06550650=10@339,-455+0|uni0728.Fina=10@41,0+597|uni0655=8@169,-98+0|uni0720.Init=8+341|uni0737=5@295,-455+0|uni0734=5@295,-455+0|uni0728=5+626|uni0737=3@316,-98+0|uni0718=3+610|uni0731=0@375,-585+0|uni0320=0@375,-455+0|uni0728=0@80,0+706</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3155 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(152, 528)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(614, 531)"/>
+<path d=""  transform="translate(316, 986)"/>
+<path d=""  transform="translate(1041, 888)"/>
+<path d=""  transform="translate(872, 986)"/>
+<path d=""  transform="translate(1508, 531)"/>
+<path d=""  transform="translate(1508, 531)"/>
+<path d=""  transform="translate(1213, 986)"/>
+<path d=""  transform="translate(2155, 888)"/>
+<path d=""  transform="translate(1839, 986)"/>
+<path d=""  transform="translate(2824, 401)"/>
+<path d=""  transform="translate(2824, 531)"/>
+<path d=""  transform="translate(2529, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3223 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(152, 528)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(615, 531)"/>
+<path d=""  transform="translate(317, 986)"/>
+<path d=""  transform="translate(1042, 888)"/>
+<path d=""  transform="translate(873, 986)"/>
+<path d=""  transform="translate(1534, 531)"/>
+<path d=""  transform="translate(1534, 531)"/>
+<path d=""  transform="translate(1239, 986)"/>
+<path d=""  transform="translate(2181, 888)"/>
+<path d=""  transform="translate(1865, 986)"/>
+<path d=""  transform="translate(2892, 401)"/>
+<path d=""  transform="translate(2892, 531)"/>
+<path d=""  transform="translate(2597, 986)"/>
+</svg>
+
+
+</div> [code: shaping-regression]
+* 🔥 **FAIL** qa/shaping_tests/syriac2.json: Expected and actual shaping not matching
+<div class="shaping">
+
+
+<style type="text/css">
+    @font-face {font-family: "TestFont"; src: url(../../fonts/NotoSansSyriac-Regular/googlefonts/ttf/NotoSansSyriac-Regular.ttf);}
+    .tf { font-family: "TestFont"; }
+    .shaping pre { font-size: 1.2rem; }
+    .shaping li {
+        font-size: 1.2rem;
+        border-top: 1px solid #ddd;
+        padding: 12px;
+        margin-top: 12px;
+    }
+    .shaping-svg {
+        height: 100px;
+        margin: 10px;
+        transform: matrix(1, 0, 0, -1, 0, 0);
+    }
+</style>
+
+<h4>qa/shaping_tests/syriac2.json: Expected and actual shaping not matching</h4>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِ̱ءܼܖٔܝܳܨܴܴܩܱ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0731.SYRJ=12@439,-98+0|uni0729.SYRJ=12+833|uni0734.SYRJ=9@37,-470+0|uni0734.SYRJ=9@37,-470+0|uni0728.Fina.SYRJ=9+260|uni0733.SYRJ=7@175,-201+0|uni071D.Init.SYRJ=7+309|uni0654.SYRJ=5@182,-179+0|uni0716.SYRJ=5@10,0+359|uni073C.SYRJ=3@229,-98+0|uni0621.SYRJ=3+462|uni0331.SYRJ=0@260,-470+0|uni0650.SYRJ=0@260,-470+0|uni0728.Alt.SYRJ=0@125,0+404</pre>
+
+
+
+<pre>Got     : uni0731.SYRJ=12@439,-98+0|uni0729.SYRJ=12+833|uni0734.SYRJ=9@37,-470+0|uni0734.SYRJ=9@37,-470+0|uni0728.Fina.SYRJ=9+260|uni0733.SYRJ=7@175,-201+0|uni071D.Init.SYRJ=7+309|uni0654.SYRJ=5@172,-179+0|uni0716.SYRJ=5+349|uni073C.SYRJ=3@229,-98+0|uni0621.SYRJ=3+462|uni0331.SYRJ=0@260,-470+0|uni0650.SYRJ=0@260,-470+0|uni0728.Alt.SYRJ=0@125,0+404</pre>
+
+
+
+<pre>                                                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2617 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(439, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(833, 986)"/>
+<path d=""  transform="translate(1268, 785)"/>
+<path d=""  transform="translate(1093, 986)"/>
+<path d=""  transform="translate(1574, 807)"/>
+<path d=""  transform="translate(1402, 986)"/>
+<path d=""  transform="translate(1980, 888)"/>
+<path d=""  transform="translate(1751, 986)"/>
+<path d=""  transform="translate(2473, 516)"/>
+<path d=""  transform="translate(2473, 516)"/>
+<path d=""  transform="translate(2338, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2627 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(439, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(833, 986)"/>
+<path d=""  transform="translate(1268, 785)"/>
+<path d=""  transform="translate(1093, 986)"/>
+<path d=""  transform="translate(1584, 807)"/>
+<path d=""  transform="translate(1412, 986)"/>
+<path d=""  transform="translate(1990, 888)"/>
+<path d=""  transform="translate(1761, 986)"/>
+<path d=""  transform="translate(2483, 516)"/>
+<path d=""  transform="translate(2483, 516)"/>
+<path d=""  transform="translate(2348, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِ݈ءܹܨܱ̠ܠ̱ܕ̱ܛܨܻ̠ܝܼܨٍܴܘ̠</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0320.SYRJ=21@254,-98+0|uni0718.SYRJ=21+518|uni0734.SYRJ=18@87,-470+0|uni064D.SYRJ=18@87,-470+0|uni0728.Fina.SYRJ=18@50,0+310|uni073C.SYRJ=16@157,-98+0|uni071D.Init.SYRJ=16+309|uni0320.SYRJ=13@134,-470+0|uni073B.SYRJ=13@134,-470+0|uni0728.FinaAlt.SYRJ=13+280|uni071B.Init.SYRJ=12+438|uni0331.SYRJ=10@92,-389+0|uni0715.Fina.SYRJ=10@-30,0+245|uni0331.SYRJ=8@197,-98+0|uni0720.InitN.SYRJ=8+469|uni0320.SYRJ=5@36,-470+0|uni0731.SYRJ=5@36,-470+0|uni0728.SYRJ=5+258|uni0739.SYRJ=3@229,-98+0|uni0621.SYRJ=3+462|uni0748.SYRJ=0@260,-470+0|uni0650.SYRJ=0@260,-470+0|uni0728.Alt.SYRJ=0@125,0+404</pre>
+
+
+
+<pre>Got     : uni0320.SYRJ=21@254,-98+0|uni0718.SYRJ=21+518|uni0734.SYRJ=18@87,-470+0|uni064D.SYRJ=18@87,-470+0|uni0728.Fina.SYRJ=18@50,0+310|uni073C.SYRJ=16@157,-98+0|uni071D.Init.SYRJ=16+309|uni0320.SYRJ=13@134,-470+0|uni073B.SYRJ=13@134,-470+0|uni0728.FinaAlt.SYRJ=13+280|uni071B.Init.SYRJ=12+438|uni0331.SYRJ=10@122,-389+0|uni0715.Fina.SYRJ=10+275|uni0331.SYRJ=8@197,-98+0|uni0720.InitN.SYRJ=8+469|uni0320.SYRJ=5@36,-470+0|uni0731.SYRJ=5@36,-470+0|uni0728.SYRJ=5+258|uni0739.SYRJ=3@229,-98+0|uni0621.SYRJ=3+462|uni0748.SYRJ=0@260,-470+0|uni0650.SYRJ=0@260,-470+0|uni0728.Alt.SYRJ=0@125,0+404</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                        ^                             ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3723 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(254, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(605, 516)"/>
+<path d=""  transform="translate(605, 516)"/>
+<path d=""  transform="translate(568, 986)"/>
+<path d=""  transform="translate(985, 888)"/>
+<path d=""  transform="translate(828, 986)"/>
+<path d=""  transform="translate(1271, 516)"/>
+<path d=""  transform="translate(1271, 516)"/>
+<path d=""  transform="translate(1137, 986)"/>
+<path d=""  transform="translate(1417, 986)"/>
+<path d=""  transform="translate(1977, 597)"/>
+<path d=""  transform="translate(1855, 986)"/>
+<path d=""  transform="translate(2327, 888)"/>
+<path d=""  transform="translate(2130, 986)"/>
+<path d=""  transform="translate(2635, 516)"/>
+<path d=""  transform="translate(2635, 516)"/>
+<path d=""  transform="translate(2599, 986)"/>
+<path d=""  transform="translate(3086, 888)"/>
+<path d=""  transform="translate(2857, 986)"/>
+<path d=""  transform="translate(3579, 516)"/>
+<path d=""  transform="translate(3579, 516)"/>
+<path d=""  transform="translate(3444, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3693 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(254, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(605, 516)"/>
+<path d=""  transform="translate(605, 516)"/>
+<path d=""  transform="translate(568, 986)"/>
+<path d=""  transform="translate(985, 888)"/>
+<path d=""  transform="translate(828, 986)"/>
+<path d=""  transform="translate(1271, 516)"/>
+<path d=""  transform="translate(1271, 516)"/>
+<path d=""  transform="translate(1137, 986)"/>
+<path d=""  transform="translate(1417, 986)"/>
+<path d=""  transform="translate(1947, 597)"/>
+<path d=""  transform="translate(1825, 986)"/>
+<path d=""  transform="translate(2297, 888)"/>
+<path d=""  transform="translate(2100, 986)"/>
+<path d=""  transform="translate(2605, 516)"/>
+<path d=""  transform="translate(2605, 516)"/>
+<path d=""  transform="translate(2569, 986)"/>
+<path d=""  transform="translate(3056, 888)"/>
+<path d=""  transform="translate(2827, 986)"/>
+<path d=""  transform="translate(3549, 516)"/>
+<path d=""  transform="translate(3549, 516)"/>
+<path d=""  transform="translate(3414, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̱ܸܝٍܕٔܝٓ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0653.SYRJ=7@318,-201+0|uni071D.SYRJ=7+559|uni0654.SYRJ=5@149,-255+0|uni0715.Fina.SYRJ=5@10,0+285|uni064D.SYRJ=3@157,-98+0|uni071D.Init.SYRJ=3+309|uni0738.SYRJ=0@135,-600+0|uni0331.SYRJ=0@135,-470+0|uni0728.Alt.SYRJ=0+279</pre>
+
+
+
+<pre>Got     : uni0653.SYRJ=7@318,-201+0|uni071D.SYRJ=7+559|uni0654.SYRJ=5@139,-255+0|uni0715.Fina.SYRJ=5+275|uni064D.SYRJ=3@157,-98+0|uni071D.Init.SYRJ=3+309|uni0738.SYRJ=0@135,-600+0|uni0331.SYRJ=0@135,-470+0|uni0728.Alt.SYRJ=0+279</pre>
+
+
+
+<pre>                                                                       ^                            ^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1422 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 785)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(698, 731)"/>
+<path d=""  transform="translate(559, 986)"/>
+<path d=""  transform="translate(991, 888)"/>
+<path d=""  transform="translate(834, 986)"/>
+<path d=""  transform="translate(1278, 386)"/>
+<path d=""  transform="translate(1278, 516)"/>
+<path d=""  transform="translate(1143, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1432 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(318, 785)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(708, 731)"/>
+<path d=""  transform="translate(569, 986)"/>
+<path d=""  transform="translate(1001, 888)"/>
+<path d=""  transform="translate(844, 986)"/>
+<path d=""  transform="translate(1288, 386)"/>
+<path d=""  transform="translate(1288, 516)"/>
+<path d=""  transform="translate(1153, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̤ܴܩ̮ܨ̠ٕءِܕܿܝ݇ܨܹܝܷ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0737.SYRJ=16@272,-98+0|uni071D.SYRJ=16+559|uni0739.SYRJ=14@100,-470+0|uni0728.Fina.SYRJ=14@63,0+323|uni0747.SYRJ=12@175,-201+0|uni071D.Init.SYRJ=12+309|uni073F.SYRJ=10@182,-179+0|uni0715.SYRJ=10@10,0+359|uni0650.SYRJ=8@229,-98+0|uni0621.SYRJ=8+462|uni0655.SYRJ=5@259,-600+0|uni0320.SYRJ=5@259,-470+0|uni0728.FinaAlt.SYRJ=5@125,0+405|uni032E.SYRJ=3@296,-98+0|uni0729.Init.SYRJ=3+570|uni0734.SYRJ=0@82,-650+0|uni0324.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>Got     : uni0737.SYRJ=16@272,-98+0|uni071D.SYRJ=16+559|uni0739.SYRJ=14@100,-470+0|uni0728.Fina.SYRJ=14@63,0+323|uni0747.SYRJ=12@175,-201+0|uni071D.Init.SYRJ=12+309|uni073F.SYRJ=10@172,-179+0|uni0715.SYRJ=10+349|uni0650.SYRJ=8@229,-98+0|uni0621.SYRJ=8+462|uni0655.SYRJ=5@259,-600+0|uni0320.SYRJ=5@259,-470+0|uni0728.FinaAlt.SYRJ=5@125,0+405|uni032E.SYRJ=3@296,-98+0|uni0729.Init.SYRJ=3+570|uni0734.SYRJ=0@82,-650+0|uni0324.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>                                                                                                                                                                                      ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3285 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(272, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(659, 516)"/>
+<path d=""  transform="translate(622, 986)"/>
+<path d=""  transform="translate(1057, 785)"/>
+<path d=""  transform="translate(882, 986)"/>
+<path d=""  transform="translate(1363, 807)"/>
+<path d=""  transform="translate(1191, 986)"/>
+<path d=""  transform="translate(1769, 888)"/>
+<path d=""  transform="translate(1540, 986)"/>
+<path d=""  transform="translate(2261, 386)"/>
+<path d=""  transform="translate(2261, 516)"/>
+<path d=""  transform="translate(2127, 986)"/>
+<path d=""  transform="translate(2703, 888)"/>
+<path d=""  transform="translate(2407, 986)"/>
+<path d=""  transform="translate(3059, 336)"/>
+<path d=""  transform="translate(3063, 516)"/>
+<path d=""  transform="translate(3027, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3295 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(272, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(659, 516)"/>
+<path d=""  transform="translate(622, 986)"/>
+<path d=""  transform="translate(1057, 785)"/>
+<path d=""  transform="translate(882, 986)"/>
+<path d=""  transform="translate(1373, 807)"/>
+<path d=""  transform="translate(1201, 986)"/>
+<path d=""  transform="translate(1779, 888)"/>
+<path d=""  transform="translate(1550, 986)"/>
+<path d=""  transform="translate(2271, 386)"/>
+<path d=""  transform="translate(2271, 516)"/>
+<path d=""  transform="translate(2137, 986)"/>
+<path d=""  transform="translate(2713, 888)"/>
+<path d=""  transform="translate(2417, 986)"/>
+<path d=""  transform="translate(3069, 336)"/>
+<path d=""  transform="translate(3073, 516)"/>
+<path d=""  transform="translate(3037, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܻܼܘ݆ܨٍ̰ء݆ܪ̈ܝُܨܸ̠ܠܻܨ̭ܠܷ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0737.SYRJ=21@423,-98+0|uni0720.SYRJ=21+749|uni032D.SYRJ=19@37,-470+0|uni0728.Fina.SYRJ=19+260|uni073B.SYRJ=17@192,-98+0|uni0720.Init.SYRJ=17+566|uni0320.SYRJ=14@37,-470+0|uni0738.SYRJ=14@37,-470+0|uni0728.Fina.SYRJ=14+260|uni064F.SYRJ=12@175,-201+0|uni071D.Init.SYRJ=12+309|uni072Auni0308.Isol.SYRJ=10@10,0+375|uni0746.SYRJ=8@229,-98+0|uni0621.SYRJ=8+462|uni0330.SYRJ=5@260,-470+0|uni064D.SYRJ=5@260,-470+0|uni0728.Alt.SYRJ=5@125,0+404|uni0746.SYRJ=3@254,-98+0|uni0718.SYRJ=3+518|uni073C.SYRJ=0@86,-470+0|uni073B.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>Got     : uni0737.SYRJ=21@423,-98+0|uni0720.SYRJ=21+749|uni032D.SYRJ=19@37,-470+0|uni0728.Fina.SYRJ=19+260|uni073B.SYRJ=17@192,-98+0|uni0720.Init.SYRJ=17+566|uni0320.SYRJ=14@37,-470+0|uni0738.SYRJ=14@37,-470+0|uni0728.Fina.SYRJ=14+260|uni064F.SYRJ=12@175,-201+0|uni071D.Init.SYRJ=12+309|uni072Auni0308.Isol.SYRJ=10+365|uni0746.SYRJ=8@229,-98+0|uni0621.SYRJ=8+462|uni0330.SYRJ=5@260,-470+0|uni064D.SYRJ=5@260,-470+0|uni0728.Alt.SYRJ=5@125,0+404|uni0746.SYRJ=3@254,-98+0|uni0718.SYRJ=3+518|uni073C.SYRJ=0@86,-470+0|uni073B.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                          ^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4201 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(423, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(749, 986)"/>
+<path d=""  transform="translate(1201, 888)"/>
+<path d=""  transform="translate(1009, 986)"/>
+<path d=""  transform="translate(1612, 516)"/>
+<path d=""  transform="translate(1612, 516)"/>
+<path d=""  transform="translate(1575, 986)"/>
+<path d=""  transform="translate(2010, 785)"/>
+<path d=""  transform="translate(1835, 986)"/>
+<path d=""  transform="translate(2144, 986)"/>
+<path d=""  transform="translate(2738, 888)"/>
+<path d=""  transform="translate(2509, 986)"/>
+<path d=""  transform="translate(3231, 516)"/>
+<path d=""  transform="translate(3231, 516)"/>
+<path d=""  transform="translate(3096, 986)"/>
+<path d=""  transform="translate(3629, 888)"/>
+<path d=""  transform="translate(3375, 986)"/>
+<path d=""  transform="translate(3979, 516)"/>
+<path d=""  transform="translate(3979, 516)"/>
+<path d=""  transform="translate(3943, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4211 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(423, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(749, 986)"/>
+<path d=""  transform="translate(1201, 888)"/>
+<path d=""  transform="translate(1009, 986)"/>
+<path d=""  transform="translate(1612, 516)"/>
+<path d=""  transform="translate(1612, 516)"/>
+<path d=""  transform="translate(1575, 986)"/>
+<path d=""  transform="translate(2010, 785)"/>
+<path d=""  transform="translate(1835, 986)"/>
+<path d=""  transform="translate(2154, 986)"/>
+<path d=""  transform="translate(2748, 888)"/>
+<path d=""  transform="translate(2519, 986)"/>
+<path d=""  transform="translate(3241, 516)"/>
+<path d=""  transform="translate(3241, 516)"/>
+<path d=""  transform="translate(3106, 986)"/>
+<path d=""  transform="translate(3639, 888)"/>
+<path d=""  transform="translate(3385, 986)"/>
+<path d=""  transform="translate(3989, 516)"/>
+<path d=""  transform="translate(3989, 516)"/>
+<path d=""  transform="translate(3953, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܪܹܮܨ̱݈ܡ̭ܨِ̱ܩ̰</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0330.SYRJ=11@439,-98+0|uni0729.SYRJ=11+833|uni0331.SYRJ=8@37,-470+0|uni0650.SYRJ=8@37,-470+0|uni0728.Fina.SYRJ=8+260|uni032D.SYRJ=6@375,-98+0|uni0721.Init.SYRJ=6+741|uni0748.SYRJ=3@37,-600+0|uni0331.SYRJ=3@37,-470+0|uni0728.Fina.SYRJ=3+260|uni072E.Init.SYRJ=2+833|uni0739.SYRJ=0@145,-216+0|uni072A.SYRJ=0@5,0+354</pre>
+
+
+
+<pre>Got     : uni0330.SYRJ=11@439,-98+0|uni0729.SYRJ=11+833|uni0331.SYRJ=8@37,-470+0|uni0650.SYRJ=8@37,-470+0|uni0728.Fina.SYRJ=8+260|uni032D.SYRJ=6@375,-98+0|uni0721.Init.SYRJ=6+741|uni0748.SYRJ=3@37,-600+0|uni0331.SYRJ=3@37,-470+0|uni0728.Fina.SYRJ=3+260|uni072E.Init.SYRJ=2+833|uni0739.SYRJ=0@190,-216+0|uni072A.SYRJ=0@50,0+399</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                     ^^                        ^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3326 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(439, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(833, 986)"/>
+<path d=""  transform="translate(1468, 888)"/>
+<path d=""  transform="translate(1093, 986)"/>
+<path d=""  transform="translate(1871, 386)"/>
+<path d=""  transform="translate(1871, 516)"/>
+<path d=""  transform="translate(1834, 986)"/>
+<path d=""  transform="translate(2094, 986)"/>
+<path d=""  transform="translate(3117, 770)"/>
+<path d=""  transform="translate(2977, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3281 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(439, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(833, 986)"/>
+<path d=""  transform="translate(1468, 888)"/>
+<path d=""  transform="translate(1093, 986)"/>
+<path d=""  transform="translate(1871, 386)"/>
+<path d=""  transform="translate(1871, 516)"/>
+<path d=""  transform="translate(1834, 986)"/>
+<path d=""  transform="translate(2094, 986)"/>
+<path d=""  transform="translate(3072, 770)"/>
+<path d=""  transform="translate(2932, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̱݈ܘٕܖ̈ܝٰܨٍ݆ܡܼܨ̮݄ܩ̮</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni032E.SYRJ=17@439,-98+0|uni0729.SYRJ=17+833|uni0744.SYRJ=14@34,-592+0|uni032E.SYRJ=14@37,-470+0|uni0728.Fina.SYRJ=14+260|uni073C.SYRJ=12@375,-98+0|uni0721.Init.SYRJ=12+741|uni0746.SYRJ=9@37,-470+0|uni064D.SYRJ=9@37,-470+0|uni0728.Fina.SYRJ=9+260|uni0670.SYRJ=7@175,-201+0|uni071D.Init.SYRJ=7+309|uni0308.SYRJ=5@182,-179+0|uni0716.SYRJ=5@10,0+359|uni0655.SYRJ=3@264,-98+0|uni0718.SYRJ=3@10,0+528|uni0748.SYRJ=0@86,-600+0|uni0331.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>Got     : uni032E.SYRJ=17@439,-98+0|uni0729.SYRJ=17+833|uni0744.SYRJ=14@34,-592+0|uni032E.SYRJ=14@37,-470+0|uni0728.Fina.SYRJ=14+260|uni073C.SYRJ=12@375,-98+0|uni0721.Init.SYRJ=12+741|uni0746.SYRJ=9@37,-470+0|uni064D.SYRJ=9@37,-470+0|uni0728.Fina.SYRJ=9+260|uni0670.SYRJ=7@175,-201+0|uni071D.Init.SYRJ=7+309|uni0308.SYRJ=5@172,-179+0|uni0716.SYRJ=5+349|uni0655.SYRJ=3@254,-98+0|uni0718.SYRJ=3+518|uni0748.SYRJ=0@86,-600+0|uni0331.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3578 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(439, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(867, 394)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(833, 986)"/>
+<path d=""  transform="translate(1468, 888)"/>
+<path d=""  transform="translate(1093, 986)"/>
+<path d=""  transform="translate(1871, 516)"/>
+<path d=""  transform="translate(1871, 516)"/>
+<path d=""  transform="translate(1834, 986)"/>
+<path d=""  transform="translate(2269, 785)"/>
+<path d=""  transform="translate(2094, 986)"/>
+<path d=""  transform="translate(2575, 807)"/>
+<path d=""  transform="translate(2403, 986)"/>
+<path d=""  transform="translate(3006, 888)"/>
+<path d=""  transform="translate(2752, 986)"/>
+<path d=""  transform="translate(3356, 386)"/>
+<path d=""  transform="translate(3356, 516)"/>
+<path d=""  transform="translate(3320, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3598 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(439, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(867, 394)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(833, 986)"/>
+<path d=""  transform="translate(1468, 888)"/>
+<path d=""  transform="translate(1093, 986)"/>
+<path d=""  transform="translate(1871, 516)"/>
+<path d=""  transform="translate(1871, 516)"/>
+<path d=""  transform="translate(1834, 986)"/>
+<path d=""  transform="translate(2269, 785)"/>
+<path d=""  transform="translate(2094, 986)"/>
+<path d=""  transform="translate(2585, 807)"/>
+<path d=""  transform="translate(2413, 986)"/>
+<path d=""  transform="translate(3026, 888)"/>
+<path d=""  transform="translate(2772, 986)"/>
+<path d=""  transform="translate(3376, 386)"/>
+<path d=""  transform="translate(3376, 516)"/>
+<path d=""  transform="translate(3340, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٍٍܝܷ܏ܜܨٍܴܠ̭ܨܾܹܩٍ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: None</pre>
+
+
+
+<pre>Got     : uni064D.SYRJ=15@439,-98+0|uni0729.SYRJ=15+833|uni0739.SYRJ=12@37,-470+0|uni073E.SYRJ=12@37,-470+0|uni0728.Fina.SYRJ=12+260|uni032D.SYRJ=10@192,-98+0|uni0720.Init.SYRJ=10+566|uni0734.SYRJ=7@37,-470+0|uni064D.SYRJ=7@37,-470+0|uni0728.Fina.SYRJ=7+260|uni071C.Medi.SYRJ=6+606|SAM4xout=5@-2528,0+0|SAMline=5@-2202,0+0|SAMline=5@-1968,0+0|SAMline=5@-1734,0+0|SAMdot=5@-1499,0+0|SAMline=5@-1029,0+0|SAMline=5@-795,0+0|SAMline=5@-561,0+0|SAM4in=5@-326,0+0|uni0737.SYRJ=3@157,-98+0|uni071D.Init.SYRJ=3+309|uni064D.SYRJ=0@135,-470+0|uni064D.SYRJ=0@135,-470+0|uni0728.Alt.SYRJ=0+279</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3113 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(439, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(833, 986)"/>
+<path d=""  transform="translate(1285, 888)"/>
+<path d=""  transform="translate(1093, 986)"/>
+<path d=""  transform="translate(1696, 516)"/>
+<path d=""  transform="translate(1696, 516)"/>
+<path d=""  transform="translate(1659, 986)"/>
+<path d=""  transform="translate(1919, 986)"/>
+<path d=""  transform="translate(-3, 986)"/>
+<path d=""  transform="translate(323, 986)"/>
+<path d=""  transform="translate(557, 986)"/>
+<path d=""  transform="translate(791, 986)"/>
+<path d=""  transform="translate(1026, 986)"/>
+<path d=""  transform="translate(1496, 986)"/>
+<path d=""  transform="translate(1730, 986)"/>
+<path d=""  transform="translate(1964, 986)"/>
+<path d=""  transform="translate(2199, 986)"/>
+<path d=""  transform="translate(2682, 888)"/>
+<path d=""  transform="translate(2525, 986)"/>
+<path d=""  transform="translate(2969, 516)"/>
+<path d=""  transform="translate(2969, 516)"/>
+<path d=""  transform="translate(2834, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݄ܷܘ݄ܬܜܨ̱݆ܩ̮</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni032E.SYRJ=10@439,-98+0|uni0729.SYRJ=10+833|uni0746.SYRJ=7@37,-600+0|uni0331.SYRJ=7@37,-470+0|uni0728.Fina.SYRJ=7+260|uni071C.Init.SYRJ=6+438|uni072C.SYRJ=5+396|uni0744.SYRJ=3@219,-98+0|uni0718.SYRJ=3@-35,0+483|uni0737.SYRJ=0@86,-470+0|uni0744.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>Got     : uni032E.SYRJ=10@439,-98+0|uni0729.SYRJ=10+833|uni0746.SYRJ=7@37,-600+0|uni0331.SYRJ=7@37,-470+0|uni0728.Fina.SYRJ=7+260|uni071C.Init.SYRJ=6+438|uni072C.SYRJ=5+396|uni0744.SYRJ=3@254,-98+0|uni0718.SYRJ=3+518|uni0737.SYRJ=0@86,-470+0|uni0744.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2753 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(439, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(870, 386)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(833, 986)"/>
+<path d=""  transform="translate(1093, 986)"/>
+<path d=""  transform="translate(1531, 986)"/>
+<path d=""  transform="translate(2181, 888)"/>
+<path d=""  transform="translate(1927, 986)"/>
+<path d=""  transform="translate(2531, 516)"/>
+<path d=""  transform="translate(2531, 516)"/>
+<path d=""  transform="translate(2495, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2718 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(439, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(870, 386)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(833, 986)"/>
+<path d=""  transform="translate(1093, 986)"/>
+<path d=""  transform="translate(1531, 986)"/>
+<path d=""  transform="translate(2146, 888)"/>
+<path d=""  transform="translate(1892, 986)"/>
+<path d=""  transform="translate(2496, 516)"/>
+<path d=""  transform="translate(2496, 516)"/>
+<path d=""  transform="translate(2460, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܪ̤ܔܨ݄̠ܘܸܨ̱ٕءܸ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0738.SYRJ=11@229,-98+0|uni0621.SYRJ=11+462|uni0655.SYRJ=8@260,-600+0|uni0331.SYRJ=8@260,-470+0|uni0728.Alt.SYRJ=8@125,0+404|uni0738.SYRJ=6@254,-98+0|uni0718.SYRJ=6+518|uni0320.SYRJ=3@87,-470+0|uni0744.SYRJ=3@87,-470+0|uni0728.Fina.SYRJ=3@50,0+310|uni0714.Init.SYRJ=2+833|uni0324.SYRJ=0@145,-216+0|uni072A.SYRJ=0@5,0+354</pre>
+
+
+
+<pre>Got     : uni0738.SYRJ=11@229,-98+0|uni0621.SYRJ=11+462|uni0655.SYRJ=8@260,-600+0|uni0331.SYRJ=8@260,-470+0|uni0728.Alt.SYRJ=8@125,0+404|uni0738.SYRJ=6@254,-98+0|uni0718.SYRJ=6+518|uni0320.SYRJ=3@87,-470+0|uni0744.SYRJ=3@87,-470+0|uni0728.Fina.SYRJ=3@50,0+310|uni0714.Init.SYRJ=2+833|uni0324.SYRJ=0@190,-216+0|uni072A.SYRJ=0@50,0+399</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                            ^^                        ^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2926 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(722, 386)"/>
+<path d=""  transform="translate(722, 516)"/>
+<path d=""  transform="translate(587, 986)"/>
+<path d=""  transform="translate(1120, 888)"/>
+<path d=""  transform="translate(866, 986)"/>
+<path d=""  transform="translate(1471, 516)"/>
+<path d=""  transform="translate(1471, 516)"/>
+<path d=""  transform="translate(1434, 986)"/>
+<path d=""  transform="translate(1694, 986)"/>
+<path d=""  transform="translate(2717, 770)"/>
+<path d=""  transform="translate(2577, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2881 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(722, 386)"/>
+<path d=""  transform="translate(722, 516)"/>
+<path d=""  transform="translate(587, 986)"/>
+<path d=""  transform="translate(1120, 888)"/>
+<path d=""  transform="translate(866, 986)"/>
+<path d=""  transform="translate(1471, 516)"/>
+<path d=""  transform="translate(1471, 516)"/>
+<path d=""  transform="translate(1434, 986)"/>
+<path d=""  transform="translate(1694, 986)"/>
+<path d=""  transform="translate(2672, 770)"/>
+<path d=""  transform="translate(2532, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܯܼܓܨٍܸܩ݆ܨٍ݈ܝ݈ܨٍ̱ܝܼܨܱܴܡܸ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0738.SYRJ=21@421,-398+0|uni0721.SYRJ=21+653|uni0734.SYRJ=18@134,-470+0|uni0731.SYRJ=18@134,-470+0|uni0728.FinaAlt.SYRJ=18+280|uni073C.SYRJ=16@157,-98+0|uni071D.Init.SYRJ=16+309|uni0331.SYRJ=13@134,-470+0|uni064D.SYRJ=13@134,-470+0|uni0728.FinaAlt.SYRJ=13+280|uni0748.SYRJ=11@157,-98+0|uni071D.Init.SYRJ=11+309|uni0748.SYRJ=8@134,-470+0|uni064D.SYRJ=8@134,-470+0|uni0728.FinaAlt.SYRJ=8+280|uni0746.SYRJ=6@296,-98+0|uni0729.Init.SYRJ=6+570|uni0738.SYRJ=3@87,-470+0|uni064D.SYRJ=3@87,-470+0|uni0728.Fina.SYRJ=3@50,0+310|uni0713.Init.SYRJ=2+833|uni073C.SYRJ=0@275,-364+0|uni072F.SYRJ=0@85,0+458</pre>
+
+
+
+<pre>Got     : uni0738.SYRJ=21@421,-398+0|uni0721.SYRJ=21+653|uni0734.SYRJ=18@134,-470+0|uni0731.SYRJ=18@134,-470+0|uni0728.FinaAlt.SYRJ=18+280|uni073C.SYRJ=16@157,-98+0|uni071D.Init.SYRJ=16+309|uni0331.SYRJ=13@134,-470+0|uni064D.SYRJ=13@134,-470+0|uni0728.FinaAlt.SYRJ=13+280|uni0748.SYRJ=11@157,-98+0|uni071D.Init.SYRJ=11+309|uni0748.SYRJ=8@134,-470+0|uni064D.SYRJ=8@134,-470+0|uni0728.FinaAlt.SYRJ=8+280|uni0746.SYRJ=6@296,-98+0|uni0729.Init.SYRJ=6+570|uni0738.SYRJ=3@87,-470+0|uni064D.SYRJ=3@87,-470+0|uni0728.Fina.SYRJ=3@50,0+310|uni0713.Init.SYRJ=2+833|uni073C.SYRJ=0@190,-364+0|uni072F.SYRJ=0+373</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         ^^^                      ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4197 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(421, 588)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(787, 516)"/>
+<path d=""  transform="translate(787, 516)"/>
+<path d=""  transform="translate(653, 986)"/>
+<path d=""  transform="translate(1090, 888)"/>
+<path d=""  transform="translate(933, 986)"/>
+<path d=""  transform="translate(1376, 516)"/>
+<path d=""  transform="translate(1376, 516)"/>
+<path d=""  transform="translate(1242, 986)"/>
+<path d=""  transform="translate(1679, 888)"/>
+<path d=""  transform="translate(1522, 986)"/>
+<path d=""  transform="translate(1965, 516)"/>
+<path d=""  transform="translate(1965, 516)"/>
+<path d=""  transform="translate(1831, 986)"/>
+<path d=""  transform="translate(2407, 888)"/>
+<path d=""  transform="translate(2111, 986)"/>
+<path d=""  transform="translate(2768, 516)"/>
+<path d=""  transform="translate(2768, 516)"/>
+<path d=""  transform="translate(2731, 986)"/>
+<path d=""  transform="translate(2991, 986)"/>
+<path d=""  transform="translate(4014, 622)"/>
+<path d=""  transform="translate(3824, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4282 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(421, 588)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(787, 516)"/>
+<path d=""  transform="translate(787, 516)"/>
+<path d=""  transform="translate(653, 986)"/>
+<path d=""  transform="translate(1090, 888)"/>
+<path d=""  transform="translate(933, 986)"/>
+<path d=""  transform="translate(1376, 516)"/>
+<path d=""  transform="translate(1376, 516)"/>
+<path d=""  transform="translate(1242, 986)"/>
+<path d=""  transform="translate(1679, 888)"/>
+<path d=""  transform="translate(1522, 986)"/>
+<path d=""  transform="translate(1965, 516)"/>
+<path d=""  transform="translate(1965, 516)"/>
+<path d=""  transform="translate(1831, 986)"/>
+<path d=""  transform="translate(2407, 888)"/>
+<path d=""  transform="translate(2111, 986)"/>
+<path d=""  transform="translate(2768, 516)"/>
+<path d=""  transform="translate(2768, 516)"/>
+<path d=""  transform="translate(2731, 986)"/>
+<path d=""  transform="translate(2991, 986)"/>
+<path d=""  transform="translate(4099, 622)"/>
+<path d=""  transform="translate(3909, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِܸܠ̭ܕ̱ܢ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0722.SYRJ=7+332|uni0331.SYRJ=5@232,-389+0|uni0715.Fina.SYRJ=5@110,0+385|uni032D.SYRJ=3@197,-98+0|uni0720.InitN.SYRJ=3+469|uni0738.SYRJ=0@36,-470+0|uni0650.SYRJ=0@36,-470+0|uni0728.SYRJ=0+258</pre>
+
+
+
+<pre>Got     : uni0722.SYRJ=7+332|uni0331.SYRJ=5@122,-389+0|uni0715.Fina.SYRJ=5+275|uni032D.SYRJ=3@197,-98+0|uni0720.InitN.SYRJ=3+469|uni0738.SYRJ=0@36,-470+0|uni0650.SYRJ=0@36,-470+0|uni0728.SYRJ=0+258</pre>
+
+
+
+<pre>                                             +                            ++++++ ^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1334 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(454, 597)"/>
+<path d=""  transform="translate(332, 986)"/>
+<path d=""  transform="translate(804, 888)"/>
+<path d=""  transform="translate(607, 986)"/>
+<path d=""  transform="translate(1112, 516)"/>
+<path d=""  transform="translate(1112, 516)"/>
+<path d=""  transform="translate(1076, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1444 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(564, 597)"/>
+<path d=""  transform="translate(442, 986)"/>
+<path d=""  transform="translate(914, 888)"/>
+<path d=""  transform="translate(717, 986)"/>
+<path d=""  transform="translate(1222, 516)"/>
+<path d=""  transform="translate(1222, 516)"/>
+<path d=""  transform="translate(1186, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̤ٕܘܷܨܸ̮ءܴܨܻ̣ܩ݄ܨٍܸܘ̤ܮ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni072E.SYRJ=20+848|uni0324.SYRJ=18@179,-98+0|uni0718.SYRJ=18@-75,0+443|uni0738.SYRJ=15@87,-470+0|uni064D.SYRJ=15@87,-470+0|uni0728.Fina.SYRJ=15@50,0+310|uni0744.SYRJ=13@296,-98+0|uni0729.Init.SYRJ=13+570|uni0323.SYRJ=10@86,-470+0|uni073B.SYRJ=10@86,-470+0|uni0728.SYRJ=10@50,0+308|uni0734.SYRJ=8@229,-98+0|uni0621.SYRJ=8+462|uni032E.SYRJ=5@260,-470+0|uni0738.SYRJ=5@260,-470+0|uni0728.Alt.SYRJ=5@125,0+404|uni0737.SYRJ=3@254,-98+0|uni0718.SYRJ=3+518|uni0655.SYRJ=0@82,-650+0|uni0324.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>Got     : uni072E.SYRJ=20+848|uni0324.SYRJ=18@304,-98+0|uni0718.SYRJ=18@50,0+568|uni0738.SYRJ=15@87,-470+0|uni064D.SYRJ=15@87,-470+0|uni0728.Fina.SYRJ=15@50,0+310|uni0744.SYRJ=13@296,-98+0|uni0729.Init.SYRJ=13+570|uni0323.SYRJ=10@86,-470+0|uni073B.SYRJ=10@86,-470+0|uni0728.SYRJ=10@50,0+308|uni0734.SYRJ=8@229,-98+0|uni0621.SYRJ=8+462|uni032E.SYRJ=5@260,-470+0|uni0738.SYRJ=5@260,-470+0|uni0728.Alt.SYRJ=5@125,0+404|uni0737.SYRJ=3@254,-98+0|uni0718.SYRJ=3+518|uni0655.SYRJ=0@82,-650+0|uni0324.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4296 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1152, 888)"/>
+<path d=""  transform="translate(898, 986)"/>
+<path d=""  transform="translate(1503, 516)"/>
+<path d=""  transform="translate(1503, 516)"/>
+<path d=""  transform="translate(1466, 986)"/>
+<path d=""  transform="translate(2022, 888)"/>
+<path d=""  transform="translate(1726, 986)"/>
+<path d=""  transform="translate(2382, 516)"/>
+<path d=""  transform="translate(2382, 516)"/>
+<path d=""  transform="translate(2346, 986)"/>
+<path d=""  transform="translate(2833, 888)"/>
+<path d=""  transform="translate(2604, 986)"/>
+<path d=""  transform="translate(3326, 516)"/>
+<path d=""  transform="translate(3326, 516)"/>
+<path d=""  transform="translate(3191, 986)"/>
+<path d=""  transform="translate(3724, 888)"/>
+<path d=""  transform="translate(3470, 986)"/>
+<path d=""  transform="translate(4070, 336)"/>
+<path d=""  transform="translate(4074, 516)"/>
+<path d=""  transform="translate(4038, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4171 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1027, 888)"/>
+<path d=""  transform="translate(773, 986)"/>
+<path d=""  transform="translate(1378, 516)"/>
+<path d=""  transform="translate(1378, 516)"/>
+<path d=""  transform="translate(1341, 986)"/>
+<path d=""  transform="translate(1897, 888)"/>
+<path d=""  transform="translate(1601, 986)"/>
+<path d=""  transform="translate(2257, 516)"/>
+<path d=""  transform="translate(2257, 516)"/>
+<path d=""  transform="translate(2221, 986)"/>
+<path d=""  transform="translate(2708, 888)"/>
+<path d=""  transform="translate(2479, 986)"/>
+<path d=""  transform="translate(3201, 516)"/>
+<path d=""  transform="translate(3201, 516)"/>
+<path d=""  transform="translate(3066, 986)"/>
+<path d=""  transform="translate(3599, 888)"/>
+<path d=""  transform="translate(3345, 986)"/>
+<path d=""  transform="translate(3945, 336)"/>
+<path d=""  transform="translate(3949, 516)"/>
+<path d=""  transform="translate(3913, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܕ̈ܝܺܨܼ̣ܩ̭ܨءܴܨܴܻءٕܨٕܾܠ݆</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0746.SYRJ=20@423,-98+0|uni0720.SYRJ=20+749|uni073E.SYRJ=17@36,-470+0|uni0655.SYRJ=17@36,-470+0|uni0728.SYRJ=17+258|uni0655.SYRJ=15@229,-98+0|uni0621.SYRJ=15+462|uni073B.SYRJ=12@260,-470+0|uni0734.SYRJ=12@260,-470+0|uni0728.Alt.SYRJ=12@125,0+404|uni0734.SYRJ=10@229,-98+0|uni0621.SYRJ=10+462|uni0728.FinaAlt.SYRJ=9@125,0+405|uni032D.SYRJ=7@296,-98+0|uni0729.Init.SYRJ=7+570|uni0323.SYRJ=4@87,-470+0|uni073C.SYRJ=4@87,-470+0|uni0728.Fina.SYRJ=4@50,0+310|uni073A.SYRJ=2@175,-201+0|uni071D.Init.SYRJ=2+309|uni0308.SYRJ=0@182,-179+0|uni0715.SYRJ=0@10,0+359</pre>
+
+
+
+<pre>Got     : uni0746.SYRJ=20@423,-98+0|uni0720.SYRJ=20+749|uni073E.SYRJ=17@36,-470+0|uni0655.SYRJ=17@36,-470+0|uni0728.SYRJ=17+258|uni0655.SYRJ=15@229,-98+0|uni0621.SYRJ=15+462|uni073B.SYRJ=12@260,-470+0|uni0734.SYRJ=12@260,-470+0|uni0728.Alt.SYRJ=12@125,0+404|uni0734.SYRJ=10@229,-98+0|uni0621.SYRJ=10+462|uni0728.FinaAlt.SYRJ=9@125,0+405|uni032D.SYRJ=7@296,-98+0|uni0729.Init.SYRJ=7+570|uni0323.SYRJ=4@87,-470+0|uni073C.SYRJ=4@87,-470+0|uni0728.Fina.SYRJ=4@50,0+310|uni073A.SYRJ=2@175,-201+0|uni071D.Init.SYRJ=2+309|uni0308.SYRJ=0@172,-179+0|uni0715.SYRJ=0+349</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4278 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(423, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(785, 516)"/>
+<path d=""  transform="translate(785, 516)"/>
+<path d=""  transform="translate(749, 986)"/>
+<path d=""  transform="translate(1236, 888)"/>
+<path d=""  transform="translate(1007, 986)"/>
+<path d=""  transform="translate(1729, 516)"/>
+<path d=""  transform="translate(1729, 516)"/>
+<path d=""  transform="translate(1594, 986)"/>
+<path d=""  transform="translate(2102, 888)"/>
+<path d=""  transform="translate(1873, 986)"/>
+<path d=""  transform="translate(2460, 986)"/>
+<path d=""  transform="translate(3036, 888)"/>
+<path d=""  transform="translate(2740, 986)"/>
+<path d=""  transform="translate(3397, 516)"/>
+<path d=""  transform="translate(3397, 516)"/>
+<path d=""  transform="translate(3360, 986)"/>
+<path d=""  transform="translate(3795, 785)"/>
+<path d=""  transform="translate(3620, 986)"/>
+<path d=""  transform="translate(4101, 807)"/>
+<path d=""  transform="translate(3929, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4288 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(423, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(785, 516)"/>
+<path d=""  transform="translate(785, 516)"/>
+<path d=""  transform="translate(749, 986)"/>
+<path d=""  transform="translate(1236, 888)"/>
+<path d=""  transform="translate(1007, 986)"/>
+<path d=""  transform="translate(1729, 516)"/>
+<path d=""  transform="translate(1729, 516)"/>
+<path d=""  transform="translate(1594, 986)"/>
+<path d=""  transform="translate(2102, 888)"/>
+<path d=""  transform="translate(1873, 986)"/>
+<path d=""  transform="translate(2460, 986)"/>
+<path d=""  transform="translate(3036, 888)"/>
+<path d=""  transform="translate(2740, 986)"/>
+<path d=""  transform="translate(3397, 516)"/>
+<path d=""  transform="translate(3397, 516)"/>
+<path d=""  transform="translate(3360, 986)"/>
+<path d=""  transform="translate(3795, 785)"/>
+<path d=""  transform="translate(3620, 986)"/>
+<path d=""  transform="translate(4111, 807)"/>
+<path d=""  transform="translate(3939, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِٕܙܾܨ݈ܙܱܨܾܩܻܖܺܝ݅ܨ̣̰ܠِ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0650.SYRJ=20@423,-98+0|uni0720.SYRJ=20+749|uni0330.SYRJ=17@37,-470+0|uni0323.SYRJ=17@37,-470+0|uni0728.Fina.SYRJ=17+260|uni0745.SYRJ=15@175,-201+0|uni071D.Init.SYRJ=15+309|uni073A.SYRJ=13@149,-255+0|uni0716.Fina.SYRJ=13@10,0+285|uni073B.SYRJ=11@296,-98+0|uni0729.Init.SYRJ=11+570|uni073E.SYRJ=9@86,-470+0|uni0728.SYRJ=9@50,0+308|uni0731.SYRJ=7@109,-445+0|uni0719.SYRJ=7+264|uni0748.SYRJ=5@135,-470+0|uni0728.Alt.SYRJ=5+279|uni073E.SYRJ=3@109,-445+0|uni0719.SYRJ=3+264|uni06550650.SYRJ=0@135,-470+0|uni0728.Alt.SYRJ=0+279</pre>
+
+
+
+<pre>Got     : uni0650.SYRJ=20@423,-98+0|uni0720.SYRJ=20+749|uni0330.SYRJ=17@37,-470+0|uni0323.SYRJ=17@37,-470+0|uni0728.Fina.SYRJ=17+260|uni0745.SYRJ=15@175,-201+0|uni071D.Init.SYRJ=15+309|uni073A.SYRJ=13@139,-255+0|uni0716.Fina.SYRJ=13+275|uni073B.SYRJ=11@296,-98+0|uni0729.Init.SYRJ=11+570|uni073E.SYRJ=9@86,-470+0|uni0728.SYRJ=9@50,0+308|uni0731.SYRJ=7@109,-445+0|uni0719.SYRJ=7+264|uni0748.SYRJ=5@135,-470+0|uni0728.Alt.SYRJ=5+279|uni073E.SYRJ=3@109,-445+0|uni0719.SYRJ=3+264|uni06550650.SYRJ=0@135,-470+0|uni0728.Alt.SYRJ=0+279</pre>
+
+
+
+<pre>                                                                                                                                                                                                          ^                             ^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3557 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(423, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(749, 986)"/>
+<path d=""  transform="translate(1184, 785)"/>
+<path d=""  transform="translate(1009, 986)"/>
+<path d=""  transform="translate(1457, 731)"/>
+<path d=""  transform="translate(1318, 986)"/>
+<path d=""  transform="translate(1889, 888)"/>
+<path d=""  transform="translate(1593, 986)"/>
+<path d=""  transform="translate(2249, 516)"/>
+<path d=""  transform="translate(2213, 986)"/>
+<path d=""  transform="translate(2580, 541)"/>
+<path d=""  transform="translate(2471, 986)"/>
+<path d=""  transform="translate(2870, 516)"/>
+<path d=""  transform="translate(2735, 986)"/>
+<path d=""  transform="translate(3123, 541)"/>
+<path d=""  transform="translate(3014, 986)"/>
+<path d=""  transform="translate(3413, 516)"/>
+<path d=""  transform="translate(3278, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3567 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(423, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(749, 986)"/>
+<path d=""  transform="translate(1184, 785)"/>
+<path d=""  transform="translate(1009, 986)"/>
+<path d=""  transform="translate(1467, 731)"/>
+<path d=""  transform="translate(1328, 986)"/>
+<path d=""  transform="translate(1899, 888)"/>
+<path d=""  transform="translate(1603, 986)"/>
+<path d=""  transform="translate(2259, 516)"/>
+<path d=""  transform="translate(2223, 986)"/>
+<path d=""  transform="translate(2590, 541)"/>
+<path d=""  transform="translate(2481, 986)"/>
+<path d=""  transform="translate(2880, 516)"/>
+<path d=""  transform="translate(2745, 986)"/>
+<path d=""  transform="translate(3133, 541)"/>
+<path d=""  transform="translate(3024, 986)"/>
+<path d=""  transform="translate(3423, 516)"/>
+<path d=""  transform="translate(3288, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِ̱ء̠ܖܑܝ̄ܦ݈ܨِܘܷܨ̠ܸءܻ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni073B.SYRJ=18@229,-98+0|uni0621.SYRJ=18+462|uni0738.SYRJ=15@260,-600+0|uni0320.SYRJ=15@260,-470+0|uni0728.Alt.SYRJ=15@125,0+404|uni0737.SYRJ=13@254,-98+0|uni0718.SYRJ=13+518|uni0650.SYRJ=11@87,-470+0|uni0728.Fina.SYRJ=11@50,0+310|uni0748.SYRJ=9@238,-98+0|uni0726.Medi.SYRJ=9+606|uni0304.SYRJ=7@175,-201+0|uni071D.Init.SYRJ=7+309|uni0711.SYRJ=5@182,-179+0|uni0716.SYRJ=5@10,0+359|uni0320.SYRJ=3@229,-98+0|uni0621.SYRJ=3+462|uni0331.SYRJ=0@260,-470+0|uni0650.SYRJ=0@260,-470+0|uni0728.Alt.SYRJ=0@125,0+404</pre>
+
+
+
+<pre>Got     : uni073B.SYRJ=18@229,-98+0|uni0621.SYRJ=18+462|uni0738.SYRJ=15@260,-600+0|uni0320.SYRJ=15@260,-470+0|uni0728.Alt.SYRJ=15@125,0+404|uni0737.SYRJ=13@254,-98+0|uni0718.SYRJ=13+518|uni0650.SYRJ=11@87,-470+0|uni0728.Fina.SYRJ=11@50,0+310|uni0748.SYRJ=9@238,-98+0|uni0726.Medi.SYRJ=9+606|uni0304.SYRJ=7@175,-201+0|uni071D.Init.SYRJ=7+309|uni0711.SYRJ=5@172,-179+0|uni0716.SYRJ=5+349|uni0320.SYRJ=3@229,-98+0|uni0621.SYRJ=3+462|uni0331.SYRJ=0@260,-470+0|uni0650.SYRJ=0@260,-470+0|uni0728.Alt.SYRJ=0@125,0+404</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3824 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(722, 386)"/>
+<path d=""  transform="translate(722, 516)"/>
+<path d=""  transform="translate(587, 986)"/>
+<path d=""  transform="translate(1120, 888)"/>
+<path d=""  transform="translate(866, 986)"/>
+<path d=""  transform="translate(1471, 516)"/>
+<path d=""  transform="translate(1434, 986)"/>
+<path d=""  transform="translate(1932, 888)"/>
+<path d=""  transform="translate(1694, 986)"/>
+<path d=""  transform="translate(2475, 785)"/>
+<path d=""  transform="translate(2300, 986)"/>
+<path d=""  transform="translate(2781, 807)"/>
+<path d=""  transform="translate(2609, 986)"/>
+<path d=""  transform="translate(3187, 888)"/>
+<path d=""  transform="translate(2958, 986)"/>
+<path d=""  transform="translate(3680, 516)"/>
+<path d=""  transform="translate(3680, 516)"/>
+<path d=""  transform="translate(3545, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3834 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(229, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(722, 386)"/>
+<path d=""  transform="translate(722, 516)"/>
+<path d=""  transform="translate(587, 986)"/>
+<path d=""  transform="translate(1120, 888)"/>
+<path d=""  transform="translate(866, 986)"/>
+<path d=""  transform="translate(1471, 516)"/>
+<path d=""  transform="translate(1434, 986)"/>
+<path d=""  transform="translate(1932, 888)"/>
+<path d=""  transform="translate(1694, 986)"/>
+<path d=""  transform="translate(2475, 785)"/>
+<path d=""  transform="translate(2300, 986)"/>
+<path d=""  transform="translate(2791, 807)"/>
+<path d=""  transform="translate(2619, 986)"/>
+<path d=""  transform="translate(3197, 888)"/>
+<path d=""  transform="translate(2968, 986)"/>
+<path d=""  transform="translate(3690, 516)"/>
+<path d=""  transform="translate(3690, 516)"/>
+<path d=""  transform="translate(3555, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨِ݄ܘ̣ܨ̮ܷءܱܪܵܝ݅ܨٕ̭ܘܷܬ̮ܔ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0714.SYRJ=21+848|uni032E.SYRJ=19@181,-98+0|uni072C.SYRJ=19+396|uni0737.SYRJ=17@219,-98+0|uni0718.SYRJ=17@-35,0+483|uni032D.SYRJ=14@87,-470+0|uni0655.SYRJ=14@87,-470+0|uni0728.Fina.SYRJ=14@50,0+310|uni0745.SYRJ=12@175,-201+0|uni071D.Init.SYRJ=12+309|uni0735.SYRJ=10@190,6+0|uni072A.SYRJ=10@10,0+359|uni0731.SYRJ=8@229,-98+0|uni0621.SYRJ=8+462|uni0737.SYRJ=5@257,-592+0|uni032E.SYRJ=5@260,-470+0|uni0728.Alt.SYRJ=5@125,0+404|uni0323.SYRJ=3@254,-98+0|uni0718.SYRJ=3+518|uni0744.SYRJ=0@86,-470+0|uni0650.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>Got     : uni0714.SYRJ=21+848|uni032E.SYRJ=19@231,-98+0|uni072C.SYRJ=19@50,0+446|uni0737.SYRJ=17@254,-98+0|uni0718.SYRJ=17+518|uni032D.SYRJ=14@87,-470+0|uni0655.SYRJ=14@87,-470+0|uni0728.Fina.SYRJ=14@50,0+310|uni0745.SYRJ=12@175,-201+0|uni071D.Init.SYRJ=12+309|uni0735.SYRJ=10@180,6+0|uni072A.SYRJ=10+349|uni0731.SYRJ=8@229,-98+0|uni0621.SYRJ=8+462|uni0737.SYRJ=5@257,-592+0|uni032E.SYRJ=5@260,-470+0|uni0728.Alt.SYRJ=5@125,0+404|uni0323.SYRJ=3@254,-98+0|uni0718.SYRJ=3+518|uni0744.SYRJ=0@86,-470+0|uni0650.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>                                              ^^                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^                                                                                                                                                        ^                     ^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4472 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1079, 888)"/>
+<path d=""  transform="translate(898, 986)"/>
+<path d=""  transform="translate(1548, 888)"/>
+<path d=""  transform="translate(1294, 986)"/>
+<path d=""  transform="translate(1899, 516)"/>
+<path d=""  transform="translate(1899, 516)"/>
+<path d=""  transform="translate(1862, 986)"/>
+<path d=""  transform="translate(2297, 785)"/>
+<path d=""  transform="translate(2122, 986)"/>
+<path d=""  transform="translate(2611, 992)"/>
+<path d=""  transform="translate(2431, 986)"/>
+<path d=""  transform="translate(3009, 888)"/>
+<path d=""  transform="translate(2780, 986)"/>
+<path d=""  transform="translate(3499, 394)"/>
+<path d=""  transform="translate(3502, 516)"/>
+<path d=""  transform="translate(3367, 986)"/>
+<path d=""  transform="translate(3900, 888)"/>
+<path d=""  transform="translate(3646, 986)"/>
+<path d=""  transform="translate(4250, 516)"/>
+<path d=""  transform="translate(4250, 516)"/>
+<path d=""  transform="translate(4214, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4397 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1029, 888)"/>
+<path d=""  transform="translate(848, 986)"/>
+<path d=""  transform="translate(1463, 888)"/>
+<path d=""  transform="translate(1209, 986)"/>
+<path d=""  transform="translate(1814, 516)"/>
+<path d=""  transform="translate(1814, 516)"/>
+<path d=""  transform="translate(1777, 986)"/>
+<path d=""  transform="translate(2212, 785)"/>
+<path d=""  transform="translate(2037, 986)"/>
+<path d=""  transform="translate(2536, 992)"/>
+<path d=""  transform="translate(2356, 986)"/>
+<path d=""  transform="translate(2934, 888)"/>
+<path d=""  transform="translate(2705, 986)"/>
+<path d=""  transform="translate(3424, 394)"/>
+<path d=""  transform="translate(3427, 516)"/>
+<path d=""  transform="translate(3292, 986)"/>
+<path d=""  transform="translate(3825, 888)"/>
+<path d=""  transform="translate(3571, 986)"/>
+<path d=""  transform="translate(4175, 516)"/>
+<path d=""  transform="translate(4175, 516)"/>
+<path d=""  transform="translate(4139, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܴٕܡ̭ݍܳܨ݆ܸܝ݄ܨܹ̱ܙܾ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni073E.SYRJ=15@109,-445+0|uni0719.SYRJ=15+264|uni0331.SYRJ=12@134,-470+0|uni0739.SYRJ=12@134,-470+0|uni0728.FinaAlt.SYRJ=12+280|uni0744.SYRJ=10@157,-98+0|uni071D.Init.SYRJ=10+309|uni0738.SYRJ=7@135,-470+0|uni0746.SYRJ=7@135,-470+0|uni0728.Alt.SYRJ=7+279|uni0733.SYRJ=5@308,-201+0|uni074D.Fina.SYRJ=5@10,0+593|uni032D.SYRJ=3@375,-98+0|uni0721.Init.SYRJ=3+741|uni0655.SYRJ=0@36,-470+0|uni0734.SYRJ=0@36,-470+0|uni0728.SYRJ=0+258</pre>
+
+
+
+<pre>Got     : uni073E.SYRJ=15@109,-445+0|uni0719.SYRJ=15+264|uni0331.SYRJ=12@134,-470+0|uni0739.SYRJ=12@134,-470+0|uni0728.FinaAlt.SYRJ=12+280|uni0744.SYRJ=10@157,-98+0|uni071D.Init.SYRJ=10+309|uni0738.SYRJ=7@135,-470+0|uni0746.SYRJ=7@135,-470+0|uni0728.Alt.SYRJ=7+279|uni0733.SYRJ=5@298,-201+0|uni074D.Fina.SYRJ=5+583|uni032D.SYRJ=3@375,-98+0|uni0721.Init.SYRJ=3+741|uni0655.SYRJ=0@36,-470+0|uni0734.SYRJ=0@36,-470+0|uni0728.SYRJ=0+258</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                        ^^                            ^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2714 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(109, 541)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(398, 516)"/>
+<path d=""  transform="translate(398, 516)"/>
+<path d=""  transform="translate(264, 986)"/>
+<path d=""  transform="translate(701, 888)"/>
+<path d=""  transform="translate(544, 986)"/>
+<path d=""  transform="translate(988, 516)"/>
+<path d=""  transform="translate(988, 516)"/>
+<path d=""  transform="translate(853, 986)"/>
+<path d=""  transform="translate(1430, 785)"/>
+<path d=""  transform="translate(1132, 986)"/>
+<path d=""  transform="translate(2090, 888)"/>
+<path d=""  transform="translate(1715, 986)"/>
+<path d=""  transform="translate(2492, 516)"/>
+<path d=""  transform="translate(2492, 516)"/>
+<path d=""  transform="translate(2456, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2724 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(109, 541)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(398, 516)"/>
+<path d=""  transform="translate(398, 516)"/>
+<path d=""  transform="translate(264, 986)"/>
+<path d=""  transform="translate(701, 888)"/>
+<path d=""  transform="translate(544, 986)"/>
+<path d=""  transform="translate(988, 516)"/>
+<path d=""  transform="translate(988, 516)"/>
+<path d=""  transform="translate(853, 986)"/>
+<path d=""  transform="translate(1440, 785)"/>
+<path d=""  transform="translate(1142, 986)"/>
+<path d=""  transform="translate(2100, 888)"/>
+<path d=""  transform="translate(1725, 986)"/>
+<path d=""  transform="translate(2502, 516)"/>
+<path d=""  transform="translate(2502, 516)"/>
+<path d=""  transform="translate(2466, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̤ܾءٍܘܾܮܒْܨܼ̱ܠ̤ܨِ݆ܠܷ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0737.SYRJ=18@423,-98+0|uni0720.SYRJ=18+749|uni0746.SYRJ=15@37,-470+0|uni0650.SYRJ=15@37,-470+0|uni0728.Fina.SYRJ=15+260|uni0324.SYRJ=13@192,-98+0|uni0720.Init.SYRJ=13+566|uni0331.SYRJ=10@37,-470+0|uni073C.SYRJ=10@37,-470+0|uni0728.Fina.SYRJ=10+260|uni0652.SYRJ=8@226,-29+0|uni0712.Medi.SYRJ=8+612|uni072E.Init.SYRJ=7+833|uni073E.SYRJ=5@179,-98+0|uni0718.SYRJ=5@-75,0+443|uni064D.SYRJ=3@229,-98+0|uni0621.SYRJ=3+462|uni073E.SYRJ=0@256,-650+0|uni0324.SYRJ=0@260,-470+0|uni0728.Alt.SYRJ=0@125,0+404</pre>
+
+
+
+<pre>Got     : uni0737.SYRJ=18@423,-98+0|uni0720.SYRJ=18+749|uni0746.SYRJ=15@37,-470+0|uni0650.SYRJ=15@37,-470+0|uni0728.Fina.SYRJ=15+260|uni0324.SYRJ=13@192,-98+0|uni0720.Init.SYRJ=13+566|uni0331.SYRJ=10@37,-470+0|uni073C.SYRJ=10@37,-470+0|uni0728.Fina.SYRJ=10+260|uni0652.SYRJ=8@226,-29+0|uni0712.Medi.SYRJ=8+612|uni072E.Init.SYRJ=7+833|uni073E.SYRJ=5@304,-98+0|uni0718.SYRJ=5@50,0+568|uni064D.SYRJ=3@229,-98+0|uni0621.SYRJ=3+462|uni073E.SYRJ=0@256,-650+0|uni0324.SYRJ=0@260,-470+0|uni0728.Alt.SYRJ=0@125,0+404</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4714 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(423, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(749, 986)"/>
+<path d=""  transform="translate(1201, 888)"/>
+<path d=""  transform="translate(1009, 986)"/>
+<path d=""  transform="translate(1612, 516)"/>
+<path d=""  transform="translate(1612, 516)"/>
+<path d=""  transform="translate(1575, 986)"/>
+<path d=""  transform="translate(2061, 957)"/>
+<path d=""  transform="translate(1835, 986)"/>
+<path d=""  transform="translate(2447, 986)"/>
+<path d=""  transform="translate(3584, 888)"/>
+<path d=""  transform="translate(3330, 986)"/>
+<path d=""  transform="translate(4077, 888)"/>
+<path d=""  transform="translate(3848, 986)"/>
+<path d=""  transform="translate(4566, 336)"/>
+<path d=""  transform="translate(4570, 516)"/>
+<path d=""  transform="translate(4435, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4589 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(423, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(749, 986)"/>
+<path d=""  transform="translate(1201, 888)"/>
+<path d=""  transform="translate(1009, 986)"/>
+<path d=""  transform="translate(1612, 516)"/>
+<path d=""  transform="translate(1612, 516)"/>
+<path d=""  transform="translate(1575, 986)"/>
+<path d=""  transform="translate(2061, 957)"/>
+<path d=""  transform="translate(1835, 986)"/>
+<path d=""  transform="translate(2447, 986)"/>
+<path d=""  transform="translate(3459, 888)"/>
+<path d=""  transform="translate(3205, 986)"/>
+<path d=""  transform="translate(3952, 888)"/>
+<path d=""  transform="translate(3723, 986)"/>
+<path d=""  transform="translate(4441, 336)"/>
+<path d=""  transform="translate(4445, 516)"/>
+<path d=""  transform="translate(4310, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨٍٍܘ̠ܝܵ܈</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0708.SYRJ=7+374|uni0735.SYRJ=5@318,-201+0|uni071D.SYRJ=5+559|uni0320.SYRJ=3@274,-98+0|uni0718.SYRJ=3@20,0+538|uni064D.SYRJ=0@86,-470+0|uni064D.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>Got     : uni0708.SYRJ=7+374|uni0735.SYRJ=5@318,-201+0|uni071D.SYRJ=5+559|uni0320.SYRJ=3@254,-98+0|uni0718.SYRJ=3+518|uni064D.SYRJ=0@86,-470+0|uni064D.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>                                                                                          ^                      +++++  ^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1759 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(692, 785)"/>
+<path d=""  transform="translate(374, 986)"/>
+<path d=""  transform="translate(1187, 888)"/>
+<path d=""  transform="translate(933, 986)"/>
+<path d=""  transform="translate(1537, 516)"/>
+<path d=""  transform="translate(1537, 516)"/>
+<path d=""  transform="translate(1501, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1779 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(692, 785)"/>
+<path d=""  transform="translate(374, 986)"/>
+<path d=""  transform="translate(1207, 888)"/>
+<path d=""  transform="translate(953, 986)"/>
+<path d=""  transform="translate(1557, 516)"/>
+<path d=""  transform="translate(1557, 516)"/>
+<path d=""  transform="translate(1521, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨْܨٍ̣ܘٕܨٕ̭ܘܱܨِܴܡ̱</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0331.SYRJ=15@421,-398+0|uni0721.SYRJ=15+653|uni0734.SYRJ=12@135,-470+0|uni0650.SYRJ=12@135,-470+0|uni0728.Alt.SYRJ=12+279|uni0731.SYRJ=10@254,-98+0|uni0718.SYRJ=10+518|uni032D.SYRJ=7@86,-470+0|uni0655.SYRJ=7@86,-470+0|uni0728.SYRJ=7@50,0+308|uni0655.SYRJ=5@254,-98+0|uni0718.SYRJ=5+518|uni0323.SYRJ=2@86,-470+0|uni064D.SYRJ=2@86,-470+0|uni0728.SYRJ=2@50,0+308|uni0652.SYRJ=0@329,-176+0|uni0728.SYRJ=0@225,0+483</pre>
+
+
+
+<pre>Got     : uni0331.SYRJ=15@421,-398+0|uni0721.SYRJ=15+653|uni0734.SYRJ=12@135,-470+0|uni0650.SYRJ=12@135,-470+0|uni0728.Alt.SYRJ=12+279|uni0731.SYRJ=10@254,-98+0|uni0718.SYRJ=10+518|uni032D.SYRJ=7@86,-470+0|uni0655.SYRJ=7@86,-470+0|uni0728.SYRJ=7@50,0+308|uni0655.SYRJ=5@254,-98+0|uni0718.SYRJ=5+518|uni0323.SYRJ=2@86,-470+0|uni064D.SYRJ=2@86,-470+0|uni0728.SYRJ=2@50,0+308|uni0652.SYRJ=0@104,-176+0|uni0728.SYRJ=0+258</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                                    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2842 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(421, 588)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(788, 516)"/>
+<path d=""  transform="translate(788, 516)"/>
+<path d=""  transform="translate(653, 986)"/>
+<path d=""  transform="translate(1186, 888)"/>
+<path d=""  transform="translate(932, 986)"/>
+<path d=""  transform="translate(1536, 516)"/>
+<path d=""  transform="translate(1536, 516)"/>
+<path d=""  transform="translate(1500, 986)"/>
+<path d=""  transform="translate(2012, 888)"/>
+<path d=""  transform="translate(1758, 986)"/>
+<path d=""  transform="translate(2362, 516)"/>
+<path d=""  transform="translate(2362, 516)"/>
+<path d=""  transform="translate(2326, 986)"/>
+<path d=""  transform="translate(2688, 810)"/>
+<path d=""  transform="translate(2584, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3067 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(421, 588)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(788, 516)"/>
+<path d=""  transform="translate(788, 516)"/>
+<path d=""  transform="translate(653, 986)"/>
+<path d=""  transform="translate(1186, 888)"/>
+<path d=""  transform="translate(932, 986)"/>
+<path d=""  transform="translate(1536, 516)"/>
+<path d=""  transform="translate(1536, 516)"/>
+<path d=""  transform="translate(1500, 986)"/>
+<path d=""  transform="translate(2012, 888)"/>
+<path d=""  transform="translate(1758, 986)"/>
+<path d=""  transform="translate(2362, 516)"/>
+<path d=""  transform="translate(2362, 516)"/>
+<path d=""  transform="translate(2326, 986)"/>
+<path d=""  transform="translate(2913, 810)"/>
+<path d=""  transform="translate(2809, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܙܳܙّܨܼ݄ܘٕܨܸܼܙ݄ܨܹٕܡٕ܏ݍ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: None</pre>
+
+
+
+<pre>Got     : uni074D.Fina.SYRJ=20+583|SAM4xout=19@-1592,0+0|SAMline=19@-1266,0+0|SAMdot=19@-1031,0+0|SAMline=19@-561,0+0|SAM4in=19@-326,0+0|uni0655.SYRJ=17@375,-98+0|uni0721.Init.SYRJ=17+741|uni0655.SYRJ=14@36,-470+0|uni0739.SYRJ=14@36,-470+0|uni0728.SYRJ=14+258|uni0744.SYRJ=12@109,-445+0|uni0719.SYRJ=12+264|uni073C.SYRJ=9@135,-470+0|uni0738.SYRJ=9@135,-470+0|uni0728.Alt.SYRJ=9+279|uni0655.SYRJ=7@254,-98+0|uni0718.SYRJ=7+518|uni0744.SYRJ=4@86,-470+0|uni073C.SYRJ=4@86,-470+0|uni0728.SYRJ=4@50,0+308|uni0651.SYRJ=2@134,-5+0|uni0719.SYRJ=2+264|uni0733.SYRJ=0@159,-5+0|uni0719.SYRJ=0@25,0+289</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3504 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(-1009, 986)"/>
+<path d=""  transform="translate(-683, 986)"/>
+<path d=""  transform="translate(-448, 986)"/>
+<path d=""  transform="translate(22, 986)"/>
+<path d=""  transform="translate(257, 986)"/>
+<path d=""  transform="translate(958, 888)"/>
+<path d=""  transform="translate(583, 986)"/>
+<path d=""  transform="translate(1360, 516)"/>
+<path d=""  transform="translate(1360, 516)"/>
+<path d=""  transform="translate(1324, 986)"/>
+<path d=""  transform="translate(1691, 541)"/>
+<path d=""  transform="translate(1582, 986)"/>
+<path d=""  transform="translate(1981, 516)"/>
+<path d=""  transform="translate(1981, 516)"/>
+<path d=""  transform="translate(1846, 986)"/>
+<path d=""  transform="translate(2379, 888)"/>
+<path d=""  transform="translate(2125, 986)"/>
+<path d=""  transform="translate(2729, 516)"/>
+<path d=""  transform="translate(2729, 516)"/>
+<path d=""  transform="translate(2693, 986)"/>
+<path d=""  transform="translate(3085, 981)"/>
+<path d=""  transform="translate(2951, 986)"/>
+<path d=""  transform="translate(3374, 981)"/>
+<path d=""  transform="translate(3240, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܪًܝ̈ܨܹܼܠٍܨܸܷءܻء̱ܢ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0722.SYRJ=16+332|uni0331.SYRJ=14@264,-98+0|uni0621.SYRJ=14@35,0+497|uni073B.SYRJ=12@229,-98+0|uni0621.SYRJ=12+462|uni0737.SYRJ=9@259,-470+0|uni0738.SYRJ=9@259,-470+0|uni0728.FinaAlt.SYRJ=9@125,0+405|uni064D.SYRJ=7@192,-98+0|uni0720.Init.SYRJ=7+566|uni073C.SYRJ=4@37,-470+0|uni0739.SYRJ=4@37,-470+0|uni0728.Fina.SYRJ=4+260|uni0308.SYRJ=2@175,-201+0|uni071D.Init.SYRJ=2+309|uni064B.SYRJ=0@190,6+0|uni072A.SYRJ=0@10,0+359</pre>
+
+
+
+<pre>Got     : uni0722.SYRJ=16+332|uni0331.SYRJ=14@264,-98+0|uni0621.SYRJ=14@35,0+497|uni073B.SYRJ=12@229,-98+0|uni0621.SYRJ=12+462|uni0737.SYRJ=9@259,-470+0|uni0738.SYRJ=9@259,-470+0|uni0728.FinaAlt.SYRJ=9@125,0+405|uni064D.SYRJ=7@192,-98+0|uni0720.Init.SYRJ=7+566|uni073C.SYRJ=4@37,-470+0|uni0739.SYRJ=4@37,-470+0|uni0728.Fina.SYRJ=4+260|uni0308.SYRJ=2@175,-201+0|uni071D.Init.SYRJ=2+309|uni064B.SYRJ=0@180,6+0|uni072A.SYRJ=0+349</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                                                 ^                    ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3180 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(596, 888)"/>
+<path d=""  transform="translate(367, 986)"/>
+<path d=""  transform="translate(1058, 888)"/>
+<path d=""  transform="translate(829, 986)"/>
+<path d=""  transform="translate(1550, 516)"/>
+<path d=""  transform="translate(1550, 516)"/>
+<path d=""  transform="translate(1416, 986)"/>
+<path d=""  transform="translate(1888, 888)"/>
+<path d=""  transform="translate(1696, 986)"/>
+<path d=""  transform="translate(2299, 516)"/>
+<path d=""  transform="translate(2299, 516)"/>
+<path d=""  transform="translate(2262, 986)"/>
+<path d=""  transform="translate(2697, 785)"/>
+<path d=""  transform="translate(2522, 986)"/>
+<path d=""  transform="translate(3011, 992)"/>
+<path d=""  transform="translate(2831, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3190 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(596, 888)"/>
+<path d=""  transform="translate(367, 986)"/>
+<path d=""  transform="translate(1058, 888)"/>
+<path d=""  transform="translate(829, 986)"/>
+<path d=""  transform="translate(1550, 516)"/>
+<path d=""  transform="translate(1550, 516)"/>
+<path d=""  transform="translate(1416, 986)"/>
+<path d=""  transform="translate(1888, 888)"/>
+<path d=""  transform="translate(1696, 986)"/>
+<path d=""  transform="translate(2299, 516)"/>
+<path d=""  transform="translate(2299, 516)"/>
+<path d=""  transform="translate(2262, 986)"/>
+<path d=""  transform="translate(2697, 785)"/>
+<path d=""  transform="translate(2522, 986)"/>
+<path d=""  transform="translate(3021, 992)"/>
+<path d=""  transform="translate(2841, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܕ̈ܝܺܨ̱ܾܙ݈ܨٍܸܝ݄ܣܱ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0731.SYRJ=14@551,-98+0|uni0723.Fina.SYRJ=14+1089|uni0744.SYRJ=12@157,-98+0|uni071D.Init.SYRJ=12+309|uni0738.SYRJ=9@135,-470+0|uni064D.SYRJ=9@135,-470+0|uni0728.Alt.SYRJ=9+279|uni0748.SYRJ=7@109,-445+0|uni0719.SYRJ=7+264|uni073E.SYRJ=4@134,-600+0|uni0331.SYRJ=4@134,-470+0|uni0728.FinaAlt.SYRJ=4+280|uni073A.SYRJ=2@175,-201+0|uni071D.Init.SYRJ=2+309|uni0308.SYRJ=0@182,-179+0|uni0715.SYRJ=0@10,0+359</pre>
+
+
+
+<pre>Got     : uni0731.SYRJ=14@551,-98+0|uni0723.Fina.SYRJ=14+1089|uni0744.SYRJ=12@157,-98+0|uni071D.Init.SYRJ=12+309|uni0738.SYRJ=9@135,-470+0|uni064D.SYRJ=9@135,-470+0|uni0728.Alt.SYRJ=9+279|uni0748.SYRJ=7@109,-445+0|uni0719.SYRJ=7+264|uni073E.SYRJ=4@134,-600+0|uni0331.SYRJ=4@134,-470+0|uni0728.FinaAlt.SYRJ=4+280|uni073A.SYRJ=2@175,-201+0|uni071D.Init.SYRJ=2+309|uni0308.SYRJ=0@172,-179+0|uni0715.SYRJ=0+349</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2879 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(551, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1246, 888)"/>
+<path d=""  transform="translate(1089, 986)"/>
+<path d=""  transform="translate(1533, 516)"/>
+<path d=""  transform="translate(1533, 516)"/>
+<path d=""  transform="translate(1398, 986)"/>
+<path d=""  transform="translate(1786, 541)"/>
+<path d=""  transform="translate(1677, 986)"/>
+<path d=""  transform="translate(2075, 386)"/>
+<path d=""  transform="translate(2075, 516)"/>
+<path d=""  transform="translate(1941, 986)"/>
+<path d=""  transform="translate(2396, 785)"/>
+<path d=""  transform="translate(2221, 986)"/>
+<path d=""  transform="translate(2702, 807)"/>
+<path d=""  transform="translate(2530, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2889 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(551, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1246, 888)"/>
+<path d=""  transform="translate(1089, 986)"/>
+<path d=""  transform="translate(1533, 516)"/>
+<path d=""  transform="translate(1533, 516)"/>
+<path d=""  transform="translate(1398, 986)"/>
+<path d=""  transform="translate(1786, 541)"/>
+<path d=""  transform="translate(1677, 986)"/>
+<path d=""  transform="translate(2075, 386)"/>
+<path d=""  transform="translate(2075, 516)"/>
+<path d=""  transform="translate(1941, 986)"/>
+<path d=""  transform="translate(2396, 785)"/>
+<path d=""  transform="translate(2221, 986)"/>
+<path d=""  transform="translate(2712, 807)"/>
+<path d=""  transform="translate(2540, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">܏ܨܨ݈̣ܩܷܨٍ̤ܘ̰</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: None</pre>
+
+
+
+<pre>Got     : uni0330.SYRJ=10@254,-98+0|uni0718.SYRJ=10+518|uni0324.SYRJ=7@87,-470+0|uni064D.SYRJ=7@87,-470+0|uni0728.Fina.SYRJ=7@50,0+310|uni0737.SYRJ=5@296,-98+0|uni0729.Init.SYRJ=5+570|uni0323.SYRJ=2@86,-470+0|uni0748.SYRJ=2@86,-470+0|uni0728.SYRJ=2@50,0+308|uni0728.SYRJ=1+258|SAM4xout=0@-1964,0+0|SAMline=0@-1638,0+0|SAMline=0@-1452,0+0|SAMdot=0@-1217,0+0|SAMline=0@-747,0+0|SAMline=0@-561,0+0|SAM4in=0@-326,0+0</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1964 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(254, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(605, 516)"/>
+<path d=""  transform="translate(605, 516)"/>
+<path d=""  transform="translate(568, 986)"/>
+<path d=""  transform="translate(1124, 888)"/>
+<path d=""  transform="translate(828, 986)"/>
+<path d=""  transform="translate(1484, 516)"/>
+<path d=""  transform="translate(1484, 516)"/>
+<path d=""  transform="translate(1448, 986)"/>
+<path d=""  transform="translate(1706, 986)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(326, 986)"/>
+<path d=""  transform="translate(512, 986)"/>
+<path d=""  transform="translate(747, 986)"/>
+<path d=""  transform="translate(1217, 986)"/>
+<path d=""  transform="translate(1403, 986)"/>
+<path d=""  transform="translate(1638, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̠̱ܡ̣ܨ݈̠ܙ݆ܢَ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni064E.SYRJ=10@164,-177+0|uni0722.SYRJ=10+332|uni0746.SYRJ=8@304,-445+0|uni0719.SYRJ=8@195,0+459|uni0320.SYRJ=5@134,-470+0|uni0748.SYRJ=5@134,-470+0|uni0728.FinaAlt.SYRJ=5+280|uni0323.SYRJ=3@375,-98+0|uni0721.Init.SYRJ=3+741|uni0331.SYRJ=0@36,-470+0|uni0320.SYRJ=0@36,-470+0|uni0728.SYRJ=0+258</pre>
+
+
+
+<pre>Got     : uni064E.SYRJ=10@164,-177+0|uni0722.SYRJ=10+332|uni0746.SYRJ=8@249,-445+0|uni0719.SYRJ=8@140,0+404|uni0320.SYRJ=5@134,-470+0|uni0748.SYRJ=5@134,-470+0|uni0728.FinaAlt.SYRJ=5+280|uni0323.SYRJ=3@375,-98+0|uni0721.Init.SYRJ=3+741|uni0331.SYRJ=0@36,-470+0|uni0320.SYRJ=0@36,-470+0|uni0728.SYRJ=0+258</pre>
+
+
+
+<pre>                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2015 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(164, 809)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(581, 541)"/>
+<path d=""  transform="translate(472, 986)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(870, 516)"/>
+<path d=""  transform="translate(736, 986)"/>
+<path d=""  transform="translate(1391, 888)"/>
+<path d=""  transform="translate(1016, 986)"/>
+<path d=""  transform="translate(1793, 516)"/>
+<path d=""  transform="translate(1793, 516)"/>
+<path d=""  transform="translate(1757, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 2070 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(164, 809)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(636, 541)"/>
+<path d=""  transform="translate(527, 986)"/>
+<path d=""  transform="translate(925, 516)"/>
+<path d=""  transform="translate(925, 516)"/>
+<path d=""  transform="translate(791, 986)"/>
+<path d=""  transform="translate(1446, 888)"/>
+<path d=""  transform="translate(1071, 986)"/>
+<path d=""  transform="translate(1848, 516)"/>
+<path d=""  transform="translate(1848, 516)"/>
+<path d=""  transform="translate(1812, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܙٰܐܨܜ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni071C.SYRJ=4+526|uni0728.SYRJ=3@215,0+473|uni0710.SYRJ=2+292|uni0670.SYRJ=0@134,-5+0|uni0719.SYRJ=0+264</pre>
+
+
+
+<pre>Got     : uni071C.SYRJ=4+526|uni0728.SYRJ=3+258|uni0710.SYRJ=2+292|uni0670.SYRJ=0@134,-5+0|uni0719.SYRJ=0+264</pre>
+
+
+
+<pre>                                           ++++++ ^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1340 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(526, 986)"/>
+<path d=""  transform="translate(784, 986)"/>
+<path d=""  transform="translate(1210, 981)"/>
+<path d=""  transform="translate(1076, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1555 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(741, 986)"/>
+<path d=""  transform="translate(999, 986)"/>
+<path d=""  transform="translate(1425, 981)"/>
+<path d=""  transform="translate(1291, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܼ̣ܩ݈ܨ̰݄ܡܹܨ݈݄ܡ̱܏ܧ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: None</pre>
+
+
+
+<pre>Got     : uni0727.Fina.SYRJ=16+851|SAM4xout=15@-1592,0+0|SAMline=15@-1266,0+0|SAMdot=15@-1031,0+0|SAMline=15@-561,0+0|SAM4in=15@-326,0+0|uni0331.SYRJ=13@375,-98+0|uni0721.Init.SYRJ=13+741|uni0744.SYRJ=10@37,-470+0|uni0748.SYRJ=10@37,-470+0|uni0728.Fina.SYRJ=10+260|uni0739.SYRJ=8@375,-98+0|uni0721.Init.SYRJ=8+741|uni0744.SYRJ=5@34,-622+0|uni0330.SYRJ=5@37,-470+0|uni0728.Fina.SYRJ=5+260|uni0748.SYRJ=3@296,-98+0|uni0729.Init.SYRJ=3+570|uni0323.SYRJ=0@86,-470+0|uni073C.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3731 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(-741, 986)"/>
+<path d=""  transform="translate(-415, 986)"/>
+<path d=""  transform="translate(-180, 986)"/>
+<path d=""  transform="translate(290, 986)"/>
+<path d=""  transform="translate(525, 986)"/>
+<path d=""  transform="translate(1226, 888)"/>
+<path d=""  transform="translate(851, 986)"/>
+<path d=""  transform="translate(1629, 516)"/>
+<path d=""  transform="translate(1629, 516)"/>
+<path d=""  transform="translate(1592, 986)"/>
+<path d=""  transform="translate(2227, 888)"/>
+<path d=""  transform="translate(1852, 986)"/>
+<path d=""  transform="translate(2627, 364)"/>
+<path d=""  transform="translate(2630, 516)"/>
+<path d=""  transform="translate(2593, 986)"/>
+<path d=""  transform="translate(3149, 888)"/>
+<path d=""  transform="translate(2853, 986)"/>
+<path d=""  transform="translate(3509, 516)"/>
+<path d=""  transform="translate(3509, 516)"/>
+<path d=""  transform="translate(3473, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨܱء݄܏ܔ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: None</pre>
+
+
+
+<pre>Got     : uni0714.SYRJ=5+848|SAM4xout=4@-1592,0+0|SAMline=4@-1266,0+0|SAMdot=4@-1031,0+0|SAMline=4@-561,0+0|SAM4in=4@-326,0+0|uni0744.SYRJ=2@229,-98+0|uni0621.SYRJ=2+462|uni0731.SYRJ=0@260,-470+0|uni0728.Alt.SYRJ=0@125,0+404</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1714 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(-744, 986)"/>
+<path d=""  transform="translate(-418, 986)"/>
+<path d=""  transform="translate(-183, 986)"/>
+<path d=""  transform="translate(287, 986)"/>
+<path d=""  transform="translate(522, 986)"/>
+<path d=""  transform="translate(1077, 888)"/>
+<path d=""  transform="translate(848, 986)"/>
+<path d=""  transform="translate(1570, 516)"/>
+<path d=""  transform="translate(1435, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ݆̱ء݆ܨܸ̭ܘ̭ܨ݈ٕءܱܐًܘ݄ܢ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0722.SYRJ=19+332|uni0744.SYRJ=17@184,-98+0|uni0718.SYRJ=17@-70,0+448|uni064B.SYRJ=15@136,221+0|uni0710.SYRJ=15+292|uni0731.SYRJ=13@229,-98+0|uni0621.SYRJ=13+462|uni0655.SYRJ=10@260,-470+0|uni0748.SYRJ=10@260,-470+0|uni0728.Alt.SYRJ=10@125,0+404|uni032D.SYRJ=8@254,-98+0|uni0718.SYRJ=8+518|uni032D.SYRJ=5@86,-470+0|uni0738.SYRJ=5@86,-470+0|uni0728.SYRJ=5@50,0+308|uni0746.SYRJ=3@229,-98+0|uni0621.SYRJ=3+462|uni0331.SYRJ=0@260,-470+0|uni0746.SYRJ=0@260,-470+0|uni0728.Alt.SYRJ=0@125,0+404</pre>
+
+
+
+<pre>Got     : uni0722.SYRJ=19+332|uni0744.SYRJ=17@254,-98+0|uni0718.SYRJ=17+518|uni064B.SYRJ=15@136,221+0|uni0710.SYRJ=15+292|uni0731.SYRJ=13@229,-98+0|uni0621.SYRJ=13+462|uni0655.SYRJ=10@260,-470+0|uni0748.SYRJ=10@260,-470+0|uni0728.Alt.SYRJ=10@125,0+404|uni032D.SYRJ=8@254,-98+0|uni0718.SYRJ=8+518|uni032D.SYRJ=5@86,-470+0|uni0738.SYRJ=5@86,-470+0|uni0728.SYRJ=5@50,0+308|uni0746.SYRJ=3@229,-98+0|uni0621.SYRJ=3+462|uni0331.SYRJ=0@260,-470+0|uni0746.SYRJ=0@260,-470+0|uni0728.Alt.SYRJ=0@125,0+404</pre>
+
+
+
+<pre>                                              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3700 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(586, 888)"/>
+<path d=""  transform="translate(332, 986)"/>
+<path d=""  transform="translate(986, 1207)"/>
+<path d=""  transform="translate(850, 986)"/>
+<path d=""  transform="translate(1371, 888)"/>
+<path d=""  transform="translate(1142, 986)"/>
+<path d=""  transform="translate(1864, 516)"/>
+<path d=""  transform="translate(1864, 516)"/>
+<path d=""  transform="translate(1729, 986)"/>
+<path d=""  transform="translate(2262, 888)"/>
+<path d=""  transform="translate(2008, 986)"/>
+<path d=""  transform="translate(2612, 516)"/>
+<path d=""  transform="translate(2612, 516)"/>
+<path d=""  transform="translate(2576, 986)"/>
+<path d=""  transform="translate(3063, 888)"/>
+<path d=""  transform="translate(2834, 986)"/>
+<path d=""  transform="translate(3556, 516)"/>
+<path d=""  transform="translate(3556, 516)"/>
+<path d=""  transform="translate(3421, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3630 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(516, 888)"/>
+<path d=""  transform="translate(262, 986)"/>
+<path d=""  transform="translate(916, 1207)"/>
+<path d=""  transform="translate(780, 986)"/>
+<path d=""  transform="translate(1301, 888)"/>
+<path d=""  transform="translate(1072, 986)"/>
+<path d=""  transform="translate(1794, 516)"/>
+<path d=""  transform="translate(1794, 516)"/>
+<path d=""  transform="translate(1659, 986)"/>
+<path d=""  transform="translate(2192, 888)"/>
+<path d=""  transform="translate(1938, 986)"/>
+<path d=""  transform="translate(2542, 516)"/>
+<path d=""  transform="translate(2542, 516)"/>
+<path d=""  transform="translate(2506, 986)"/>
+<path d=""  transform="translate(2993, 888)"/>
+<path d=""  transform="translate(2764, 986)"/>
+<path d=""  transform="translate(3486, 516)"/>
+<path d=""  transform="translate(3486, 516)"/>
+<path d=""  transform="translate(3351, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܪٰܝ݇ܨܼ̣ܠܴܤܹܨ݈̮ܠ̰</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0330.SYRJ=14@423,-98+0|uni0720.SYRJ=14+749|uni032E.SYRJ=11@37,-470+0|uni0748.SYRJ=11@37,-470+0|uni0728.Fina.SYRJ=11+260|uni0739.SYRJ=9@412,-98+0|uni0724.Medi.SYRJ=9+827|uni0734.SYRJ=7@192,-98+0|uni0720.Init.SYRJ=7+566|uni0323.SYRJ=4@37,-470+0|uni073C.SYRJ=4@37,-470+0|uni0728.Fina.SYRJ=4+260|uni0747.SYRJ=2@175,-201+0|uni071D.Init.SYRJ=2+309|uni0670.SYRJ=0@190,6+0|uni072A.SYRJ=0@10,0+359</pre>
+
+
+
+<pre>Got     : uni0330.SYRJ=14@423,-98+0|uni0720.SYRJ=14+749|uni032E.SYRJ=11@37,-470+0|uni0748.SYRJ=11@37,-470+0|uni0728.Fina.SYRJ=11+260|uni0739.SYRJ=9@412,-98+0|uni0724.Medi.SYRJ=9+827|uni0734.SYRJ=7@192,-98+0|uni0720.Init.SYRJ=7+566|uni0323.SYRJ=4@37,-470+0|uni073C.SYRJ=4@37,-470+0|uni0728.Fina.SYRJ=4+260|uni0747.SYRJ=2@175,-201+0|uni071D.Init.SYRJ=2+309|uni0670.SYRJ=0@180,6+0|uni072A.SYRJ=0+349</pre>
+
+
+
+<pre>                                                                                                                                                                                                                                                                                                                                                                                   ^                    ^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3320 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(423, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(749, 986)"/>
+<path d=""  transform="translate(1421, 888)"/>
+<path d=""  transform="translate(1009, 986)"/>
+<path d=""  transform="translate(2028, 888)"/>
+<path d=""  transform="translate(1836, 986)"/>
+<path d=""  transform="translate(2439, 516)"/>
+<path d=""  transform="translate(2439, 516)"/>
+<path d=""  transform="translate(2402, 986)"/>
+<path d=""  transform="translate(2837, 785)"/>
+<path d=""  transform="translate(2662, 986)"/>
+<path d=""  transform="translate(3151, 992)"/>
+<path d=""  transform="translate(2971, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 3330 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(423, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(786, 516)"/>
+<path d=""  transform="translate(749, 986)"/>
+<path d=""  transform="translate(1421, 888)"/>
+<path d=""  transform="translate(1009, 986)"/>
+<path d=""  transform="translate(2028, 888)"/>
+<path d=""  transform="translate(1836, 986)"/>
+<path d=""  transform="translate(2439, 516)"/>
+<path d=""  transform="translate(2439, 516)"/>
+<path d=""  transform="translate(2402, 986)"/>
+<path d=""  transform="translate(2837, 785)"/>
+<path d=""  transform="translate(2662, 986)"/>
+<path d=""  transform="translate(3161, 992)"/>
+<path d=""  transform="translate(2981, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̰̮ܡ݄ܨ̣̤ܠ݈ܨܱܼء݈ܖٔܝ݀ܩ</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni0729.Fina.SYRJ=19+856|uni0740.SYRJ=17@175,-201+0|uni071D.Init.SYRJ=17+309|uni0654.SYRJ=15@182,-179+0|uni0716.SYRJ=15@10,0+359|uni0748.SYRJ=13@229,-98+0|uni0621.SYRJ=13+462|uni073C.SYRJ=10@259,-470+0|uni0731.SYRJ=10@259,-470+0|uni0728.FinaAlt.SYRJ=10@125,0+405|uni0748.SYRJ=8@192,-98+0|uni0720.Init.SYRJ=8+566|uni0324.SYRJ=5@37,-470+0|uni0323.SYRJ=5@37,-470+0|uni0728.Fina.SYRJ=5+260|uni0744.SYRJ=3@375,-98+0|uni0721.Init.SYRJ=3+741|uni032E.SYRJ=0@36,-470+0|uni0330.SYRJ=0@36,-470+0|uni0728.SYRJ=0+258</pre>
+
+
+
+<pre>Got     : uni0729.Fina.SYRJ=19+856|uni0740.SYRJ=17@175,-201+0|uni071D.Init.SYRJ=17+309|uni0654.SYRJ=15@172,-179+0|uni0716.SYRJ=15+349|uni0748.SYRJ=13@229,-98+0|uni0621.SYRJ=13+462|uni073C.SYRJ=10@259,-470+0|uni0731.SYRJ=10@259,-470+0|uni0728.FinaAlt.SYRJ=10@125,0+405|uni0748.SYRJ=8@192,-98+0|uni0720.Init.SYRJ=8+566|uni0324.SYRJ=5@37,-470+0|uni0323.SYRJ=5@37,-470+0|uni0728.Fina.SYRJ=5+260|uni0744.SYRJ=3@375,-98+0|uni0721.Init.SYRJ=3+741|uni032E.SYRJ=0@36,-470+0|uni0330.SYRJ=0@36,-470+0|uni0728.SYRJ=0+258</pre>
+
+
+
+<pre>                                                                                                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4206 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1031, 785)"/>
+<path d=""  transform="translate(856, 986)"/>
+<path d=""  transform="translate(1337, 807)"/>
+<path d=""  transform="translate(1165, 986)"/>
+<path d=""  transform="translate(1743, 888)"/>
+<path d=""  transform="translate(1514, 986)"/>
+<path d=""  transform="translate(2235, 516)"/>
+<path d=""  transform="translate(2235, 516)"/>
+<path d=""  transform="translate(2101, 986)"/>
+<path d=""  transform="translate(2573, 888)"/>
+<path d=""  transform="translate(2381, 986)"/>
+<path d=""  transform="translate(2984, 516)"/>
+<path d=""  transform="translate(2984, 516)"/>
+<path d=""  transform="translate(2947, 986)"/>
+<path d=""  transform="translate(3582, 888)"/>
+<path d=""  transform="translate(3207, 986)"/>
+<path d=""  transform="translate(3984, 516)"/>
+<path d=""  transform="translate(3984, 516)"/>
+<path d=""  transform="translate(3948, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 4216 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1031, 785)"/>
+<path d=""  transform="translate(856, 986)"/>
+<path d=""  transform="translate(1347, 807)"/>
+<path d=""  transform="translate(1175, 986)"/>
+<path d=""  transform="translate(1753, 888)"/>
+<path d=""  transform="translate(1524, 986)"/>
+<path d=""  transform="translate(2245, 516)"/>
+<path d=""  transform="translate(2245, 516)"/>
+<path d=""  transform="translate(2111, 986)"/>
+<path d=""  transform="translate(2583, 888)"/>
+<path d=""  transform="translate(2391, 986)"/>
+<path d=""  transform="translate(2994, 516)"/>
+<path d=""  transform="translate(2994, 516)"/>
+<path d=""  transform="translate(2957, 986)"/>
+<path d=""  transform="translate(3592, 888)"/>
+<path d=""  transform="translate(3217, 986)"/>
+<path d=""  transform="translate(3994, 516)"/>
+<path d=""  transform="translate(3994, 516)"/>
+<path d=""  transform="translate(3958, 986)"/>
+</svg>
+
+
+</div>
+<div class="shaping">
+
+<li>Shaping did not match: <span class="tf">ܨ̮ܱܘ̤ܥ̮</span> (Added by SIESTA)</li>
+
+
+<pre>{'language': 'x-hbot-5359524A'}</pre>
+
+
+
+<pre>Expected: uni032E.SYRJ=5@414,-98+0|uni0725.SYRJ=5+750|uni0324.SYRJ=3@216,-98+0|uni0718.SYRJ=3@-38,0+480|uni0731.SYRJ=0@83,-592+0|uni032E.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>Got     : uni032E.SYRJ=5@414,-98+0|uni0725.SYRJ=5+750|uni0324.SYRJ=3@254,-98+0|uni0718.SYRJ=3+518|uni0731.SYRJ=0@83,-592+0|uni032E.SYRJ=0@86,-470+0|uni0728.SYRJ=0@50,0+308</pre>
+
+
+
+<pre>                                                                      ^^                     ++++++ ^ +
+</pre>
+
+
+Got: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1576 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(414, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(1004, 888)"/>
+<path d=""  transform="translate(750, 986)"/>
+<path d=""  transform="translate(1351, 394)"/>
+<path d=""  transform="translate(1354, 516)"/>
+<path d=""  transform="translate(1318, 986)"/>
+</svg>
+ Expected: <svg class="shaping-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1538 2412" transform="matrix(1 0 0 -1 0 0)">
+<path d=""  transform="translate(414, 888)"/>
+<path d=""  transform="translate(0, 986)"/>
+<path d=""  transform="translate(966, 888)"/>
+<path d=""  transform="translate(712, 986)"/>
+<path d=""  transform="translate(1313, 394)"/>
+<path d=""  transform="translate(1316, 516)"/>
+<path d=""  transform="translate(1280, 986)"/>
+</svg>
+
+
+</div> [code: shaping-regression]
+</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
+
+
+* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
+	* SAM4xout
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure Stylistic Sets have description. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/stylisticset_description">com.google.fonts/check/stylisticset_description</a>)</summary><div>
+
+
+* ⚠ **WARN** The stylistic set ss01 lacks a description string on the 'name' table. [code: missing-description]
+* ⚠ **WARN** The stylistic set ss02 lacks a description string on the 'name' table. [code: missing-description]
+</div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
+
+
+* ⚠ **WARN** This font file does not have a 'meta' table. [code: lacks-meta-table]
+</div></details><details><summary>⚠ <b>WARN:</b> Font has **proper** whitespace glyph names? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/whitespace_glyphnames">com.google.fonts/check/whitespace_glyphnames</a>)</summary><div>
+
+
+* ⚠ **WARN** Glyph 0x00A0 is called "nbspace": Change to "uni00A0" [code: not-recommended-00a0]
+</div></details><details><summary>⚠ <b>WARN:</b> Check font contains no unreachable glyphs (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/unreachable_glyphs">com.google.fonts/check/unreachable_glyphs</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
+
+	- tildecomb
+
+	- macroncomb
+
+	- uni0728.FinaNun.SYRJ
+
+	- ringcomb
+
+	- uni0722.Sadhe.SYRJ
+
+	- uni0728.AltNun.SYRJ
+
+	- uni0728.FinaAltNun.SYRJ
+
+	- guillemetleft
+
+	- guillemetright
+
+	- uni0728.Nun.SYRJ
+
+	- dieresiscomb 
+
+	- And dotaccentcomb
+ [code: unreachable-glyphs]
+</div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
+
+
+* ⚠ **WARN** This check inspects the glyph outlines and detects the total number of contours in each of them. The expected values are infered from the typical ammounts of contours observed in a large collection of reference font families. The divergences listed below may simply indicate a significantly different design on some of your glyphs. On the other hand, some of these may flag actual bugs in the font such as glyphs mapped to an incorrect codepoint. Please consider reviewing the design and codepoint assignment of these to make sure they are correct.
+
+The following glyphs do not have the recommended number of contours:
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2
+
+	- Glyph name: uogonek	Contours detected: 2	Expected: 1
+
+	- Glyph name: aogonek	Contours detected: 3	Expected: 2 
+
+	- And Glyph name: uogonek	Contours detected: 2	Expected: 1
+ [code: contour-count]
+</div></details><details><summary>⚠ <b>WARN:</b> Check glyphs in mark glyph class are non-spacing. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_spacing_marks">com.google.fonts/check/gdef_spacing_marks</a>)</summary><div>
+
+
+* ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
+	 SAM4in (unencoded), SAM4xout (unencoded), SAMdot (unencoded) and SAMline (unencoded) [code: spacing-mark-glyphs]
+</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
+
+
+* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
+	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), gravecomb (U+0300), hungarumlautcomb (U+030B) and ogonekcomb (U+0328) [code: mark-chars]
+</div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
+
+
+* ⚠ **WARN** The following glyphs have segments which seem very short:
+
+	* two (U+0032) contains a short segment L<<159.0,84.0>--<159.0,80.0>>
+
+	* at (U+0040) contains a short segment B<<613.0,293.0>-<612.0,275.0>-<612.0,267.5>>
+
+	* at (U+0040) contains a short segment B<<612.0,267.5>-<612.0,260.0>-<612.0,257.0>>
+
+	* M (U+004D) contains a short segment L<<177.0,626.0>--<173.0,626.0>>
+
+	* M (U+004D) contains a short segment L<<450.0,129.0>--<454.0,129.0>>
+
+	* N (U+004E) contains a short segment L<<176.0,593.0>--<172.0,593.0>>
+
+	* N (U+004E) contains a short segment L<<582.0,123.0>--<586.0,123.0>>
+
+	* Q (U+0051) contains a short segment B<<416.0,-9.0>-<410.0,-9.0>-<403.5,-9.5>>
+
+	* Q (U+0051) contains a short segment B<<403.5,-9.5>-<397.0,-10.0>-<391.0,-10.0>>
+
+	* W (U+0057) contains a short segment B<<468.0,577.5>-<463.0,600.0>-<461.0,609.0>> 
+
+	* And 80 more.
+
+Use -F or --full-lists to disable shortening of long lists. [code: found-short-segments]
+</div></details><br></div></details>
+### Summary
+
+| 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
+|:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
+| 0 | 7 | 9 | 115 | 8 | 96 | 0 |
+| 0% | 3% | 4% | 49% | 3% | 41% | 0% |
+
+**Note:** The following loglevels were omitted in this report:
+* **SKIP**
+* **INFO**
+* **PASS**
+* **DEBUG**
