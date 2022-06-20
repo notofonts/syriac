@@ -1,0 +1,669 @@
+{
+    "tests": [
+        {
+            "expectation": "uni073B.SYRN=8@483,-99+0|uni0729.SYRN=8+884|uni0739.SYRN=5@262,-456+0|uni0650.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni073B.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni073B.SYRN=0@333,-595+0|uni0324.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662",
+            "input": "ܨ̤ܻܠܻܨِܹܩܻ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0731.SYRN=10@159,-173+0|uni0719.SYRN=10+293|uni032D.SYRN=7@262,-456+0|uni0650.SYRN=7@262,-456+0|uni0728.SYRN=7+587|uni0734.SYRN=5@289,-98+0|uni0718.SYRN=5+578|uni0744.SYRN=2@258,-566+0|uni032E.SYRN=2@262,-456+0|uni0728.Fina.SYRN=2+556|uni0654.SYRN=0@197,113+0|uni0726.Init.SYRN=0+568",
+            "input": "ܦٔܨ̮݄ܘܴܨِ̭ܙܱ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0731.SYRN=18@159,-173+0|uni0719.SYRN=18+293|uni032D.SYRN=15@262,-456+0|uni032E.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0738.SYRN=13@289,-98+0|uni0718.SYRN=13+578|uni0655064D.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0650.SYRN=8@289,-98+0|uni0718.SYRN=8+578|uni073E.SYRN=5@262,-456+0|uni0734.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0331.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0731.SYRN=0@237,-456+0|uni0737.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨܷܱܝ̱ܨܴܾܘِܨٍٕܘܸܨ̮̭ܙܱ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0324.SYRN=12@435,-99+0|uni0721.SYRN=12+705|uni0746.SYRN=9@262,-456+0|uni073B.SYRN=9@262,-456+0|uni0728.SYRN=9+587|uni0739.SYRN=7@289,-98+0|uni0718.SYRN=7+578|uni073B.SYRN=4@262,-456+0|uni0655.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni0731.SYRN=2@159,-173+0|uni0719.SYRN=2+293|uni032D.SYRN=0@209,-173+0|uni0719.SYRN=0@50,0+343",
+            "input": "ܙ̭ܙܱܨٕܻܘܹܨܻ݆ܡ̤",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni073E.SYRN=8@435,-99+0|uni0721.SYRN=8+705|uni0324.SYRN=5@262,-456+0|uni0330.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni073B.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni073B.SYRN=0@237,-456+0|uni0748.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨ݈ܻܝܻܨ̰̤ܡܾ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0746.SYRN=23@396,-98+0|uni0720.SYRN=23+800|uni0330.SYRN=20@337,-456+0|uni0650.SYRN=20@337,-456+0|uni0728.Fina.SYRN=20@75,0+631|uni0731.SYRN=18@166,-97+0|uni071D.Init.SYRN=18+308|uni0739.SYRN=15@237,-456+0|uni064D.SYRN=15@237,-456+0|uni0728.Fina.SYRN=15@-25,0+531|uni0748.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0331.SYRN=10@337,-456+0|uni0748.SYRN=10@337,-456+0|uni0728.Fina.SYRN=10@75,0+631|uni0744.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0731.SYRN=5@262,-594+0|uni0323.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0748.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0744.SYRN=0@337,-456+0|uni0737.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662",
+            "input": "ܨܷ݄ܠ݈ܨ̣ܱܡ݄ܨ݈̱ܠ݈ܨٍܹܝܱܨِ̰ܠ݆",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0738.SYRN=8@483,-99+0|uni0729.SYRN=8+884|uni073B.SYRN=5@262,-456+0|uni0734.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0731.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni0748.SYRN=0@262,-456+0|uni0739.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܹ݈ܩܱܨܴܻܩܸ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni073E.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni0739.SYRN=10@300,-456+0|uni0738.SYRN=10@300,-456+0|uni0728.Fina.SYRN=10@38,0+594|uni032D.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni073B.SYRN=5@258,-595+0|uni0324.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0734.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni0738.SYRN=0@258,-597+0|uni0330.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̰ܸܩܴܨ̤ܻܡ̭ܨܸܹءܾ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0331.SYRN=12@289,-98+0|uni0718.SYRN=12+578|uni0323.SYRN=9@262,-456+0|uni0323.SYRN=9@262,-456+0|uni0728.Fina.SYRN=9+556|uni0745.SYRN=7@151,-108+0|uni071D.Init.SYRN=7+308|uni0653.SYRN=5@248,-37+0|uni0715.Fina.SYRN=5+518|uni0748.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073C.SYRN=0@262,-456+0|uni064D.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨٍܼܡ݈ܕٓܝ݅ܨ̣̣ܘ̱",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni032D.SYRN=16@289,-98+0|uni0718.SYRN=16+578|uni073C.SYRN=13@262,-456+0|uni0738.SYRN=13@262,-456+0|uni0728.Fina.SYRN=13+556|uni0711.SYRN=9@54,231+0|FC62=9@54,231+0|uni072E.MediW.SYRN=9+518|uni0746.SYRN=7@166,-97+0|uni071D.Init.SYRN=7+308|uni0320.SYRN=5+0|uni0728.Fina.SYRN=5@-25,0+531|uni0737.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073E.SYRN=0@262,-456+0|uni073E.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܾܾܡܷܨ̠ܝ݆ܮِّܑܨܸܼܘ̭",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0655.SYRN=7@238,-98+0|uni0621.SYRN=7+471|uni0738.SYRN=5@300,-456+0|uni0728.SYRN=5@38,0+625|uni0744.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0320.SYRN=0+0|uni0731.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܱ̠ܘ݄ܨܸءٕ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0323.SYRN=20@238,-98+0|uni0621.SYRN=20+471|uni073E.SYRN=17@300,-456+0|uni0650.SYRN=17@300,-456+0|uni0728.SYRN=17@38,0+625|uni0320.SYRN=15+0|uni0621.SYRN=15+471|uni0746.SYRN=12@300,-456+0|uni0650.SYRN=12@300,-456+0|uni0728.Fina.SYRN=12@38,0+594|uni0731.SYRN=10@355,-98+0|uni0721.Init.SYRN=10+761|uni073B.SYRN=7@262,-456+0|uni0744.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0304.SYRN=5@289,162+0|uni074E.Medi.SYRN=5+574|uni0323.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0331.SYRN=0@237,-456+0|uni032E.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨ̮̱ܝ̣ݎ̄ܨ݄ܻܡܱܨِ݆ء̠ܨِܾء̣",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0740.SYRN=17@492,-98+0|uni071D.SYRN=17+628|uni0747.SYRN=15@251,145+0|uni072A.Fina.SYRN=15+518|uni0731.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0738.SYRN=10@337,-456+0|uni073E.SYRN=10@337,-456+0|uni0728.SYRN=10@75,0+662|uni0320.SYRN=8+0|uni0718.SYRN=8+578|uni0737.SYRN=5@258,-595+0|uni0324.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0323.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0331.SYRN=0@262,-456+0|uni0330.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̰̱ܡ̣ܨ̤ܷܘ̠ܨܾܸܠܱܪ݇ܝ݀",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0651.SYRN=7@152,-57+0|uni0719.SYRN=7+293|uni0730.SYRN=5@203,-57+0|uni0719.Fina.SYRN=5@50,0+367|uni0739.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0739.SYRN=0@262,-594+0|uni0323.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̣ܹܡܹܙܰܙّ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0323.SYRN=15@435,-99+0|uni0721.SYRN=15+705|uni0320.SYRN=12+0|uni064D.SYRN=12@262,-456+0|uni0728.Fina.SYRN=12+556|uni064F.SYRN=10@209,151+0|uni072D.Medi.SYRN=10+574|uni0744.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0748.SYRN=5@233,-597+0|uni0330.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni0744.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni0324.SYRN=0@262,-456+0|uni032E.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̮̤ܩ݄ܨ̰݈ܝ݄ܭُܨٍ̠ܡ̣",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0331.SYRN=13@435,-99+0|uni0721.SYRN=13+705|uni0330.SYRN=10@262,-456+0|uni0737.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0722.Init.SYRN=9+364|uni0737.SYRN=7@172,-141+0|uni0710.Medi2.SYRN=7+356|uni074A.SYRN=5@189,-239+0|uni0640.SYRN=5+379|uni073E.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0748.SYRN=0@296,-566+0|uni032E.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625",
+            "input": "ܨ̮݈ءܾـ݊ܐܷܢܨܷ̰ܡ̱",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0655.SYRN=12@396,-98+0|uni0720.SYRN=12+800|uni032E.SYRN=10@337,-456+0|uni0728.Fina.SYRN=10@75,0+631|uni0650.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni073C.SYRN=5@337,-456+0|uni0739.SYRN=5@337,-456+0|uni0728.Fina.SYRN=5@75,0+631|uni0330.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0744.SYRN=0@237,-456+0|uni073B.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨܻ݄ܝ̰ܨܹܼܠِܨ̮ܠٕ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni073B.SYRN=12@238,-98+0|uni0621.SYRN=12+471|uni0655.SYRN=9@300,-456+0|uni073E.SYRN=9@300,-456+0|uni0728.SYRN=9@38,0+625|uni0743.SYRN=7@152,-57+0|uni0719.SYRN=7+293|uni073D.SYRN=5@203,-57+0|uni0719.Fina.SYRN=5@50,0+367|uni032E.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0744.SYRN=0@262,-456+0|uni073C.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܼ݄ܡ̮ܙܽܙ݃ܨܾٕءܻ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni073E.SYRN=18@238,-98+0|uni0621.SYRN=18+471|uni0655.SYRN=15@300,-576+0|uni0331.SYRN=15@300,-456+0|uni0728.Fina.SYRN=15@38,0+594|uni073C.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni0739.SYRN=10@258,-617+0|uni032D.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0734.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0650.SYRN=5@237,-456+0|uni0650.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni0323.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni06550650.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨِٕܡ̣ܨِِܝܴܨ̭ܹܩܼܨ̱ٕءܾ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0738.SYRN=16@159,-173+0|uni0719.SYRN=16+293|uni0746.SYRN=14@209,-173+0|uni0719.SYRN=14@50,0+343|uni0744.SYRN=12@209,-173+0|uni0719.SYRN=12@50,0+343|uni0737.SYRN=9@262,-456+0|uni0738.SYRN=9@262,-456+0|uni0728.Fina.SYRN=9+556|uni0745.SYRN=7@151,-108+0|uni071D.Init.SYRN=7+308|uni0303.SYRN=5@248,-37+0|uni0716.SYRN=5+521|uni0738.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0744.SYRN=0@258,-617+0|uni032D.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̭݄ܘܸܖ̃ܝ݅ܨܸܷܙ݄ܙ݆ܙܸ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni032D.SYRN=13@396,-98+0|uni0720.SYRN=13+800|uni0737.SYRN=10@337,-456+0|uni0731.SYRN=10@337,-456+0|uni0728.Fina.SYRN=10@75,0+631|uni0747.SYRN=8@151,-108+0|uni071D.Init.SYRN=8+308|uni0747.SYRN=6@251,145+0|uni072A.Fina.SYRN=6+518|uni071A.Init.SYRN=5+510|uni0655.SYRN=3@239,-98+0|uni0718.SYRN=3@-50,0+528|uni032D.SYRN=0@262,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587",
+            "input": "ܨ̠̭ܘٕܚܪ݇ܝ݇ܨܱܷܠ̭",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni032E.SYRN=17@396,-98+0|uni0720.SYRN=17+800|uni032D.SYRN=14@337,-456+0|uni0655.SYRN=14@337,-456+0|uni0728.Fina.SYRN=14@75,0+631|uni0655.SYRN=12@166,-97+0|uni071D.Init.SYRN=12+308|uni0734.SYRN=9@237,-456+0|uni073E.SYRN=9@237,-456+0|uni0728.Fina.SYRN=9@-25,0+531|uni073B.SYRN=7@166,-97+0|uni071D.Init.SYRN=7+308|uni0331.SYRN=4@237,-456+0|uni064D.SYRN=4@237,-456+0|uni0728.Fina.SYRN=4@-25,0+531|uni0734.SYRN=2@169,-98+0|uni0720.Init.SYRN=2+418|uni0739.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662",
+            "input": "ܨܹܠܴܨٍ̱ܝܻܨܾܴܝٕܨٕ̭ܠ̮",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0655.SYRN=23@492,-98+0|uni071D.SYRN=23+628|uni032D.SYRN=20@237,-456+0|uni0737.SYRN=20@237,-456+0|uni0728.Fina.SYRN=20@-25,0+531|uni0744.SYRN=18@166,-97+0|uni071D.Init.SYRN=18+308|uni0320.SYRN=15+0|uni064D.SYRN=15@237,-456+0|uni0728.SYRN=15@-25,0+562|uni0744.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni032D.SYRN=10@300,-456+0|uni0731.SYRN=10@300,-456+0|uni0728.Fina.SYRN=10@38,0+594|uni0731.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0738.SYRN=5@237,-456+0|uni0746.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni0324.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni0746.SYRN=0@262,-456+0|uni0734.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܴ݆ܩ̤ܨ݆ܸܝܱܨܱ̭ء݄ܨٍ̠ܝ݄ܨܷ̭ܝٕ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0739.SYRN=19@289,-98+0|uni0718.SYRN=19+578|uni0323.SYRN=16@262,-456+0|uni0655.SYRN=16@262,-456+0|uni0728.SYRN=16+587|uni0734.SYRN=14@159,-173+0|uni0719.SYRN=14+293|uni073C.SYRN=11@262,-456+0|uni0748.SYRN=11@262,-456+0|uni0728.SYRN=11+587|uni0303.SYRN=9@248,-37+0|uni0716.SYRN=9+521|uni0324.SYRN=7@289,-98+0|uni0718.SYRN=7+578|uni073B.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0331.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0324.SYRN=0@262,-456+0|uni0655.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨٕ̤ܡ̱ܨܻܘ̤ܖ̃ܨ݈ܼܙܴܨٕ̣ܘܹ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0737.SYRN=17@238,-98+0|uni0621.SYRN=17+471|uni0738.SYRN=14@300,-594+0|uni0323.SYRN=14@300,-456+0|uni0728.Fina.SYRN=14@38,0+594|uni073E.SYRN=12@169,-98+0|uni0720.Init.SYRN=12+418|uni0323.SYRN=9@337,-456+0|uni0744.SYRN=9@337,-456+0|uni0728.Fina.SYRN=9@75,0+631|uni032D.SYRN=7@166,-97+0|uni071D.Init.SYRN=7+308|uni0655.SYRN=4@233,-566+0|uni032E.SYRN=4@237,-456+0|uni0728.Fina.SYRN=4@-25,0+531|uni0734.SYRN=2@316,-98+0|uni0729.Init.SYRN=2+597|uni0731.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܱܩܴܨ̮ٕܝ̭ܨ݄̣ܠܾܨ̣ܸءܷ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0731.SYRN=6@396,-98+0|uni0720.SYRN=6+800|uni0746.SYRN=3@337,-456+0|uni073E.SYRN=3@337,-456+0|uni0728.Fina.SYRN=3@75,0+631|uni0714.Init.SYRN=2+451|uni0744.SYRN=0@295,-98+0|uni072A.SYRN=0@38,0+559",
+            "input": "ܪ݄ܔܨܾ݆ܠܱ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0744.SYRN=19@396,-98+0|uni0720.SYRN=19+800|uni0731.SYRN=16@337,-456+0|uni0731.SYRN=16@337,-456+0|uni0728.SYRN=16@75,0+662|uni0746.SYRN=14@238,-98+0|uni0621.SYRN=14+471|uni0655.SYRN=12@300,-456+0|uni0728.Fina.SYRN=12@38,0+594|uni0304.SYRN=10@151,-108+0|uni071D.Init.SYRN=10+308|uni064B.SYRN=8@248,-37+0|uni0716.Fina.SYRN=8+518|uni0323.SYRN=6@355,-98+0|uni0721.Init.SYRN=6+761|uni0734.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni0731.SYRN=2@159,-173+0|uni0719.SYRN=2+293|uni0324.SYRN=0@209,-173+0|uni0719.SYRN=0@50,0+343",
+            "input": "ܙ̤ܙܱܨܴܡ̣ܖًܝ̄ܨٕء݆ܨܱܱܠ݄",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni032D.SYRN=21@289,-98+0|uni0718.SYRN=21+578|uni0737.SYRN=18@262,-594+0|uni0323.SYRN=18@262,-456+0|uni0728.Fina.SYRN=18+556|uni064D.SYRN=16@166,-97+0|uni071D.Init.SYRN=16+308|uni073C.SYRN=13@237,-456+0|uni0738.SYRN=13@237,-456+0|uni0728.SYRN=13@-25,0+562|uni0731.SYRN=11@159,-173+0|uni0719.SYRN=11+293|uni0737.SYRN=9@262,-456+0|uni0728.Fina.SYRN=9+556|uni073C.SYRN=7@169,-98+0|uni0720.Init.SYRN=7+418|uni0731.SYRN=5@337,-456+0|uni0728.Fina.SYRN=5@75,0+631|uni0744.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0744.SYRN=0@237,-456+0|uni073B.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨܻ݄ܝ݄ܨܱܠܼܨܷܙܱܨܸܼܝٍܨ̣ܷܘ̭",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0748.SYRN=13@396,-98+0|uni0720.SYRN=13+800|uni0655064D.SYRN=10@337,-456+0|uni0728.SYRN=10@75,0+662|uni0331.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni0320.SYRN=5+0|uni0323.SYRN=5@300,-456+0|uni0728.SYRN=5@38,0+625|uni0748.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0734.SYRN=0@300,-456+0|uni0655.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625",
+            "input": "ܨٕܴء݈ܨ̣̠ء̱ܨٍٕܠ݈",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0734.SYRN=20@238,-98+0|uni0621.SYRN=20+471|uni0734.SYRN=17@300,-456+0|uni073E.SYRN=17@300,-456+0|uni0728.Fina.SYRN=17@38,0+594|uni032E.SYRN=15@166,-97+0|uni071D.Init.SYRN=15+308|uni0323.SYRN=12@237,-456+0|uni0650.SYRN=12@237,-456+0|uni0728.SYRN=12@-25,0+562|uni0731.SYRN=10@238,-98+0|uni0621.SYRN=10+471|uni0731.SYRN=7@0,-120+0|uni0320.SYRN=7+0|uni0728.Fina.SYRN=7@38,0+594|uni0729.Init.SYRN=6+597|uni072A.Fina.SYRN=5+518|uni032E.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0324.SYRN=0@262,-456+0|uni0331.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̱̤ܡ̮ܪܩܨ̠ܱءܱܨِ̣ܝ̮ܨܾܴءܴ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0655.SYRN=21@238,-98+0|uni0621.SYRN=21+471|uni0734.SYRN=18@300,-576+0|uni0331.SYRN=18@300,-456+0|uni0728.Fina.SYRN=18@38,0+594|uni0320.SYRN=16+0|uni071D.Init.SYRN=16+308|uni032D.SYRN=13@237,-456+0|uni064D.SYRN=13@237,-456+0|uni0728.Fina.SYRN=13@-25,0+531|uni0330.SYRN=11@169,-98+0|uni0720.Init.SYRN=11+418|uni0737.SYRN=8@0,-120+0|uni0320.SYRN=8+0|uni0728.Fina.SYRN=8@75,0+631|uni073E.SYRN=6@355,-98+0|uni0721.Init.SYRN=6+761|uni0331.SYRN=3@262,-456+0|uni064D.SYRN=3@262,-456+0|uni0728.Fina.SYRN=3+556|uni071B.Init.SYRN=2+743|uni032E.SYRN=0@244,-257+0|uni0715.SYRN=0+521",
+            "input": "ܕ̮ܛܨٍ̱ܡܾܨ̠ܷܠ̰ܨٍ̭ܝ̠ܨ̱ܴءٕ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0650.SYRN=9@396,-98+0|uni0720.SYRN=9+800|uni0323.SYRN=7@337,-456+0|uni0728.Fina.SYRN=7@75,0+631|uni0331.SYRN=5@355,-98+0|uni0721.Init.SYRN=5+761|uni0737.SYRN=2@258,-617+0|uni032D.SYRN=2@262,-456+0|uni0728.Fina.SYRN=2+556|uni0653.SYRN=0@210,149+0|uni072D.Init.SYRN=0+538",
+            "input": "ܭٓܨ̭ܷܡ̱ܨ̣ܠِ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0324.SYRN=8@492,-98+0|uni071D.SYRN=8+628|uni06550650.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni0746.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0324.SYRN=0@262,-456+0|uni0734.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܴ̤ܡ݆ܨِٕܝ̤",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0324.SYRN=12@435,-99+0|uni0721.SYRN=12+705|uni0323.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0331.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni0330.SYRN=5@300,-456+0|uni032E.SYRN=5@300,-456+0|uni0728.Fina.SYRN=5@38,0+594|uni0737.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073E.SYRN=0@262,-456+0|uni0734.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܴܾܡܷܨ̮̰ء̱ܨ̣ܡ̤",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0710.FinaLiga.SYRN=10+403|uni032E.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni0731.SYRN=5@333,-597+0|uni0330.SYRN=5@337,-456+0|uni0728.SYRN=5@75,0+662|uni073B.SYRN=3@159,-173+0|uni0719.SYRN=3+293|uni0324.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܷ̤ܙܻܨ̰ܱܠ̮ܐ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0670.SYRN=15@571,-108+0|uni071A.Fina.SYRN=15+821|uni073C.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni0739.SYRN=10@262,-456+0|uni0737.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0731.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni073C.SYRN=5@300,-456+0|uni0746.SYRN=5@300,-456+0|uni0728.Fina.SYRN=5@38,0+594|uni064D.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0323.SYRN=0@237,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨ̠̣ܝٍܨ݆ܼءܱܨܷܹܩܼܚٰ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni073B.SYRN=21@492,-98+0|uni071D.SYRN=21+628|uni032D.SYRN=18@237,-456+0|uni0744.SYRN=18@237,-456+0|uni0728.SYRN=18@-25,0+562|uni073B.SYRN=16@238,-98+0|uni0621.SYRN=16+471|uni0739.SYRN=13@300,-456+0|uni0739.SYRN=13@300,-456+0|uni0728.Fina.SYRN=13@38,0+594|uni0713.Init.SYRN=12+451|uni0324.SYRN=10@281,-257+0|uni0715.Fina.SYRN=10@38,0+556|uni0330.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0731.SYRN=5@237,-594+0|uni0323.SYRN=5@237,-456+0|uni0728.SYRN=5@-25,0+562|uni0731.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni073C.SYRN=0@300,-456+0|uni0731.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625",
+            "input": "ܨܱܼءܱܨ̣ܱܝ̰ܕ̤ܓܨܹܹءܻܨ݄̭ܝܻ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni072A.Fina.SYRN=20+518|uni073C.SYRN=18@355,-98+0|uni0721.Init.SYRN=18+761|uni0731.SYRN=15@262,-456+0|uni0737.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0650.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni073E.SYRN=10@300,-456+0|uni0746.SYRN=10@300,-456+0|uni0728.SYRN=10@38,0+625|uni0731.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni0748.SYRN=5@300,-456+0|uni0746.SYRN=5@300,-456+0|uni0728.Fina.SYRN=5@38,0+594|uni032E.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0744.SYRN=0@337,-456+0|uni064D.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662",
+            "input": "ܨٍ݄ܠ̮ܨ݆݈ءܱܨ݆ܾءِܨܷܱܡܼܪ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni064D.SYRN=17@396,-98+0|uni0720.SYRN=17+800|uni073E.SYRN=14@337,-456+0|uni064D.SYRN=14@337,-456+0|uni0728.Fina.SYRN=14@75,0+631|uni0304.SYRN=12@288,209+0|uni0727.Medi.SYRN=12+547|uni064C.SYRN=10@197,113+0|uni0726.Medi.SYRN=10+551|uni032E.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni0734.SYRN=5@337,-456+0|uni0738.SYRN=5@337,-456+0|uni0728.Fina.SYRN=5@75,0+631|uni0323.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0331.SYRN=0@262,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587",
+            "input": "ܨ̠̱ܡ̣ܨܸܴܠ̮ܦٌܧ̄ܨٍܾܠٍ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni032E.SYRN=10@483,-99+0|uni0729.SYRN=10+884|uni0320.SYRN=7+0|uni073C.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0741.SYRN=5@197,113+0|uni0726.Medi.SYRN=5+551|uni0731.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073C.SYRN=0@262,-456+0|uni0738.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܸܼܡܱܦ݁ܨܼ̠ܩ̮",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni064E.SYRN=13@292,7+0|uni0718.Fina.SYRN=13+573|uni064C.SYRN=11@151,-108+0|uni071D.Init.SYRN=11+308|uni0745.SYRN=9@248,-37+0|uni0715.SYRN=9+521|uni0330.SYRN=7@238,-98+0|uni0621.SYRN=7+471|uni073E.SYRN=4@300,-456+0|uni0739.SYRN=4@300,-456+0|uni0728.SYRN=4@38,0+625|uni0651.SYRN=2@152,-57+0|uni0719.SYRN=2+293|uni064F.SYRN=0@202,-57+0|uni0719.SYRN=0@50,0+343",
+            "input": "ܙُܙّܨܹܾء̰ܕ݅ܝٌܘَ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0650.SYRN=17@289,-98+0|uni0718.SYRN=17+578|uni0330.SYRN=14@262,-456+0|uni0655.SYRN=14@262,-456+0|uni0728.SYRN=14+587|uni032E.SYRN=12@238,-98+0|uni0621.SYRN=12+471|uni0748.SYRN=9@296,-617+0|uni032D.SYRN=9@300,-456+0|uni0728.Fina.SYRN=9@38,0+594|uni030A.SYRN=7@-10,231+0|uni072E.Init.SYRN=7+451|uni073B.SYRN=5@222,-338+0|uni0719.SYRN=5@25,0+318|uni0650.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0746.SYRN=0@262,-456+0|uni064D.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨٍ݆ܘِܙܻܮ̊ܨ̭݈ء̮ܨٕ̰ܘِ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0331.SYRN=13@435,-99+0|uni0721.SYRN=13+705|uni0655064D.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0331.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni032D.SYRN=5@237,-456+0|uni0655.SYRN=5@237,-456+0|uni0728.SYRN=5@-25,0+562|uni0739.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni032D.SYRN=0@262,-456+0|uni032D.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̭̭ܘܹܨٕ̭ܝ̱ܨٍٕܡ̱",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0715.SYRN=11+521|uni0728.Fina.SYRN=10+556|uni0320.SYRN=8+0|uni0729.Init.SYRN=8+597|uni032D.SYRN=5@262,-456+0|uni032E.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0744.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0746.SYRN=0@262,-456+0|uni0748.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ݈݆ܡ݄ܨ̮̭ܩ̠ܨܕ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0331.SYRN=7@492,-98+0|uni071D.SYRN=7+628|uni032D.SYRN=5@237,-456+0|uni0728.SYRN=5@-25,0+562|uni0744.SYRN=3@159,-173+0|uni0719.SYRN=3+293|uni0320.SYRN=0+0|uni073C.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܼ̠ܙ݄ܨ̭ܝ̱",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni032E.SYRN=11@289,-98+0|uni0718.SYRN=11+578|uni0331.SYRN=8@262,-456+0|uni0330.SYRN=8@262,-456+0|uni0728.Fina.SYRN=8+556|uni0324.SYRN=6@316,-98+0|uni0729.Init.SYRN=6+597|uni073C.SYRN=3@262,-456+0|uni0650.SYRN=3@262,-456+0|uni0728.Fina.SYRN=3+556|uni0713.Init.SYRN=2+451|uni0331.SYRN=0@437,-98+0|uni072F.SYRN=0+694",
+            "input": "ܯ̱ܓܨِܼܩ̤ܨ̰̱ܘ̮",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0655.SYRN=11@483,-99+0|uni0729.SYRN=11+884|uni0734.SYRN=8@262,-456+0|uni0650.SYRN=8@262,-456+0|uni0728.SYRN=8+587|uni0746.SYRN=6@238,-98+0|uni0621.SYRN=6+471|uni0739.SYRN=3@300,-456+0|uni0734.SYRN=3@300,-456+0|uni0728.SYRN=3@38,0+625|uni073E.SYRN=1@159,-173+0|uni0719.SYRN=1+293|uni0728.SYRN=0+587",
+            "input": "ܨܙܾܨܴܹء݆ܨِܴܩٕ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0738.SYRN=6@483,-99+0|uni0729.SYRN=6+884|uni0748.SYRN=4@262,-456+0|uni0728.Fina.SYRN=4+556|uni073A.SYRN=2@151,-108+0|uni071D.Init.SYRN=2+308|uni073A.SYRN=0@250,144+0|uni072A.SYRN=0+521",
+            "input": "ܪܺܝܺܨ݈ܩܸ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0739.SYRN=18@396,-98+0|uni0720.SYRN=18+800|uni0731.SYRN=15@337,-456+0|uni0746.SYRN=15@337,-456+0|uni0728.Fina.SYRN=15@75,0+631|uni0746.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni06550650.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni032E.SYRN=8@289,-98+0|uni0718.SYRN=8+578|uni073E.SYRN=5@262,-456+0|uni0746.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni032D.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0748.SYRN=0@337,-456+0|uni0734.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662",
+            "input": "ܨܴ݈ܠ̭ܨ݆ܾܘ̮ܨِٕܩ݆ܨ݆ܱܠܹ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0748.SYRN=11@435,-99+0|uni0721.SYRN=11+705|uni0739.SYRN=8@262,-576+0|uni0331.SYRN=8@262,-456+0|uni0728.SYRN=8+587|uni0746.SYRN=6@238,-98+0|uni0621.SYRN=6+471|uni0655.SYRN=3@296,-595+0|uni0324.SYRN=3@300,-456+0|uni0728.SYRN=3@38,0+625|uni0708.SYRN=2+374|uni0304.SYRN=0@418,-108+0|uni071D.SYRN=0@-50,0+578",
+            "input": "ܝ̄܈ܨ̤ٕء݆ܨ̱ܹܡ݈",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni032E.SYRN=20@372,-98+0|uni0713.Fina.SYRN=20+768|uni0744.SYRN=18@316,-98+0|uni0729.Init.SYRN=18+597|uni0731.SYRN=15@262,-456+0|uni0655.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0746.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni0731.SYRN=10@262,-456+0|uni0748.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0738.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni0748.SYRN=5@337,-456+0|uni0739.SYRN=5@337,-456+0|uni0728.Fina.SYRN=5@75,0+631|uni032E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0734.SYRN=0@237,-456+0|uni0744.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨ݄ܴܝ̮ܨܹ݈ܠܸܨ݈ܱܩ݆ܨٕܱܩ݄ܓ̮",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni073B.SYRN=16@159,-173+0|uni0719.SYRN=16+293|uni0655064D.SYRN=13@262,-456+0|uni0728.Fina.SYRN=13+556|uni0748.SYRN=11@355,-98+0|uni0721.Init.SYRN=11+761|uni032D.SYRN=8@262,-456+0|uni032E.SYRN=8@262,-456+0|uni0728.Fina.SYRN=8+556|uni072E.Init.SYRN=7+451|uni032E.SYRN=5@288,-98+0|uni0621.SYRN=5@50,0+521|uni0650.SYRN=3@483,-99+0|uni0729.SYRN=3+884|uni0737.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܷܷܩِء̮ܮܨ̮̭ܡ݈ܨٍٕܙܻ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0731.SYRN=19@238,-98+0|uni0621.SYRN=19+471|uni073C.SYRN=16@300,-456+0|uni0738.SYRN=16@300,-456+0|uni0728.Fina.SYRN=16@38,0+594|uni0722.Init.SYRN=15+364|uni0728.SYRN=14+587|uni0744.SYRN=12@289,-98+0|uni0718.SYRN=12+578|uni0331.SYRN=9@262,-456+0|uni0323.SYRN=9@262,-456+0|uni0728.Fina.SYRN=9+556|uni0734.SYRN=7@355,-98+0|uni0721.Init.SYRN=7+761|uni0746.SYRN=4@262,-456+0|uni0746.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni0746.SYRN=2@238,-98+0|uni0621.SYRN=2+471|uni0737.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625",
+            "input": "ܨܷء݆ܨ݆݆ܡܴܨ̣̱ܘ݄ܨܢܨܸܼءܱ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni073B.SYRN=6@238,-98+0|uni0621.SYRN=6+471|uni0737.SYRN=3@300,-456+0|uni0746.SYRN=3@300,-456+0|uni0728.Fina.SYRN=3@38,0+594|uni072E.Init.SYRN=2+451|uni0331.SYRN=0@303,-83+0|uni072C.SYRN=0@38,0+737",
+            "input": "ܬ̱ܮܨ݆ܷءܻ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0320.SYRN=16+0|uni071D.SYRN=16+628|uni0323.SYRN=13@237,-456+0|uni0650.SYRN=13@237,-456+0|uni0728.SYRN=13@-25,0+562|uni073B.SYRN=11@238,-98+0|uni0621.SYRN=11+471|uni0331.SYRN=8@300,-456+0|uni073C.SYRN=8@300,-456+0|uni0728.Fina.SYRN=8@38,0+594|uni071C.Init.SYRN=7+757|uni0744.SYRN=5@259,-98+0|uni0716.Fina.SYRN=5+518|uni0746.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0748.SYRN=0@237,-456+0|uni0734.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨܴ݈ܝ݆ܖ݄ܜܨܼ̱ءܻܨِ̣ܝ̠",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0722.SYRN=22+427|uni032E.SYRN=20@184,-450+0|uni0719.SYRN=20@25,0+318|uni073E.SYRN=18@289,-98+0|uni0718.SYRN=18+578|uni0655.SYRN=15@262,-456+0|uni0731.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0738.SYRN=13@289,-98+0|uni0718.SYRN=13+578|uni0748.SYRN=10@262,-456+0|uni0744.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0737.SYRN=8@289,-98+0|uni0718.SYRN=8+578|uni073C.SYRN=5@262,-456+0|uni0650.SYRN=5@262,-456+0|uni0728.SYRN=5+587|uni0731.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0323.SYRN=0@300,-456+0|uni064D.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625",
+            "input": "ܨٍ̣ءܱܨِܼܘܷܨ݄݈ܘܸܨܱٕܘܾܙ̮ܢ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0738.SYRN=19@483,-99+0|uni0729.SYRN=19+884|uni073C.SYRN=16@262,-456+0|uni0748.SYRN=16@262,-456+0|uni0728.Fina.SYRN=16+556|uni064E.SYRN=12@492,-17+0|uni064D.SYRN=12@355,-98+0|uni0654.SYRN=12@492,-17+0|uni0721.Init.SYRN=12+761|uni064D.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0734.SYRN=8@316,-98+0|uni0729.Init.SYRN=8+597|uni0734.SYRN=5@262,-456+0|uni064D.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0744.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0739.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܷܹܡ݄ܨٍܴܩܴܨٍܡٍَٔܨ݈ܼܩܸ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0734.SYRN=21@396,-98+0|uni0720.SYRN=21+800|uni0748.SYRN=18@337,-456+0|uni0650.SYRN=18@337,-456+0|uni0728.Fina.SYRN=18@75,0+631|uni0722.Init.SYRN=17+364|uni0655.SYRN=15@243,-257+0|uni0715.Fina.SYRN=15+518|uni0324.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni06550650.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0655.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni0748.SYRN=5@300,-456+0|uni0737.SYRN=5@300,-456+0|uni0728.Fina.SYRN=5@38,0+594|uni073E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni073C.SYRN=0@237,-456+0|uni0737.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨܷܼܝܾܨܷ݈ءٕܨِٕܩ̤ܕٕܢܨِ݈ܠܴ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0323.SYRN=7@289,-98+0|uni064B0651.SYRN=7@292,13+0|uni0718.SYRN=7+578|uni0746.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0320.SYRN=3+0|uni0720.Init.SYRN=3+418|uni0737.SYRN=0@337,-456+0|uni073B.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662",
+            "input": "ܨܻܷܠ̠ܨ݆ܘًّ̣",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni073D.SYRN=0@290,-146+0|FC5E=0@290,-146+0|uni0728.SYRN=0+587",
+            "input": "ܨٌّܽ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0709.SYRN=21+374|uni072A.SYRN=20+521|uni073B.SYRN=18@289,-98+0|uni0718.SYRN=18+578|uni0323.SYRN=15@262,-456+0|uni032E.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0331.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0323.SYRN=10@337,-456+0|uni032E.SYRN=10@337,-456+0|uni0728.Fina.SYRN=10@75,0+631|uni0731.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0330.SYRN=5@262,-456+0|uni0650.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0748.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni032E.SYRN=0@262,-456+0|uni0330.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̰̮ܩ݈ܨِ̰ܡܱܨ̮̣ܠ̱ܨ̮̣ܘܻܪ܉",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0722.SYRN=7+427|uni073C.SYRN=5@402,-83+0|uni072C.SYRN=5@137,0+836|uni0734.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0734.SYRN=0@300,-456+0|uni0748.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625",
+            "input": "ܨ݈ܴءܴܬܼܢ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni073B.SYRN=14@396,-98+0|uni0720.SYRN=14+800|uni073C.SYRN=11@337,-456+0|uni073B.SYRN=11@337,-456+0|uni0728.Fina.SYRN=11@75,0+631|uni074F.Init.SYRN=10+485|uni072F.Fina.SYRN=9+691|uni0731.SYRN=7@355,-98+0|uni0721.Init.SYRN=7+761|uni0320.SYRN=4+0|uni0737.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni073E.SYRN=2@159,-173+0|uni0719.SYRN=2+293|uni0739.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܹܙܾܨܷ̠ܡܱܯݏܨܻܼܠܻ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0323.SYRN=10@238,-98+0|uni0621.SYRN=10+471|uni0323.SYRN=7@300,-456+0|uni032D.SYRN=7@300,-456+0|uni0728.SYRN=7@38,0+625|uni032E.SYRN=5@277,-456+0|uni0728.Fina.SYRN=5@15,0+571|uni0738.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni032E.SYRN=0@337,-456+0|uni0650.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662",
+            "input": "ܨِ̮ܠܸܨ̮ܨ̭̣ء̣",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0734.SYRN=18@289,-98+0|uni0718.SYRN=18+578|uni0331.SYRN=15@262,-456+0|uni0655.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0738.SYRN=13@166,-97+0|uni071D.Init.SYRN=13+308|uni0655.SYRN=10@237,-456+0|uni0739.SYRN=10@237,-456+0|uni0728.SYRN=10@-25,0+562|uni0324.SYRN=8@238,-98+0|uni0621.SYRN=8+471|uni06550650.SYRN=5@300,-456+0|uni0728.Fina.SYRN=5@38,0+594|uni0744.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073C.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܷܼܡ݄ܨِٕء̤ܨܹٕܝܸܨٕ̱ܘܴ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0739.SYRN=10@483,-99+0|uni0729.SYRN=10+884|uni0320.SYRN=7+0|uni0739.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni073D.SYRN=5@246,-17+0|uni072B.MediM.SYRN=5+521|uni0320.SYRN=3+0|uni0729.Init.SYRN=3+597|uni0738.SYRN=0@258,-617+0|uni032D.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̭ܸܩ̠ܫܽܨܹ̠ܩܹ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0719.Fina.SYRN=15+317|uni073B.SYRN=13@316,-98+0|uni0729.Init.SYRN=13+597|uni0324.SYRN=10@262,-456+0|uni064D.SYRN=10@262,-456+0|uni0728.SYRN=10+587|uni0737.SYRN=8@289,-98+0|uni0718.SYRN=8+578|uni0323.SYRN=5@262,-456+0|uni0746.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0748.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0655.SYRN=0@237,-456+0|uni0737.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨܷٕܝ݈ܨ݆̣ܘܷܨٍ̤ܩܻܙ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0746.SYRN=7@435,-99+0|uni0721.SYRN=7+705|uni073B.SYRN=4@262,-456+0|uni0731.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni0323.SYRN=2@159,-173+0|uni0719.SYRN=2+293|uni073B.SYRN=0@209,-173+0|uni0719.SYRN=0@50,0+343",
+            "input": "ܙܻܙ̣ܨܱܻܡ݆",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0320.SYRN=11+0|uni071D.SYRN=11+628|uni0746.SYRN=8@237,-456+0|uni073C.SYRN=8@237,-456+0|uni0728.Fina.SYRN=8@-25,0+531|uni072E.Init.SYRN=7+451|uni0737.SYRN=5@277,-98+0|uni0718.SYRN=5@-12,0+566|uni032D.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0655.SYRN=0@0,-120+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587",
+            "input": "ܨ̠ٕܘ̭ܘܷܮܨܼ݆ܝ̠",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni064D.SYRN=10@396,-98+0|uni0720.SYRN=10+800|uni0737.SYRN=7@337,-456+0|uni0739.SYRN=7@337,-456+0|uni0728.Fina.SYRN=7@75,0+631|uni0304.SYRN=5@203,8+0|uni074F.Medi.SYRN=5+476|uni032E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni06550650.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨِٕܝ̮ݏ̄ܨܹܷܠٍ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0722.SYRN=22+427|uni0731.SYRN=20@457,-98+0|uni072A.SYRN=20@200,0+721|uni0331.SYRN=18@289,-98+0|uni0718.SYRN=18+578|uni0737.SYRN=15@258,-597+0|uni0330.SYRN=15@262,-456+0|uni0728.Fina.SYRN=15+556|uni0330.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0744.SYRN=10@337,-456+0|uni073E.SYRN=10@337,-456+0|uni0728.Fina.SYRN=10@75,0+631|uni0738.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0748.SYRN=5@262,-456+0|uni0655.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0655.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0320.SYRN=0+0|uni0744.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨ݄̠ܝٕܨٕ݈ܡܸܨܾ݄ܠ̰ܨ̰ܷܘ̱ܪܱܢ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0650.SYRN=18@483,-99+0|uni0729.SYRN=18+884|uni06550650.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni073E.SYRN=13@159,-173+0|uni0719.SYRN=13+293|uni032E.SYRN=10@262,-456+0|uni073C.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0738.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0323.SYRN=5@262,-456+0|uni0739.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni032D.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni073C.SYRN=0@237,-456+0|uni0738.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨܸܼܝ̭ܨܹ̣ܡܸܨܼ̮ܙܾܨِٕܩِ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0737.SYRN=6@238,-98+0|uni0621.SYRN=6+471|uni0728.SYRN=5@38,0+625|uni0323.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0738.SYRN=0@262,-456+0|uni0737.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨܷܸܘ̣ܨءܷ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0737.SYRN=18@238,-98+0|uni0621.SYRN=18+471|uni0748.SYRN=15@300,-456+0|uni0731.SYRN=15@300,-456+0|uni0728.Fina.SYRN=15@38,0+594|uni0731.SYRN=13@169,-98+0|uni0720.Init.SYRN=13+418|uni0737.SYRN=10@337,-456+0|uni0746.SYRN=10@337,-456+0|uni0728.SYRN=10@75,0+662|uni0710.Medi2.SYRN=9+356|uni0744.SYRN=7@355,-98+0|uni0721.Init.SYRN=7+761|uni0744.SYRN=4@262,-456+0|uni064D.SYRN=4@262,-456+0|uni0728.Fina.SYRN=4+556|uni0320.SYRN=2+0|uni0720.Init.SYRN=2+418|uni0746.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662",
+            "input": "ܨ݆ܠ̠ܨٍ݄ܡ݄ܐܨ݆ܷܠܱܨܱ݈ءܷ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0731.SYRN=20@159,-173+0|uni0719.SYRN=20+293|uni0331.SYRN=17@262,-456+0|uni0744.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni032D.SYRN=15@238,-98+0|uni0621.SYRN=15+471|uni0731.SYRN=12@300,-456+0|uni0744.SYRN=12@300,-456+0|uni0728.SYRN=12@38,0+625|uni0737.SYRN=10@289,-98+0|uni0718.SYRN=10+578|uni0738.SYRN=7@262,-456+0|uni064D.SYRN=7@262,-456+0|uni0728.SYRN=7+587|uni073B.SYRN=5@238,-98+0|uni0621.SYRN=5+471|uni0739.SYRN=2@300,-456+0|uni0744.SYRN=2@300,-456+0|uni0728.Fina.SYRN=2@38,0+594|uni073F.SYRN=0@288,209+0|uni0727.Init.SYRN=0+570",
+            "input": "ܧܿܨ݄ܹءܻܨٍܸܘܷܨ݄ܱء̭ܨ݄̱ܙܱ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0652.SYRN=10@270,-98+0|uni071F.Fina.SYRN=10+615|uni0323.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0746.SYRN=5@237,-456+0|uni073E.SYRN=5@237,-456+0|uni0728.SYRN=5@-25,0+562|uni073E.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0324.SYRN=0@262,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0+587",
+            "input": "ܨ̠̤ܘܾܨܾ݆ܝ̣ܟْ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni072C.Fina.SYRN=20+625|uni073C.SYRN=18@355,-98+0|uni0721.Init.SYRN=18+761|uni0731.SYRN=15@258,-595+0|uni0324.SYRN=15@262,-456+0|uni0728.SYRN=15+587|uni0655.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni0330.SYRN=10@300,-456+0|uni0746.SYRN=10@300,-456+0|uni0728.Fina.SYRN=10@38,0+594|uni064D.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0737.SYRN=5@237,-456+0|uni0650.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni073C.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni073B.SYRN=0@258,-617+0|uni032D.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̭ܻܡܼܨِܷܝٍܨ݆̰ءٕܨ̤ܱܡܼܬ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0330.SYRN=10@483,-99+0|uni0729.SYRN=10+884|uni0734.SYRN=7@262,-456+0|uni0650.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0325.SYRN=5@198,-98+0|uni0712.Medi.SYRN=5+574|uni0731.SYRN=3@316,-98+0|uni0729.Init.SYRN=3+597|uni0731.SYRN=0@258,-617+0|uni032D.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̭ܱܩܱܒ̥ܨِܴܩ̰",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0320.SYRN=20+0|uni071D.SYRN=20+628|uni0739.SYRN=17@237,-456+0|uni0731.SYRN=17@237,-456+0|uni0728.SYRN=17@-25,0+562|uni0734.SYRN=15@238,-98+0|uni0621.SYRN=15+471|uni06550650.SYRN=12@300,-456+0|uni0728.Fina.SYRN=12@38,0+594|uni0748.SYRN=10@169,-98+0|uni0720.Medi.SYRN=10+383|uni0331.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0734.SYRN=5@237,-456+0|uni0739.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni032D.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0324.SYRN=0@337,-456+0|uni0320.SYRN=0+0|uni0728.SYRN=0@75,0+662",
+            "input": "ܨ̠̤ܠ̭ܨܹܴܝ̱ܠ݈ܨِٕءܴܨܱܹܝ̠",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0737.SYRN=14@435,-99+0|uni0721.SYRN=14+705|uni0320.SYRN=11+0|uni0323.SYRN=11@262,-456+0|uni0728.SYRN=11+587|uni0655.SYRN=9@183,-98+0|uni0710.SYRN=9+371|uni0746.SYRN=7@251,-98+0|uni0718.SYRN=7@-38,0+540|uni0655.SYRN=4@262,-456+0|uni073B.SYRN=4@262,-456+0|uni0728.SYRN=4+587|uni0324.SYRN=2@159,-173+0|uni0719.SYRN=2+293|uni0655.SYRN=0@209,-173+0|uni0719.SYRN=0@50,0+343",
+            "input": "ܙٕܙ̤ܨܻٕܘ݆ܐٕܨ̣̠ܡܷ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0734.SYRN=15@159,-173+0|uni0719.SYRN=15+293|uni0324.SYRN=12@262,-456+0|uni0320.SYRN=12+0|uni0728.Fina.SYRN=12+556|uni071F.Init.SYRN=11+616|uni0716.Fina.SYRN=10+518|uni064D.SYRN=8@166,-97+0|uni071D.Init.SYRN=8+308|uni0320.SYRN=5+0|uni064D.SYRN=5@237,-456+0|uni0728.Fina.SYRN=5@-25,0+531|uni0739.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0746.SYRN=0@337,-456+0|uni0734.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662",
+            "input": "ܨܴ݆ܠܹܨٍ̠ܝٍܖܟܨ̠̤ܙܴ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0330.SYRN=20@435,-99+0|uni0721.SYRN=20+705|uni0748.SYRN=17@262,-456+0|uni073B.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni0738.SYRN=15@289,-98+0|uni0718.SYRN=15+578|uni0746.SYRN=12@262,-594+0|uni0323.SYRN=12@262,-456+0|uni0728.SYRN=12+587|uni073B.SYRN=10@238,-98+0|uni0621.SYRN=10+471|uni0738.SYRN=7@300,-456+0|uni0650.SYRN=7@300,-456+0|uni0728.SYRN=7@38,0+625|uni0307.SYRN=5@298,-203+0|uni074D.Fina.SYRN=5+583|uni073B.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni073B.SYRN=0@237,-456+0|uni064D.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨٍܻܝܻݍ̇ܨِܸءܻܨ̣݆ܘܸܨܻ݈ܡ̰",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0746.SYRN=20@483,-99+0|uni0729.SYRN=20+884|uni0738.SYRN=17@262,-576+0|uni0331.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni032D.SYRN=15@238,-98+0|uni0621.SYRN=15+471|uni0739.SYRN=12@296,-597+0|uni0330.SYRN=12@300,-456+0|uni0728.Fina.SYRN=12@38,0+594|uni0731.SYRN=10@316,-98+0|uni0729.Init.SYRN=10+597|uni0748.SYRN=7@262,-456+0|uni0655.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0323.SYRN=5@355,-98+0|uni0721.Medi.SYRN=5+761|uni032E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni032E.SYRN=0@237,-456+0|uni0746.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨ݆̮ܝ̮ܡ̣ܨٕ݈ܩܱܨ̰ܹء̭ܨ̱ܸܩ݆",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni064D.SYRN=19@289,-98+0|uni0718.SYRN=19+578|uni0746.SYRN=16@262,-456+0|uni0739.SYRN=16@262,-456+0|uni0728.Fina.SYRN=16+556|uni0323.SYRN=14@166,-97+0|uni071D.Init.SYRN=14+308|uni0650.SYRN=11@237,-456+0|uni064D.SYRN=11@237,-456+0|uni0728.Fina.SYRN=11@-25,0+531|uni0323.SYRN=9@316,-98+0|uni0729.Init.SYRN=9+597|uni0331.SYRN=6@262,-456+0|uni0650.SYRN=6@262,-456+0|uni0728.Fina.SYRN=6+556|uni071A.Medi.SYRN=5+497|uni0323.SYRN=3@403,-98+0|uni0721.InitN.SYRN=3+675|uni0330.SYRN=0@262,-456+0|uni0331.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̱̰ܡ̣ܚܨِ̱ܩ̣ܨٍِܝ̣ܨܹ݆ܘٍ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni073B.SYRN=10@159,-173+0|uni0719.SYRN=10+293|uni0731.SYRN=7@262,-456+0|uni0650.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0737.SYRN=5@166,-97+0|uni071D.Init.SYRN=5+308|uni0655.SYRN=2@237,-456+0|uni073E.SYRN=2@237,-456+0|uni0728.SYRN=2@-25,0+562|uni0709.SYRN=1+374|uni0718.SYRN=0@-38,0+540",
+            "input": "ܘ܉ܨܾٕܝܷܨِܱܙܻ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni073B.SYRN=18@238,-98+0|uni0621.SYRN=18+471|uni073E.SYRN=15@300,-594+0|uni0323.SYRN=15@300,-456+0|uni0728.Fina.SYRN=15@38,0+594|uni0713.Init.SYRN=14+451|uni074D.SYRN=13@38,0+621|uni0745.SYRN=11@152,-57+0|uni0719.SYRN=11+293|uni0304.SYRN=9@202,-57+0|uni0719.SYRN=9@50,0+343|uni0744.SYRN=7@289,-98+0|uni0718.SYRN=7+578|uni073E.SYRN=4@262,-594+0|uni0323.SYRN=4@262,-456+0|uni0728.Fina.SYRN=4+556|uni0733.SYRN=2@151,-108+0|uni071D.Init.SYRN=2+308|uni0745.SYRN=0@248,-37+0|uni0716.SYRN=0+521",
+            "input": "ܖ݅ܝܳܨ̣ܾܘ݄ܙ̄ܙ݅ݍܓܨ̣ܾءܻ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0746.SYRN=10@435,-99+0|uni0721.SYRN=10+705|uni0748.SYRN=7@262,-576+0|uni0331.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni0324.SYRN=5@166,-97+0|uni071D.Init.SYRN=5+308|uni0320.SYRN=2+0|uni0739.SYRN=2@237,-456+0|uni0728.Fina.SYRN=2@-25,0+531|uni0711.SYRN=0@145,-2+0|uni0725.Init.SYRN=0+561",
+            "input": "ܥܑܨܹ̠ܝ̤ܨ̱݈ܡ݆",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni064D.SYRN=9@238,-98+0|uni0621.SYRN=9+471|uni0331.SYRN=6@300,-456+0|uni0738.SYRN=6@300,-456+0|uni0728.SYRN=6@38,0+625|uni0732.below.SYRN=3@289,-98+0|uni0732.above.SYRN=3@292,13+0|uni032E.SYRN=3@289,-98+0|uni0718.SYRN=3+578|uni0331.SYRN=0@262,-456+0|uni0330.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̰̱ܘ̮ܲܨܸ̱ءٍ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0739.SYRN=20@492,-98+0|uni071D.SYRN=20+628|uni032D.SYRN=17@237,-456+0|uni0330.SYRN=17@237,-456+0|uni0728.Fina.SYRN=17@-25,0+531|uni0650.SYRN=15@364,-98+0|uni0724.Init.SYRN=15+784|uni0739.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni073B.SYRN=10@300,-456+0|uni0734.SYRN=10@300,-456+0|uni0728.SYRN=10@38,0+625|uni0744.SYRN=8@159,-173+0|uni0719.SYRN=8+293|uni0655.SYRN=5@262,-456+0|uni0739.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0738.SYRN=3@169,-98+0|uni0720.Init.SYRN=3+418|uni0744.SYRN=0@337,-456+0|uni073B.SYRN=0@337,-456+0|uni0728.SYRN=0@75,0+662",
+            "input": "ܨܻ݄ܠܸܨܹٕܙ݄ܨܴܻءܹܤِܨ̰̭ܝܹ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0731.SYRN=20@435,-99+0|uni0721.SYRN=20+705|uni073C.SYRN=17@262,-456+0|uni064D.SYRN=17@262,-456+0|uni0728.SYRN=17+587|uni0323.SYRN=15@238,-98+0|uni0621.SYRN=15+471|uni0739.SYRN=12@0,-120+0|uni0320.SYRN=12+0|uni0728.Fina.SYRN=12@38,0+594|uni0711.SYRN=10@144,-3+0|uni0725.Medi.SYRN=10+421|uni0731.SYRN=8@403,-98+0|uni0721.InitN.SYRN=8+675|uni0739.SYRN=5@258,-597+0|uni0330.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0744.SYRN=3@355,-98+0|uni0721.Init.SYRN=3+761|uni0320.SYRN=0+0|uni0323.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨ̣̠ܡ݄ܨ̰ܹܡܱܥܑܨ̠ܹء̣ܨٍܼܡܱ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0320.SYRN=10+0|uni0724.Fina.SYRN=10+780|uni0731.SYRN=8@316,-98+0|uni0729.Init.SYRN=8+597|uni032E.SYRN=5@262,-456+0|uni0330.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni073E.SYRN=3@166,-97+0|uni071D.Init.SYRN=3+308|uni0731.SYRN=0@237,-576+0|uni0331.SYRN=0@237,-456+0|uni0728.SYRN=0@-25,0+562",
+            "input": "ܨ̱ܱܝܾܨ̰̮ܩܱܤ̠",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0331.SYRN=15@289,-98+0|uni0718.SYRN=15+578|uni0746.SYRN=12@262,-456+0|uni073C.SYRN=12@262,-456+0|uni0728.Fina.SYRN=12+556|uni032E.SYRN=10@355,-98+0|uni0721.Init.SYRN=10+761|uni0323.SYRN=7@262,-456+0|uni0744.SYRN=7@262,-456+0|uni0728.Fina.SYRN=7+556|uni032E.SYRN=5@316,-98+0|uni0729.Init.SYRN=5+597|uni073C.SYRN=2@262,-456+0|uni064D.SYRN=2@262,-456+0|uni0728.Fina.SYRN=2+556|uni0655.SYRN=0@237,-98+0|uni072B.InitM.SYRN=0+559",
+            "input": "ܫٕܨٍܼܩ̮ܨ݄̣ܡ̮ܨܼ݆ܘ̱",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0711.SYRN=15@307,-10+0|uni0725.SYRN=15+776|uni0655.SYRN=13@262,-456+0|uni0728.SYRN=13+587|uni0731.SYRN=11@159,-173+0|uni0719.SYRN=11+293|uni0748.SYRN=8@258,-597+0|uni0330.SYRN=8@262,-456+0|uni0728.Fina.SYRN=8+556|uni0650.SYRN=6@316,-98+0|uni0729.Init.SYRN=6+597|uni064D.SYRN=3@262,-456+0|uni064D.SYRN=3@262,-456+0|uni0728.Fina.SYRN=3+556|uni072E.Init.SYRN=2+451|uni0746.SYRN=0@222,-338+0|uni0719.SYRN=0@25,0+318",
+            "input": "ܙ݆ܮܨٍٍܩِܨ̰݈ܙܱܨٕܥܑ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni0730.SYRN=15@187,149+0|uni0710.Fina2.SYRN=15+370|uni0739.SYRN=13@251,-98+0|uni0718.SYRN=13@-38,0+540|uni0320.SYRN=10+0|uni073B.SYRN=10@262,-456+0|uni0728.Fina.SYRN=10+556|uni0746.SYRN=8@169,-98+0|uni0720.Init.SYRN=8+418|uni073C.SYRN=5@337,-456+0|uni0738.SYRN=5@337,-456+0|uni0728.SYRN=5@75,0+662|uni0748.SYRN=3@238,-98+0|uni0621.SYRN=3+471|uni0744.SYRN=0@300,-456+0|uni0737.SYRN=0@300,-456+0|uni0728.SYRN=0@38,0+625",
+            "input": "ܨܷ݄ء݈ܨܸܼܠ݆ܨܻ̠ܘܹܐܰ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        },
+        {
+            "expectation": "uni073E.SYRN=19@435,-99+0|uni0721.SYRN=19+705|uni0746.SYRN=16@0,-120+0|uni0320.SYRN=16+0|uni0728.Fina.SYRN=16+556|uni0725.Init.SYRN=15+561|uni0655.SYRN=13@238,-98+0|uni0621.SYRN=13+471|uni0748.SYRN=10@300,-456+0|uni073B.SYRN=10@300,-456+0|uni0728.Fina.SYRN=10@38,0+594|uni073C.SYRN=8@355,-98+0|uni0721.Init.SYRN=8+761|uni0748.SYRN=5@262,-456+0|uni0731.SYRN=5@262,-456+0|uni0728.Fina.SYRN=5+556|uni0320.SYRN=3+0|uni0721.Init.SYRN=3+761|uni0748.SYRN=0@262,-456+0|uni0650.SYRN=0@262,-456+0|uni0728.SYRN=0+587",
+            "input": "ܨِ݈ܡ̠ܨܱ݈ܡܼܨܻ݈ءٕܥܨ̠݆ܡܾ",
+            "language": "x-hbot-5359524E",
+            "note": "Added by SIESTA",
+            "only": "NotoSansSyriac-Regular.ttf"
+        }
+    ]
+}
