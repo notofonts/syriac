@@ -1,18 +1,11 @@
 ## Fontbakery report
 
-Fontbakery version: 0.8.9
+Fontbakery version: 0.8.10
 
-<details><summary><b>[16] NotoSansSyriac-Thin.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions">com.google.fonts/check/vertical_metrics_regressions</a>)</summary><div>
+<details><summary><b>[14] NotoSansSyriac-Thin.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions">com.google.fonts/check/vertical_metrics_regressions</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with TypeError: 'NoneType' object is not subscriptable
-</div></details><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x00AF (MACRON)
- [code: missing-codepoints]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -36,27 +29,27 @@ But instead we have got:
 
 * 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
 
-	- uni030A
+	- acutecomb
 
-	- uni0749
+	- brevecomb
 
-	- uni064C
+	- caroncomb
 
-	- uni073C
+	- cedillacomb
 
-	- uni0730
+	- circumflexcomb
 
-	- uni073D
+	- commaaccentcomb
 
-	- uni0307
+	- commaturnedabovecomb
 
-	- uni064D
+	- gravecomb
 
-	- uni0748
+	- hungarumlautcomb
 
-	- uni0650 
+	- ogonekcomb 
 
-	- And 42 more.
+	- And 52 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: unattached-dotted-circle-marks]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
@@ -85,29 +78,29 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 * ⚠ **WARN** The following glyphs could not be reached by codepoint or substitution rules:
 
-	- guillemetright
+	- dieresiscomb
 
-	- uni0722.Sadhe.SYRJ
-
-	- uni0728.AltNun.SYRJ
+	- dotaccentcomb
 
 	- guillemetleft
 
+	- guillemetright
+
 	- macroncomb
-
-	- uni0728.FinaAltNun.SYRJ
-
-	- uni0728.Nun.SYRJ
 
 	- ringcomb
 
 	- tildecomb
 
-	- dieresiscomb
+	- uni0722.Sadhe.SYRJ
+
+	- uni0728.AltNun.SYRJ
+
+	- uni0728.FinaAltNun.SYRJ
 
 	- uni0728.FinaNun.SYRJ 
 
-	- And dotaccentcomb
+	- And uni0728.Nun.SYRJ
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -129,11 +122,6 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 SAM4in (unencoded), SAM4xout (unencoded), SAMdot (unencoded) and SAMline (unencoded) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), gravecomb (U+0300), hungarumlautcomb (U+030B) and ogonekcomb (U+0328) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any semi-vertical or semi-horizontal lines? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_semi_vertical">com.google.fonts/check/outline_semi_vertical</a>)</summary><div>
 
 
@@ -151,8 +139,8 @@ The following glyphs do not have the recommended number of contours:
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 1 | 6 | 9 | 118 | 8 | 93 | 0 |
-| 0% | 3% | 4% | 50% | 3% | 40% | 0% |
+| 1 | 5 | 8 | 114 | 7 | 92 | 0 |
+| 0% | 2% | 4% | 50% | 3% | 41% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**

@@ -1,18 +1,11 @@
 ## Fontbakery report
 
-Fontbakery version: 0.8.9
+Fontbakery version: 0.8.10
 
-<details><summary><b>[17] NotoSansSyriac-Black.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions">com.google.fonts/check/vertical_metrics_regressions</a>)</summary><div>
+<details><summary><b>[15] NotoSansSyriac-Black.ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check if the vertical metrics of a family are similar to the same family hosted on Google Fonts. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/vertical_metrics_regressions">com.google.fonts/check/vertical_metrics_regressions</a>)</summary><div>
 
 
 * 💔 **ERROR** Failed with TypeError: 'NoneType' object is not subscriptable
-</div></details><details><summary>🔥 <b>FAIL:</b> Check Google Fonts glyph coverage. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/glyph_coverage">com.google.fonts/check/glyph_coverage</a>)</summary><div>
-
-
-* 🔥 **FAIL** Missing required codepoints:
-
-	- 0x00AF (MACRON)
- [code: missing-codepoints]
 </div></details><details><summary>🔥 <b>FAIL:</b> Check copyright namerecords match license file. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/license">com.google.fonts/check/name/license</a>)</summary><div>
 
 
@@ -36,27 +29,27 @@ But instead we have got:
 
 * 🔥 **FAIL** The following glyphs could not be attached to the dotted circle glyph:
 
-	- uni0330
+	- acutecomb
 
-	- uni0653
+	- brevecomb
 
-	- uni0736
+	- caroncomb
 
-	- uni0320
+	- cedillacomb
 
-	- uni0304
+	- circumflexcomb
 
-	- uni0748
+	- commaaccentcomb
 
-	- uni030A
+	- commaturnedabovecomb
 
-	- uni0739
+	- gravecomb
 
-	- uni064B
+	- hungarumlautcomb
 
-	- uni0308 
+	- ogonekcomb 
 
-	- And 42 more.
+	- And 52 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: unattached-dotted-circle-marks]
 </div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
@@ -92,17 +85,17 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- dieresiscomb
 
+	- dotaccentcomb
+
 	- guillemetleft
-
-	- ringcomb
-
-	- tildecomb
 
 	- guillemetright
 
-	- dotaccentcomb 
+	- macroncomb
 
-	- And macroncomb
+	- ringcomb 
+
+	- And tildecomb
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -124,11 +117,6 @@ The following glyphs do not have the recommended number of contours:
 
 * ⚠ **WARN** The following spacing glyphs may be in the GDEF mark glyph class by mistake:
 	 SAM4in (unencoded), SAM4xout (unencoded), SAMdot (unencoded) and SAMline (unencoded) [code: spacing-mark-glyphs]
-</div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
-
-
-* ⚠ **WARN** The following mark characters could be in the GDEF mark glyph class:
-	 acutecomb (U+0301), brevecomb (U+0306), caroncomb (U+030C), cedillacomb (U+0327), circumflexcomb (U+0302), commaaccentcomb (U+0326), commaturnedabovecomb (U+0312), gravecomb (U+0300), hungarumlautcomb (U+030B) and ogonekcomb (U+0328) [code: mark-chars]
 </div></details><details><summary>⚠ <b>WARN:</b> Do outlines contain any jaggy segments? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_jaggy_segments">com.google.fonts/check/outline_jaggy_segments</a>)</summary><div>
 
 
@@ -162,8 +150,8 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-s
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 1 | 6 | 10 | 118 | 8 | 92 | 0 |
-| 0% | 3% | 4% | 50% | 3% | 39% | 0% |
+| 1 | 5 | 9 | 114 | 7 | 91 | 0 |
+| 0% | 2% | 4% | 50% | 3% | 40% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
