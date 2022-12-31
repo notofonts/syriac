@@ -1,0 +1,7 @@
+familyName: Noto Sans Syriac Estrangela
+googleFonts: true
+includeSubsets:
+- from: Noto Sans
+  name: GF_Latin_Core
+sources:
+- NotoSansSyriac-Estrangela.glyphs

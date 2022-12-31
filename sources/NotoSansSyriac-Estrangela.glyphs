@@ -53149,6 +53149,40 @@ width = 235;
 note = SAMline;
 }
 );
+instances = (
+{
+axesValues = (
+400,
+100
+);
+instanceInterpolations = {
+m01 = 1;
+};
+name = Regular;
+},
+{
+axesValues = (
+100,
+100
+);
+instanceInterpolations = {
+"22847997-2214-411C-BF12-975F69A1246B" = 1;
+};
+name = Thin;
+weightClass = 100;
+},
+{
+axesValues = (
+800,
+100
+);
+instanceInterpolations = {
+"54406707-D089-4649-8539-9EC6A26EE6B0" = 1;
+};
+name = Black;
+weightClass = 900;
+}
+);
 kerningLTR = {
 m01 = {
 uni0710 = {

@@ -1,8 +1,0 @@
-buildVariable: false
-familyName: Noto Sans Syriac-Regular
-googleFonts: true
-includeSubsets:
-- from: Noto Sans
-  name: GF_Latin_Core
-sources:
-- NotoSansSyriac-Regular.glyphs
