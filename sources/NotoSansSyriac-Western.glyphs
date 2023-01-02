@@ -2062,6 +2062,7 @@ size = "-15";
 );
 }
 );
+iconName = Light;
 id = "8E9A709A-C666-43E5-8831-9AE42D64DE83";
 metricValues = (
 {
@@ -2143,6 +2144,7 @@ size = "-15";
 );
 }
 );
+iconName = Bold;
 id = "7FDEFC05-49C3-46A7-9C1D-65D39809C804";
 metricValues = (
 {
