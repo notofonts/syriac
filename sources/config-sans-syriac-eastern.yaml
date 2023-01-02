@@ -1,4 +1,4 @@
-buildVariable: false
+buildVariable: true
 familyName: Noto Sans Syriac Eastern
 googleFonts: true
 includeSubsets:
