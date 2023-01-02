@@ -297,6 +297,10 @@ uni2671.SYRN,
 uni072Auni0308.Isol.SYRN,
 uni072Auni0308.Fina.SYRN
 );
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 date = "2018-02-18 23:04:38 +0000";
@@ -447,10 +451,10 @@ code = "lookup LigatureSubstitution7 {
 name = LigatureSubstitution7;
 },
 {
+disabled = 1;
 code = "languagesystem syrc dflt;
 languagesystem syrc SYRN;
 ";
-disabled = 1;
 name = Languagesystems;
 }
 );
@@ -568,6 +572,7 @@ size = "-15";
 id = m01;
 metricValues = (
 {
+over = 0;
 pos = 926;
 },
 {
@@ -582,6 +587,7 @@ pos = 553;
 over = -15;
 },
 {
+over = 0;
 pos = -486;
 },
 {
@@ -649,6 +655,7 @@ size = "-15";
 id = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
 metricValues = (
 {
+over = 0;
 pos = 926;
 },
 {
@@ -663,6 +670,7 @@ pos = 553;
 over = -15;
 },
 {
+over = 0;
 pos = -486;
 },
 {
@@ -730,6 +738,7 @@ size = "-15";
 id = "DA9A8D32-36F4-433E-897C-B49E872243BC";
 metricValues = (
 {
+over = 0;
 pos = 926;
 },
 {
@@ -744,6 +753,7 @@ pos = 553;
 over = -15;
 },
 {
+over = 0;
 pos = -486;
 },
 {
@@ -831,7 +841,7 @@ nodes = (
 width = 600;
 }
 );
-note = ".notdef";
+note = .notdef;
 },
 {
 glyphname = NULL;
@@ -24818,6 +24828,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -24854,6 +24865,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -24890,6 +24902,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -25200,6 +25213,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -25259,6 +25273,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -25318,6 +25333,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -25659,6 +25675,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -25708,6 +25725,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -25757,6 +25775,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -25816,6 +25835,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -25849,6 +25869,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -25882,6 +25903,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -25925,6 +25947,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -25958,6 +25981,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -25991,6 +26015,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -26143,6 +26168,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -26175,6 +26201,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -26207,6 +26234,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -26249,6 +26277,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -26273,6 +26302,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -26297,6 +26327,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -26455,6 +26486,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -26492,6 +26524,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -26529,6 +26562,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -26661,6 +26695,7 @@ pos = (-4,-163);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -26694,6 +26729,7 @@ pos = (-4,-163);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -26727,6 +26763,7 @@ pos = (-4,-163);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -26863,6 +26900,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -26891,6 +26929,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -26919,6 +26958,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -27073,6 +27113,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -27106,6 +27147,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -27139,6 +27181,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -27321,6 +27364,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -27363,6 +27407,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -27405,6 +27450,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -27542,6 +27588,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -27566,6 +27613,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -27590,6 +27638,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -28680,6 +28729,7 @@ pos = (0,-142);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -28704,6 +28754,7 @@ pos = (0,-142);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -28728,6 +28779,7 @@ pos = (0,-220);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -28762,6 +28814,7 @@ pos = (-4,-143);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -28795,6 +28848,7 @@ pos = (-4,-143);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -28828,6 +28882,7 @@ pos = (-4,-220);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -28867,6 +28922,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -28912,6 +28968,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -28957,6 +29014,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -29016,6 +29074,7 @@ pos = (-4,-165);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -29053,6 +29112,7 @@ pos = (-4,-165);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -29090,6 +29150,7 @@ pos = (-4,-186);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -29137,6 +29198,7 @@ pos = (-4,-114);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -29171,6 +29233,7 @@ pos = (-4,-114);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -29205,6 +29268,7 @@ pos = (-4,-166);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -29249,6 +29313,7 @@ pos = (-4,-145);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -29295,6 +29360,7 @@ pos = (-4,-145);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -29341,6 +29407,7 @@ pos = (-4,-170);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -29397,6 +29464,7 @@ pos = (0,-124);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -29421,6 +29489,7 @@ pos = (0,-124);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -29445,6 +29514,7 @@ pos = (0,-147);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -29814,6 +29884,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -29847,6 +29918,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -29880,6 +29952,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -30192,6 +30265,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -30216,6 +30290,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -30240,6 +30315,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -30902,6 +30978,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -30949,6 +31026,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
@@ -30996,6 +31074,7 @@ pos = (0,-4);
 },
 {
 name = _bottom;
+pos = (0,0);
 }
 );
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
@@ -35828,6 +35907,8 @@ name = Black;
 weightClass = 900;
 }
 );
+kerningLTR = {
+};
 metrics = (
 {
 type = ascender;
@@ -35851,16 +35932,7 @@ type = "italic angle";
 properties = (
 {
 key = copyrights;
-values = (
-{
-language = ENG;
-value = "Copyright 2018-2022 Google Inc. All Rights Reserved.";
-},
-{
-language = dflt;
-value = "Copyright 2018-2022 Google Inc. All Rights Reserved.";
-}
-);
+value = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/syriac)";
 },
 {
 key = manufacturers;
@@ -35918,7 +35990,9 @@ value = "http://www.monotype.com/studio";
 settings = {
 disablesNiceNames = 1;
 };
+stems = (
+);
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 1;
+versionMinor = 2;
 }

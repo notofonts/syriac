@@ -469,6 +469,10 @@ uni072Auni0308.IsolQR,
 uni072F.FinaQR,
 uni072F.QR
 );
+},
+{
+name = "Use Typo Metrics";
+value = 1;
 }
 );
 date = "2018-02-18 23:04:38 +0000";
@@ -1984,6 +1988,7 @@ size = "-15";
 id = m01;
 metricValues = (
 {
+over = 0;
 pos = 926;
 },
 {
@@ -1998,6 +2003,7 @@ pos = 553;
 over = -15;
 },
 {
+over = 0;
 pos = -486;
 },
 {
@@ -2066,6 +2072,7 @@ iconName = Light;
 id = "8E9A709A-C666-43E5-8831-9AE42D64DE83";
 metricValues = (
 {
+over = 0;
 pos = 926;
 },
 {
@@ -2080,6 +2087,7 @@ pos = 553;
 over = -15;
 },
 {
+over = 0;
 pos = -486;
 },
 {
@@ -2148,6 +2156,7 @@ iconName = Bold;
 id = "7FDEFC05-49C3-46A7-9C1D-65D39809C804";
 metricValues = (
 {
+over = 0;
 pos = 926;
 },
 {
@@ -2162,6 +2171,7 @@ pos = 553;
 over = -15;
 },
 {
+over = 0;
 pos = -486;
 },
 {
@@ -2249,7 +2259,7 @@ nodes = (
 width = 600;
 }
 );
-note = ".notdef";
+note = .notdef;
 },
 {
 glyphname = NULL;
@@ -29871,6 +29881,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -29907,6 +29918,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -29943,6 +29955,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30349,6 +30362,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30408,6 +30422,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30467,6 +30482,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30904,6 +30920,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30953,6 +30970,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31002,6 +31020,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31061,6 +31080,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31126,6 +31146,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31191,6 +31212,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31266,6 +31288,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31331,6 +31354,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31396,6 +31420,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31580,6 +31605,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31612,6 +31638,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31644,6 +31671,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31686,6 +31714,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31726,6 +31755,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31766,6 +31796,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31964,6 +31995,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32009,6 +32041,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32054,6 +32087,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32448,6 +32482,7 @@ layers = (
 anchors = (
 {
 name = _bottomright;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -32476,6 +32511,7 @@ width = 0;
 anchors = (
 {
 name = _bottomright;
+pos = (0,0);
 }
 );
 layerId = "8E9A709A-C666-43E5-8831-9AE42D64DE83";
@@ -32504,6 +32540,7 @@ width = 0;
 anchors = (
 {
 name = _bottomright;
+pos = (0,0);
 }
 );
 layerId = "7FDEFC05-49C3-46A7-9C1D-65D39809C804";
@@ -32702,6 +32739,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32751,6 +32789,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32800,6 +32839,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -33070,6 +33110,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -33136,6 +33177,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -33202,6 +33244,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -33363,6 +33406,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -33387,6 +33431,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -33411,6 +33456,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -34616,6 +34662,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34640,6 +34687,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34664,6 +34712,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34698,6 +34747,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34730,6 +34780,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34762,6 +34813,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34804,6 +34856,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34853,6 +34906,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34902,6 +34956,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34961,6 +35016,7 @@ layers = (
 anchors = (
 {
 name = _bottomright;
+pos = (0,0);
 }
 );
 layerId = m01;
@@ -35006,6 +35062,7 @@ width = 0;
 anchors = (
 {
 name = _bottomright;
+pos = (0,0);
 }
 );
 layerId = "8E9A709A-C666-43E5-8831-9AE42D64DE83";
@@ -35051,6 +35108,7 @@ width = 0;
 anchors = (
 {
 name = _bottomright;
+pos = (0,0);
 }
 );
 layerId = "7FDEFC05-49C3-46A7-9C1D-65D39809C804";
@@ -35106,6 +35164,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35143,6 +35202,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35180,6 +35240,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35227,6 +35288,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35261,6 +35323,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35295,6 +35358,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35339,6 +35403,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35385,6 +35450,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35431,6 +35497,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35487,6 +35554,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35511,6 +35579,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35535,6 +35604,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35904,6 +35974,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -35937,6 +36008,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -35970,6 +36042,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -36282,6 +36355,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -36306,6 +36380,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -36330,6 +36405,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -36992,6 +37068,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -37039,6 +37116,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -37086,6 +37164,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40207,6 +40286,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40263,6 +40343,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40319,6 +40400,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40384,6 +40466,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40449,6 +40532,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40514,6 +40598,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -49513,6 +49598,7 @@ layers = (
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -49553,6 +49639,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -49593,6 +49680,7 @@ width = 0;
 anchors = (
 {
 name = _bottom;
+pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -56080,6 +56168,8 @@ name = Black;
 weightClass = 900;
 }
 );
+kerningLTR = {
+};
 metrics = (
 {
 type = ascender;
@@ -56103,16 +56193,7 @@ type = "italic angle";
 properties = (
 {
 key = copyrights;
-values = (
-{
-language = ENG;
-value = "Copyright 2018-2022 Google Inc. All Rights Reserved.";
-},
-{
-language = dflt;
-value = "Copyright 2018-2022 Google Inc. All Rights Reserved.";
-}
-);
+value = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/syriac)";
 },
 {
 key = manufacturers;
@@ -56178,7 +56259,9 @@ value = "NotoSansSyriac-Regular";
 settings = {
 disablesNiceNames = 1;
 };
+stems = (
+);
 unitsPerEm = 1000;
 versionMajor = 2;
-versionMinor = 1;
+versionMinor = 2;
 }
