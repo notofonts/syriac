@@ -1018,285 +1018,8 @@ code = "lookup SinglePositioning18 {
 name = SinglePositioning18;
 },
 {
-code = "lookup ChainedContextualGPOS28 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 21 
-    pos uni074F.Medi' lookup SinglePositioning1 @class7;
-    pos uni074F.Init' lookup SinglePositioning1 @class7;
-    pos uni074E.Medi' lookup SinglePositioning1 @class7;
-    pos uni074E.Init' lookup SinglePositioning1 @class7;
-    pos uni072D.Medi' lookup SinglePositioning1 @class7;
-    pos uni072D.Init' lookup SinglePositioning1 @class7;
-    pos uni0726.Medi' lookup SinglePositioning1 @class7;
-    pos uni0726.Init' lookup SinglePositioning1 @class7;
-    pos uni0725.Medi' lookup SinglePositioning1 @class7;
-    pos uni0725.Init' lookup SinglePositioning1 @class7;
-    pos uni0721.Medi' lookup SinglePositioning1 @class7;
-    pos uni0721.Init' lookup SinglePositioning1 @class7;
-    pos uni071F.Medi' lookup SinglePositioning1 @class7;
-    pos uni071F.Init' lookup SinglePositioning1 @class7;
-    pos uni071D.Medi' lookup SinglePositioning1 @class7;
-    pos uni071D.Init' lookup SinglePositioning1 @class7;
-    pos uni071A.Medi' lookup SinglePositioning1 @class7;
-    pos uni071A.Init' lookup SinglePositioning1 @class7;
-    pos uni0712.Medi' lookup SinglePositioning1 @class7;
-    pos uni0712.Init' lookup SinglePositioning1 @class7;
-} ChainedContextualGPOS28;
-";
-name = ChainedContextualGPOS28;
-},
-{
-code = "lookup ChainedContextualGPOS29 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 22 
-    pos uni0712.Medi' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0712.Init' lookup SinglePositioning2 uni0722.Fina;
-    pos uni071F.Medi' lookup SinglePositioning2 uni0722.Fina;
-    pos uni071F.Init' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0721.Medi' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0721.Init' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0723.Medi' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0723.Init' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0724.Medi' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0724.Init' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0725.Medi' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0725.Init' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0726.Medi' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0726.Init' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0727.Medi' lookup SinglePositioning2 uni0722.Fina;
-    pos uni0727.Init' lookup SinglePositioning2 uni0722.Fina;
-    pos uni074E.Medi' lookup SinglePositioning2 uni0722.Fina;
-    pos uni074E.Init' lookup SinglePositioning2 uni0722.Fina;
-} ChainedContextualGPOS29;
-";
-name = ChainedContextualGPOS29;
-},
-{
-code = "lookup ChainedContextualGPOS30 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
-    ;
-    # Original source: 23 
-    pos uni0727.Medi' lookup SinglePositioning3 @markAttachmentSet2 uni0722.Fina;
-    pos uni0727.Init' lookup SinglePositioning3 @markAttachmentSet2 uni0722.Fina;
-    pos uni0726.Medi' lookup SinglePositioning3 @markAttachmentSet2 uni0722.Fina;
-    pos uni0726.Init' lookup SinglePositioning3 @markAttachmentSet2 uni0722.Fina;
-    pos uni071F.Medi' lookup SinglePositioning3 @markAttachmentSet2 uni0722.Fina;
-    pos uni071F.Init' lookup SinglePositioning3 @markAttachmentSet2 uni0722.Fina;
-} ChainedContextualGPOS30;
-";
-name = ChainedContextualGPOS30;
-},
-{
-code = "lookup ChainedContextualGPOS31 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet6;
-    ;
-    # Original source: 24 
-    pos @class469 uni072C [uni0742 uni0325]' lookup SinglePositioning4;
-} ChainedContextualGPOS31;
-";
-name = ChainedContextualGPOS31;
-},
-{
-code = "lookup ChainedContextualGPOS32 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet6;
-    ;
-    # Original source: 25 
-    pos uni072F' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
-    pos uni072F' lookup SinglePositioning4 uni072C [uni0742 uni0325];
-    pos uni072F.Fina' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
-    pos uni072F.Fina' lookup SinglePositioning4 uni072C [uni0742 uni0325];
-    pos uni072C' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
-    pos uni072C' lookup SinglePositioning4 uni072C [uni0742 uni0325];
-    pos uni072C.Fina' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
-    pos uni072C.Fina' lookup SinglePositioning4 uni072C [uni0742 uni0325];
-    pos uni072A' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
-    pos uni072A' lookup SinglePositioning4 uni072C [uni0742 uni0325];
-    pos uni072A.Fina' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
-    pos uni072A.Fina' lookup SinglePositioning4 uni072C [uni0742 uni0325];
-    pos uni0716' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
-    pos uni0716' lookup SinglePositioning4 uni072C [uni0742 uni0325];
-    pos uni0716.Fina' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
-    pos uni0716.Fina' lookup SinglePositioning4 uni072C [uni0742 uni0325];
-    pos uni0715' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
-    pos uni0715' lookup SinglePositioning4 uni072C [uni0742 uni0325];
-    pos uni0715.Fina' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
-    pos uni0715.Fina' lookup SinglePositioning4 uni072C [uni0742 uni0325];
-} ChainedContextualGPOS32;
-";
-name = ChainedContextualGPOS32;
-},
-{
-code = "lookup ChainedContextualGPOS33 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
-    ;
-    # Original source: 26 
-    pos @class470' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
-    pos @class470' lookup SinglePositioning3 @markAttachmentSet2 @class473;
-    pos @class477' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
-    pos @class477' lookup SinglePositioning3 @markAttachmentSet2 @class473;
-    pos [uni072C uni072C.Fina]' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
-    pos [uni072C uni072C.Fina]' lookup SinglePositioning3 @markAttachmentSet2 @class473;
-    pos uni072A' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
-    pos uni072A' lookup SinglePositioning3 @markAttachmentSet2 @class473;
-    pos uni072A.Fina' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
-    pos uni072A.Fina' lookup SinglePositioning3 @markAttachmentSet2 @class473;
-    pos uni0716' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
-    pos uni0716' lookup SinglePositioning3 @markAttachmentSet2 @class473;
-    pos uni0716.Fina' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
-    pos uni0716.Fina' lookup SinglePositioning3 @markAttachmentSet2 @class473;
-    pos uni0710' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
-    pos uni0710' lookup SinglePositioning3 @markAttachmentSet2 @class473;
-} ChainedContextualGPOS33;
-";
-name = ChainedContextualGPOS33;
-},
-{
-code = "lookup ChainedContextualGPOS34 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
-    ;
-    # Original source: 27 
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 @class470 @markAttachmentSet2' lookup SinglePositioning3;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0716 @markAttachmentSet2' lookup SinglePositioning10;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0716.QR @markAttachmentSet2' lookup SinglePositioning9;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni072A @markAttachmentSet2' lookup SinglePositioning10;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni072A.QR @markAttachmentSet2' lookup SinglePositioning9;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni072F @markAttachmentSet2' lookup SinglePositioning8;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni072F.QR @markAttachmentSet2' lookup SinglePositioning8;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni072Auni0308.Isol @markAttachmentSet2' lookup SinglePositioning7;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni072Auni0308.IsolQR @markAttachmentSet2' lookup SinglePositioning6;
-    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni071D.Init @markAttachmentSet2';
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni071F @markAttachmentSet2' lookup SinglePositioning14;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0721 @markAttachmentSet2' lookup SinglePositioning13;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0720.InitLiga @markAttachmentSet2' lookup SinglePositioning12;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0722.Init @markAttachmentSet2' lookup SinglePositioning12;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0722.InitLiga @markAttachmentSet2' lookup SinglePositioning12;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @class470 @markAttachmentSet2' lookup SinglePositioning3;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0716 @markAttachmentSet2' lookup SinglePositioning10;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0716.QR @markAttachmentSet2' lookup SinglePositioning9;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni072A @markAttachmentSet2' lookup SinglePositioning10;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni072A.QR @markAttachmentSet2' lookup SinglePositioning9;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni072F @markAttachmentSet2' lookup SinglePositioning8;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni072F.QR @markAttachmentSet2' lookup SinglePositioning8;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni072Auni0308.Isol @markAttachmentSet2' lookup SinglePositioning7;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni072Auni0308.IsolQR @markAttachmentSet2' lookup SinglePositioning6;
-    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni071D.Init @markAttachmentSet2';
-    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni071F @markAttachmentSet2';
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0721 @markAttachmentSet2' lookup SinglePositioning11;
-    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0720.InitLiga @markAttachmentSet2';
-    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0722.Init @markAttachmentSet2';
-    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0722.InitLiga @markAttachmentSet2';
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @class470 @markAttachmentSet2' lookup SinglePositioning3;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0716 @markAttachmentSet2' lookup SinglePositioning10;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0716.QR @markAttachmentSet2' lookup SinglePositioning9;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni072A @markAttachmentSet2' lookup SinglePositioning10;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni072A.QR @markAttachmentSet2' lookup SinglePositioning9;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni072F @markAttachmentSet2' lookup SinglePositioning8;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni072F.QR @markAttachmentSet2' lookup SinglePositioning8;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni072Auni0308.Isol @markAttachmentSet2' lookup SinglePositioning7;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni072Auni0308.IsolQR @markAttachmentSet2' lookup SinglePositioning6;
-    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni071D.Init @markAttachmentSet2';
-    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni071F @markAttachmentSet2';
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0721 @markAttachmentSet2' lookup SinglePositioning5;
-    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0720.InitLiga @markAttachmentSet2';
-    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0722.Init @markAttachmentSet2';
-    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0722.InitLiga @markAttachmentSet2';
-} ChainedContextualGPOS34;
-";
-name = ChainedContextualGPOS34;
-},
-{
-code = "lookup ChainedContextualGPOS35 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
-    ;
-    # Original source: 28 
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0722 @markAttachmentSet2' lookup SinglePositioning17;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0722 @markAttachmentSet2' lookup SinglePositioning16;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0722 @markAttachmentSet2' lookup SinglePositioning15;
-} ChainedContextualGPOS35;
-";
-name = ChainedContextualGPOS35;
-},
-{
-code = "lookup ChainedContextualGPOS36 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
-    ;
-    # Original source: 29 
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 @markAttachmentSet2 @markAttachmentSet2 uni0718 @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 @markAttachmentSet2 @markAttachmentSet2 uni0729.Init @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning16 @markAttachmentSet2 @markAttachmentSet2 uni071A.Init @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning16 @markAttachmentSet2 @markAttachmentSet2 uni071D @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 @markAttachmentSet2 @markAttachmentSet2 uni072C @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning17 @markAttachmentSet2 @markAttachmentSet2 uni074F.Init @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning5 @markAttachmentSet2 @markAttachmentSet2 uni0621 @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 @markAttachmentSet2 uni0718 @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 @markAttachmentSet2 uni0729.Init @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning16 @markAttachmentSet2 uni071A.Init @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning16 @markAttachmentSet2 uni071D @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 @markAttachmentSet2 uni072C @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning17 @markAttachmentSet2 uni074F.Init @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning5 @markAttachmentSet2 uni0621 @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 uni0718 @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 uni0729.Init @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning16 uni071A.Init @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning16 uni071D @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 uni072C @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning17 uni074F.Init @markAttachmentSet2;
-    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning5 uni0621 @markAttachmentSet2;
-} ChainedContextualGPOS36;
-";
-name = ChainedContextualGPOS36;
-},
-{
-code = "lookup ChainedContextualGPOS37 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
-    ;
-    # Original source: 30 
-    pos @class470' lookup SinglePositioning15 @class17 uni0722;
-    pos uni0710' lookup SinglePositioning15 @class17 uni0722;
-    pos @class658' lookup SinglePositioning15 @class17 uni0722;
-    pos @class660' lookup SinglePositioning15 @class17 uni0722;
-    pos uni0621' lookup SinglePositioning15 @class17 uni0722;
-    pos [uni0719 uni0719.Fina]' lookup SinglePositioning16 @class17 uni0722;
-    pos @class470' lookup SinglePositioning15 [uni073C uni0744 uni0323 uni0732.below] uni0722;
-    pos uni0710' lookup SinglePositioning15 [uni073C uni0744 uni0323 uni0732.below] uni0722;
-    pos @class658' lookup SinglePositioning15 [uni073C uni0744 uni0323 uni0732.below] uni0722;
-    pos @class660' lookup SinglePositioning15 [uni073C uni0744 uni0323 uni0732.below] uni0722;
-    pos uni0621' lookup SinglePositioning15 [uni073C uni0744 uni0323 uni0732.below] uni0722;
-    pos [uni0719 uni0719.Fina]' lookup SinglePositioning16 [uni073C uni0744 uni0323 uni0732.below] uni0722;
-} ChainedContextualGPOS37;
-";
-name = ChainedContextualGPOS37;
-},
-{
-code = "lookup ChainedContextualGPOS38 {
-    lookupflag RightToLeft MarkAttachmentType @class10;
-    ;
-    # Original source: 31 
-    pos uni0719' lookup SinglePositioning18 @class10 uni0719 @class9;
-    pos uni0719.Fina' lookup SinglePositioning18 @class10 uni0719 @class9;
-    pos uni0719' lookup SinglePositioning18 @class9 uni0719 @class10;
-    pos uni0719.Fina' lookup SinglePositioning18 @class9 uni0719 @class10;
-} ChainedContextualGPOS38;
-";
-name = ChainedContextualGPOS38;
-},
-{
-code = "lookup ChainedContextualGPOS39 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
-    ;
-    # Original source: 32 
-    pos uni0719' lookup SinglePositioning17 @markAttachmentSet2 uni0719 @class17;
-    pos uni0719.Fina' lookup SinglePositioning17 @markAttachmentSet2 uni0719 @class17;
-    pos uni0719' lookup SinglePositioning17 @class17 uni0719 @markAttachmentSet2;
-    pos uni0719.Fina' lookup SinglePositioning17 @class17 uni0719 @markAttachmentSet2;
-} ChainedContextualGPOS39;
-";
-name = ChainedContextualGPOS39;
-},
-{
-code = "languagesystem syrc SYRJ;
+code = "languagesystem DFLT dflt;
+languagesystem syrc SYRJ;
 languagesystem syrc dflt;
 ";
 name = Languagesystems;
@@ -1878,41 +1601,248 @@ tag = mkmk;
 },
 {
 code = "# Automatic Code Start
-# [('syrc', 'SYRJ')]
-    lookup ChainedContextualGPOS28;
 
-# [('syrc', 'SYRJ')]
-    lookup ChainedContextualGPOS29;
+lookup ChainedContextualGPOS28 {
+    lookupflag RightToLeft IgnoreMarks;
+    ;
+    # Original source: 21 
+    pos uni074F.Medi' lookup SinglePositioning1 @class7;
+    pos uni074F.Init' lookup SinglePositioning1 @class7;
+    pos uni074E.Medi' lookup SinglePositioning1 @class7;
+    pos uni074E.Init' lookup SinglePositioning1 @class7;
+    pos uni072D.Medi' lookup SinglePositioning1 @class7;
+    pos uni072D.Init' lookup SinglePositioning1 @class7;
+    pos uni0726.Medi' lookup SinglePositioning1 @class7;
+    pos uni0726.Init' lookup SinglePositioning1 @class7;
+    pos uni0725.Medi' lookup SinglePositioning1 @class7;
+    pos uni0725.Init' lookup SinglePositioning1 @class7;
+    pos uni0721.Medi' lookup SinglePositioning1 @class7;
+    pos uni0721.Init' lookup SinglePositioning1 @class7;
+    pos uni071F.Medi' lookup SinglePositioning1 @class7;
+    pos uni071F.Init' lookup SinglePositioning1 @class7;
+    pos uni071D.Medi' lookup SinglePositioning1 @class7;
+    pos uni071D.Init' lookup SinglePositioning1 @class7;
+    pos uni071A.Medi' lookup SinglePositioning1 @class7;
+    pos uni071A.Init' lookup SinglePositioning1 @class7;
+    pos uni0712.Medi' lookup SinglePositioning1 @class7;
+    pos uni0712.Init' lookup SinglePositioning1 @class7;
+    } ChainedContextualGPOS28;
 
-# [('syrc', 'SYRJ')]
-    lookup ChainedContextualGPOS30;
+lookup ChainedContextualGPOS29 {
+    lookupflag RightToLeft IgnoreMarks;
+    ;
+    # Original source: 22 
+    pos uni0712.Medi' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0712.Init' lookup SinglePositioning2 uni0722.Fina;
+    pos uni071F.Medi' lookup SinglePositioning2 uni0722.Fina;
+    pos uni071F.Init' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0721.Medi' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0721.Init' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0723.Medi' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0723.Init' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0724.Medi' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0724.Init' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0725.Medi' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0725.Init' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0726.Medi' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0726.Init' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0727.Medi' lookup SinglePositioning2 uni0722.Fina;
+    pos uni0727.Init' lookup SinglePositioning2 uni0722.Fina;
+    pos uni074E.Medi' lookup SinglePositioning2 uni0722.Fina;
+    pos uni074E.Init' lookup SinglePositioning2 uni0722.Fina;
+    } ChainedContextualGPOS29;
 
-# [('syrc', 'SYRJ')]
-    lookup ChainedContextualGPOS31;
+lookup ChainedContextualGPOS30 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
+    ;
+    # Original source: 23 
+    pos uni0727.Medi' lookup SinglePositioning3 @markAttachmentSet2 uni0722.Fina;
+    pos uni0727.Init' lookup SinglePositioning3 @markAttachmentSet2 uni0722.Fina;
+    pos uni0726.Medi' lookup SinglePositioning3 @markAttachmentSet2 uni0722.Fina;
+    pos uni0726.Init' lookup SinglePositioning3 @markAttachmentSet2 uni0722.Fina;
+    pos uni071F.Medi' lookup SinglePositioning3 @markAttachmentSet2 uni0722.Fina;
+    pos uni071F.Init' lookup SinglePositioning3 @markAttachmentSet2 uni0722.Fina;
+    } ChainedContextualGPOS30;
 
-# [('syrc', 'SYRJ')]
-    lookup ChainedContextualGPOS32;
+lookup ChainedContextualGPOS31 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet6;
+    ;
+    # Original source: 24 
+    pos @class469 uni072C [uni0742 uni0325]' lookup SinglePositioning4;
+    } ChainedContextualGPOS31;
 
-# [('syrc', 'SYRJ')]
-    lookup ChainedContextualGPOS33;
+lookup ChainedContextualGPOS32 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet6;
+    ;
+    # Original source: 25 
+    pos uni072F' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
+    pos uni072F' lookup SinglePositioning4 uni072C [uni0742 uni0325];
+    pos uni072F.Fina' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
+    pos uni072F.Fina' lookup SinglePositioning4 uni072C [uni0742 uni0325];
+    pos uni072C' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
+    pos uni072C' lookup SinglePositioning4 uni072C [uni0742 uni0325];
+    pos uni072C.Fina' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
+    pos uni072C.Fina' lookup SinglePositioning4 uni072C [uni0742 uni0325];
+    pos uni072A' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
+    pos uni072A' lookup SinglePositioning4 uni072C [uni0742 uni0325];
+    pos uni072A.Fina' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
+    pos uni072A.Fina' lookup SinglePositioning4 uni072C [uni0742 uni0325];
+    pos uni0716' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
+    pos uni0716' lookup SinglePositioning4 uni072C [uni0742 uni0325];
+    pos uni0716.Fina' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
+    pos uni0716.Fina' lookup SinglePositioning4 uni072C [uni0742 uni0325];
+    pos uni0715' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
+    pos uni0715' lookup SinglePositioning4 uni072C [uni0742 uni0325];
+    pos uni0715.Fina' lookup SinglePositioning4 [uni0742 uni0325] uni072C [uni0742 uni0325];
+    pos uni0715.Fina' lookup SinglePositioning4 uni072C [uni0742 uni0325];
+    } ChainedContextualGPOS32;
 
-# [('syrc', 'SYRJ')]
-    lookup ChainedContextualGPOS34;
+lookup ChainedContextualGPOS33 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
+    ;
+    # Original source: 26 
+    pos @class470' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
+    pos @class470' lookup SinglePositioning3 @markAttachmentSet2 @class473;
+    pos @class477' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
+    pos @class477' lookup SinglePositioning3 @markAttachmentSet2 @class473;
+    pos [uni072C uni072C.Fina]' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
+    pos [uni072C uni072C.Fina]' lookup SinglePositioning3 @markAttachmentSet2 @class473;
+    pos uni072A' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
+    pos uni072A' lookup SinglePositioning3 @markAttachmentSet2 @class473;
+    pos uni072A.Fina' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
+    pos uni072A.Fina' lookup SinglePositioning3 @markAttachmentSet2 @class473;
+    pos uni0716' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
+    pos uni0716' lookup SinglePositioning3 @markAttachmentSet2 @class473;
+    pos uni0716.Fina' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
+    pos uni0716.Fina' lookup SinglePositioning3 @markAttachmentSet2 @class473;
+    pos uni0710' lookup SinglePositioning3 @markAttachmentSet2 @markAttachmentSet2 @class473;
+    pos uni0710' lookup SinglePositioning3 @markAttachmentSet2 @class473;
+    } ChainedContextualGPOS33;
 
-# [('syrc', 'SYRJ')]
-    lookup ChainedContextualGPOS35;
+lookup ChainedContextualGPOS34 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
+    ;
+    # Original source: 27 
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 @class470 @markAttachmentSet2' lookup SinglePositioning3;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0716 @markAttachmentSet2' lookup SinglePositioning10;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0716.QR @markAttachmentSet2' lookup SinglePositioning9;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni072A @markAttachmentSet2' lookup SinglePositioning10;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni072A.QR @markAttachmentSet2' lookup SinglePositioning9;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni072F @markAttachmentSet2' lookup SinglePositioning8;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni072F.QR @markAttachmentSet2' lookup SinglePositioning8;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni072Auni0308.Isol @markAttachmentSet2' lookup SinglePositioning7;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni072Auni0308.IsolQR @markAttachmentSet2' lookup SinglePositioning6;
+    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni071D.Init @markAttachmentSet2';
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni071F @markAttachmentSet2' lookup SinglePositioning14;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0721 @markAttachmentSet2' lookup SinglePositioning13;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0720.InitLiga @markAttachmentSet2' lookup SinglePositioning12;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0722.Init @markAttachmentSet2' lookup SinglePositioning12;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0722.InitLiga @markAttachmentSet2' lookup SinglePositioning12;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @class470 @markAttachmentSet2' lookup SinglePositioning3;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0716 @markAttachmentSet2' lookup SinglePositioning10;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0716.QR @markAttachmentSet2' lookup SinglePositioning9;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni072A @markAttachmentSet2' lookup SinglePositioning10;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni072A.QR @markAttachmentSet2' lookup SinglePositioning9;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni072F @markAttachmentSet2' lookup SinglePositioning8;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni072F.QR @markAttachmentSet2' lookup SinglePositioning8;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni072Auni0308.Isol @markAttachmentSet2' lookup SinglePositioning7;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni072Auni0308.IsolQR @markAttachmentSet2' lookup SinglePositioning6;
+    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni071D.Init @markAttachmentSet2';
+    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni071F @markAttachmentSet2';
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0721 @markAttachmentSet2' lookup SinglePositioning11;
+    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0720.InitLiga @markAttachmentSet2';
+    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0722.Init @markAttachmentSet2';
+    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0722.InitLiga @markAttachmentSet2';
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @class470 @markAttachmentSet2' lookup SinglePositioning3;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0716 @markAttachmentSet2' lookup SinglePositioning10;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0716.QR @markAttachmentSet2' lookup SinglePositioning9;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni072A @markAttachmentSet2' lookup SinglePositioning10;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni072A.QR @markAttachmentSet2' lookup SinglePositioning9;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni072F @markAttachmentSet2' lookup SinglePositioning8;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni072F.QR @markAttachmentSet2' lookup SinglePositioning8;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni072Auni0308.Isol @markAttachmentSet2' lookup SinglePositioning7;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni072Auni0308.IsolQR @markAttachmentSet2' lookup SinglePositioning6;
+    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni071D.Init @markAttachmentSet2';
+    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni071F @markAttachmentSet2';
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0721 @markAttachmentSet2' lookup SinglePositioning5;
+    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0720.InitLiga @markAttachmentSet2';
+    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0722.Init @markAttachmentSet2';
+    ignore pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0722.InitLiga @markAttachmentSet2';
+    } ChainedContextualGPOS34;
 
-# [('syrc', 'SYRJ')]
-    lookup ChainedContextualGPOS36;
+lookup ChainedContextualGPOS35 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
+    ;
+    # Original source: 28 
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 @markAttachmentSet2 uni0722 @markAttachmentSet2' lookup SinglePositioning17;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] @markAttachmentSet2 uni0722 @markAttachmentSet2' lookup SinglePositioning16;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt] uni0722 @markAttachmentSet2' lookup SinglePositioning15;
+    } ChainedContextualGPOS35;
 
-# [('syrc', 'SYRJ')]
-    lookup ChainedContextualGPOS37;
+lookup ChainedContextualGPOS36 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
+    ;
+    # Original source: 29 
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 @markAttachmentSet2 @markAttachmentSet2 uni0718 @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 @markAttachmentSet2 @markAttachmentSet2 uni0729.Init @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning16 @markAttachmentSet2 @markAttachmentSet2 uni071A.Init @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning16 @markAttachmentSet2 @markAttachmentSet2 uni071D @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 @markAttachmentSet2 @markAttachmentSet2 uni072C @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning17 @markAttachmentSet2 @markAttachmentSet2 uni074F.Init @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning5 @markAttachmentSet2 @markAttachmentSet2 uni0621 @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 @markAttachmentSet2 uni0718 @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 @markAttachmentSet2 uni0729.Init @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning16 @markAttachmentSet2 uni071A.Init @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning16 @markAttachmentSet2 uni071D @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 @markAttachmentSet2 uni072C @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning17 @markAttachmentSet2 uni074F.Init @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning5 @markAttachmentSet2 uni0621 @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 uni0718 @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 uni0729.Init @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning16 uni071A.Init @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning16 uni071D @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning15 uni072C @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning17 uni074F.Init @markAttachmentSet2;
+    pos [uni0728 uni0728.Fina uni0728.Alt uni0728.FinaAlt]' lookup SinglePositioning5 uni0621 @markAttachmentSet2;
+    } ChainedContextualGPOS36;
 
-# [('syrc', 'SYRJ')]
-    lookup ChainedContextualGPOS38;
+lookup ChainedContextualGPOS37 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
+    ;
+    # Original source: 30 
+    pos @class470' lookup SinglePositioning15 @class17 uni0722;
+    pos uni0710' lookup SinglePositioning15 @class17 uni0722;
+    pos @class658' lookup SinglePositioning15 @class17 uni0722;
+    pos @class660' lookup SinglePositioning15 @class17 uni0722;
+    pos uni0621' lookup SinglePositioning15 @class17 uni0722;
+    pos [uni0719 uni0719.Fina]' lookup SinglePositioning16 @class17 uni0722;
+    pos @class470' lookup SinglePositioning15 [uni073C uni0744 uni0323 uni0732.below] uni0722;
+    pos uni0710' lookup SinglePositioning15 [uni073C uni0744 uni0323 uni0732.below] uni0722;
+    pos @class658' lookup SinglePositioning15 [uni073C uni0744 uni0323 uni0732.below] uni0722;
+    pos @class660' lookup SinglePositioning15 [uni073C uni0744 uni0323 uni0732.below] uni0722;
+    pos uni0621' lookup SinglePositioning15 [uni073C uni0744 uni0323 uni0732.below] uni0722;
+    pos [uni0719 uni0719.Fina]' lookup SinglePositioning16 [uni073C uni0744 uni0323 uni0732.below] uni0722;
+    } ChainedContextualGPOS37;
 
-# [('syrc', 'SYRJ')]
-    lookup ChainedContextualGPOS39;
+lookup ChainedContextualGPOS38 {
+    lookupflag RightToLeft MarkAttachmentType @class10;
+    ;
+    # Original source: 31 
+    pos uni0719' lookup SinglePositioning18 @class10 uni0719 @class9;
+    pos uni0719.Fina' lookup SinglePositioning18 @class10 uni0719 @class9;
+    pos uni0719' lookup SinglePositioning18 @class9 uni0719 @class10;
+    pos uni0719.Fina' lookup SinglePositioning18 @class9 uni0719 @class10;
+    } ChainedContextualGPOS38;
+
+lookup ChainedContextualGPOS39 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet2;
+    ;
+    # Original source: 32 
+    pos uni0719' lookup SinglePositioning17 @markAttachmentSet2 uni0719 @class17;
+    pos uni0719.Fina' lookup SinglePositioning17 @markAttachmentSet2 uni0719 @class17;
+    pos uni0719' lookup SinglePositioning17 @class17 uni0719 @markAttachmentSet2;
+    pos uni0719.Fina' lookup SinglePositioning17 @class17 uni0719 @markAttachmentSet2;
+    } ChainedContextualGPOS39;
 ";
 tag = kern;
 }
