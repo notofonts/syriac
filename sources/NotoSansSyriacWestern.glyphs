@@ -691,17 +691,6 @@ code = "lookup SingleSubstitution9 {
 name = SingleSubstitution9;
 },
 {
-code = "lookup LigatureSubstitution10 {
-    lookupflag RightToLeft;
-    ;
-    # Original source: 9 
-    sub uni072A uni0308 by uni072Auni0308.Isol;
-    sub uni072A.Fina uni0308 by uni072Auni0308.Fina;
-} LigatureSubstitution10;
-";
-name = LigatureSubstitution10;
-},
-{
 code = "lookup SingleSubstitution11 {
     lookupflag RightToLeft IgnoreMarks;
     ;
@@ -1381,11 +1370,11 @@ code = "# [('syrc', 'dflt')]
 tag = medi;
 },
 {
-code = "# [('syrc', 'dflt')]
-    lookup LigatureSubstitution10;
-
-# [('syrc', 'SYRJ')]
-    lookup LigatureSubstitution10;
+code = "lookup dieresis {
+    lookupflag UseMarkFilteringSet [uni0308];
+    sub uni072A uni0308 by uni072Auni0308.Isol;
+    sub uni072A.Fina uni0308 by uni072Auni0308.Fina;
+} dieresis;
 ";
 tag = rlig;
 },
@@ -1988,7 +1977,6 @@ size = "-15";
 id = m01;
 metricValues = (
 {
-over = 0;
 pos = 926;
 },
 {
@@ -2003,7 +1991,6 @@ pos = 553;
 over = -15;
 },
 {
-over = 0;
 pos = -486;
 },
 {
@@ -2072,7 +2059,6 @@ iconName = Light;
 id = "8E9A709A-C666-43E5-8831-9AE42D64DE83";
 metricValues = (
 {
-over = 0;
 pos = 926;
 },
 {
@@ -2087,7 +2073,6 @@ pos = 553;
 over = -15;
 },
 {
-over = 0;
 pos = -486;
 },
 {
@@ -2156,7 +2141,6 @@ iconName = Bold;
 id = "7FDEFC05-49C3-46A7-9C1D-65D39809C804";
 metricValues = (
 {
-over = 0;
 pos = 926;
 },
 {
@@ -2171,7 +2155,6 @@ pos = 553;
 over = -15;
 },
 {
-over = 0;
 pos = -486;
 },
 {
@@ -2259,7 +2242,7 @@ nodes = (
 width = 600;
 }
 );
-note = .notdef;
+note = ".notdef";
 },
 {
 glyphname = NULL;
@@ -29881,7 +29864,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -29918,7 +29900,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -29955,7 +29936,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30362,7 +30342,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30422,7 +30401,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30482,7 +30460,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30920,7 +30897,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30970,7 +30946,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31020,7 +30995,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31080,7 +31054,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31146,7 +31119,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31212,7 +31184,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31288,7 +31259,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31354,7 +31324,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31420,7 +31389,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31605,7 +31573,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31638,7 +31605,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31671,7 +31637,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31714,7 +31679,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31755,7 +31719,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31796,7 +31759,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31995,7 +31957,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32041,7 +32002,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32087,7 +32047,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32482,7 +32441,6 @@ layers = (
 anchors = (
 {
 name = _bottomright;
-pos = (0,0);
 }
 );
 layerId = m01;
@@ -32511,7 +32469,6 @@ width = 0;
 anchors = (
 {
 name = _bottomright;
-pos = (0,0);
 }
 );
 layerId = "8E9A709A-C666-43E5-8831-9AE42D64DE83";
@@ -32540,7 +32497,6 @@ width = 0;
 anchors = (
 {
 name = _bottomright;
-pos = (0,0);
 }
 );
 layerId = "7FDEFC05-49C3-46A7-9C1D-65D39809C804";
@@ -32739,7 +32695,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32789,7 +32744,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32839,7 +32793,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -33110,7 +33063,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -33177,7 +33129,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -33244,7 +33195,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -33406,7 +33356,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -33431,7 +33380,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -33456,7 +33404,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -34662,7 +34609,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34687,7 +34633,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34712,7 +34657,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34747,7 +34691,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34780,7 +34723,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34813,7 +34755,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34856,7 +34797,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34906,7 +34846,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34956,7 +34895,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35016,7 +34954,6 @@ layers = (
 anchors = (
 {
 name = _bottomright;
-pos = (0,0);
 }
 );
 layerId = m01;
@@ -35062,7 +34999,6 @@ width = 0;
 anchors = (
 {
 name = _bottomright;
-pos = (0,0);
 }
 );
 layerId = "8E9A709A-C666-43E5-8831-9AE42D64DE83";
@@ -35108,7 +35044,6 @@ width = 0;
 anchors = (
 {
 name = _bottomright;
-pos = (0,0);
 }
 );
 layerId = "7FDEFC05-49C3-46A7-9C1D-65D39809C804";
@@ -35164,7 +35099,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35202,7 +35136,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35240,7 +35173,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35288,7 +35220,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35323,7 +35254,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35358,7 +35288,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35403,7 +35332,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35450,7 +35378,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35497,7 +35424,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35554,7 +35480,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35579,7 +35504,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35604,7 +35528,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35974,7 +35897,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -36008,7 +35930,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -36042,7 +35963,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -36355,7 +36275,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -36380,7 +36299,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -36405,7 +36323,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -37068,7 +36985,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -37116,7 +37032,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -37164,7 +37079,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40286,7 +40200,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40343,7 +40256,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40400,7 +40312,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40466,7 +40377,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40532,7 +40442,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40598,7 +40507,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -49598,7 +49506,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -49639,7 +49546,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -49680,7 +49586,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -56168,8 +56073,6 @@ name = Black;
 weightClass = 900;
 }
 );
-kerningLTR = {
-};
 metrics = (
 {
 type = ascender;
@@ -56259,8 +56162,6 @@ value = "NotoSansSyriac-Regular";
 settings = {
 disablesNiceNames = 1;
 };
-stems = (
-);
 unitsPerEm = 1000;
 versionMajor = 2;
 versionMinor = 2;

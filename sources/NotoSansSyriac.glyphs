@@ -3,7 +3,7 @@
 .formatVersion = 3;
 DisplayStrings = (
 "/uni0729.Fina",
-"/uni0717.Fina"
+"◌"
 );
 axes = (
 {
@@ -1611,10 +1611,11 @@ lookup ChainedContextualGSUB28 {
 
 
 
-
+lookup dieresis {
+lookupflag UseMarkFilteringSet [uni0308];
 sub uni072A uni0308 by uni072Auni0308.Isol;
 sub uni072A.Fina uni0308 by uni072Auni0308.Fina;
-";
+} dieresis;";
 tag = rlig;
 },
 {
@@ -1768,7 +1769,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 926;
+value = 995;
 },
 {
 name = winDescent;
@@ -1811,7 +1812,6 @@ value = uni0710;
 id = m01;
 metricValues = (
 {
-over = 0;
 pos = 926;
 },
 {
@@ -1826,7 +1826,6 @@ pos = 553;
 over = -15;
 },
 {
-over = 0;
 pos = -486;
 },
 {
@@ -1899,7 +1898,6 @@ iconName = Light;
 id = "22847997-2214-411C-BF12-975F69A1246B";
 metricValues = (
 {
-over = 0;
 pos = 926;
 },
 {
@@ -1914,7 +1912,6 @@ pos = 553;
 over = -15;
 },
 {
-over = 0;
 pos = -486;
 },
 {
@@ -1987,7 +1984,6 @@ iconName = Bold;
 id = "54406707-D089-4649-8539-9EC6A26EE6B0";
 metricValues = (
 {
-over = 0;
 pos = 926;
 },
 {
@@ -2002,7 +1998,6 @@ pos = 553;
 over = -15;
 },
 {
-over = 0;
 pos = -486;
 },
 {
@@ -2090,7 +2085,7 @@ nodes = (
 width = 600;
 }
 );
-note = .notdef;
+note = ".notdef";
 },
 {
 glyphname = NULL;
@@ -29421,7 +29416,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -29458,7 +29452,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -29495,7 +29488,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -29902,7 +29894,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -29962,7 +29953,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30022,7 +30012,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30460,7 +30449,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30510,7 +30498,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30560,7 +30547,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30620,7 +30606,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30686,7 +30671,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30752,7 +30736,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30828,7 +30811,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30894,7 +30876,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -30960,7 +30941,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31145,7 +31125,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31178,7 +31157,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31211,7 +31189,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31254,7 +31231,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31295,7 +31271,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31336,7 +31311,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31535,7 +31509,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31581,7 +31554,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -31627,7 +31599,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32022,7 +31993,6 @@ layers = (
 anchors = (
 {
 name = _bottomright;
-pos = (0,0);
 }
 );
 layerId = m01;
@@ -32051,7 +32021,6 @@ width = 0;
 anchors = (
 {
 name = _bottomright;
-pos = (0,0);
 }
 );
 layerId = "22847997-2214-411C-BF12-975F69A1246B";
@@ -32080,7 +32049,6 @@ width = 0;
 anchors = (
 {
 name = _bottomright;
-pos = (0,0);
 }
 );
 layerId = "54406707-D089-4649-8539-9EC6A26EE6B0";
@@ -32279,7 +32247,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32329,7 +32296,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32379,7 +32345,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32650,7 +32615,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32717,7 +32681,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32784,7 +32747,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32946,7 +32908,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32971,7 +32932,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -32996,7 +32956,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -34202,7 +34161,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34227,7 +34185,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34252,7 +34209,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34287,7 +34243,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34320,7 +34275,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34353,7 +34307,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34396,7 +34349,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34446,7 +34398,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34496,7 +34447,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34556,7 +34506,6 @@ layers = (
 anchors = (
 {
 name = _bottomright;
-pos = (0,0);
 }
 );
 layerId = m01;
@@ -34602,7 +34551,6 @@ width = 0;
 anchors = (
 {
 name = _bottomright;
-pos = (0,0);
 }
 );
 layerId = "22847997-2214-411C-BF12-975F69A1246B";
@@ -34648,7 +34596,6 @@ width = 0;
 anchors = (
 {
 name = _bottomright;
-pos = (0,0);
 }
 );
 layerId = "54406707-D089-4649-8539-9EC6A26EE6B0";
@@ -34704,7 +34651,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34742,7 +34688,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34780,7 +34725,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34828,7 +34772,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34863,7 +34806,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34898,7 +34840,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34943,7 +34884,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -34990,7 +34930,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35037,7 +34976,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35094,7 +35032,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35119,7 +35056,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35144,7 +35080,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = cantillation_below;
@@ -35514,7 +35449,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -35548,7 +35482,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -35582,7 +35515,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -35895,7 +35827,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -35920,7 +35851,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -35945,7 +35875,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -36608,7 +36537,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -36656,7 +36584,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -36704,7 +36631,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -39826,7 +39752,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -39883,7 +39808,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -39940,7 +39864,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40006,7 +39929,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40072,7 +39994,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -40138,7 +40059,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -43588,9 +43508,19 @@ unicode = 8260;
 },
 {
 glyphname = uni25CC;
-lastChange = "2022-12-15 11:31:32 +0000";
+lastChange = "2023-01-02 14:28:10 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom;
+pos = (306,0);
+},
+{
+name = top;
+pos = (300,569);
+}
+);
 layerId = m01;
 shapes = (
 {
@@ -43869,6 +43799,16 @@ nodes = (
 width = 594;
 },
 {
+anchors = (
+{
+name = bottom;
+pos = (306,0);
+},
+{
+name = top;
+pos = (300,569);
+}
+);
 layerId = "22847997-2214-411C-BF12-975F69A1246B";
 shapes = (
 {
@@ -44147,6 +44087,16 @@ nodes = (
 width = 594;
 },
 {
+anchors = (
+{
+name = bottom;
+pos = (306,0);
+},
+{
+name = top;
+pos = (300,569);
+}
+);
 layerId = "54406707-D089-4649-8539-9EC6A26EE6B0";
 shapes = (
 {
@@ -52797,7 +52747,6 @@ layers = (
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -52838,7 +52787,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -52879,7 +52827,6 @@ width = 0;
 anchors = (
 {
 name = _bottom;
-pos = (0,0);
 },
 {
 name = _cantillation_below;
@@ -53704,7 +53651,7 @@ key = licenses;
 values = (
 {
 language = ENG;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 }
 );
 },
@@ -53720,8 +53667,6 @@ value = "http://www.monotype.com/studio";
 settings = {
 disablesNiceNames = 1;
 };
-stems = (
-);
 unitsPerEm = 1000;
 userData = {
 GSDimensionPlugin.Dimensions = {
