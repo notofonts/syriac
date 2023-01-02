@@ -827,360 +827,6 @@ code = "lookup SinglePositioning20 {
 name = SinglePositioning20;
 },
 {
-code = "lookup ChainedContextualGPOS32 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 24 
-    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning6 @class253;
-    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning5 @class254;
-    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning4 [uni0721.Fina uni0721.Medi];
-    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning2 uni071F.Medi;
-    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning3 uni071F.Fina;
-    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning2 uni071D.Fina;
-    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];
-} ChainedContextualGPOS32;
-";
-name = ChainedContextualGPOS32;
-},
-{
-code = "lookup ChainedContextualGPOS33 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 25 
-    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning1 @class253;
-    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning3 @class254;
-    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning2 uni071F.Medi;
-    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning4 uni071F.Fina;
-    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning5 uni071D.Fina;
-    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning6 [uni0725.Fina uni0725.Medi];
-} ChainedContextualGPOS33;
-";
-name = ChainedContextualGPOS33;
-},
-{
-code = "lookup ChainedContextualGPOS34 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 26 
-    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning1 @class253;
-    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning3 @class254;
-    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning2 uni071F.Medi;
-    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning4 uni071F.Fina;
-    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning2 uni071D.Fina;
-    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning5 [uni0725.Fina uni0725.Medi];
-} ChainedContextualGPOS34;
-";
-name = ChainedContextualGPOS34;
-},
-{
-code = "lookup ChainedContextualGPOS35 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 27 
-    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning1 @class254;
-    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning3 uni071F.Medi;
-    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning2 uni071F.Fina;
-    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning1 uni071D.Fina;
-    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning4 [uni0725.Fina uni0725.Medi];
-} ChainedContextualGPOS35;
-";
-name = ChainedContextualGPOS35;
-},
-{
-code = "lookup ChainedContextualGPOS36 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 28 
-    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning1 uni071F.Medi;
-    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning3 uni071F.Fina;
-    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning1 uni071D.Fina;
-    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning3 [uni0725.Fina uni0725.Medi];
-} ChainedContextualGPOS36;
-";
-name = ChainedContextualGPOS36;
-},
-{
-code = "lookup ChainedContextualGPOS37 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 29 
-    pos [uni0722.Medi uni0722.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];
-    pos [uni0720.Medi uni0720.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];
-    pos [uni071D.Medi uni071D.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];
-    pos [uni071A.Medi uni071A.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];
-} ChainedContextualGPOS37;
-";
-name = ChainedContextualGPOS37;
-},
-{
-code = "lookup ChainedContextualGPOS38 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 30 
-    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning6 [uni0710.Fina1wideX uni0710.Medi2wideX];
-    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning7 [uni0710.Fina1wideX uni0710.Medi2wideX];
-    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning7 [uni0710.Fina1wideX uni0710.Medi2wideX];
-    pos [uni0722.Medi uni0722.Init]' lookup SinglePositioning7 [uni0710.Fina1wideX uni0710.Medi2wideX];
-    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning7 [uni0710.Fina1wideX uni0710.Medi2wideX];
-} ChainedContextualGPOS38;
-";
-name = ChainedContextualGPOS38;
-},
-{
-code = "lookup ChainedContextualGPOS39 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
-    ;
-    # Original source: 31 
-    pos [uni0722.Medi uni0722.Init]' lookup SinglePositioning8 @markAttachmentSet1 [uni0710.Fina1wideX uni0710.Medi2wideX];
-} ChainedContextualGPOS39;
-";
-name = ChainedContextualGPOS39;
-},
-{
-code = "lookup ChainedContextualGPOS40 {
-    lookupflag RightToLeft MarkAttachmentType @class70;
-    ;
-    # Original source: 32 
-    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning9 uni071F.Fina;
-    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning9 @class70 @class253;
-    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning9 @class70 @class253;
-    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning10 @class70 uni071F.Fina;
-    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning9 @class70 @class253;
-} ChainedContextualGPOS40;
-";
-name = ChainedContextualGPOS40;
-},
-{
-code = "lookup ChainedContextualGPOS41 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
-    ;
-    # Original source: 33 
-    pos @class268' lookup SinglePositioning8 @markAttachmentSet1 uni071D.Init @markAttachmentSet1;
-    pos @class268' lookup SinglePositioning8 uni071D uni071D.Init;
-} ChainedContextualGPOS41;
-";
-name = ChainedContextualGPOS41;
-},
-{
-code = "lookup ChainedContextualGPOS42 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
-    ;
-    # Original source: 34 
-    pos @class268' lookup SinglePositioning8 @markAttachmentSet1 uni071D @markAttachmentSet1;
-    pos @class268' lookup SinglePositioning8 uni071D @markAttachmentSet1;
-} ChainedContextualGPOS42;
-";
-name = ChainedContextualGPOS42;
-},
-{
-code = "lookup ChainedContextualGPOS43 {
-    lookupflag RightToLeft MarkAttachmentType @class70;
-    ;
-    # Original source: 35 
-    pos @class268' lookup SinglePositioning10 @class70 @class279;
-    pos @class268' lookup SinglePositioning9 @class70 @class282;
-    pos [uni072F uni072F.Fina]' lookup SinglePositioning10 @class70 @class279;
-    pos [uni072C uni072C.Fina]' lookup SinglePositioning10 @class70 @class279;
-    pos [uni0719 uni0719.Fina]' lookup SinglePositioning10 @class70 @class279;
-    pos [uni0718 uni0718.Fina]' lookup SinglePositioning10 @class70 @class279;
-    pos uni0621' lookup SinglePositioning10 @class70 @class279;
-} ChainedContextualGPOS43;
-";
-name = ChainedContextualGPOS43;
-},
-{
-code = "lookup ChainedContextualGPOS44 {
-    lookupflag RightToLeft MarkAttachmentType @class70;
-    ;
-    # Original source: 36 
-    pos [uni0728 uni0728.Fina] @class70 @class70 uni071D @class70' lookup SinglePositioning10;
-    pos [uni0728 uni0728.Fina] @class70 @class70 uni0621 @class70' lookup SinglePositioning9;
-    pos [uni0728 uni0728.Fina] @class70 uni071D @class70' lookup SinglePositioning10;
-    pos [uni0728 uni0728.Fina] @class70 uni0621 @class70' lookup SinglePositioning9;
-    pos [uni0728 uni0728.Fina] uni071D @class70' lookup SinglePositioning10;
-    pos [uni0728 uni0728.Fina] uni0621 @class70' lookup SinglePositioning9;
-} ChainedContextualGPOS44;
-";
-name = ChainedContextualGPOS44;
-},
-{
-code = "lookup ChainedContextualGPOS45 {
-    lookupflag RightToLeft MarkAttachmentType @class70;
-    ;
-    # Original source: 37 
-    pos [uni0728 uni0728.Fina] @class70 @class70 uni0719 @class305' lookup SinglePositioning12;
-    pos [uni0728 uni0728.Fina] @class70 @class70 uni0720.Init @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] @class70 @class70 uni0722.Init @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] @class70 @class70 uni0722.InitB @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] @class70 @class70 uni071D.Init @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] @class70 @class70 uni074F.Init @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] @class70 @class70 uni0621 @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] @class70 uni0719 @class305' lookup SinglePositioning12;
-    pos [uni0728 uni0728.Fina] @class70 uni0720.Init @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] @class70 uni0722.Init @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] @class70 uni0722.InitB @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] @class70 uni071D.Init @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] @class70 uni074F.Init @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] @class70 uni0621 @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] uni0719 @class305' lookup SinglePositioning12;
-    pos [uni0728 uni0728.Fina] uni0720.Init @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] uni0722.Init @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] uni0722.InitB @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] uni071D.Init @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] uni074F.Init @class305' lookup SinglePositioning11;
-    pos [uni0728 uni0728.Fina] uni0621 @class305' lookup SinglePositioning11;
-} ChainedContextualGPOS45;
-";
-name = ChainedContextualGPOS45;
-},
-{
-code = "lookup ChainedContextualGPOS46 {
-    lookupflag RightToLeft MarkAttachmentType @class70;
-    ;
-    # Original source: 38 
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning11 @class70 @class70 uni0718 @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning12 @class70 @class70 uni0720 @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 @class70 uni0721 @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 @class70 uni0729 @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 @class70 uni0729.Init @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning11 @class70 uni0718 @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning12 @class70 uni0720 @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 uni0721 @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 uni0729 @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 uni0729.Init @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning11 uni0718 @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning12 uni0720 @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 uni0721 @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 uni0729 @class70;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 uni0729.Init @class70;
-} ChainedContextualGPOS46;
-";
-name = ChainedContextualGPOS46;
-},
-{
-code = "lookup ChainedContextualGPOS47 {
-    lookupflag RightToLeft MarkAttachmentType @class70;
-    ;
-    # Original source: 39 
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning9 @class70 @class70 uni071A.Init @class305;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning13 @class70 @class70 uni074E.Init @class305;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning9 @class70 uni071A.Init @class305;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning13 @class70 uni074E.Init @class305;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning9 uni071A.Init @class305;
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning13 uni074E.Init @class305;
-} ChainedContextualGPOS47;
-";
-name = ChainedContextualGPOS47;
-},
-{
-code = "lookup ChainedContextualGPOS48 {
-    lookupflag RightToLeft MarkAttachmentType @class70;
-    ;
-    # Original source: 40 
-    pos @class268 @class70' lookup SinglePositioning13 uni0722;
-    pos [uni0718 uni0718.Fina] @class70' lookup SinglePositioning17 uni0722;
-    pos [uni0719 uni0719.Fina] @class70' lookup SinglePositioning16 uni0722;
-    pos [uni072C uni072C.Fina] @class70' lookup SinglePositioning15 uni0722;
-    pos uni0621 @class70' lookup SinglePositioning14 uni0722;
-} ChainedContextualGPOS48;
-";
-name = ChainedContextualGPOS48;
-},
-{
-code = "lookup ChainedContextualGPOS49 {
-    lookupflag RightToLeft MarkAttachmentType @class70;
-    ;
-    # Original source: 41 
-    pos @class395' lookup SinglePositioning14 @class70 uni0722;
-    pos [uni0717 uni0717.Fina]' lookup SinglePositioning14 @class70 uni0722;
-    pos [uni072F uni072F.Fina]' lookup SinglePositioning14 @class70 uni0722;
-} ChainedContextualGPOS49;
-";
-name = ChainedContextualGPOS49;
-},
-{
-code = "lookup ChainedContextualGPOS50 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet19;
-    ;
-    # Original source: 42 
-    pos @class268' lookup SinglePositioning18 [uni0742 uni0325] uni0722;
-} ChainedContextualGPOS50;
-";
-name = ChainedContextualGPOS50;
-},
-{
-code = "lookup ChainedContextualGPOS51 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
-    ;
-    # Original source: 43 
-    pos uni0719' lookup SinglePositioning8 @markAttachmentSet1 uni0719 @class401;
-    pos uni0719.Fina' lookup SinglePositioning8 @markAttachmentSet1 uni0719 @class401;
-    pos uni0719' lookup SinglePositioning8 @class401 uni0719 @markAttachmentSet1;
-    pos uni0719.Fina' lookup SinglePositioning8 @class401 uni0719 @markAttachmentSet1;
-} ChainedContextualGPOS51;
-";
-name = ChainedContextualGPOS51;
-},
-{
-code = "lookup ChainedContextualGPOS52 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
-    ;
-    # Original source: 44 
-    pos uni0719' lookup SinglePositioning8 @markAttachmentSet1 @class409 @class401;
-    pos uni0719.Fina' lookup SinglePositioning8 @markAttachmentSet1 @class409 @class401;
-    pos uni0719' lookup SinglePositioning8 @class401 @class409 @markAttachmentSet1;
-    pos uni0719.Fina' lookup SinglePositioning8 @class401 @class409 @markAttachmentSet1;
-} ChainedContextualGPOS52;
-";
-name = ChainedContextualGPOS52;
-},
-{
-code = "lookup ChainedContextualGPOS53 {
-    lookupflag RightToLeft MarkAttachmentType @class70;
-    ;
-    # Original source: 45 
-    pos uni0719' lookup SinglePositioning14 @class70 uni0719 @class421;
-    pos uni0719.Fina' lookup SinglePositioning14 @class70 uni0719 @class421;
-    pos uni0719' lookup SinglePositioning14 @class421 uni0719 @class70;
-    pos uni0719.Fina' lookup SinglePositioning14 @class421 uni0719 @class70;
-} ChainedContextualGPOS53;
-";
-name = ChainedContextualGPOS53;
-},
-{
-code = "lookup ChainedContextualGPOS54 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
-    ;
-    # Original source: 46 
-    pos uni0719' lookup SinglePositioning19 @markAttachmentSet1 [uni0710 uni0710.Fina3 uni0710.Fina2];
-    pos uni0719.Fina' lookup SinglePositioning19 @markAttachmentSet1 [uni0710 uni0710.Fina3 uni0710.Fina2];
-} ChainedContextualGPOS54;
-";
-name = ChainedContextualGPOS54;
-},
-{
-code = "lookup ChainedContextualGPOS55 {
-    lookupflag RightToLeft;
-    ;
-    # Original source: 47 
-    pos [uni0728 uni0728.Fina]' lookup SinglePositioning20 uni071D.Init uni0722.Fina;
-} ChainedContextualGPOS55;
-";
-name = ChainedContextualGPOS55;
-},
-{
-code = "lookup ChainedContextualGPOS56 {
-    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
-    ;
-    # Original source: 48 
-    pos uni0722.Fina' lookup SinglePositioning19 @markAttachmentSet1 [uni0701 uni0703 uni0705 uni0708];
-    pos uni071D.Fina' lookup SinglePositioning19 @markAttachmentSet1 [uni0701 uni0703 uni0705 uni0708];
-    pos uni071D' lookup SinglePositioning19 @markAttachmentSet1 [uni0701 uni0703 uni0705 uni0708];
-} ChainedContextualGPOS56;
-";
-name = ChainedContextualGPOS56;
-},
-{
 code = "lookup PairPositioning57 {
     lookupflag IgnoreMarks;
     ;
@@ -1656,88 +1302,6 @@ tag = stch;
 },
 {
 code = "# Automatic Code Start
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS32;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS33;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS34;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS35;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS36;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS37;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS38;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS39;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS40;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS41;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS42;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS43;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS44;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS45;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS46;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS47;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS48;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS49;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS50;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS51;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS52;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS53;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS54;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS55;
-
-# [('syrc', 'dflt')]
-    lookup ChainedContextualGPOS56;
-
-# [('syrc', 'dflt')]
-    lookup PairPositioning57;
-";
-tag = kern;
-},
-{
-code = "# Automatic Code Start
 ";
 tag = mark;
 },
@@ -1745,6 +1309,290 @@ tag = mark;
 code = "# Automatic Code Start
 ";
 tag = mkmk;
+},
+{
+code = "# Automatic Code Start
+
+lookup ChainedContextualGPOS32 {
+    lookupflag RightToLeft IgnoreMarks;
+    ;
+    # Original source: 24 
+    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning6 @class253;
+    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning5 @class254;
+    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning4 [uni0721.Fina uni0721.Medi];
+    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning2 uni071F.Medi;
+    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning3 uni071F.Fina;
+    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning2 uni071D.Fina;
+    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];
+    } ChainedContextualGPOS32;
+
+lookup ChainedContextualGPOS33 {
+    lookupflag RightToLeft IgnoreMarks;
+    ;
+    # Original source: 25 
+    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning1 @class253;
+    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning3 @class254;
+    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning2 uni071F.Medi;
+    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning4 uni071F.Fina;
+    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning5 uni071D.Fina;
+    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning6 [uni0725.Fina uni0725.Medi];
+    } ChainedContextualGPOS33;
+
+lookup ChainedContextualGPOS34 {
+    lookupflag RightToLeft IgnoreMarks;
+    ;
+    # Original source: 26 
+    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning1 @class253;
+    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning3 @class254;
+    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning2 uni071F.Medi;
+    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning4 uni071F.Fina;
+    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning2 uni071D.Fina;
+    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning5 [uni0725.Fina uni0725.Medi];
+    } ChainedContextualGPOS34;
+
+lookup ChainedContextualGPOS35 {
+    lookupflag RightToLeft IgnoreMarks;
+    ;
+    # Original source: 27 
+    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning1 @class254;
+    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning3 uni071F.Medi;
+    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning2 uni071F.Fina;
+    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning1 uni071D.Fina;
+    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning4 [uni0725.Fina uni0725.Medi];
+    } ChainedContextualGPOS35;
+
+lookup ChainedContextualGPOS36 {
+    lookupflag RightToLeft IgnoreMarks;
+    ;
+    # Original source: 28 
+    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning1 uni071F.Medi;
+    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning3 uni071F.Fina;
+    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning1 uni071D.Fina;
+    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning3 [uni0725.Fina uni0725.Medi];
+    } ChainedContextualGPOS36;
+
+lookup ChainedContextualGPOS37 {
+    lookupflag RightToLeft IgnoreMarks;
+    ;
+    # Original source: 29 
+    pos [uni0722.Medi uni0722.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];
+    pos [uni0720.Medi uni0720.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];
+    pos [uni071D.Medi uni071D.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];
+    pos [uni071A.Medi uni071A.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];
+    } ChainedContextualGPOS37;
+
+lookup ChainedContextualGPOS38 {
+    lookupflag RightToLeft IgnoreMarks;
+    ;
+    # Original source: 30 
+    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning6 [uni0710.Fina1wideX uni0710.Medi2wideX];
+    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning7 [uni0710.Fina1wideX uni0710.Medi2wideX];
+    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning7 [uni0710.Fina1wideX uni0710.Medi2wideX];
+    pos [uni0722.Medi uni0722.Init]' lookup SinglePositioning7 [uni0710.Fina1wideX uni0710.Medi2wideX];
+    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning7 [uni0710.Fina1wideX uni0710.Medi2wideX];
+    } ChainedContextualGPOS38;
+
+lookup ChainedContextualGPOS39 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
+    ;
+    # Original source: 31 
+    pos [uni0722.Medi uni0722.Init]' lookup SinglePositioning8 @markAttachmentSet1 [uni0710.Fina1wideX uni0710.Medi2wideX];
+    } ChainedContextualGPOS39;
+
+lookup ChainedContextualGPOS40 {
+    lookupflag RightToLeft MarkAttachmentType @class70;
+    ;
+    # Original source: 32 
+    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning9 uni071F.Fina;
+    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning9 @class70 @class253;
+    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning9 @class70 @class253;
+    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning10 @class70 uni071F.Fina;
+    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning9 @class70 @class253;
+    } ChainedContextualGPOS40;
+
+lookup ChainedContextualGPOS41 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
+    ;
+    # Original source: 33 
+    pos @class268' lookup SinglePositioning8 @markAttachmentSet1 uni071D.Init @markAttachmentSet1;
+    pos @class268' lookup SinglePositioning8 uni071D uni071D.Init;
+    } ChainedContextualGPOS41;
+
+lookup ChainedContextualGPOS42 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
+    ;
+    # Original source: 34 
+    pos @class268' lookup SinglePositioning8 @markAttachmentSet1 uni071D @markAttachmentSet1;
+    pos @class268' lookup SinglePositioning8 uni071D @markAttachmentSet1;
+    } ChainedContextualGPOS42;
+
+lookup ChainedContextualGPOS43 {
+    lookupflag RightToLeft MarkAttachmentType @class70;
+    ;
+    # Original source: 35 
+    pos @class268' lookup SinglePositioning10 @class70 @class279;
+    pos @class268' lookup SinglePositioning9 @class70 @class282;
+    pos [uni072F uni072F.Fina]' lookup SinglePositioning10 @class70 @class279;
+    pos [uni072C uni072C.Fina]' lookup SinglePositioning10 @class70 @class279;
+    pos [uni0719 uni0719.Fina]' lookup SinglePositioning10 @class70 @class279;
+    pos [uni0718 uni0718.Fina]' lookup SinglePositioning10 @class70 @class279;
+    pos uni0621' lookup SinglePositioning10 @class70 @class279;
+    } ChainedContextualGPOS43;
+
+lookup ChainedContextualGPOS44 {
+    lookupflag RightToLeft MarkAttachmentType @class70;
+    ;
+    # Original source: 36 
+    pos [uni0728 uni0728.Fina] @class70 @class70 uni071D @class70' lookup SinglePositioning10;
+    pos [uni0728 uni0728.Fina] @class70 @class70 uni0621 @class70' lookup SinglePositioning9;
+    pos [uni0728 uni0728.Fina] @class70 uni071D @class70' lookup SinglePositioning10;
+    pos [uni0728 uni0728.Fina] @class70 uni0621 @class70' lookup SinglePositioning9;
+    pos [uni0728 uni0728.Fina] uni071D @class70' lookup SinglePositioning10;
+    pos [uni0728 uni0728.Fina] uni0621 @class70' lookup SinglePositioning9;
+    } ChainedContextualGPOS44;
+
+lookup ChainedContextualGPOS45 {
+    lookupflag RightToLeft MarkAttachmentType @class70;
+    ;
+    # Original source: 37 
+    pos [uni0728 uni0728.Fina] @class70 @class70 uni0719 @class305' lookup SinglePositioning12;
+    pos [uni0728 uni0728.Fina] @class70 @class70 uni0720.Init @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] @class70 @class70 uni0722.Init @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] @class70 @class70 uni0722.InitB @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] @class70 @class70 uni071D.Init @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] @class70 @class70 uni074F.Init @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] @class70 @class70 uni0621 @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] @class70 uni0719 @class305' lookup SinglePositioning12;
+    pos [uni0728 uni0728.Fina] @class70 uni0720.Init @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] @class70 uni0722.Init @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] @class70 uni0722.InitB @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] @class70 uni071D.Init @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] @class70 uni074F.Init @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] @class70 uni0621 @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] uni0719 @class305' lookup SinglePositioning12;
+    pos [uni0728 uni0728.Fina] uni0720.Init @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] uni0722.Init @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] uni0722.InitB @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] uni071D.Init @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] uni074F.Init @class305' lookup SinglePositioning11;
+    pos [uni0728 uni0728.Fina] uni0621 @class305' lookup SinglePositioning11;
+    } ChainedContextualGPOS45;
+
+lookup ChainedContextualGPOS46 {
+    lookupflag RightToLeft MarkAttachmentType @class70;
+    ;
+    # Original source: 38 
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning11 @class70 @class70 uni0718 @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning12 @class70 @class70 uni0720 @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 @class70 uni0721 @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 @class70 uni0729 @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 @class70 uni0729.Init @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning11 @class70 uni0718 @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning12 @class70 uni0720 @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 uni0721 @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 uni0729 @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 uni0729.Init @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning11 uni0718 @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning12 uni0720 @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 uni0721 @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 uni0729 @class70;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 uni0729.Init @class70;
+    } ChainedContextualGPOS46;
+
+lookup ChainedContextualGPOS47 {
+    lookupflag RightToLeft MarkAttachmentType @class70;
+    ;
+    # Original source: 39 
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning9 @class70 @class70 uni071A.Init @class305;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning13 @class70 @class70 uni074E.Init @class305;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning9 @class70 uni071A.Init @class305;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning13 @class70 uni074E.Init @class305;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning9 uni071A.Init @class305;
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning13 uni074E.Init @class305;
+    } ChainedContextualGPOS47;
+
+lookup ChainedContextualGPOS48 {
+    lookupflag RightToLeft MarkAttachmentType @class70;
+    ;
+    # Original source: 40 
+    pos @class268 @class70' lookup SinglePositioning13 uni0722;
+    pos [uni0718 uni0718.Fina] @class70' lookup SinglePositioning17 uni0722;
+    pos [uni0719 uni0719.Fina] @class70' lookup SinglePositioning16 uni0722;
+    pos [uni072C uni072C.Fina] @class70' lookup SinglePositioning15 uni0722;
+    pos uni0621 @class70' lookup SinglePositioning14 uni0722;
+    } ChainedContextualGPOS48;
+
+lookup ChainedContextualGPOS49 {
+    lookupflag RightToLeft MarkAttachmentType @class70;
+    ;
+    # Original source: 41 
+    pos @class395' lookup SinglePositioning14 @class70 uni0722;
+    pos [uni0717 uni0717.Fina]' lookup SinglePositioning14 @class70 uni0722;
+    pos [uni072F uni072F.Fina]' lookup SinglePositioning14 @class70 uni0722;
+    } ChainedContextualGPOS49;
+
+lookup ChainedContextualGPOS50 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet19;
+    ;
+    # Original source: 42 
+    pos @class268' lookup SinglePositioning18 [uni0742 uni0325] uni0722;
+    } ChainedContextualGPOS50;
+
+lookup ChainedContextualGPOS51 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
+    ;
+    # Original source: 43 
+    pos uni0719' lookup SinglePositioning8 @markAttachmentSet1 uni0719 @class401;
+    pos uni0719.Fina' lookup SinglePositioning8 @markAttachmentSet1 uni0719 @class401;
+    pos uni0719' lookup SinglePositioning8 @class401 uni0719 @markAttachmentSet1;
+    pos uni0719.Fina' lookup SinglePositioning8 @class401 uni0719 @markAttachmentSet1;
+    } ChainedContextualGPOS51;
+
+lookup ChainedContextualGPOS52 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
+    ;
+    # Original source: 44 
+    pos uni0719' lookup SinglePositioning8 @markAttachmentSet1 @class409 @class401;
+    pos uni0719.Fina' lookup SinglePositioning8 @markAttachmentSet1 @class409 @class401;
+    pos uni0719' lookup SinglePositioning8 @class401 @class409 @markAttachmentSet1;
+    pos uni0719.Fina' lookup SinglePositioning8 @class401 @class409 @markAttachmentSet1;
+    } ChainedContextualGPOS52;
+
+lookup ChainedContextualGPOS53 {
+    lookupflag RightToLeft MarkAttachmentType @class70;
+    ;
+    # Original source: 45 
+    pos uni0719' lookup SinglePositioning14 @class70 uni0719 @class421;
+    pos uni0719.Fina' lookup SinglePositioning14 @class70 uni0719 @class421;
+    pos uni0719' lookup SinglePositioning14 @class421 uni0719 @class70;
+    pos uni0719.Fina' lookup SinglePositioning14 @class421 uni0719 @class70;
+    } ChainedContextualGPOS53;
+
+lookup ChainedContextualGPOS54 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
+    ;
+    # Original source: 46 
+    pos uni0719' lookup SinglePositioning19 @markAttachmentSet1 [uni0710 uni0710.Fina3 uni0710.Fina2];
+    pos uni0719.Fina' lookup SinglePositioning19 @markAttachmentSet1 [uni0710 uni0710.Fina3 uni0710.Fina2];
+    } ChainedContextualGPOS54;
+
+lookup ChainedContextualGPOS55 {
+    lookupflag RightToLeft;
+    ;
+    # Original source: 47 
+    pos [uni0728 uni0728.Fina]' lookup SinglePositioning20 uni071D.Init uni0722.Fina;
+    } ChainedContextualGPOS55;
+
+lookup ChainedContextualGPOS56 {
+    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;
+    ;
+    # Original source: 48 
+    pos uni0722.Fina' lookup SinglePositioning19 @markAttachmentSet1 [uni0701 uni0703 uni0705 uni0708];
+    pos uni071D.Fina' lookup SinglePositioning19 @markAttachmentSet1 [uni0701 uni0703 uni0705 uni0708];
+    pos uni071D' lookup SinglePositioning19 @markAttachmentSet1 [uni0701 uni0703 uni0705 uni0708];
+    } ChainedContextualGPOS56;
+";
+tag = kern;
 }
 );
 fontMaster = (
