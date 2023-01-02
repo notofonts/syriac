@@ -1632,7 +1632,7 @@ code = "    sub uni0723 by uni0724;
 labels = (
 {
 language = dflt;
-value = "";
+value = "Final semkath";
 }
 );
 tag = ss01;
@@ -1644,7 +1644,7 @@ code = "    sub uni0741 by uni030A;
 labels = (
 {
 language = dflt;
-value = "";
+value = "Ring-shaped dots";
 }
 );
 tag = ss02;
