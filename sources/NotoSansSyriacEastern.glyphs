@@ -1,6 +1,9 @@
 {
 .appVersion = "3109";
 .formatVersion = 3;
+DisplayStrings = (
+"◌"
+);
 axes = (
 {
 name = Weight;
@@ -12,10 +15,6 @@ tag = wdth;
 }
 );
 customParameters = (
-{
-name = vendorID;
-value = GOOG;
-},
 {
 name = panose;
 value = (
@@ -468,7 +467,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 926;
+value = 995;
 },
 {
 name = winDescent;
@@ -549,7 +548,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 926;
+value = 995;
 },
 {
 name = winDescent;
@@ -630,7 +629,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 926;
+value = 995;
 },
 {
 name = winDescent;
@@ -34160,9 +34159,19 @@ unicode = 8260;
 },
 {
 glyphname = uni25CC;
-lastChange = "2023-01-02 09:26:46 +0000";
+lastChange = "2023-01-03 11:46:56 +0000";
 layers = (
 {
+anchors = (
+{
+name = bottom;
+pos = (293,0);
+},
+{
+name = top;
+pos = (290,617);
+}
+);
 layerId = m01;
 shapes = (
 {
@@ -34441,6 +34450,16 @@ nodes = (
 width = 594;
 },
 {
+anchors = (
+{
+name = bottom;
+pos = (293,0);
+},
+{
+name = top;
+pos = (290,617);
+}
+);
 layerId = "1C3A187F-9439-4340-B0A6-CD0525AA1AFE";
 shapes = (
 {
@@ -34719,6 +34738,16 @@ nodes = (
 width = 594;
 },
 {
+anchors = (
+{
+name = bottom;
+pos = (293,0);
+},
+{
+name = top;
+pos = (290,617);
+}
+);
 layerId = "DA9A8D32-36F4-433E-897C-B49E872243BC";
 shapes = (
 {
@@ -35832,7 +35861,7 @@ key = licenses;
 values = (
 {
 language = ENG;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This Font Software is distributed on an \"AS IS\" BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied. See the SIL Open Font License for the specific language, permissions and limitations governing your use of this Font Software.";
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
 }
 );
 },
@@ -35843,6 +35872,10 @@ value = "http://www.google.com/get/noto/";
 {
 key = designerURL;
 value = "http://www.monotype.com/studio";
+},
+{
+key = vendorID;
+value = GOOG;
 }
 );
 settings = {
