@@ -34159,13 +34159,13 @@ unicode = 8260;
 },
 {
 glyphname = uni25CC;
-lastChange = "2023-01-03 11:46:56 +0000";
+lastChange = "2023-01-03 11:49:46 +0000";
 layers = (
 {
 anchors = (
 {
 name = bottom;
-pos = (293,0);
+pos = (293,-53);
 },
 {
 name = top;
@@ -34453,7 +34453,7 @@ width = 594;
 anchors = (
 {
 name = bottom;
-pos = (293,0);
+pos = (293,-53);
 },
 {
 name = top;
@@ -34741,7 +34741,7 @@ width = 594;
 anchors = (
 {
 name = bottom;
-pos = (293,0);
+pos = (293,-53);
 },
 {
 name = top;
