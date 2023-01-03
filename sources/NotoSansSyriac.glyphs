@@ -5,23 +5,23 @@ DisplayStrings = (
 );
 classes = (
 {
-code = "uni0713.Init uni0713.Medi uni0714.Init uni0714.Medi uni072E.Init uni072E.Medi";
+code = "uni0713.init uni0713.medi uni0714.init uni0714.medi uni072E.init uni072E.medi";
 name = gamal_initmedi;
 },
 {
-code = "uni0713.Fina uni0713.Medi uni0714.Fina uni0714.Medi uni072E.Fina uni072E.Medi";
+code = "uni0713.fina uni0713.medi uni0714.fina uni0714.medi uni072E.fina uni072E.medi";
 name = gamal_medifina;
 },
 {
-code = "uni0713.Fina uni0713.Medi uni0713.MediLong uni0714.Fina uni0714.Medi uni0714.MediLong uni072E.Fina uni072E.Medi uni072E.MediLong";
+code = "uni0713.fina uni0713.medi uni0713.medi.long uni0714.fina uni0714.medi uni0714.medi.long uni072E.fina uni072E.medi uni072E.medi.long";
 name = class3;
 },
 {
-code = "uni0712.Init uni0712.Medi uni0713.Init uni0713.InitLong uni0713.Medi uni0713.MediLong uni0713.MediWide uni0713.MediWide2 uni0714.Init uni0714.InitLong uni0714.Medi uni0714.MediLong uni0714.MediWide uni0714.MediWide2 uni071A.Init uni071A.Medi uni071F.Init uni071F.Medi uni0721.Init uni0721.Medi uni0722.Init uni0722.Medi uni0723.Init uni0723.Medi uni0724.Init uni0724.Medi uni0725.Init uni0725.Medi uni0726.Init uni0726.Medi uni0727.Init uni0727.Medi uni072B.Init uni072B.Medi uni072D.Init uni072D.Medi uni072E.Init uni072E.InitLong uni072E.Medi uni072E.MediLong uni072E.MediWide uni072E.MediWide2";
+code = "uni0712.init uni0712.medi uni0713.init uni0713.init.long uni0713.medi uni0713.medi.long uni0713.medi.wide uni0713.medi.wide2 uni0714.init uni0714.init.long uni0714.medi uni0714.medi.long uni0714.medi.wide uni0714.medi.wide2 uni071A.init uni071A.medi uni071F.init uni071F.medi uni0721.init uni0721.medi uni0722.init uni0722.medi uni0723.init uni0723.medi uni0724.init uni0724.medi uni0725.init uni0725.medi uni0726.init uni0726.medi uni0727.init uni0727.medi uni072B.init uni072B.medi uni072D.init uni072D.medi uni072E.init uni072E.init.long uni072E.medi uni072E.medi.long uni072E.medi.wide uni072E.medi.wide2";
 name = class4;
 },
 {
-code = "uni071B.Init uni071B.Medi uni071C.Init uni071C.Medi uni0720.Init uni0720.Medi uni074F.Init uni074F.Medi";
+code = "uni071B.init uni071B.medi uni071C.init uni071C.medi uni0720.init uni0720.medi uni074F.init uni074F.medi";
 name = class6;
 },
 {
@@ -29,11 +29,11 @@ code = "uni0711 uni0730 uni0733 uni0735 uni0736 uni073A uni073D uni073F uni0740 
 name = markAttachmentSet1;
 },
 {
-code = "uni0713.Init uni0713.InitLong uni0713.Medi uni0713.MediLong uni0713.MediWide uni0713.MediWide2 uni0714.Init uni0714.InitLong uni0714.Medi uni0714.MediLong uni0714.MediWide uni0714.MediWide2 uni072E.Init uni072E.InitLong uni072E.Medi uni072E.MediLong uni072E.MediWide uni072E.MediWide2";
+code = "uni0713.init uni0713.init.long uni0713.medi uni0713.medi.long uni0713.medi.wide uni0713.medi.wide2 uni0714.init uni0714.init.long uni0714.medi uni0714.medi.long uni0714.medi.wide uni0714.medi.wide2 uni072E.init uni072E.init.long uni072E.medi uni072E.medi.long uni072E.medi.wide uni072E.medi.wide2";
 name = class12;
 },
 {
-code = "uni071D.Init uni071D.Medi uni0722.Init uni0722.Medi uni074F.Init uni074F.Medi";
+code = "uni071D.init uni071D.medi uni0722.init uni0722.medi uni074F.init uni074F.medi";
 name = class13;
 },
 {
@@ -41,7 +41,7 @@ code = "FC5E FC5F FC60 FC61 FC62 FC63 uni0303 uni0304 uni0307 uni0308 uni0320 un
 name = class14;
 },
 {
-code = "uni071B.Init uni071B.Medi uni071C.Init uni071C.Medi uni0720.Init uni0720.Medi";
+code = "uni071B.init uni071B.medi uni071C.init uni071C.medi uni0720.init uni0720.medi";
 name = class67;
 },
 {
@@ -49,7 +49,7 @@ code = "uni0741 uni030A";
 name = markAttachmentSet3;
 },
 {
-code = "uni0712.Init uni0712.Medi uni071A.Init uni071A.Medi uni071F.Init uni071F.Medi uni0725.Init uni0725.Medi uni0726.Init uni0726.Medi uni0727.Init uni0727.Medi uni0729.Init uni0729.Medi uni072B.Init uni072B.Medi uni072D.Init uni072D.Medi uni074E.Init uni074E.Medi";
+code = "uni0712.init uni0712.medi uni071A.init uni071A.medi uni071F.init uni071F.medi uni0725.init uni0725.medi uni0726.init uni0726.medi uni0727.init uni0727.medi uni0729.init uni0729.medi uni072B.init uni072B.medi uni072D.init uni072D.medi uni074E.init uni074E.medi";
 name = class69;
 },
 {
@@ -57,15 +57,15 @@ code = "uni0320 uni0323 uni0324 uni032D uni032E uni0330 uni0331 uni064D uni0650 
 name = class70;
 },
 {
-code = "uni071D.Init uni071D.Medi uni0720.Init uni0720.Medi uni0722.Init uni0722.Medi uni074F.Init uni074F.Medi";
+code = "uni071D.init uni071D.medi uni0720.init uni0720.medi uni0722.init uni0722.medi uni074F.init uni074F.medi";
 name = class99;
 },
 {
-code = "uni0719.Fina uni071B.Fina uni071B.Medi uni071B.MediLongG uni071C.Fina uni071C.Medi uni071C.MediLongG uni071F.Fina uni0722.Fina";
+code = "uni0719.fina uni071B.fina uni071B.medi uni071B.medi.longG uni071C.fina uni071C.medi uni071C.medi.longG uni071F.fina uni0722.fina";
 name = class134;
 },
 {
-code = "uni071B.Fina uni071B.Medi uni071B.MediLongG uni071C.Fina uni071C.Medi uni071C.MediLongG uni071F.Fina uni0722.Fina";
+code = "uni071B.fina uni071B.medi uni071B.medi.longG uni071C.fina uni071C.medi uni071C.medi.longG uni071F.fina uni0722.fina";
 name = class138;
 },
 {
@@ -73,23 +73,23 @@ code = "uni0742 uni0325";
 name = markAttachmentSet19;
 },
 {
-code = "uni0713.Fina uni0713.Medi uni0713.MediLong uni0714.Fina uni0714.Medi uni0714.MediLong";
+code = "uni0713.fina uni0713.medi uni0713.medi.long uni0714.fina uni0714.medi uni0714.medi.long";
 name = class253;
 },
 {
-code = "uni071B.Fina uni071B.Medi uni071B.MediLongG uni071C.Fina uni071C.Medi uni071C.MediLongG";
+code = "uni071B.fina uni071B.medi uni071B.medi.longG uni071C.fina uni071C.medi uni071C.medi.longG";
 name = class254;
 },
 {
-code = "uni0715 uni0715.Fina uni0716 uni0716.Fina uni072A uni072A.Fina uni072Auni0308.Fina uni072Auni0308.Isol";
+code = "uni0715 uni0715.fina uni0716 uni0716.fina uni072A uni072A.fina uni072Auni0308.fina uni072Auni0308.isol";
 name = class268;
 },
 {
-code = "uni0713 uni0713.Init uni0713.InitLong uni0714 uni0714.Init uni0714.InitLong uni072E uni072E.Init uni072E.InitLong";
+code = "uni0713 uni0713.init uni0713.init.long uni0714 uni0714.init uni0714.init.long uni072E uni072E.init uni072E.init.long";
 name = class279;
 },
 {
-code = "uni071B uni071B.Init uni071B.InitLongG uni071C uni071C.Init uni071C.InitLongG";
+code = "uni071B uni071B.init uni071B.init.longG uni071C uni071C.init uni071C.init.longG";
 name = class282;
 },
 {
@@ -97,7 +97,7 @@ code = "uni0731 uni0734 uni0737 uni073B uni073E uni0744 uni0746 uni0748";
 name = class305;
 },
 {
-code = "uni0710 uni0710.Fina1 uni0710.Fina1wideX uni0710.Fina1wideY uni0710.Fina2 uni0710.Fina3 uni0710.Medi2 uni0710.Medi2wideX uni0710.Medi2wideY";
+code = "uni0710 uni0710.fina uni0710.fina.wideX uni0710.fina.wideY uni0710.fin2 uni0710.fin3 uni0710.med2 uni0710.med2.wideX uni0710.med2.wideY";
 name = class395;
 },
 {
@@ -105,7 +105,7 @@ code = "FC5E FC5F FC60 FC61 FC62 FC63 uni0303 uni0304 uni0308 uni064B uni064B065
 name = class401;
 },
 {
-code = "uni071D.Init uni071D.InitB uni071D.Medi uni071D.MediB uni0722.Init uni0722.InitB uni0722.Medi uni0722.MediB uni074F.Init uni074F.InitB uni074F.Medi uni074F.MediB";
+code = "uni071D.init uni071D.initB uni071D.medi uni071D.mediB uni0722.init uni0722.initB uni0722.medi uni0722.mediB uni074F.init uni074F.initB uni074F.medi uni074F.mediB";
 name = class409;
 },
 {
@@ -172,120 +172,120 @@ uni200D,
 uni200E,
 uni200F,
 uni0710,
-uni0710.Fina3,
-uni0710.Fina2,
-uni0710.Fina1,
-uni0710.Medi2,
+uni0710.fin3,
+uni0710.fin2,
+uni0710.fina,
+uni0710.med2,
 uni0711,
 uni0712,
-uni0712.Fina,
-uni0712.Medi,
-uni0712.Init,
+uni0712.fina,
+uni0712.medi,
+uni0712.init,
 uni0713,
-uni0713.Fina,
-uni0713.Medi,
-uni0713.Init,
+uni0713.fina,
+uni0713.medi,
+uni0713.init,
 uni0714,
-uni0714.Fina,
-uni0714.Medi,
-uni0714.Init,
+uni0714.fina,
+uni0714.medi,
+uni0714.init,
 uni0715,
-uni0715.Fina,
+uni0715.fina,
 uni0716,
-uni0716.Fina,
+uni0716.fina,
 uni0717,
-uni0717.Fina,
+uni0717.fina,
 uni0718,
-uni0718.Fina,
+uni0718.fina,
 uni0719,
-uni0719.Fina,
+uni0719.fina,
 uni071A,
-uni071A.Fina,
-uni071A.Medi,
-uni071A.Init,
+uni071A.fina,
+uni071A.medi,
+uni071A.init,
 uni071B,
-uni071B.Fina,
-uni071B.Medi,
-uni071B.Init,
+uni071B.fina,
+uni071B.medi,
+uni071B.init,
 uni071C,
-uni071C.Fina,
-uni071C.Medi,
-uni071C.Init,
+uni071C.fina,
+uni071C.medi,
+uni071C.init,
 uni071D,
-uni071D.Fina,
-uni071D.Medi,
-uni071D.Init,
+uni071D.fina,
+uni071D.medi,
+uni071D.init,
 uni071E,
 uni071F,
-uni071F.Fina,
-uni071F.Medi,
-uni071F.Init,
+uni071F.fina,
+uni071F.medi,
+uni071F.init,
 uni0720,
-uni0720.Fina,
-uni0720.Medi,
-uni0720.Init,
+uni0720.fina,
+uni0720.medi,
+uni0720.init,
 uni0721,
-uni0721.Fina,
-uni0721.Medi,
-uni0721.Init,
+uni0721.fina,
+uni0721.medi,
+uni0721.init,
 uni0722,
-uni0722.Fina,
-uni0722.Medi,
-uni0722.Init,
+uni0722.fina,
+uni0722.medi,
+uni0722.init,
 uni0723,
-uni0723.Fina,
-uni0723.Medi,
-uni0723.Init,
+uni0723.fina,
+uni0723.medi,
+uni0723.init,
 uni0724,
-uni0724.Fina,
-uni0724.Medi,
-uni0724.Init,
+uni0724.fina,
+uni0724.medi,
+uni0724.init,
 uni0725,
-uni0725.Fina,
-uni0725.Medi,
-uni0725.Init,
+uni0725.fina,
+uni0725.medi,
+uni0725.init,
 uni0726,
-uni0726.Fina,
-uni0726.Medi,
-uni0726.Init,
+uni0726.fina,
+uni0726.medi,
+uni0726.init,
 uni0727,
-uni0727.Fina,
-uni0727.Medi,
-uni0727.Init,
+uni0727.fina,
+uni0727.medi,
+uni0727.init,
 uni0728,
-uni0728.Fina,
+uni0728.fina,
 uni0729,
-uni0729.Fina,
-uni0729.Medi,
-uni0729.Init,
+uni0729.fina,
+uni0729.medi,
+uni0729.init,
 uni072A,
-uni072A.Fina,
+uni072A.fina,
 uni072B,
-uni072B.Fina,
-uni072B.Medi,
-uni072B.Init,
+uni072B.fina,
+uni072B.medi,
+uni072B.init,
 uni072C,
-uni072C.Fina,
+uni072C.fina,
 uni072D,
-uni072D.Fina,
-uni072D.Medi,
-uni072D.Init,
+uni072D.fina,
+uni072D.medi,
+uni072D.init,
 uni072E,
-uni072E.Fina,
-uni072E.Medi,
-uni072E.Init,
+uni072E.fina,
+uni072E.medi,
+uni072E.init,
 uni072F,
-uni072F.Fina,
+uni072F.fina,
 uni074D,
-uni074D.Fina,
+uni074D.fina,
 uni074E,
-uni074E.Fina,
-uni074E.Medi,
-uni074E.Init,
+uni074E.fina,
+uni074E.medi,
+uni074E.init,
 uni074F,
-uni074F.Fina,
-uni074F.Medi,
-uni074F.Init,
+uni074F.fina,
+uni074F.medi,
+uni074F.init,
 uni0621,
 uni0640,
 uni0700,
@@ -407,43 +407,43 @@ fraction,
 uni25CC,
 uni2670,
 uni2671,
-uni072Auni0308.Isol,
-uni072Auni0308.Fina,
-uni0713.FinaWide,
-uni0713.MediWide,
-uni0714.FinaWide,
-uni0714.MediWide,
-uni072E.FinaWide,
-uni072E.MediWide,
-uni0713.FinaWide2,
-uni0713.MediWide2,
-uni0714.FinaWide2,
-uni0714.MediWide2,
-uni072E.FinaWide2,
-uni072E.MediWide2,
-uni0710.Fina1wideY,
-uni0710.Fina1wideX,
-uni0710.Medi2wideY,
-uni0710.Medi2wideX,
-uni071B.MediLongG,
-uni071B.InitLongG,
-uni071C.MediLongG,
-uni071C.InitLongG,
-uni0713.MediLong,
-uni0713.InitLong,
-uni0714.MediLong,
-uni0714.InitLong,
-uni072E.MediLong,
-uni072E.InitLong,
-uni0720.MediB,
-uni0720.InitB,
-uni0722.InitB,
-uni0722.MediB,
-uni071D.InitB,
-uni071D.MediB,
-uni074F.MediB,
-uni074F.InitB,
-uni0722.FinaSoft,
+uni072Auni0308.isol,
+uni072Auni0308.fina,
+uni0713.fina.wide,
+uni0713.medi.wide,
+uni0714.fina.wide,
+uni0714.medi.wide,
+uni072E.fina.wide,
+uni072E.medi.wide,
+uni0713.fina.wide2,
+uni0713.medi.wide2,
+uni0714.fina.wide2,
+uni0714.medi.wide2,
+uni072E.fina.wide2,
+uni072E.medi.wide2,
+uni0710.fina.wideY,
+uni0710.fina.wideX,
+uni0710.med2.wideY,
+uni0710.med2.wideX,
+uni071B.medi.longG,
+uni071B.init.longG,
+uni071C.medi.longG,
+uni071C.init.longG,
+uni0713.medi.long,
+uni0713.init.long,
+uni0714.medi.long,
+uni0714.init.long,
+uni072E.medi.long,
+uni072E.init.long,
+uni0720.mediB,
+uni0720.initB,
+uni0722.initB,
+uni0722.mediB,
+uni071D.initB,
+uni071D.mediB,
+uni074F.mediB,
+uni074F.initB,
+uni0722.finaSoft,
 uni0732.above,
 uni0732.below,
 SAM4in,
@@ -497,75 +497,75 @@ disablesNiceNames = 1;
 familyName = "Noto Sans Syriac";
 featurePrefixes = (
 {
-code = "lookup SingleSubstitution11 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 10 \012    sub uni0710.Fina1 by uni0710.Fina1wideX;\012    sub uni0710.Medi2 by uni0710.Medi2wideX;\012    sub uni0713.Medi by uni0713.MediLong;\012    sub uni0713.Init by uni0713.InitLong;\012    sub uni0714.Medi by uni0714.MediLong;\012    sub uni0714.Init by uni0714.InitLong;\012    sub uni071B.Medi by uni071B.MediLongG;\012    sub uni071B.Init by uni071B.InitLongG;\012    sub uni071C.Medi by uni071C.MediLongG;\012    sub uni071C.Init by uni071C.InitLongG;\012    sub uni0720.Medi by uni0720.MediB;\012    sub uni0720.Init by uni0720.InitB;\012    sub uni072E.Medi by uni072E.MediLong;\012    sub uni072E.Init by uni072E.InitLong;\012} SingleSubstitution11;\012";
+code = "lookup SingleSubstitution11 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 10 \012    sub uni0710.fina by uni0710.fina.wideX;\012    sub uni0710.med2 by uni0710.med2.wideX;\012    sub uni0713.medi by uni0713.medi.long;\012    sub uni0713.init by uni0713.init.long;\012    sub uni0714.medi by uni0714.medi.long;\012    sub uni0714.init by uni0714.init.long;\012    sub uni071B.medi by uni071B.medi.longG;\012    sub uni071B.init by uni071B.init.longG;\012    sub uni071C.medi by uni071C.medi.longG;\012    sub uni071C.init by uni071C.init.longG;\012    sub uni0720.medi by uni0720.mediB;\012    sub uni0720.init by uni0720.initB;\012    sub uni072E.medi by uni072E.medi.long;\012    sub uni072E.init by uni072E.init.long;\012} SingleSubstitution11;\012";
 name = SingleSubstitution11;
 },
 {
-code = "lookup SingleSubstitution16 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 15 \012    sub uni0710.Fina1 by uni0710.Fina1wideY;\012    sub uni0710.Medi2 by uni0710.Medi2wideY;\012} SingleSubstitution16;\012";
+code = "lookup SingleSubstitution16 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 15 \012    sub uni0710.fina by uni0710.fina.wideY;\012    sub uni0710.med2 by uni0710.med2.wideY;\012} SingleSubstitution16;\012";
 name = SingleSubstitution16;
 },
 {
-code = "lookup SingleSubstitution18 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 17 \012    sub uni0710.Fina1 by uni0710.Fina1wideX;\012    sub uni0710.Medi2 by uni0710.Medi2wideX;\012    sub uni0713.Fina by uni0713.FinaWide;\012    sub uni0713.Medi by uni0713.MediWide;\012    sub uni0714.Fina by uni0714.FinaWide;\012    sub uni0714.Medi by uni0714.MediWide;\012    sub uni071B.Medi by uni071B.MediLongG;\012    sub uni071B.Init by uni071B.InitLongG;\012    sub uni071C.Medi by uni071C.MediLongG;\012    sub uni071C.Init by uni071C.InitLongG;\012    sub uni071D.Medi by uni071D.MediB;\012    sub uni071D.Init by uni071D.InitB;\012    sub uni0720.Medi by uni0720.MediB;\012    sub uni0720.Init by uni0720.InitB;\012    sub uni0722.Fina by uni0722.FinaSoft;\012    sub uni0722.Medi by uni0722.MediB;\012    sub uni0722.Init by uni0722.InitB;\012    sub uni072E.Fina by uni072E.FinaWide;\012    sub uni072E.Medi by uni072E.MediWide;\012    sub uni074F.Medi by uni074F.MediB;\012    sub uni074F.Init by uni074F.InitB;\012} SingleSubstitution18;\012";
+code = "lookup SingleSubstitution18 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 17 \012    sub uni0710.fina by uni0710.fina.wideX;\012    sub uni0710.med2 by uni0710.med2.wideX;\012    sub uni0713.fina by uni0713.fina.wide;\012    sub uni0713.medi by uni0713.medi.wide;\012    sub uni0714.fina by uni0714.fina.wide;\012    sub uni0714.medi by uni0714.medi.wide;\012    sub uni071B.medi by uni071B.medi.longG;\012    sub uni071B.init by uni071B.init.longG;\012    sub uni071C.medi by uni071C.medi.longG;\012    sub uni071C.init by uni071C.init.longG;\012    sub uni071D.medi by uni071D.mediB;\012    sub uni071D.init by uni071D.initB;\012    sub uni0720.medi by uni0720.mediB;\012    sub uni0720.init by uni0720.initB;\012    sub uni0722.fina by uni0722.finaSoft;\012    sub uni0722.medi by uni0722.mediB;\012    sub uni0722.init by uni0722.initB;\012    sub uni072E.fina by uni072E.fina.wide;\012    sub uni072E.medi by uni072E.medi.wide;\012    sub uni074F.medi by uni074F.mediB;\012    sub uni074F.init by uni074F.initB;\012} SingleSubstitution18;\012";
 name = SingleSubstitution18;
 },
 {
-code = "lookup SingleSubstitution24 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 23 \012    sub uni0713.Fina by uni0713.FinaWide2;\012    sub uni0713.Medi by uni0713.MediWide2;\012    sub uni0714.Fina by uni0714.FinaWide2;\012    sub uni0714.Medi by uni0714.MediWide2;\012    sub uni071D.Medi by uni071D.MediB;\012    sub uni071D.Init by uni071D.InitB;\012    sub uni0720.Medi by uni0720.MediB;\012    sub uni0720.Init by uni0720.InitB;\012    sub uni0722.Medi by uni0722.MediB;\012    sub uni0722.Init by uni0722.InitB;\012    sub uni072E.Fina by uni072E.FinaWide2;\012    sub uni072E.Medi by uni072E.MediWide2;\012    sub uni074F.Medi by uni074F.MediB;\012    sub uni074F.Init by uni074F.InitB;\012} SingleSubstitution24;\012";
+code = "lookup SingleSubstitution24 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 23 \012    sub uni0713.fina by uni0713.fina.wide2;\012    sub uni0713.medi by uni0713.medi.wide2;\012    sub uni0714.fina by uni0714.fina.wide2;\012    sub uni0714.medi by uni0714.medi.wide2;\012    sub uni071D.medi by uni071D.mediB;\012    sub uni071D.init by uni071D.initB;\012    sub uni0720.medi by uni0720.mediB;\012    sub uni0720.init by uni0720.initB;\012    sub uni0722.medi by uni0722.mediB;\012    sub uni0722.init by uni0722.initB;\012    sub uni072E.fina by uni072E.fina.wide2;\012    sub uni072E.medi by uni072E.medi.wide2;\012    sub uni074F.medi by uni074F.mediB;\012    sub uni074F.init by uni074F.initB;\012} SingleSubstitution24;\012";
 name = SingleSubstitution24;
 },
 {
-code = "lookup SinglePositioning1 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    pos uni071A.Medi <-15 0 -15 0>;\012    pos uni071A.Init <-15 0 -15 0>;\012    pos uni0720.Medi <-65 0 -65 0>;\012    pos uni0720.Init <-65 0 -65 0>;\012    pos uni0721.Medi <-95 0 -95 0>;\012    pos uni0721.Init <-95 0 -95 0>;\012    pos uni072B.Medi <-38 0 -38 0>;\012    pos uni072B.Init <-38 0 -38 0>;\012    pos [uni071F.Init uni071F.Medi uni0726.Init uni0726.Medi uni074E.Init uni074E.Medi] <-50 0 -50 0>;\012    pos [uni0712.Init uni0712.Medi uni072D.Init uni072D.Medi] <-75 0 -75 0>;\012    pos [uni071D.Init uni071D.Medi uni0722.Init uni0722.Medi] <-30 0 -30 0>;\012} SinglePositioning1;\012";
+code = "lookup SinglePositioning1 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    pos uni071A.medi <-15 0 -15 0>;\012    pos uni071A.init <-15 0 -15 0>;\012    pos uni0720.medi <-65 0 -65 0>;\012    pos uni0720.init <-65 0 -65 0>;\012    pos uni0721.medi <-95 0 -95 0>;\012    pos uni0721.init <-95 0 -95 0>;\012    pos uni072B.medi <-38 0 -38 0>;\012    pos uni072B.init <-38 0 -38 0>;\012    pos [uni071F.init uni071F.medi uni0726.init uni0726.medi uni074E.init uni074E.medi] <-50 0 -50 0>;\012    pos [uni0712.init uni0712.medi uni072D.init uni072D.medi] <-75 0 -75 0>;\012    pos [uni071D.init uni071D.medi uni0722.init uni0722.medi] <-30 0 -30 0>;\012} SinglePositioning1;\012";
 name = SinglePositioning1;
 },
 {
-code = "lookup SinglePositioning2 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 1 \012    pos [uni0712.Init uni0712.Medi uni072D.Init uni072D.Medi] <-65 0 -65 0>;\012    pos [uni071F.Init uni071F.Medi uni074E.Init uni074E.Medi] <-100 0 -100 0>;\012    pos uni0721.Medi <-50 0 -50 0>;\012    pos uni0721.Init <-50 0 -50 0>;\012    pos uni0726.Medi <-38 0 -38 0>;\012    pos uni0726.Init <-38 0 -38 0>;\012} SinglePositioning2;\012";
+code = "lookup SinglePositioning2 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 1 \012    pos [uni0712.init uni0712.medi uni072D.init uni072D.medi] <-65 0 -65 0>;\012    pos [uni071F.init uni071F.medi uni074E.init uni074E.medi] <-100 0 -100 0>;\012    pos uni0721.medi <-50 0 -50 0>;\012    pos uni0721.init <-50 0 -50 0>;\012    pos uni0726.medi <-38 0 -38 0>;\012    pos uni0726.init <-38 0 -38 0>;\012} SinglePositioning2;\012";
 name = SinglePositioning2;
 },
 {
-code = "lookup SinglePositioning3 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 2 \012    pos uni0721.Medi <-125 0 -125 0>;\012    pos uni0721.Init <-125 0 -125 0>;\012    pos uni0726.Medi <-65 0 -65 0>;\012    pos uni0726.Init <-65 0 -65 0>;\012    pos uni072B.Medi <-75 0 -75 0>;\012    pos uni072B.Init <-75 0 -75 0>;\012    pos [uni0712.Init uni0712.Medi uni072D.Init uni072D.Medi] <-100 0 -100 0>;\012    pos [uni071F.Init uni071F.Medi uni074E.Init uni074E.Medi] <-30 0 -30 0>;\012} SinglePositioning3;\012";
+code = "lookup SinglePositioning3 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 2 \012    pos uni0721.medi <-125 0 -125 0>;\012    pos uni0721.init <-125 0 -125 0>;\012    pos uni0726.medi <-65 0 -65 0>;\012    pos uni0726.init <-65 0 -65 0>;\012    pos uni072B.medi <-75 0 -75 0>;\012    pos uni072B.init <-75 0 -75 0>;\012    pos [uni0712.init uni0712.medi uni072D.init uni072D.medi] <-100 0 -100 0>;\012    pos [uni071F.init uni071F.medi uni074E.init uni074E.medi] <-30 0 -30 0>;\012} SinglePositioning3;\012";
 name = SinglePositioning3;
 },
 {
-code = "lookup SinglePositioning4 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 3 \012    pos [uni0712.Init uni0712.Medi uni072D.Init uni072D.Medi] <-105 0 -105 0>;\012    pos [uni071F.Init uni071F.Medi uni074E.Init uni074E.Medi] <-35 0 -35 0>;\012    pos uni0721.Medi <-25 0 -25 0>;\012    pos uni0721.Init <-25 0 -25 0>;\012    pos uni0726.Medi <-80 0 -80 0>;\012    pos uni0726.Init <-80 0 -80 0>;\012} SinglePositioning4;\012";
+code = "lookup SinglePositioning4 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 3 \012    pos [uni0712.init uni0712.medi uni072D.init uni072D.medi] <-105 0 -105 0>;\012    pos [uni071F.init uni071F.medi uni074E.init uni074E.medi] <-35 0 -35 0>;\012    pos uni0721.medi <-25 0 -25 0>;\012    pos uni0721.init <-25 0 -25 0>;\012    pos uni0726.medi <-80 0 -80 0>;\012    pos uni0726.init <-80 0 -80 0>;\012} SinglePositioning4;\012";
 name = SinglePositioning4;
 },
 {
-code = "lookup SinglePositioning5 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 4 \012    pos [uni0712.Init uni0712.Medi uni072D.Init uni072D.Medi] <-60 0 -60 0>;\012    pos uni0721.Medi <-225 0 -225 0>;\012    pos uni0721.Init <-225 0 -225 0>;\012    pos uni0726.Medi <-100 0 -100 0>;\012    pos uni0726.Init <-100 0 -100 0>;\012} SinglePositioning5;\012";
+code = "lookup SinglePositioning5 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 4 \012    pos [uni0712.init uni0712.medi uni072D.init uni072D.medi] <-60 0 -60 0>;\012    pos uni0721.medi <-225 0 -225 0>;\012    pos uni0721.init <-225 0 -225 0>;\012    pos uni0726.medi <-100 0 -100 0>;\012    pos uni0726.init <-100 0 -100 0>;\012} SinglePositioning5;\012";
 name = SinglePositioning5;
 },
 {
-code = "lookup SinglePositioning6 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 5 \012    pos [uni0712.Init uni0712.Medi uni072D.Init uni072D.Medi] <-85 0 -85 0>;\012    pos uni0721.Medi <-70 0 -70 0>;\012    pos uni0721.Init <-70 0 -70 0>;\012    pos uni0726.Medi <-75 0 -75 0>;\012    pos uni0726.Init <-75 0 -75 0>;\012} SinglePositioning6;\012";
+code = "lookup SinglePositioning6 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 5 \012    pos [uni0712.init uni0712.medi uni072D.init uni072D.medi] <-85 0 -85 0>;\012    pos uni0721.medi <-70 0 -70 0>;\012    pos uni0721.init <-70 0 -70 0>;\012    pos uni0726.medi <-75 0 -75 0>;\012    pos uni0726.init <-75 0 -75 0>;\012} SinglePositioning6;\012";
 name = SinglePositioning6;
 },
 {
-code = "lookup SinglePositioning7 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 6 \012    pos [uni0721.Init uni0721.Medi uni0722.Init uni0722.Medi uni072B.Init uni072B.Medi] <-60 0 -60 0>;\012    pos [uni0712.Init uni0712.Medi uni072D.Init uni072D.Medi] <-75 0 -75 0>;\012} SinglePositioning7;\012";
+code = "lookup SinglePositioning7 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 6 \012    pos [uni0721.init uni0721.medi uni0722.init uni0722.medi uni072B.init uni072B.medi] <-60 0 -60 0>;\012    pos [uni0712.init uni0712.medi uni072D.init uni072D.medi] <-75 0 -75 0>;\012} SinglePositioning7;\012";
 name = SinglePositioning7;
 },
 {
-code = "lookup SinglePositioning8 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 7 \012    pos [uni0715 uni0715.Fina uni0716 uni0716.Fina uni072A uni072A.Fina uni072Auni0308.Fina uni072Auni0308.Isol] <32 0 32 0>;\012    pos uni0719 <25 0 25 0>;\012    pos uni0719.Fina <25 0 25 0>;\012    pos uni0722.Medi <60 0 60 0>;\012    pos uni0722.Init <60 0 60 0>;\012} SinglePositioning8;\012";
+code = "lookup SinglePositioning8 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 7 \012    pos [uni0715 uni0715.fina uni0716 uni0716.fina uni072A uni072A.fina uni072Auni0308.fina uni072Auni0308.isol] <32 0 32 0>;\012    pos uni0719 <25 0 25 0>;\012    pos uni0719.fina <25 0 25 0>;\012    pos uni0722.medi <60 0 60 0>;\012    pos uni0722.init <60 0 60 0>;\012} SinglePositioning8;\012";
 name = SinglePositioning8;
 },
 {
-code = "lookup SinglePositioning9 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 8 \012    pos [uni0320 uni0323 uni0324 uni032D uni032E uni0330 uni0331 uni064D uni0650 uni0655 uni0731 uni0732.below uni0734 uni0737 uni0738 uni0739 uni073B uni073C uni073E uni0744 uni0746 uni0748] <0 -2 0 0>;\012    pos [uni0715 uni0715.Fina uni0716 uni0716.Fina uni0726.Init uni0726.Medi uni072A uni072A.Fina uni072Auni0308.Fina uni072Auni0308.Isol] <50 0 50 0>;\012    pos [uni0712.Init uni0712.Medi uni072D.Init uni072D.Medi] <75 0 75 0>;\012    pos uni0721.Medi <70 0 70 0>;\012    pos uni0721.Init <70 0 70 0>;\012    pos uni0728 <125 0 125 0>;\012    pos uni0728.Fina <125 0 125 0>;\012} SinglePositioning9;\012";
+code = "lookup SinglePositioning9 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 8 \012    pos [uni0320 uni0323 uni0324 uni032D uni032E uni0330 uni0331 uni064D uni0650 uni0655 uni0731 uni0732.below uni0734 uni0737 uni0738 uni0739 uni073B uni073C uni073E uni0744 uni0746 uni0748] <0 -2 0 0>;\012    pos [uni0715 uni0715.fina uni0716 uni0716.fina uni0726.init uni0726.medi uni072A uni072A.fina uni072Auni0308.fina uni072Auni0308.isol] <50 0 50 0>;\012    pos [uni0712.init uni0712.medi uni072D.init uni072D.medi] <75 0 75 0>;\012    pos uni0721.medi <70 0 70 0>;\012    pos uni0721.init <70 0 70 0>;\012    pos uni0728 <125 0 125 0>;\012    pos uni0728.fina <125 0 125 0>;\012} SinglePositioning9;\012";
 name = SinglePositioning9;
 },
 {
-code = "lookup SinglePositioning10 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 9 \012    pos [uni0320 uni0323 uni0324 uni032D uni032E uni0330 uni0331 uni064D uni0650 uni0655 uni0731 uni0732.below uni0734 uni0737 uni0738 uni0739 uni073B uni073C uni073E uni0744 uni0746 uni0748] <0 -228 0 0>;\012    pos uni0718 <125 0 125 0>;\012    pos uni0718.Fina <125 0 125 0>;\012    pos uni0726.Medi <80 0 80 0>;\012    pos uni0726.Init <80 0 80 0>;\012    pos uni0728 <63 0 63 0>;\012    pos uni0728.Fina <63 0 63 0>;\012    pos uni072C <38 0 38 0>;\012    pos uni072C.Fina <38 0 38 0>;\012    pos uni0621 <188 0 188 0>;\012    pos [uni0715 uni0715.Fina uni0716 uni0716.Fina uni072A uni072A.Fina uni072Auni0308.Fina uni072Auni0308.Isol] <425 0 425 0>;\012    pos [uni0719 uni0719.Fina uni072F uni072F.Fina] <200 0 200 0>;\012} SinglePositioning10;\012";
+code = "lookup SinglePositioning10 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 9 \012    pos [uni0320 uni0323 uni0324 uni032D uni032E uni0330 uni0331 uni064D uni0650 uni0655 uni0731 uni0732.below uni0734 uni0737 uni0738 uni0739 uni073B uni073C uni073E uni0744 uni0746 uni0748] <0 -228 0 0>;\012    pos uni0718 <125 0 125 0>;\012    pos uni0718.fina <125 0 125 0>;\012    pos uni0726.medi <80 0 80 0>;\012    pos uni0726.init <80 0 80 0>;\012    pos uni0728 <63 0 63 0>;\012    pos uni0728.fina <63 0 63 0>;\012    pos uni072C <38 0 38 0>;\012    pos uni072C.fina <38 0 38 0>;\012    pos uni0621 <188 0 188 0>;\012    pos [uni0715 uni0715.fina uni0716 uni0716.fina uni072A uni072A.fina uni072Auni0308.fina uni072Auni0308.isol] <425 0 425 0>;\012    pos [uni0719 uni0719.fina uni072F uni072F.fina] <200 0 200 0>;\012} SinglePositioning10;\012";
 name = SinglePositioning10;
 },
 {
-code = "lookup SinglePositioning11 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 10 \012    pos [uni0731 uni0734 uni0737 uni073B uni073E uni0744 uni0746 uni0748] <0 -360 0 0>;\012    pos [uni0728 uni0728.Fina] <80 0 80 0>;\012} SinglePositioning11;\012";
+code = "lookup SinglePositioning11 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 10 \012    pos [uni0731 uni0734 uni0737 uni073B uni073E uni0744 uni0746 uni0748] <0 -360 0 0>;\012    pos [uni0728 uni0728.fina] <80 0 80 0>;\012} SinglePositioning11;\012";
 name = SinglePositioning11;
 },
 {
-code = "lookup SinglePositioning12 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 11 \012    pos [uni0731 uni0734 uni0737 uni073B uni073E uni0744 uni0746 uni0748] <0 -320 0 0>;\012    pos [uni0728 uni0728.Fina] <25 0 25 0>;\012} SinglePositioning12;\012";
+code = "lookup SinglePositioning12 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 11 \012    pos [uni0731 uni0734 uni0737 uni073B uni073E uni0744 uni0746 uni0748] <0 -320 0 0>;\012    pos [uni0728 uni0728.fina] <25 0 25 0>;\012} SinglePositioning12;\012";
 name = SinglePositioning12;
 },
 {
-code = "lookup SinglePositioning13 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 12 \012    pos [uni0320 uni0323 uni0324 uni032D uni032E uni0330 uni0331 uni064D uni0650 uni0655 uni0731 uni0732.below uni0734 uni0737 uni0738 uni0739 uni073B uni073C uni073E uni0744 uni0746 uni0748] <0 -268 0 0>;\012    pos [uni0728 uni0728.Fina] <88 0 88 0>;\012} SinglePositioning13;\012";
+code = "lookup SinglePositioning13 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 12 \012    pos [uni0320 uni0323 uni0324 uni032D uni032E uni0330 uni0331 uni064D uni0650 uni0655 uni0731 uni0732.below uni0734 uni0737 uni0738 uni0739 uni073B uni073C uni073E uni0744 uni0746 uni0748] <0 -268 0 0>;\012    pos [uni0728 uni0728.fina] <88 0 88 0>;\012} SinglePositioning13;\012";
 name = SinglePositioning13;
 },
 {
-code = "lookup SinglePositioning14 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 13 \012    pos [uni0320 uni0323 uni0324 uni032D uni032E uni0330 uni0331 uni064D uni0650 uni0655 uni0731 uni0732.below uni0734 uni0737 uni0738 uni0739 uni073B uni073C uni073E uni0744 uni0746 uni0748] <0 -275 0 0>;\012    pos [uni0710 uni0710.Fina1 uni0710.Fina1wideX uni0710.Fina1wideY uni0710.Fina2 uni0710.Fina3 uni0710.Medi2 uni0710.Medi2wideX uni0710.Medi2wideY uni0717 uni0717.Fina] <200 0 200 0>;\012    pos uni0719 <25 0 25 0>;\012    pos uni0719.Fina <25 0 25 0>;\012    pos uni072F <50 0 50 0>;\012    pos uni072F.Fina <50 0 50 0>;\012} SinglePositioning14;\012";
+code = "lookup SinglePositioning14 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 13 \012    pos [uni0320 uni0323 uni0324 uni032D uni032E uni0330 uni0331 uni064D uni0650 uni0655 uni0731 uni0732.below uni0734 uni0737 uni0738 uni0739 uni073B uni073C uni073E uni0744 uni0746 uni0748] <0 -275 0 0>;\012    pos [uni0710 uni0710.fina uni0710.fina.wideX uni0710.fina.wideY uni0710.fin2 uni0710.fin3 uni0710.med2 uni0710.med2.wideX uni0710.med2.wideY uni0717 uni0717.fina] <200 0 200 0>;\012    pos uni0719 <25 0 25 0>;\012    pos uni0719.fina <25 0 25 0>;\012    pos uni072F <50 0 50 0>;\012    pos uni072F.fina <50 0 50 0>;\012} SinglePositioning14;\012";
 name = SinglePositioning14;
 },
 {
@@ -581,15 +581,15 @@ code = "lookup SinglePositioning17 {\012    lookupflag RightToLeft MarkAttachmen
 name = SinglePositioning17;
 },
 {
-code = "lookup SinglePositioning18 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet19;\012    ;\012    # Original source: 17 \012    pos [uni0715 uni0715.Fina uni0716 uni0716.Fina uni072A uni072A.Fina uni072Auni0308.Fina uni072Auni0308.Isol] <225 0 225 0>;\012} SinglePositioning18;\012";
+code = "lookup SinglePositioning18 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet19;\012    ;\012    # Original source: 17 \012    pos [uni0715 uni0715.fina uni0716 uni0716.fina uni072A uni072A.fina uni072Auni0308.fina uni072Auni0308.isol] <225 0 225 0>;\012} SinglePositioning18;\012";
 name = SinglePositioning18;
 },
 {
-code = "lookup SinglePositioning19 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 18 \012    pos [uni071D uni071D.Fina uni0722.Fina] <112 0 112 0>;\012    pos [uni0719 uni0719.Fina] <90 0 90 0>;\012} SinglePositioning19;\012";
+code = "lookup SinglePositioning19 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 18 \012    pos [uni071D uni071D.fina uni0722.fina] <112 0 112 0>;\012    pos [uni0719 uni0719.fina] <90 0 90 0>;\012} SinglePositioning19;\012";
 name = SinglePositioning19;
 },
 {
-code = "lookup SinglePositioning20 {\012    lookupflag RightToLeft;\012    ;\012    # Original source: 19 \012    pos [uni0728 uni0728.Fina] <100 0 100 0>;\012} SinglePositioning20;\012";
+code = "lookup SinglePositioning20 {\012    lookupflag RightToLeft;\012    ;\012    # Original source: 19 \012    pos [uni0728 uni0728.fina] <100 0 100 0>;\012} SinglePositioning20;\012";
 name = SinglePositioning20;
 },
 {
@@ -603,39 +603,45 @@ code = "lookup Ligatures {\012    sub uni064B uni0651 by uni064B0651;\012    sub
 name = ccmp;
 },
 {
-code = "sub uni0710 by uni0710.Fina2;\012";
+automatic = 1;
+code = "sub uni0710 by uni0710.fin2;\012";
 name = fin2;
 },
 {
-code = "sub uni0710 by uni0710.Fina3;\012";
+automatic = 1;
+code = "sub uni0710 by uni0710.fin3;\012";
 name = fin3;
 },
 {
-code = "sub uni0710 by uni0710.Fina1;\012sub uni0712 by uni0712.Fina;\012sub uni0713 by uni0713.Fina;\012sub uni0714 by uni0714.Fina;\012sub uni0715 by uni0715.Fina;\012sub uni0716 by uni0716.Fina;\012sub uni0717 by uni0717.Fina;\012sub uni0718 by uni0718.Fina;\012sub uni0719 by uni0719.Fina;\012sub uni071A by uni071A.Fina;\012sub uni071B by uni071B.Fina;\012sub uni071C by uni071C.Fina;\012sub uni071D by uni071D.Fina;\012sub uni071F by uni071F.Fina;\012sub uni0720 by uni0720.Fina;\012sub uni0721 by uni0721.Fina;\012sub uni0722 by uni0722.Fina;\012sub uni0723 by uni0723.Fina;\012sub uni0724 by uni0724.Fina;\012sub uni0725 by uni0725.Fina;\012sub uni0726 by uni0726.Fina;\012sub uni0727 by uni0727.Fina;\012sub uni0728 by uni0728.Fina;\012sub uni0729 by uni0729.Fina;\012sub uni072A by uni072A.Fina;\012sub uni072B by uni072B.Fina;\012sub uni072C by uni072C.Fina;\012sub uni072D by uni072D.Fina;\012sub uni072E by uni072E.Fina;\012sub uni072F by uni072F.Fina;\012sub uni074D by uni074D.Fina;\012sub uni074E by uni074E.Fina;\012sub uni074F by uni074F.Fina;\012";
+automatic = 1;
+code = "sub uni0710 by uni0710.fina;\012sub uni0712 by uni0712.fina;\012sub uni0713 by uni0713.fina;\012sub uni0714 by uni0714.fina;\012sub uni0715 by uni0715.fina;\012sub uni0716 by uni0716.fina;\012sub uni0717 by uni0717.fina;\012sub uni0718 by uni0718.fina;\012sub uni0719 by uni0719.fina;\012sub uni071A by uni071A.fina;\012sub uni071B by uni071B.fina;\012sub uni071C by uni071C.fina;\012sub uni071D by uni071D.fina;\012sub uni071F by uni071F.fina;\012sub uni0720 by uni0720.fina;\012sub uni0721 by uni0721.fina;\012sub uni0722 by uni0722.fina;\012sub uni0723 by uni0723.fina;\012sub uni0724 by uni0724.fina;\012sub uni0725 by uni0725.fina;\012sub uni0726 by uni0726.fina;\012sub uni0727 by uni0727.fina;\012sub uni0728 by uni0728.fina;\012sub uni0729 by uni0729.fina;\012sub uni072A by uni072A.fina;\012sub uni072B by uni072B.fina;\012sub uni072C by uni072C.fina;\012sub uni072D by uni072D.fina;\012sub uni072E by uni072E.fina;\012sub uni072F by uni072F.fina;\012sub uni074D by uni074D.fina;\012sub uni074E by uni074E.fina;\012sub uni074F by uni074F.fina;\012";
 name = fina;
 },
 {
-code = "sub uni0712 by uni0712.Init;\012sub uni0713 by uni0713.Init;\012sub uni0714 by uni0714.Init;\012sub uni071A by uni071A.Init;\012sub uni071B by uni071B.Init;\012sub uni071C by uni071C.Init;\012sub uni071D by uni071D.Init;\012sub uni071F by uni071F.Init;\012sub uni0720 by uni0720.Init;\012sub uni0721 by uni0721.Init;\012sub uni0722 by uni0722.Init;\012sub uni0723 by uni0723.Init;\012sub uni0724 by uni0724.Init;\012sub uni0725 by uni0725.Init;\012sub uni0726 by uni0726.Init;\012sub uni0727 by uni0727.Init;\012sub uni0729 by uni0729.Init;\012sub uni072B by uni072B.Init;\012sub uni072D by uni072D.Init;\012sub uni072E by uni072E.Init;\012sub uni074E by uni074E.Init;\012sub uni074F by uni074F.Init;\012";
+automatic = 1;
+code = "sub uni0712 by uni0712.init;\012sub uni0713 by uni0713.init;\012sub uni0714 by uni0714.init;\012sub uni071A by uni071A.init;\012sub uni071B by uni071B.init;\012sub uni071C by uni071C.init;\012sub uni071D by uni071D.init;\012sub uni071F by uni071F.init;\012sub uni0720 by uni0720.init;\012sub uni0721 by uni0721.init;\012sub uni0722 by uni0722.init;\012sub uni0723 by uni0723.init;\012sub uni0724 by uni0724.init;\012sub uni0725 by uni0725.init;\012sub uni0726 by uni0726.init;\012sub uni0727 by uni0727.init;\012sub uni0729 by uni0729.init;\012sub uni072B by uni072B.init;\012sub uni072D by uni072D.init;\012sub uni072E by uni072E.init;\012sub uni074E by uni074E.init;\012sub uni074F by uni074F.init;\012";
 name = init;
 },
 {
-code = "    sub uni0710 by uni0710.Medi2;\012";
+automatic = 1;
+code = "sub uni0710 by uni0710.med2;\012";
 name = med2;
 },
 {
-code = "    sub uni0712 by uni0712.Medi;\012    sub uni0713 by uni0713.Medi;\012    sub uni0714 by uni0714.Medi;\012    sub uni071A by uni071A.Medi;\012    sub uni071B by uni071B.Medi;\012    sub uni071C by uni071C.Medi;\012    sub uni071D by uni071D.Medi;\012    sub uni071F by uni071F.Medi;\012    sub uni0720 by uni0720.Medi;\012    sub uni0721 by uni0721.Medi;\012    sub uni0722 by uni0722.Medi;\012    sub uni0723 by uni0723.Medi;\012    sub uni0724 by uni0724.Medi;\012    sub uni0725 by uni0725.Medi;\012    sub uni0726 by uni0726.Medi;\012    sub uni0727 by uni0727.Medi;\012    sub uni0729 by uni0729.Medi;\012    sub uni072B by uni072B.Medi;\012    sub uni072D by uni072D.Medi;\012    sub uni072E by uni072E.Medi;\012    sub uni074E by uni074E.Medi;\012    sub uni074F by uni074F.Medi;\012";
+automatic = 1;
+code = "sub uni0712 by uni0712.medi;\012sub uni0713 by uni0713.medi;\012sub uni0714 by uni0714.medi;\012sub uni071A by uni071A.medi;\012sub uni071B by uni071B.medi;\012sub uni071C by uni071C.medi;\012sub uni071D by uni071D.medi;\012sub uni071F by uni071F.medi;\012sub uni0720 by uni0720.medi;\012sub uni0721 by uni0721.medi;\012sub uni0722 by uni0722.medi;\012sub uni0723 by uni0723.medi;\012sub uni0724 by uni0724.medi;\012sub uni0725 by uni0725.medi;\012sub uni0726 by uni0726.medi;\012sub uni0727 by uni0727.medi;\012sub uni0729 by uni0729.medi;\012sub uni072B by uni072B.medi;\012sub uni072D by uni072D.medi;\012sub uni072E by uni072E.medi;\012sub uni074E by uni074E.medi;\012sub uni074F by uni074F.medi;\012";
 name = medi;
 },
 {
-code = "\012lookup ChainedContextualGSUB12 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 11 \012    sub @gamal_initmedi' lookup SingleSubstitution11 @gamal_medifina;\012    } ChainedContextualGSUB12;\012\012\012lookup ChainedContextualGSUB13 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 12 \012    sub [uni0713.MediLong uni0714.MediLong uni072E.MediLong] [uni0713.Medi uni0714.Medi uni072E.Medi]' lookup SingleSubstitution11;\012    } ChainedContextualGSUB13;\012\012\012lookup ChainedContextualGSUB14 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 13 \012    sub uni071B.Medi' lookup SingleSubstitution11 uni074E.Medi;\012    sub uni071B.Medi' lookup SingleSubstitution11 uni074E.Fina;\012    sub uni071B.Init' lookup SingleSubstitution11 uni074E.Medi;\012    sub uni071B.Init' lookup SingleSubstitution11 uni074E.Fina;\012    sub uni071C.Medi' lookup SingleSubstitution11 uni074E.Medi;\012    sub uni071C.Medi' lookup SingleSubstitution11 uni074E.Fina;\012    sub uni071C.Init' lookup SingleSubstitution11 uni074E.Medi;\012    sub uni071C.Init' lookup SingleSubstitution11 uni074E.Fina;\012    sub uni0720.Medi' lookup SingleSubstitution11 uni074E.Medi;\012    sub uni0720.Medi' lookup SingleSubstitution11 uni074E.Fina;\012    sub uni0720.Init' lookup SingleSubstitution11 uni074E.Medi;\012    sub uni0720.Init' lookup SingleSubstitution11 uni074E.Fina;\012    } ChainedContextualGSUB14;\012\012\012lookup ChainedContextualGSUB15 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 14 \012    sub [uni071B.Medi uni071B.Init uni071C.Medi uni071C.Init]' lookup SingleSubstitution11 @class3;\012    } ChainedContextualGSUB15;\012\012\012lookup ChainedContextualGSUB17 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 16 \012    sub @class4 uni0710.Fina1' lookup SingleSubstitution11;\012    sub @class4 uni0710.Medi2' lookup SingleSubstitution11;\012    sub @class6 uni0710.Fina1' lookup SingleSubstitution16;\012    sub @class6 uni0710.Medi2' lookup SingleSubstitution16;\012    } ChainedContextualGSUB17;\012\012\012lookup ChainedContextualGSUB19 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 18 \012    sub uni071D.Init @markAttachmentSet1 uni0710.Medi2' lookup SingleSubstitution18;\012    sub uni071D.Medi @markAttachmentSet1 uni0710.Medi2' lookup SingleSubstitution18;\012    sub uni071D.Init @markAttachmentSet1 uni0710.Fina1' lookup SingleSubstitution18;\012    sub uni071D.Medi @markAttachmentSet1 uni0710.Fina1' lookup SingleSubstitution18;\012    } ChainedContextualGSUB19;\012\012\012lookup ChainedContextualGSUB20 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 19 \012    sub @class12 uni0722.Fina' lookup SingleSubstitution18;\012    } ChainedContextualGSUB20;\012\012\012lookup ChainedContextualGSUB21 {\012    lookupflag RightToLeft;\012    ;\012    # Original source: 20 \012    sub @class13' lookup SingleSubstitution18 @class14 @class14 uni0715.Fina @class14 @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 @class14 uni0715.Fina @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 @class14 uni0715.Fina uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 uni0715.Fina @class14 @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 uni0715.Fina @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 uni0715.Fina uni030A;\012    sub @class13' lookup SingleSubstitution18 uni0715.Fina @class14 @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 uni0715.Fina @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 uni0715.Fina uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 @class14 uni0716.Fina @class14 @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 @class14 uni0716.Fina @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 @class14 uni0716.Fina uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 uni0716.Fina @class14 @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 uni0716.Fina @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 uni0716.Fina uni030A;\012    sub @class13' lookup SingleSubstitution18 uni0716.Fina @class14 @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 uni0716.Fina @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 uni0716.Fina uni030A;\012    } ChainedContextualGSUB21;\012\012\012lookup ChainedContextualGSUB22 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet3;\012    ;\012    # Original source: 21 \012    sub @class67' lookup SingleSubstitution18 uni0715.Fina uni030A;\012    sub @class67' lookup SingleSubstitution18 uni0716.Fina uni030A;\012    } ChainedContextualGSUB22;\012\012\012lookup ChainedContextualGSUB23 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 22 \012    sub @class69 @class70 @class70 uni072E.Medi' lookup SingleSubstitution18;\012    sub @class69 @class70 uni072E.Medi' lookup SingleSubstitution18;\012    sub @class69 @class70 @class70 uni072E.Fina' lookup SingleSubstitution18;\012    sub @class69 @class70 uni072E.Fina' lookup SingleSubstitution18;\012    sub @class69 @class70 @class70 uni0714.Medi' lookup SingleSubstitution18;\012    sub @class69 @class70 uni0714.Medi' lookup SingleSubstitution18;\012    sub @class69 @class70 @class70 uni0714.Fina' lookup SingleSubstitution18;\012    sub @class69 @class70 uni0714.Fina' lookup SingleSubstitution18;\012    sub @class69 @class70 @class70 uni0713.Medi' lookup SingleSubstitution18;\012    sub @class69 @class70 uni0713.Medi' lookup SingleSubstitution18;\012    sub @class69 @class70 @class70 uni0713.Fina' lookup SingleSubstitution18;\012    sub @class69 @class70 uni0713.Fina' lookup SingleSubstitution18;\012    } ChainedContextualGSUB23;\012\012\012lookup ChainedContextualGSUB25 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 24 \012    sub @class99 @class70 @class70 uni072E.Medi' lookup SingleSubstitution24;\012    sub @class99 @class70 uni072E.Medi' lookup SingleSubstitution24;\012    sub @class99 @class70 @class70 uni072E.Fina' lookup SingleSubstitution24;\012    sub @class99 @class70 uni072E.Fina' lookup SingleSubstitution24;\012    sub @class99 @class70 @class70 uni0714.Medi' lookup SingleSubstitution24;\012    sub @class99 @class70 uni0714.Medi' lookup SingleSubstitution24;\012    sub @class99 @class70 @class70 uni0714.Fina' lookup SingleSubstitution24;\012    sub @class99 @class70 uni0714.Fina' lookup SingleSubstitution24;\012    sub @class99 @class70 @class70 uni0713.Medi' lookup SingleSubstitution24;\012    sub @class99 @class70 uni0713.Medi' lookup SingleSubstitution24;\012    sub @class99 @class70 @class70 uni0713.Fina' lookup SingleSubstitution24;\012    sub @class99 @class70 uni0713.Fina' lookup SingleSubstitution24;\012    } ChainedContextualGSUB25;\012\012\012lookup ChainedContextualGSUB26 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 25 \012    sub @class99' lookup SingleSubstitution24 @class70 uni0719.Fina @class70;\012    } ChainedContextualGSUB26;\012\012\012lookup ChainedContextualGSUB27 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 26 \012    sub @class99' lookup SingleSubstitution24 @class70 @class134 @class70;\012    sub @class99' lookup SingleSubstitution24 @class70 @class138;\012    } ChainedContextualGSUB27;\012\012\012lookup ChainedContextualGSUB28 {\012    lookupflag RightToLeft;\012    ;\012    # Original source: 27 \012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 @class70 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 @class70 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 @class70 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @class70 @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.Fina uni0716.Fina uni072C.Fina] @class70 @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @class70 @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 [uni0742 uni0325] @class70;\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 [uni0742 uni0325] @class70;\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 [uni0742 uni0325] @class70;\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 [uni0742 uni0325] @markAttachmentSet1;\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 [uni0742 uni0325] @markAttachmentSet1;\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 [uni0742 uni0325] @markAttachmentSet1;\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @class70 [uni0742 uni0325] @markAttachmentSet1;\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.Fina uni0716.Fina uni072C.Fina] @class70 [uni0742 uni0325] @markAttachmentSet1;\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @class70 [uni0742 uni0325] @markAttachmentSet1;\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @class70 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.Fina uni0716.Fina uni072C.Fina] @class70 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] @class70 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.Fina uni0716.Fina uni072C.Fina] [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.Fina uni0716.Fina uni072C.Fina] [uni0742 uni0325];\012    } ChainedContextualGSUB28;\012\012\012\012lookup dieresis {\012lookupflag UseMarkFilteringSet [uni0308];\012sub uni072A uni0308 by uni072Auni0308.Isol;\012sub uni072A.Fina uni0308 by uni072Auni0308.Fina;\012} dieresis;";
+code = "\012lookup ChainedContextualGSUB12 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 11 \012    sub @gamal_initmedi' lookup SingleSubstitution11 @gamal_medifina;\012    } ChainedContextualGSUB12;\012\012\012lookup ChainedContextualGSUB13 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 12 \012    sub [uni0713.medi.long uni0714.medi.long uni072E.medi.long] [uni0713.medi uni0714.medi uni072E.medi]' lookup SingleSubstitution11;\012    } ChainedContextualGSUB13;\012\012\012lookup ChainedContextualGSUB14 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 13 \012    sub uni071B.medi' lookup SingleSubstitution11 uni074E.medi;\012    sub uni071B.medi' lookup SingleSubstitution11 uni074E.fina;\012    sub uni071B.init' lookup SingleSubstitution11 uni074E.medi;\012    sub uni071B.init' lookup SingleSubstitution11 uni074E.fina;\012    sub uni071C.medi' lookup SingleSubstitution11 uni074E.medi;\012    sub uni071C.medi' lookup SingleSubstitution11 uni074E.fina;\012    sub uni071C.init' lookup SingleSubstitution11 uni074E.medi;\012    sub uni071C.init' lookup SingleSubstitution11 uni074E.fina;\012    sub uni0720.medi' lookup SingleSubstitution11 uni074E.medi;\012    sub uni0720.medi' lookup SingleSubstitution11 uni074E.fina;\012    sub uni0720.init' lookup SingleSubstitution11 uni074E.medi;\012    sub uni0720.init' lookup SingleSubstitution11 uni074E.fina;\012    } ChainedContextualGSUB14;\012\012\012lookup ChainedContextualGSUB15 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 14 \012    sub [uni071B.medi uni071B.init uni071C.medi uni071C.init]' lookup SingleSubstitution11 @class3;\012    } ChainedContextualGSUB15;\012\012\012lookup ChainedContextualGSUB17 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 16 \012    sub @class4 uni0710.fina' lookup SingleSubstitution11;\012    sub @class4 uni0710.med2' lookup SingleSubstitution11;\012    sub @class6 uni0710.fina' lookup SingleSubstitution16;\012    sub @class6 uni0710.med2' lookup SingleSubstitution16;\012    } ChainedContextualGSUB17;\012\012\012lookup ChainedContextualGSUB19 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 18 \012    sub uni071D.init @markAttachmentSet1 uni0710.med2' lookup SingleSubstitution18;\012    sub uni071D.medi @markAttachmentSet1 uni0710.med2' lookup SingleSubstitution18;\012    sub uni071D.init @markAttachmentSet1 uni0710.fina' lookup SingleSubstitution18;\012    sub uni071D.medi @markAttachmentSet1 uni0710.fina' lookup SingleSubstitution18;\012    } ChainedContextualGSUB19;\012\012\012lookup ChainedContextualGSUB20 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 19 \012    sub @class12 uni0722.fina' lookup SingleSubstitution18;\012    } ChainedContextualGSUB20;\012\012\012lookup ChainedContextualGSUB21 {\012    lookupflag RightToLeft;\012    ;\012    # Original source: 20 \012    sub @class13' lookup SingleSubstitution18 @class14 @class14 uni0715.fina @class14 @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 @class14 uni0715.fina @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 @class14 uni0715.fina uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 uni0715.fina @class14 @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 uni0715.fina @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 uni0715.fina uni030A;\012    sub @class13' lookup SingleSubstitution18 uni0715.fina @class14 @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 uni0715.fina @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 uni0715.fina uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 @class14 uni0716.fina @class14 @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 @class14 uni0716.fina @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 @class14 uni0716.fina uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 uni0716.fina @class14 @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 uni0716.fina @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 @class14 uni0716.fina uni030A;\012    sub @class13' lookup SingleSubstitution18 uni0716.fina @class14 @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 uni0716.fina @class14 uni030A;\012    sub @class13' lookup SingleSubstitution18 uni0716.fina uni030A;\012    } ChainedContextualGSUB21;\012\012\012lookup ChainedContextualGSUB22 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet3;\012    ;\012    # Original source: 21 \012    sub @class67' lookup SingleSubstitution18 uni0715.fina uni030A;\012    sub @class67' lookup SingleSubstitution18 uni0716.fina uni030A;\012    } ChainedContextualGSUB22;\012\012\012lookup ChainedContextualGSUB23 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 22 \012    sub @class69 @class70 @class70 uni072E.medi' lookup SingleSubstitution18;\012    sub @class69 @class70 uni072E.medi' lookup SingleSubstitution18;\012    sub @class69 @class70 @class70 uni072E.fina' lookup SingleSubstitution18;\012    sub @class69 @class70 uni072E.fina' lookup SingleSubstitution18;\012    sub @class69 @class70 @class70 uni0714.medi' lookup SingleSubstitution18;\012    sub @class69 @class70 uni0714.medi' lookup SingleSubstitution18;\012    sub @class69 @class70 @class70 uni0714.fina' lookup SingleSubstitution18;\012    sub @class69 @class70 uni0714.fina' lookup SingleSubstitution18;\012    sub @class69 @class70 @class70 uni0713.medi' lookup SingleSubstitution18;\012    sub @class69 @class70 uni0713.medi' lookup SingleSubstitution18;\012    sub @class69 @class70 @class70 uni0713.fina' lookup SingleSubstitution18;\012    sub @class69 @class70 uni0713.fina' lookup SingleSubstitution18;\012    } ChainedContextualGSUB23;\012\012\012lookup ChainedContextualGSUB25 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 24 \012    sub @class99 @class70 @class70 uni072E.medi' lookup SingleSubstitution24;\012    sub @class99 @class70 uni072E.medi' lookup SingleSubstitution24;\012    sub @class99 @class70 @class70 uni072E.fina' lookup SingleSubstitution24;\012    sub @class99 @class70 uni072E.fina' lookup SingleSubstitution24;\012    sub @class99 @class70 @class70 uni0714.medi' lookup SingleSubstitution24;\012    sub @class99 @class70 uni0714.medi' lookup SingleSubstitution24;\012    sub @class99 @class70 @class70 uni0714.fina' lookup SingleSubstitution24;\012    sub @class99 @class70 uni0714.fina' lookup SingleSubstitution24;\012    sub @class99 @class70 @class70 uni0713.medi' lookup SingleSubstitution24;\012    sub @class99 @class70 uni0713.medi' lookup SingleSubstitution24;\012    sub @class99 @class70 @class70 uni0713.fina' lookup SingleSubstitution24;\012    sub @class99 @class70 uni0713.fina' lookup SingleSubstitution24;\012    } ChainedContextualGSUB25;\012\012\012lookup ChainedContextualGSUB26 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 25 \012    sub @class99' lookup SingleSubstitution24 @class70 uni0719.fina @class70;\012    } ChainedContextualGSUB26;\012\012\012lookup ChainedContextualGSUB27 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 26 \012    sub @class99' lookup SingleSubstitution24 @class70 @class134 @class70;\012    sub @class99' lookup SingleSubstitution24 @class70 @class138;\012    } ChainedContextualGSUB27;\012\012\012lookup ChainedContextualGSUB28 {\012    lookupflag RightToLeft;\012    ;\012    # Original source: 27 \012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 @class70 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 @class70 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 @class70 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.fina uni0716.fina uni072C.fina] @class70 @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.fina uni0716.fina uni072C.fina] @class70 @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.fina uni0716.fina uni072C.fina] @class70 @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 [uni0742 uni0325] @class70;\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 [uni0742 uni0325] @class70;\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 [uni0742 uni0325] @class70;\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 [uni0742 uni0325] @markAttachmentSet1;\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 [uni0742 uni0325] @markAttachmentSet1;\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 [uni0742 uni0325] @markAttachmentSet1;\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.fina uni0716.fina uni072C.fina] @class70 [uni0742 uni0325] @markAttachmentSet1;\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.fina uni0716.fina uni072C.fina] @class70 [uni0742 uni0325] @markAttachmentSet1;\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.fina uni0716.fina uni072C.fina] @class70 [uni0742 uni0325] @markAttachmentSet1;\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.fina uni0716.fina uni072C.fina] @markAttachmentSet1 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.fina uni0716.fina uni072C.fina] @class70 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.fina uni0716.fina uni072C.fina] @class70 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.fina uni0716.fina uni072C.fina] @class70 [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @markAttachmentSet1 @class70 [uni0715.fina uni0716.fina uni072C.fina] [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 @markAttachmentSet1 [uni0715.fina uni0716.fina uni072C.fina] [uni0742 uni0325];\012    sub @class99' lookup SingleSubstitution24 @class70 [uni0715.fina uni0716.fina uni072C.fina] [uni0742 uni0325];\012    } ChainedContextualGSUB28;\012\012\012\012lookup dieresis {\012lookupflag UseMarkFilteringSet [uni0308];\012sub uni072A uni0308 by uni072Auni0308.isol;\012sub uni072A.fina uni0308 by uni072Auni0308.fina;\012} dieresis;";
 name = rlig;
 },
 {
-code = "    sub uni0723 by uni0724;\012    sub uni0723.Fina by uni0724.Fina;\012    sub uni0741 by uni030A;\012    sub uni0742 by uni0325;\012";
+code = "    sub uni0723 by uni0724;\012    sub uni0723.fina by uni0724.fina;\012    sub uni0741 by uni030A;\012    sub uni0742 by uni0325;\012";
 name = salt;
 },
 {
-code = "    sub uni0723 by uni0724;\012    sub uni0723.Fina by uni0724.Fina;\012";
+code = "    sub uni0723 by uni0724;\012    sub uni0723.fina by uni0724.fina;\012";
 name = ss01;
 notes = "Name: Final semkath";
 },
@@ -657,7 +663,7 @@ code = "# Automatic Code Start\012";
 name = mkmk;
 },
 {
-code = "# Automatic Code Start\012\012lookup ChainedContextualGPOS32 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 24 \012    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning6 @class253;\012    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning5 @class254;\012    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning4 [uni0721.Fina uni0721.Medi];\012    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning2 uni071F.Medi;\012    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning3 uni071F.Fina;\012    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning2 uni071D.Fina;\012    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];\012    } ChainedContextualGPOS32;\012\012lookup ChainedContextualGPOS33 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 25 \012    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning1 @class253;\012    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning3 @class254;\012    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning2 uni071F.Medi;\012    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning4 uni071F.Fina;\012    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning5 uni071D.Fina;\012    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning6 [uni0725.Fina uni0725.Medi];\012    } ChainedContextualGPOS33;\012\012lookup ChainedContextualGPOS34 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 26 \012    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning1 @class253;\012    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning3 @class254;\012    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning2 uni071F.Medi;\012    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning4 uni071F.Fina;\012    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning2 uni071D.Fina;\012    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning5 [uni0725.Fina uni0725.Medi];\012    } ChainedContextualGPOS34;\012\012lookup ChainedContextualGPOS35 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 27 \012    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning1 @class254;\012    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning3 uni071F.Medi;\012    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning2 uni071F.Fina;\012    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning1 uni071D.Fina;\012    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning4 [uni0725.Fina uni0725.Medi];\012    } ChainedContextualGPOS35;\012\012lookup ChainedContextualGPOS36 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 28 \012    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning1 uni071F.Medi;\012    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning3 uni071F.Fina;\012    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning1 uni071D.Fina;\012    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning3 [uni0725.Fina uni0725.Medi];\012    } ChainedContextualGPOS36;\012\012lookup ChainedContextualGPOS37 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 29 \012    pos [uni0722.Medi uni0722.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];\012    pos [uni0720.Medi uni0720.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];\012    pos [uni071D.Medi uni071D.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];\012    pos [uni071A.Medi uni071A.Init]' lookup SinglePositioning1 [uni0725.Fina uni0725.Medi];\012    } ChainedContextualGPOS37;\012\012lookup ChainedContextualGPOS38 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 30 \012    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning6 [uni0710.Fina1wideX uni0710.Medi2wideX];\012    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning7 [uni0710.Fina1wideX uni0710.Medi2wideX];\012    pos [uni072B.Medi uni072B.Init]' lookup SinglePositioning7 [uni0710.Fina1wideX uni0710.Medi2wideX];\012    pos [uni0722.Medi uni0722.Init]' lookup SinglePositioning7 [uni0710.Fina1wideX uni0710.Medi2wideX];\012    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning7 [uni0710.Fina1wideX uni0710.Medi2wideX];\012    } ChainedContextualGPOS38;\012\012lookup ChainedContextualGPOS39 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 31 \012    pos [uni0722.Medi uni0722.Init]' lookup SinglePositioning8 @markAttachmentSet1 [uni0710.Fina1wideX uni0710.Medi2wideX];\012    } ChainedContextualGPOS39;\012\012lookup ChainedContextualGPOS40 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 32 \012    pos [uni071F.Medi uni071F.Init uni074E.Medi uni074E.Init]' lookup SinglePositioning9 uni071F.Fina;\012    pos [uni0712.Medi uni0712.Init uni072D.Medi uni072D.Init]' lookup SinglePositioning9 @class70 @class253;\012    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning9 @class70 @class253;\012    pos [uni0726.Medi uni0726.Init]' lookup SinglePositioning10 @class70 uni071F.Fina;\012    pos [uni0721.Medi uni0721.Init]' lookup SinglePositioning9 @class70 @class253;\012    } ChainedContextualGPOS40;\012\012lookup ChainedContextualGPOS41 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 33 \012    pos @class268' lookup SinglePositioning8 @markAttachmentSet1 uni071D.Init @markAttachmentSet1;\012    pos @class268' lookup SinglePositioning8 uni071D uni071D.Init;\012    } ChainedContextualGPOS41;\012\012lookup ChainedContextualGPOS42 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 34 \012    pos @class268' lookup SinglePositioning8 @markAttachmentSet1 uni071D @markAttachmentSet1;\012    pos @class268' lookup SinglePositioning8 uni071D @markAttachmentSet1;\012    } ChainedContextualGPOS42;\012\012lookup ChainedContextualGPOS43 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 35 \012    pos @class268' lookup SinglePositioning10 @class70 @class279;\012    pos @class268' lookup SinglePositioning9 @class70 @class282;\012    pos [uni072F uni072F.Fina]' lookup SinglePositioning10 @class70 @class279;\012    pos [uni072C uni072C.Fina]' lookup SinglePositioning10 @class70 @class279;\012    pos [uni0719 uni0719.Fina]' lookup SinglePositioning10 @class70 @class279;\012    pos [uni0718 uni0718.Fina]' lookup SinglePositioning10 @class70 @class279;\012    pos uni0621' lookup SinglePositioning10 @class70 @class279;\012    } ChainedContextualGPOS43;\012\012lookup ChainedContextualGPOS44 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 36 \012    pos [uni0728 uni0728.Fina] @class70 @class70 uni071D @class70' lookup SinglePositioning10;\012    pos [uni0728 uni0728.Fina] @class70 @class70 uni0621 @class70' lookup SinglePositioning9;\012    pos [uni0728 uni0728.Fina] @class70 uni071D @class70' lookup SinglePositioning10;\012    pos [uni0728 uni0728.Fina] @class70 uni0621 @class70' lookup SinglePositioning9;\012    pos [uni0728 uni0728.Fina] uni071D @class70' lookup SinglePositioning10;\012    pos [uni0728 uni0728.Fina] uni0621 @class70' lookup SinglePositioning9;\012    } ChainedContextualGPOS44;\012\012lookup ChainedContextualGPOS45 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 37 \012    pos [uni0728 uni0728.Fina] @class70 @class70 uni0719 @class305' lookup SinglePositioning12;\012    pos [uni0728 uni0728.Fina] @class70 @class70 uni0720.Init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] @class70 @class70 uni0722.Init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] @class70 @class70 uni0722.InitB @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] @class70 @class70 uni071D.Init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] @class70 @class70 uni074F.Init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] @class70 @class70 uni0621 @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] @class70 uni0719 @class305' lookup SinglePositioning12;\012    pos [uni0728 uni0728.Fina] @class70 uni0720.Init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] @class70 uni0722.Init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] @class70 uni0722.InitB @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] @class70 uni071D.Init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] @class70 uni074F.Init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] @class70 uni0621 @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] uni0719 @class305' lookup SinglePositioning12;\012    pos [uni0728 uni0728.Fina] uni0720.Init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] uni0722.Init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] uni0722.InitB @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] uni071D.Init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] uni074F.Init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.Fina] uni0621 @class305' lookup SinglePositioning11;\012    } ChainedContextualGPOS45;\012\012lookup ChainedContextualGPOS46 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 38 \012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning11 @class70 @class70 uni0718 @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning12 @class70 @class70 uni0720 @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 @class70 uni0721 @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 @class70 uni0729 @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 @class70 uni0729.Init @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning11 @class70 uni0718 @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning12 @class70 uni0720 @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 uni0721 @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 uni0729 @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 @class70 uni0729.Init @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning11 uni0718 @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning12 uni0720 @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 uni0721 @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 uni0729 @class70;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning10 uni0729.Init @class70;\012    } ChainedContextualGPOS46;\012\012lookup ChainedContextualGPOS47 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 39 \012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning9 @class70 @class70 uni071A.Init @class305;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning13 @class70 @class70 uni074E.Init @class305;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning9 @class70 uni071A.Init @class305;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning13 @class70 uni074E.Init @class305;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning9 uni071A.Init @class305;\012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning13 uni074E.Init @class305;\012    } ChainedContextualGPOS47;\012\012lookup ChainedContextualGPOS48 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 40 \012    pos @class268 @class70' lookup SinglePositioning13 uni0722;\012    pos [uni0718 uni0718.Fina] @class70' lookup SinglePositioning17 uni0722;\012    pos [uni0719 uni0719.Fina] @class70' lookup SinglePositioning16 uni0722;\012    pos [uni072C uni072C.Fina] @class70' lookup SinglePositioning15 uni0722;\012    pos uni0621 @class70' lookup SinglePositioning14 uni0722;\012    } ChainedContextualGPOS48;\012\012lookup ChainedContextualGPOS49 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 41 \012    pos @class395' lookup SinglePositioning14 @class70 uni0722;\012    pos [uni0717 uni0717.Fina]' lookup SinglePositioning14 @class70 uni0722;\012    pos [uni072F uni072F.Fina]' lookup SinglePositioning14 @class70 uni0722;\012    } ChainedContextualGPOS49;\012\012lookup ChainedContextualGPOS50 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet19;\012    ;\012    # Original source: 42 \012    pos @class268' lookup SinglePositioning18 [uni0742 uni0325] uni0722;\012    } ChainedContextualGPOS50;\012\012lookup ChainedContextualGPOS51 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 43 \012    pos uni0719' lookup SinglePositioning8 @markAttachmentSet1 uni0719 @class401;\012    pos uni0719.Fina' lookup SinglePositioning8 @markAttachmentSet1 uni0719 @class401;\012    pos uni0719' lookup SinglePositioning8 @class401 uni0719 @markAttachmentSet1;\012    pos uni0719.Fina' lookup SinglePositioning8 @class401 uni0719 @markAttachmentSet1;\012    } ChainedContextualGPOS51;\012\012lookup ChainedContextualGPOS52 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 44 \012    pos uni0719' lookup SinglePositioning8 @markAttachmentSet1 @class409 @class401;\012    pos uni0719.Fina' lookup SinglePositioning8 @markAttachmentSet1 @class409 @class401;\012    pos uni0719' lookup SinglePositioning8 @class401 @class409 @markAttachmentSet1;\012    pos uni0719.Fina' lookup SinglePositioning8 @class401 @class409 @markAttachmentSet1;\012    } ChainedContextualGPOS52;\012\012lookup ChainedContextualGPOS53 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 45 \012    pos uni0719' lookup SinglePositioning14 @class70 uni0719 @class421;\012    pos uni0719.Fina' lookup SinglePositioning14 @class70 uni0719 @class421;\012    pos uni0719' lookup SinglePositioning14 @class421 uni0719 @class70;\012    pos uni0719.Fina' lookup SinglePositioning14 @class421 uni0719 @class70;\012    } ChainedContextualGPOS53;\012\012lookup ChainedContextualGPOS54 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 46 \012    pos uni0719' lookup SinglePositioning19 @markAttachmentSet1 [uni0710 uni0710.Fina3 uni0710.Fina2];\012    pos uni0719.Fina' lookup SinglePositioning19 @markAttachmentSet1 [uni0710 uni0710.Fina3 uni0710.Fina2];\012    } ChainedContextualGPOS54;\012\012lookup ChainedContextualGPOS55 {\012    lookupflag RightToLeft;\012    ;\012    # Original source: 47 \012    pos [uni0728 uni0728.Fina]' lookup SinglePositioning20 uni071D.Init uni0722.Fina;\012    } ChainedContextualGPOS55;\012\012lookup ChainedContextualGPOS56 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 48 \012    pos uni0722.Fina' lookup SinglePositioning19 @markAttachmentSet1 [uni0701 uni0703 uni0705 uni0708];\012    pos uni071D.Fina' lookup SinglePositioning19 @markAttachmentSet1 [uni0701 uni0703 uni0705 uni0708];\012    pos uni071D' lookup SinglePositioning19 @markAttachmentSet1 [uni0701 uni0703 uni0705 uni0708];\012    } ChainedContextualGPOS56;\012";
+code = "# Automatic Code Start\012\012lookup ChainedContextualGPOS32 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 24 \012    pos [uni0721.medi uni0721.init]' lookup SinglePositioning6 @class253;\012    pos [uni0721.medi uni0721.init]' lookup SinglePositioning5 @class254;\012    pos [uni0721.medi uni0721.init]' lookup SinglePositioning4 [uni0721.fina uni0721.medi];\012    pos [uni0721.medi uni0721.init]' lookup SinglePositioning2 uni071F.medi;\012    pos [uni0721.medi uni0721.init]' lookup SinglePositioning3 uni071F.fina;\012    pos [uni0721.medi uni0721.init]' lookup SinglePositioning2 uni071D.fina;\012    pos [uni0721.medi uni0721.init]' lookup SinglePositioning1 [uni0725.fina uni0725.medi];\012    } ChainedContextualGPOS32;\012\012lookup ChainedContextualGPOS33 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 25 \012    pos [uni0712.medi uni0712.init uni072D.medi uni072D.init]' lookup SinglePositioning1 @class253;\012    pos [uni0712.medi uni0712.init uni072D.medi uni072D.init]' lookup SinglePositioning3 @class254;\012    pos [uni0712.medi uni0712.init uni072D.medi uni072D.init]' lookup SinglePositioning2 uni071F.medi;\012    pos [uni0712.medi uni0712.init uni072D.medi uni072D.init]' lookup SinglePositioning4 uni071F.fina;\012    pos [uni0712.medi uni0712.init uni072D.medi uni072D.init]' lookup SinglePositioning5 uni071D.fina;\012    pos [uni0712.medi uni0712.init uni072D.medi uni072D.init]' lookup SinglePositioning6 [uni0725.fina uni0725.medi];\012    } ChainedContextualGPOS33;\012\012lookup ChainedContextualGPOS34 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 26 \012    pos [uni0726.medi uni0726.init]' lookup SinglePositioning1 @class253;\012    pos [uni0726.medi uni0726.init]' lookup SinglePositioning3 @class254;\012    pos [uni0726.medi uni0726.init]' lookup SinglePositioning2 uni071F.medi;\012    pos [uni0726.medi uni0726.init]' lookup SinglePositioning4 uni071F.fina;\012    pos [uni0726.medi uni0726.init]' lookup SinglePositioning2 uni071D.fina;\012    pos [uni0726.medi uni0726.init]' lookup SinglePositioning5 [uni0725.fina uni0725.medi];\012    } ChainedContextualGPOS34;\012\012lookup ChainedContextualGPOS35 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 27 \012    pos [uni071F.medi uni071F.init uni074E.medi uni074E.init]' lookup SinglePositioning1 @class254;\012    pos [uni071F.medi uni071F.init uni074E.medi uni074E.init]' lookup SinglePositioning3 uni071F.medi;\012    pos [uni071F.medi uni071F.init uni074E.medi uni074E.init]' lookup SinglePositioning2 uni071F.fina;\012    pos [uni071F.medi uni071F.init uni074E.medi uni074E.init]' lookup SinglePositioning1 uni071D.fina;\012    pos [uni071F.medi uni071F.init uni074E.medi uni074E.init]' lookup SinglePositioning4 [uni0725.fina uni0725.medi];\012    } ChainedContextualGPOS35;\012\012lookup ChainedContextualGPOS36 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 28 \012    pos [uni072B.medi uni072B.init]' lookup SinglePositioning1 uni071F.medi;\012    pos [uni072B.medi uni072B.init]' lookup SinglePositioning3 uni071F.fina;\012    pos [uni072B.medi uni072B.init]' lookup SinglePositioning1 uni071D.fina;\012    pos [uni072B.medi uni072B.init]' lookup SinglePositioning3 [uni0725.fina uni0725.medi];\012    } ChainedContextualGPOS36;\012\012lookup ChainedContextualGPOS37 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 29 \012    pos [uni0722.medi uni0722.init]' lookup SinglePositioning1 [uni0725.fina uni0725.medi];\012    pos [uni0720.medi uni0720.init]' lookup SinglePositioning1 [uni0725.fina uni0725.medi];\012    pos [uni071D.medi uni071D.init]' lookup SinglePositioning1 [uni0725.fina uni0725.medi];\012    pos [uni071A.medi uni071A.init]' lookup SinglePositioning1 [uni0725.fina uni0725.medi];\012    } ChainedContextualGPOS37;\012\012lookup ChainedContextualGPOS38 {\012    lookupflag RightToLeft IgnoreMarks;\012    ;\012    # Original source: 30 \012    pos [uni0726.medi uni0726.init]' lookup SinglePositioning6 [uni0710.fina.wideX uni0710.med2.wideX];\012    pos [uni0721.medi uni0721.init]' lookup SinglePositioning7 [uni0710.fina.wideX uni0710.med2.wideX];\012    pos [uni072B.medi uni072B.init]' lookup SinglePositioning7 [uni0710.fina.wideX uni0710.med2.wideX];\012    pos [uni0722.medi uni0722.init]' lookup SinglePositioning7 [uni0710.fina.wideX uni0710.med2.wideX];\012    pos [uni0712.medi uni0712.init uni072D.medi uni072D.init]' lookup SinglePositioning7 [uni0710.fina.wideX uni0710.med2.wideX];\012    } ChainedContextualGPOS38;\012\012lookup ChainedContextualGPOS39 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 31 \012    pos [uni0722.medi uni0722.init]' lookup SinglePositioning8 @markAttachmentSet1 [uni0710.fina.wideX uni0710.med2.wideX];\012    } ChainedContextualGPOS39;\012\012lookup ChainedContextualGPOS40 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 32 \012    pos [uni071F.medi uni071F.init uni074E.medi uni074E.init]' lookup SinglePositioning9 uni071F.fina;\012    pos [uni0712.medi uni0712.init uni072D.medi uni072D.init]' lookup SinglePositioning9 @class70 @class253;\012    pos [uni0726.medi uni0726.init]' lookup SinglePositioning9 @class70 @class253;\012    pos [uni0726.medi uni0726.init]' lookup SinglePositioning10 @class70 uni071F.fina;\012    pos [uni0721.medi uni0721.init]' lookup SinglePositioning9 @class70 @class253;\012    } ChainedContextualGPOS40;\012\012lookup ChainedContextualGPOS41 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 33 \012    pos @class268' lookup SinglePositioning8 @markAttachmentSet1 uni071D.init @markAttachmentSet1;\012    pos @class268' lookup SinglePositioning8 uni071D uni071D.init;\012    } ChainedContextualGPOS41;\012\012lookup ChainedContextualGPOS42 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 34 \012    pos @class268' lookup SinglePositioning8 @markAttachmentSet1 uni071D @markAttachmentSet1;\012    pos @class268' lookup SinglePositioning8 uni071D @markAttachmentSet1;\012    } ChainedContextualGPOS42;\012\012lookup ChainedContextualGPOS43 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 35 \012    pos @class268' lookup SinglePositioning10 @class70 @class279;\012    pos @class268' lookup SinglePositioning9 @class70 @class282;\012    pos [uni072F uni072F.fina]' lookup SinglePositioning10 @class70 @class279;\012    pos [uni072C uni072C.fina]' lookup SinglePositioning10 @class70 @class279;\012    pos [uni0719 uni0719.fina]' lookup SinglePositioning10 @class70 @class279;\012    pos [uni0718 uni0718.fina]' lookup SinglePositioning10 @class70 @class279;\012    pos uni0621' lookup SinglePositioning10 @class70 @class279;\012    } ChainedContextualGPOS43;\012\012lookup ChainedContextualGPOS44 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 36 \012    pos [uni0728 uni0728.fina] @class70 @class70 uni071D @class70' lookup SinglePositioning10;\012    pos [uni0728 uni0728.fina] @class70 @class70 uni0621 @class70' lookup SinglePositioning9;\012    pos [uni0728 uni0728.fina] @class70 uni071D @class70' lookup SinglePositioning10;\012    pos [uni0728 uni0728.fina] @class70 uni0621 @class70' lookup SinglePositioning9;\012    pos [uni0728 uni0728.fina] uni071D @class70' lookup SinglePositioning10;\012    pos [uni0728 uni0728.fina] uni0621 @class70' lookup SinglePositioning9;\012    } ChainedContextualGPOS44;\012\012lookup ChainedContextualGPOS45 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 37 \012    pos [uni0728 uni0728.fina] @class70 @class70 uni0719 @class305' lookup SinglePositioning12;\012    pos [uni0728 uni0728.fina] @class70 @class70 uni0720.init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] @class70 @class70 uni0722.init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] @class70 @class70 uni0722.initB @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] @class70 @class70 uni071D.init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] @class70 @class70 uni074F.init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] @class70 @class70 uni0621 @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] @class70 uni0719 @class305' lookup SinglePositioning12;\012    pos [uni0728 uni0728.fina] @class70 uni0720.init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] @class70 uni0722.init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] @class70 uni0722.initB @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] @class70 uni071D.init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] @class70 uni074F.init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] @class70 uni0621 @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] uni0719 @class305' lookup SinglePositioning12;\012    pos [uni0728 uni0728.fina] uni0720.init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] uni0722.init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] uni0722.initB @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] uni071D.init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] uni074F.init @class305' lookup SinglePositioning11;\012    pos [uni0728 uni0728.fina] uni0621 @class305' lookup SinglePositioning11;\012    } ChainedContextualGPOS45;\012\012lookup ChainedContextualGPOS46 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 38 \012    pos [uni0728 uni0728.fina]' lookup SinglePositioning11 @class70 @class70 uni0718 @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning12 @class70 @class70 uni0720 @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning10 @class70 @class70 uni0721 @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning10 @class70 @class70 uni0729 @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning10 @class70 @class70 uni0729.init @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning11 @class70 uni0718 @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning12 @class70 uni0720 @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning10 @class70 uni0721 @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning10 @class70 uni0729 @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning10 @class70 uni0729.init @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning11 uni0718 @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning12 uni0720 @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning10 uni0721 @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning10 uni0729 @class70;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning10 uni0729.init @class70;\012    } ChainedContextualGPOS46;\012\012lookup ChainedContextualGPOS47 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 39 \012    pos [uni0728 uni0728.fina]' lookup SinglePositioning9 @class70 @class70 uni071A.init @class305;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning13 @class70 @class70 uni074E.init @class305;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning9 @class70 uni071A.init @class305;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning13 @class70 uni074E.init @class305;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning9 uni071A.init @class305;\012    pos [uni0728 uni0728.fina]' lookup SinglePositioning13 uni074E.init @class305;\012    } ChainedContextualGPOS47;\012\012lookup ChainedContextualGPOS48 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 40 \012    pos @class268 @class70' lookup SinglePositioning13 uni0722;\012    pos [uni0718 uni0718.fina] @class70' lookup SinglePositioning17 uni0722;\012    pos [uni0719 uni0719.fina] @class70' lookup SinglePositioning16 uni0722;\012    pos [uni072C uni072C.fina] @class70' lookup SinglePositioning15 uni0722;\012    pos uni0621 @class70' lookup SinglePositioning14 uni0722;\012    } ChainedContextualGPOS48;\012\012lookup ChainedContextualGPOS49 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 41 \012    pos @class395' lookup SinglePositioning14 @class70 uni0722;\012    pos [uni0717 uni0717.fina]' lookup SinglePositioning14 @class70 uni0722;\012    pos [uni072F uni072F.fina]' lookup SinglePositioning14 @class70 uni0722;\012    } ChainedContextualGPOS49;\012\012lookup ChainedContextualGPOS50 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet19;\012    ;\012    # Original source: 42 \012    pos @class268' lookup SinglePositioning18 [uni0742 uni0325] uni0722;\012    } ChainedContextualGPOS50;\012\012lookup ChainedContextualGPOS51 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 43 \012    pos uni0719' lookup SinglePositioning8 @markAttachmentSet1 uni0719 @class401;\012    pos uni0719.fina' lookup SinglePositioning8 @markAttachmentSet1 uni0719 @class401;\012    pos uni0719' lookup SinglePositioning8 @class401 uni0719 @markAttachmentSet1;\012    pos uni0719.fina' lookup SinglePositioning8 @class401 uni0719 @markAttachmentSet1;\012    } ChainedContextualGPOS51;\012\012lookup ChainedContextualGPOS52 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 44 \012    pos uni0719' lookup SinglePositioning8 @markAttachmentSet1 @class409 @class401;\012    pos uni0719.fina' lookup SinglePositioning8 @markAttachmentSet1 @class409 @class401;\012    pos uni0719' lookup SinglePositioning8 @class401 @class409 @markAttachmentSet1;\012    pos uni0719.fina' lookup SinglePositioning8 @class401 @class409 @markAttachmentSet1;\012    } ChainedContextualGPOS52;\012\012lookup ChainedContextualGPOS53 {\012    lookupflag RightToLeft MarkAttachmentType @class70;\012    ;\012    # Original source: 45 \012    pos uni0719' lookup SinglePositioning14 @class70 uni0719 @class421;\012    pos uni0719.fina' lookup SinglePositioning14 @class70 uni0719 @class421;\012    pos uni0719' lookup SinglePositioning14 @class421 uni0719 @class70;\012    pos uni0719.fina' lookup SinglePositioning14 @class421 uni0719 @class70;\012    } ChainedContextualGPOS53;\012\012lookup ChainedContextualGPOS54 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 46 \012    pos uni0719' lookup SinglePositioning19 @markAttachmentSet1 [uni0710 uni0710.fin3 uni0710.fin2];\012    pos uni0719.fina' lookup SinglePositioning19 @markAttachmentSet1 [uni0710 uni0710.fin3 uni0710.fin2];\012    } ChainedContextualGPOS54;\012\012lookup ChainedContextualGPOS55 {\012    lookupflag RightToLeft;\012    ;\012    # Original source: 47 \012    pos [uni0728 uni0728.fina]' lookup SinglePositioning20 uni071D.init uni0722.fina;\012    } ChainedContextualGPOS55;\012\012lookup ChainedContextualGPOS56 {\012    lookupflag RightToLeft MarkAttachmentType @markAttachmentSet1;\012    ;\012    # Original source: 48 \012    pos uni0722.fina' lookup SinglePositioning19 @markAttachmentSet1 [uni0701 uni0703 uni0705 uni0708];\012    pos uni071D.fina' lookup SinglePositioning19 @markAttachmentSet1 [uni0701 uni0703 uni0705 uni0708];\012    pos uni071D' lookup SinglePositioning19 @markAttachmentSet1 [uni0701 uni0703 uni0705 uni0708];\012    } ChainedContextualGPOS56;\012";
 name = kern;
 }
 );
@@ -1380,7 +1386,7 @@ note = uni0710;
 unicode = 0710;
 },
 {
-glyphname = uni0710.Fina3;
+glyphname = uni0710.fin3;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -1570,10 +1576,10 @@ nodes = (
 width = 1015;
 }
 );
-note = uni0710.Fina3;
+note = uni0710.fin3;
 },
 {
-glyphname = uni0710.Fina2;
+glyphname = uni0710.fin2;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -1763,10 +1769,10 @@ nodes = (
 width = 1015;
 }
 );
-note = uni0710.Fina2;
+note = uni0710.fin2;
 },
 {
-glyphname = uni0710.Fina1;
+glyphname = uni0710.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -1953,10 +1959,10 @@ nodes = (
 width = 932;
 }
 );
-note = uni0710.Fina1;
+note = uni0710.fina;
 },
 {
-glyphname = uni0710.Medi2;
+glyphname = uni0710.med2;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -2143,7 +2149,7 @@ nodes = (
 width = 932;
 }
 );
-note = uni0710.Medi2;
+note = uni0710.med2;
 },
 {
 glyphname = uni0711;
@@ -2548,7 +2554,7 @@ note = uni0712;
 unicode = 0712;
 },
 {
-glyphname = uni0712.Fina;
+glyphname = uni0712.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -2768,10 +2774,10 @@ nodes = (
 width = 1032;
 }
 );
-note = uni0712.Fina;
+note = uni0712.fina;
 },
 {
-glyphname = uni0712.Medi;
+glyphname = uni0712.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -2988,10 +2994,10 @@ nodes = (
 width = 787;
 }
 );
-note = uni0712.Medi;
+note = uni0712.medi;
 },
 {
-glyphname = uni0712.Init;
+glyphname = uni0712.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -3199,7 +3205,7 @@ nodes = (
 width = 773;
 }
 );
-note = uni0712.Init;
+note = uni0712.init;
 },
 {
 glyphname = uni0713;
@@ -3420,7 +3426,7 @@ note = uni0713;
 unicode = 0713;
 },
 {
-glyphname = uni0713.Fina;
+glyphname = uni0713.fina;
 lastChange = "2022-12-15 11:41:32 +0000";
 layers = (
 {
@@ -3643,10 +3649,10 @@ nodes = (
 width = 1070;
 }
 );
-note = uni0713.Fina;
+note = uni0713.fina;
 },
 {
-glyphname = uni0713.Medi;
+glyphname = uni0713.medi;
 lastChange = "2022-12-15 11:41:55 +0000";
 layers = (
 {
@@ -3866,10 +3872,10 @@ nodes = (
 width = 665;
 }
 );
-note = uni0713.Medi;
+note = uni0713.medi;
 },
 {
-glyphname = uni0713.Init;
+glyphname = uni0713.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -4080,7 +4086,7 @@ nodes = (
 width = 838;
 }
 );
-note = uni0713.Init;
+note = uni0713.init;
 },
 {
 glyphname = uni0714;
@@ -4328,7 +4334,7 @@ note = uni0714;
 unicode = 0714;
 },
 {
-glyphname = uni0714.Fina;
+glyphname = uni0714.fina;
 lastChange = "2022-12-15 11:42:55 +0000";
 layers = (
 {
@@ -4344,7 +4350,7 @@ position = "{646, 586}";
 );
 components = (
 {
-name = uni0713.Fina;
+name = uni0713.fina;
 }
 );
 layerId = m01;
@@ -4382,7 +4388,7 @@ position = "{605, 532}";
 );
 components = (
 {
-name = uni0713.Fina;
+name = uni0713.fina;
 }
 );
 layerId = "22847997-2214-411C-BF12-975F69A1246B";
@@ -4420,7 +4426,7 @@ position = "{763, 682}";
 );
 components = (
 {
-name = uni0713.Fina;
+name = uni0713.fina;
 }
 );
 layerId = "54406707-D089-4649-8539-9EC6A26EE6B0";
@@ -4446,10 +4452,10 @@ nodes = (
 width = 1070;
 }
 );
-note = uni0714.Fina;
+note = uni0714.fina;
 },
 {
-glyphname = uni0714.Medi;
+glyphname = uni0714.medi;
 lastChange = "2022-12-15 11:43:18 +0000";
 layers = (
 {
@@ -4465,7 +4471,7 @@ position = "{271, 586}";
 );
 components = (
 {
-name = uni0713.Medi;
+name = uni0713.medi;
 }
 );
 layerId = m01;
@@ -4503,7 +4509,7 @@ position = "{271, 534}";
 );
 components = (
 {
-name = uni0713.Medi;
+name = uni0713.medi;
 }
 );
 layerId = "22847997-2214-411C-BF12-975F69A1246B";
@@ -4541,7 +4547,7 @@ position = "{359, 682}";
 );
 components = (
 {
-name = uni0713.Medi;
+name = uni0713.medi;
 }
 );
 layerId = "54406707-D089-4649-8539-9EC6A26EE6B0";
@@ -4567,10 +4573,10 @@ nodes = (
 width = 665;
 }
 );
-note = uni0714.Medi;
+note = uni0714.medi;
 },
 {
-glyphname = uni0714.Init;
+glyphname = uni0714.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -4808,7 +4814,7 @@ nodes = (
 width = 838;
 }
 );
-note = uni0714.Init;
+note = uni0714.init;
 },
 {
 glyphname = uni0715;
@@ -4993,7 +4999,7 @@ note = uni0715;
 unicode = 0715;
 },
 {
-glyphname = uni0715.Fina;
+glyphname = uni0715.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -5204,7 +5210,7 @@ nodes = (
 width = 617;
 }
 );
-note = uni0715.Fina;
+note = uni0715.fina;
 },
 {
 glyphname = uni0716;
@@ -5338,7 +5344,7 @@ note = uni0716;
 unicode = 0716;
 },
 {
-glyphname = uni0716.Fina;
+glyphname = uni0716.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -5498,7 +5504,7 @@ nodes = (
 width = 611;
 }
 );
-note = uni0716.Fina;
+note = uni0716.fina;
 },
 {
 glyphname = uni0717;
@@ -5713,7 +5719,7 @@ note = uni0717;
 unicode = 0717;
 },
 {
-glyphname = uni0717.Fina;
+glyphname = uni0717.fina;
 lastChange = "2022-12-15 11:54:46 +0000";
 layers = (
 {
@@ -5933,7 +5939,7 @@ nodes = (
 width = 1014;
 }
 );
-note = uni0717.Fina;
+note = uni0717.fina;
 },
 {
 glyphname = uni0718;
@@ -6103,7 +6109,7 @@ note = uni0718;
 unicode = 0718;
 },
 {
-glyphname = uni0718.Fina;
+glyphname = uni0718.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -6290,7 +6296,7 @@ nodes = (
 width = 702;
 }
 );
-note = uni0718.Fina;
+note = uni0718.fina;
 },
 {
 glyphname = uni0719;
@@ -6388,7 +6394,7 @@ note = uni0719;
 unicode = 0719;
 },
 {
-glyphname = uni0719.Fina;
+glyphname = uni0719.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -6518,7 +6524,7 @@ nodes = (
 width = 360;
 }
 );
-note = uni0719.Fina;
+note = uni0719.fina;
 },
 {
 glyphname = uni071A;
@@ -6739,7 +6745,7 @@ note = uni071A;
 unicode = 071A;
 },
 {
-glyphname = uni071A.Fina;
+glyphname = uni071A.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -6977,10 +6983,10 @@ nodes = (
 width = 852;
 }
 );
-note = uni071A.Fina;
+note = uni071A.fina;
 },
 {
-glyphname = uni071A.Medi;
+glyphname = uni071A.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -7221,10 +7227,10 @@ nodes = (
 width = 644;
 }
 );
-note = uni071A.Medi;
+note = uni071A.medi;
 },
 {
-glyphname = uni071A.Init;
+glyphname = uni071A.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -7441,7 +7447,7 @@ nodes = (
 width = 625;
 }
 );
-note = uni071A.Init;
+note = uni071A.init;
 },
 {
 glyphname = uni071B;
@@ -7638,7 +7644,7 @@ note = uni071B;
 unicode = 071B;
 },
 {
-glyphname = uni071B.Fina;
+glyphname = uni071B.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -7828,10 +7834,10 @@ nodes = (
 width = 1017;
 }
 );
-note = uni071B.Fina;
+note = uni071B.fina;
 },
 {
-glyphname = uni071B.Medi;
+glyphname = uni071B.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -8018,10 +8024,10 @@ nodes = (
 width = 700;
 }
 );
-note = uni071B.Medi;
+note = uni071B.medi;
 },
 {
-glyphname = uni071B.Init;
+glyphname = uni071B.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -8208,7 +8214,7 @@ nodes = (
 width = 778;
 }
 );
-note = uni071B.Init;
+note = uni071B.init;
 },
 {
 glyphname = uni071C;
@@ -8462,7 +8468,7 @@ note = uni071C;
 unicode = 071C;
 },
 {
-glyphname = uni071C.Fina;
+glyphname = uni071C.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -8709,10 +8715,10 @@ nodes = (
 width = 1027;
 }
 );
-note = uni071C.Fina;
+note = uni071C.fina;
 },
 {
-glyphname = uni071C.Medi;
+glyphname = uni071C.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -8956,10 +8962,10 @@ nodes = (
 width = 710;
 }
 );
-note = uni071C.Medi;
+note = uni071C.medi;
 },
 {
-glyphname = uni071C.Init;
+glyphname = uni071C.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -9203,7 +9209,7 @@ nodes = (
 width = 788;
 }
 );
-note = uni071C.Init;
+note = uni071C.init;
 },
 {
 glyphname = uni071D;
@@ -9367,7 +9373,7 @@ note = uni071D;
 unicode = 071D;
 },
 {
-glyphname = uni071D.Fina;
+glyphname = uni071D.fina;
 lastChange = "2022-12-15 11:54:40 +0000";
 layers = (
 {
@@ -9545,10 +9551,10 @@ nodes = (
 width = 282;
 }
 );
-note = uni071D.Fina;
+note = uni071D.fina;
 },
 {
-glyphname = uni071D.Medi;
+glyphname = uni071D.medi;
 lastChange = "2022-12-15 11:54:17 +0000";
 layers = (
 {
@@ -9723,10 +9729,10 @@ nodes = (
 width = 353;
 }
 );
-note = uni071D.Medi;
+note = uni071D.medi;
 },
 {
-glyphname = uni071D.Init;
+glyphname = uni071D.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -9880,7 +9886,7 @@ nodes = (
 width = 346;
 }
 );
-note = uni071D.Init;
+note = uni071D.init;
 },
 {
 glyphname = uni071E;
@@ -10550,7 +10556,7 @@ note = uni071F;
 unicode = 071F;
 },
 {
-glyphname = uni071F.Fina;
+glyphname = uni071F.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -10773,10 +10779,10 @@ nodes = (
 width = 965;
 }
 );
-note = uni071F.Fina;
+note = uni071F.fina;
 },
 {
-glyphname = uni071F.Medi;
+glyphname = uni071F.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -10954,10 +10960,10 @@ nodes = (
 width = 716;
 }
 );
-note = uni071F.Medi;
+note = uni071F.medi;
 },
 {
-glyphname = uni071F.Init;
+glyphname = uni071F.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -11147,7 +11153,7 @@ nodes = (
 width = 726;
 }
 );
-note = uni071F.Init;
+note = uni071F.init;
 },
 {
 glyphname = uni0720;
@@ -11287,7 +11293,7 @@ note = uni0720;
 unicode = 0720;
 },
 {
-glyphname = uni0720.Fina;
+glyphname = uni0720.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -11408,10 +11414,10 @@ nodes = (
 width = 777;
 }
 );
-note = uni0720.Fina;
+note = uni0720.fina;
 },
 {
-glyphname = uni0720.Medi;
+glyphname = uni0720.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -11529,10 +11535,10 @@ nodes = (
 width = 420;
 }
 );
-note = uni0720.Medi;
+note = uni0720.medi;
 },
 {
-glyphname = uni0720.Init;
+glyphname = uni0720.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -11662,7 +11668,7 @@ nodes = (
 width = 406;
 }
 );
-note = uni0720.Init;
+note = uni0720.init;
 },
 {
 glyphname = uni0721;
@@ -11910,7 +11916,7 @@ note = uni0721;
 unicode = 0721;
 },
 {
-glyphname = uni0721.Fina;
+glyphname = uni0721.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -12160,10 +12166,10 @@ nodes = (
 width = 985;
 }
 );
-note = uni0721.Fina;
+note = uni0721.fina;
 },
 {
-glyphname = uni0721.Medi;
+glyphname = uni0721.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -12416,10 +12422,10 @@ nodes = (
 width = 1056;
 }
 );
-note = uni0721.Medi;
+note = uni0721.medi;
 },
 {
-glyphname = uni0721.Init;
+glyphname = uni0721.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -12651,7 +12657,7 @@ nodes = (
 width = 1035;
 }
 );
-note = uni0721.Init;
+note = uni0721.init;
 },
 {
 glyphname = uni0722;
@@ -12791,7 +12797,7 @@ note = uni0722;
 unicode = 0722;
 },
 {
-glyphname = uni0722.Fina;
+glyphname = uni0722.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -12930,10 +12936,10 @@ nodes = (
 width = 374;
 }
 );
-note = uni0722.Fina;
+note = uni0722.fina;
 },
 {
-glyphname = uni0722.Medi;
+glyphname = uni0722.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -13096,10 +13102,10 @@ nodes = (
 width = 380;
 }
 );
-note = uni0722.Medi;
+note = uni0722.medi;
 },
 {
-glyphname = uni0722.Init;
+glyphname = uni0722.init;
 lastChange = "2022-12-15 11:53:59 +0000";
 layers = (
 {
@@ -13238,7 +13244,7 @@ nodes = (
 width = 346;
 }
 );
-note = uni0722.Init;
+note = uni0722.init;
 },
 {
 glyphname = uni0723;
@@ -13474,7 +13480,7 @@ note = uni0723;
 unicode = 0723;
 },
 {
-glyphname = uni0723.Fina;
+glyphname = uni0723.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -13712,10 +13718,10 @@ nodes = (
 width = 974;
 }
 );
-note = uni0723.Fina;
+note = uni0723.fina;
 },
 {
-glyphname = uni0723.Medi;
+glyphname = uni0723.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -13986,10 +13992,10 @@ nodes = (
 width = 973;
 }
 );
-note = uni0723.Medi;
+note = uni0723.medi;
 },
 {
-glyphname = uni0723.Init;
+glyphname = uni0723.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -14260,7 +14266,7 @@ nodes = (
 width = 962;
 }
 );
-note = uni0723.Init;
+note = uni0723.init;
 },
 {
 glyphname = uni0724;
@@ -14523,7 +14529,7 @@ note = uni0724;
 unicode = 0724;
 },
 {
-glyphname = uni0724.Fina;
+glyphname = uni0724.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -14761,10 +14767,10 @@ nodes = (
 width = 974;
 }
 );
-note = uni0724.Fina;
+note = uni0724.fina;
 },
 {
-glyphname = uni0724.Medi;
+glyphname = uni0724.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -15035,10 +15041,10 @@ nodes = (
 width = 973;
 }
 );
-note = uni0724.Medi;
+note = uni0724.medi;
 },
 {
-glyphname = uni0724.Init;
+glyphname = uni0724.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -15309,7 +15315,7 @@ nodes = (
 width = 962;
 }
 );
-note = uni0724.Init;
+note = uni0724.init;
 },
 {
 glyphname = uni0725;
@@ -15458,7 +15464,7 @@ note = uni0725;
 unicode = 0725;
 },
 {
-glyphname = uni0725.Fina;
+glyphname = uni0725.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -15597,10 +15603,10 @@ nodes = (
 width = 844;
 }
 );
-note = uni0725.Fina;
+note = uni0725.fina;
 },
 {
-glyphname = uni0725.Medi;
+glyphname = uni0725.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -15736,10 +15742,10 @@ nodes = (
 width = 568;
 }
 );
-note = uni0725.Medi;
+note = uni0725.medi;
 },
 {
-glyphname = uni0725.Init;
+glyphname = uni0725.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -15878,7 +15884,7 @@ nodes = (
 width = 740;
 }
 );
-note = uni0725.Init;
+note = uni0725.init;
 },
 {
 glyphname = uni0726;
@@ -16135,7 +16141,7 @@ note = uni0726;
 unicode = 0726;
 },
 {
-glyphname = uni0726.Fina;
+glyphname = uni0726.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -16382,10 +16388,10 @@ nodes = (
 width = 962;
 }
 );
-note = uni0726.Fina;
+note = uni0726.fina;
 },
 {
-glyphname = uni0726.Medi;
+glyphname = uni0726.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -16629,10 +16635,10 @@ nodes = (
 width = 696;
 }
 );
-note = uni0726.Medi;
+note = uni0726.medi;
 },
 {
-glyphname = uni0726.Init;
+glyphname = uni0726.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -16879,7 +16885,7 @@ nodes = (
 width = 654;
 }
 );
-note = uni0726.Init;
+note = uni0726.init;
 },
 {
 glyphname = uni0727;
@@ -17193,7 +17199,7 @@ note = uni0727;
 unicode = 0727;
 },
 {
-glyphname = uni0727.Fina;
+glyphname = uni0727.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -17500,10 +17506,10 @@ nodes = (
 width = 843;
 }
 );
-note = uni0727.Fina;
+note = uni0727.fina;
 },
 {
-glyphname = uni0727.Medi;
+glyphname = uni0727.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -17807,10 +17813,10 @@ nodes = (
 width = 631;
 }
 );
-note = uni0727.Medi;
+note = uni0727.medi;
 },
 {
-glyphname = uni0727.Init;
+glyphname = uni0727.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -18114,7 +18120,7 @@ nodes = (
 width = 684;
 }
 );
-note = uni0727.Init;
+note = uni0727.init;
 },
 {
 glyphname = uni0728;
@@ -18365,7 +18371,7 @@ note = uni0728;
 unicode = 0728;
 },
 {
-glyphname = uni0728.Fina;
+glyphname = uni0728.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -18633,7 +18639,7 @@ nodes = (
 width = 703;
 }
 );
-note = uni0728.Fina;
+note = uni0728.fina;
 },
 {
 glyphname = uni0729;
@@ -18872,7 +18878,7 @@ note = uni0729;
 unicode = 0729;
 },
 {
-glyphname = uni0729.Fina;
+glyphname = uni0729.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -19113,10 +19119,10 @@ nodes = (
 width = 946;
 }
 );
-note = uni0729.Fina;
+note = uni0729.fina;
 },
 {
-glyphname = uni0729.Medi;
+glyphname = uni0729.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -19333,10 +19339,10 @@ nodes = (
 width = 714;
 }
 );
-note = uni0729.Medi;
+note = uni0729.medi;
 },
 {
-glyphname = uni0729.Init;
+glyphname = uni0729.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -19544,7 +19550,7 @@ nodes = (
 width = 703;
 }
 );
-note = uni0729.Init;
+note = uni0729.init;
 },
 {
 glyphname = uni072A;
@@ -19705,7 +19711,7 @@ note = uni072A;
 unicode = 072A;
 },
 {
-glyphname = uni072A.Fina;
+glyphname = uni072A.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -19892,7 +19898,7 @@ nodes = (
 width = 611;
 }
 );
-note = uni072A.Fina;
+note = uni072A.fina;
 },
 {
 glyphname = uni072B;
@@ -20155,7 +20161,7 @@ note = uni072B;
 unicode = 072B;
 },
 {
-glyphname = uni072B.Fina;
+glyphname = uni072B.fina;
 lastChange = "2022-12-15 11:53:12 +0000";
 layers = (
 {
@@ -20393,10 +20399,10 @@ nodes = (
 width = 857;
 }
 );
-note = uni072B.Fina;
+note = uni072B.fina;
 },
 {
-glyphname = uni072B.Medi;
+glyphname = uni072B.medi;
 lastChange = "2022-12-15 11:52:23 +0000";
 layers = (
 {
@@ -20631,10 +20637,10 @@ nodes = (
 width = 664;
 }
 );
-note = uni072B.Medi;
+note = uni072B.medi;
 },
 {
-glyphname = uni072B.Init;
+glyphname = uni072B.init;
 lastChange = "2022-12-15 11:51:52 +0000";
 layers = (
 {
@@ -20887,7 +20893,7 @@ nodes = (
 width = 848;
 }
 );
-note = uni072B.Init;
+note = uni072B.init;
 },
 {
 glyphname = uni072C;
@@ -21162,7 +21168,7 @@ note = uni072C;
 unicode = 072C;
 },
 {
-glyphname = uni072C.Fina;
+glyphname = uni072C.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -21457,7 +21463,7 @@ nodes = (
 width = 886;
 }
 );
-note = uni072C.Fina;
+note = uni072C.fina;
 },
 {
 glyphname = uni072D;
@@ -21663,7 +21669,7 @@ note = uni072D;
 unicode = 072D;
 },
 {
-glyphname = uni072D.Fina;
+glyphname = uni072D.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -21871,10 +21877,10 @@ nodes = (
 width = 1032;
 }
 );
-note = uni072D.Fina;
+note = uni072D.fina;
 },
 {
-glyphname = uni072D.Medi;
+glyphname = uni072D.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -22079,10 +22085,10 @@ nodes = (
 width = 817;
 }
 );
-note = uni072D.Medi;
+note = uni072D.medi;
 },
 {
-glyphname = uni072D.Init;
+glyphname = uni072D.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -22278,7 +22284,7 @@ nodes = (
 width = 803;
 }
 );
-note = uni072D.Init;
+note = uni072D.init;
 },
 {
 glyphname = uni072E;
@@ -22544,7 +22550,7 @@ note = uni072E;
 unicode = 072E;
 },
 {
-glyphname = uni072E.Fina;
+glyphname = uni072E.fina;
 lastChange = "2022-12-15 11:50:01 +0000";
 layers = (
 {
@@ -22812,10 +22818,10 @@ nodes = (
 width = 1049;
 }
 );
-note = uni072E.Fina;
+note = uni072E.fina;
 },
 {
-glyphname = uni072E.Medi;
+glyphname = uni072E.medi;
 lastChange = "2022-12-15 11:49:42 +0000";
 layers = (
 {
@@ -23080,10 +23086,10 @@ nodes = (
 width = 665;
 }
 );
-note = uni072E.Medi;
+note = uni072E.medi;
 },
 {
-glyphname = uni072E.Init;
+glyphname = uni072E.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -23339,7 +23345,7 @@ nodes = (
 width = 838;
 }
 );
-note = uni072E.Init;
+note = uni072E.init;
 },
 {
 glyphname = uni072F;
@@ -23551,7 +23557,7 @@ note = uni072F;
 unicode = 072F;
 },
 {
-glyphname = uni072F.Fina;
+glyphname = uni072F.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -23789,7 +23795,7 @@ nodes = (
 width = 672;
 }
 );
-note = uni072F.Fina;
+note = uni072F.fina;
 },
 {
 glyphname = uni074D;
@@ -23926,7 +23932,7 @@ note = uni074D;
 unicode = 074D;
 },
 {
-glyphname = uni074D.Fina;
+glyphname = uni074D.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -24065,7 +24071,7 @@ nodes = (
 width = 730;
 }
 );
-note = uni074D.Fina;
+note = uni074D.fina;
 },
 {
 glyphname = uni074E;
@@ -24289,7 +24295,7 @@ note = uni074E;
 unicode = 074E;
 },
 {
-glyphname = uni074E.Fina;
+glyphname = uni074E.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -24512,10 +24518,10 @@ nodes = (
 width = 957;
 }
 );
-note = uni074E.Fina;
+note = uni074E.fina;
 },
 {
-glyphname = uni074E.Medi;
+glyphname = uni074E.medi;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -24735,10 +24741,10 @@ nodes = (
 width = 689;
 }
 );
-note = uni074E.Medi;
+note = uni074E.medi;
 },
 {
-glyphname = uni074E.Init;
+glyphname = uni074E.init;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -24952,7 +24958,7 @@ nodes = (
 width = 678;
 }
 );
-note = uni074E.Init;
+note = uni074E.init;
 },
 {
 glyphname = uni074F;
@@ -25194,7 +25200,7 @@ note = uni074F;
 unicode = 074F;
 },
 {
-glyphname = uni074F.Fina;
+glyphname = uni074F.fina;
 lastChange = "2022-12-15 11:49:18 +0000";
 layers = (
 {
@@ -25417,10 +25423,10 @@ nodes = (
 width = 872;
 }
 );
-note = uni074F.Fina;
+note = uni074F.fina;
 },
 {
-glyphname = uni074F.Medi;
+glyphname = uni074F.medi;
 lastChange = "2022-12-15 11:49:10 +0000";
 layers = (
 {
@@ -25640,10 +25646,10 @@ nodes = (
 width = 505;
 }
 );
-note = uni074F.Medi;
+note = uni074F.medi;
 },
 {
-glyphname = uni074F.Init;
+glyphname = uni074F.init;
 lastChange = "2022-12-15 11:49:07 +0000";
 layers = (
 {
@@ -25875,7 +25881,7 @@ nodes = (
 width = 406;
 }
 );
-note = uni074F.Init;
+note = uni074F.init;
 },
 {
 glyphname = uni0621;
@@ -43645,7 +43651,7 @@ note = uni2671;
 unicode = 2671;
 },
 {
-glyphname = uni072Auni0308.Isol;
+glyphname = uni072Auni0308.isol;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -43850,10 +43856,10 @@ nodes = (
 width = 601;
 }
 );
-note = uni072Auni0308.Isol;
+note = uni072Auni0308.isol;
 },
 {
-glyphname = uni072Auni0308.Fina;
+glyphname = uni072Auni0308.fina;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -44091,10 +44097,10 @@ nodes = (
 width = 611;
 }
 );
-note = uni072Auni0308.Fina;
+note = uni072Auni0308.fina;
 },
 {
-glyphname = uni0713.FinaWide;
+glyphname = uni0713.fina.wide;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -44317,10 +44323,10 @@ nodes = (
 width = 1339;
 }
 );
-note = uni0713.FinaWide;
+note = uni0713.fina.wide;
 },
 {
-glyphname = uni0713.MediWide;
+glyphname = uni0713.medi.wide;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -44540,10 +44546,10 @@ nodes = (
 width = 934;
 }
 );
-note = uni0713.MediWide;
+note = uni0713.medi.wide;
 },
 {
-glyphname = uni0714.FinaWide;
+glyphname = uni0714.fina.wide;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -44793,10 +44799,10 @@ nodes = (
 width = 1339;
 }
 );
-note = uni0714.FinaWide;
+note = uni0714.fina.wide;
 },
 {
-glyphname = uni0714.MediWide;
+glyphname = uni0714.medi.wide;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -45043,10 +45049,10 @@ nodes = (
 width = 934;
 }
 );
-note = uni0714.MediWide;
+note = uni0714.medi.wide;
 },
 {
-glyphname = uni072E.FinaWide;
+glyphname = uni072E.fina.wide;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -45314,10 +45320,10 @@ nodes = (
 width = 1318;
 }
 );
-note = uni072E.FinaWide;
+note = uni072E.fina.wide;
 },
 {
-glyphname = uni072E.MediWide;
+glyphname = uni072E.medi.wide;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -45582,10 +45588,10 @@ nodes = (
 width = 934;
 }
 );
-note = uni072E.MediWide;
+note = uni072E.medi.wide;
 },
 {
-glyphname = uni0713.FinaWide2;
+glyphname = uni0713.fina.wide2;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -45808,10 +45814,10 @@ nodes = (
 width = 1461;
 }
 );
-note = uni0713.FinaWide2;
+note = uni0713.fina.wide2;
 },
 {
-glyphname = uni0713.MediWide2;
+glyphname = uni0713.medi.wide2;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -46031,10 +46037,10 @@ nodes = (
 width = 1056;
 }
 );
-note = uni0713.MediWide2;
+note = uni0713.medi.wide2;
 },
 {
-glyphname = uni0714.FinaWide2;
+glyphname = uni0714.fina.wide2;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -46284,10 +46290,10 @@ nodes = (
 width = 1461;
 }
 );
-note = uni0714.FinaWide2;
+note = uni0714.fina.wide2;
 },
 {
-glyphname = uni0714.MediWide2;
+glyphname = uni0714.medi.wide2;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -46534,10 +46540,10 @@ nodes = (
 width = 1056;
 }
 );
-note = uni0714.MediWide2;
+note = uni0714.medi.wide2;
 },
 {
-glyphname = uni072E.FinaWide2;
+glyphname = uni072E.fina.wide2;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -46805,10 +46811,10 @@ nodes = (
 width = 1440;
 }
 );
-note = uni072E.FinaWide2;
+note = uni072E.fina.wide2;
 },
 {
-glyphname = uni072E.MediWide2;
+glyphname = uni072E.medi.wide2;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -47073,10 +47079,10 @@ nodes = (
 width = 1056;
 }
 );
-note = uni072E.MediWide2;
+note = uni072E.medi.wide2;
 },
 {
-glyphname = uni0710.Fina1wideY;
+glyphname = uni0710.fina.wideY;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -47263,10 +47269,10 @@ nodes = (
 width = 1175;
 }
 );
-note = uni0710.Fina1wideY;
+note = uni0710.fina.wideY;
 },
 {
-glyphname = uni0710.Fina1wideX;
+glyphname = uni0710.fina.wideX;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -47453,10 +47459,10 @@ nodes = (
 width = 1094;
 }
 );
-note = uni0710.Fina1wideX;
+note = uni0710.fina.wideX;
 },
 {
-glyphname = uni0710.Medi2wideY;
+glyphname = uni0710.med2.wideY;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -47643,10 +47649,10 @@ nodes = (
 width = 1165;
 }
 );
-note = uni0710.Medi2wideY;
+note = uni0710.med2.wideY;
 },
 {
-glyphname = uni0710.Medi2wideX;
+glyphname = uni0710.med2.wideX;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -47833,10 +47839,10 @@ nodes = (
 width = 1094;
 }
 );
-note = uni0710.Medi2wideX;
+note = uni0710.med2.wideX;
 },
 {
-glyphname = uni071B.MediLongG;
+glyphname = uni071B.medi.longG;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -48023,10 +48029,10 @@ nodes = (
 width = 926;
 }
 );
-note = uni071B.MediLongG;
+note = uni071B.medi.longG;
 },
 {
-glyphname = uni071B.InitLongG;
+glyphname = uni071B.init.longG;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -48213,10 +48219,10 @@ nodes = (
 width = 1004;
 }
 );
-note = uni071B.InitLongG;
+note = uni071B.init.longG;
 },
 {
-glyphname = uni071C.MediLongG;
+glyphname = uni071C.medi.longG;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -48460,10 +48466,10 @@ nodes = (
 width = 936;
 }
 );
-note = uni071C.MediLongG;
+note = uni071C.medi.longG;
 },
 {
-glyphname = uni071C.InitLongG;
+glyphname = uni071C.init.longG;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -48707,10 +48713,10 @@ nodes = (
 width = 1014;
 }
 );
-note = uni071C.InitLongG;
+note = uni071C.init.longG;
 },
 {
-glyphname = uni0713.MediLong;
+glyphname = uni0713.medi.long;
 lastChange = "2022-12-15 11:47:38 +0000";
 layers = (
 {
@@ -48936,10 +48942,10 @@ nodes = (
 width = 697;
 }
 );
-note = uni0713.MediLong;
+note = uni0713.medi.long;
 },
 {
-glyphname = uni0713.InitLong;
+glyphname = uni0713.init.long;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -49156,10 +49162,10 @@ nodes = (
 width = 870;
 }
 );
-note = uni0713.InitLong;
+note = uni0713.init.long;
 },
 {
-glyphname = uni0714.MediLong;
+glyphname = uni0714.medi.long;
 lastChange = "2022-12-15 11:44:54 +0000";
 layers = (
 {
@@ -49175,7 +49181,7 @@ position = "{302, 586}";
 );
 components = (
 {
-name = uni0713.MediLong;
+name = uni0713.medi.long;
 }
 );
 layerId = m01;
@@ -49213,7 +49219,7 @@ position = "{314, 533}";
 );
 components = (
 {
-name = uni0713.MediLong;
+name = uni0713.medi.long;
 }
 );
 layerId = "22847997-2214-411C-BF12-975F69A1246B";
@@ -49251,7 +49257,7 @@ position = "{391, 681}";
 );
 components = (
 {
-name = uni0713.MediLong;
+name = uni0713.medi.long;
 }
 );
 layerId = "54406707-D089-4649-8539-9EC6A26EE6B0";
@@ -49277,10 +49283,10 @@ nodes = (
 width = 697;
 }
 );
-note = uni0714.MediLong;
+note = uni0714.medi.long;
 },
 {
-glyphname = uni0714.InitLong;
+glyphname = uni0714.init.long;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -49524,10 +49530,10 @@ nodes = (
 width = 870;
 }
 );
-note = uni0714.InitLong;
+note = uni0714.init.long;
 },
 {
-glyphname = uni072E.MediLong;
+glyphname = uni072E.medi.long;
 lastChange = "2022-12-15 11:47:19 +0000";
 layers = (
 {
@@ -49798,10 +49804,10 @@ nodes = (
 width = 697;
 }
 );
-note = uni072E.MediLong;
+note = uni072E.medi.long;
 },
 {
-glyphname = uni072E.InitLong;
+glyphname = uni072E.init.long;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -50063,10 +50069,10 @@ nodes = (
 width = 870;
 }
 );
-note = uni072E.InitLong;
+note = uni072E.init.long;
 },
 {
-glyphname = uni0720.MediB;
+glyphname = uni0720.mediB;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -50184,10 +50190,10 @@ nodes = (
 width = 549;
 }
 );
-note = uni0720.MediB;
+note = uni0720.mediB;
 },
 {
-glyphname = uni0720.InitB;
+glyphname = uni0720.initB;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -50317,10 +50323,10 @@ nodes = (
 width = 535;
 }
 );
-note = uni0720.InitB;
+note = uni0720.initB;
 },
 {
-glyphname = uni0722.InitB;
+glyphname = uni0722.initB;
 lastChange = "2022-12-15 11:46:45 +0000";
 layers = (
 {
@@ -50459,10 +50465,10 @@ nodes = (
 width = 398;
 }
 );
-note = uni0722.InitB;
+note = uni0722.initB;
 },
 {
-glyphname = uni0722.MediB;
+glyphname = uni0722.mediB;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -50625,10 +50631,10 @@ nodes = (
 width = 425;
 }
 );
-note = uni0722.MediB;
+note = uni0722.mediB;
 },
 {
-glyphname = uni071D.InitB;
+glyphname = uni071D.initB;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -50782,10 +50788,10 @@ nodes = (
 width = 415;
 }
 );
-note = uni071D.InitB;
+note = uni071D.initB;
 },
 {
-glyphname = uni071D.MediB;
+glyphname = uni071D.mediB;
 lastChange = "2022-12-15 11:46:16 +0000";
 layers = (
 {
@@ -50960,10 +50966,10 @@ nodes = (
 width = 429;
 }
 );
-note = uni071D.MediB;
+note = uni071D.mediB;
 },
 {
-glyphname = uni074F.MediB;
+glyphname = uni074F.mediB;
 lastChange = "2022-12-15 11:46:07 +0000";
 layers = (
 {
@@ -51183,10 +51189,10 @@ nodes = (
 width = 551;
 }
 );
-note = uni074F.MediB;
+note = uni074F.mediB;
 },
 {
-glyphname = uni074F.InitB;
+glyphname = uni074F.initB;
 lastChange = "2022-12-15 11:46:00 +0000";
 layers = (
 {
@@ -51418,10 +51424,10 @@ nodes = (
 width = 461;
 }
 );
-note = uni074F.InitB;
+note = uni074F.initB;
 },
 {
-glyphname = uni0722.FinaSoft;
+glyphname = uni0722.finaSoft;
 lastChange = "2022-12-15 11:31:32 +0000";
 layers = (
 {
@@ -51554,7 +51560,7 @@ nodes = (
 width = 434;
 }
 );
-note = uni0722.FinaSoft;
+note = uni0722.finaSoft;
 },
 {
 glyphname = uni0732.above;
@@ -52165,25 +52171,25 @@ kerning = {
 m01 = {
 uni0710 = {
 uni0710 = -56;
-uni0713.Init = -37;
+uni0713.init = -37;
 uni0728 = -24;
 };
-uni0712.Init = {
-uni071B.Fina = -98;
+uni0712.init = {
+uni071B.fina = -98;
 };
 uni0715 = {
 uni0709 = -98;
 uni0713 = -49;
-uni071D.Init = 24;
+uni071D.init = 24;
 };
 uni0716 = {
 uni0713 = -85;
 uni071B = -98;
 };
-uni0716.Fina = {
+uni0716.fina = {
 uni0709 = -61;
-uni0713.Init = 171;
-uni071B.Init = -85;
+uni0713.init = 171;
+uni071B.init = -85;
 uni0722 = 117;
 };
 uni0717 = {
@@ -52193,55 +52199,55 @@ uni0718 = {
 uni0709 = -61;
 uni0710 = -85;
 };
-uni0718.Fina = {
+uni0718.fina = {
 uni0710 = -85;
 };
-uni0719.Fina = {
+uni0719.fina = {
 uni0713 = 112;
 uni0722 = 176;
 };
-uni0721.Fina = {
+uni0721.fina = {
 uni0702 = -110;
 };
-uni0721.Init = {
-uni0713.Fina = -68;
-uni071B.Fina = -134;
-uni071B.Medi = -122;
-uni071F.Fina = -78;
+uni0721.init = {
+uni0713.fina = -68;
+uni071B.fina = -134;
+uni071B.medi = -122;
+uni071F.fina = -78;
 };
-uni0721.Medi = {
-uni0721.Init = -24;
+uni0721.medi = {
+uni0721.init = -24;
 };
 uni0722 = {
 uni0702 = 37;
 uni0728 = -49;
 };
-uni0722.Fina = {
+uni0722.fina = {
 uni0702 = 37;
 };
-uni0722.Init = {
-uni0725.Medi = -29;
+uni0722.init = {
+uni0725.medi = -29;
 };
-uni0726.Init = {
-uni0713.Fina = -49;
-uni0728.Fina = -73;
+uni0726.init = {
+uni0713.fina = -49;
+uni0728.fina = -73;
 };
 uni0728 = {
 uni0710 = -61;
 uni0722 = -49;
 };
-uni0728.Fina = {
+uni0728.fina = {
 uni0710 = -37;
 uni0713 = 107;
 uni0715 = 15;
 uni0716 = 54;
 uni0718 = 41;
 uni0719 = 41;
-uni071A.Init = 24;
+uni071A.init = 24;
 uni071B = 139;
 uni071D = 39;
 uni071F = 29;
-uni071F.Init = 37;
+uni071F.init = 37;
 uni0720 = 24;
 uni0722 = 432;
 uni0725 = 78;
@@ -52253,35 +52259,35 @@ uni074D = 102;
 };
 uni072A = {
 uni0718 = -24;
-uni0720.Init = -24;
+uni0720.init = -24;
 uni0722 = 107;
-uni0722.Init = 24;
-uni0725.Init = -110;
+uni0722.init = 24;
+uni0725.init = -110;
 uni0728 = -85;
-uni072B.Init = -85;
+uni072B.init = -85;
 };
-uni072B.Init = {
-uni071F.Fina = -98;
+uni072B.init = {
+uni071F.fina = -98;
 };
-uni072B.Medi = {
-uni0725.Medi = -73;
+uni072B.medi = {
+uni0725.medi = -73;
 };
-uni072C.Fina = {
+uni072C.fina = {
 uni0713 = 34;
 uni071B = 37;
 uni0722 = 49;
 uni0725 = 37;
 };
 uni072F = {
-uni0725.Init = 24;
-uni0727.Init = 61;
+uni0725.init = 24;
+uni0727.init = 61;
 uni074F = 73;
 };
-uni072F.Fina = {
+uni072F.fina = {
 uni0713 = 37;
 uni0722 = 400;
 };
-uni074D.Fina = {
+uni074D.fina = {
 uni0713 = 156;
 uni0722 = 366;
 };
@@ -52289,71 +52295,71 @@ uni0722 = 366;
 "22847997-2214-411C-BF12-975F69A1246B" = {
 uni0710 = {
 uni0710 = -50;
-uni0713.Init = -33;
+uni0713.init = -33;
 uni0728 = -21;
 };
-uni0712.Init = {
-uni071B.Fina = -87;
+uni0712.init = {
+uni071B.fina = -87;
 };
 uni0715 = {
 uni0709 = -87;
 uni0713 = -44;
-uni071D.Init = 21;
+uni071D.init = 21;
 };
 uni0716 = {
 uni0713 = -75;
 uni071B = -87;
 };
-uni0716.Fina = {
+uni0716.fina = {
 uni0709 = -54;
-uni0713.Init = 153;
-uni071B.Init = -75;
+uni0713.init = 153;
+uni071B.init = -75;
 uni0722 = 104;
 };
 uni0718 = {
 uni0709 = -54;
 uni0710 = -75;
 };
-uni0718.Fina = {
+uni0718.fina = {
 uni0710 = -75;
 };
-uni0719.Fina = {
+uni0719.fina = {
 uni0713 = 100;
 uni0722 = 157;
 };
-uni0721.Fina = {
+uni0721.fina = {
 uni0702 = -98;
 };
 uni0722 = {
 uni0702 = 33;
 uni0728 = -50;
 };
-uni0722.Fina = {
+uni0722.fina = {
 uni0702 = 33;
 };
-uni0722.Init = {
-uni0725.Medi = -26;
+uni0722.init = {
+uni0725.medi = -26;
 };
-uni0726.Init = {
-uni0713.Fina = -44;
-uni0728.Fina = -65;
+uni0726.init = {
+uni0713.fina = -44;
+uni0728.fina = -65;
 };
 uni0728 = {
 uni0710 = -54;
 uni0722 = -44;
 };
-uni0728.Fina = {
+uni0728.fina = {
 uni0710 = -33;
 uni0713 = 96;
 uni0715 = 14;
 uni0716 = 48;
 uni0718 = 37;
 uni0719 = 37;
-uni071A.Init = 21;
+uni071A.init = 21;
 uni071B = 124;
 uni071D = 35;
 uni071F = 26;
-uni071F.Init = 33;
+uni071F.init = 33;
 uni0720 = 21;
 uni0722 = 385;
 uni0725 = 70;
@@ -52365,35 +52371,35 @@ uni074D = 91;
 };
 uni072A = {
 uni0718 = -21;
-uni0720.Init = -21;
+uni0720.init = -21;
 uni0722 = 96;
-uni0722.Init = 21;
-uni0725.Init = -98;
+uni0722.init = 21;
+uni0725.init = -98;
 uni0728 = -75;
-uni072B.Init = -75;
+uni072B.init = -75;
 };
-uni072B.Init = {
-uni071F.Fina = -87;
+uni072B.init = {
+uni071F.fina = -87;
 };
-uni072B.Medi = {
-uni0725.Medi = -65;
+uni072B.medi = {
+uni0725.medi = -65;
 };
-uni072C.Fina = {
+uni072C.fina = {
 uni0713 = 30;
 uni071B = 33;
 uni0722 = 44;
 uni0725 = 33;
 };
 uni072F = {
-uni0725.Init = 21;
-uni0727.Init = 54;
+uni0725.init = 21;
+uni0727.init = 54;
 uni074F = 65;
 };
-uni072F.Fina = {
+uni072F.fina = {
 uni0713 = 33;
 uni0722 = 357;
 };
-uni074D.Fina = {
+uni074D.fina = {
 uni0713 = 139;
 uni0722 = 327;
 };
@@ -52401,31 +52407,31 @@ uni0722 = 327;
 "54406707-D089-4649-8539-9EC6A26EE6B0" = {
 uni0710 = {
 uni0710 = -14;
-uni0713.Init = -43;
+uni0713.init = -43;
 uni0717 = -50;
-uni0718.Fina = -80;
+uni0718.fina = -80;
 uni0722 = 80;
 uni0728 = -28;
-uni072C.Fina = -30;
+uni072C.fina = -30;
 };
-uni0712.Init = {
-uni071B.Fina = -113;
+uni0712.init = {
+uni071B.fina = -113;
 };
 uni0715 = {
 uni0709 = -113;
 uni0713 = -55;
-uni0713.Init = -120;
-uni071C.Init = -40;
-uni071D.Init = 28;
+uni0713.init = -120;
+uni071C.init = -40;
+uni071D.init = 28;
 };
 uni0716 = {
 uni0713 = -98;
 uni071B = -113;
 };
-uni0716.Fina = {
+uni0716.fina = {
 uni0709 = -70;
-uni0713.Init = 194;
-uni071B.Init = -98;
+uni0713.init = 194;
+uni071B.init = -98;
 uni0722 = 134;
 };
 uni0717 = {
@@ -52435,55 +52441,55 @@ uni0718 = {
 uni0709 = -70;
 uni0710 = -98;
 };
-uni0718.Fina = {
+uni0718.fina = {
 uni0710 = -98;
 };
-uni0719.Fina = {
+uni0719.fina = {
 uni0713 = 127;
 uni0722 = 200;
 };
-uni0721.Fina = {
+uni0721.fina = {
 uni0702 = -125;
 };
-uni0721.Init = {
-uni0713.Fina = -196;
-uni071B.Fina = -386;
-uni071B.Medi = -351;
-uni071F.Fina = -225;
+uni0721.init = {
+uni0713.fina = -196;
+uni071B.fina = -386;
+uni071B.medi = -351;
+uni071F.fina = -225;
 };
-uni0721.Medi = {
-uni0721.Init = -69;
+uni0721.medi = {
+uni0721.init = -69;
 };
 uni0722 = {
 uni0702 = 43;
 uni0728 = -230;
 };
-uni0722.Fina = {
+uni0722.fina = {
 uni0702 = 43;
 };
-uni0722.Init = {
-uni0725.Medi = -33;
+uni0722.init = {
+uni0725.medi = -33;
 };
-uni0726.Init = {
-uni0713.Fina = -55;
-uni0728.Fina = -82;
+uni0726.init = {
+uni0713.fina = -55;
+uni0728.fina = -82;
 };
 uni0728 = {
 uni0710 = -70;
 uni0722 = -55;
 };
-uni0728.Fina = {
+uni0728.fina = {
 uni0710 = -43;
 uni0713 = 120;
 uni0715 = 15;
 uni0716 = 62;
 uni0718 = 47;
 uni0719 = 47;
-uni071A.Init = 28;
+uni071A.init = 28;
 uni071B = 158;
 uni071D = 45;
 uni071F = 33;
-uni071F.Init = 43;
+uni071F.init = 43;
 uni0720 = 28;
 uni0722 = 492;
 uni0725 = 87;
@@ -52495,35 +52501,35 @@ uni074D = 115;
 };
 uni072A = {
 uni0718 = -28;
-uni0720.Init = -28;
+uni0720.init = -28;
 uni0722 = 120;
-uni0722.Init = 28;
-uni0725.Init = -125;
+uni0722.init = 28;
+uni0725.init = -125;
 uni0728 = -98;
-uni072B.Init = -98;
+uni072B.init = -98;
 };
-uni072B.Init = {
-uni071F.Fina = -113;
+uni072B.init = {
+uni071F.fina = -113;
 };
-uni072B.Medi = {
-uni0725.Medi = -82;
+uni072B.medi = {
+uni0725.medi = -82;
 };
-uni072C.Fina = {
+uni072C.fina = {
 uni0713 = 40;
 uni071B = 43;
 uni0722 = 55;
 uni0725 = 43;
 };
 uni072F = {
-uni0725.Init = 28;
-uni0727.Init = 70;
+uni0725.init = 28;
+uni0727.init = 70;
 uni074F = 82;
 };
-uni072F.Fina = {
+uni072F.fina = {
 uni0713 = 43;
 uni0722 = 455;
 };
-uni074D.Fina = {
+uni074D.fina = {
 uni0713 = 177;
 uni0722 = 415;
 };
