@@ -52544,6 +52544,6 @@ GSDimensionPlugin.Dimensions = {
 };
 };
 };
-versionMajor = 2;
-versionMinor = 2;
+versionMajor = 3;
+versionMinor = 0;
 }

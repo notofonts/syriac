@@ -55953,6 +55953,6 @@ settings = {
 disablesNiceNames = 1;
 };
 unitsPerEm = 1000;
-versionMajor = 2;
-versionMinor = 2;
+versionMajor = 3;
+versionMinor = 0;
 }
