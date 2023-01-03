@@ -418,9 +418,9 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
 
 
-* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 2 start point differs in glyph 'uni0723.Fina' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fb9819c9050> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fb9819bc350> 
+* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 2 start point differs in glyph 'uni0723.fina' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fc5b356c790> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fc5b35dcd90> 
 
-	- And Contour 2 start point differs in glyph 'uni0723.Medi' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fb9819c9050> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fb9819bc350> [code: interpolation-issues]
+	- And Contour 2 start point differs in glyph 'uni0723.medi' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fc5b356c790> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fc5b35dcd90> [code: interpolation-issues]
 </div></details><br></div></details>
 
 ### Summary
