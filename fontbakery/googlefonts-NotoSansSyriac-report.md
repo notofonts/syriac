@@ -11246,13 +11246,13 @@ The following glyphs do not have the recommended number of contours:
 </div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
 
 
-* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 1 start point differs in glyph 'uni072B' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f60a1ec29d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f60a1ec2ad0>
+* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 1 start point differs in glyph 'uni072B' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f6d0e8cca50> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f6d0e8cdf50>
 
-	- Contour 1 start point differs in glyph 'uni072B.fina' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f60a1ec29d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f60a1ec2ad0>
+	- Contour 1 start point differs in glyph 'uni072B.fina' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f6d0e8cca50> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f6d0e8cdf50>
 
-	- Contour 1 start point differs in glyph 'uni072B.medi' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f60a1ec29d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f60a1ec2ad0> 
+	- Contour 1 start point differs in glyph 'uni072B.medi' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f6d0e8cca50> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f6d0e8cdf50> 
 
-	- And Contour 1 start point differs in glyph 'uni072B.init' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f60a1ec29d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f60a1ec2ad0> [code: interpolation-issues]
+	- And Contour 1 start point differs in glyph 'uni072B.init' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f6d0e8cca50> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f6d0e8cdf50> [code: interpolation-issues]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
