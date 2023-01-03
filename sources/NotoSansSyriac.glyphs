@@ -470,7 +470,7 @@ value = "Noto is a trademark of Google Inc.";
 },
 {
 name = licenseURL;
-value = "http://scripts.sil.org/OFL";
+value = "https://scripts.sil.org/OFL";
 },
 {
 name = license;
@@ -693,7 +693,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 995;
+value = 1012;
 },
 {
 name = winDescent;
@@ -751,7 +751,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 995;
+value = 1012;
 },
 {
 name = winDescent;
@@ -809,7 +809,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 995;
+value = 1012;
 },
 {
 name = winDescent;
