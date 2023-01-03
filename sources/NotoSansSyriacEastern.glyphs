@@ -73,120 +73,120 @@ uni200D,
 uni200E,
 uni200F,
 uni0710,
-uni0710.Fina3,
-uni0710.Fina2,
-uni0710.Fina1,
-uni0710.Medi2,
+uni0710.fin3,
+uni0710.fin2,
+uni0710.fina,
+uni0710.med2,
 uni0711,
 uni0712,
-uni0712.Fina,
-uni0712.Medi,
-uni0712.Init,
+uni0712.fina,
+uni0712.medi,
+uni0712.init,
 uni0713,
-uni0713.Fina,
-uni0713.Medi,
-uni0713.Init,
+uni0713.fina,
+uni0713.medi,
+uni0713.init,
 uni0714,
-uni0714.Fina,
-uni0714.Medi,
-uni0714.Init,
+uni0714.fina,
+uni0714.medi,
+uni0714.init,
 uni0715,
-uni0715.Fina,
+uni0715.fina,
 uni0716,
-uni0716.Fina,
+uni0716.fina,
 uni0717,
-uni0717.Fina,
+uni0717.fina,
 uni0718,
-uni0718.Fina,
+uni0718.fina,
 uni0719,
-uni0719.Fina,
+uni0719.fina,
 uni071A,
-uni071A.Fina,
-uni071A.Medi,
-uni071A.Init,
+uni071A.fina,
+uni071A.medi,
+uni071A.init,
 uni071B,
-uni071B.Fina,
-uni071B.Medi,
-uni071B.Init,
+uni071B.fina,
+uni071B.medi,
+uni071B.init,
 uni071C,
-uni071C.Fina,
-uni071C.Medi,
-uni071C.Init,
+uni071C.fina,
+uni071C.medi,
+uni071C.init,
 uni071D,
-uni071D.Fina,
-uni071D.Medi,
-uni071D.Init,
+uni071D.fina,
+uni071D.medi,
+uni071D.init,
 uni071E,
 uni071F,
-uni071F.Fina,
-uni071F.Medi,
-uni071F.Init,
+uni071F.fina,
+uni071F.medi,
+uni071F.init,
 uni0720,
-uni0720.Fina,
-uni0720.Medi,
-uni0720.Init,
+uni0720.fina,
+uni0720.medi,
+uni0720.init,
 uni0721,
-uni0721.Fina,
-uni0721.Medi,
-uni0721.Init,
+uni0721.fina,
+uni0721.medi,
+uni0721.init,
 uni0722,
-uni0722.Fina,
-uni0722.Medi,
-uni0722.Init,
+uni0722.fina,
+uni0722.medi,
+uni0722.init,
 uni0723,
-uni0723.Fina,
-uni0723.Medi,
-uni0723.Init,
+uni0723.fina,
+uni0723.medi,
+uni0723.init,
 uni0724,
-uni0724.Fina,
-uni0724.Medi,
-uni0724.Init,
+uni0724.fina,
+uni0724.medi,
+uni0724.init,
 uni0725,
-uni0725.Fina,
-uni0725.Medi,
-uni0725.Init,
+uni0725.fina,
+uni0725.medi,
+uni0725.init,
 uni0726,
-uni0726.Fina,
-uni0726.Medi,
-uni0726.Init,
+uni0726.fina,
+uni0726.medi,
+uni0726.init,
 uni0727,
-uni0727.Fina,
-uni0727.Medi,
-uni0727.Init,
+uni0727.fina,
+uni0727.medi,
+uni0727.init,
 uni0728,
-uni0728.Fina,
+uni0728.fina,
 uni0729,
-uni0729.Fina,
-uni0729.Medi,
-uni0729.Init,
+uni0729.fina,
+uni0729.medi,
+uni0729.init,
 uni072A,
-uni072A.Fina,
+uni072A.fina,
 uni072B,
-uni072B.Fina,
-uni072B.Medi,
-uni072B.Init,
+uni072B.fina,
+uni072B.medi,
+uni072B.init,
 uni072C,
-uni072C.Fina,
+uni072C.fina,
 uni072D,
-uni072D.Fina,
-uni072D.Medi,
-uni072D.Init,
+uni072D.fina,
+uni072D.medi,
+uni072D.init,
 uni072E,
-uni072E.Fina,
-uni072E.Medi,
-uni072E.Init,
+uni072E.fina,
+uni072E.medi,
+uni072E.init,
 uni072F,
-uni072F.Fina,
+uni072F.fina,
 uni074D,
-uni074D.Fina,
+uni074D.fina,
 uni074E,
-uni074E.Fina,
-uni074E.Medi,
-uni074E.Init,
+uni074E.fina,
+uni074E.medi,
+uni074E.init,
 uni074F,
-uni074F.Fina,
-uni074F.Medi,
-uni074F.Init,
+uni074F.fina,
+uni074F.medi,
+uni074F.init,
 uni0621,
 uni0640,
 uni0700,
@@ -294,8 +294,8 @@ fraction,
 uni25CC,
 uni2670,
 uni2671,
-uni072Auni0308.Isol,
-uni072Auni0308.Fina
+uni072Auni0308.isol,
+uni072Auni0308.fina
 );
 },
 {
@@ -307,180 +307,121 @@ date = "2018-02-18 23:04:38 +0000";
 familyName = "Noto Sans Syriac Eastern";
 featurePrefixes = (
 {
-code = "lookup SingleSubstitution1 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    sub uni0710 by uni0710.Fina1;
-    sub uni0712 by uni0712.Fina;
-    sub uni0713 by uni0713.Fina;
-    sub uni0714 by uni0714.Fina;
-    sub uni0715 by uni0715.Fina;
-    sub uni0716 by uni0716.Fina;
-    sub uni0717 by uni0717.Fina;
-    sub uni0718 by uni0718.Fina;
-    sub uni0719 by uni0719.Fina;
-    sub uni071A by uni071A.Fina;
-    sub uni071B by uni071B.Fina;
-    sub uni071C by uni071C.Fina;
-    sub uni071D by uni071D.Fina;
-    sub uni071F by uni071F.Fina;
-    sub uni0720 by uni0720.Fina;
-    sub uni0721 by uni0721.Fina;
-    sub uni0722 by uni0722.Fina;
-    sub uni0723 by uni0723.Fina;
-    sub uni0724 by uni0724.Fina;
-    sub uni0725 by uni0725.Fina;
-    sub uni0726 by uni0726.Fina;
-    sub uni0727 by uni0727.Fina;
-    sub uni0728 by uni0728.Fina;
-    sub uni0729 by uni0729.Fina;
-    sub uni072A by uni072A.Fina;
-    sub uni072B by uni072B.Fina;
-    sub uni072C by uni072C.Fina;
-    sub uni072D by uni072D.Fina;
-    sub uni072E by uni072E.Fina;
-    sub uni072F by uni072F.Fina;
-    sub uni074D by uni074D.Fina;
-    sub uni074E by uni074E.Fina;
-    sub uni074F by uni074F.Fina;
-} SingleSubstitution1;
-";
-name = SingleSubstitution1;
-},
-{
-code = "lookup SingleSubstitution2 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 1 
-    sub uni0710 by uni0710.Fina2;
-} SingleSubstitution2;
-";
-name = SingleSubstitution2;
-},
-{
-code = "lookup SingleSubstitution3 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 2 
-    sub uni0710 by uni0710.Fina3;
-} SingleSubstitution3;
-";
-name = SingleSubstitution3;
-},
-{
-code = "lookup SingleSubstitution4 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 3 
-    sub uni0712 by uni0712.Medi;
-    sub uni0713 by uni0713.Medi;
-    sub uni0714 by uni0714.Medi;
-    sub uni071A by uni071A.Medi;
-    sub uni071B by uni071B.Medi;
-    sub uni071C by uni071C.Medi;
-    sub uni071D by uni071D.Medi;
-    sub uni071F by uni071F.Medi;
-    sub uni0720 by uni0720.Medi;
-    sub uni0721 by uni0721.Medi;
-    sub uni0722 by uni0722.Medi;
-    sub uni0723 by uni0723.Medi;
-    sub uni0724 by uni0724.Medi;
-    sub uni0725 by uni0725.Medi;
-    sub uni0726 by uni0726.Medi;
-    sub uni0727 by uni0727.Medi;
-    sub uni0729 by uni0729.Medi;
-    sub uni072B by uni072B.Medi;
-    sub uni072D by uni072D.Medi;
-    sub uni072E by uni072E.Medi;
-    sub uni074E by uni074E.Medi;
-    sub uni074F by uni074F.Medi;
-} SingleSubstitution4;
-";
-name = SingleSubstitution4;
-},
-{
-code = "lookup SingleSubstitution5 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 4 
-    sub uni0710 by uni0710.Medi2;
-} SingleSubstitution5;
-";
-name = SingleSubstitution5;
-},
-{
-code = "lookup SingleSubstitution6 {
-    lookupflag RightToLeft IgnoreMarks;
-    ;
-    # Original source: 5 
-    sub uni0712 by uni0712.Init;
-    sub uni0713 by uni0713.Init;
-    sub uni0714 by uni0714.Init;
-    sub uni071A by uni071A.Init;
-    sub uni071B by uni071B.Init;
-    sub uni071C by uni071C.Init;
-    sub uni071D by uni071D.Init;
-    sub uni071F by uni071F.Init;
-    sub uni0720 by uni0720.Init;
-    sub uni0721 by uni0721.Init;
-    sub uni0722 by uni0722.Init;
-    sub uni0723 by uni0723.Init;
-    sub uni0724 by uni0724.Init;
-    sub uni0725 by uni0725.Init;
-    sub uni0726 by uni0726.Init;
-    sub uni0727 by uni0727.Init;
-    sub uni0729 by uni0729.Init;
-    sub uni072B by uni072B.Init;
-    sub uni072D by uni072D.Init;
-    sub uni072E by uni072E.Init;
-    sub uni074E by uni074E.Init;
-    sub uni074F by uni074F.Init;
-} SingleSubstitution6;
-";
-name = SingleSubstitution6;
-},
-{
-code = "languagesystem syrc dflt;
+code = "languagesystem DFLT dflt;
+languagesystem syrc dflt;
 languagesystem syrc SYRN;
 ";
-disabled = 1;
 name = Languagesystems;
 }
 );
 features = (
 {
-code = "# [('syrc', 'dflt')]
-    lookup SingleSubstitution1;
+automatic = 1;
+code = "sub uni0710 by uni0710.fina;
+sub uni0712 by uni0712.fina;
+sub uni0713 by uni0713.fina;
+sub uni0714 by uni0714.fina;
+sub uni0715 by uni0715.fina;
+sub uni0716 by uni0716.fina;
+sub uni0717 by uni0717.fina;
+sub uni0718 by uni0718.fina;
+sub uni0719 by uni0719.fina;
+sub uni071A by uni071A.fina;
+sub uni071B by uni071B.fina;
+sub uni071C by uni071C.fina;
+sub uni071D by uni071D.fina;
+sub uni071F by uni071F.fina;
+sub uni0720 by uni0720.fina;
+sub uni0721 by uni0721.fina;
+sub uni0722 by uni0722.fina;
+sub uni0723 by uni0723.fina;
+sub uni0724 by uni0724.fina;
+sub uni0725 by uni0725.fina;
+sub uni0726 by uni0726.fina;
+sub uni0727 by uni0727.fina;
+sub uni0728 by uni0728.fina;
+sub uni0729 by uni0729.fina;
+sub uni072A by uni072A.fina;
+sub uni072B by uni072B.fina;
+sub uni072C by uni072C.fina;
+sub uni072D by uni072D.fina;
+sub uni072E by uni072E.fina;
+sub uni072F by uni072F.fina;
+sub uni074D by uni074D.fina;
+sub uni074E by uni074E.fina;
+sub uni074F by uni074F.fina;
 ";
 tag = fina;
 },
 {
-code = "# [('syrc', 'dflt')]
-    lookup SingleSubstitution2;
+automatic = 1;
+code = "sub uni0710 by uni0710.fin2;
 ";
 tag = fin2;
 },
 {
-code = "# [('syrc', 'dflt')]
-    lookup SingleSubstitution3;
+automatic = 1;
+code = "sub uni0710 by uni0710.fin3;
 ";
 tag = fin3;
 },
 {
-code = "# [('syrc', 'dflt')]
-    lookup SingleSubstitution4;
+automatic = 1;
+code = "sub uni0712 by uni0712.medi;
+sub uni0713 by uni0713.medi;
+sub uni0714 by uni0714.medi;
+sub uni071A by uni071A.medi;
+sub uni071B by uni071B.medi;
+sub uni071C by uni071C.medi;
+sub uni071D by uni071D.medi;
+sub uni071F by uni071F.medi;
+sub uni0720 by uni0720.medi;
+sub uni0721 by uni0721.medi;
+sub uni0722 by uni0722.medi;
+sub uni0723 by uni0723.medi;
+sub uni0724 by uni0724.medi;
+sub uni0725 by uni0725.medi;
+sub uni0726 by uni0726.medi;
+sub uni0727 by uni0727.medi;
+sub uni0729 by uni0729.medi;
+sub uni072B by uni072B.medi;
+sub uni072D by uni072D.medi;
+sub uni072E by uni072E.medi;
+sub uni074E by uni074E.medi;
+sub uni074F by uni074F.medi;
 ";
 tag = medi;
 },
 {
-code = "# [('syrc', 'dflt')]
-    lookup SingleSubstitution5;
+automatic = 1;
+code = "sub uni0710 by uni0710.med2;
 ";
 tag = med2;
 },
 {
-code = "# [('syrc', 'dflt')]
-    lookup SingleSubstitution6;
+automatic = 1;
+code = "sub uni0712 by uni0712.init;
+sub uni0713 by uni0713.init;
+sub uni0714 by uni0714.init;
+sub uni071A by uni071A.init;
+sub uni071B by uni071B.init;
+sub uni071C by uni071C.init;
+sub uni071D by uni071D.init;
+sub uni071F by uni071F.init;
+sub uni0720 by uni0720.init;
+sub uni0721 by uni0721.init;
+sub uni0722 by uni0722.init;
+sub uni0723 by uni0723.init;
+sub uni0724 by uni0724.init;
+sub uni0725 by uni0725.init;
+sub uni0726 by uni0726.init;
+sub uni0727 by uni0727.init;
+sub uni0729 by uni0729.init;
+sub uni072B by uni072B.init;
+sub uni072D by uni072D.init;
+sub uni072E by uni072E.init;
+sub uni074E by uni074E.init;
+sub uni074F by uni074F.init;
 ";
 tag = init;
 },
@@ -489,8 +430,8 @@ code = "lookup dieresis {
     lookupflag UseMarkFilteringSet [uni0308];
     ;
     # Original source: 6 
-    sub uni072A uni0308 by uni072Auni0308.Isol;
-    sub uni072A.Fina uni0308 by uni072Auni0308.Fina;
+    sub uni072A uni0308 by uni072Auni0308.isol;
+    sub uni072A.fina uni0308 by uni072Auni0308.fina;
 } dieresis;
 ";
 tag = rlig;
@@ -1255,7 +1196,7 @@ note = uni0710;
 unicode = 1808;
 },
 {
-glyphname = uni0710.Fina3;
+glyphname = uni0710.fin3;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -1406,10 +1347,10 @@ nodes = (
 width = 438;
 }
 );
-note = uni0710.Fina3;
+note = uni0710.fin3;
 },
 {
-glyphname = uni0710.Fina2;
+glyphname = uni0710.fin2;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -1557,10 +1498,10 @@ nodes = (
 width = 428;
 }
 );
-note = uni0710.Fina2;
+note = uni0710.fin2;
 },
 {
-glyphname = uni0710.Fina1;
+glyphname = uni0710.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -1708,10 +1649,10 @@ nodes = (
 width = 418;
 }
 );
-note = uni0710.Fina1;
+note = uni0710.fina;
 },
 {
-glyphname = uni0710.Medi2;
+glyphname = uni0710.med2;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -1862,7 +1803,7 @@ nodes = (
 width = 428;
 }
 );
-note = uni0710.Medi2;
+note = uni0710.med2;
 },
 {
 category = Mark;
@@ -2138,7 +2079,7 @@ note = uni0712;
 unicode = 1810;
 },
 {
-glyphname = uni0712.Fina;
+glyphname = uni0712.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -2307,10 +2248,10 @@ nodes = (
 width = 867;
 }
 );
-note = uni0712.Fina;
+note = uni0712.fina;
 },
 {
-glyphname = uni0712.Medi;
+glyphname = uni0712.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -2476,10 +2417,10 @@ nodes = (
 width = 640;
 }
 );
-note = uni0712.Medi;
+note = uni0712.medi;
 },
 {
-glyphname = uni0712.Init;
+glyphname = uni0712.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -2606,7 +2547,7 @@ nodes = (
 width = 604;
 }
 );
-note = uni0712.Init;
+note = uni0712.init;
 },
 {
 glyphname = uni0713;
@@ -2737,7 +2678,7 @@ note = uni0713;
 unicode = 1811;
 },
 {
-glyphname = uni0713.Fina;
+glyphname = uni0713.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -2879,10 +2820,10 @@ nodes = (
 width = 821;
 }
 );
-note = uni0713.Fina;
+note = uni0713.fina;
 },
 {
-glyphname = uni0713.Medi;
+glyphname = uni0713.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -3021,10 +2962,10 @@ nodes = (
 width = 456;
 }
 );
-note = uni0713.Medi;
+note = uni0713.medi;
 },
 {
-glyphname = uni0713.Init;
+glyphname = uni0713.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -3145,7 +3086,7 @@ nodes = (
 width = 562;
 }
 );
-note = uni0713.Init;
+note = uni0713.init;
 },
 {
 glyphname = uni0714;
@@ -3303,7 +3244,7 @@ note = uni0714;
 unicode = 1812;
 },
 {
-glyphname = uni0714.Fina;
+glyphname = uni0714.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -3472,10 +3413,10 @@ nodes = (
 width = 821;
 }
 );
-note = uni0714.Fina;
+note = uni0714.fina;
 },
 {
-glyphname = uni0714.Medi;
+glyphname = uni0714.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -3641,10 +3582,10 @@ nodes = (
 width = 515;
 }
 );
-note = uni0714.Medi;
+note = uni0714.medi;
 },
 {
-glyphname = uni0714.Init;
+glyphname = uni0714.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -3792,7 +3733,7 @@ nodes = (
 width = 621;
 }
 );
-note = uni0714.Init;
+note = uni0714.init;
 },
 {
 glyphname = uni0715;
@@ -3959,7 +3900,7 @@ note = uni0715;
 unicode = 1813;
 },
 {
-glyphname = uni0715.Fina;
+glyphname = uni0715.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -4149,7 +4090,7 @@ nodes = (
 width = 577;
 }
 );
-note = uni0715.Fina;
+note = uni0715.fina;
 },
 {
 glyphname = uni0716;
@@ -4289,7 +4230,7 @@ note = uni0716;
 unicode = 1814;
 },
 {
-glyphname = uni0716.Fina;
+glyphname = uni0716.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -4452,7 +4393,7 @@ nodes = (
 width = 577;
 }
 );
-note = uni0716.Fina;
+note = uni0716.fina;
 },
 {
 glyphname = uni0717;
@@ -4673,7 +4614,7 @@ note = uni0717;
 unicode = 1815;
 },
 {
-glyphname = uni0717.Fina;
+glyphname = uni0717.fina;
 lastChange = "2023-01-02 10:20:11 +0000";
 layers = (
 {
@@ -4893,7 +4834,7 @@ nodes = (
 width = 875;
 }
 );
-note = uni0717.Fina;
+note = uni0717.fina;
 },
 {
 glyphname = uni0718;
@@ -5072,7 +5013,7 @@ note = uni0718;
 unicode = 1816;
 },
 {
-glyphname = uni0718.Fina;
+glyphname = uni0718.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -5277,7 +5218,7 @@ nodes = (
 width = 637;
 }
 );
-note = uni0718.Fina;
+note = uni0718.fina;
 },
 {
 glyphname = uni0719;
@@ -5450,7 +5391,7 @@ note = uni0719;
 unicode = 1817;
 },
 {
-glyphname = uni0719.Fina;
+glyphname = uni0719.fina;
 lastChange = "2023-01-02 10:21:43 +0000";
 layers = (
 {
@@ -5643,7 +5584,7 @@ nodes = (
 width = 418;
 }
 );
-note = uni0719.Fina;
+note = uni0719.fina;
 },
 {
 glyphname = uni071A;
@@ -5840,7 +5781,7 @@ note = uni071A;
 unicode = 1818;
 },
 {
-glyphname = uni071A.Fina;
+glyphname = uni071A.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -6036,10 +5977,10 @@ nodes = (
 width = 881;
 }
 );
-note = uni071A.Fina;
+note = uni071A.fina;
 },
 {
-glyphname = uni071A.Medi;
+glyphname = uni071A.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -6226,10 +6167,10 @@ nodes = (
 width = 552;
 }
 );
-note = uni071A.Medi;
+note = uni071A.medi;
 },
 {
-glyphname = uni071A.Init;
+glyphname = uni071A.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -6410,7 +6351,7 @@ nodes = (
 width = 564;
 }
 );
-note = uni071A.Init;
+note = uni071A.init;
 },
 {
 glyphname = uni071B;
@@ -6559,7 +6500,7 @@ note = uni071B;
 unicode = 1819;
 },
 {
-glyphname = uni071B.Fina;
+glyphname = uni071B.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -6701,10 +6642,10 @@ nodes = (
 width = 1061;
 }
 );
-note = uni071B.Fina;
+note = uni071B.fina;
 },
 {
-glyphname = uni071B.Medi;
+glyphname = uni071B.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -6843,10 +6784,10 @@ nodes = (
 width = 696;
 }
 );
-note = uni071B.Medi;
+note = uni071B.medi;
 },
 {
-glyphname = uni071B.Init;
+glyphname = uni071B.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -6985,7 +6926,7 @@ nodes = (
 width = 810;
 }
 );
-note = uni071B.Init;
+note = uni071B.init;
 },
 {
 glyphname = uni071C;
@@ -7191,7 +7132,7 @@ note = uni071C;
 unicode = 1820;
 },
 {
-glyphname = uni071C.Fina;
+glyphname = uni071C.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -7390,10 +7331,10 @@ nodes = (
 width = 1084;
 }
 );
-note = uni071C.Fina;
+note = uni071C.fina;
 },
 {
-glyphname = uni071C.Medi;
+glyphname = uni071C.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -7589,10 +7530,10 @@ nodes = (
 width = 702;
 }
 );
-note = uni071C.Medi;
+note = uni071C.medi;
 },
 {
-glyphname = uni071C.Init;
+glyphname = uni071C.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -7788,7 +7729,7 @@ nodes = (
 width = 816;
 }
 );
-note = uni071C.Init;
+note = uni071C.init;
 },
 {
 glyphname = uni071D;
@@ -7940,7 +7881,7 @@ note = uni071D;
 unicode = 1821;
 },
 {
-glyphname = uni071D.Fina;
+glyphname = uni071D.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -8091,10 +8032,10 @@ nodes = (
 width = 658;
 }
 );
-note = uni071D.Fina;
+note = uni071D.fina;
 },
 {
-glyphname = uni071D.Medi;
+glyphname = uni071D.medi;
 lastChange = "2023-01-02 10:17:03 +0000";
 layers = (
 {
@@ -8236,10 +8177,10 @@ nodes = (
 width = 327;
 }
 );
-note = uni071D.Medi;
+note = uni071D.medi;
 },
 {
-glyphname = uni071D.Init;
+glyphname = uni071D.init;
 lastChange = "2023-01-02 10:17:11 +0000";
 layers = (
 {
@@ -8375,7 +8316,7 @@ nodes = (
 width = 331;
 }
 );
-note = uni071D.Init;
+note = uni071D.init;
 },
 {
 glyphname = uni071E;
@@ -8967,7 +8908,7 @@ note = uni071F;
 unicode = 1823;
 },
 {
-glyphname = uni071F.Fina;
+glyphname = uni071F.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -9199,10 +9140,10 @@ nodes = (
 width = 689;
 }
 );
-note = uni071F.Fina;
+note = uni071F.fina;
 },
 {
-glyphname = uni071F.Medi;
+glyphname = uni071F.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -9377,10 +9318,10 @@ nodes = (
 width = 652;
 }
 );
-note = uni071F.Medi;
+note = uni071F.medi;
 },
 {
-glyphname = uni071F.Init;
+glyphname = uni071F.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -9534,7 +9475,7 @@ nodes = (
 width = 676;
 }
 );
-note = uni071F.Init;
+note = uni071F.init;
 },
 {
 glyphname = uni0720;
@@ -9647,7 +9588,7 @@ note = uni0720;
 unicode = 1824;
 },
 {
-glyphname = uni0720.Fina;
+glyphname = uni0720.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -9780,10 +9721,10 @@ nodes = (
 width = 821;
 }
 );
-note = uni0720.Fina;
+note = uni0720.fina;
 },
 {
-glyphname = uni0720.Medi;
+glyphname = uni0720.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -9913,10 +9854,10 @@ nodes = (
 width = 456;
 }
 );
-note = uni0720.Medi;
+note = uni0720.medi;
 },
 {
-glyphname = uni0720.Init;
+glyphname = uni0720.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -10019,7 +9960,7 @@ nodes = (
 width = 498;
 }
 );
-note = uni0720.Init;
+note = uni0720.init;
 },
 {
 glyphname = uni0721;
@@ -10183,7 +10124,7 @@ note = uni0721;
 unicode = 1825;
 },
 {
-glyphname = uni0721.Fina;
+glyphname = uni0721.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -10379,10 +10320,10 @@ nodes = (
 width = 818;
 }
 );
-note = uni0721.Fina;
+note = uni0721.fina;
 },
 {
-glyphname = uni0721.Medi;
+glyphname = uni0721.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -10668,10 +10609,10 @@ nodes = (
 width = 849;
 }
 );
-note = uni0721.Medi;
+note = uni0721.medi;
 },
 {
-glyphname = uni0721.Init;
+glyphname = uni0721.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -10918,7 +10859,7 @@ nodes = (
 width = 858;
 }
 );
-note = uni0721.Init;
+note = uni0721.init;
 },
 {
 glyphname = uni0722;
@@ -11028,7 +10969,7 @@ note = uni0722;
 unicode = 1826;
 },
 {
-glyphname = uni0722.Fina;
+glyphname = uni0722.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -11170,10 +11111,10 @@ nodes = (
 width = 345;
 }
 );
-note = uni0722.Fina;
+note = uni0722.fina;
 },
 {
-glyphname = uni0722.Medi;
+glyphname = uni0722.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -11348,10 +11289,10 @@ nodes = (
 width = 420;
 }
 );
-note = uni0722.Medi;
+note = uni0722.medi;
 },
 {
-glyphname = uni0722.Init;
+glyphname = uni0722.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -11511,7 +11452,7 @@ nodes = (
 width = 434;
 }
 );
-note = uni0722.Init;
+note = uni0722.init;
 },
 {
 glyphname = uni0723;
@@ -11807,7 +11748,7 @@ note = uni0723;
 unicode = 1827;
 },
 {
-glyphname = uni0723.Fina;
+glyphname = uni0723.fina;
 lastChange = "2023-01-02 10:13:56 +0000";
 layers = (
 {
@@ -12135,10 +12076,10 @@ nodes = (
 width = 1183;
 }
 );
-note = uni0723.Fina;
+note = uni0723.fina;
 },
 {
-glyphname = uni0723.Medi;
+glyphname = uni0723.medi;
 lastChange = "2023-01-02 10:14:11 +0000";
 layers = (
 {
@@ -12463,10 +12404,10 @@ nodes = (
 width = 877;
 }
 );
-note = uni0723.Medi;
+note = uni0723.medi;
 },
 {
-glyphname = uni0723.Init;
+glyphname = uni0723.init;
 lastChange = "2023-01-02 10:16:16 +0000";
 layers = (
 {
@@ -12752,7 +12693,7 @@ nodes = (
 width = 877;
 }
 );
-note = uni0723.Init;
+note = uni0723.init;
 },
 {
 glyphname = uni0724;
@@ -13003,7 +12944,7 @@ note = uni0724;
 unicode = 1828;
 },
 {
-glyphname = uni0724.Fina;
+glyphname = uni0724.fina;
 lastChange = "2023-01-02 10:16:40 +0000";
 layers = (
 {
@@ -13286,10 +13227,10 @@ nodes = (
 width = 875;
 }
 );
-note = uni0724.Fina;
+note = uni0724.fina;
 },
 {
-glyphname = uni0724.Medi;
+glyphname = uni0724.medi;
 lastChange = "2023-01-02 10:19:05 +0000";
 layers = (
 {
@@ -13614,10 +13555,10 @@ nodes = (
 width = 877;
 }
 );
-note = uni0724.Medi;
+note = uni0724.medi;
 },
 {
-glyphname = uni0724.Init;
+glyphname = uni0724.init;
 lastChange = "2023-01-02 10:19:17 +0000";
 layers = (
 {
@@ -13903,7 +13844,7 @@ nodes = (
 width = 877;
 }
 );
-note = uni0724.Init;
+note = uni0724.init;
 },
 {
 glyphname = uni0725;
@@ -14070,7 +14011,7 @@ note = uni0725;
 unicode = 1829;
 },
 {
-glyphname = uni0725.Fina;
+glyphname = uni0725.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -14209,10 +14150,10 @@ nodes = (
 width = 706;
 }
 );
-note = uni0725.Fina;
+note = uni0725.fina;
 },
 {
-glyphname = uni0725.Medi;
+glyphname = uni0725.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -14348,10 +14289,10 @@ nodes = (
 width = 483;
 }
 );
-note = uni0725.Medi;
+note = uni0725.medi;
 },
 {
-glyphname = uni0725.Init;
+glyphname = uni0725.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -14508,7 +14449,7 @@ nodes = (
 width = 674;
 }
 );
-note = uni0725.Init;
+note = uni0725.init;
 },
 {
 glyphname = uni0726;
@@ -14681,7 +14622,7 @@ note = uni0726;
 unicode = 1830;
 },
 {
-glyphname = uni0726.Fina;
+glyphname = uni0726.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -14880,10 +14821,10 @@ nodes = (
 width = 798;
 }
 );
-note = uni0726.Fina;
+note = uni0726.fina;
 },
 {
-glyphname = uni0726.Medi;
+glyphname = uni0726.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -15079,10 +15020,10 @@ nodes = (
 width = 593;
 }
 );
-note = uni0726.Medi;
+note = uni0726.medi;
 },
 {
-glyphname = uni0726.Init;
+glyphname = uni0726.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -15245,7 +15186,7 @@ nodes = (
 width = 620;
 }
 );
-note = uni0726.Init;
+note = uni0726.init;
 },
 {
 glyphname = uni0727;
@@ -15520,7 +15461,7 @@ note = uni0727;
 unicode = 1831;
 },
 {
-glyphname = uni0727.Fina;
+glyphname = uni0727.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -15779,10 +15720,10 @@ nodes = (
 width = 831;
 }
 );
-note = uni0727.Fina;
+note = uni0727.fina;
 },
 {
-glyphname = uni0727.Medi;
+glyphname = uni0727.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -16038,10 +15979,10 @@ nodes = (
 width = 595;
 }
 );
-note = uni0727.Medi;
+note = uni0727.medi;
 },
 {
-glyphname = uni0727.Init;
+glyphname = uni0727.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -16297,7 +16238,7 @@ nodes = (
 width = 638;
 }
 );
-note = uni0727.Init;
+note = uni0727.init;
 },
 {
 glyphname = uni0728;
@@ -16497,7 +16438,7 @@ note = uni0728;
 unicode = 1832;
 },
 {
-glyphname = uni0728.Fina;
+glyphname = uni0728.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -16714,7 +16655,7 @@ nodes = (
 width = 639;
 }
 );
-note = uni0728.Fina;
+note = uni0728.fina;
 },
 {
 glyphname = uni0729;
@@ -16926,7 +16867,7 @@ note = uni0729;
 unicode = 1833;
 },
 {
-glyphname = uni0729.Fina;
+glyphname = uni0729.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -17170,10 +17111,10 @@ nodes = (
 width = 1025;
 }
 );
-note = uni0729.Fina;
+note = uni0729.fina;
 },
 {
-glyphname = uni0729.Medi;
+glyphname = uni0729.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -17414,10 +17355,10 @@ nodes = (
 width = 687;
 }
 );
-note = uni0729.Medi;
+note = uni0729.medi;
 },
 {
-glyphname = uni0729.Init;
+glyphname = uni0729.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -17619,7 +17560,7 @@ nodes = (
 width = 651;
 }
 );
-note = uni0729.Init;
+note = uni0729.init;
 },
 {
 glyphname = uni072A;
@@ -17786,7 +17727,7 @@ note = uni072A;
 unicode = 1834;
 },
 {
-glyphname = uni072A.Fina;
+glyphname = uni072A.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -17976,7 +17917,7 @@ nodes = (
 width = 577;
 }
 );
-note = uni072A.Fina;
+note = uni072A.fina;
 },
 {
 glyphname = uni072B;
@@ -18167,7 +18108,7 @@ note = uni072B;
 unicode = 1835;
 },
 {
-glyphname = uni072B.Fina;
+glyphname = uni072B.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -18351,10 +18292,10 @@ nodes = (
 width = 954;
 }
 );
-note = uni072B.Fina;
+note = uni072B.fina;
 },
 {
-glyphname = uni072B.Medi;
+glyphname = uni072B.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -18535,10 +18476,10 @@ nodes = (
 width = 668;
 }
 );
-note = uni072B.Medi;
+note = uni072B.medi;
 },
 {
-glyphname = uni072B.Init;
+glyphname = uni072B.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -18719,7 +18660,7 @@ nodes = (
 width = 715;
 }
 );
-note = uni072B.Init;
+note = uni072B.init;
 },
 {
 glyphname = uni072C;
@@ -18910,7 +18851,7 @@ note = uni072C;
 unicode = 1836;
 },
 {
-glyphname = uni072C.Fina;
+glyphname = uni072C.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -19109,7 +19050,7 @@ nodes = (
 width = 739;
 }
 );
-note = uni072C.Fina;
+note = uni072C.fina;
 },
 {
 glyphname = uni072D;
@@ -19282,7 +19223,7 @@ note = uni072D;
 unicode = 1837;
 },
 {
-glyphname = uni072D.Fina;
+glyphname = uni072D.fina;
 lastChange = "2023-01-02 10:13:30 +0000";
 layers = (
 {
@@ -19463,10 +19404,10 @@ nodes = (
 width = 889;
 }
 );
-note = uni072D.Fina;
+note = uni072D.fina;
 },
 {
-glyphname = uni072D.Medi;
+glyphname = uni072D.medi;
 lastChange = "2023-01-02 10:19:39 +0000";
 layers = (
 {
@@ -19644,10 +19585,10 @@ nodes = (
 width = 644;
 }
 );
-note = uni072D.Medi;
+note = uni072D.medi;
 },
 {
-glyphname = uni072D.Init;
+glyphname = uni072D.init;
 lastChange = "2023-01-02 10:19:48 +0000";
 layers = (
 {
@@ -19786,7 +19727,7 @@ nodes = (
 width = 608;
 }
 );
-note = uni072D.Init;
+note = uni072D.init;
 },
 {
 glyphname = uni072E;
@@ -19986,7 +19927,7 @@ note = uni072E;
 unicode = 1838;
 },
 {
-glyphname = uni072E.Fina;
+glyphname = uni072E.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -20200,10 +20141,10 @@ nodes = (
 width = 931;
 }
 );
-note = uni072E.Fina;
+note = uni072E.fina;
 },
 {
-glyphname = uni072E.Medi;
+glyphname = uni072E.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -20414,10 +20355,10 @@ nodes = (
 width = 566;
 }
 );
-note = uni072E.Medi;
+note = uni072E.medi;
 },
 {
-glyphname = uni072E.Init;
+glyphname = uni072E.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -20607,7 +20548,7 @@ nodes = (
 width = 554;
 }
 );
-note = uni072E.Init;
+note = uni072E.init;
 },
 {
 glyphname = uni072F;
@@ -20801,7 +20742,7 @@ note = uni072F;
 unicode = 1839;
 },
 {
-glyphname = uni072F.Fina;
+glyphname = uni072F.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -21018,7 +20959,7 @@ nodes = (
 width = 836;
 }
 );
-note = uni072F.Fina;
+note = uni072F.fina;
 },
 {
 glyphname = uni074D;
@@ -21164,7 +21105,7 @@ note = uni074D;
 unicode = 1869;
 },
 {
-glyphname = uni074D.Fina;
+glyphname = uni074D.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -21333,7 +21274,7 @@ nodes = (
 width = 677;
 }
 );
-note = uni074D.Fina;
+note = uni074D.fina;
 },
 {
 glyphname = uni074E;
@@ -21527,7 +21468,7 @@ note = uni074E;
 unicode = 1870;
 },
 {
-glyphname = uni074E.Fina;
+glyphname = uni074E.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -21753,10 +21694,10 @@ nodes = (
 width = 867;
 }
 );
-note = uni074E.Fina;
+note = uni074E.fina;
 },
 {
-glyphname = uni074E.Medi;
+glyphname = uni074E.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -21979,10 +21920,10 @@ nodes = (
 width = 640;
 }
 );
-note = uni074E.Medi;
+note = uni074E.medi;
 },
 {
-glyphname = uni074E.Init;
+glyphname = uni074E.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -22166,7 +22107,7 @@ nodes = (
 width = 604;
 }
 );
-note = uni074E.Init;
+note = uni074E.init;
 },
 {
 glyphname = uni074F;
@@ -22384,7 +22325,7 @@ note = uni074F;
 unicode = 1871;
 },
 {
-glyphname = uni074F.Fina;
+glyphname = uni074F.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -22616,10 +22557,10 @@ nodes = (
 width = 755;
 }
 );
-note = uni074F.Fina;
+note = uni074F.fina;
 },
 {
-glyphname = uni074F.Medi;
+glyphname = uni074F.medi;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -22848,10 +22789,10 @@ nodes = (
 width = 534;
 }
 );
-note = uni074F.Medi;
+note = uni074F.medi;
 },
 {
-glyphname = uni074F.Init;
+glyphname = uni074F.init;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -23059,7 +23000,7 @@ nodes = (
 width = 551;
 }
 );
-note = uni074F.Init;
+note = uni074F.init;
 },
 {
 glyphname = uni0621;
@@ -35382,7 +35323,7 @@ note = uni2671;
 unicode = 9841;
 },
 {
-glyphname = uni072Auni0308.Isol;
+glyphname = uni072Auni0308.isol;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -35569,10 +35510,10 @@ nodes = (
 width = 584;
 }
 );
-note = uni072Auni0308.Isol;
+note = uni072Auni0308.isol;
 },
 {
-glyphname = uni072Auni0308.Fina;
+glyphname = uni072Auni0308.fina;
 lastChange = "2023-01-02 09:26:46 +0000";
 layers = (
 {
@@ -35789,7 +35730,7 @@ nodes = (
 width = 577;
 }
 );
-note = uni072Auni0308.Fina;
+note = uni072Auni0308.fina;
 }
 );
 instances = (
