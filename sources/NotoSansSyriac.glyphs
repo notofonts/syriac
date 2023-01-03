@@ -1,7 +1,7 @@
 {
 .appVersion = "3109";
 DisplayStrings = (
-"/uni0724"
+"/uni072B.fina"
 );
 classes = (
 {
@@ -751,7 +751,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 926;
+value = 995;
 },
 {
 name = winDescent;
@@ -809,7 +809,7 @@ value = 0;
 },
 {
 name = winAscent;
-value = 926;
+value = 995;
 },
 {
 name = winDescent;
