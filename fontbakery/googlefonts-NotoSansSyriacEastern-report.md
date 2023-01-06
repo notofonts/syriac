@@ -44,9 +44,11 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- uni0307.1
 
-	- uni0308.1 
+	- uni0308.1
 
-	- And uni030A.1
+	- uni030A.1 
+
+	- And uni0710.medi.2N
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -121,9 +123,11 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- uni0307.1
 
-	- uni0308.1 
+	- uni0308.1
 
-	- And uni030A.1
+	- uni030A.1 
+
+	- And uni0710.medi.2N
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -170,9 +174,11 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- uni0307.1
 
-	- uni0308.1 
+	- uni0308.1
 
-	- And uni030A.1
+	- uni030A.1 
+
+	- And uni0710.medi.2N
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Check if each glyph has the recommended amount of contours. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/contour_count">com.google.fonts/check/contour_count</a>)</summary><div>
 
@@ -247,14 +253,16 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 
 	- uni0307.1
 
-	- uni0308.1 
+	- uni0308.1
 
-	- And uni030A.1
+	- uni030A.1 
+
+	- And uni0710.medi.2N
  [code: unreachable-glyphs]
 </div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
 
 
-* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 2 start point differs in glyph 'uni0723.fina' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5ee3b2b190> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f5ee3b17610> [code: interpolation-issues]
+* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 2 start point differs in glyph 'uni0723.fina' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f315b4754d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f315bad2350> [code: interpolation-issues]
 </div></details><br></div></details>
 
 ### Summary
