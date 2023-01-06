@@ -262,9 +262,9 @@ Please take a look at the conversation at https://github.com/googlefonts/fontbak
 </div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
 
 
-* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour order differs in glyph 'uni0715.fina.qr': [0, 1, 2] in <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fd687f92f90>, [0, 2, 1] in <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fd6888af7d0>. 
+* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour order differs in glyph 'uni0715.fina.qr': [0, 1, 2] in <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f456e619350>, [0, 2, 1] in <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f456e619490>. 
 
-	- And Contour order differs in glyph 'uni072F.qr': [0, 1, 2, 3] in <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fd687f92f90>, [3, 1, 2, 0] in <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7fd6888af7d0>. [code: interpolation-issues]
+	- And Contour order differs in glyph 'uni072F.qr': [0, 1, 2, 3] in <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f456e619350>, [3, 1, 2, 0] in <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f456e619490>. [code: interpolation-issues]
 </div></details><details><summary>⚠ <b>WARN:</b> Check mark characters are in GDEF mark glyph class. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/gdef.html#com.google.fonts/check/gdef_mark_chars">com.google.fonts/check/gdef_mark_chars</a>)</summary><div>
 
 
