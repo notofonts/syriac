@@ -1,0 +1,28 @@
+{
+    "tests": [
+        {
+            "expectation": "uni0710.fina.liga=5+403|uni0739=3@169,-98+0|uni0720.medi=3+383|uni071D.medi=2+294|uni0732.below=0@73,-98+0|uni0732.above=0@-45,233+0|uni0720.init.N=0+320",
+            "input": "ܠܲܝܠܹܐ",
+            "note": "LA ligature; dotted pthaha placement",
+            "only": "NotoSansSyriacEastern-Regular.ttf"
+        },
+        {
+            "expectation": "uni0739=0@259,-98+0|uni072Auni0308.isol=0+521",
+            "input": "ܪܹ̈",
+            "note": "Two dots over rish/dieresis with accent. #8",
+            "only": "NotoSansSyriacEastern-Regular.ttf"
+        },
+        {
+            "expectation": "uni0640=2+379|uni0720.medi=1+383|uni0640=0+379",
+            "input": "ـܠـ",
+            "note": "Tatweel connections",
+            "only": "NotoSansSyriacEastern-Regular.ttf"
+        },
+        {
+            "expectation": "uni0710.fina.liga2=5+377|uni0735=3@145,-81+0|uni072C.medi.liga2=3+301|uni072B.init=2+601|uni0738=0@183,-98+0|uni0710=0+371",
+            "input": "ܐܸܫܬܵܐ",
+            "note": "TA ligature",
+            "only": "NotoSansSyriacEastern-Regular.ttf"
+        }
+    ]
+}
