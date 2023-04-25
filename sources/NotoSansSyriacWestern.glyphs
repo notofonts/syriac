@@ -1,9 +1,6 @@
 {
-.appVersion = "3109";
+.appVersion = "3180";
 .formatVersion = 3;
-DisplayStrings = (
-"/centerdot/uni0714.fina"
-);
 axes = (
 {
 name = Weight;
@@ -1757,8 +1754,8 @@ pos = 892;
 size = 15;
 },
 {
-pos = "-442";
-size = "-15";
+pos = -442;
+size = -15;
 }
 );
 }
@@ -1838,8 +1835,8 @@ pos = 846;
 size = 15;
 },
 {
-pos = "-425";
-size = "-15";
+pos = -425;
+size = -15;
 }
 );
 }
@@ -1920,8 +1917,8 @@ pos = 921;
 size = 15;
 },
 {
-pos = "-483";
-size = "-15";
+pos = -483;
+size = -15;
 }
 );
 }
@@ -43689,59 +43686,6 @@ width = 862;
 );
 note = ellipsis;
 unicode = 8230;
-},
-{
-glyphname = fraction;
-lastChange = "2022-12-16 12:05:34 +0000";
-layers = (
-{
-layerId = m01;
-shapes = (
-{
-closed = 1;
-nodes = (
-(78,-35,l),
-(147,-35,l),
-(389,621,l),
-(320,621,l)
-);
-}
-);
-width = 460;
-},
-{
-layerId = "8E9A709A-C666-43E5-8831-9AE42D64DE83";
-shapes = (
-{
-closed = 1;
-nodes = (
-(90,-30,l),
-(118,-30,l),
-(356,611,l),
-(328,611,l)
-);
-}
-);
-width = 434;
-},
-{
-layerId = "7FDEFC05-49C3-46A7-9C1D-65D39809C804";
-shapes = (
-{
-closed = 1;
-nodes = (
-(66,-40,l),
-(235,-40,l),
-(493,682,l),
-(324,682,l)
-);
-}
-);
-width = 543;
-}
-);
-note = fraction;
-unicode = 8260;
 },
 {
 glyphname = uni25CC;
