@@ -1,6 +1,6 @@
 ## Fontbakery report
 
-Fontbakery version: 0.8.11
+Fontbakery version: 0.8.13
 
 <details><summary><b>[4] Family checks</b></summary><div><details><summary>🔥 <b>FAIL:</b> Checking all files are in the same directory. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/family/single_directory">com.google.fonts/check/family/single_directory</a>)</summary><div>
 
@@ -18,21 +18,16 @@ Fontbakery version: 0.8.11
 
 
 * 🔥 **FAIL** Family 'Noto Sans Syriac' has 2 fonts (should be no more than 1) with the same OS/2.fsSelection bold & italic settings: Bold=False, Italic=False [code: unique-fsselection]
-</div></details><br></div></details><details><summary><b>[9] NotoSansSyriac-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[8] NotoSansSyriac-Black.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̠ ĭ̠ i̠̇ i̠̊ i̠̋ ǐ̠ i̠̒ ị̃ ị̆ ị̇ ị̊ ị̋ ị̌ ị̒ ĩ̤ [code: soft-dotted]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
-
-
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* SAM4xout and uni0724
+The dot of soft dotted characters should disappear in other cases, for example: ĩ i̇ ĩ̠ i̠̇ i̠̊ ị̃ ị̇ ị̊ ĩ̤ i̤̇ i̤̊ ĩ̥ i̥̇ i̥̊ ĩ̦ i̦̇ i̦̊ ĩ̧ i̧̇ i̧̊ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -85,7 +80,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 578:
-plus, minus
+minus, plus
 
 Width = 594:
 equal
@@ -118,21 +113,16 @@ equal
 	* 6 more.
 
 Use -F or --full-lists to disable shortening of long lists. [code: found-jaggy-segments]
-</div></details><br></div></details><details><summary><b>[8] NotoSansSyriac-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[7] NotoSansSyriac-Regular.ttf</b></summary><div><details><summary>🔥 <b>FAIL:</b> Noto fonts must have an ARTICLE.en_us.html file (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/description/noto_has_article">com.google.fonts/check/description/noto_has_article</a>)</summary><div>
 
 
 * 🔥 **FAIL** This is a Noto font but it lacks an ARTICLE.en_us.html file [code: missing-article]
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̠ ĭ̠ i̠̇ i̠̊ i̠̋ ǐ̠ i̠̒ ị̃ ị̆ ị̇ ị̊ ị̋ ị̌ ị̒ ĩ̤ [code: soft-dotted]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
-
-
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* SAM4xout
+The dot of soft dotted characters should disappear in other cases, for example: ĩ i̇ ĩ̠ i̠̇ i̠̊ ị̃ ị̇ ị̊ ĩ̤ i̤̇ i̤̊ ĩ̥ i̥̇ i̥̊ ĩ̦ i̦̇ i̦̊ ĩ̧ i̧̇ i̧̊ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure fonts have ScriptLangTags declared on the 'meta' table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/meta/script_lang_tags">com.google.fonts/check/meta/script_lang_tags</a>)</summary><div>
 
 
@@ -178,7 +168,7 @@ The following glyphs do not have the recommended number of contours:
 The following math glyphs have a different width, though:
 
 Width = 573:
-plus, minus, equal
+equal, minus, plus
  [code: width-outliers]
 </div></details><details><summary>⚠ <b>WARN:</b> Are any segments inordinately short? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/<Section: Outline Correctness Checks>.html#com.google.fonts/check/outline_short_segments">com.google.fonts/check/outline_short_segments</a>)</summary><div>
 
@@ -215,9 +205,9 @@ Use -F or --full-lists to disable shortening of long lists. [code: found-short-s
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̠ ĭ̠ i̠̇ i̠̊ i̠̋ ǐ̠ i̠̒ ị̃ ị̆ ị̇ ị̊ ị̋ ị̌ ị̒ ĩ̤ [code: soft-dotted]
+The dot of soft dotted characters should disappear in other cases, for example: ĩ i̇ ĩ̠ i̠̇ i̠̊ ị̃ ị̇ ị̊ ĩ̤ i̤̇ i̤̊ ĩ̥ i̥̇ i̥̊ ĩ̦ i̦̇ i̦̊ ĩ̧ i̧̇ i̧̊ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Combined length of family and style must not exceed 27 characters. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/name/family_and_style_max_length">com.google.fonts/check/name/family_and_style_max_length</a>)</summary><div>
 
 
@@ -284,7 +274,11 @@ equal
 	* exclamdown (U+00A1): L<<122.0,354.0>--<124.0,-186.0>> 
 
 	* exclamdown (U+00A1): L<<96.0,-186.0>--<98.0,354.0>> [code: found-semi-vertical]
-</div></details><br></div></details><details><summary><b>[11] NotoSansSyriac[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
+</div></details><br></div></details><details><summary><b>[11] NotoSansSyriac[wght].ttf</b></summary><div><details><summary>💔 <b>ERROR:</b> Check the OS/2 usWeightClass is appropriate for the font's best SubFamily name. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/usweightclass">com.google.fonts/check/usweightclass</a>)</summary><div>
+
+
+* 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
+</div></details><details><summary>💔 <b>ERROR:</b> Check font names are correct (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/font_names">com.google.fonts/check/font_names</a>)</summary><div>
 
 
 * 💔 **ERROR** The condition <FontBakeryCondition:expected_font_names> had an error: KeyError: 'fvar'
@@ -303,14 +297,9 @@ equal
 </div></details><details><summary>🔥 <b>FAIL:</b> Ensure soft_dotted characters lose their dot when combined with marks that replace the dot. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/soft_dotted">com.google.fonts/check/soft_dotted</a>)</summary><div>
 
 
-* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ i̋ j̀ j́ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
+* 🔥 **FAIL** The dot of soft dotted characters used in orthographies must disappear in the following strings: i̊ j̃ j̄ j̈ į̀ į́ į̂ į̃ į̄ į̌
 
-The dot of soft dotted characters should disappear in other cases, for example: ĩ ĭ i̇ ǐ i̒ ĩ̠ ĭ̠ i̠̇ i̠̊ i̠̋ ǐ̠ i̠̒ ị̃ ị̆ ị̇ ị̊ ị̋ ị̌ ị̒ ĩ̤ [code: soft-dotted]
-</div></details><details><summary>⚠ <b>WARN:</b> Glyphs are similiar to Google Fonts version? (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/production_glyphs_similarity">com.google.fonts/check/production_glyphs_similarity</a>)</summary><div>
-
-
-* ⚠ **WARN** Following glyphs differ greatly from Google Fonts version:
-	* SAM4xout
+The dot of soft dotted characters should disappear in other cases, for example: ĩ i̇ ĩ̠ i̠̇ i̠̊ ị̃ ị̇ ị̊ ĩ̤ i̤̇ i̤̊ ĩ̥ i̥̇ i̥̊ ĩ̦ i̦̇ i̦̊ ĩ̧ i̧̇ i̧̊ [code: soft-dotted]
 </div></details><details><summary>⚠ <b>WARN:</b> Ensure variable fonts include an avar table. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/googlefonts.html#com.google.fonts/check/mandatory_avar_table">com.google.fonts/check/mandatory_avar_table</a>)</summary><div>
 
 
@@ -341,13 +330,13 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 </div></details><details><summary>⚠ <b>WARN:</b> Detect any interpolation issues in the font. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/interpolation_issues">com.google.fonts/check/interpolation_issues</a>)</summary><div>
 
 
-* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 1 start point differs in glyph 'uni072B' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f315b8c83d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f315c6bbf50>
+* ⚠ **WARN** Interpolation issues were found in the font: 	- Contour 1 start point differs in glyph 'uni072B.medi' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f51c3a97b10> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f51c3a97410>
 
-	- Contour 1 start point differs in glyph 'uni072B.fina' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f315b8c83d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f315c6bbf50>
+	- Contour 1 start point differs in glyph 'uni072B.fina' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f51c3a97b10> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f51c3a97410>
 
-	- Contour 1 start point differs in glyph 'uni072B.medi' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f315b8c83d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f315c6bbf50> 
+	- Contour 1 start point differs in glyph 'uni072B' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f51c3a97b10> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f51c3a97410> 
 
-	- Contour 1 start point differs in glyph 'uni072B.init' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f315b8c83d0> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f315c6bbf50> [code: interpolation-issues]
+	- Contour 1 start point differs in glyph 'uni072B.init' between location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f51c3a97b10> and location <fontTools.ttLib.ttGlyphSet._TTGlyphSetGlyf object at 0x7f51c3a97410> [code: interpolation-issues]
 </div></details><details><summary>⚠ <b>WARN:</b> Check math signs have the same width. (<a href="https://font-bakery.readthedocs.io/en/stable/fontbakery/profiles/universal.html#com.google.fonts/check/math_signs_width">com.google.fonts/check/math_signs_width</a>)</summary><div>
 
 
@@ -355,7 +344,7 @@ The dot of soft dotted characters should disappear in other cases, for example: 
 The following math glyphs have a different width, though:
 
 Width = 573:
-plus, minus, equal
+equal, minus, plus
  [code: width-outliers]
 </div></details><br></div></details>
 
@@ -363,8 +352,8 @@ plus, minus, equal
 
 | 💔 ERROR | 🔥 FAIL | ⚠ WARN | 💤 SKIP | ℹ INFO | 🍞 PASS | 🔎 DEBUG |
 |:-----:|:----:|:----:|:----:|:----:|:----:|:----:|
-| 3 | 12 | 25 | 442 | 26 | 412 | 0 |
-| 0% | 1% | 3% | 48% | 3% | 45% | 0% |
+| 4 | 12 | 22 | 451 | 26 | 418 | 0 |
+| 0% | 1% | 2% | 48% | 3% | 45% | 0% |
 
 **Note:** The following loglevels were omitted in this report:
 * **SKIP**
