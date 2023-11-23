@@ -1,8 +1,8 @@
 {
-.appVersion = "3195";
+.appVersion = "3225";
 .formatVersion = 3;
 DisplayStrings = (
-"᷺ܒ"
+"/uni0723.fina ܒ"
 );
 axes = (
 {
@@ -1328,7 +1328,6 @@ over = -15;
 pos = -486;
 },
 {
-over = -15;
 }
 );
 name = Regular;
@@ -1409,7 +1408,6 @@ over = -15;
 pos = -486;
 },
 {
-over = -15;
 }
 );
 name = Thin;
@@ -1490,7 +1488,6 @@ over = -15;
 pos = -486;
 },
 {
-over = -15;
 }
 );
 name = Black;
@@ -12553,7 +12550,7 @@ unicode = 1827;
 },
 {
 glyphname = uni0723.fina;
-lastChange = "2023-01-02 10:13:56 +0000";
+lastChange = "2023-11-23 13:27:03 +0000";
 layers = (
 {
 anchors = (
@@ -12859,6 +12856,9 @@ nodes = (
 {
 closed = 1;
 nodes = (
+(810,169,o),
+(803,170,o),
+(797,171,c),
 (800,202,o),
 (805,246,o),
 (820,283,cs),
@@ -12870,10 +12870,7 @@ nodes = (
 (962,277,cs),
 (962,205,o),
 (896,169,o),
-(817,169,cs),
-(810,169,o),
-(803,170,o),
-(797,171,c)
+(817,169,cs)
 );
 }
 );
@@ -45062,13 +45059,8 @@ key = copyrights;
 value = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/syriac)";
 },
 {
-key = manufacturers;
-values = (
-{
-language = ENG;
-value = "Monotype Imaging Inc.";
-}
-);
+key = description;
+value = "Designed by Monotype design team.";
 },
 {
 key = designers;
@@ -45080,21 +45072,8 @@ value = "Patrick Giasson and the Monotype Design Team";
 );
 },
 {
-key = description;
-value = "Designed by Monotype design team.";
-},
-{
-key = trademarks;
-values = (
-{
-language = ENG;
-value = "Noto is a trademark of Google Inc.";
-}
-);
-},
-{
-key = licenseURL;
-value = "https://scripts.sil.org/OFL";
+key = designerURL;
+value = "http://www.monotype.com/studio";
 },
 {
 key = licenses;
@@ -45106,12 +45085,30 @@ value = "This Font Software is licensed under the SIL Open Font License, Version
 );
 },
 {
+key = licenseURL;
+value = "https://scripts.sil.org/OFL";
+},
+{
+key = manufacturers;
+values = (
+{
+language = ENG;
+value = "Monotype Imaging Inc.";
+}
+);
+},
+{
 key = manufacturerURL;
 value = "http://www.google.com/get/noto/";
 },
 {
-key = designerURL;
-value = "http://www.monotype.com/studio";
+key = trademarks;
+values = (
+{
+language = ENG;
+value = "Noto is a trademark of Google Inc.";
+}
+);
 },
 {
 key = vendorID;
