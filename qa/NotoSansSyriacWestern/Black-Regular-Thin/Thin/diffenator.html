@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSansSyriacWestern[wght].ttf);
+    font-family: "old font";
+    font-weight: 100 900;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSansSyriacWestern-Thin.ttf);
+    font-family: "new font";
+    font-weight: 100;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-Thin{
+    font-family: "old font", "Adobe NotDef";
+    font-weight: 100.0;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 100.0;
+}
+	  
+
+	  
+	    .new-Thin{
+    font-family: "new font", "Adobe NotDef";
+    font-weight: 100;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 100;
+}
+	  
+
+	  
+	
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+
+	   #ot-panel {
+		max-height: 400px;
+		overflow-y: scroll;
+		background: white;
+		padding: 10px;
+		display: none;
+	   }
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+			<div class="nav-item" id="ot-button">OT features</div>
+			<div id="ot-panel">
+			</div>
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     <script>var fontdiff = {"hhea": {"minLeftSideBearing": [-378, -332], "numberOfHMetrics": [296, 297], "xMaxExtent": [1089, 986], "advanceWidthMax": [1089, 986], "minRightSideBearing": [-219, -210]}, "OS/2": {"panose": {"bLetterForm": [2, 0], "bSerifStyle": [11, 0], "bWeight": [5, 0], "bFamilyType": [2, 0], "bProportion": [2, 0], "bContrast": [4, 0], "bStrokeVariation": [5, 0], "bMidline": [2, 0], "bArmStyle": [4, 0], "bXHeight": [4, 0]}, "usWeightClass": [400, 100], "xAvgCharWidth": [539, 500]}, "gasp": {"tableTag": ["gasp", null], "version": [1, null], "gaspRange": {"65535": [15, null]}}, "fvar": {"axes": {"wght": {"minValue": [100.0, null], "maxValue": [900.0, null], "defaultValue": [400.0, null], "axisName": ["Weight", null]}}, "instances": {"Thin": {"coordinates": {"wght": [100.0, null]}, "flags": [0, null]}, "ExtraLight": {"coordinates": {"wght": [200.0, null]}, "flags": [0, null]}, "Light": {"coordinates": {"wght": [300.0, null]}, "flags": [0, null]}, "Regular": {"coordinates": {"wght": [400.0, null]}, "flags": [0, null]}, "Medium": {"coordinates": {"wght": [500.0, null]}, "flags": [0, null]}, "SemiBold": {"coordinates": {"wght": [600.0, null]}, "flags": [0, null]}, "Bold": {"coordinates": {"wght": [700.0, null]}, "flags": [0, null]}, "ExtraBold": {"coordinates": {"wght": [800.0, null]}, "flags": [0, null]}, "Black": {"coordinates": {"wght": [900.0, null]}, "flags": [0, null]}}}, "name": {"268/3/1/1033": ["Light", null], "17/3/1/1033": [null, "Thin"], "16/3/1/1033": [null, "Noto Sans Syriac Western"], "266/1/0/0": ["Thin", null], "262/3/1/1033": ["Medium", null], "274/3/1/1033": ["Black", null], "259/3/1/1033": ["Black", null], "270/1/0/0": ["Medium", null], "271/1/0/0": ["SemiBold", null], "261/3/1/1033": ["Light", null], "25/3/1/1033": ["NotoSansSyriacWestern", null], "269/1/0/0": ["Regular", null], "268/1/0/0": ["Light", null], "273/3/1/1033": ["ExtraBold", null], "3/3/1/1033": ["3.000;GOOG;NotoSansSyriacWestern-Regular", "3.000;GOOG;NotoSansSyriacWestern-Thin"], "267/3/1/1033": ["ExtraLight", null], "258/3/1/1033": ["Thin", null], "6/3/1/1033": ["NotoSansSyriacWestern-Regular", "NotoSansSyriacWestern-Thin"], "266/3/1/1033": ["Thin", null], "1/3/1/1033": ["Noto Sans Syriac Western", "Noto Sans Syriac Western Thin"], "271/3/1/1033": ["SemiBold", null], "260/3/1/1033": ["ExtraLight", null], "273/1/0/0": ["ExtraBold", null], "265/3/1/1033": ["ExtraBold", null], "274/1/0/0": ["Black", null], "263/3/1/1033": ["SemiBold", null], "264/3/1/1033": ["Bold", null], "269/3/1/1033": ["Regular", null], "272/3/1/1033": ["Bold", null], "270/3/1/1033": ["Medium", null], "272/1/0/0": ["Bold", null], "256/3/1/1033": ["Weight", null], "4/3/1/1033": ["Noto Sans Syriac Western Regular", "Noto Sans Syriac Western Thin"], "267/1/0/0": ["ExtraLight", null]}, "maxp": {"numGlyphs": [296, 297], "maxCompositePoints": [36, 33]}, "gvar": {"tableTag": ["gvar", null], "version": [1, null], "reserved": [0, null], "axisCount": [1, null], "sharedTupleCount": [2, null], "offsetToSharedTuples": [614, null], "glyphCount": [296, null], "flags": [0, null], "offsetToGlyphVariationData": [618, null]}, "glyf": {"axisTags": {"0": ["wght", null]}, "glyphOrder": {"241": ["fraction", "uni25CC"], "242": ["uni25CC", "uni2670"], "243": ["uni2670", "uni2671"], "244": ["uni2671", "uni072Auni0308.isol"], "245": ["uni072Auni0308.isol", "uni072Auni0308.fina"], "246": ["uni072Auni0308.fina", "uni0713.fina.wide"], "247": ["uni0713.fina.wide", "uni0713.medi.wide"], "248": ["uni0713.medi.wide", "uni0714.fina.wide"], "249": ["uni0714.fina.wide", "uni0714.medi.wide"], "250": ["uni0714.medi.wide", "uni072E.fina.wide"], "251": ["uni072E.fina.wide", "uni072E.medi.wide"], "252": ["uni072E.medi.wide", "uni0713.fina.wide2"], "253": ["uni0713.fina.wide2", "uni0713.medi.wide2"], "254": ["uni0713.medi.wide2", "uni0714.fina.wide2"], "255": ["uni0714.fina.wide2", "uni0714.medi.wide2"], "256": ["uni0714.medi.wide2", "uni072E.fina.wide2"], "257": ["uni072E.fina.wide2", "uni072E.medi.wide2"], "258": ["uni072E.medi.wide2", "uni0732.above"], "259": ["uni0732.above", "uni0732.below"], "260": ["uni0732.below", "uni0710.fina.liga"], "261": ["uni0710.fina.liga", "uni0710.fina.liga.long"], "262": ["uni0710.fina.liga.long", "uni0710.med2slant"], "263": ["uni0710.med2slant", "uni0710.medi.liga"], "264": ["uni0710.medi.liga", "uni0710.medi.liga.long"], "265": ["uni0710.medi.liga.long", "uni0710.slant"], "266": ["uni0710.slant", "uni0715.fina.qr"], "267": ["uni0715.fina.qr", "uni0715.qr"], "268": ["uni0715.qr", "uni0716.fina.qr"], "269": ["uni0716.fina.qr", "uni0716.qr"], "270": ["uni0716.qr", "uni071B.init.long"], "271": ["uni071B.init.long", "uni071B.medi.long"], "272": ["uni071B.medi.long", "uni071C.init.long"], "273": ["uni071C.init.long", "uni071C.medi.long"], "274": ["uni071C.medi.long", "uni0720.init.liga"], "275": ["uni0720.init.liga", "uni0720.init.long"], "276": ["uni0720.init.long", "uni0720.initN"], "277": ["uni0720.initN", "uni0720.medi.liga"], "278": ["uni0720.medi.liga", "uni0720.medi.long"], "279": ["uni0720.medi.long", "uni0720.mediN"], "280": ["uni0720.mediN", "uni0722.finaG"], "281": ["uni0722.finaG", "uni0722.finaW"], "282": ["uni0722.finaW", "uni0722.init.liga"], "283": ["uni0722.init.liga", "uni0722.initN"], "284": ["uni0722.initN", "uni0722.medi.liga"], "285": ["uni0722.medi.liga", "uni0722.mediN"], "286": ["uni0722.mediN", "uni0728.Alt"], "287": ["uni0728.Alt", "uni0728.finaAlt"], "288": ["uni0728.finaAlt", "uni072A.fina.qr"], "289": ["uni072A.fina.qr", "uni072A.qr"], "290": ["uni072A.qr", "uni072Auni0308.fina.qr"], "291": ["uni072Auni0308.fina.qr", "uni072Auni0308.isol.qr"], "292": ["uni072Auni0308.isol.qr", "uni072F.fina.qr"], "293": ["uni072F.fina.qr", "uni072F.qr"], "294": ["uni072F.qr", "uni1DF8"], "295": ["centerdot", "uni1DFA"], "296": [null, "centerdot"]}}, "GSUB": {"table": {"LookupList": {"Lookup": {"25": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0720.init": [4, 1], "uni0722.init": [2, 3], "uni0722.medi": [1, 4], "uni0720.medi": [3, 2]}}}}}, "32": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0722.medi": [1, 2], "uni0722.init": [2, 1]}}}}}, "34": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0722.initN": [2, 1], "uni0722.mediN": [1, 2]}}}}}, "35": {"SubTable": {"0": {"LookAheadClassDef": {"classDefs": {"uni071D.medi": [3, 2], "uni071F.fina": [2, 3]}}, "ChainSubClassSet": {"1": {"ChainSubClassRule": {"0": {"LookAhead": {"1": [3, 2]}}, "1": {"LookAhead": {"1": [2, 3]}}}}, "2": {"ChainSubClassRule": {"0": {"LookAhead": {"1": [3, 2]}}, "1": {"LookAhead": {"1": [2, 3]}}}}}, "InputClassDef": {"classDefs": {"uni0722.initN": [2, 1], "uni0722.mediN": [1, 2]}}}}}, "36": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0722.initN": [2, 1], "uni0722.mediN": [1, 2]}}}}}, "37": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0720.init": [2, 1], "uni0720.medi": [1, 2]}}}}}, "38": {"SubTable": {"0": {"LookAheadClassDef": {"classDefs": {"uni072E.fina": [3, 5], "uni071F.fina": [5, 3]}}, "ChainSubClassSet": {"1": {"ChainSubClassRule": {"1": {"LookAhead": {"0": [5, 3]}}, "3": {"LookAhead": {"0": [3, 5]}}}}, "2": {"ChainSubClassRule": {"1": {"LookAhead": {"0": [5, 3]}}, "3": {"LookAhead": {"0": [3, 5]}}}}}, "InputClassDef": {"classDefs": {"uni0720.initN": [2, 1], "uni0720.mediN": [1, 2]}}}}}, "40": {"SubTable": {"0": {"LookAheadClassDef": {"classDefs": {"uni0725.medi": [4, 9], "uni071D.medi": [7, 6], "uni071F.fina": [6, 7], "uni0725.fina": [5, 8], "uni071A.medi": [8, 5], "uni071A.fina": [9, 4]}}, "ChainSubClassSet": {"1": {"ChainSubClassRule": {"4": {"LookAhead": {"1": [7, 6]}}, "5": {"LookAhead": {"0": [7, 6]}}, "6": {"LookAhead": {"1": [8, 5]}}, "7": {"LookAhead": {"0": [8, 5]}}, "8": {"LookAhead": {"1": [9, 4]}}, "9": {"LookAhead": {"0": [9, 4]}}, "10": {"LookAhead": {"1": [6, 7]}}, "11": {"LookAhead": {"0": [6, 7]}}, "12": {"LookAhead": {"1": [6, 7]}}, "13": {"LookAhead": {"0": [6, 7]}}, "14": {"LookAhead": {"1": [4, 9]}}, "15": {"LookAhead": {"0": [4, 9]}}, "16": {"LookAhead": {"1": [5, 8]}}, "17": {"LookAhead": {"0": [5, 8]}}}}, "2": {"ChainSubClassRule": {"4": {"LookAhead": {"1": [7, 6]}}, "5": {"LookAhead": {"0": [7, 6]}}, "6": {"LookAhead": {"1": [8, 5]}}, "7": {"LookAhead": {"0": [8, 5]}}, "8": {"LookAhead": {"1": [9, 4]}}, "9": {"LookAhead": {"0": [9, 4]}}, "10": {"LookAhead": {"1": [6, 7]}}, "11": {"LookAhead": {"0": [6, 7]}}, "12": {"LookAhead": {"1": [6, 7]}}, "13": {"LookAhead": {"0": [6, 7]}}, "14": {"LookAhead": {"1": [4, 9]}}, "15": {"LookAhead": {"0": [4, 9]}}, "16": {"LookAhead": {"1": [5, 8]}}, "17": {"LookAhead": {"0": [5, 8]}}}}}, "InputClassDef": {"classDefs": {"uni0720.initN": [2, 1], "uni0720.mediN": [1, 2]}}}}}, "41": {"SubTable": {"0": {"LookAheadClassDef": {"classDefs": {"uni071D.medi": [3, 2], "uni071F.fina": [2, 3]}}, "ChainSubClassSet": {"1": {"ChainSubClassRule": {"0": {"LookAhead": {"1": [3, 2]}}, "1": {"LookAhead": {"1": [2, 3]}}}}, "2": {"ChainSubClassRule": {"0": {"LookAhead": {"1": [3, 2]}}, "1": {"LookAhead": {"1": [2, 3]}}}}}, "InputClassDef": {"classDefs": {"uni0720.initN": [2, 1], "uni0720.mediN": [1, 2]}}}}}, "42": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0720.initN": [2, 1], "uni0720.mediN": [1, 2]}}}}}, "45": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0720.init": [2, 1], "uni0720.medi": [1, 2]}}}}}, "46": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0720.init": [2, 1], "uni0720.medi": [1, 2]}}}}}, "47": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni072Auni0308.isol": [3, 8], "uni072A.fina": [5, 6], "uni072F.fina": [1, 10], "uni072F": [2, 9], "uni0715.fina": [9, 2], "uni072Auni0308.fina": [4, 7], "uni0715": [10, 1], "uni072A": [6, 5], "uni0716": [8, 3], "uni0716.fina": [7, 4]}}}}}, "48": {"SubTable": {"0": {"ChainSubClassSet": {"1": {"ChainSubClassRule": {"1": {"SubstLookupRecord": {"0": {"LookupListIndex": [4, 3]}}}}}, "2": {"ChainSubClassRule": {"1": {"SubstLookupRecord": {"0": {"LookupListIndex": [4, 3]}}}}}, "5": {"ChainSubClassRule": {"1": {"SubstLookupRecord": {"0": {"LookupListIndex": [3, 4]}}}}}, "6": {"ChainSubClassRule": {"1": {"SubstLookupRecord": {"0": {"LookupListIndex": [3, 4]}}}}}}, "InputClassDef": {"classDefs": {"uni0713.medi": [5, 2], "uni072E.fina": [2, 5], "uni072E.medi": [1, 6], "uni0714.medi": [3, 4], "uni0714.fina": [4, 3], "uni0713.fina": [6, 1]}}}}}, "49": {"SubTable": {"0": {"ChainSubClassSet": {"1": {"ChainSubClassRule": {"0": {"SubstLookupRecord": {"0": {"LookupListIndex": [5, 4]}}}}}, "2": {"ChainSubClassRule": {"0": {"SubstLookupRecord": {"0": {"LookupListIndex": [5, 4]}}}}}, "5": {"ChainSubClassRule": {"0": {"SubstLookupRecord": {"0": {"LookupListIndex": [4, 5]}}}}}, "6": {"ChainSubClassRule": {"0": {"SubstLookupRecord": {"0": {"LookupListIndex": [4, 5]}}}}}}, "InputClassDef": {"classDefs": {"uni0713.medi": [5, 2], "uni072E.fina": [2, 5], "uni072E.medi": [1, 6], "uni0714.medi": [3, 4], "uni0714.fina": [4, 3], "uni0713.fina": [6, 1]}}}}}, "50": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0728": [2, 1], "uni0728.fina": [1, 2]}}}}}}}}}, "post": {"extraNames": {"274": ["centerdot", "uni1DF8"], "275": [null, "uni1DFA"], "276": [null, "centerdot"]}}, "HVAR": {"tableTag": ["HVAR", null], "table": {"Version": [65536, null], "VarStore": {"Format": [1, null], "VarRegionList": {"RegionAxisCount": [1, null], "RegionCount": [2, null], "Region": {"0": {"VarRegionAxis": {"0": {"StartCoord": [-1.0, null], "PeakCoord": [-1.0, null], "EndCoord": [0.0, null]}}}, "1": {"VarRegionAxis": {"0": {"StartCoord": [0.0, null], "PeakCoord": [1.0, null], "EndCoord": [1.0, null]}}}}}, "VarDataCount": [5, null], "VarData": {"0": {"ItemCount": [3, null], "NumShorts": [0, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [1, null]}, "Item": {"0": {"0": [0, null]}, "1": {"0": [15, null]}, "2": {"0": [41, null]}}}, "1": {"ItemCount": [134, null], "NumShorts": [0, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [0, null], "1": [1, null]}, "Item": {"error": ["There are 134 changes, check manually!", ""]}}, "2": {"ItemCount": [2, null], "NumShorts": [1, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [0, null], "1": [1, null]}, "Item": {"0": {"0": [-132, null], "1": [104, null]}, "1": {"0": [-21, null], "1": [0, null]}}}, "3": {"ItemCount": [33, null], "NumShorts": [1, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [1, null], "1": [0, null]}, "Item": {"0": {"0": [137, null], "1": [-89, null]}, "1": {"0": [157, null], "1": [-87, null]}, "2": {"0": [135, null], "1": [-77, null]}, "3": {"0": [171, null], "1": [-76, null]}, "4": {"0": [135, null], "1": [-74, null]}, "5": {"0": [168, null], "1": [-72, null]}, "6": {"0": [193, null], "1": [-72, null]}, "7": {"0": [180, null], "1": [-70, null]}, "8": {"0": [209, null], "1": [-60, null]}, "9": {"0": [149, null], "1": [-58, null]}, "10": {"0": [143, null], "1": [-56, null]}, "11": {"0": [147, null], "1": [-53, null]}, "12": {"0": [139, null], "1": [-48, null]}, "13": {"0": [158, null], "1": [-46, null]}, "14": {"0": [217, null], "1": [-46, null]}, "15": {"0": [217, null], "1": [-45, null]}, "16": {"0": [274, null], "1": [-45, null]}, "17": {"0": [154, null], "1": [-42, null]}, "18": {"0": [207, null], "1": [-41, null]}, "19": {"0": [207, null], "1": [-40, null]}, "20": {"0": [264, null], "1": [-40, null]}, "21": {"0": [207, null], "1": [-38, null]}, "22": {"0": [207, null], "1": [-37, null]}, "23": {"0": [264, null], "1": [-37, null]}, "24": {"0": [171, null], "1": [-36, null]}, "25": {"0": [151, null], "1": [-30, null]}, "26": {"0": [153, null], "1": [-24, null]}, "27": {"0": [139, null], "1": [-19, null]}, "28": {"0": [137, null], "1": [-13, null]}, "29": {"0": [141, null], "1": [-13, null]}, "30": {"0": [140, null], "1": [-12, null]}, "31": {"0": [148, null], "1": [-11, null]}, "32": {"0": [137, null], "1": [-4, null]}}}, "4": {"ItemCount": [2, null], "NumShorts": [2, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [0, null], "1": [1, null]}, "Item": {"0": {"0": [-168, null], "1": [162, null]}, "1": {"0": [-133, null], "1": [232, null]}}}}}, "AdvWidthMap": {"mapping": {"error": ["There are 296 changes, check manually!", ""]}}}}, "head": {"yMax": [892, 846], "yMin": [-405, -382], "xMax": [1089, 986], "checkSumAdjustment": [2103076014, 3206878058], "modified": [3755598842, 3783591229], "xMin": [-378, -332]}, "prep": {"tableTag": ["prep", null]}, "cmap": {"0x1DF8": [null, "uni1DF8"], "0x1DFA": [null, "uni1DFA"], "0x2044": ["fraction", null]}, "GPOS": {"table": {"LookupList": {"Lookup": {"18": {"SubTable": {"0": {"BaseArray": {"BaseRecord": {"error": ["There are 163 changes, check manually!", ""]}}}}}, "19": {"SubTable": {"0": {"Mark2Array": {"Mark2Record": {"1": {"Mark2Anchor": {"0": {"XDeviceTable": {"StartSize": [1, null], "EndSize": [15, null], "DeltaFormat": [32768, null]}, "Format": [3, 1]}}}, "2": {"Mark2Anchor": {"0": {"XDeviceTable": {"StartSize": [1, null], "EndSize": [14, null], "DeltaFormat": [32768, null]}, "YCoordinate": [677, 670], "YDeviceTable": {"StartSize": [0, null], "EndSize": [1, null], "DeltaFormat": [32768, null]}, "Format": [3, 1]}}}, "3": {"Mark2Anchor": {"0": {"XDeviceTable": {"StartSize": [1, null], "EndSize": [12, null], "DeltaFormat": [32768, null]}, "YCoordinate": [728, 692], "YDeviceTable": {"StartSize": [2, null], "EndSize": [141, null], "DeltaFormat": [32768, null]}, "Format": [3, 1]}}}, "4": {"Mark2Anchor": {"0": {"XDeviceTable": {"StartSize": [1, null], "EndSize": [14, null], "DeltaFormat": [32768, null]}, "YCoordinate": [728, 692], "YDeviceTable": {"StartSize": [2, null], "EndSize": [141, null], "DeltaFormat": [32768, null]}, "Format": [3, 1]}}}}}}}}, "20": {"SubTable": {"0": {"Mark2Array": {"Mark2Record": {"0": {"Mark2Anchor": {"0": {"YCoordinate": [-136, -130], "YDeviceTable": {"StartSize": [0, null], "EndSize": [2, null], "DeltaFormat": [32768, null]}, "Format": [3, 1]}}}, "1": {"Mark2Anchor": {"0": {"YCoordinate": [-186, -153], "YDeviceTable": {"StartSize": [2, null], "EndSize": [507, null], "DeltaFormat": [32768, null]}, "Format": [3, 1]}}}, "2": {"Mark2Anchor": {"0": {"XDeviceTable": {"StartSize": [1, null], "EndSize": [18, null], "DeltaFormat": [32768, null]}, "YCoordinate": [-186, -153], "YDeviceTable": {"StartSize": [2, null], "EndSize": [507, null], "DeltaFormat": [32768, null]}, "Format": [3, 1]}}}, "3": {"Mark2Anchor": {"0": {"XDeviceTable": {"StartSize": [1, null], "EndSize": [17, null], "DeltaFormat": [32768, null]}, "YCoordinate": [-186, -168], "YDeviceTable": {"StartSize": [2, null], "EndSize": [485, null], "DeltaFormat": [32768, null]}, "Format": [3, 1]}}}, "4": {"Mark2Anchor": {"0": {"XDeviceTable": {"StartSize": [1, null], "EndSize": [17, null], "DeltaFormat": [32768, null]}, "Format": [3, 1]}}}, "5": {"Mark2Anchor": {"0": {"XDeviceTable": {"StartSize": [1, null], "EndSize": [17, null], "DeltaFormat": [32768, null]}, "Format": [3, 1]}}}, "6": {"Mark2Anchor": {"0": {"YCoordinate": [-136, -130], "YDeviceTable": {"StartSize": [0, null], "EndSize": [2, null], "DeltaFormat": [32768, null]}, "Format": [3, 1]}}}}}}}}, "21": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0725.init": [10, 11], "uni0712.init": [20, 1], "uni074F.init": [2, 19], "uni0726.init": [8, 13], "uni0726.medi": [7, 14], "uni0725.medi": [9, 12], "uni074F.medi": [1, 20], "uni071F.medi": [13, 8], "uni071A.init": [18, 3], "uni072D.medi": [5, 16], "uni0712.medi": [19, 2], "uni074E.medi": [3, 18], "uni0721.init": [12, 9], "uni071D.medi": [15, 6], "uni071D.init": [16, 5], "uni071F.init": [14, 7], "uni074E.init": [4, 17], "uni0721.medi": [11, 10], "uni071A.medi": [17, 4], "uni072D.init": [6, 15]}}}}}, "23": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0727.medi": [1, 6], "uni0726.init": [4, 3], "uni0726.medi": [3, 4], "uni071F.init": [6, 1], "uni071F.medi": [5, 2], "uni0727.init": [2, 5]}}}}}, "25": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni072A.fina": [5, 6], "uni072F.fina": [1, 10], "uni072F": [2, 9], "uni0715.fina": [9, 2], "uni072C": [4, 7], "uni0715": [10, 1], "uni072A": [6, 5], "uni0716": [8, 3], "uni072C.fina": [3, 8], "uni0716.fina": [7, 4]}}}}}, "26": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni072A.fina": [4, 8], "uni0710": [8, 4], "uni072A": [5, 7], "uni0716": [7, 5]}}}}}, "27": {"SubTable": {"0": {"BacktrackClassDef": {"classDefs": {"uni072F.qr": [4, 17], "uni071D.init": [15, 6], "uni0722.init.liga": [10, 11], "uni072F": [5, 16], "uni072A": [9, 12], "uni072Auni0308.isol.qr": [6, 15], "uni0716.qr": [16, 5], "uni0720.init.liga": [13, 8], "uni072A.qr": [8, 13], "uni071F": [14, 7], "uni072Auni0308.isol": [7, 14], "uni0721": [12, 9], "uni0716": [17, 4], "uni0722.init": [11, 10]}}, "ChainPosClassSet": {"1": {"ChainPosClassRule": {"1": {"Backtrack": {"0": [17, 4]}}, "2": {"Backtrack": {"0": [16, 5]}}, "3": {"Backtrack": {"0": [9, 12]}}, "4": {"Backtrack": {"0": [8, 13]}}, "5": {"Backtrack": {"0": [5, 16]}}, "6": {"Backtrack": {"0": [4, 17]}}, "7": {"Backtrack": {"0": [7, 14]}}, "8": {"Backtrack": {"0": [6, 15]}}, "9": {"Backtrack": {"0": [15, 6]}}, "10": {"Backtrack": {"0": [14, 7]}}, "11": {"Backtrack": {"0": [12, 9]}}, "12": {"Backtrack": {"0": [13, 8]}}, "13": {"Backtrack": {"0": [11, 10]}}, "14": {"Backtrack": {"0": [10, 11]}}, "16": {"Backtrack": {"0": [17, 4]}}, "17": {"Backtrack": {"0": [16, 5]}}, "18": {"Backtrack": {"0": [9, 12]}}, "19": {"Backtrack": {"0": [8, 13]}}, "20": {"Backtrack": {"0": [5, 16]}}, "21": {"Backtrack": {"0": [4, 17]}}, "22": {"Backtrack": {"0": [7, 14]}}, "23": {"Backtrack": {"0": [6, 15]}}, "24": {"Backtrack": {"0": [15, 6]}}, "25": {"Backtrack": {"0": [14, 7]}}, "26": {"Backtrack": {"0": [12, 9]}}, "27": {"Backtrack": {"0": [13, 8]}}, "28": {"Backtrack": {"0": [11, 10]}}, "29": {"Backtrack": {"0": [10, 11]}}, "31": {"Backtrack": {"0": [17, 4]}}, "32": {"Backtrack": {"0": [16, 5]}}, "33": {"Backtrack": {"0": [9, 12]}}, "34": {"Backtrack": {"0": [8, 13]}}, "35": {"Backtrack": {"0": [5, 16]}}, "36": {"Backtrack": {"0": [4, 17]}}, "37": {"Backtrack": {"0": [7, 14]}}, "38": {"Backtrack": {"0": [6, 15]}}, "39": {"Backtrack": {"0": [15, 6]}}, "40": {"Backtrack": {"0": [14, 7]}}, "41": {"Backtrack": {"0": [12, 9]}}, "42": {"Backtrack": {"0": [13, 8]}}, "43": {"Backtrack": {"0": [11, 10]}}, "44": {"Backtrack": {"0": [10, 11]}}}}}}}}, "29": {"SubTable": {"0": {"LookAheadClassDef": {"classDefs": {"uni0729.init": [4, 6], "uni074F.init": [2, 8], "uni071A.init": [6, 4], "uni0718": [7, 3], "uni0621": [8, 2], "uni072C": [3, 7]}}, "ChainPosClassSet": {"1": {"ChainPosClassRule": {"0": {"LookAhead": {"2": [7, 3]}}, "1": {"LookAhead": {"2": [4, 6]}}, "2": {"LookAhead": {"2": [6, 4]}}, "4": {"LookAhead": {"2": [3, 7]}}, "5": {"LookAhead": {"2": [2, 8]}}, "6": {"LookAhead": {"2": [8, 2]}}, "7": {"LookAhead": {"1": [7, 3]}}, "8": {"LookAhead": {"1": [4, 6]}}, "9": {"LookAhead": {"1": [6, 4]}}, "11": {"LookAhead": {"1": [3, 7]}}, "12": {"LookAhead": {"1": [2, 8]}}, "13": {"LookAhead": {"1": [8, 2]}}, "14": {"LookAhead": {"0": [7, 3]}}, "15": {"LookAhead": {"0": [4, 6]}}, "16": {"LookAhead": {"0": [6, 4]}}, "18": {"LookAhead": {"0": [3, 7]}}, "19": {"LookAhead": {"0": [2, 8]}}, "20": {"LookAhead": {"0": [8, 2]}}}}}}}}}}}}, "hmtx": {"metrics": {"error": ["There are 291 changes, check manually!", ""]}}, "GDEF": {"table": {"Version": [65539, 65538], "VarStore": {"Format": [1, null], "VarRegionList": {"RegionAxisCount": [1, null], "RegionCount": [2, null], "Region": {"0": {"VarRegionAxis": {"0": {"StartCoord": [-1.0, null], "PeakCoord": [-1.0, null], "EndCoord": [0.0, null]}}}, "1": {"VarRegionAxis": {"0": {"StartCoord": [0.0, null], "PeakCoord": [1.0, null], "EndCoord": [1.0, null]}}}}}, "VarDataCount": [7, null], "VarData": {"0": {"ItemCount": [5, null], "NumShorts": [0, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [0, null]}, "Item": {"0": {"0": [-102, null]}, "1": {"0": [-7, null]}, "2": {"0": [6, null]}, "3": {"0": [31, null]}, "4": {"0": [48, null]}}}, "1": {"ItemCount": [39, null], "NumShorts": [0, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [1, null]}, "Item": {"0": {"0": [-40, null]}, "1": {"0": [-38, null]}, "2": {"0": [-36, null]}, "3": {"0": [-28, null]}, "4": {"0": [-24, null]}, "5": {"0": [-17, null]}, "6": {"0": [-12, null]}, "7": {"0": [-11, null]}, "8": {"0": [-10, null]}, "9": {"0": [-9, null]}, "10": {"0": [-6, null]}, "11": {"0": [-5, null]}, "12": {"0": [-4, null]}, "13": {"0": [-3, null]}, "14": {"0": [-2, null]}, "15": {"0": [-1, null]}, "16": {"0": [1, null]}, "17": {"0": [3, null]}, "18": {"0": [4, null]}, "19": {"0": [6, null]}, "20": {"0": [11, null]}, "21": {"0": [25, null]}, "22": {"0": [30, null]}, "23": {"0": [35, null]}, "24": {"0": [36, null]}, "25": {"0": [43, null]}, "26": {"0": [44, null]}, "27": {"0": [59, null]}, "28": {"0": [68, null]}, "29": {"0": [71, null]}, "30": {"0": [81, null]}, "31": {"0": [82, null]}, "32": {"0": [83, null]}, "33": {"0": [84, null]}, "34": {"0": [85, null]}, "35": {"0": [96, null]}, "36": {"0": [102, null]}, "37": {"0": [103, null]}, "38": {"0": [110, null]}}}, "2": {"ItemCount": [537, null], "NumShorts": [0, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [0, null], "1": [1, null]}, "Item": {"error": ["There are 537 changes, check manually!", ""]}}, "3": {"ItemCount": [2, null], "NumShorts": [1, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [1, null]}, "Item": {"0": {"0": [132, null]}, "1": {"0": [133, null]}}}, "4": {"ItemCount": [2, null], "NumShorts": [1, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [0, null], "1": [1, null]}, "Item": {"0": {"0": [-144, null], "1": [87, null]}, "1": {"0": [-135, null], "1": [125, null]}}}, "5": {"ItemCount": [49, null], "NumShorts": [1, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [1, null], "1": [0, null]}, "Item": {"0": {"0": [179, null], "1": [-119, null]}, "1": {"0": [162, null], "1": [-110, null]}, "2": {"0": [178, null], "1": [-110, null]}, "3": {"0": [140, null], "1": [-98, null]}, "4": {"0": [157, null], "1": [-75, null]}, "5": {"0": [147, null], "1": [-72, null]}, "6": {"0": [149, null], "1": [-71, null]}, "7": {"0": [131, null], "1": [-70, null]}, "8": {"0": [150, null], "1": [-70, null]}, "9": {"0": [152, null], "1": [-70, null]}, "10": {"0": [151, null], "1": [-69, null]}, "11": {"0": [152, null], "1": [-68, null]}, "12": {"0": [132, null], "1": [-67, null]}, "13": {"0": [142, null], "1": [-64, null]}, "14": {"0": [130, null], "1": [-63, null]}, "15": {"0": [143, null], "1": [-63, null]}, "16": {"0": [138, null], "1": [-57, null]}, "17": {"0": [132, null], "1": [-56, null]}, "18": {"0": [128, null], "1": [-52, null]}, "19": {"0": [128, null], "1": [-50, null]}, "20": {"0": [154, null], "1": [-50, null]}, "21": {"0": [129, null], "1": [-49, null]}, "22": {"0": [132, null], "1": [-49, null]}, "23": {"0": [133, null], "1": [-48, null]}, "24": {"0": [131, null], "1": [-47, null]}, "25": {"0": [133, null], "1": [-47, null]}, "26": {"0": [138, null], "1": [-46, null]}, "27": {"0": [133, null], "1": [-45, null]}, "28": {"0": [131, null], "1": [-40, null]}, "29": {"0": [130, null], "1": [-39, null]}, "30": {"0": [131, null], "1": [-27, null]}, "31": {"0": [140, null], "1": [-26, null]}, "32": {"0": [142, null], "1": [-26, null]}, "33": {"0": [143, null], "1": [-26, null]}, "34": {"0": [144, null], "1": [-26, null]}, "35": {"0": [152, null], "1": [-26, null]}, "36": {"0": [154, null], "1": [-26, null]}, "37": {"0": [-142, null], "1": [-25, null]}, "38": {"0": [142, null], "1": [-25, null]}, "39": {"0": [143, null], "1": [-25, null]}, "40": {"0": [132, null], "1": [-24, null]}, "41": {"0": [132, null], "1": [-23, null]}, "42": {"0": [132, null], "1": [-22, null]}, "43": {"0": [163, null], "1": [-19, null]}, "44": {"0": [156, null], "1": [-16, null]}, "45": {"0": [156, null], "1": [-15, null]}, "46": {"0": [132, null], "1": [-4, null]}, "47": {"0": [178, null], "1": [73, null]}, "48": {"0": [140, null], "1": [89, null]}}}, "6": {"ItemCount": [3, null], "NumShorts": [2, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [0, null], "1": [1, null]}, "Item": {"0": {"0": [-142, null], "1": [137, null]}, "1": {"0": [-139, null], "1": [161, null]}, "2": {"0": [-138, null], "1": [162, null]}}}}}, "GlyphClassDef": {"classDefs": {"uni1DFA": [null, 3], "uni0732": [null, 3], "uni1DF8": [null, 3]}}}}, "STAT": {"axis values": {"Thin": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [100.0, null]}, "ExtraLight": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [200.0, null]}, "Light": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [300.0, null]}, "Regular": {"format": [3, null], "AxisIndex": [0, null], "Flags": [2, null], "Value": [400.0, null]}, "Medium": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [500.0, null]}, "SemiBold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [600.0, null]}, "Bold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [700.0, null]}, "ExtraBold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [800.0, null]}, "Black": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [900.0, null]}}, "design axis records": {"wght": {"order": [0, null], "AxisName": ["Weight", null]}}}};</script><div id="difftable"></div>
+    </div>
+    
+    
+      <div class="box">
+        <div class="box-title">New encoded glyphs</div>
+        <div class="box-text old-Thin" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ᷸<br>
+        <span class="tooltiptext">
+            name: COMBINING DOT ABOVE LEFT<br>
+            unicode: U+1DF8
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ᷺<br>
+        <span class="tooltiptext">
+            name: COMBINING DOT BELOW LEFT<br>
+            unicode: U+1DFA
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+    
+    
+    
+    
+    
+      <div class="box">
+        <div class="box-title">Modified encoded Glyphs</div>
+        <div class="box-text old-Thin" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        )<br>
+        <span class="tooltiptext">
+            name: RIGHT PARENTHESIS<br>
+            unicode: U+0029<br>
+            changed pixels: 4.69%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        (<br>
+        <span class="tooltiptext">
+            name: LEFT PARENTHESIS<br>
+            unicode: U+0028<br>
+            changed pixels: 4.12%
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+
+    
+      <div class="box">
+        <div class="box-title">Misshapen Common words</div>
+        <div class="box-text old-Thin" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Misshapen Arabic words</div>
+        <div class="box-text old-Thin" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Misshapen Syriac words</div>
+        <div class="box-text old-Thin" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-Thin" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
+
+    
+
+    </div>
+  
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+// apply optional ot feats
+
+function buildFeatureList() {
+	var features = [
+		'aalt', 'c2sc', 'calt', 'case', 'cpsp', 'dlig', 'dnom',
+		'fina', 'frac', 'init', 'kern', 'liga', 'lnum', 'numr', 'onum',
+		'ordn', 'pnum', 'salt', 'sinf', 'smcp', 'sups',
+		'swsh', 'titl', 'tnum', 'zero', 'ss01', 'ss02',
+		'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08',
+		'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14',
+		'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'
+	]
+	
+	var otPanel = document.getElementById("ot-panel")
+	for (i=0; i<features.length; i++) {
+		var feat = features[i]
+		
+		var row = document.createElement("div");
+
+		var item = document.createElement("input");
+		item.type = "checkbox"
+		item.value = feat
+		item.classList.add("ot-checkbox")
+		var label = document.createElement("label")
+		label.textContent = feat
+
+		row.appendChild(item)
+		row.appendChild(label)
+
+		otPanel.appendChild(row)
+	}
+}
+
+buildFeatureList()
+
+
+function enableFeatures() {
+	var checkboxes = document.getElementsByClassName("ot-checkbox")
+	var res = []
+	var disableKerning = false
+	for (i=0; i<checkboxes.length; i++) {
+		if (checkboxes[i].checked === true) {
+			var checkbox = checkboxes[i]
+			res.push('"' + checkbox.value + '"')
+
+			if (checkbox.value === "kern") {
+				disableKerning = true
+			}
+		}
+	}	
+
+	var boxText = document.getElementsByClassName("box-text")
+	var otString = res.join(", ")
+	for (j=0; j<boxText.length; j++) {
+		boxText[j].style.fontFeatureSettings = otString
+		if (disableKerning === true) {
+			boxText[j].style.fontKerning = "none"
+		}
+	}
+}
+
+var otButton = document.getElementById("ot-button")
+otButton.addEventListener("click", function() {
+    otPanel = document.getElementById("ot-panel")
+    if (otPanel.style.display !== "block") {
+        otPanel.style.display = "block"
+    } else {
+        otPanel.style.display = "none"
+    }
+})
+var checkboxes = document.getElementsByClassName("ot-checkbox")
+for (i=0; i<checkboxes.length; i++) {
+	cb = checkboxes[i]
+	cb.addEventListener("click", enableFeatures)
+}	
+    
+	function render(node, toplevel) {
+		var wrapper = $("<div> </div>");
+		if (!node) { return wrapper }
+		if (Array.isArray(node)) {
+			var before = $("<span/>");
+			before.addClass("attr-before");
+			before.html(" " + String(node[0]) + " ");
+			var after = $("<span/>");
+			after.addClass("attr-after");
+			after.append(String(node[1]));
+			wrapper.append(before);
+			wrapper.append(after);
+			return wrapper
+		}
+		for (const [key, value] of Object.entries(node)) {
+			var display = $("<div/>");
+			display.addClass("node")
+			if (!toplevel && ! key.match(/^\d+$/)) {
+				display.hide()
+			}
+			display.append(key);
+			display.append(render(value, false).children());
+			wrapper.append(display)
+		}
+		return wrapper
+
+	}
+	$(function() {
+		$("#difftable").append(render(fontdiff, true).children())
+		$("#difftable .node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
+	});
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+
+
+    </script>
+</html>

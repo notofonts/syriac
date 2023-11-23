@@ -1,0 +1,516 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attrib-old{
+                color: red;
+                cursor: text;
+            }
+            .attrib-new{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSansSyriacEastern[wght].ttf);
+    font-family: "old font";
+    font-weight: 100 900;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSansSyriacEastern-Black.ttf);
+    font-family: "new font";
+    font-weight: 900;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-Black{
+    font-family: "old font", "Adobe NotDef";
+    font-weight: 900.0;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 900.0;
+}
+	  
+
+	  
+	    .new-Black{
+    font-family: "new font", "Adobe NotDef";
+    font-weight: 900;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 900;
+}
+	  
+
+	  
+	
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+
+	   #ot-panel {
+		max-height: 400px;
+		overflow-y: scroll;
+		background: white;
+		padding: 10px;
+		display: none;
+	   }
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+			<div class="nav-item" id="ot-button">OT features</div>
+			<div id="ot-panel">
+			</div>
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+     <script>var fontdiff = {"GDEF": {"table": {"GlyphClassDef": {"classDefs": {"uni1DFA": [null, 3], "uni1DF8": [null, 3]}}, "Version": [65539, 65538], "MarkGlyphSetsDef": {"Coverage": {"2": {"glyphs": {"23": ["uni030A.alt", "uni0741.alt"], "25": ["uni0741.alt", "uni030A.alt"]}}}}, "VarStore": {"Format": [1, null], "VarRegionList": {"RegionAxisCount": [1, null], "RegionCount": [2, null], "Region": {"0": {"VarRegionAxis": {"0": {"StartCoord": [-1.0, null], "PeakCoord": [-1.0, null], "EndCoord": [0.0, null]}}}, "1": {"VarRegionAxis": {"0": {"StartCoord": [0.0, null], "PeakCoord": [1.0, null], "EndCoord": [1.0, null]}}}}}, "VarDataCount": [4, null], "VarData": {"0": {"ItemCount": [3, null], "NumShorts": [0, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [0, null]}, "Item": {"0": {"0": [-23, null]}, "1": {"0": [-4, null]}, "2": {"0": [-3, null]}}}, "1": {"ItemCount": [50, null], "NumShorts": [0, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [1, null]}, "Item": {"0": {"0": [-78, null]}, "1": {"0": [-77, null]}, "2": {"0": [-60, null]}, "3": {"0": [-56, null]}, "4": {"0": [-52, null]}, "5": {"0": [-44, null]}, "6": {"0": [-43, null]}, "7": {"0": [-42, null]}, "8": {"0": [-25, null]}, "9": {"0": [-23, null]}, "10": {"0": [-21, null]}, "11": {"0": [-20, null]}, "12": {"0": [-19, null]}, "13": {"0": [-18, null]}, "14": {"0": [-11, null]}, "15": {"0": [-10, null]}, "16": {"0": [-9, null]}, "17": {"0": [-8, null]}, "18": {"0": [-4, null]}, "19": {"0": [-3, null]}, "20": {"0": [-2, null]}, "21": {"0": [-1, null]}, "22": {"0": [1, null]}, "23": {"0": [3, null]}, "24": {"0": [4, null]}, "25": {"0": [5, null]}, "26": {"0": [7, null]}, "27": {"0": [8, null]}, "28": {"0": [14, null]}, "29": {"0": [15, null]}, "30": {"0": [16, null]}, "31": {"0": [17, null]}, "32": {"0": [19, null]}, "33": {"0": [22, null]}, "34": {"0": [25, null]}, "35": {"0": [26, null]}, "36": {"0": [27, null]}, "37": {"0": [30, null]}, "38": {"0": [33, null]}, "39": {"0": [34, null]}, "40": {"0": [35, null]}, "41": {"0": [36, null]}, "42": {"0": [38, null]}, "43": {"0": [41, null]}, "44": {"0": [44, null]}, "45": {"0": [65, null]}, "46": {"0": [66, null]}, "47": {"0": [74, null]}, "48": {"0": [87, null]}, "49": {"0": [126, null]}}}, "2": {"ItemCount": [378, null], "NumShorts": [0, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [0, null], "1": [1, null]}, "Item": {"error": ["There are 378 changes, check manually!", ""]}}, "3": {"ItemCount": [3, null], "NumShorts": [1, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [1, null], "1": [0, null]}, "Item": {"0": {"0": [137, null], "1": [-73, null]}, "1": {"0": [135, null], "1": [-72, null]}, "2": {"0": [137, null], "1": [0, null]}}}}}}}, "glyf": {"glyphOrder": {"227": ["fraction", "uni25CC"], "228": ["uni25CC", "uni2670"], "229": ["uni2670", "uni2671"], "230": ["uni2671", "uni072Auni0308.isol"], "231": ["uni072Auni0308.isol", "uni072Auni0308.fina"], "232": ["uni072Auni0308.fina", "uni072B.init.M"], "233": ["uni030A.alt", "uni072B.medi.M"], "234": ["uni0325.alt", "uni0712.init.N"], "235": ["uni070F.blank", "uni0725.init.N"], "236": ["uni0710.fina.liga", "uni0713.init.N"], "237": ["uni0710.fina.liga2", "uni072E.init.N"], "238": ["uni0710.medi.2N", "uni0720.init.N"], "239": ["uni0710.medi.liga", "uni0721.init.N"], "240": ["uni0712.fina.QR", "uni072B.init.N"], "241": ["uni0712.init.N", "uni071B.init.N"], "242": ["uni0712.medi.N", "uni071C.init.N"], "243": ["uni0712.medi.QR", "uni0712.medi.N"], "244": ["uni0713.fina.W", "uni0725.medi.N"], "245": ["uni0713.init.N", "uni0713.medi.N"], "246": ["uni0713.medi.N", "uni072E.medi.N"], "247": ["uni0713.medi.W", "uni0720.medi.N"], "248": ["uni0713.medi.WN", "uni0721.medi.N"], "249": ["uni0714.fina.W", "uni072B.medi.N"], "250": ["uni0714.medi.W", "uni071B.medi.N"], "251": ["uni0715.fina.QR", "uni071C.medi.N"], "252": ["uni0716.fina.QR", "uni0712.fina.QR"], "253": ["uni0719.fina.W", "uni0715.fina.QR"], "254": ["uni071B.init.N", "uni0716.fina.QR"], "255": ["uni071B.medi.N", "uni0726.fina.QR"], "256": ["uni071C.init.N", "uni0712.medi.QR"], "257": ["uni071C.medi.N", "uni0726.medi.QR"], "258": ["uni0720.init.N", "uni0713.fina.W"], "259": ["uni0720.medi.N", "uni0714.fina.W"], "260": ["uni0721.init.N", "uni072E.fina.W"], "261": ["uni0721.medi.N", "uni0719.fina.W"], "262": ["uni0722.medi.W", "uni0713.medi.W"], "263": ["uni0725.init.N", "uni0714.medi.W"], "264": ["uni0725.medi.N", "uni072E.medi.W"], "265": ["uni0726.fina.QR", "uni0722.medi.W"], "266": ["uni0726.medi.QR", "uni0713.medi.WN"], "267": ["uni072B.init.M", "uni072E.medi.WN"], "268": ["uni072B.init.N", "uni0710.fina.liga"], "269": ["uni072B.medi.M", "uni0710.medi.liga"], "270": ["uni072B.medi.N", "uni0710.fina.liga2"], "272": ["uni072E.fina.W", "uni0710.medi.2N"], "273": ["uni072E.init.N", "uni070F.blank"], "274": ["uni072E.medi.N", "uni0732.above"], "275": ["uni072E.medi.W", "uni0741.alt"], "276": ["uni072E.medi.WN", "uni0742.alt"], "277": ["uni0732.above", "uni0735.alt"], "278": ["uni0732.below", "uni0735.altB"], "279": ["uni0735.alt", "uni0735.altC"], "280": ["uni0735.altB", "uni0732.below"], "281": ["uni0735.altC", "uni1DF8"], "282": ["uni0741.alt", "uni1DFA"], "283": ["uni0742.alt", "uni030A.alt"], "284": [null, "uni0325.alt"]}, "axisTags": {"0": ["wght", null]}}, "STAT": {"axis values": {"Thin": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [100.0, null]}, "ExtraLight": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [200.0, null]}, "Light": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [300.0, null]}, "Regular": {"format": [3, null], "AxisIndex": [0, null], "Flags": [2, null], "Value": [400.0, null]}, "Medium": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [500.0, null]}, "SemiBold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [600.0, null]}, "Bold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [700.0, null]}, "ExtraBold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [800.0, null]}, "Black": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [900.0, null]}}, "design axis records": {"wght": {"order": [0, null], "AxisName": ["Weight", null]}}}, "maxp": {"numGlyphs": [284, 285]}, "GSUB": {"table": {"LookupList": {"Lookup": {"10": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0725.init": [6, 13], "uni072B.medi": [3, 16], "uni0713.init": [16, 3], "uni072B.init": [4, 15], "uni0721.medi": [7, 12], "uni0712.medi": [17, 2], "uni071C.init": [12, 7], "uni0712.init": [18, 1], "uni0720.medi": [9, 10], "uni071C.medi": [11, 8], "uni0721.init": [8, 11], "uni071B.medi": [13, 6], "uni0720.init": [10, 9], "uni0725.medi": [5, 14], "uni0713.medi": [15, 4], "uni071B.init": [14, 5], "uni072E.medi": [1, 18], "uni072E.init": [2, 17]}}}}}, "11": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0712.init": [4, 1], "uni072B.medi": [1, 4], "uni072B.init": [2, 3], "uni0712.medi": [3, 2]}}}}}, "12": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0725.init": [4, 11], "uni0713.init": [14, 1], "uni0721.medi": [5, 10], "uni071C.init": [10, 5], "uni0720.medi": [7, 8], "uni071C.medi": [9, 6], "uni0721.init": [6, 9], "uni071B.medi": [11, 4], "uni0720.init": [8, 7], "uni0725.medi": [3, 12], "uni0713.medi": [13, 2], "uni071B.init": [12, 3], "uni072E.medi": [1, 14], "uni072E.init": [2, 13]}}}}}, "13": {"SubTable": {"0": {"Coverage": {"glyphs": {"0": ["uni0713.init.N", "uni0725.init.N"], "1": ["uni0713.medi.N", "uni0713.init.N"], "2": ["uni071B.init.N", "uni072E.init.N"], "3": ["uni071B.medi.N", "uni0720.init.N"], "4": ["uni071C.init.N", "uni0721.init.N"], "5": ["uni071C.medi.N", "uni071B.init.N"], "6": ["uni0720.init.N", "uni071C.init.N"], "7": ["uni0720.medi.N", "uni0725.medi.N"], "8": ["uni0721.init.N", "uni0713.medi.N"], "9": ["uni0721.medi.N", "uni072E.medi.N"], "10": ["uni0725.init.N", "uni0720.medi.N"], "11": ["uni0725.medi.N", "uni0721.medi.N"], "12": ["uni072E.init.N", "uni071B.medi.N"], "13": ["uni072E.medi.N", "uni071C.medi.N"]}}, "InputClassDef": {"classDefs": {"uni071C.init.N": [10, 5], "uni0721.init.N": [6, 9], "uni072E.init.N": [2, 13], "uni0720.medi.N": [7, 8], "uni071B.medi.N": [11, 4], "uni072E.medi.N": [1, 14], "uni0725.medi.N": [3, 12], "uni071C.medi.N": [9, 6], "uni0725.init.N": [4, 11], "uni0713.init.N": [14, 1], "uni0713.medi.N": [13, 2], "uni071B.init.N": [12, 3], "uni0720.init.N": [8, 7], "uni0721.medi.N": [5, 10]}}}}}, "14": {"SubTable": {"0": {"Coverage": {"glyphs": {"0": ["uni0713.init.N", "uni0725.init.N"], "1": ["uni0713.medi.N", "uni0713.init.N"], "2": ["uni071B.init.N", "uni072E.init.N"], "3": ["uni071B.medi.N", "uni0720.init.N"], "4": ["uni071C.init.N", "uni071B.init.N"], "5": ["uni071C.medi.N", "uni071C.init.N"], "6": ["uni0720.init.N", "uni0725.medi.N"], "7": ["uni0720.medi.N", "uni0713.medi.N"], "8": ["uni0725.init.N", "uni072E.medi.N"], "9": ["uni0725.medi.N", "uni0720.medi.N"], "10": ["uni072E.init.N", "uni071B.medi.N"], "11": ["uni072E.medi.N", "uni071C.medi.N"]}}, "InputClassDef": {"classDefs": {"uni071C.init.N": [8, 5], "uni072E.init.N": [2, 11], "uni0720.medi.N": [5, 8], "uni071B.medi.N": [9, 4], "uni072E.medi.N": [1, 12], "uni0725.medi.N": [3, 10], "uni071C.medi.N": [7, 6], "uni0725.init.N": [4, 9], "uni0713.init.N": [12, 1], "uni0713.medi.N": [11, 2], "uni071B.init.N": [10, 3], "uni0720.init.N": [6, 7]}}}}}, "21": {"SubTable": {"0": {"ChainSubClassSet": {"1": {"ChainSubClassRule": {"0": {"LookAhead": {"1": [2, 3]}}, "1": {"LookAhead": {"0": [2, 3]}}, "2": {"LookAhead": {"1": [2, 3]}}}}, "2": {"ChainSubClassRule": {"0": {"LookAhead": {"1": [2, 3]}}, "1": {"LookAhead": {"0": [2, 3]}}, "2": {"LookAhead": {"1": [2, 3]}}}}, "3": {"ChainSubClassRule": {"0": {"LookAhead": {"1": [2, 3]}}, "1": {"LookAhead": {"0": [2, 3]}}, "2": {"LookAhead": {"1": [2, 3]}}, "3": {"LookAhead": {"0": [2, 3]}}}}, "4": {"ChainSubClassRule": {"0": {"LookAhead": {"1": [2, 3]}}, "1": {"LookAhead": {"0": [2, 3]}}, "2": {"LookAhead": {"1": [2, 3]}}, "3": {"LookAhead": {"0": [2, 3]}}}}, "5": {"ChainSubClassRule": {"0": {"LookAhead": {"1": [2, 3]}}, "1": {"LookAhead": {"0": [2, 3]}}, "2": {"LookAhead": {"1": [2, 3]}}, "3": {"LookAhead": {"0": [2, 3]}}}}, "6": {"ChainSubClassRule": {"0": {"LookAhead": {"1": [2, 3]}}, "1": {"LookAhead": {"0": [2, 3]}}, "2": {"LookAhead": {"1": [2, 3]}}, "3": {"LookAhead": {"0": [2, 3]}}}}, "7": {"ChainSubClassRule": {"0": {"LookAhead": {"1": [2, 3]}}, "1": {"LookAhead": {"0": [2, 3]}}, "2": {"LookAhead": {"1": [2, 3]}}}}, "8": {"ChainSubClassRule": {"0": {"LookAhead": {"1": [2, 3]}}, "1": {"LookAhead": {"0": [2, 3]}}, "2": {"LookAhead": {"1": [2, 3]}}}}}, "LookAheadClassDef": {"classDefs": {"uni071D.fina": [3, 2], "uni0722.fina": [2, 3]}}, "InputClassDef": {"classDefs": {"uni0712.init": [8, 1], "uni0725.init": [4, 5], "uni0721.init": [6, 3], "uni072B.medi": [1, 8], "uni072B.init": [2, 7], "uni0725.medi": [3, 6], "uni0721.medi": [5, 4], "uni0712.medi": [7, 2]}}}}}, "22": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0712.init": [4, 1], "uni072B.medi": [1, 4], "uni072B.init": [2, 3], "uni0712.medi": [3, 2]}}}}}, "23": {"SubTable": {"0": {"Coverage": {"glyphs": {"0": ["uni0712.init.N", "uni072B.init.M"], "1": ["uni0712.medi.N", "uni072B.medi.M"], "2": ["uni072B.init.M", "uni0712.init.N"], "3": ["uni072B.medi.M", "uni0712.medi.N"]}}, "InputClassDef": {"classDefs": {"uni0712.medi.N": [3, 2], "uni072B.medi.M": [1, 4], "uni072B.init.M": [2, 3], "uni0712.init.N": [4, 1]}}}}}, "25": {"SubTable": {"0": {"ChainSubClassSet": {"1": {"ChainSubClassRule": {"0": {"SubstLookupRecord": {"0": {"LookupListIndex": [24, 16]}}}}}, "2": {"ChainSubClassRule": {"0": {"SubstLookupRecord": {"0": {"LookupListIndex": [24, 16]}}}}}, "3": {"ChainSubClassRule": {"0": {"SubstLookupRecord": {"0": {"LookupListIndex": [16, 24]}}}}}, "4": {"ChainSubClassRule": {"0": {"SubstLookupRecord": {"0": {"LookupListIndex": [16, 24]}}}}}}, "InputClassDef": {"classDefs": {"uni0721.init": [4, 1], "uni072B.medi": [1, 4], "uni072B.init": [2, 3], "uni0721.medi": [3, 2]}}}}}, "26": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0725.init": [4, 11], "uni0713.init": [12, 3], "uni0712.medi": [13, 2], "uni071C.init": [8, 7], "uni0712.init": [14, 1], "uni0720.medi": [5, 10], "uni071C.medi": [7, 8], "uni071B.medi": [9, 6], "uni0720.init": [6, 9], "uni0725.medi": [3, 12], "uni0713.medi": [11, 4], "uni071B.init": [10, 5], "uni072E.medi": [1, 14], "uni072E.init": [2, 13]}}}}}, "28": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0713.medi.N": [6, 3], "uni0713.medi": [7, 2], "uni0714.fina": [5, 4], "uni0714.medi": [4, 5], "uni0713.fina": [8, 1], "uni072E.medi": [2, 7], "uni072E.medi.N": [1, 8], "uni072E.fina": [3, 6]}}}}}, "29": {"SubTable": {"0": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "2": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}, "BacktrackCoverage": {"1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}}}, "1": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}, "BacktrackCoverage": {"1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}}}, "2": {"LookAheadCoverage": {"0": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}, "BacktrackCoverage": {"1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}}}, "3": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "2": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}}, "4": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}}, "5": {"LookAheadCoverage": {"0": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}}, "6": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "2": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}, "BacktrackCoverage": {"1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}}}, "7": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}, "BacktrackCoverage": {"1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}}}, "8": {"LookAheadCoverage": {"0": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}, "BacktrackCoverage": {"1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}}}, "9": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "2": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}}, "10": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}}, "11": {"LookAheadCoverage": {"0": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}}, "12": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "2": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}, "BacktrackCoverage": {"1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}}}, "13": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}, "BacktrackCoverage": {"1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}}}, "14": {"LookAheadCoverage": {"0": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}, "BacktrackCoverage": {"1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}}}, "15": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "2": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}}, "16": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}}, "17": {"LookAheadCoverage": {"0": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}}, "18": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "2": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}, "BacktrackCoverage": {"1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}}}, "19": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}, "BacktrackCoverage": {"1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}}}, "20": {"LookAheadCoverage": {"0": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}, "BacktrackCoverage": {"1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}}}, "21": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "2": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}}, "22": {"LookAheadCoverage": {"0": {"glyphs": {"49": ["uni0732.below", "uni0735.alt"], "50": ["uni0735.alt", "uni0735.altC"], "51": ["uni0735.altC", "uni0732.below"]}}, "1": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}}, "23": {"LookAheadCoverage": {"0": {"glyphs": {"0": ["uni030A.alt", "uni0741.alt"], "1": ["uni0741.alt", "uni030A.alt"]}}}}}}, "30": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0716.fina": [1, 2], "uni0715.fina": [2, 1]}}}}}, "31": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0726.fina": [2, 3], "uni0726.medi": [1, 4], "uni0712.medi": [3, 2], "uni0712.fina": [4, 1]}}}}}, "33": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0722.medi": [1, 2], "uni0719.fina": [2, 1]}}}}}, "34": {"SubTable": {"0": {"InputCoverage": {"0": {"glyphs": {"0": ["uni072E.fina", null]}}}, "Format": [3, 2], "BacktrackClassDef": {"classDefs": {"uni0713.medi": [null, 1], "uni0713.init": [null, 1], "uni0714.medi": [null, 1], "uni0714.init": [null, 1], "uni071B.medi": [null, 1], "uni071B.init": [null, 1], "uni071C.medi": [null, 1], "uni071C.init": [null, 1], "uni0720.medi": [null, 1], "uni0720.init": [null, 1], "uni072E.medi": [null, 1], "uni072E.init": [null, 1], "uni0713.medi.W": [null, 1], "uni0714.medi.W": [null, 1], "uni072E.medi.W": [null, 1]}}, "Coverage": {"glyphs": {"0": [null, "uni072E.fina"], "1": [null, "uni072E.medi"]}}, "ChainSubClassSet": {"0": {"ChainSubClassRuleCount": [null, 0]}, "1": {"ChainSubClassRuleCount": [null, 1], "ChainSubClassRule": {"0": {"BacktrackGlyphCount": [null, 1], "Backtrack": {"0": [null, 1]}, "InputGlyphCount": [null, 1], "LookAheadGlyphCount": [null, 0], "SubstCount": [null, 1], "SubstLookupRecord": {"0": {"SequenceIndex": [null, 0], "LookupListIndex": [null, 27]}}}}}, "2": {"ChainSubClassRuleCount": [null, 1], "ChainSubClassRule": {"0": {"BacktrackGlyphCount": [null, 1], "Backtrack": {"0": [null, 1]}, "InputGlyphCount": [null, 1], "LookAheadGlyphCount": [null, 0], "SubstCount": [null, 1], "SubstLookupRecord": {"0": {"SequenceIndex": [null, 0], "LookupListIndex": [null, 27]}}}}}}, "InputClassDef": {"classDefs": {"uni072E.fina": [null, 1], "uni072E.medi": [null, 2]}}, "BacktrackGlyphCount": [1, null], "InputGlyphCount": [1, null], "ChainSubClassSetCount": [null, 3], "LookAheadGlyphCount": [0, null], "SubstLookupRecord": {"0": {"SequenceIndex": [0, null], "LookupListIndex": [27, null]}}, "BacktrackCoverage": {"0": {"glyphs": {"0": ["uni0713.medi", null], "1": ["uni0713.init", null], "2": ["uni0714.medi", null], "3": ["uni0714.init", null], "4": ["uni071B.medi", null], "5": ["uni071B.init", null], "6": ["uni071C.medi", null], "7": ["uni071C.init", null], "8": ["uni0720.medi", null], "9": ["uni0720.init", null], "10": ["uni072E.medi", null], "11": ["uni072E.init", null], "12": ["uni0713.medi.W", null], "13": ["uni0714.medi.W", null], "14": ["uni072E.medi.W", null]}}}, "SubstCount": [1, null]}, "1": {"Format": [3, null], "BacktrackGlyphCount": [1, null], "BacktrackCoverage": {"0": {"glyphs": {"0": ["uni0713.medi", null], "1": ["uni0713.init", null], "2": ["uni0714.medi", null], "3": ["uni0714.init", null], "4": ["uni071B.medi", null], "5": ["uni071B.init", null], "6": ["uni071C.medi", null], "7": ["uni071C.init", null], "8": ["uni0720.medi", null], "9": ["uni0720.init", null], "10": ["uni072E.medi", null], "11": ["uni072E.init", null], "12": ["uni0713.medi.W", null], "13": ["uni0714.medi.W", null], "14": ["uni072E.medi.W", null]}}}, "InputGlyphCount": [1, null], "InputCoverage": {"0": {"glyphs": {"0": ["uni072E.medi", null]}}}, "LookAheadGlyphCount": [0, null], "SubstCount": [1, null], "SubstLookupRecord": {"0": {"SequenceIndex": [0, null], "LookupListIndex": [27, null]}}}}, "SubTableCount": [2, 1]}, "35": {"SubTable": {"0": {"InputClassDef": {"classDefs": {"uni0713.medi.N": [1, 3], "uni0713.fina": [3, 1]}}}}}, "36": {"SubTable": {"0": {"BacktrackCoverage": {"2": {"glyphs": {"22": ["uni0712.fina.QR", "uni0712.init.N"], "23": ["uni0712.init.N", "uni0713.init.N"], "25": ["uni0712.medi.QR", "uni0713.medi.N"], "26": ["uni0713.fina.W", "uni0712.fina.QR"], "27": ["uni0713.init.N", "uni0715.fina.QR"], "28": ["uni0713.medi.N", "uni0716.fina.QR"], "29": ["uni0713.medi.W", "uni0726.fina.QR"], "30": ["uni0713.medi.WN", "uni0712.medi.QR"], "31": ["uni0715.fina.QR", "uni0726.medi.QR"], "32": ["uni0716.fina.QR", "uni0713.fina.W"], "33": ["uni0726.fina.QR", "uni0713.medi.W"], "34": ["uni0726.medi.QR", "uni0713.medi.WN"]}}}}, "1": {"BacktrackCoverage": {"2": {"glyphs": {"22": ["uni0712.fina.QR", "uni0712.init.N"], "23": ["uni0712.init.N", "uni0713.init.N"], "25": ["uni0712.medi.QR", "uni0713.medi.N"], "26": ["uni0713.fina.W", "uni0712.fina.QR"], "27": ["uni0713.init.N", "uni0715.fina.QR"], "28": ["uni0713.medi.N", "uni0716.fina.QR"], "29": ["uni0713.medi.W", "uni0726.fina.QR"], "30": ["uni0713.medi.WN", "uni0712.medi.QR"], "31": ["uni0715.fina.QR", "uni0726.medi.QR"], "32": ["uni0716.fina.QR", "uni0713.fina.W"], "33": ["uni0726.fina.QR", "uni0713.medi.W"], "34": ["uni0726.medi.QR", "uni0713.medi.WN"]}}}}, "2": {"BacktrackCoverage": {"2": {"glyphs": {"22": ["uni0712.fina.QR", "uni0712.init.N"], "23": ["uni0712.init.N", "uni0713.init.N"], "25": ["uni0712.medi.QR", "uni0713.medi.N"], "26": ["uni0713.fina.W", "uni0712.fina.QR"], "27": ["uni0713.init.N", "uni0715.fina.QR"], "28": ["uni0713.medi.N", "uni0716.fina.QR"], "29": ["uni0713.medi.W", "uni0726.fina.QR"], "30": ["uni0713.medi.WN", "uni0712.medi.QR"], "31": ["uni0715.fina.QR", "uni0726.medi.QR"], "32": ["uni0716.fina.QR", "uni0713.fina.W"], "33": ["uni0726.fina.QR", "uni0713.medi.W"], "34": ["uni0726.medi.QR", "uni0713.medi.WN"]}}}}, "3": {"BacktrackCoverage": {"1": {"glyphs": {"22": ["uni0712.fina.QR", "uni0712.init.N"], "23": ["uni0712.init.N", "uni0713.init.N"], "25": ["uni0712.medi.QR", "uni0713.medi.N"], "26": ["uni0713.fina.W", "uni0712.fina.QR"], "27": ["uni0713.init.N", "uni0715.fina.QR"], "28": ["uni0713.medi.N", "uni0716.fina.QR"], "29": ["uni0713.medi.W", "uni0726.fina.QR"], "30": ["uni0713.medi.WN", "uni0712.medi.QR"], "31": ["uni0715.fina.QR", "uni0726.medi.QR"], "32": ["uni0716.fina.QR", "uni0713.fina.W"], "33": ["uni0726.fina.QR", "uni0713.medi.W"], "34": ["uni0726.medi.QR", "uni0713.medi.WN"]}}}}, "4": {"BacktrackCoverage": {"1": {"glyphs": {"22": ["uni0712.fina.QR", "uni0712.init.N"], "23": ["uni0712.init.N", "uni0713.init.N"], "25": ["uni0712.medi.QR", "uni0713.medi.N"], "26": ["uni0713.fina.W", "uni0712.fina.QR"], "27": ["uni0713.init.N", "uni0715.fina.QR"], "28": ["uni0713.medi.N", "uni0716.fina.QR"], "29": ["uni0713.medi.W", "uni0726.fina.QR"], "30": ["uni0713.medi.WN", "uni0712.medi.QR"], "31": ["uni0715.fina.QR", "uni0726.medi.QR"], "32": ["uni0716.fina.QR", "uni0713.fina.W"], "33": ["uni0726.fina.QR", "uni0713.medi.W"], "34": ["uni0726.medi.QR", "uni0713.medi.WN"]}}}}, "5": {"BacktrackCoverage": {"1": {"glyphs": {"22": ["uni0712.fina.QR", "uni0712.init.N"], "23": ["uni0712.init.N", "uni0713.init.N"], "25": ["uni0712.medi.QR", "uni0713.medi.N"], "26": ["uni0713.fina.W", "uni0712.fina.QR"], "27": ["uni0713.init.N", "uni0715.fina.QR"], "28": ["uni0713.medi.N", "uni0716.fina.QR"], "29": ["uni0713.medi.W", "uni0726.fina.QR"], "30": ["uni0713.medi.WN", "uni0712.medi.QR"], "31": ["uni0715.fina.QR", "uni0726.medi.QR"], "32": ["uni0716.fina.QR", "uni0713.fina.W"], "33": ["uni0726.fina.QR", "uni0713.medi.W"], "34": ["uni0726.medi.QR", "uni0713.medi.WN"]}}}}, "6": {"BacktrackCoverage": {"0": {"glyphs": {"22": ["uni0712.fina.QR", "uni0712.init.N"], "23": ["uni0712.init.N", "uni0713.init.N"], "25": ["uni0712.medi.QR", "uni0713.medi.N"], "26": ["uni0713.fina.W", "uni0712.fina.QR"], "27": ["uni0713.init.N", "uni0715.fina.QR"], "28": ["uni0713.medi.N", "uni0716.fina.QR"], "29": ["uni0713.medi.W", "uni0726.fina.QR"], "30": ["uni0713.medi.WN", "uni0712.medi.QR"], "31": ["uni0715.fina.QR", "uni0726.medi.QR"], "32": ["uni0716.fina.QR", "uni0713.fina.W"], "33": ["uni0726.fina.QR", "uni0713.medi.W"], "34": ["uni0726.medi.QR", "uni0713.medi.WN"]}}}}, "7": {"BacktrackCoverage": {"0": {"glyphs": {"22": ["uni0712.fina.QR", "uni0712.init.N"], "23": ["uni0712.init.N", "uni0713.init.N"], "25": ["uni0712.medi.QR", "uni0713.medi.N"], "26": ["uni0713.fina.W", "uni0712.fina.QR"], "27": ["uni0713.init.N", "uni0715.fina.QR"], "28": ["uni0713.medi.N", "uni0716.fina.QR"], "29": ["uni0713.medi.W", "uni0726.fina.QR"], "30": ["uni0713.medi.WN", "uni0712.medi.QR"], "31": ["uni0715.fina.QR", "uni0726.medi.QR"], "32": ["uni0716.fina.QR", "uni0713.fina.W"], "33": ["uni0726.fina.QR", "uni0713.medi.W"], "34": ["uni0726.medi.QR", "uni0713.medi.WN"]}}}}, "8": {"BacktrackCoverage": {"0": {"glyphs": {"22": ["uni0712.fina.QR", "uni0712.init.N"], "23": ["uni0712.init.N", "uni0713.init.N"], "25": ["uni0712.medi.QR", "uni0713.medi.N"], "26": ["uni0713.fina.W", "uni0712.fina.QR"], "27": ["uni0713.init.N", "uni0715.fina.QR"], "28": ["uni0713.medi.N", "uni0716.fina.QR"], "29": ["uni0713.medi.W", "uni0726.fina.QR"], "30": ["uni0713.medi.WN", "uni0712.medi.QR"], "31": ["uni0715.fina.QR", "uni0726.medi.QR"], "32": ["uni0716.fina.QR", "uni0713.fina.W"], "33": ["uni0726.fina.QR", "uni0713.medi.W"], "34": ["uni0726.medi.QR", "uni0713.medi.WN"]}}}}, "9": {"BacktrackCoverage": {"1": {"glyphs": {"22": ["uni0712.fina.QR", "uni0712.init.N"], "23": ["uni0712.init.N", "uni0713.init.N"], "25": ["uni0712.medi.QR", "uni0713.medi.N"], "26": ["uni0713.fina.W", "uni0712.fina.QR"], "27": ["uni0713.init.N", "uni0715.fina.QR"], "28": ["uni0713.medi.N", "uni0716.fina.QR"], "29": ["uni0713.medi.W", "uni0726.fina.QR"], "30": ["uni0713.medi.WN", "uni0712.medi.QR"], "31": ["uni0715.fina.QR", "uni0726.medi.QR"], "32": ["uni0716.fina.QR", "uni0713.fina.W"], "33": ["uni0726.fina.QR", "uni0713.medi.W"], "34": ["uni0726.medi.QR", "uni0713.medi.WN"]}}}}, "10": {"BacktrackCoverage": {"0": {"glyphs": {"22": ["uni0712.fina.QR", "uni0712.init.N"], "23": ["uni0712.init.N", "uni0713.init.N"], "25": ["uni0712.medi.QR", "uni0713.medi.N"], "26": ["uni0713.fina.W", "uni0712.fina.QR"], "27": ["uni0713.init.N", "uni0715.fina.QR"], "28": ["uni0713.medi.N", "uni0716.fina.QR"], "29": ["uni0713.medi.W", "uni0726.fina.QR"], "30": ["uni0713.medi.WN", "uni0712.medi.QR"], "31": ["uni0715.fina.QR", "uni0726.medi.QR"], "32": ["uni0716.fina.QR", "uni0713.fina.W"], "33": ["uni0726.fina.QR", "uni0713.medi.W"], "34": ["uni0726.medi.QR", "uni0713.medi.WN"]}}}}}}}}}}, "post": {"extraNames": {"212": ["uni030A.alt", "uni072B.init.M"], "213": ["uni0325.alt", "uni072B.medi.M"], "214": ["uni070F.blank", "uni0712.init.N"], "215": ["uni0710.fina.liga", "uni0725.init.N"], "216": ["uni0710.fina.liga2", "uni0713.init.N"], "217": ["uni0710.medi.2N", "uni072E.init.N"], "218": ["uni0710.medi.liga", "uni0720.init.N"], "219": ["uni0712.fina.QR", "uni0721.init.N"], "220": ["uni0712.init.N", "uni072B.init.N"], "221": ["uni0712.medi.N", "uni071B.init.N"], "222": ["uni0712.medi.QR", "uni071C.init.N"], "223": ["uni0713.fina.W", "uni0712.medi.N"], "224": ["uni0713.init.N", "uni0725.medi.N"], "226": ["uni0713.medi.W", "uni072E.medi.N"], "227": ["uni0713.medi.WN", "uni0720.medi.N"], "228": ["uni0714.fina.W", "uni0721.medi.N"], "229": ["uni0714.medi.W", "uni072B.medi.N"], "230": ["uni0715.fina.QR", "uni071B.medi.N"], "231": ["uni0716.fina.QR", "uni071C.medi.N"], "232": ["uni0719.fina.W", "uni0712.fina.QR"], "233": ["uni071B.init.N", "uni0715.fina.QR"], "234": ["uni071B.medi.N", "uni0716.fina.QR"], "235": ["uni071C.init.N", "uni0726.fina.QR"], "236": ["uni071C.medi.N", "uni0712.medi.QR"], "237": ["uni0720.init.N", "uni0726.medi.QR"], "238": ["uni0720.medi.N", "uni0713.fina.W"], "239": ["uni0721.init.N", "uni0714.fina.W"], "240": ["uni0721.medi.N", "uni072E.fina.W"], "241": ["uni0722.medi.W", "uni0719.fina.W"], "242": ["uni0725.init.N", "uni0713.medi.W"], "243": ["uni0725.medi.N", "uni0714.medi.W"], "244": ["uni0726.fina.QR", "uni072E.medi.W"], "245": ["uni0726.medi.QR", "uni0722.medi.W"], "246": ["uni072B.init.M", "uni0713.medi.WN"], "247": ["uni072B.init.N", "uni072E.medi.WN"], "248": ["uni072B.medi.M", "uni0710.fina.liga"], "249": ["uni072B.medi.N", "uni0710.medi.liga"], "250": ["uni072C.medi.liga2", "uni0710.fina.liga2"], "251": ["uni072E.fina.W", "uni072C.medi.liga2"], "252": ["uni072E.init.N", "uni0710.medi.2N"], "253": ["uni072E.medi.N", "uni070F.blank"], "254": ["uni072E.medi.W", "uni0732.above"], "255": ["uni072E.medi.WN", "uni0741.alt"], "256": ["uni0732.above", "uni0742.alt"], "257": ["uni0732.below", "uni0735.alt"], "258": ["uni0735.alt", "uni0735.altB"], "259": ["uni0735.altB", "uni0735.altC"], "260": ["uni0735.altC", "uni0732.below"], "261": ["uni0741.alt", "uni1DF8"], "262": ["uni0742.alt", "uni1DFA"], "263": [null, "uni030A.alt"], "264": [null, "uni0325.alt"]}}, "HVAR": {"tableTag": ["HVAR", null], "table": {"Version": [65536, null], "VarStore": {"Format": [1, null], "VarRegionList": {"RegionAxisCount": [1, null], "RegionCount": [2, null], "Region": {"0": {"VarRegionAxis": {"0": {"StartCoord": [-1.0, null], "PeakCoord": [-1.0, null], "EndCoord": [0.0, null]}}}, "1": {"VarRegionAxis": {"0": {"StartCoord": [0.0, null], "PeakCoord": [1.0, null], "EndCoord": [1.0, null]}}}}}, "VarDataCount": [5, null], "VarData": {"0": {"ItemCount": [153, null], "NumShorts": [0, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [0, null], "1": [1, null]}, "Item": {"error": ["There are 153 changes, check manually!", ""]}}, "1": {"ItemCount": [2, null], "NumShorts": [0, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [0, null], "1": [1, null]}, "Item": {"0": {"0": [-21, null], "1": [0, null]}, "1": {"0": [0, null], "1": [70, null]}}}, "2": {"ItemCount": [2, null], "NumShorts": [1, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [1, null]}, "Item": {"0": {"0": [0, null]}, "1": {"0": [182, null]}}}, "3": {"ItemCount": [18, null], "NumShorts": [1, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [1, null], "1": [0, null]}, "Item": {"0": {"0": [146, null], "1": [-103, null]}, "1": {"0": [151, null], "1": [-103, null]}, "2": {"0": [145, null], "1": [-96, null]}, "3": {"0": [149, null], "1": [-89, null]}, "4": {"0": [138, null], "1": [-58, null]}, "5": {"0": [149, null], "1": [-57, null]}, "6": {"0": [128, null], "1": [-53, null]}, "7": {"0": [170, null], "1": [-51, null]}, "8": {"0": [162, null], "1": [-47, null]}, "9": {"0": [167, null], "1": [-37, null]}, "10": {"0": [151, null], "1": [-28, null]}, "11": {"0": [170, null], "1": [-28, null]}, "12": {"0": [129, null], "1": [-22, null]}, "13": {"0": [131, null], "1": [-19, null]}, "14": {"0": [179, null], "1": [-18, null]}, "15": {"0": [130, null], "1": [-10, null]}, "16": {"0": [177, null], "1": [-10, null]}, "17": {"0": [184, null], "1": [-8, null]}}}, "4": {"ItemCount": [2, null], "NumShorts": [2, null], "VarRegionCount": [2, null], "VarRegionIndex": {"0": [0, null], "1": [1, null]}, "Item": {"0": {"0": [-166, null], "1": [219, null]}, "1": {"0": [600, null], "1": [600, null]}}}}}, "AdvWidthMap": {"mapping": {"error": ["There are 284 changes, check manually!", ""]}}}}, "gvar": {"tableTag": ["gvar", null], "version": [1, null], "reserved": [0, null], "axisCount": [1, null], "sharedTupleCount": [2, null], "offsetToSharedTuples": [590, null], "glyphCount": [284, null], "flags": [0, null], "offsetToGlyphVariationData": [594, null]}, "prep": {"tableTag": ["prep", null]}, "fvar": {"axes": {"wght": {"minValue": [100.0, null], "maxValue": [900.0, null], "defaultValue": [400.0, null], "axisName": ["Weight", null]}}, "instances": {"Thin": {"coordinates": {"wght": [100.0, null]}, "flags": [0, null]}, "ExtraLight": {"coordinates": {"wght": [200.0, null]}, "flags": [0, null]}, "Light": {"coordinates": {"wght": [300.0, null]}, "flags": [0, null]}, "Regular": {"coordinates": {"wght": [400.0, null]}, "flags": [0, null]}, "Medium": {"coordinates": {"wght": [500.0, null]}, "flags": [0, null]}, "SemiBold": {"coordinates": {"wght": [600.0, null]}, "flags": [0, null]}, "Bold": {"coordinates": {"wght": [700.0, null]}, "flags": [0, null]}, "ExtraBold": {"coordinates": {"wght": [800.0, null]}, "flags": [0, null]}, "Black": {"coordinates": {"wght": [900.0, null]}, "flags": [0, null]}}}, "name": {"268/1/0/0": ["Light", null], "1/3/1/1033": ["Noto Sans Syriac Eastern", "Noto Sans Syriac Eastern Black"], "266/1/0/0": ["Thin", null], "272/1/0/0": ["Bold", null], "4/3/1/1033": ["Noto Sans Syriac Eastern Regular", "Noto Sans Syriac Eastern Black"], "256/3/1/1033": ["Weight", null], "266/3/1/1033": ["Thin", null], "260/3/1/1033": ["ExtraLight", null], "263/3/1/1033": ["SemiBold", null], "267/3/1/1033": ["ExtraLight", null], "3/3/1/1033": ["3.001;GOOG;NotoSansSyriacEastern-Regular", "3.001;GOOG;NotoSansSyriacEastern-Black"], "273/1/0/0": ["ExtraBold", null], "262/3/1/1033": ["Medium", null], "268/3/1/1033": ["Light", null], "272/3/1/1033": ["Bold", null], "270/1/0/0": ["Medium", null], "274/1/0/0": ["Black", null], "269/3/1/1033": ["Regular", null], "269/1/0/0": ["Regular", null], "25/3/1/1033": ["NotoSansSyriacEastern", null], "271/3/1/1033": ["SemiBold", null], "16/3/1/1033": [null, "Noto Sans Syriac Eastern"], "271/1/0/0": ["SemiBold", null], "265/3/1/1033": ["ExtraBold", null], "261/3/1/1033": ["Light", null], "273/3/1/1033": ["ExtraBold", null], "274/3/1/1033": ["Black", null], "258/3/1/1033": ["Thin", null], "17/3/1/1033": [null, "Black"], "259/3/1/1033": ["Black", null], "270/3/1/1033": ["Medium", null], "267/1/0/0": ["ExtraLight", null], "264/3/1/1033": ["Bold", null], "6/3/1/1033": ["NotoSansSyriacEastern-Regular", "NotoSansSyriacEastern-Black"]}, "gasp": {"tableTag": ["gasp", null], "version": [1, null], "gaspRange": {"65535": [15, null]}}, "OS/2": {"usWeightClass": [400, 900], "xAvgCharWidth": [565, 644], "panose": {"bArmStyle": [4, 0], "bLetterForm": [2, 0], "bXHeight": [4, 0], "bContrast": [4, 0], "bStrokeVariation": [5, 0], "bSerifStyle": [11, 0], "bProportion": [2, 0], "bFamilyType": [2, 0], "bWeight": [5, 0], "bMidline": [2, 0]}}, "GPOS": {"table": {"LookupList": {"Lookup": {"0": {"SubTable": {"0": {"BaseArray": {"BaseRecord": {"error": ["There are 158 changes, check manually!", ""]}}, "MarkArray": {"MarkRecord": {"51": {"Class": [2, 0]}, "52": {"MarkAnchor": {"YCoordinate": [0, 542]}, "Class": [3, 2]}, "53": {"MarkAnchor": {"Format": [3, 1], "YCoordinate": [540, 0], "YDeviceTable": {"StartSize": [2, null], "EndSize": [352, null], "DeltaFormat": [32768, null]}}, "Class": [0, 3]}, "54": {"MarkAnchor": {"XCoordinate": [0, -196], "YCoordinate": [0, 792]}, "Class": [1, 0]}, "56": {"MarkAnchor": {"XCoordinate": [-196, -230], "YCoordinate": [792, 770]}}, "57": {"MarkAnchor": {"Format": [3, 1], "XCoordinate": [-229, 0], "XDeviceTable": {"StartSize": [2, null], "EndSize": [343, null], "DeltaFormat": [32768, null]}, "YCoordinate": [755, 0], "YDeviceTable": {"StartSize": [2, null], "EndSize": [376, null], "DeltaFormat": [32768, null]}}, "Class": [0, 1]}}}, "BaseCoverage": {"glyphs": {"118": ["uni0710.fina.liga", "uni072B.init.M"], "119": ["uni0710.fina.liga2", "uni072B.medi.M"], "120": ["uni0710.medi.2N", "uni0712.init.N"], "121": ["uni0710.medi.liga", "uni0725.init.N"], "122": ["uni0712.fina.QR", "uni0713.init.N"], "123": ["uni0712.init.N", "uni072E.init.N"], "124": ["uni0712.medi.N", "uni0720.init.N"], "125": ["uni0712.medi.QR", "uni0721.init.N"], "126": ["uni0713.fina.W", "uni072B.init.N"], "127": ["uni0713.init.N", "uni071B.init.N"], "128": ["uni0713.medi.N", "uni071C.init.N"], "129": ["uni0713.medi.W", "uni0712.medi.N"], "130": ["uni0713.medi.WN", "uni0725.medi.N"], "131": ["uni0714.fina.W", "uni0713.medi.N"], "132": ["uni0714.medi.W", "uni072E.medi.N"], "133": ["uni0715.fina.QR", "uni0720.medi.N"], "134": ["uni0716.fina.QR", "uni0721.medi.N"], "135": ["uni0719.fina.W", "uni072B.medi.N"], "136": ["uni071B.init.N", "uni071B.medi.N"], "137": ["uni071B.medi.N", "uni071C.medi.N"], "138": ["uni071C.init.N", "uni0712.fina.QR"], "139": ["uni071C.medi.N", "uni0715.fina.QR"], "140": ["uni0720.init.N", "uni0716.fina.QR"], "141": ["uni0720.medi.N", "uni0726.fina.QR"], "142": ["uni0721.init.N", "uni0712.medi.QR"], "143": ["uni0721.medi.N", "uni0726.medi.QR"], "144": ["uni0722.medi.W", "uni0713.fina.W"], "145": ["uni0725.init.N", "uni0714.fina.W"], "146": ["uni0725.medi.N", "uni072E.fina.W"], "147": ["uni0726.fina.QR", "uni0719.fina.W"], "148": ["uni0726.medi.QR", "uni0713.medi.W"], "149": ["uni072B.init.M", "uni0714.medi.W"], "150": ["uni072B.init.N", "uni072E.medi.W"], "151": ["uni072B.medi.M", "uni0722.medi.W"], "152": ["uni072B.medi.N", "uni0713.medi.WN"], "153": ["uni072C.medi.liga2", "uni072E.medi.WN"], "154": ["uni072E.fina.W", "uni0710.fina.liga"], "155": ["uni072E.init.N", "uni0710.medi.liga"], "156": ["uni072E.medi.N", "uni0710.fina.liga2"], "157": ["uni072E.medi.W", "uni072C.medi.liga2"], "158": ["uni072E.medi.WN", "uni0710.medi.2N"]}}, "MarkCoverage": {"glyphs": {"51": ["uni030A.alt", "uni0732.above"], "52": ["uni0325.alt", "uni0741.alt"], "53": ["uni0732.above", "uni0742.alt"], "54": ["uni0732.below", "uni0735.alt"], "55": ["uni0735.alt", "uni0735.altB"], "56": ["uni0735.altB", "uni0735.altC"], "57": ["uni0735.altC", "uni0732.below"], "58": ["uni0741.alt", "uni030A.alt"], "59": ["uni0742.alt", "uni0325.alt"]}}}}}, "1": {"SubTable": {"0": {"Mark2Array": {"Mark2Record": {"0": {"Mark2Anchor": {"0": {"Format": [3, 1], "YCoordinate": [687, 712], "YDeviceTable": {"StartSize": [1, null], "EndSize": [34, null], "DeltaFormat": [32768, null]}}}}, "1": {"Mark2Anchor": {"0": {"Format": [3, 1], "YCoordinate": [659, 700], "YDeviceTable": {"StartSize": [1, null], "EndSize": [43, null], "DeltaFormat": [32768, null]}}}}, "2": {"Mark2Anchor": {"0": {"Format": [3, 1], "YCoordinate": [680, 767], "YDeviceTable": {"StartSize": [1, null], "EndSize": [48, null], "DeltaFormat": [32768, null]}}}}, "3": {"Mark2Anchor": {"0": {"Format": [3, 1], "YCoordinate": [680, 767], "YDeviceTable": {"StartSize": [1, null], "EndSize": [48, null], "DeltaFormat": [32768, null]}}}}}}}}}, "2": {"SubTable": {"0": {"Mark2Array": {"Mark2Record": {"1": {"Mark2Anchor": {"0": {"Format": [3, 1], "YCoordinate": [-142, -220], "YDeviceTable": {"StartSize": [1, null], "EndSize": [0, null], "DeltaFormat": [32768, null]}}}}, "2": {"Mark2Anchor": {"0": {"Format": [3, 1], "YCoordinate": [-143, -220], "YDeviceTable": {"StartSize": [1, null], "EndSize": [1, null], "DeltaFormat": [32768, null]}}}}, "3": {"Mark2Anchor": {"0": {"Format": [3, 1], "YCoordinate": [-165, -186], "YDeviceTable": {"StartSize": [1, null], "EndSize": [10, null], "DeltaFormat": [32768, null]}}}}, "4": {"Mark2Anchor": {"0": {"Format": [3, 1], "YCoordinate": [-114, -166], "YDeviceTable": {"StartSize": [1, null], "EndSize": [4, null], "DeltaFormat": [32768, null]}}}}, "5": {"Mark2Anchor": {"0": {"Format": [3, 1], "YCoordinate": [-145, -170], "YDeviceTable": {"StartSize": [1, null], "EndSize": [8, null], "DeltaFormat": [32768, null]}}}}, "6": {"Mark2Anchor": {"0": {"Format": [3, 1], "YCoordinate": [-124, -147], "YDeviceTable": {"StartSize": [1, null], "EndSize": [9, null], "DeltaFormat": [32768, null]}}}}}}}}}}}}}, "cmap": {"0x1DF8": [null, "uni1DF8"], "0x1DFA": [null, "uni1DFA"], "0x2044": ["fraction", null]}, "hhea": {"minLeftSideBearing": [-210, -247], "numberOfHMetrics": [278, 275], "advanceWidthMax": [1139, 1198], "xMaxExtent": [1071, 1183]}, "head": {"yMax": [813, 920], "xMin": [-210, -247], "xMax": [1071, 1183], "modified": [3755853983, 3783591163], "checkSumAdjustment": [648110877, 1753940646], "yMin": [-392, -414]}, "hmtx": {"metrics": {"error": ["There are 280 changes, check manually!", ""]}}};</script><div id="difftable"></div>
+    </div>
+    
+    
+      <div class="box">
+        <div class="box-title">New encoded glyphs</div>
+        <div class="box-text old-Black" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ᷸<br>
+        <span class="tooltiptext">
+            name: COMBINING DOT ABOVE LEFT<br>
+            unicode: U+1DF8
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ᷺<br>
+        <span class="tooltiptext">
+            name: COMBINING DOT BELOW LEFT<br>
+            unicode: U+1DFA
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+    
+    
+    
+    
+    
+
+    
+      <div class="box">
+        <div class="box-title">Misshapen Common words</div>
+        <div class="box-text old-Black" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Misshapen Arabic words</div>
+        <div class="box-text old-Black" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Misshapen Syriac words</div>
+        <div class="box-text old-Black" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-Black" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
+
+    
+
+    </div>
+  
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+// apply optional ot feats
+
+function buildFeatureList() {
+	var features = [
+		'aalt', 'c2sc', 'calt', 'case', 'cpsp', 'dlig', 'dnom',
+		'fina', 'frac', 'init', 'kern', 'liga', 'lnum', 'numr', 'onum',
+		'ordn', 'pnum', 'salt', 'sinf', 'smcp', 'sups',
+		'swsh', 'titl', 'tnum', 'zero', 'ss01', 'ss02',
+		'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08',
+		'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14',
+		'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'
+	]
+	
+	var otPanel = document.getElementById("ot-panel")
+	for (i=0; i<features.length; i++) {
+		var feat = features[i]
+		
+		var row = document.createElement("div");
+
+		var item = document.createElement("input");
+		item.type = "checkbox"
+		item.value = feat
+		item.classList.add("ot-checkbox")
+		var label = document.createElement("label")
+		label.textContent = feat
+
+		row.appendChild(item)
+		row.appendChild(label)
+
+		otPanel.appendChild(row)
+	}
+}
+
+buildFeatureList()
+
+
+function enableFeatures() {
+	var checkboxes = document.getElementsByClassName("ot-checkbox")
+	var res = []
+	var disableKerning = false
+	for (i=0; i<checkboxes.length; i++) {
+		if (checkboxes[i].checked === true) {
+			var checkbox = checkboxes[i]
+			res.push('"' + checkbox.value + '"')
+
+			if (checkbox.value === "kern") {
+				disableKerning = true
+			}
+		}
+	}	
+
+	var boxText = document.getElementsByClassName("box-text")
+	var otString = res.join(", ")
+	for (j=0; j<boxText.length; j++) {
+		boxText[j].style.fontFeatureSettings = otString
+		if (disableKerning === true) {
+			boxText[j].style.fontKerning = "none"
+		}
+	}
+}
+
+var otButton = document.getElementById("ot-button")
+otButton.addEventListener("click", function() {
+    otPanel = document.getElementById("ot-panel")
+    if (otPanel.style.display !== "block") {
+        otPanel.style.display = "block"
+    } else {
+        otPanel.style.display = "none"
+    }
+})
+var checkboxes = document.getElementsByClassName("ot-checkbox")
+for (i=0; i<checkboxes.length; i++) {
+	cb = checkboxes[i]
+	cb.addEventListener("click", enableFeatures)
+}	
+    
+	function render(node, toplevel) {
+		var wrapper = $("<div> </div>");
+		if (!node) { return wrapper }
+		if (Array.isArray(node)) {
+			var before = $("<span/>");
+			before.addClass("attr-before");
+			before.html(" " + String(node[0]) + " ");
+			var after = $("<span/>");
+			after.addClass("attr-after");
+			after.append(String(node[1]));
+			wrapper.append(before);
+			wrapper.append(after);
+			return wrapper
+		}
+		for (const [key, value] of Object.entries(node)) {
+			var display = $("<div/>");
+			display.addClass("node")
+			if (!toplevel && ! key.match(/^\d+$/)) {
+				display.hide()
+			}
+			display.append(key);
+			display.append(render(value, false).children());
+			wrapper.append(display)
+		}
+		return wrapper
+
+	}
+	$(function() {
+		$("#difftable").append(render(fontdiff, true).children())
+		$("#difftable .node").on("click", function(event){ $(this).children().toggle(); event.stopPropagation() })
+	});
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+
+
+    </script>
+</html>
