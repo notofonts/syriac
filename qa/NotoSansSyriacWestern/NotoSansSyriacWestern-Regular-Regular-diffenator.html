@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en" dir="auto">
+<head>
+    
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>GFR - Glyphs</title>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <style type="text/css">
+    
+
+        html{
+	  font-family: sans-serif;
+	}
+    @font-face {
+        font-family: "Adobe NotDef";
+        src: url(https://cdn.jsdelivr.net/gh/adobe-fonts/adobe-notdef/AND-Regular.ttf);
+    }
+	.box-title{
+	  width: 100%;
+	  font-size: 8pt;
+	  font-weight: 700;
+	  border-top: 1px solid black;
+	  padding-top: 5px;
+	  margin-bottom: 10pt;
+	  display: block;
+	}
+	.box{
+	  margin-bottom: 20pt;
+	  width: 100%;
+	  float: left;
+	}
+	.box-text{
+	}
+	
+	#nav{
+	  position: fixed;
+	  right: 20px;
+	  z-index: 100;
+	}
+	#font-toggle{
+	}
+	.nav-item{
+		display: block;
+		cursor: pointer;
+		-webkit-user-select: none; /* Safari */        
+		-moz-user-select: none; /* Firefox */
+			-ms-user-select: none; /* IE10+/Edge */
+		user-select: none; /* Standard */
+		text-align: center;
+		color: white;
+		background-color: black;
+		display: block;
+		font-size: 9pt;
+		padding: 5px;
+		margin: 2px;
+	}
+	.tooltip {
+	position: relative;
+	display: inline-block;
+	border-bottom: 1px dotted black;
+	}
+
+	.tooltip .tooltiptext {
+	font-family: sans-serif;
+	visibility: hidden;
+	width: 500px;
+	background-color: black;
+	color: #fff;
+	text-align: left;
+	font-size: 12pt;
+	line-height: 15pt;
+	border-radius: 6px;
+	padding: 5px 0;
+
+	/* Position the tooltip */
+	position: absolute;
+	z-index: 1;
+	}
+
+	.tooltip:hover .tooltiptext {
+	padding: 10px;
+	visibility: visible;
+	}
+	.tooltipleft {
+		float:left;
+		width: 249px;
+	}
+	.tooltipright {
+		float:right;
+		width:250px;
+	}
+
+			/* Stuff needed for the table differ */
+            body {
+                font-family: Helvetica;
+            }
+            .node {
+                font-family: courier;
+                cursor: pointer;
+                position: relative;
+                left: 30px;
+                padding: 5px;
+                display: block;
+                border: 1px dashed grey;
+            }
+            .header {
+            font-weight: bold;
+            }
+            .attr-before{
+                color: red;
+                cursor: text;
+            }
+            .attr-after{
+                color: green;
+                cursor: text;
+            }
+            .leaf {
+            font-weight: bold;
+            }
+            .old .cell .new {
+            	display:  none;
+            }
+            .new .cell .old {
+            	display:  none;
+            }
+            .both .cell .old {
+            	opacity: 0.75;
+            	color:  red;
+            }
+            .both .cell .new {
+            	opacity: 0.75;
+            	position: absolute;
+            	top: 0;
+            	color:  green;
+            }
+			.spacer {
+				display:block;
+				float:left;
+				width:100%;
+			}
+
+	  
+	    @font-face{
+    src: url(old-NotoSansSyriacWestern[wght].ttf);
+    font-family: "old font";
+    font-weight: 400 700;
+    
+    font-style: normal;
+}
+	  
+
+	  
+	    @font-face{
+    src: url(new-NotoSansSyriacWestern-Regular.ttf);
+    font-family: "new font";
+    font-weight: 400;
+    
+    font-style: normal;
+}
+	  
+
+	  
+
+	  
+	    .old-Regular{
+    font-family: "old font", "Adobe NotDef";
+    font-weight: 400.0;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400.0;
+}
+	  
+
+	  
+	    .new-Regular{
+    font-family: "new font", "Adobe NotDef";
+    font-weight: 400;
+    
+    font-style: normal;
+    font-variation-settings: "wght" 400;
+}
+	  
+
+	  
+	
+.cell{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  width: 50pt;
+  line-height: 48.0px;
+}
+.cell-word{
+  z-index: -100;
+  float: left;
+  display: block;
+  text-align: center;
+  padding: 5pt;
+  margin: 5pt;
+  line-height: 48.0px;
+}
+.cat-strings .cell {
+  clear: both;
+  position: static;
+  float: none;
+  text-align: left;
+}
+.box-title {
+  clear: both;
+}
+
+
+	   #ot-panel {
+		max-height: 400px;
+		overflow-y: scroll;
+		background: white;
+		padding: 10px;
+		display: none;
+	   }
+    </style>
+</head>
+<body>
+    <div id="nav">
+		
+			<div class="nav-item" id="font-toggle">old</div>
+		
+			<div class="nav-item" id="ot-button">OT features</div>
+			<div id="ot-panel">
+			</div>
+		
+	</div>
+    <div id="content">
+	<h2>
+<b>Diffenator</b>
+</h2>
+	
+  
+    <div class="box">
+    <div class="box-title">Tables</div>
+      <div data-path="root" data-open="0" id="difftable"></div>
+    </div>
+    
+    
+      <div class="box">
+        <div class="box-title">New encoded glyphs</div>
+        <div class="box-text old-Regular" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ᷸<br>
+        <span class="tooltiptext">
+            name: COMBINING DOT ABOVE LEFT<br>
+            unicode: U+1DF8
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word">
+    <div class="tooltip">
+        ᷺<br>
+        <span class="tooltiptext">
+            name: COMBINING DOT BELOW LEFT<br>
+            unicode: U+1DFA
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+    
+    
+    
+    
+    
+      <div class="box">
+        <div class="box-title">Modified encoded Glyphs</div>
+        <div class="box-text old-Regular" style="font-size: 32pt">
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        )<br>
+        <span class="tooltiptext">
+            name: RIGHT PARENTHESIS<br>
+            unicode: U+0029<br>
+            changed pixels: 2.85%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        (<br>
+        <span class="tooltiptext">
+            name: LEFT PARENTHESIS<br>
+            unicode: U+0028<br>
+            changed pixels: 2.32%
+        </span>
+    </div>
+</div>
+            </div>
+          
+            <div class="cell">
+              <div class="cell-word" dir="">
+    <div class="tooltip">
+        ܑ<br>
+        <span class="tooltiptext">
+            name: SYRIAC LETTER SUPERSCRIPT ALAPH<br>
+            unicode: U+0711<br>
+            changed pixels: 0.97%
+        </span>
+    </div>
+</div>
+            </div>
+          
+          </div>
+      </div>
+    
+
+    
+      <div class="box">
+        <div class="box-title">Misshapen Common words</div>
+        <div class="box-text old-Regular" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Misshapen Arabic words</div>
+        <div class="box-text old-Regular" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+      <div class="box">
+        <div class="box-title">Misshapen Syriac words</div>
+        <div class="box-text old-Regular" style="font-size: 32pt">
+          
+        </div>
+      </div>
+    
+    
+    <div class="box">
+      <div class="box-title">Misshapen user strings</div>
+      <div class="box-text old-Regular" style="font-size: 32pt">
+        
+      </div>
+    </div>
+    
+
+    
+
+    </div>
+  
+<script>var fontdiff = {"hhea": {"numberOfHMetrics": [296, 297], "caretSlopeRise": [1, 1000]}, "STAT": {"axis values": {"Regular": {"format": [3, null], "AxisIndex": [0, null], "Flags": [2, null], "Value": [400.0, null]}, "Medium": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [500.0, null]}, "SemiBold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [600.0, null]}, "Bold": {"format": [1, null], "AxisIndex": [0, null], "Flags": [0, null], "Value": [700.0, null]}}, "design axis records": {"wght": {"order": [0, null], "AxisName": ["Weight", null]}}}, "fvar": {"axes": {"wght": {"minValue": [400.0, null], "maxValue": [700.0, null], "defaultValue": [400.0, null], "axisName": ["Weight", null]}}, "instances": {"Regular": {"coordinates": {"wght": [400.0, null]}, "flags": [0, null]}}}, "OS/2": {"panose": {"bProportion": [2, 0], "bFamilyType": [2, 0], "bMidline": [2, 0], "bLetterForm": [2, 0], "bSerifStyle": [11, 0], "bStrokeVariation": [5, 0], "bXHeight": [4, 0], "bArmStyle": [4, 0], "bWeight": [5, 0], "bContrast": [4, 0]}}, "glyf": {"glyphOrder": {"241": ["fraction", "uni25CC"], "242": ["uni25CC", "uni2670"], "243": ["uni2670", "uni2671"], "244": ["uni2671", "uni072Auni0308.isol"], "245": ["uni072Auni0308.isol", "uni072Auni0308.fina"], "246": ["uni072Auni0308.fina", "uni0713.fina.wide"], "247": ["uni0713.fina.wide", "uni0713.medi.wide"], "248": ["uni0713.medi.wide", "uni0714.fina.wide"], "249": ["uni0714.fina.wide", "uni0714.medi.wide"], "250": ["uni0714.medi.wide", "uni072E.fina.wide"], "251": ["uni072E.fina.wide", "uni072E.medi.wide"], "252": ["uni072E.medi.wide", "uni0713.fina.wide2"], "253": ["uni0713.fina.wide2", "uni0713.medi.wide2"], "254": ["uni0713.medi.wide2", "uni0714.fina.wide2"], "255": ["uni0714.fina.wide2", "uni0714.medi.wide2"], "256": ["uni0714.medi.wide2", "uni072E.fina.wide2"], "257": ["uni072E.fina.wide2", "uni072E.medi.wide2"], "258": ["uni072E.medi.wide2", "uni0732.above"], "259": ["uni0732.above", "uni0732.below"], "260": ["uni0732.below", "uni0710.fina.liga"], "261": ["uni0710.fina.liga", "uni0710.fina.liga.long"], "262": ["uni0710.fina.liga.long", "uni0710.med2slant"], "263": ["uni0710.med2slant", "uni0710.medi.liga"], "264": ["uni0710.medi.liga", "uni0710.medi.liga.long"], "265": ["uni0710.medi.liga.long", "uni0710.slant"], "266": ["uni0710.slant", "uni0715.fina.qr"], "267": ["uni0715.fina.qr", "uni0715.qr"], "268": ["uni0715.qr", "uni0716.fina.qr"], "269": ["uni0716.fina.qr", "uni0716.qr"], "270": ["uni0716.qr", "uni071B.init.long"], "271": ["uni071B.init.long", "uni071B.medi.long"], "272": ["uni071B.medi.long", "uni071C.init.long"], "273": ["uni071C.init.long", "uni071C.medi.long"], "274": ["uni071C.medi.long", "uni0720.init.liga"], "275": ["uni0720.init.liga", "uni0720.init.long"], "276": ["uni0720.init.long", "uni0720.initN"], "277": ["uni0720.initN", "uni0720.medi.liga"], "278": ["uni0720.medi.liga", "uni0720.medi.long"], "279": ["uni0720.medi.long", "uni0720.mediN"], "280": ["uni0720.mediN", "uni0722.finaG"], "281": ["uni0722.finaG", "uni0722.finaW"], "282": ["uni0722.finaW", "uni0722.init.liga"], "283": ["uni0722.init.liga", "uni0722.initN"], "284": ["uni0722.initN", "uni0722.medi.liga"], "285": ["uni0722.medi.liga", "uni0722.mediN"], "286": ["uni0722.mediN", "uni0728.Alt"], "287": ["uni0728.Alt", "uni0728.finaAlt"], "288": ["uni0728.finaAlt", "uni072A.fina.qr"], "289": ["uni072A.fina.qr", "uni072A.qr"], "290": ["uni072A.qr", "uni072Auni0308.fina.qr"], "291": ["uni072Auni0308.fina.qr", "uni072Auni0308.isol.qr"], "292": ["uni072Auni0308.isol.qr", "uni072F.fina.qr"], "293": ["uni072F.fina.qr", "uni072F.qr"], "294": ["uni072F.qr", "uni1DF8"], "295": ["centerdot", "uni1DFA"], "296": [null, "centerdot"]}, "axisTags": {"0": ["wght", null]}, "glyphs": {"error": ["There are 208 changes, check manually!", ""]}, "_reverseGlyphOrder": {"uni25CC": [242, 241], "uni0722.medi.liga": [285, 284], "uni0710.medi.liga": [264, 263], "uni0710.fina.liga.long": [262, 261], "uni0732.above": [259, 258], "uni0722.initN": [284, 283], "uni0722.init.liga": [283, 282], "uni072Auni0308.fina.qr": [291, 290], "uni072E.fina.wide": [251, 250], "uni0728.finaAlt": [288, 287], "uni072Auni0308.fina": [246, 245], "uni0714.fina.wide": [249, 248], "uni0710.slant": [266, 265], "uni0713.fina.wide2": [253, 252], "uni072F.fina.qr": [293, 292], "uni0713.medi.wide": [248, 247], "uni0710.med2slant": [263, 262], "uni072A.fina.qr": [289, 288], "uni1DFA": [null, 295], "uni0715.qr": [268, 267], "uni071B.medi.long": [272, 271], "uni2671": [244, 243], "fraction": [241, null], "uni0720.initN": [277, 276], "uni0713.fina.wide": [247, 246], "uni0720.mediN": [280, 279], "uni0710.medi.liga.long": [265, 264], "uni0714.fina.wide2": [255, 254], "uni0714.medi.wide": [250, 249], "uni072Auni0308.isol.qr": [292, 291], "uni0710.fina.liga": [261, 260], "uni072E.fina.wide2": [257, 256], "centerdot": [295, 296], "uni0720.medi.liga": [278, 277], "uni0714.medi.wide2": [256, 255], "uni0728.Alt": [287, 286], "uni0722.finaG": [281, 280], "uni0715.fina.qr": [267, 266], "uni071C.medi.long": [274, 273], "uni072Auni0308.isol": [245, 244], "uni2670": [243, 242], "uni0716.fina.qr": [269, 268], "uni0720.init.long": [276, 275], "uni0720.init.liga": [275, 274], "uni0716.qr": [270, 269], "uni072E.medi.wide2": [258, 257], "uni071C.init.long": [273, 272], "uni1DF8": [null, 294], "uni0732.below": [260, 259], "uni0722.finaW": [282, 281], "uni0713.medi.wide2": [254, 253], "uni071B.init.long": [271, 270], "uni0720.medi.long": [279, 278], "uni072F.qr": [294, 293], "uni072A.qr": [290, 289], "uni072E.medi.wide": [252, 251], "uni0722.mediN": [286, 285]}}, "cmap": {"0x2044": ["fraction", null], "0x1DF8": [null, "uni1DF8"], "0x1DFA": [null, "uni1DFA"]}, "post": {"extraNames": {"274": ["centerdot", "uni1DF8"], "275": [null, "uni1DFA"], "276": [null, "centerdot"]}}, "HVAR": {"tableTag": ["HVAR", null], "table": {"Version": [65536, null], "VarStore": {"Format": [1, null], "VarRegionList": {"RegionAxisCount": [1, null], "RegionCount": [1, null], "Region": {"0": {"VarRegionAxis": {"0": {"StartCoord": [0.0, null], "PeakCoord": [1.0, null], "EndCoord": [1.0, null]}}}}}, "VarDataCount": [3, null], "VarData": {"0": {"ItemCount": [1, null], "NumShorts": [0, null], "VarRegionCount": [0, null]}, "1": {"ItemCount": [77, null], "NumShorts": [0, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [0, null]}, "Item": {"0": {"0": [-8, null]}, "1": {"0": [-7, null]}, "2": {"0": [-4, null]}, "3": {"0": [-1, null]}, "4": {"0": [1, null]}, "5": {"0": [3, null]}, "6": {"0": [8, null]}, "7": {"0": [9, null]}, "8": {"0": [10, null]}, "9": {"0": [11, null]}, "10": {"0": [13, null]}, "11": {"0": [14, null]}, "12": {"0": [17, null]}, "13": {"0": [21, null]}, "14": {"0": [22, null]}, "15": {"0": [23, null]}, "16": {"0": [24, null]}, "17": {"0": [25, null]}, "18": {"0": [26, null]}, "19": {"0": [27, null]}, "20": {"0": [28, null]}, "21": {"0": [29, null]}, "22": {"0": [31, null]}, "23": {"0": [32, null]}, "24": {"0": [33, null]}, "25": {"0": [34, null]}, "26": {"0": [35, null]}, "27": {"0": [36, null]}, "28": {"0": [37, null]}, "29": {"0": [38, null]}, "30": {"0": [40, null]}, "31": {"0": [41, null]}, "32": {"0": [42, null]}, "33": {"0": [43, null]}, "34": {"0": [44, null]}, "35": {"0": [45, null]}, "36": {"0": [46, null]}, "37": {"0": [47, null]}, "38": {"0": [48, null]}, "39": {"0": [49, null]}, "40": {"0": [50, null]}, "41": {"0": [52, null]}, "42": {"0": [53, null]}, "43": {"0": [55, null]}, "44": {"0": [56, null]}, "45": {"0": [57, null]}, "46": {"0": [58, null]}, "47": {"0": [61, null]}, "48": {"0": [62, null]}, "49": {"0": [63, null]}, "50": {"0": [64, null]}, "51": {"0": [66, null]}, "52": {"0": [67, null]}, "53": {"0": [68, null]}, "54": {"0": [72, null]}, "55": {"0": [74, null]}, "56": {"0": [75, null]}, "57": {"0": [76, null]}, "58": {"0": [81, null]}, "59": {"0": [82, null]}, "60": {"0": [83, null]}, "61": {"0": [84, null]}, "62": {"0": [85, null]}, "63": {"0": [86, null]}, "64": {"0": [88, null]}, "65": {"0": [89, null]}, "66": {"0": [91, null]}, "67": {"0": [92, null]}, "68": {"0": [94, null]}, "69": {"0": [95, null]}, "70": {"0": [97, null]}, "71": {"0": [101, null]}, "72": {"0": [103, null]}, "73": {"0": [108, null]}, "74": {"0": [116, null]}, "75": {"0": [124, null]}, "76": {"0": [125, null]}}}, "2": {"ItemCount": [4, null], "NumShorts": [1, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [0, null]}, "Item": {"0": {"0": [130, null]}, "1": {"0": [139, null]}, "2": {"0": [158, null]}, "3": {"0": [164, null]}}}}}, "AdvWidthMap": {"mapping": {"error": ["There are 296 changes, check manually!", ""]}}}}, "GDEF": {"table": {"GlyphClassDef": {"classDefs": {"uni0732": [null, 3], "uni1DFA": [null, 3], "uni1DF8": [null, 3]}}, "Version": [65539, 65538], "VarStore": {"Format": [1, null], "VarRegionList": {"RegionAxisCount": [1, null], "RegionCount": [1, null], "Region": {"0": {"VarRegionAxis": {"0": {"StartCoord": [0.0, null], "PeakCoord": [1.0, null], "EndCoord": [1.0, null]}}}}}, "VarDataCount": [1, null], "VarData": {"0": {"ItemCount": [124, null], "NumShorts": [0, null], "VarRegionCount": [1, null], "VarRegionIndex": {"0": [0, null]}, "Item": {"0": {"0": [-85, null]}, "1": {"0": [-73, null]}, "2": {"0": [-50, null]}, "3": {"0": [-49, null]}, "4": {"0": [-46, null]}, "5": {"0": [-39, null]}, "6": {"0": [-38, null]}, "7": {"0": [-35, null]}, "8": {"0": [-32, null]}, "9": {"0": [-31, null]}, "10": {"0": [-29, null]}, "11": {"0": [-28, null]}, "12": {"0": [-27, null]}, "13": {"0": [-26, null]}, "14": {"0": [-24, null]}, "15": {"0": [-23, null]}, "16": {"0": [-22, null]}, "17": {"0": [-20, null]}, "18": {"0": [-19, null]}, "19": {"0": [-18, null]}, "20": {"0": [-17, null]}, "21": {"0": [-14, null]}, "22": {"0": [-13, null]}, "23": {"0": [-12, null]}, "24": {"0": [-11, null]}, "25": {"0": [-10, null]}, "26": {"0": [-8, null]}, "27": {"0": [-7, null]}, "28": {"0": [-6, null]}, "29": {"0": [-5, null]}, "30": {"0": [-4, null]}, "31": {"0": [-3, null]}, "32": {"0": [-2, null]}, "33": {"0": [-1, null]}, "34": {"0": [1, null]}, "35": {"0": [2, null]}, "36": {"0": [3, null]}, "37": {"0": [4, null]}, "38": {"0": [5, null]}, "39": {"0": [7, null]}, "40": {"0": [8, null]}, "41": {"0": [9, null]}, "42": {"0": [10, null]}, "43": {"0": [11, null]}, "44": {"0": [12, null]}, "45": {"0": [13, null]}, "46": {"0": [14, null]}, "47": {"0": [15, null]}, "48": {"0": [16, null]}, "49": {"0": [17, null]}, "50": {"0": [18, null]}, "51": {"0": [19, null]}, "52": {"0": [20, null]}, "53": {"0": [21, null]}, "54": {"0": [22, null]}, "55": {"0": [23, null]}, "56": {"0": [24, null]}, "57": {"0": [25, null]}, "58": {"0": [26, null]}, "59": {"0": [27, null]}, "60": {"0": [28, null]}, "61": {"0": [29, null]}, "62": {"0": [30, null]}, "63": {"0": [31, null]}, "64": {"0": [32, null]}, "65": {"0": [33, null]}, "66": {"0": [34, null]}, "67": {"0": [35, null]}, "68": {"0": [36, null]}, "69": {"0": [37, null]}, "70": {"0": [38, null]}, "71": {"0": [39, null]}, "72": {"0": [40, null]}, "73": {"0": [41, null]}, "74": {"0": [43, null]}, "75": {"0": [44, null]}, "76": {"0": [45, null]}, "77": {"0": [46, null]}, "78": {"0": [47, null]}, "79": {"0": [48, null]}, "80": {"0": [49, null]}, "81": {"0": [50, null]}, "82": {"0": [51, null]}, "83": {"0": [52, null]}, "84": {"0": [53, null]}, "85": {"0": [54, null]}, "86": {"0": [55, null]}, "87": {"0": [56, null]}, "88": {"0": [57, null]}, "89": {"0": [58, null]}, "90": {"0": [59, null]}, "91": {"0": [61, null]}, "92": {"0": [62, null]}, "93": {"0": [63, null]}, "94": {"0": [64, null]}, "95": {"0": [65, null]}, "96": {"0": [66, null]}, "97": {"0": [67, null]}, "98": {"0": [68, null]}, "99": {"0": [69, null]}, "100": {"0": [70, null]}, "101": {"0": [71, null]}, "102": {"0": [73, null]}, "103": {"0": [74, null]}, "104": {"0": [75, null]}, "105": {"0": [76, null]}, "106": {"0": [77, null]}, "107": {"0": [78, null]}, "108": {"0": [79, null]}, "109": {"0": [80, null]}, "110": {"0": [82, null]}, "111": {"0": [83, null]}, "112": {"0": [84, null]}, "113": {"0": [85, null]}, "114": {"0": [86, null]}, "115": {"0": [88, null]}, "116": {"0": [89, null]}, "117": {"0": [90, null]}, "118": {"0": [91, null]}, "119": {"0": [92, null]}, "120": {"0": [94, null]}, "121": {"0": [97, null]}, "122": {"0": [98, null]}, "123": {"0": [107, null]}}}}}}}, "gvar": {"tableTag": ["gvar", null], "version": [1, null], "reserved": [0, null], "axisCount": [1, null], "sharedTupleCount": [1, null], "offsetToSharedTuples": [614, null], "glyphCount": [296, null], "flags": [0, null], "offsetToGlyphVariationData": [616, null]}, "head": {"checkSumAdjustment": [1885413858, 3293284238], "modified": [3755598842, 3796112539]}, "maxp": {"numGlyphs": [296, 297], "maxCompositePoints": [36, 22], "maxCompositeContours": [2, 1]}, "hmtx": {"metrics": {"uni1DFA": {"0": [null, 0], "1": [null, -49]}, "fraction": {"0": [460, null], "1": [78, null]}, "uni1DF8": {"0": [null, 0], "1": [null, -49]}}}, "name": {"256/1/0/0": ["Weight", null], "257/1/0/0": ["Regular", null], "257/3/1/1033": ["Regular", null], "263/3/1/1033": ["SemiBold", null], "264/3/1/1033": ["Bold", null], "262/3/1/1033": ["Medium", null], "256/3/1/1033": ["Weight", null]}};</script>
+
+    </div>
+</body>
+	<script>
+
+	POSITION = "old"
+	fontToggle = document.getElementById("font-toggle")
+	function switchFonts() {
+	boxTitles = document.getElementsByClassName("box-title")
+	items = document.getElementsByClassName("box-text");
+	  
+	if (POSITION === "old") {
+	  POSITION = "new"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("old", "new")
+	    fontToggle.textContent = "new"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("old", "new")
+	  }
+
+	  } else {
+	  POSITION = "old"
+	  for (item of boxTitles) {
+	    item.textContent = item.textContent.replace("new", "old")
+	    fontToggle.textContent = "old"
+	  }
+	  for (item of items) {
+		item.className = item.className.replace("new", "old")
+	  }
+	}
+	}
+	if (fontToggle !== null) {
+		fontToggle.addEventListener("click", switchFonts);
+	}
+
+// apply optional ot feats
+
+function buildFeatureList() {
+	var features = [
+		'aalt', 'c2sc', 'calt', 'case', 'cpsp', 'dlig', 'dnom',
+		'fina', 'frac', 'init', 'kern', 'liga', 'lnum', 'numr', 'onum',
+		'ordn', 'pnum', 'salt', 'sinf', 'smcp', 'sups',
+		'swsh', 'titl', 'tnum', 'zero', 'ss01', 'ss02',
+		'ss03', 'ss04', 'ss05', 'ss06', 'ss07', 'ss08',
+		'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14',
+		'ss15', 'ss16', 'ss17', 'ss18', 'ss19', 'ss20'
+	]
+	
+	var otPanel = document.getElementById("ot-panel")
+	for (i=0; i<features.length; i++) {
+		var feat = features[i]
+		
+		var row = document.createElement("div");
+
+		var item = document.createElement("input");
+		item.type = "checkbox"
+		item.value = feat
+		item.classList.add("ot-checkbox")
+		var label = document.createElement("label")
+		label.textContent = feat
+
+		row.appendChild(item)
+		row.appendChild(label)
+
+		otPanel.appendChild(row)
+	}
+}
+
+buildFeatureList()
+
+
+function enableFeatures() {
+	var checkboxes = document.getElementsByClassName("ot-checkbox")
+	var res = []
+	var disableKerning = false
+	for (i=0; i<checkboxes.length; i++) {
+		if (checkboxes[i].checked === true) {
+			var checkbox = checkboxes[i]
+			res.push('"' + checkbox.value + '"')
+
+			if (checkbox.value === "kern") {
+				disableKerning = true
+			}
+		}
+	}	
+
+	var boxText = document.getElementsByClassName("box-text")
+	var otString = res.join(", ")
+	for (j=0; j<boxText.length; j++) {
+		boxText[j].style.fontFeatureSettings = otString
+		if (disableKerning === true) {
+			boxText[j].style.fontKerning = "none"
+		}
+	}
+}
+
+var otButton = document.getElementById("ot-button")
+otButton.addEventListener("click", function() {
+    otPanel = document.getElementById("ot-panel")
+    if (otPanel.style.display !== "block") {
+        otPanel.style.display = "block"
+    } else {
+        otPanel.style.display = "none"
+    }
+})
+var checkboxes = document.getElementsByClassName("ot-checkbox")
+for (i=0; i<checkboxes.length; i++) {
+	cb = checkboxes[i]
+	cb.addEventListener("click", enableFeatures)
+}	
+    
+  class Table {
+      constructor(data) {
+          this.data = {"root": data}
+          this.open("root")
+      }
+
+      createNode(key, label) {
+          let childElem = document.createElement("div")
+          let childKey = key
+          childElem.dataset.path = childKey
+          childElem.dataset.open = "0"
+          childElem.innerHTML = label
+          childElem.classList.add("node")
+          return childElem
+      }
+
+      close(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          let label = htmlParent.childNodes[0].nodeValue
+          htmlParent.replaceChildren()
+          htmlParent.textContent = label
+          htmlParent.dataset.open = "0"
+      }
+
+      open(key) {
+          let htmlParent = document.querySelector(`[data-path="${key}"]`)
+          htmlParent.dataset.open = "1"
+
+          // traverse to correct data level based on data-path
+          let path = key.split(".")
+          let data = this.data
+          for (var i=0; i<path.length; i++) {
+              data = data[path[i]];
+
+          }
+
+          // arrays containing two values are used as leaf nodes.
+          // The first item is the before value and the second
+          // is for after value.
+          if (Array.isArray(data)) {
+              let childElem = this.createNode("", "")
+              let before = document.createElement("span")
+              before.classList.add("attr-before")
+              before.textContent = String(data[0]) + " "
+              let after = document.createElement("span")
+              after.classList.add("attr-after")
+              after.textContent = String(data[1])
+              childElem.appendChild(before)
+              childElem.appendChild(after)
+              htmlParent.appendChild(childElem)
+              return
+          }
+          // Create next child nodes
+          for (var i in data) {
+              let childKey = key + "." + i
+              let childElem = this.createNode(childKey, i)
+              htmlParent.appendChild(childElem);
+              var that = this
+
+              // Toggle whether to open or close a node
+              childElem.addEventListener("click", function() {
+                  if (this.dataset.open === "0") {
+                      that.open(childKey)
+                      event.stopPropagation()
+                  } else {
+                      that.close(childKey)
+                      event.stopPropagation()
+                  }
+              })
+          }
+      }
+  }
+
+  let t = new Table(fontdiff, document.getElementById("difftable"))
+
+
+function wordBreaks() {
+  words = document.getElementsByClassName("cell-word")
+  res = []
+  prevTop = 0
+  for (i=0; i<words.length; i++) {
+      var word = words[i]
+      currentTop = word.getBoundingClientRect().top
+      if (currentTop > prevTop) {
+          res.push(i)
+      }
+      prevTop = currentTop
+  }
+  return res
+}
+
+async function insertBreaks() {
+  switchFonts()
+  await sleep(1)
+  breaksBefore = wordBreaks()
+  switchFonts()
+  await sleep(1)
+  breaksAfter = wordBreaks()
+
+
+  console.log(breaksBefore.length, breaksAfter.length)
+
+  if (breaksBefore.length >= breaksAfter.length) {
+    breaks = breaksBefore
+  } else {
+    breaks = breaksAfter
+  }
+
+  words = document.getElementsByClassName("cell-word")
+  breaks.forEach(function(i) {
+    if (i != 0) {
+      i = i
+    }
+    word = words[i]
+    spacer = document.createElement("div")
+    spacer.className = "spacer"
+    word.parentNode.insertBefore(spacer, word)
+  })
+}
+
+function sleep(ms) {
+  return new Promise(resolve => setTimeout(resolve, ms));
+}
+  
+insertBreaks()
+
+
+    </script>
+</html>
