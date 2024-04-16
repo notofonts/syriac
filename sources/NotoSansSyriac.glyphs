@@ -1,5 +1,5 @@
 {
-.appVersion = "3195";
+.appVersion = "3243";
 .formatVersion = 3;
 DisplayStrings = (
 "/uni072B.fina",
@@ -1587,7 +1587,6 @@ over = -15;
 pos = -486;
 },
 {
-over = -15;
 },
 {
 over = 15;
@@ -1668,7 +1667,6 @@ over = -15;
 pos = -486;
 },
 {
-over = -15;
 },
 {
 over = 15;
@@ -1749,7 +1747,6 @@ over = -15;
 pos = -486;
 },
 {
-over = -15;
 },
 {
 over = 15;
@@ -1841,7 +1838,7 @@ nodes = (
 width = 600;
 }
 );
-note = ".notdef";
+note = .notdef;
 },
 {
 glyphname = NULL;
@@ -53033,6 +53030,41 @@ width = 0;
 instances = (
 {
 axesValues = (
+100,
+100
+);
+instanceInterpolations = {
+"22847997-2214-411C-BF12-975F69A1246B" = 1;
+};
+name = Thin;
+weightClass = 100;
+},
+{
+axesValues = (
+200,
+100
+);
+instanceInterpolations = {
+"22847997-2214-411C-BF12-975F69A1246B" = 0.66667;
+m01 = 0.33333;
+};
+name = Extralight;
+weightClass = 200;
+},
+{
+axesValues = (
+300,
+100
+);
+instanceInterpolations = {
+"22847997-2214-411C-BF12-975F69A1246B" = 0.33333;
+m01 = 0.66667;
+};
+name = Light;
+weightClass = 300;
+},
+{
+axesValues = (
 400,
 100
 );
@@ -53043,14 +53075,53 @@ name = Regular;
 },
 {
 axesValues = (
-100,
+464,
 100
 );
 instanceInterpolations = {
-"22847997-2214-411C-BF12-975F69A1246B" = 1;
+"54406707-D089-4649-8539-9EC6A26EE6B0" = 0.16;
+m01 = 0.84;
 };
-name = Thin;
-weightClass = 100;
+name = Medium;
+weightClass = 500;
+},
+{
+axesValues = (
+541,
+100
+);
+instanceInterpolations = {
+"54406707-D089-4649-8539-9EC6A26EE6B0" = 0.3525;
+m01 = 0.6475;
+};
+name = SemiBold;
+weightClass = 600;
+},
+{
+axesValues = (
+627,
+100
+);
+instanceInterpolations = {
+"54406707-D089-4649-8539-9EC6A26EE6B0" = 0.5675;
+m01 = 0.4325;
+};
+isBold = 1;
+linkStyle = Regular;
+name = Bold;
+weightClass = 700;
+},
+{
+axesValues = (
+715,
+100
+);
+instanceInterpolations = {
+"54406707-D089-4649-8539-9EC6A26EE6B0" = 0.7875;
+m01 = 0.2125;
+};
+name = ExtraBold;
+weightClass = 800;
 },
 {
 axesValues = (
@@ -53469,6 +53540,15 @@ value = "Copyright 2022 The Noto Project Authors (https://github.com/notofonts/s
 );
 },
 {
+key = descriptions;
+values = (
+{
+language = dflt;
+value = "Designed by Monotype design team.";
+}
+);
+},
+{
 key = designers;
 values = (
 {
@@ -53480,6 +53560,19 @@ value = "Patrick Giasson and the Monotype Design Team";
 {
 key = designerURL;
 value = "http://www.monotype.com/studio";
+},
+{
+key = licenses;
+values = (
+{
+language = dflt;
+value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
+}
+);
+},
+{
+key = licenseURL;
+value = "https://scripts.sil.org/OFL";
 },
 {
 key = manufacturers;
@@ -53495,19 +53588,6 @@ key = manufacturerURL;
 value = "http://www.google.com/get/noto/";
 },
 {
-key = vendorID;
-value = GOOG;
-},
-{
-key = descriptions;
-values = (
-{
-language = dflt;
-value = "Designed by Monotype design team.";
-}
-);
-},
-{
 key = trademarks;
 values = (
 {
@@ -53517,17 +53597,8 @@ value = "Noto is a trademark of Google Inc.";
 );
 },
 {
-key = licenseURL;
-value = "https://scripts.sil.org/OFL";
-},
-{
-key = licenses;
-values = (
-{
-language = dflt;
-value = "This Font Software is licensed under the SIL Open Font License, Version 1.1. This license is available with a FAQ at: https://scripts.sil.org/OFL";
-}
-);
+key = vendorID;
+value = GOOG;
 }
 );
 settings = {
